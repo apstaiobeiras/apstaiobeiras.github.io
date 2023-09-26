@@ -18,7 +18,7 @@
 
     @page {
         size: landscape;
-        margin: 25mm 25mm 25mm 25mm; 
+        margin: 0mm; 
     }
     
     body  { 
@@ -12092,12 +12092,12 @@ const urlParams = new URLSearchParams(window.location.search);
 let tabela = document.createElement("table");
 let corpo_tabela = document.createElement('tbody');
 let cabecalho_colunas = document.createElement('tr');
-let adiciona_impressao = true;
+let adiciona_imprimir = true;
 
 function criaTabela() {
   const tabelaContainer = document.getElementById('tabelas_por_acs');
   const title = document.createElement("b");
-  title.innerHTML = "Cadastros inválidos - "+listagem_acs[urlParams.get("cod")][1]+" - "+listagem_acs[urlParams.get("cod")][0]+(adiciona_impressao?"<span class='no-print'> - <a href='#' onclick='window.print();return false;' class='text-decoration-none'>Imprimir</a></span>":"");
+  title.innerHTML = "Cadastros inválidos - "+listagem_acs[urlParams.get("cod")][1]+" - "+listagem_acs[urlParams.get("cod")][0]+(adiciona_imprimir?"<span class='no-print'> - <a href='#' onclick='window.print();return false'>Imprimir</a></span>":"");
   tabelaContainer.appendChild(title);
 
   tabela = document.createElement("table");
@@ -12116,7 +12116,7 @@ function criaTabela() {
 
   corpo_tabela.appendChild(cabecalho_colunas);
 
-  adiciona_impressao = false;
+  adiciona_imprimir = false;
 }
 
 const createPageBreak = () => {
