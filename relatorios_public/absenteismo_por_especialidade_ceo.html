@@ -1,0 +1,222 @@
+<!DOCTYPE html><html lang="pt_BR"><head>
+<style>
+@media print
+{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+
+    h3
+    {
+        display: none !important;
+    }
+
+    #tabelas_por_acs {
+      margin: 0  !important;
+    }
+
+    @page {
+        size: portrait;
+        margin: 0mm;
+
+        margin-top: 15mm; 
+        margin-bottom: 15mm; 
+    }
+    
+    body  { 
+    margin: 0px;  
+  } 
+
+  .py-4  {
+    padding: 0 !important;
+  }
+}
+</style>
+      <meta charset="utf8"/><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"/><title>Relatório descritivo da situação de cadastro</title><meta name="generator" content="lua-wpp"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/></head><body><nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark no-print" style="height: 3rem;"><div class="container-fluid"><a class="navbar-brand" href="?z=y" id="header_texto">Absenteísmo</a></div></nav><h3><br></h3>
+        
+        
+      <div class="container px-4 py-4" id="tabelas">
+      
+      <div class="row no-print " id="lista_meses">
+        <a class="rounded-0 text-start btn btn-secondary col-md-3 col-xs-6 mes" href="?mes=Janeiro">Janeiro</a>
+        <a class="rounded-0 text-start btn btn-secondary col-md-3 col-xs-6 mes" href="?mes=Fevereiro">Fevereiro</a>
+        <a class="rounded-0 text-start btn btn-secondary col-md-3 col-xs-6 mes" href="?mes=Março">Março</a>
+        <a class="rounded-0 text-start btn btn-secondary col-md-3 col-xs-6 mes" href="?mes=Abril">Abril</a>
+
+        <a class="rounded-0 text-start btn btn-secondary col-md-3 col-xs-6 mes" href="?mes=Maio">Maio</a>
+        <a class="rounded-0 text-start btn btn-secondary col-md-3 col-xs-6 mes" href="?mes=Junho">Junho</a>
+        <a class="rounded-0 text-start btn btn-secondary col-md-3 col-xs-6 mes" href="?mes=Julho">Julho</a>
+        <a class="rounded-0 text-start btn btn-secondary col-md-3 col-xs-6 mes" href="?mes=Agosto">Agosto</a>
+
+        <a class="rounded-0 text-start btn btn-secondary col-md-3 col-xs-6 mes" href="?mes=Setembro">Setembro</a>
+        <a class="rounded-0 text-start btn btn-secondary col-md-3 col-xs-6 mes" href="?mes=Outubro">Outubro</a>
+        <a class="rounded-0 text-start btn btn-secondary col-md-3 col-xs-6 mes" href="?mes=Novembro">Novembro</a>
+        <a class="rounded-0 text-start btn btn-secondary col-md-3 col-xs-6 mes" href="?mes=Dezembro">Dezembro</a>
+      </div>
+      <br class="no-print">
+      <div class="row no-print " id="lista_meses_grupo">
+        <a class="rounded-0 text-start btn btn-secondary col-md-3 col-xs-6 mes" href="?mes=Q1">Quadrimestre 1</a>
+        <a class="rounded-0 text-start btn btn-secondary col-md-3 col-xs-6 mes" href="?mes=Q2">Quadrimestre 2</a>
+        <a class="rounded-0 text-start btn btn-secondary col-md-3 col-xs-6 mes" href="?mes=Q3">Quadrimestre 3</a>
+        <a class="rounded-0 text-start btn btn-secondary col-md-3 col-xs-6 mes" href="?mes=AT">Ano todo</a>
+      </div>
+      <br class="no-print">
+
+      <div class="row no-print" id="lista_equipes_espacador">
+      </div>
+      <br class="no-print">
+
+      <div class="list-group no-print " id="lista_cidades">
+        
+      </div>
+</div>
+
+</div>
+<script>
+
+
+
+const urlParams = new URLSearchParams(window.location.search);
+
+if (urlParams.get("mes") == null) {
+  window.location.href += (window.location.href.includes("?")&&"&"||"?")+"mes=AT"
+}
+
+const data = {
+  "BERIZAL - Fevereiro" : ["Traumatologista bucomaxilofacial",2,"Total",2],
+  "BERIZAL - Março" : ["Periodontista",2,"Total",2],
+  "BERIZAL - Abril" : ["Estomatologista",1,"Total",1],
+  "BERIZAL - Maio" : ["Periodontista",1,"Total",1],
+  "BERIZAL - Junho" : ["Endodontista",1,"Traumatologista bucomaxilofacial",2,"Total",3],
+  "BERIZAL - Julho" : ["Endodontista",1,"Traumatologista bucomaxilofacial",1,"Total",2],
+  "BERIZAL - Agosto" : ["Periodontista",1,"Traumatologista bucomaxilofacial",1,"Total",2],
+  "BERIZAL - Setembro" : ["Periodontista",1,"Total",1],
+  "CURRAL DE DENTRO - Junho" : ["Traumatologista bucomaxilofacial",2,"Total",2],
+  "CURRAL DE DENTRO - Julho" : ["Estomatologista",1,"Total",1],
+  "CURRAL DE DENTRO - Agosto" : ["Traumatologista bucomaxilofacial",1,"Total",1],
+  "INDAIABIRA - Fevereiro" : ["Periodontista",1,"Total",1],
+  "INDAIABIRA - Março" : ["Endodontista",1,"Traumatologista bucomaxilofacial",1,"Total",2],
+  "INDAIABIRA - Abril" : ["Traumatologista bucomaxilofacial",1,"Total",1],
+  "INDAIABIRA - Maio" : ["Endodontista",2,"Periodontista",2,"Traumatologista bucomaxilofacial",1,"Total",5],
+  "INDAIABIRA - Junho" : ["Endodontista",1,"Total",1],
+  "INDAIABIRA - Julho" : ["Traumatologista bucomaxilofacial",1,"Total",1],
+  "INDAIABIRA - Agosto" : ["Periodontista",1,"Traumatologista bucomaxilofacial",2,"Total",3],
+  "INDAIABIRA - Setembro" : ["Traumatologista bucomaxilofacial",1,"Total",1],
+  "NINHEIRA - Fevereiro" : ["Endodontista",1,"Traumatologista bucomaxilofacial",2,"Total",3],
+  "NINHEIRA - Março" : ["Endodontista",2,"Odontologia para pacientes com necessidades especiais",2,"Periodontista",2,"Total",6],
+  "NINHEIRA - Abril" : ["Traumatologista bucomaxilofacial",1,"Total",1],
+  "NINHEIRA - Maio" : ["Traumatologista bucomaxilofacial",4,"Total",4],
+  "NINHEIRA - Junho" : ["Endodontista",3,"Traumatologista bucomaxilofacial",1,"Total",4],
+  "NINHEIRA - Julho" : ["Odontologia para pacientes com necessidades especiais",1,"Traumatologista bucomaxilofacial",1,"Total",2],
+  "NINHEIRA - Agosto" : ["Traumatologista bucomaxilofacial",1,"Total",1],
+  "NINHEIRA - Setembro" : ["Endodontista",1,"Total",1],
+  "VARGEM GRANDE - Fevereiro" : ["Periodontista",2,"Traumatologista bucomaxilofacial",1,"Total",3],
+  "VARGEM GRANDE - Março" : ["Periodontista",1,"Total",1],
+  "VARGEM GRANDE - Abril" : ["Endodontista",1,"Traumatologista bucomaxilofacial",1,"Total",2],
+  "VARGEM GRANDE - Maio" : ["Endodontista",1,"Traumatologista bucomaxilofacial",1,"Total",2],
+  "VARGEM GRANDE - Julho" : ["Traumatologista bucomaxilofacial",1,"Total",1],
+  "VARGEM GRANDE - Agosto" : ["Endodontista",3,"Periodontista",1,"Traumatologista bucomaxilofacial",1,"Total",5],
+  "VARGEM GRANDE - Setembro" : ["Endodontista",1,"Traumatologista bucomaxilofacial",1,"Total",2],
+  "cidades": ["BERIZAL","CURRAL DE DENTRO","INDAIABIRA","NINHEIRA","VARGEM GRANDE"]
+}
+
+let meses = [];
+
+switch (urlParams.get("mes")){
+  case 'Q1':
+    meses = ["Janeiro","Fevereiro","Março","Abril"];
+    break;
+  case 'Q2':
+    meses = ["Maio","Junho","Julho","Agosto"];
+    break;
+  case 'Q3':
+    meses = ["Setembro","Outubro","Novembro","Dezembro"];
+    break;
+  case 'AT':
+    meses = ["Janeiro","Fevereiro","Março","Abril",
+             "Maio","Junho","Julho","Agosto",
+             "Setembro","Outubro","Novembro","Dezembro"];
+    break;
+  default: 
+    meses = [urlParams.get("mes")];
+}
+
+let cidades = [];
+
+const lista_cidades = document.getElementById("lista_cidades");
+
+for (const [cidade, dados] of Object.entries(data)) {
+  if (urlParams.get("cidades") != null) break;
+  if (cidade == "cidades") continue;
+
+  let nome_cidade = cidade.split(" - ")[0];
+  let mes = cidade.split(" - ")[1];
+
+  if (meses.includes(mes) && cidades[nome_cidade] == null) {
+    lista_cidades.innerHTML += '<a class="list-group-item list-group-item-action" href="?mes='+urlParams.get("mes")+"&cidade="+nome_cidade+'">'+nome_cidade+'</a>'
+    cidades[nome_cidade] = true;
+  }
+}
+
+lista_cidades.innerHTML += '<a class="list-group-item list-group-item-action" href="?mes='+urlParams.get("mes")+"&cidade=todas\">Todas as cidades</a>"
+
+for (let botao of document.getElementsByClassName("mes")) {
+  let text = botao.textContent;
+
+  text = text == "Quadrimestre 1" ? "Q1" : text;
+  text = text == "Quadrimestre 2" ? "Q2" : text;
+  text = text == "Quadrimestre 3" ? "Q3" : text;
+  text = text == "Ano todo" ? "AT" : text;
+
+  const urlParams = new URLSearchParams(window.location.search);
+  if (urlParams.get("mes") == text) {
+    botao.className = "rounded-0 text-start btn btn-primary col-md-3 col-xs-6 mes";
+  }
+}
+
+if (urlParams.get("cidade") != null) {
+  document.getElementById("lista_cidades").remove();
+  document.getElementById("lista_meses").remove();
+  document.getElementById("lista_meses_grupo").remove();
+}
+
+if (urlParams.get("cidade") == null) {
+  document.getElementById("nil").remove();
+}
+
+document.getElementById("tabelas").innerHTML += "<h4>Absenteísmo - Secretaria Municipal de Taiobeiras <span class='no-print' onclick='window.print();'> - <a href=\"#\">Imprimir</a></span></h4><br><center><b>Centro Especialidades Odontológicas - Por especialidade</b></center><br>";
+
+
+for (const [cidade, dados] of Object.entries(data)) {
+  let nome_cidade = cidade.split(" - ")[0];
+  let mes = cidade.split(" - ")[1];
+
+
+  if (meses.includes(mes)) {
+    if (nome_cidade == urlParams.get("cidade") || urlParams.get("cidade") == "todas") {
+      let source = `<table class="table table-striped" style="page-break-inside: avoid;"><tbody>`;
+      source += `<th colspan="3" class="align-middle">${cidade}</th>`;
+
+      for (var i = 0; i < dados.length; i = i+2) {
+        let especialidade = dados[i];
+        let quantidade = dados[i+1];
+
+        especialidade = especialidade == "Total" && "<b>"+especialidade+"</b>" || especialidade;
+
+        source += `<tr><td>${especialidade}</td><td class="text-end">${quantidade}</td></tr>`;
+
+      }
+
+       source += "</tbody></table><br>"
+
+       document.getElementById("tabelas").innerHTML += source;
+    }
+  }
+
+  
+}
+
+</script>
+</body></html>
+
