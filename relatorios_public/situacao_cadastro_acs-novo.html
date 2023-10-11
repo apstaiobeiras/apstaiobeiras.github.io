@@ -1,0 +1,617 @@
+<!DOCTYPE html><html lang="pt_BR"><head>
+  <style>
+  @media print
+  {    
+      .no-print, .no-print *
+      {
+          display: none !important;
+      }
+  }
+  </style>
+        <meta charset="utf8"/><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"/><title>Relatório da situação de Cadastros</title><meta name="generator" content="lua-wpp"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/></head><body><nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark" style="height: 3rem;"><div class="container-fluid"><a class="navbar-brand" href="#">Situação de Cadastros - Atualizado 22/09/2023</a></div></nav><h3><br></h3><div class="container px-4 py-4" id="tabelas_por_acs">
+        <div class="row no-print" id="lista_equipes">
+        </div>
+        <div class="row no-print" id="lista_equipes_espacador">
+        </div>
+  <script>
+  let CadastrosInicial = {
+    "168": ["90","0","0","0","0","44","0","2","94","1","1","42","175","92","93","98","109","0","170","493"],
+    "493": ["33","0","0","0","0","41","0","10","15","11","10","34","212","0","0","0","1","0","184","548"],
+    "615": ["39","0","0","0","0","53","0","10","16","11","10","30","205","2","1","2","1","0","183","552"],
+    "564": ["187","5","0","0","0","42","0","5","28","7","5","117","213","195","201","218","227","0","159","484"],
+    "1128": ["13","0","0","0","0","44","0","4","12","4","4","58","170","0","1","1","1","0","189","456"],
+    "512": ["24","1","0","0","0","4","0","1","4","1","1","9","43","0","0","0","1","0","51","127"],
+    "550": ["34","0","0","0","0","106","0","68","277","9","3","115","164","129","127","132","153","0","146","432"],
+    "441": ["136","2","0","0","0","49","0","5","7","5","5","12","209","0","0","0","0","0","185","548"],
+    "376": ["113","17","0","0","0","42","0","4","6","4","4","41","212","0","0","1","1","0","176","527"],
+    "1120": ["35","3","0","1","0","46","0","8","31","6","6","120","217","28","30","39","39","0","197","565"],
+    "404": ["45","10","0","0","0","49","0","4","13","2","0","37","141","4","5","6","11","0","152","404"],
+    "756": ["29","4","0","0","1","13","0","4","88","5","0","5","33","5","6","7","12","0","59","153"],
+    "447": ["151","9","0","0","0","45","0","8","23","7","6","137","194","288","311","334","331","0","159","496"],
+    "50": ["76","11","0","0","0","11","0","3","12","3","3","2","61","0","0","0","0","0","74","203"],
+    "433": ["120","0","0","0","0","82","0","6","128","7","6","47","141","33","34","54","39","0","147","397"],
+    "497": ["6","4","0","0","0","43","0","19","28","4","4","34","166","4","5","4","13","0","160","500"],
+    "214": ["86","0","0","0","0","67","0","18","252","18","5","121","186","24","28","34","36","0","177","482"],
+    "513": ["74","6","0","0","0","93","0","7","44","5","5","104","173","37","40","46","51","0","165","493"],
+    "271": ["209","12","0","0","0","58","0","5","31","5","4","42","191","16","16","18","22","0","161","491"],
+    "346": ["93","0","0","0","0","15","0","0","7","0","0","3","67","0","0","0","0","0","73","198"],
+    "804": ["32","1","0","0","0","2","0","1","1","1","1","0","44","0","0","0","0","0","53","131"],
+    "599": ["287","6","0","0","0","55","0","40","23","5","5","23","159","1","4","4","6","0","128","395"],
+    "1005": ["17","4","0","0","0","15","0","0","23","0","0","1","26","0","0","1","1","0","47","112"],
+    "1129": ["52","0","0","0","0","35","0","9","84","11","9","122","208","32","35","33","45","0","196","541"],
+    "8": ["242","4","0","0","0","75","0","7","34","10","5","20","166","1","0","3","4","0","142","391"],
+    "1127": ["44","1","0","0","0","70","0","4","11","6","4","91","161","1","1","3","4","0","164","430"],
+    "456": ["224","12","0","0","0","45","0","9","49","11","9","49","161","63","67","73","79","0","135","389"],
+    "602": ["24","6","1","0","0","72","0","15","148","10","10","8","60","9","10","15","23","0","80","211"],
+    "525": ["135","3","0","0","0","68","0","6","17","6","6","24","150","1","1","3","5","0","165","434"],
+    "654": ["56","2","0","0","0","52","0","3","5","3","3","118","203","1","1","1","1","0","189","520"],
+    "287": ["13","0","0","0","0","9","0","5","12","4","4","7","21","0","0","1","0","0","36","97"],
+    "196": ["20","0","0","0","1","42","0","7","78","6","2","60","175","2","5","4","13","0","170","474"],
+    "515": ["22","5","0","0","0","48","0","6","319","22","5","91","147","26","31","33","46","0","150","433"],
+    "67": ["25","3","0","0","0","50","0","15","61","6","6","53","140","31","39","43","49","0","148","414"],
+    "581": ["70","3","0","0","0","37","0","3","16","2","2","3","201","1","1","1","2","0","191","520"],
+    "194": ["46","2","0","0","2","65","0","9","192","17","5","115","152","27","35","49","73","0","145","404"],
+    "1134": ["17","1","1","0","1","33","0","128","49","5","2","54","184","49","62","55","68","0","180","497"],
+    "219": ["168","9","0","0","0","54","0","4","12","4","4","23","153","10","12","5","11","0","139","372"],
+    "120": ["119","3","0","0","1","58","0","4","44","4","3","24","126","11","13","14","15","0","149","383"],
+    "1184": ["206","9","0","0","0","134","1","12","283","21","8","136","223","65","66","74","113","0","209","594"],
+    "1141": ["10","0","0","0","0","5","0","2","15","0","0","0","23","0","0","0","0","0","42","86"],
+    "802": ["156","3","0","0","0","117","0","4","18","5","4","56","158","1","1","0","0","0","152","447"],
+    "801": ["42","6","0","0","0","52","0","3","88","4","3","135","223","5","5","7","10","0","205","547"],
+    "374": ["28","2","0","0","0","36","0","2","98","3","2","53","157","1","3","3","8","0","169","397"],
+    "1124": ["17","0","0","0","0","13","0","1","11","1","1","1","22","2","3","3","5","0","35","87"],
+    "170": ["62","12","0","0","0","42","0","6","13","7","6","90","161","7","8","7","6","0","164","439"],
+    "499": ["122","5","0","0","0","56","0","4","12","4","4","2","185","0","0","1","1","0","171","492"],
+    "1173": ["18","0","0","0","0","16","0","5","61","3","3","17","43","5","5","6","8","0","56","140"],
+    "207": ["240","16","0","0","0","75","0","6","8","2","2","22","207","0","0","1","3","0","184","523"],
+    "624": ["15","4","0","1","1","103","0","112","54","6","1","32","157","15","19","25","38","0","155","433"],
+    "73": ["33","3","0","0","0","22","0","2","13","2","2","3","42","0","0","0","2","0","61","153"],
+    "389": ["162","1","0","0","0","62","0","1","2","1","1","27","171","0","0","0","0","0","167","455"],
+    "315": ["172","2","0","0","0","40","0","3","4","3","3","16","120","0","0","0","0","0","123","338"],
+    "1234": ["18","0","0","0","0","6","0","2","3","2","2","1","20","0","1","2","2","0","18","59"],
+    "247": ["28","3","0","0","0","119","0","18","46","9","3","63","180","65","76","77","85","0","157","484"],
+    "452": ["15","0","0","0","0","9","0","10","14","1","1","0","43","0","1","2","3","0","52","130"],
+    "439": ["175","3","0","0","0","63","0","0","10","1","0","4","169","0","0","0","0","0","158","464"],
+    "254": ["184","2","0","1","0","66","0","4","8","2","1","21","143","2","2","1","10","0","142","351"],
+    "355": ["32","0","0","0","0","16","0","2","7","1","1","10","33","0","0","0","1","0","42","102"],
+    "78": ["30","10","0","0","0","39","0","5","44","3","1","84","186","35","50","59","60","0","190","465"],
+    "1123": ["127","5","0","0","0","44","0","1","38","0","0","26","165","6","7","7","10","0","151","418"],
+    "209": ["97","11","0","0","1","64","0","4","8","4","4","41","153","1","1","61","61","0","142","398"],
+    "1126": ["123","0","0","0","0","73","0","3","9","2","2","1","133","1","1","1","1","0","134","370"],
+    "528": ["65","1","0","0","0","34","0","12","14","13","12","9","219","0","0","3","3","0","184","542"],
+    "301": ["199","14","0","0","0","64","0","6","21","7","5","34","211","1","1","2","1","0","193","537"],
+    "540": ["91","5","0","0","0","21","0","2","5","3","2","37","193","0","0","3","4","0","155","456"],
+    "1121": ["9","0","0","0","0","54","0","8","267","9","6","107","167","40","43","62","91","0","171","457"],
+    "743": ["39","1","0","0","0","52","0","4","7","3","3","15","139","0","0","0","1","0","165","416"],
+    "590": ["44","0","0","2","2","70","0","7","190","8","7","89","177","10","10","17","20","0","168","477"],
+    "548": ["170","13","0","0","0","40","0","10","64","10","10","110","197","4","5","13","20","0","166","507"],
+    "621": ["27","6","0","0","0","52","0","3","11","3","2","26","131","0","0","1","2","0","145","388"],
+    "446": ["83","3","0","0","0","21","0","2","10","1","1","6","121","0","0","0","0","0","123","318"],
+    "492": ["15","0","0","0","0","55","0","58","114","38","37","44","78","109","116","125","126","0","102","257"],
+    "317": ["245","6","0","0","0","17","0","3","4","2","2","0","154","0","0","0","0","0","146","432"],
+    "31": ["53","0","0","0","0","50","0","2","10","4","2","20","183","0","0","0","0","0","171","490"],
+    "1122": ["156","3","0","0","0","26","0","4","7","5","4","6","133","0","2","0","2","0","135","365"],
+    "637": ["29","1","0","0","0","7","0","6","23","2","1","32","51","1","2","4","3","0","65","171"],
+    "1130": ["177","1","0","0","0","60","0","3","6","3","3","27","156","1","1","1","2","0","143","393"],
+    "481": ["201","1","0","1","0","56","0","2","3","2","2","65","155","1","0","0","0","0","147","459"],
+    "489": ["115","4","0","0","1","14","0","1","5","2","1","12","115","2","1","0","8","0","120","339"],
+    "226": ["138","8","0","0","0","54","0","7","9","9","6","43","176","7","7","10","9","0","159","470"],
+    "484": ["60","2","0","1","0","52","0","11","16","11","11","16","102","1","1","3","2","0","124","319"],
+    "1149": ["43","1","0","0","0","36","0","7","23","6","6","130","243","2","1","2","2","0","189","597"],
+    "1125": ["55","2","0","1","0","28","0","6","8","5","5","36","195","5","5","6","6","0","153","449"],
+    "223": ["141","11","0","1","0","47","1","5","27","6","4","80","210","60","65","106","114","0","159","484"],
+    "1135": ["232","3","0","0","0","63","0","5","18","3","3","33","160","3","3","2","4","0","135","411"]
+  }
+
+  let CadastrosFinal = {
+  "1122": ["109","1","0","0","0","12","0","2","3","2","2","0","102","0","0","0","0","0","112","290"],
+  "492": ["15","0","0","0","0","55","0","55","112","38","36","43","79","108","115","124","125","0","103","260"],
+  "512": ["42","1","0","0","0","4","0","1","4","1","1","9","42","0","0","0","1","0","51","127"],
+  "481": ["201","1","0","1","0","56","0","3","4","3","3","65","155","1","0","0","0","0","147","459"],
+  "209": ["97","11","0","0","1","64","0","6","10","6","6","42","153","1","1","61","61","0","142","398"],
+  "194": ["46","2","0","0","2","65","0","11","193","19","7","115","151","27","35","49","72","0","145","404"],
+  "1234": ["115","3","0","0","0","27","0","1","20","1","1","3","86","1","1","1","1","0","78","237"],
+  "452": ["15","0","0","0","0","9","0","9","13","0","0","0","43","0","1","2","3","0","52","130"],
+  "247": ["29","3","0","0","0","117","0","5","10","3","3","10","180","0","0","2","2","0","156","481"],
+  "564": ["185","5","0","0","0","38","0","4","24","6","4","90","213","141","143","158","163","0","159","482"],
+  "404": ["45","10","0","0","0","49","0","8","17","6","4","26","140","3","4","4","9","0","152","404"],
+  "196": ["21","0","0","0","1","41","0","5","23","6","5","3","174","0","0","0","2","0","169","472"],
+  "599": ["288","8","0","0","0","55","0","40","25","9","8","23","158","1","4","5","7","0","128","396"],
+  "621": ["27","6","0","0","0","52","0","3","7","2","2","6","130","0","0","0","0","0","146","387"],
+  "287": ["18","0","0","0","0","8","0","2","8","0","0","6","27","0","0","1","0","0","37","105"],
+  "528": ["65","1","0","0","0","34","0","6","8","7","6","9","224","0","0","3","3","0","184","546"],
+  "346": ["93","0","0","0","0","15","0","1","7","1","1","2","67","0","0","0","0","0","73","197"],
+  "271": ["209","12","0","0","0","59","0","2","23","3","2","21","189","13","12","15","19","0","159","486"],
+  "456": ["225","12","0","0","0","46","0","7","44","9","7","38","155","60","62","64","67","0","135","373"],
+  "497": ["6","4","0","0","0","43","0","3","3","3","3","2","161","2","1","1","1","0","158","489"],
+  "756": ["29","4","0","0","1","13","0","5","88","7","2","5","32","5","6","7","12","0","59","153"],
+  "1123": ["99","5","0","0","0","30","0","6","29","6","6","10","138","2","4","2","4","0","127","348"],
+  "1130": ["177","1","0","0","0","60","0","5","8","5","5","28","158","1","1","1","2","0","143","393"],
+  "355": ["32","0","0","0","0","16","0","1","4","0","0","0","33","0","0","0","1","0","42","102"],
+  "78": ["30","10","0","1","0","39","0","4","10","3","3","8","183","4","5","6","6","0","190","461"],
+  "1149": ["47","1","0","0","0","39","0","5","21","4","4","127","242","2","1","2","2","0","189","599"],
+  "743": ["42","2","0","0","0","51","0","3","4","3","3","1","139","0","0","0","0","0","166","417"],
+  "801": ["42","6","0","0","0","53","0","10","94","11","10","134","223","4","4","6","10","0","207","551"],
+  "1129": ["51","0","0","0","0","35","0","6","81","8","6","122","210","33","36","34","44","0","196","542"],
+  "226": ["138","8","0","0","0","55","0","9","10","10","8","2","175","5","4","5","6","0","161","472"],
+  "1121": ["9","0","0","0","0","54","0","4","265","5","2","107","167","40","43","62","92","0","172","458"],
+  "1135": ["222","3","0","0","0","65","0","7","20","5","5","24","162","2","2","1","3","0","136","410"],
+  "317": ["258","6","0","0","0","17","0","4","5","4","4","0","152","0","0","0","0","0","144","426"],
+  "1127": ["44","1","0","0","0","70","0","2","9","4","2","95","166","0","0","0","0","0","165","433"],
+  "1126": ["128","0","0","0","0","72","0","4","10","3","3","0","133","0","0","0","0","0","135","377"],
+  "1128": ["17","0","0","0","0","43","0","5","13","5","5","55","174","0","1","1","1","0","190","462"],
+  "219": ["171","9","0","0","0","53","0","4","11","4","4","8","156","5","7","2","6","0","141","376"],
+  "67": ["25","3","0","0","0","51","0","15","61","6","6","53","145","30","38","43","49","0","149","418"],
+  "540": ["90","5","0","0","0","21","0","1","4","2","1","0","188","0","0","0","0","0","154","449"],
+  "170": ["62","12","0","0","0","41","0","7","14","8","7","90","160","7","8","7","6","0","163","438"],
+  "447": ["151","9","0","0","0","45","0","8","23","7","6","120","195","238","260","280","279","0","160","497"],
+  "637": ["29","1","0","0","0","6","0","7","23","2","1","33","52","1","2","4","3","0","65","170"],
+  "315": ["172","2","0","1","0","40","0","8","9","8","8","16","122","0","0","0","0","0","125","340"],
+  "1141": ["10","0","0","0","0","5","0","3","16","1","1","0","23","0","0","0","0","0","42","86"],
+  "804": ["32","1","0","0","0","2","0","2","2","2","2","0","43","0","0","0","0","0","53","131"],
+  "50": ["67","10","0","0","0","9","0","4","12","4","4","1","53","0","0","0","0","0","63","174"],
+  "624": ["15","4","0","1","1","105","0","122","65","19","14","32","155","15","19","25","38","0","158","442"],
+  "389": ["156","1","0","0","0","7","0","1","2","1","1","0","166","0","0","0","0","0","165","444"],
+  "499": ["125","5","0","0","0","57","0","6","14","6","6","0","188","0","0","0","0","0","174","502"],
+  "615": ["39","0","0","0","0","54","0","10","15","11","10","30","206","2","1","3","1","0","184","555"],
+  "802": ["154","2","0","0","0","116","0","6","16","7","6","0","154","0","0","0","0","0","151","443"],
+  "433": ["121","0","0","0","0","81","0","6","49","6","6","7","144","11","10","17","9","0","148","398"],
+  "1173": ["18","0","0","0","0","16","0","5","62","3","3","17","44","5","5","6","8","0","57","142"],
+  "654": ["53","2","0","0","0","50","0","6","8","6","6","115","198","1","1","1","1","0","186","513"],
+  "1120": ["35","3","0","1","0","46","0","5","28","3","3","118","214","29","31","40","40","0","195","562"],
+  "1005": ["17","4","0","0","0","14","0","6","29","6","6","1","24","0","0","1","1","0","45","109"],
+  "207": ["230","14","0","0","0","71","0","2","6","2","2","0","199","0","0","0","1","0","182","511"],
+  "484": ["57","2","0","0","0","51","0","4","5","3","3","1","99","0","0","0","0","0","119","309"],
+  "223": ["142","11","0","1","0","44","1","5","8","6","5","76","212","47","52","92","98","0","158","486"],
+  "8": ["243","4","0","0","0","75","1","4","7","4","4","1","169","0","0","0","0","0","144","395"],
+  "602": ["24","6","1","0","0","72","0","13","148","8","8","8","60","9","10","15","23","0","80","211"],
+  "1184": ["208","9","0","0","0","130","0","8","269","18","5","132","226","64","65","74","110","0","208","591"],
+  "513": ["72","4","0","0","0","93","0","10","47","8","8","103","168","37","40","45","50","0","164","489"],
+  "214": ["86","0","0","0","0","69","0","21","259","20","7","121","189","25","29","36","38","0","181","491"],
+  "73": ["33","3","0","0","0","22","0","0","8","0","0","3","43","0","0","0","2","0","61","153"],
+  "31": ["53","0","0","0","0","51","0","2","11","4","2","2","188","0","0","0","0","0","174","497"],
+  "254": ["184","2","0","1","0","66","0","12","16","10","9","21","141","2","2","1","10","0","142","351"],
+  "120": ["81","2","0","0","1","48","0","6","33","6","5","5","96","7","9","9","10","0","125","307"],
+  "374": ["28","2","0","0","0","36","0","3","97","4","3","52","155","0","3","3","7","0","168","395"],
+  "493": ["33","0","0","0","0","41","0","3","5","3","3","0","215","0","0","0","0","0","183","546"],
+  "550": ["33","0","0","0","0","105","0","69","272","11","5","113","162","126","124","129","150","0","147","432"],
+  "1124": ["19","1","0","0","0","19","0","1","16","1","1","4","30","2","3","3","5","0","42","109"],
+  "301": ["198","14","0","0","0","64","0","4","11","4","3","2","213","0","0","0","0","0","194","541"],
+  "446": ["83","3","0","0","0","22","0","8","16","7","7","6","120","0","0","0","1","0","123","319"],
+  "489": ["117","4","0","0","0","12","0","4","6","5","4","0","115","0","0","0","0","0","118","335"],
+  "439": ["172","2","0","0","0","8","0","7","9","8","7","0","166","0","0","0","0","0","159","465"],
+  "1125": ["59","2","0","1","0","28","0","3","6","2","2","28","195","5","5","6","6","0","153","449"],
+  "525": ["136","3","0","0","0","68","0","4","9","4","4","3","153","0","0","0","0","0","167","437"],
+  "376": ["117","17","0","0","0","42","0","4","6","4","4","0","217","0","0","0","0","0","179","536"],
+  "581": ["70","3","0","0","0","37","0","3","6","3","3","0","202","0","0","0","0","0","191","521"],
+  "548": ["170","13","0","0","0","40","0","11","64","11","11","106","199","4","5","13","19","0","167","508"],
+  "590": ["41","0","0","2","2","69","0","6","188","7","6","87","174","10","10","18","20","0","168","472"],
+  "168": ["89","0","0","0","0","42","0","3","76","3","3","33","172","79","80","84","95","0","169","489"],
+  "441": ["136","2","0","0","0","49","0","8","10","8","8","12","210","1","1","1","1","0","185","549"],
+  "1134": ["17","1","1","0","1","33","0","118","56","12","9","51","184","38","49","44","55","0","180","499"],
+  "515": ["22","5","0","0","0","48","0","6","318","22","5","92","147","25","30","32","45","0","150","433"]
+}
+  
+  let listagem_acs = {
+    "271": ["MARLANE DA SILVA SANTOS","HARMONIA","01"],
+    "404": ["SOLANGE FRANCISCA DE SOUZA","VIDA","01"],
+    "590": ["LEISIANE ALVES RIBEIRO","MAIS SAUDE","01"],
+    "346": ["ELIETE MARIA DE OLIVEIRA GOMES","ESPETACULAR","01"],
+    "301": ["CERLIOS MARQUES DOS SANTOS","UNIAO","01"],
+    "315": ["DAYANE SOARES MENDES SANTOS","PROGRESSO","01"],
+    "433": ["JULIANA FERREIRA DA SILVA","HUMANIZAR","01"],
+    "1120": ["RAYANNE CHAVES MOREIRA","ESPERANÇA","01"],
+    "1128": ["JOSSIVANIA D' ANGELIS COSTA","CAMINHO","01"],
+    "481": ["MARTA PEREIRA DE OLIVEIRA","VIDA E SAUDE","01"],
+    "512": ["JOSIANE FREITAS PEREIRA SANTOS","COMUNIDADES RURAIS","01"],
+    "446": ["DARCIELIA EURIDES DOS SANTOS","LIBERDADE","01"],
+    "499": ["JUSSELY SOARES DE SOUZA","ACOLHER","01"],
+    "78": ["GEYSA MINELY SOUZA","RENASCER","01"],
+    "441": ["MAGDA ROSA DOS SANTOS","VIVER","01"],
+    "376": ["WANESSA MOREIRA DE SOUZA","HARMONIA","02"],
+    "317": ["NORMA TRANCOSO VIANA","HUMANIZAR","02"],
+    "439": ["CLECIVANIA RODRIGUES DE OLIVEIRA","VIDA E SAUDE","02"],
+    "374": ["GREICIELE DO CARMO DE JESUS","CAMINHO","02"],
+    "497": ["PATRICIA CALDEIRA DOS SANTOS","RENASCER","02"],
+    "492": ["JAAZIEL MOREIRA SANTOS","COMUNIDADES RURAIS","02"],
+    "550": ["CLEIDIANE DOS SANTOS MEIRELES","MAIS SAUDE","02"],
+    "637": ["OZANIA ALVES MOREIRA","ESPETACULAR","02"],
+    "1130": ["ANELISA MARIA DO NASCIMENTO","PROGRESSO","02"],
+    "31": ["KATIANA FERREIRA","VIDA","02"],
+    "209": ["SONIA BISPO DE ALMEIDA","LIBERDADE","02"],
+    "654": ["LAURY MADALENA DA ROCHA","ESPERANÇA","02"],
+    "214": ["ALMERINDA DE OLIVEIRA SANTOS","ACOLHER","02"],
+    "615": ["MICAELY PEREIRA ALVES","VIVER","02"],
+    "223": ["ALICE DOS SANTOS NETA","UNIAO","02"],
+    "515": ["IVANILDE MARIA DO NASCIMENTO","ACOLHER","03"],
+    "1173": ["DEUSDELIA PEREIRA DOS SANTOS","COMUNIDADES RURAIS","03"],
+    "599": ["FELIPE LOPES SANTOS","PROGRESSO","03"],
+    "525": ["NAGILA MARIA DOS SANTOS","VIDA E SAUDE","03"],
+    "1134": ["ALLICY SANTOS LEAO","RENASCER","03"],
+    "1127": ["KEILA DOS SANTOS SOUSA","CAMINHO","03"],
+    "540": ["KAMILA MARIA PEREIRA","HARMONIA","03"],
+    "528": ["CLEIDE MAIRY TORRES DE SOUZA","VIVER","03"],
+    "1121": ["CHRISTIAN PEREIRA DOS SANTOS","ESPERANÇA","03"],
+    "548": ["GEISIANE CARVALHO","UNIAO","03"],
+    "8": ["CELMA DOS SANTOS","LIBERDADE","03"],
+    "194": ["ELAINE GONCALVES NUNES SANTOS","MAIS SAUDE","03"],
+    "489": ["ALINE DE JESUS SILVA","HUMANIZAR","03"],
+    "355": ["ELISAMA ALVES COSTA","ESPETACULAR","03"],
+    "170": ["GISLENE FERREIRA BARBOSA","VIDA","03"],
+    "801": ["ANGELICA PEREIRA DE OLIVEIRA","CAMINHO","04"],
+    "743": ["ILCA ANTUNIS DA SILVA","VIDA","04"],
+    "1005": ["GREICE NERES COSTA","COMUNIDADES RURAIS","04"],
+    "493": ["ELIANE PEREIRA FREITAS","VIVER","04"],
+    "1126": ["KELY CRISTINA RODRIGUES ARAúJO","HUMANIZAR","04"],
+    "1149": ["LIVIA KAMILLY SOARES DOS SANTOS","ESPERANÇA","04"],
+    "226": ["GEISSIANE MARQUES FERREIRA","HARMONIA","04"],
+    "120": ["SHEILA DARLEN MENDES SOUZA","ESPETACULAR","04"],
+    "168": ["THAIS ROSA DE ALMEIDA SILVA","ACOLHER","04"],
+    "247": ["RONICLEIA DIAS ROCHA","RENASCER","04"],
+    "207": ["ELIANA MARIA SANTOS DE OLIVEIRA","VIDA E SAUDE","04"],
+    "447": ["MARTA BARBOSA DE OLIVEIRA","UNIAO","04"],
+    "254": ["IRANI MENDES ALVES OLIVEIRA","PROGRESSO","04"],
+    "456": ["DAIANE ALVES","LIBERDADE","04"],
+    "513": ["IRIS TANIA TEIXEIRA ALVES","MAIS SAUDE","04"],
+    "1129": ["DENIZ CAROLINE PEREIRA MARTINS","CAMINHO","05"],
+    "1123": ["MIKAELY CRISTINA SOUZA","ESPETACULAR","05"],
+    "452": ["ROSA RODRIGUES DE SOUZA","COMUNIDADES RURAIS","05"],
+    "484": ["ELISENE DE JESUS SOUZA","HUMANIZAR","05"],
+    "1184": ["CINTIA MELGES DE OLIVEIRA COSTA","MAIS SAUDE","05"],
+    "581": ["JESSICA ANA DE JESUS","VIVER","05"],
+    "1125": ["JEYSLANE MENDES DE OLIVEIRA","HARMONIA","05"],
+    "389": ["LUCIENE FERNANDES COSTA","VIDA E SAUDE","05"],
+    "1135": ["LUANA RODRIGUES DE OLIVEIRA","LIBERDADE","05"],
+    "564": ["MAISA OLIVEIRA BARBOSA","UNIAO","05"],
+    "624": ["PATRICIA ONOFRE DA CRUZ","RENASCER","05"],
+    "621": ["IVANI MENDES DE DEUS CHAGAS","VIDA","05"],
+    "219": ["GISELE OLIVEIRA SANTOS","PROGRESSO","05"],
+    "802": ["DARLENE MARIA PEREIRA","HUMANIZAR","06"],
+    "196": ["JOSELANE MENDES TEIXEIRA","RENASCER","06"],
+    "1122": ["KEYTIANE DA SILVA","ESPETACULAR","06"],
+    "1124": ["KATIANA ANDRADE SENA","COMUNIDADES RURAIS","06"],
+    "67": ["LUZINETE APARECIDA OLIVEIRA MEIRELES","RENASCER","07"],
+    "287": ["ALCY MENDES","ESPETACULAR","07"],
+    "602": ["DAYANE DE OLIVEIRA SILVA","COMUNIDADES RURAIS","07"],
+    "50": ["ZENILDA FIRMO DE OLIVEIRA","ESPETACULAR","08"],
+    "756": ["NELCI RAMOS CORREIA","COMUNIDADES RURAIS","08"],
+    "73": ["ANANIVA ALVES DOS SANTOS","COMUNIDADES RURAIS","09"],
+    "1141": ["NATALIA COSTA DE SOUZA","ESPETACULAR","09"],
+    "804": ["JUNIA DOS SANTOS PEREIRA","COMUNIDADES RURAIS","10"],
+    "1234": ["MIRIAN DIAS MOREIRA ALVES","ESPETACULAR","10"]
+  }
+  
+  function sortByThirdProperty(data) {
+    // Convert the input object into an array of key-value pairs
+    const dataArray = Object.entries(data);
+  
+    // Sort the array based on the third property (index 2 of each value)
+    dataArray.sort((a, b) => {
+      const aValue = parseInt(a[1][2]);
+      const bValue = parseInt(b[1][2]);
+  
+      if (aValue < bValue) {
+        return -1;
+      } else if (aValue > bValue) {
+        return 1;
+      } else {
+        return 0;
+      }
+    });
+  
+    // Create an array of objects from the sorted key-value pairs
+    const sortedArray = dataArray.map(([key, value]) => ({
+      id: key,
+      name: value[0],
+      category: value[1],
+      property3: value[2],
+    }));
+  
+    return sortedArray;
+  }
+  
+  const sortedListagem = sortByThirdProperty(listagem_acs);
+  
+  const createPageBreak = () => {
+      const tdLabel = document.createElement('div');
+      tdLabel.style = "page-break-before: always;";
+      tdLabel.className = 'page-break';
+      return tdLabel;
+    };
+  const tabelaContainer = document.getElementById('tabelas_por_acs');
+  //tabelaContainer.appendChild(createPageBreak());
+  
+  const urlParams = new URLSearchParams(window.location.search);
+  
+  const Equipes = [];
+  
+  for (const acs of sortedListagem) {
+      if (Equipes[acs.category] == undefined) {
+        Equipes[acs.category] = true
+        Equipes.push(acs.category);
+      }
+  }
+  
+  Equipes.sort();
+  
+  for (const equipe of Equipes) {
+      let link_equipe = document.createElement("a");
+      link_equipe .className = 'rounded-0 text-start btn btn-secondary col-md-3 col-xs-6';
+  
+      link_equipe .textContent = equipe;
+      link_equipe.href="?equipe="+equipe;
+  
+      if (urlParams.get("equipe") == equipe) {
+        link_equipe .className = 'rounded-0 text-start btn btn-primary col-md-3 col-xs-6';
+      }
+  
+      document.getElementById('lista_equipes').appendChild(link_equipe);
+  }
+  
+  document.getElementById('lista_equipes_espacador').appendChild(document.createElement("br"));
+  document.getElementById('lista_equipes_espacador').appendChild(document.createElement("br"));
+  document.getElementById('lista_equipes_espacador').appendChild(document.createElement("br"));
+  
+  for (const acs of sortedListagem) {
+      const cod_acs = acs.id
+  
+      const nome_acs = acs.name;
+      const equipe = acs.category;
+      const micro_area = acs.property3;
+  
+      if (urlParams.get("equipe") == equipe) {
+          const titulo = micro_area+" - "+nome_acs;
+  
+  
+          const tabela = document.createElement('table');
+          tabela.classList="table table-bordered";
+  
+          const corpo_tabela = document.createElement('tbody');
+  
+          const cabecalho_tabela = document.createElement('tr');
+          cabecalho_tabela.classList="align-middle";
+
+          const tdNome = document.createElement('td');
+          tdNome.innerHTML="<b>"+titulo+"</b>";
+
+          const tdQI = document.createElement('td');
+          tdQI.colSpan="2";
+          tdQI.innerHTML="<b>Quadrimestre Inicial</b>";
+
+          const tdQS = document.createElement('td');
+          tdQS.colSpan="2";
+          tdQS.innerHTML="<b>Quadrimestre Atual</b>";
+
+          const tdVariacao = document.createElement('td');
+          tdVariacao.innerHTML="<b>Variação</b>";
+
+          cabecalho_tabela.appendChild(tdNome);
+          cabecalho_tabela.appendChild(tdQI);
+          cabecalho_tabela.appendChild(tdQS);
+          cabecalho_tabela.appendChild(tdVariacao);
+
+          corpo_tabela.appendChild(cabecalho_tabela);
+  
+          const createTdElement = (label, indice,total_cadastros,mulher_em_idade_fertil) => {
+              total_cadastros = total_cadastros || 19;
+              mulher_em_idade_fertil = mulher_em_idade_fertil || 12;
+              
+              const total_cadastros_QI = CadastrosInicial[cod_acs][total_cadastros];
+              const total_cadastros_QS = CadastrosFinal[cod_acs][total_cadastros];
+
+              const QI_valor = CadastrosInicial[cod_acs][indice];
+              const QS_valor = CadastrosFinal[cod_acs][indice];
+
+              const tdLabel = document.createElement('td');
+              tdLabel.textContent = label;
+
+              //-----------------------------------------------------------------------------------------------------------------------------------
+            
+              const tdValueQI = document.createElement('td');
+              tdValueQI.className = 'text-end';
+              tdValueQI.textContent = QI_valor;
+  
+              const tdPercentualQI = document.createElement('td');
+              tdPercentualQI.className = 'text-end';
+              tdPercentualQI.textContent = ((parseInt(QI_valor)/parseInt(total_cadastros_QI))*100).toFixed(2);
+  
+              if ('Gestante com Não Informado' == label) {
+                tdPercentualQI.textContent = ((parseInt(QI_valor)/parseInt(CadastrosInicial[cod_acs][mulher_em_idade_fertil]))*100).toFixed(2);
+              }
+
+              let percentualQI = tdPercentualQI.textContent *1;
+  
+              tdPercentualQI.textContent = tdPercentualQI.textContent+"%";
+              tdPercentualQI.textContent = tdPercentualQI.textContent.replace("0%","%");
+              tdPercentualQI.textContent = tdPercentualQI.textContent.replace(".0%","%");
+              tdPercentualQI.textContent = tdPercentualQI.textContent == "100%"?"":tdPercentualQI.textContent;
+
+              //-----------------------------------------------------------------------------------------------------------------------------------
+
+              const tdValueQS = document.createElement('td');
+              tdValueQS.className = 'text-end';
+              tdValueQS.textContent = QS_valor;
+  
+              const tdPercentualQS = document.createElement('td');
+              tdPercentualQS.className = 'text-end';
+              tdPercentualQS.textContent = ((parseInt(QS_valor)/parseInt(total_cadastros_QS))*100).toFixed(2);
+  
+              if ('Gestante com Não Informado' == label) {
+                tdPercentualQS.textContent = ((parseInt(QS_valor)/parseInt(CadastrosFinal[cod_acs][mulher_em_idade_fertil]))*100).toFixed(2);
+              }
+
+              let percentualQS = tdPercentualQS.textContent*1;
+  
+              tdPercentualQS.textContent = tdPercentualQS.textContent+"%";
+              tdPercentualQS.textContent = tdPercentualQS.textContent.replace("0%","%");
+              tdPercentualQS.textContent = tdPercentualQS.textContent.replace(".0%","%");
+              tdPercentualQS.textContent = tdPercentualQS.textContent == "100%"?"":tdPercentualQS.textContent;
+
+              //-----------------------------------------------------------------------------------------------------------------------------------
+
+              const percentual = (percentualQS-percentualQI).toFixed(2)
+
+              const trVariacao = document.createElement('td');
+              trVariacao.className = 'text-end '+(percentual<=0?"table-success":"table-danger");
+              trVariacao.textContent = (percentual>0?" +"+percentual:" -"+percentual*-1)+"%";
+              trVariacao.textContent = percentual == 0 ? "0%" : trVariacao.textContent;
+
+              trVariacao.className = percentual == 0 ? "text-end " : trVariacao.className;
+              trVariacao.className = label == "Possui NIS" ? "text-end " : trVariacao.className;
+              
+
+              if (percentual == 0 && percentualQI > 0) {
+                trVariacao.className = 'text-end table-danger';
+              }
+
+              
+            
+              const tr = document.createElement('tr');
+              tr.appendChild(tdLabel);
+              tr.appendChild(tdValueQI);
+              tr.appendChild(tdPercentualQI);
+              tr.appendChild(tdValueQS);
+              tr.appendChild(tdPercentualQS);
+              tr.appendChild(trVariacao);
+
+              if (label == "Total Cadastros") {
+                trVariacao.className = 'text-end ';
+                tdValueQI.colSpan = 2;
+                tdValueQS.colSpan = 2;
+
+                tdPercentualQI.remove();
+                tdPercentualQS.remove();
+              }
+
+              tr.className = (percentualQS+percentualQI == 0?"table-success":"");
+            
+              return tr;
+            };
+  
+            const createEmptyTrElement = () => {
+              const tdLabel = document.createElement('td');
+              tdLabel.innerHTML = "&nbsp;";
+            
+              const tdValue = document.createElement('td');
+              tdValue.className = 'text-end';
+              tdValue.textContent = "";
+  
+              const tdPercentual = document.createElement('td');
+              tdPercentual.className = 'text-end';
+              tdPercentual.textContent = ""
+  
+              const tr = document.createElement('tr');
+              tr.appendChild(tdLabel);
+              tr.appendChild(tdValue);
+              tr.appendChild(tdPercentual);
+            
+              return tr;
+            };
+
+          //const cadastros = Cadastros[cod_acs];
+  
+          const total_cadastros = 19;
+          const possui_nis = 0;
+          const nis_invalido = 1;
+  
+          const nome_invalido = 2;
+          const nome_mae_invalido = 3;
+          const nome_pai_invalido = 4;
+          const pre_cadastro_rn = 6;
+  
+          const falta_pai = 5;
+          const questionario_esus_incompleto = 10;
+  
+          const telefone_invalido_ou_faltando = 7;
+          const cpf_invalido_ou_faltando = 8;
+          const cns_invalido_ou_faltando = 9;
+  
+          const gestante_nao_informado = 11;
+          const mulher_em_idade_fertil = 12;
+          const hipertenso_nao_informado = 13;
+          const diabetico_nao_informado = 14;
+          const esta_acamado_nao_informado = 15;
+          const esta_domiciliado_nao_informado = 16;
+          const tem_deficiencia_nao_informado = 17;
+            
+          const total_cadastros_tr = createTdElement('Total Cadastros', total_cadastros);
+          const possui_nis_tr = createTdElement('Possui NIS', possui_nis);
+          const nis_invalido_tr = createTdElement('NIS inválido', nis_invalido);
+          const nome_invalido_tr = createTdElement('Nome inválido', nome_invalido);
+          const nome_mae_invalido_tr = createTdElement('Nome da Mãe inválido', nome_mae_invalido);
+          const nome_pai_invalido_tr = createTdElement('Nome do Pai inválido', nome_pai_invalido);
+          const pre_cadastro_rn_tr = createTdElement('Pré-Cadastro RN', pre_cadastro_rn);
+          const falta_pai_tr = createTdElement('Falta Pai', falta_pai);
+          const questionario_esus_incompleto_tr = createTdElement('Questionário eSUS incompleto', questionario_esus_incompleto);
+          const telefone_invalido_ou_faltando_tr = createTdElement('Telefone inválido ou faltando', telefone_invalido_ou_faltando);
+          const cpf_invalido_ou_faltando_tr = createTdElement('CPF inválido ou faltando', cpf_invalido_ou_faltando);
+          const cns_invalido_ou_faltando_tr = createTdElement('CNS inválido ou faltando', cns_invalido_ou_faltando);
+          const gestante_nao_informado_tr = createTdElement('Gestante com Não Informado', gestante_nao_informado);
+          const hipertenso_nao_informado_tr = createTdElement('Hipertenso com Não Informado', hipertenso_nao_informado);
+          const diabetico_nao_informado_tr = createTdElement('Diabético com Não Informado', diabetico_nao_informado);
+          const esta_acamado_nao_informado_tr = createTdElement('Está Acamado com Não Informado', esta_acamado_nao_informado);
+          const esta_domiciliado_nao_informado_tr = createTdElement('Está Domiciliado com Não Informado', esta_domiciliado_nao_informado);
+          const tem_deficiencia_nao_informado_tr = createTdElement('Tem Deficiência com Não Informado', tem_deficiencia_nao_informado);
+            
+          // ... (continuar com a criação das outras linhas, se necessário)
+          
+          // Adicione as linhas à tabela
+  
+          corpo_tabela.appendChild(total_cadastros_tr);
+          corpo_tabela.appendChild(possui_nis_tr);
+          corpo_tabela.appendChild(nis_invalido_tr);
+          corpo_tabela.appendChild(createEmptyTrElement());
+  
+          corpo_tabela.appendChild(nome_invalido_tr);
+          corpo_tabela.appendChild(nome_mae_invalido_tr);
+          corpo_tabela.appendChild(nome_pai_invalido_tr);
+          corpo_tabela.appendChild(pre_cadastro_rn_tr);
+          corpo_tabela.appendChild(createEmptyTrElement());
+  
+          corpo_tabela.appendChild(falta_pai_tr);
+          corpo_tabela.appendChild(questionario_esus_incompleto_tr);
+          corpo_tabela.appendChild(createEmptyTrElement());
+  
+          corpo_tabela.appendChild(telefone_invalido_ou_faltando_tr);
+          corpo_tabela.appendChild(cpf_invalido_ou_faltando_tr);
+          corpo_tabela.appendChild(cns_invalido_ou_faltando_tr);
+          corpo_tabela.appendChild(createEmptyTrElement());
+  
+          corpo_tabela.appendChild(gestante_nao_informado_tr);
+          corpo_tabela.appendChild(hipertenso_nao_informado_tr);
+          corpo_tabela.appendChild(diabetico_nao_informado_tr);
+          corpo_tabela.appendChild(esta_acamado_nao_informado_tr);
+          corpo_tabela.appendChild(esta_domiciliado_nao_informado_tr);
+          corpo_tabela.appendChild(tem_deficiencia_nao_informado_tr);
+          
+          // ... (continuar com a adição das outras linhas à tabela, se necessário)
+          
+          // Adicione o corpo da tabela ao elemento de tabela
+          tabela.appendChild(corpo_tabela);
+          
+          // Agora você pode anexar a tabela ao DOM onde você deseja exibi-la
+          // Por exemplo, se você quiser adicioná-la a um elemento com id "tabela-container":
+          const tabelaContainer = document.getElementById('tabelas_por_acs');
+          if (micro_area!="01") {
+              tabelaContainer.appendChild(document.createElement("br"));
+              tabelaContainer.appendChild(document.createElement("br"));
+              tabelaContainer.appendChild(document.createElement("br"));
+          }
+          tabelaContainer.appendChild(tabela);
+          tabelaContainer.appendChild(createPageBreak());
+      }
+  }
+  
+  const pageBreakElements = document.querySelectorAll(".page-break");
+  
+  // Step 2: Check if there are any elements with the class "page-break"
+  if (pageBreakElements.length > 0) {
+    // Step 3: Remove the last element with the class "page-break"
+    const lastPageBreakElement = pageBreakElements[pageBreakElements.length - 1];
+    lastPageBreakElement.parentNode.removeChild(lastPageBreakElement);
+  } else {
+    console.log("No elements with the class 'page-break' found.");
+  }
+  </script>
+  
+  </div></body></html>
