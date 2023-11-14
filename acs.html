@@ -1,0 +1,298 @@
+<!DOCTYPE html><html lang="pt_BR"><head><meta charset="utf8"/><title>Perfil do profissional</title><style>        /* Estilo da barra de navegação */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333; /* Cor de fundo da barra de navegação */
+            color: #fff; /* Cor do texto da barra de navegação */
+            padding: 10px 0;
+        }
+        
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+        }
+        
+        /* Adicione margem ao corpo para evitar que o conteúdo fique oculto sob a barra de navegação */
+        body {
+            margin-top: 60px; /* Ajuste conforme necessário com base na altura da sua barra de navegação */
+        }
+
+        tr:hover {
+            background: #DFE2E5!important;
+            cursor: pointer!important;
+        }
+
+        tr:pressed {
+            background: #9FA1A3!important;
+        }
+      </style><meta name="generator" content="lua-wpp"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar"><a><span id="micro">00</span> - <span id="profissional">Nome do Agente Comuitário de Saúde</span></a></div><h3>Relatórios</h3><table><tr onclick="window.location.href = 'relatorio-producao-acs.html?cod='+(new URLSearchParams(window.location.search)).get('cod')"><td><img src="assets/img/producao.jpg" width="96"/></td><td><b>Produção</b><br>Veja o consolidado da sua produção no quadrimestre atual</td></tr><tr onclick="window.location.href = 'em-construcao.html?cod='+(new URLSearchParams(window.location.search)).get('cod')"><td><img src="assets/img/situacao-cadastros.png" width="96"/></td><td><b>Situação dos cadastros</b><br>Veja uma lista descritiva dos seus cadastros detalhando os problemas</td></tr><tr onclick="window.location.href = 'em-construcao.html?cod='+(new URLSearchParams(window.location.search)).get('cod')"><td><img src="assets/img/historico.png" width="96"/></td><td><b>Histórico</b><br>Seu histório de produção ao longo do ano</td></tr></table></body><script>        const lista_dos_profissionais = {
+            "271": ["MARLANE DA SILVA SANTOS","HARMONIA","01"],
+            "404": ["SOLANGE FRANCISCA DE SOUZA","VIDA","01"],
+            "590": ["LEISIANE ALVES RIBEIRO","MAIS SAUDE","01"],
+            "346": ["ELIETE MARIA DE OLIVEIRA GOMES","ESPETACULAR","01"],
+            "301": ["CERLIOS MARQUES DOS SANTOS","UNIAO","01"],
+            "315": ["DAYANE SOARES MENDES SANTOS","PROGRESSO","01"],
+            "433": ["JULIANA FERREIRA DA SILVA","HUMANIZAR","01"],
+            "1120": ["RAYANNE CHAVES MOREIRA","ESPERANÇA","01"],
+            "1128": ["JOSSIVANIA D' ANGELIS COSTA","CAMINHO","01"],
+            "481": ["MARTA PEREIRA DE OLIVEIRA","VIDA E SAUDE","01"],
+            "512": ["JOSIANE FREITAS PEREIRA SANTOS","COMUNIDADES RURAIS","01"],
+            "446": ["DARCIELIA EURIDES DOS SANTOS","LIBERDADE","01"],
+            "499": ["JUSSELY SOARES DE SOUZA","ACOLHER","01"],
+            "78": ["GEYSA MINELY SOUZA","RENASCER","01"],
+            "441": ["MAGDA ROSA DOS SANTOS","VIVER","01"],
+            "376": ["WANESSA MOREIRA DE SOUZA","HARMONIA","02"],
+            "317": ["NORMA TRANCOSO VIANA","HUMANIZAR","02"],
+            "439": ["CLECIVANIA RODRIGUES DE OLIVEIRA","VIDA E SAUDE","02"],
+            "374": ["GREICIELE DO CARMO DE JESUS","CAMINHO","02"],
+            "497": ["PATRICIA CALDEIRA DOS SANTOS","RENASCER","02"],
+            "492": ["JAAZIEL MOREIRA SANTOS","COMUNIDADES RURAIS","02"],
+            "550": ["CLEIDIANE DOS SANTOS MEIRELES","MAIS SAUDE","02"],
+            "637": ["OZANIA ALVES MOREIRA","ESPETACULAR","02"],
+            "1130": ["ANELISA MARIA DO NASCIMENTO","PROGRESSO","02"],
+            "31": ["KATIANA FERREIRA","VIDA","02"],
+            "209": ["SONIA BISPO DE ALMEIDA","LIBERDADE","02"],
+            "654": ["LAURY MADALENA DA ROCHA","ESPERANÇA","02"],
+            "214": ["ALMERINDA DE OLIVEIRA SANTOS","ACOLHER","02"],
+            "615": ["MICAELY PEREIRA ALVES","VIVER","02"],
+            "223": ["ALICE DOS SANTOS NETA","UNIAO","02"],
+            "515": ["IVANILDE MARIA DO NASCIMENTO","ACOLHER","03"],
+            "1173": ["DEUSDELIA PEREIRA DOS SANTOS","COMUNIDADES RURAIS","03"],
+            "599": ["FELIPE LOPES SANTOS","PROGRESSO","03"],
+            "525": ["NAGILA MARIA DOS SANTOS","VIDA E SAUDE","03"],
+            "1134": ["ALLICY SANTOS LEAO","RENASCER","03"],
+            "1127": ["KEILA DOS SANTOS SOUSA","CAMINHO","03"],
+            "540": ["KAMILA MARIA PEREIRA","HARMONIA","03"],
+            "528": ["CLEIDE MAIRY TORRES DE SOUZA","VIVER","03"],
+            "1121": ["CHRISTIAN PEREIRA DOS SANTOS","ESPERANÇA","03"],
+            "548": ["GEISIANE CARVALHO","UNIAO","03"],
+            "8": ["CELMA DOS SANTOS","LIBERDADE","03"],
+            "194": ["ELAINE GONCALVES NUNES SANTOS","MAIS SAUDE","03"],
+            "489": ["ALINE DE JESUS SILVA","HUMANIZAR","03"],
+            "355": ["ELISAMA ALVES COSTA","ESPETACULAR","03"],
+            "170": ["GISLENE FERREIRA BARBOSA","VIDA","03"],
+            "801": ["ANGELICA PEREIRA DE OLIVEIRA","CAMINHO","04"],
+            "743": ["ILCA ANTUNIS DA SILVA","VIDA","04"],
+            "1005": ["GREICE NERES COSTA","COMUNIDADES RURAIS","04"],
+            "493": ["ELIANE PEREIRA FREITAS","VIVER","04"],
+            "1126": ["KELY CRISTINA RODRIGUES ARAúJO","HUMANIZAR","04"],
+            "1149": ["LIVIA KAMILLY SOARES DOS SANTOS","ESPERANÇA","04"],
+            "226": ["GEISSIANE MARQUES FERREIRA","HARMONIA","04"],
+            "120": ["SHEILA DARLEN MENDES SOUZA","ESPETACULAR","04"],
+            "168": ["THAIS ROSA DE ALMEIDA SILVA","ACOLHER","04"],
+            "247": ["RONICLEIA DIAS ROCHA","RENASCER","04"],
+            "207": ["ELIANA MARIA SANTOS DE OLIVEIRA","VIDA E SAUDE","04"],
+            "447": ["MARTA BARBOSA DE OLIVEIRA","UNIAO","04"],
+            "254": ["IRANI MENDES ALVES OLIVEIRA","PROGRESSO","04"],
+            "456": ["DAIANE ALVES","LIBERDADE","04"],
+            "513": ["IRIS TANIA TEIXEIRA ALVES","MAIS SAUDE","04"],
+            "1129": ["DENIZ CAROLINE PEREIRA MARTINS","CAMINHO","05"],
+            "1123": ["MIKAELY CRISTINA SOUZA","ESPETACULAR","05"],
+            "452": ["ROSA RODRIGUES DE SOUZA","COMUNIDADES RURAIS","05"],
+            "484": ["ELISENE DE JESUS SOUZA","HUMANIZAR","05"],
+            "1184": ["CINTIA MELGES DE OLIVEIRA COSTA","MAIS SAUDE","05"],
+            "581": ["JESSICA ANA DE JESUS","VIVER","05"],
+            "1125": ["JEYSLANE MENDES DE OLIVEIRA","HARMONIA","05"],
+            "389": ["LUCIENE FERNANDES COSTA","VIDA E SAUDE","05"],
+            "1135": ["LUANA RODRIGUES DE OLIVEIRA","LIBERDADE","05"],
+            "564": ["MAISA OLIVEIRA BARBOSA","UNIAO","05"],
+            "624": ["PATRICIA ONOFRE DA CRUZ","RENASCER","05"],
+            "621": ["IVANI MENDES DE DEUS CHAGAS","VIDA","05"],
+            "219": ["GISELE OLIVEIRA SANTOS","PROGRESSO","05"],
+            "802": ["DARLENE MARIA PEREIRA","HUMANIZAR","06"],
+            "196": ["JOSELANE MENDES TEIXEIRA","RENASCER","06"],
+            "1122": ["KEYTIANE DA SILVA","ESPETACULAR","06"],
+            "1124": ["KATIANA ANDRADE SENA","COMUNIDADES RURAIS","06"],
+            "67": ["LUZINETE APARECIDA OLIVEIRA MEIRELES","RENASCER","07"],
+            "287": ["ALCY MENDES","ESPETACULAR","07"],
+            "602": ["DAYANE DE OLIVEIRA SILVA","COMUNIDADES RURAIS","07"],
+            "50": ["ZENILDA FIRMO DE OLIVEIRA","ESPETACULAR","08"],
+            "756": ["NELCI RAMOS CORREIA","COMUNIDADES RURAIS","08"],
+            "73": ["ANANIVA ALVES DOS SANTOS","COMUNIDADES RURAIS","09"],
+            "1141": ["NATALIA COSTA DE SOUZA","ESPETACULAR","09"],
+            "804": ["JUNIA DOS SANTOS PEREIRA","COMUNIDADES RURAIS","10"],
+            "1234": ["MIRIAN DIAS MOREIRA ALVES","ESPETACULAR","10"]
+        }
+          
+    </script><script>      
+    const token = (new URLSearchParams(window.location.search)).get('cod');
+
+    let cod_profissional = parseInt(token, 36);
+
+    // Cabeçalho
+
+    document.getElementById("micro").textContent = lista_dos_profissionais[cod_profissional][2];
+    document.getElementById("profissional").textContent = lista_dos_profissionais[cod_profissional][0];
+
+    // Sumario das visitas
+
+    let cobertura_total = 0;
+
+    let i = -1;
+    for (let visitas_mes of visitas_realizadas){
+        i+=1; if (!visitas_mes) continue;  if (!visitas_mes[cod_profissional]) continue;
+
+        let familias            = visitas_mes[cod_profissional][4];
+        let visitas             = visitas_mes[cod_profissional][7];
+        let cobertura           = Math.round(visitas_mes[cod_profissional][9].replace(",",".")*100);
+        let georreferenciamento = Math.round(visitas_mes[cod_profissional][8].replace(",",".")*100);
+        let ausencias           = Math.round(visitas_mes[cod_profissional][10].replace(",",".")*100);
+        let resgate             = visitas_mes[cod_profissional][11];
+
+        cobertura_total = cobertura;
+    
+        document.getElementById("familia_mes_"+i).textContent             = familias;
+        document.getElementById("visitas_mes_"+i).textContent             = visitas;
+        document.getElementById("cobertura_mes_"+i).textContent           = `${cobertura}%`;
+        document.getElementById("georreferenciamento_mes_"+i).textContent = `${georreferenciamento}%`;
+        document.getElementById("ausencias_mes_"+i).textContent           = `${ausencias}%`;
+        document.getElementById("resgate_ausencias_mes_"+i).textContent   = resgate;
+
+        colore_percentual(document.getElementById("cobertura_mes_"+i),cobertura,100);
+        colore_percentual(document.getElementById("georreferenciamento_mes_"+i),georreferenciamento,100);
+        colore_percentual(document.getElementById("ausencias_mes_"+i),100-ausencias,100);
+    }
+
+    // Situação dos cadastros
+
+    const indicador_cadastro = {
+        possui_nis : 0,
+        nis_invalido : 1,
+        nome_invalido : 2,
+        nome_mae_invalido : 3,
+        nome_pai_invalido : 4,
+        falta_nome_pai : 5,
+        pre_cadastro_rn : 6,
+        telefone_invalido : 7,
+        cpf_invalido : 8,
+        cns_invalido : 9,
+        questionario_esus_incompleto : 10,
+        gestante_nao_informado : 11,
+        mulher_em_idade_fertil : 12,
+        hipertenso_nao_informado : 13,
+        diabetico_nao_informado : 14,
+        acamado_nao_informado : 15,
+        domiciliado_nao_informado : 16,
+        deficiencia_nao_informado : 17,
+        total_familias : 18,
+        total_cadastros : 19
+    }
+
+    for (const [indicador, i] of Object.entries(indicador_cadastro)) {
+        const numeradores = [];
+        const denominadores = [];
+
+        for (const mes of [1,2]) {
+            const numerador = situacao_cadastros[mes][cod_profissional][i];
+
+            let denominador = situacao_cadastros[mes][cod_profissional][indicador_cadastro.total_cadastros];
+            denominador = indicador == "gestante_nao_informado"? indicador_cadastro.mulher_em_idade_fertil : denominador;
+
+            numeradores[mes] = numerador;
+            denominadores[mes] = situacao_cadastros[mes][cod_profissional][indicador_cadastro.total_cadastros];
+        
+            const percentual = (numerador/denominador*100).toFixed(2);
+
+            if (document.getElementById(`absoluto_${indicador}_mes_${mes}`)) {
+                document.getElementById(`absoluto_${indicador}_mes_${mes}`).textContent = numerador;
+            }
+
+            if (document.getElementById(`percentual_${indicador}_mes_${mes}`)) {
+                document.getElementById(`percentual_${indicador}_mes_${mes}`).textContent = (percentual+"%").replace("0%","%").replace(".0%","%");
+
+                document.getElementById(`percentual_${indicador}_mes_${mes}`).style.backgroundColor = percentual == "0.00" ? "#B4E2CE" : "#F6CCCC";
+            }
+        }
+
+        if (numeradores[2] == numeradores[1]&&numeradores[2]==0.00) {
+            document.getElementById(`absoluto_${indicador}_mes_2`).remove();
+            document.getElementById(`percentual_${indicador}_mes_1`).remove();
+            document.getElementById(`percentual_${indicador}_mes_2`).remove();
+            document.getElementById(`variacao_${indicador}`).remove();
+
+            document.getElementById(`absoluto_${indicador}_mes_1`).colSpan=6;
+            document.getElementById(`absoluto_${indicador}_mes_1`).textContent="Sem inconsistencias no quadrimestre";
+            document.getElementById(`absoluto_${indicador}_mes_1`).classList="left";
+            document.getElementById(`absoluto_${indicador}_mes_1`).style.backgroundColor = "#9fc5e8";
+            continue;
+        }
+
+        const variacao_percentual = ((numeradores[2]*denominadores[2])-(numeradores[1]*denominadores[1]))/(numeradores[1]*denominadores[1])*100
+
+        if (document.getElementById(`variacao_${indicador}`)) {
+            document.getElementById(`variacao_${indicador}`).textContent = (variacao_percentual.toFixed(2)+"%").replace("0%","%").replace(".0%","%");;    
+        }
+
+        if (variacao_percentual == -100 && document.getElementById(`variacao_${indicador}`)) {
+            document.getElementById(`variacao_${indicador}`).style.backgroundColor = "#9fc5e8";
+            document.getElementById(`variacao_${indicador}`).textContent = "Resolveu todas";
+            continue;
+        }
+
+        if (variacao_percentual < 0 && document.getElementById(`variacao_${indicador}`)) {
+            document.getElementById(`variacao_${indicador}`).style.backgroundColor = "#B4E2CE";
+            continue;
+        }
+
+        if (document.getElementById(`variacao_${indicador}`)) {
+            document.getElementById(`variacao_${indicador}`).style.backgroundColor = "#F6CCCC";
+            if (document.getElementById(`variacao_${indicador}`).textContent == "Infinity%") {
+                document.getElementById(`variacao_${indicador}`).textContent = "100%";
+            }
+            continue;
+        }
+    }
+
+    // Mapa de cobertura
+
+    i = 1;
+    
+    let linha_familia_visitada = document.createElement("tr");
+    for (let familia of familias_visitadas[cod_profissional]) {
+        if (familia.length>1) {
+            let celula = document.createElement("td");
+            celula.textContent = familia.substring(1);
+
+            if (familia.charAt(0) == "w" && cobertura_total == 100) {
+                familia = familia.replace("w","y");
+            }
+
+            switch (familia.charAt(0)) {
+                case 'w':
+                  celula.style="background-color:#ea9999;"; // vermelho
+                break;
+
+                case 'x':
+                  celula.style="background-color:#f7cca0;"; // laranja
+                break;
+
+                case 'y':
+                  celula.style="background-color:#b6d7a8;"; // verde
+                break;
+
+                case 'z':
+                  celula.style="background-color:#9fc5e8;"; // azul
+                break;
+            }
+              
+
+            linha_familia_visitada.appendChild(celula);
+            i += 1;
+        }
+
+        if (i == 11) {
+            document.getElementById("familias_visitadas").appendChild(linha_familia_visitada);
+            linha_familia_visitada = document.createElement("tr");
+
+            i = 1;
+        }
+    }
+
+    document.getElementById("familias_visitadas").appendChild(linha_familia_visitada);
+
+
+
+    </script></html>
