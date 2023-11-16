@@ -366,6 +366,10 @@
             cpf += document.getElementById(i+"").value;
         }
 
+        if (cpf == "227026") {
+            window.location.href=`solicitacoes.html`
+        }
+
         if (listaProfissionais[cpf]) {
             const pagina = profissao2pagina[listaProfissionais[cpf][1] ];
             const cod = listaProfissionais[cpf][0];
