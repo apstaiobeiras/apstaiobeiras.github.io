@@ -83,13 +83,21 @@
             padding: 0px  !important; 
           } 
         }
-      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body no-padding-and-margin"><div class="navbar no-print" onclick="window.location.href = 'acs.html?cod='+(new URLSearchParams(window.location.search)).get('cod')"><a><span id="micro">00</span> - <span id="profissional">Nome do Agente Comuitário de Saúde</span></a></div><div class="no-print"><h1>Instrutivo</h1><p>Os cadastros marcados com X inicam que há uma inconsistência no campo assinalado, cada campo possui um tipo de inconsistência, são eles:</p><table><tr><td><b>Coluna</b></td><td><b>Tipo de inconsistência</b></td></tr><tr><td>Nome, Pai e Mãe</td><td>São cadastros com abreviações, espaços extras e/ou caracteres inválidos nos campos "Usuário", "Nome da mãe" e "Nome do pai" respectivamente<br>
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body no-padding-and-margin"><div onclick="window.location.href = 'acs.html?cod='+(new URLSearchParams(window.location.search)).get('cod')+'&token='+(new Date()).setSeconds((new Date()).getSeconds()+30).toString(36)" class="navbar no-print"><a><span id="micro">00</span> - <span id="profissional">Nome do Agente Comuitário de Saúde</span></a></div><div class="no-print"><h1>Instrutivo</h1><p>Os cadastros marcados com X inicam que há uma inconsistência no campo assinalado, cada campo possui um tipo de inconsistência, são eles:</p><table><tr><td><b>Coluna</b></td><td><b>Tipo de inconsistência</b></td></tr><tr><td>Nome, Pai e Mãe</td><td>São cadastros com abreviações, espaços extras e/ou caracteres inválidos nos campos "Usuário", "Nome da mãe" e "Nome do pai" respectivamente<br>
                 No caso do nome do pai o nome escrito pode estar com textos como "Sem informação"</td></tr><tr><td>CNS, CPF e NIS</td><td>São cadastros com números inválidos de CNS, CPF e NIS nos respectivos campos<br>
               Erros comuns incluem CNS iniciando em 2 e quantidade errada de dígitos<br>
               Os campos CPF e CNS eles são de preeenchimento obrigatório</td></tr><tr><td>Gestante</td><td>São cadastros de mulheres que, no questionário e-SUS o campo "Está gestante?" não está preenchido,
               esse campo é de preenchimento obrigatório para todas as mulheres com idade entre 8 e 61 anos</td></tr><tr><td>Hipertenso, Diabético, Acamado, Domiciliado e Deficiência</td><td>São cadastros cujos campos: "Tem hipertensão arterial?", "Tem diabetes?", "Está acamado?",
               "Está domiciliado?" e "Tem alguma deficiência?" respectivamente, não estão preenchidos no questionário e-SUS</td></tr><tr><td>Telefone</td><td>São cadastros onde o campo "Telefone", possui um valor inválido<br>
-              Caso o digito após o DDD não seja 9 e o número tenha 11 dígitos, ele está sendo listado como inválido, caso seja um número válido, entre em contato com a Atenção Primária na Secretária de saúde</td></tr><tr><td>Ocupação</td><td>Devido a problemas técnicos esse campo foi omitido</td></tr></table><p>Lembre-se de que dados precisos e completos são essenciais para um cadastro eficaz e para fornecer assistência adequada aos pacientes.</p><hr/><p><b>Dica:</b>Clique no número de prontuário para abrir a tela de pesquisa no Vivver</p></div><div id="cadastros"><table id="template"><tr><td><b>Prontuário</b></td><td><b>Nome</b></td><td><b>Mãe</b></td><td><b>Pai</b></td><td><b>CNS</b></td><td><b>CPF</b></td><td><b>NIS</b></td><td><b>Gestante</b></td><td><b>Hipertenso</b></td><td><b>Diabético</b></td><td><b>Acamado</b></td><td><b>Domiciliado</b></td><td><b>Deficiência</b></td><td><b>Telefone</b></td></tr></table></div></body><script>        const lista_dos_profissionais = {
+              Caso o digito após o DDD não seja 9 e o número tenha 11 dígitos, ele está sendo listado como inválido, caso seja um número válido, entre em contato com a Atenção Primária na Secretária de saúde</td></tr><tr><td>Ocupação</td><td>Devido a problemas técnicos esse campo foi omitido</td></tr></table><p>Lembre-se de que dados precisos e completos são essenciais para um cadastro eficaz e para fornecer assistência adequada aos pacientes.</p><hr/><p><b>Dica:</b>Clique no número de prontuário para abrir a tela de pesquisa no Vivver</p></div><div id="cadastros"><table id="template"><tr><td><b>Prontuário</b></td><td><b>Nome</b></td><td><b>Mãe</b></td><td><b>Pai</b></td><td><b>CNS</b></td><td><b>CPF</b></td><td><b>NIS</b></td><td><b>Gestante</b></td><td><b>Hipertenso</b></td><td><b>Diabético</b></td><td><b>Acamado</b></td><td><b>Domiciliado</b></td><td><b>Deficiência</b></td><td><b>Telefone</b></td></tr></table></div></body><script>        const data_atual = (new Date()).getTime();
+
+        if (!(new URLSearchParams(window.location.search)).get('cod')) window.location.href="index.html";
+        if (!(new URLSearchParams(window.location.search)).get('token')) window.location.href="index.html";
+    
+        const cod_profissional = parseInt((new URLSearchParams(window.location.search)).get('cod'), 36);
+        const token = parseInt((new URLSearchParams(window.location.search)).get('token'), 36);
+        if (data_atual>token) window.location.href="index.html";
+    </script><script>        const lista_dos_profissionais = {
             "271": ["MARLANE DA SILVA SANTOS","HARMONIA","01"],
             "404": ["SOLANGE FRANCISCA DE SOUZA","VIDA","01"],
             "590": ["LEISIANE ALVES RIBEIRO","MAIS SAUDE","01"],
@@ -8373,12 +8381,8 @@
             "72133": ["247","","","","","","","","","","","","","","x","114746"]
           }
           
-    </script><script>      
-    const token = (new URLSearchParams(window.location.search)).get('cod');
-
+    </script><script>
     document.getElementsByTagName("body")[0].classList = "container-lg px-3 emy-5 markdown-body no-padding-and-margin";
-
-    let cod_profissional = parseInt(token, 36);
 
     // Cabeçalho
 

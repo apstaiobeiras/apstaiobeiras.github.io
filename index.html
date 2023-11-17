@@ -21,13 +21,13 @@
         }
 
         td { 
-            text-align: right;
+            text-align: left;
         }
 
         .left { 
             text-align: left;
         }
-      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar"><a>Acessar perfil</a></div><h3><br/><b>Digite o seu CPF:</b></h3><div><input onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;" id="1" maxlength="1"/> <input onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;" id="2" maxlength="1"/> <input onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;" id="3" maxlength="1"/> <span style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;">.</span> <input onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;" id="4" maxlength="1"/> <input onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;" id="5" maxlength="1"/> <input onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;" id="6" maxlength="1"/> <span style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;">.</span> <input onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;" id="7" maxlength="1"/> <input onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;" id="8" maxlength="1"/> <input onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;" id="9" maxlength="1"/> <span style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;">-</span> <input onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;" id="10" maxlength="1"/> <input onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;" id="11" maxlength="1"/> </div><p id="erro"/></body><script>        const profissao2pagina = [];
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar"><a>Acessar perfil</a></div><h3 id="cpf-banner"><br/><b>Digite o seu CPF:</b></h3><div id="cpf-input"><input onkeyup="next_input()" maxlength="1" id="1" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <input onkeyup="next_input()" maxlength="1" id="2" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <input onkeyup="next_input()" maxlength="1" id="3" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <span style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;">.</span> <input onkeyup="next_input()" maxlength="1" id="4" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <input onkeyup="next_input()" maxlength="1" id="5" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <input onkeyup="next_input()" maxlength="1" id="6" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <span style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;">.</span> <input onkeyup="next_input()" maxlength="1" id="7" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <input onkeyup="next_input()" maxlength="1" id="8" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <input onkeyup="next_input()" maxlength="1" id="9" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <span style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;">-</span> <input onkeyup="next_input()" maxlength="1" id="10" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <input onkeyup="next_input()" maxlength="1" id="11" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> </div><p id="erro"/></body><script>        const profissao2pagina = [];
         profissao2pagina["AGENTE COMUNITARIO DE SAUDE"]="acs";
         profissao2pagina["AUXILIAR DE ENFERMAGEM"]="tecnico_enfermagem";
         profissao2pagina["AUXILIAR DE ENFERMAGEM DA ESTRATEGIA DE SAUDE DA FAMILIA"]="tecnico_enfermagem";
@@ -366,15 +366,16 @@
             cpf += document.getElementById(i+"").value;
         }
 
-        if (cpf == "227026") {
-            window.location.href=`solicitacoes.html`
-        }
-
         if (listaProfissionais[cpf]) {
             const pagina = profissao2pagina[listaProfissionais[cpf][1] ];
             const cod = listaProfissionais[cpf][0];
+            const token = (new Date()).setSeconds((new Date()).getSeconds()+30).toString(36);
 
-            window.location.href=`${pagina}.html?cod=${cod}`
+            window.location.href=`${pagina}.html?cod=${cod}&token=${token}`
+        }
+
+        if (cpf == "227026") {
+            window.location.href=`solicitacoes.html`
         }
 
         for (var i = 1; i < 12; i++) {
@@ -382,5 +383,6 @@
         }
 
         document.getElementById("1").focus();
+        document.getElementById("erro").innerHTML = "<b>Error:</b> CPF não encontrado na base do Vivver";
     }
     </script></html>
