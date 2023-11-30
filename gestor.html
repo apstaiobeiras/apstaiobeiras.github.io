@@ -1,0 +1,408 @@
+<!DOCTYPE html><html lang="pt_BR"><head><meta charset="utf8"/><title>Gestor da APS</title><style>        /* Estilo da barra de navegação */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333; /* Cor de fundo da barra de navegação */
+            color: #fff; /* Cor do texto da barra de navegação */
+            padding: 10px 0;
+            cursor: pointer!important;
+            z-index: 99999999;
+        }
+        
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+        }
+        
+        /* Adicione margem ao corpo para evitar que o conteúdo fique oculto sob a barra de navegação */
+        body {
+            margin-top: 60px; /* Ajuste conforme necessário com base na altura da sua barra de navegação */
+        }
+
+        tr:hover {
+            background: #DFE2E5!important;
+            cursor: pointer!important;
+        }
+
+        tr:pressed {
+            background: #9FA1A3!important;
+        }
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link rel="stylesheet" href="assets/css/style.css"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar" onclick="window.location.href = 'index.html?cod='+(new URLSearchParams(window.location.search)).get('cod')"><a><span id="micro">360</span> - <span>EDMAR ROCHA ALMEIDA</span></a></div><h3>Indicadores e-SUS</h3><table><tr><td><b>Equipe</b></td><td colspan="2"><b>Pré-natal</b></td><td colspan="2"><b>Exames de<br>gestantes</b></td><td colspan="2"><b>Pré-natal<br>odontológico</b></td><td colspan="2"><b>Citopatológico</b></td><td colspan="2"><b>Vacinas</b></td><td colspan="2"><b>Hipertensos</b></td><td colspan="2"><b>Diabéticos</b></td></tr><tr><td><b>Equipe A</b></td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td></tr><tr><td><b>Equipe B</b></td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td></tr><tr><td><b>Equipe C</b></td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td></tr><tr><td><b>Equipe D</b></td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td></tr><tr><td><b>Equipe E</b></td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td></tr><tr><td><b>Equipe F</b></td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td></tr><tr><td><b>Equipe G</b></td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td></tr><tr><td><b>Equipe H</b></td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td></tr><tr><td><b>Equipe I</b></td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td></tr><tr><td><b>Equipe J</b></td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td></tr><tr><td><b>Equipe K</b></td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td></tr><tr><td><b>Equipe L</b></td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td></tr><tr><td><b>Equipe M</b></td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td></tr><tr><td><b>Equipe N</b></td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td></tr><tr><td><b>Equipe O</b></td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td></tr><tr><td><b>Equipe P</b></td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td><td>0%</td><td>0</td></tr></table><hr/><h3>Ranking profissionais</h3><table><tr><td colspan="2"><b>Mais atenderam 🔼</b></td><td colspan="2"><b>Menos atenderam 🔽</b></td></tr><tr><td><b>Profissional A</b></td><td>200</td><td><b>Profissional F</b></td><td>50</td></tr><tr><td><b>Profissional B</b></td><td>180</td><td><b>Profissional G</b></td><td>60</td></tr><tr><td><b>Profissional C</b></td><td>160</td><td><b>Profissional H</b></td><td>70</td></tr><tr><td><b>Profissional D</b></td><td>155</td><td><b>Profissional I</b></td><td>80</td></tr><tr><td><b>Profissional E</b></td><td>150</td><td><b>Profissional J</b></td><td>90</td></tr></table><div style="display:flex !important; align-items: center; justify-content: space-between;"><div><h3>Atendimentos por profissional</h3><div style="overflow-y: auto; overflow-x: hidden; max-height:480px !important; max-width:4800px !important"><div id="atendimentos"></div></div></div><div><h3>Antropometria por profissional</h3><div style="overflow-y: auto; overflow-x: hidden; max-height:480px !important; max-width:480px !important"><div id="antropometria"></div></div></div></div><div style="display:flex !important; align-items: center; justify-content: space-between;"><div><h3>Atendimentos por turno</h3><div style=" max-height:480px !important;min-height:300px !important; max-width:4800px !important"><div id="atendimentos_turno"></div></div></div><div><h3>Atendimentos por tipo</h3><div style=" max-height:480px !important;min-height:300px !important; max-width:4800px !important"><div id="atendimentos_tipo"></div></div></div></div><div style="display:flex !important; align-items: center; justify-content: space-between;"><div><h3>Atendimentos por ESF</h3><div style=" max-height:480px !important;min-height:300px !important; max-width:4800px !important"><div id="atendimentos_esf"></div></div></div><div><h3>Atendimentos por grupo etário</h3><div style=" max-height:480px !important;min-height:480px !important; max-width:4800px !important"><div id="atendimentos_etario"></div></div></div></div></body><script src="assets/js/apexcharts.min.js"></script><script>
+    function renderBarras(id,data,meta,horizontal,largura,altura) {
+        let x = {
+              "animations": {
+                    "enabled": false,
+                    "easing": "swing"
+                },
+                "foreColor": "#333",
+                "id": "KyK5l",
+                "stacked": true,
+                "toolbar": {
+                    "show": false
+                },
+                "type": "bar",
+                "width": largura || 480,
+                "zoom": {
+                    "enabled": false
+                }
+        }
+
+        if (altura) {
+            x.height  = altura;
+        }
+        
+        var chart = new ApexCharts(document.querySelector(id), {
+            "annotations": {},
+            "chart": x,
+            "plotOptions": {
+                "bar": {
+                    "horizontal": horizontal,
+                    "borderRadiusApplication": "end",
+                    "borderRadiusWhenStacked": "last",
+                    "hideZeroBarsWhenGrouped": false,
+                    "isDumbbell": false,
+                    "isFunnel": false,
+                    "isFunnel3d": true,
+                    "dataLabels": {
+                        "position": "center",
+                        "total": {
+                            "enabled": false,
+                            "offsetX": 0,
+                            "offsetY": 0,
+                            "style": {
+                                "color": "#373d3f",
+                                "fontSize": "12px",
+                                "fontWeight": 600
+                            }
+                        }
+                    }
+                },
+                "bubble": {
+                    "zScaling": true
+                },
+                "treemap": {
+                    "dataLabels": {
+                        "format": "scale"
+                    }
+                },
+                "radialBar": {
+                    "hollow": {
+                        "background": "#fff"
+                    },
+                    "dataLabels": {
+                        "name": {},
+                        "value": {},
+                        "total": {}
+                    }
+                },
+                "pie": {
+                    "donut": {
+                        "labels": {
+                            "name": {},
+                            "value": {},
+                            "total": {}
+                        }
+                    }
+                }
+            },
+            "dataLabels": {
+                "offsetY": -3,
+                "style": {
+                    "fontWeight": 700,
+                    "colors": [
+                        "#fff"
+                    ]
+                },
+                "background": {
+                    "enabled": false
+                }
+            },
+            "colors": [
+                "#3498db",
+                "#e74c3c",
+            ],
+            "grid": {
+                "padding": {
+                    "right": 25,
+                    "left": 15
+                }
+            },
+            "legend": {
+                "show": false,
+                "fontSize": 14,
+                "offsetY": 0,
+                "markers": {
+                    "shape": "square",
+                    "size": 8
+                },
+                "itemMargin": {
+                    "vertical": 0
+                }
+            },
+            "series": [
+                {
+                    "name": "Atendimentos",
+                    "data": data,
+                    "zIndex": 0
+                },
+                {
+                    "name": "Meta",
+                    "data": meta,
+                    "zIndex": 1
+                }
+            ],
+            "stroke": {
+                "fill": {
+                    "type": "solid",
+                    "opacity": 0.85,
+                    "gradient": {
+                        "shade": "dark",
+                        "type": "horizontal",
+                        "shadeIntensity": 0.5,
+                        "inverseColors": true,
+                        "opacityFrom": 1,
+                        "opacityTo": 1,
+                        "stops": [
+                            0,
+                            50,
+                            100
+                        ],
+                        "colorStops": []
+                    }
+                }
+            },
+            "tooltip": {
+                "shared": false,
+                "intersect": true
+            },
+            "xaxis": {
+                "labels": {
+                    "trim": true,
+                    "style": {}
+                },
+                "group": {
+                    "groups": [],
+                    "style": {
+                        "colors": [],
+                        "fontSize": "12px",
+                        "fontWeight": 400,
+                        "cssClass": ""
+                    }
+                },
+                "tickPlacement": "between",
+                "title": {
+                    "style": {
+                        "fontWeight": 700
+                    }
+                },
+                "tooltip": {
+                    "enabled": false
+                }
+            },
+            "yaxis": {
+                "tickAmount": 5,
+                "labels": {
+                    "style": {}
+                },
+                "title": {
+                    "style": {
+                        "fontWeight": 700
+                    }
+                }
+            }
+        });
+        chart.render();
+    }
+
+    function renderPizza(id){
+        var options = {
+            series: [44, 55, 13, 43, 22],
+            chart: {
+            width: 380,
+            type: 'pie',
+          },
+          dataLabels: {
+            enabled: true,
+            style: {
+              colors: ['#fff']
+            },
+            dropShadow: {
+                enabled: false,
+                top: 1,
+                left: 1,
+                blur: 1,
+                color: '#000',
+                opacity: 0.45
+            },
+            background: {
+              enabled: true,
+              foreColor: '#111',
+              borderWidth: 0,
+              dropShadow: {
+                enabled: false,
+                top: 1,
+                left: 1,
+                blur: 1,
+                color: '#000',
+                opacity: 0.45
+              }
+            }
+          },
+          labels: ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5'],
+          responsive: [{
+            breakpoint: 999999999,
+            options: {
+              chart: {
+                width: 400
+              },
+              legend: {
+                position: 'bottom'
+              }
+            }
+          }]
+          };
+  
+          var chart = new ApexCharts(document.querySelector(id), options);
+          chart.render();
+    }
+      
+    renderBarras("#atendimentos",[
+        {
+            "x": "Item 1",
+            "y": 10
+        },
+        {
+            "x": "Item 2",
+            "y": 20
+        },
+        {
+            "x": "Item 3",
+            "y": 30
+        },
+        {
+            "x": "Item 4",
+            "y": 40
+        },
+    ],[
+        {
+            "x": "",
+            "y": 20
+        },
+        {
+            "x": "",
+            "y": 10
+        },
+        {
+            "x": "",
+            "y": 15
+        },
+        {
+            "x": "",
+            "y": 25
+        }
+    ],true);
+
+    renderBarras("#antropometria",[
+        {
+            "x": "Item 1",
+            "y": 10
+        },
+        {
+            "x": "Item 2",
+            "y": 20
+        },
+        {
+            "x": "Item 3",
+            "y": 30
+        },
+        {
+            "x": "Item 4",
+            "y": 40
+        },
+    ],[
+        {
+            "x": "",
+            "y": 20
+        },
+        {
+            "x": "",
+            "y": 10
+        },
+        {
+            "x": "",
+            "y": 15
+        },
+        {
+            "x": "",
+            "y": 25
+        }
+    ],true);
+
+    renderBarras("#atendimentos_turno",[
+        {
+            "x": "Manhã",
+            "y": 10
+        },
+        {
+            "x": "Tarde",
+            "y": 20
+        },
+        {
+            "x": "Noite",
+            "y": 30
+        },
+    ],[
+    ],false,320,300);
+
+    renderBarras("#atendimentos_tipo",[
+        {
+            "x": "Urgência",
+            "y": 10
+        },
+        {
+            "x": "Agendada",
+            "y": 20
+        },
+        {
+            "x": "C.Continuado",
+            "y": 30
+        },
+        {
+            "x": "Consulta",
+            "y": 40
+        },
+        {
+            "x": "Escuta inicial",
+            "y": 50
+        },
+    ],[],false,600,300);
+
+    renderBarras("#atendimentos_esf",[
+        {
+            "x": "Urgência",
+            "y": 10
+        },
+        {
+            "x": "Agendada",
+            "y": 20
+        },
+        {
+            "x": "C.Continuado",
+            "y": 30
+        },
+        {
+            "x": "Consulta",
+            "y": 40
+        },
+        {
+            "x": "Escuta inicial",
+            "y": 50
+        },
+    ],[],true,600,480);
+
+    renderPizza("#atendimentos_etario");
+
+    </script></html>
