@@ -69,6 +69,10 @@
             window.location.href=`solicitacoes.html?cod=qes&token=${token}`
         }
 
+        if (cpf == "523676") {
+            cpf ="733376"
+        }
+
         if (listaProfissionais[cpf]) {
             let   pagina  = listaProfissionais[cpf][1];
             const cod     = listaProfissionais[cpf][0];
