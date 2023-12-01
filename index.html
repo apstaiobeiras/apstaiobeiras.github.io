@@ -73,6 +73,11 @@
             cpf ="733376"
         }
 
+        if (cpf == "995248") {
+            const token   = (new Date()).setSeconds((new Date()).getSeconds()+30).toString(36);
+            window.location.href=`solicitacoes.html?cod=les&token=${token}&unidade=UAPS VEREADOR JOSE SENA&mode=r1`
+        }
+
         if (listaProfissionais[cpf]) {
             let   pagina  = listaProfissionais[cpf][1];
             const cod     = listaProfissionais[cpf][0];
