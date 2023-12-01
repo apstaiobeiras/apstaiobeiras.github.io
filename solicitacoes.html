@@ -27,7 +27,9 @@
         .left { 
             text-align: left;
         }
-      </style><meta name="generator" content="lua-wpp"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar"><a><span id="codigo_profissional">0000</span> - <span id="profissional">Todos os profissionais</span></a></div><h3>Solicitações excluidas - Ano 2023 - Total <span id="total">0</span></h3><div><label>Do dia: <input min="2023-01-01" value="2023-01-01" type="date" id="data_inicial" max="2023-12-31"/></label> <label> até o dia <input min="2023-01-01" value="2023-12-31" type="date" id="data_final" max="2023-12-31"/></label><span id="de"> de </span><select style="max-width: 300px !important;" id="unidade"></select><span id="feitas-por"> feitas por </span><select style="max-width: 300px !important;" id="lista-profissional"></select> <button onclick="filtra()">Filtrar</button></div><br/><table><tbody id="solicitacoes"></tbody></table><br/></body><script src="js/solicitacoes_excluidas.js"></script><script src="js/lista_profissionais_solicitacoes.js"></script><script src="js/lista_unidades_solicitacoes.js"></script><script>        function filtra() {
+      </style><meta name="generator" content="lua-wpp"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><link rel="stylesheet" href="assets/css/style.css"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar"><a><span id="codigo_profissional">0000</span> - <span id="profissional">Todos os profissionais</span></a></div><h3>Solicitações excluidas - Ano 2023 - Total <span id="total">0</span></h3><h5>Atualizado em <span id="atualizacao"/></h5><div><label>Do dia: <input min="2023-01-01" max="2023-12-31" value="2023-01-01" id="data_inicial" type="date"/></label> <label> até o dia <input min="2023-01-01" max="2023-12-31" value="2023-12-31" id="data_final" type="date"/></label><span id="de"> de </span><select id="unidade" style="max-width: 300px !important;"></select><span id="feitas-por"> feitas por </span><select id="lista-profissional" style="max-width: 300px !important;"></select> <button onclick="filtra()">Filtrar</button><div id="x" v="false"/></div><br/><table><tbody id="solicitacoes"></tbody></table><br/></body><script src="js/solicitacoes_excluidas.js"></script><script src="js/lista_profissionais_solicitacoes.js"></script><script src="js/lista_unidades_solicitacoes.js"></script><script>        var x = 2;
+
+        filtra = () => {
             const data_inicial = parseInt(document.getElementById('data_inicial').value.replaceAll('-',''));
             const data_final = parseInt(document.getElementById('data_final').value.replaceAll('-',''));
 
@@ -36,10 +38,12 @@
             let unidade = document.getElementById("unidade").value;
             let profissional = document.getElementById("lista-profissional").value;
 
-            if ((new URLSearchParams(window.location.search)).get('cod')) {
+            if ((new URLSearchParams(window.location.search)).get('cod') && (new URLSearchParams(window.location.search)).get('mode') == null) {
                 profissional = parseInt((new URLSearchParams(window.location.search)).get('cod'), 36);
                 document.getElementById("lista-profissional").value = profissional;
                 document.getElementById("codigo_profissional").textContent = profissional;
+
+                document.getElementById("profissional").textContent = document.getElementById("lista-profissional").options[document.getElementById("lista-profissional").selectedIndex].text
 
                 document.getElementById("unidade").style.display = "none";
                 document.getElementById("lista-profissional").style.display = "none";
@@ -53,13 +57,15 @@
                 let modo = (new URLSearchParams(window.location.search)).get('mode');
 
                 if (modo=="r1") {
-                    profissional = "";
+                    document.getElementById("de").style.display = "none";
+                    document.getElementById("unidade").style.display = "none";
 
                     unidades.pop();
                     unidade = "x";
 
                     let unidade_parametro = (new URLSearchParams(window.location.search)).get('unidade');
                     document.getElementById("profissional").textContent = unidade_parametro;
+                    document.getElementById("codigo_profissional").textContent = profissional;
 
                     for (option of document.getElementById("unidade").children) {
                         let valor = option.value;

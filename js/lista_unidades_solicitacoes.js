@@ -9,7 +9,6 @@ const lista_unidades_solicitacoes = `
 <option value="79">NASF C - UAPS DONA NININHA</option>
 <option value="16">POLICLINICA MUNICIPAL DR SILVIO A MENDES</option>
 <option value="68">POLICLINICA MUNICIPAL VIVA VIDA</option>
-<option value="20">SECRETARIA MUNICIPAL DE SAUDE DE TAIOBEIRAS</option>
 <option value="9">UAPS AGEU ALMEIDA</option>
 <option value="3">UAPS ANTONINO DE ALMEIDA</option>
 <option value="33">UAPS COMUNIDADES RURAIS</option>
