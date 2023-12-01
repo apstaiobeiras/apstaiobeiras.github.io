@@ -70,6 +70,7 @@
         }
 
         if (cpf == "523676") {
+            let token = (new Date()).setSeconds((new Date()).getSeconds()+30).toString(36);
             window.location.href=`gestor?cod=qes&token=${token}`
         }
 
