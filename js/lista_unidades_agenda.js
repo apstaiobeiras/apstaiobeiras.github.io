@@ -1,0 +1,19 @@
+const lista_unidades_solicitacoes = `
+<option value="">Todas as unidades</option>
+<option value="18">CENTRO ESTADUAL DE ATENCAO ESPEC DR SILVIO AMERICANO MENDES</option>
+<option value="9">UAPS AGEU ALMEIDA</option>
+<option value="3">UAPS ANTONINO DE ALMEIDA</option>
+<option value="33">UAPS COMUNIDADES RURAIS</option>
+<option value="4">UAPS DONA NININHA - HARMONIA</option>
+<option value="78">UAPS DONA NININHA - UNIAO</option>
+<option value="2">UAPS ED. FIS. DOUGLAS FREDERICO MIRANDA BATISTA</option>
+<option value="75">UAPS ENFERMARIA MARY TATIANE ANTONIO LOPES - MAIS SAUDE</option>
+<option value="8">UAPS ENFERMEIRA MARY TATIANE ANTUNES LOPES - ACOLHER</option>
+<option value="13">UAPS JOAO DE DEUS SIMOES - VIDA</option>
+<option value="34">UAPS LAGOA GRANDE LAGOA DOURADA</option>
+<option value="7">UAPS MILTON MENDES DA SILVA</option>
+<option value="56">UAPS VEREADOR JOSE SENA - CAMINHO</option>
+<option value="6">UAPS VEREADOR JOSE SENA - ESPERANÇA</option>
+<option value="81">UAPS VEREADOR MANOEL DOS SANTOS SILVA - LIBERDADE</option>
+<option value="10">UAPS VEREADOR MANOEL DOS SANTOS SILVA - PROGRESSO</option>
+`
