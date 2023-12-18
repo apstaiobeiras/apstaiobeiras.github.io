@@ -1,0 +1,153 @@
+<!DOCTYPE html><html lang="pt_BR"><head><meta charset="utf8"/><title>Solicitações Agendadas</title><style>        /* Estilo da barra de navegação */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333; /* Cor de fundo da barra de navegação */
+            color: #fff; /* Cor do texto da barra de navegação */
+            padding: 10px 0;
+            cursor: pointer!important;
+        }
+        
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+        }
+        
+        /* Adicione margem ao corpo para evitar que o conteúdo fique oculto sob a barra de navegação */
+        body {
+            margin-top: 60px; /* Ajuste conforme necessário com base na altura da sua barra de navegação */
+        }
+
+        td { 
+            text-align: right;
+        }
+
+        .left { 
+            text-align: left;
+        }
+      </style><meta name="generator" content="lua-wpp"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><link rel="stylesheet" href="assets/css/style.css"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar" onclick="gotoPage((new URLSearchParams(window.location.search)).get('backlink'))"><a><span id="profissional">Todos os profissionais</span></a></div><h3>Solicitações agendadas - Total <span id="total">0</span></h3><h5>Atualizado em <span id="atualizacao"/></h5><div><label>Do dia: <input min="2023-01-01" max="2023-12-31" value="2023-01-01" type="date" id="data_inicial"/></label> <label> até o dia <input min="2023-01-01" max="2023-12-31" value="2023-12-31" type="date" id="data_final"/></label><span id="de"> de </span><select id="unidade" style="max-width: 300px !important;"></select><button onclick="filtra()">Filtrar</button><div id="x" v="false"/></div><br/><table><tbody id="solicitacoes"></tbody></table><br/></body><script src="js/solicitacoes_agendadas.js"></script><script src="js/lista_profissionais_solicitacoes.js"></script><script src="js/lista_unidades_solicitacoes.js"></script><script src="js/goto.js"></script><script>        let cod_profissional = null;
+        (() => {
+        const data_atual = (new Date()).getTime();
+        
+        if (!(new URLSearchParams(window.location.search)).get('token')) window.location.href="index.html";
+        
+        if ((new URLSearchParams(window.location.search)).get('cod') == "qes") return;
+        
+        const token = parseInt((new URLSearchParams(window.location.search)).get('token'), 36);
+        if (data_atual>token) window.location.href="index.html";
+        
+        if (!(new URLSearchParams(window.location.search)).get('cod')) window.location.href="index.html";
+        cod_profissional = parseInt((new URLSearchParams(window.location.search)).get('cod'), 36);
+        })()
+    </script><script>        var x = 2;
+
+        filtra = () => {
+            const data_inicial = parseInt(document.getElementById('data_inicial').value.replaceAll('-',''));
+            const data_final = parseInt(document.getElementById('data_final').value.replaceAll('-',''));
+
+            document.getElementById("solicitacoes").innerHTML = `
+              <tr>
+                <th>Nº Solititação</th>
+                <th>Prontuário</th>
+                <th>Nome do paciente</th>
+                <th class='left'>Especialidade</th>
+                <th class='left'>Data</th>
+                <th class='left'>Hora</th>
+                <th class='left'>Contato</th>
+                <th class='left'>Local</th>
+            </tr>`;
+    
+            let unidade = document.getElementById("unidade").value;
+            const unidades = [unidade];
+
+
+
+            if ((new URLSearchParams(window.location.search)).get('mode')) {
+                let modo = (new URLSearchParams(window.location.search)).get('mode');
+
+                if (modo=="r1") {
+                    document.getElementById("de").style.display = "none";
+                    document.getElementById("unidade").style.display = "none";
+
+                    unidades.pop();
+                    unidade = "x";
+
+                    let unidade_parametro = (new URLSearchParams(window.location.search)).get('unidade');
+
+                    for (option of document.getElementById("unidade").children) {
+                        let valor = option.value;
+                        let nome = option.textContent.replace("ED.","EDUCADOR")
+                                                     .replace("FIS.","FISICO")
+                                                     .replace("ENFERMARIA MARY ","ENFERMEIRA MARY ")
+                                                     .replace("MARY TATIANE ANTONIO","MARY TATIANE ANTUNES LOPES");
+                        console.log(nome);
+
+                        if (nome.startsWith(unidade_parametro)) {
+                            unidades.push(valor);
+                        }
+                    }
+                }
+            }
+
+            let x = 1;
+            for (var i = 0; i < Solicitacoes_Agendadas.length; i++) {
+                const solicitacao = Solicitacoes_Agendadas[i];
+                const data_solicitacao = parseInt(solicitacao[7]);
+    
+                if (data_solicitacao>data_final||data_solicitacao<data_inicial) continue;
+
+                if (!unidades.includes(solicitacao[9]) && unidade != "") continue;
+
+                console.log(unidades.includes(solicitacao[9]));
+
+
+                const linha = document.createElement("tr");
+    
+                const no_solicitacao = document.createElement("td");
+                const prontuario = document.createElement("td");
+                const nome_paciente = document.createElement("td");
+                const especialidade = document.createElement("td");
+                const data = document.createElement("td");
+                const hora = document.createElement("td");
+                const contato = document.createElement("td");
+                const local = document.createElement("td");
+    
+                no_solicitacao.innerHTML = `<a href="https://www.taiobeiras-mg.vivver.com/amb/solicitacao/solicitacao_procedimento_servico/${solicitacao[0]}" target="_blank">${solicitacao[0]}</a>`;
+                prontuario.innerHTML = `${solicitacao[1]}`;
+                nome_paciente.innerHTML = `${solicitacao[2]}`;
+                especialidade.innerHTML = `${solicitacao[5]}`;
+                data.innerHTML = `${solicitacao[3]}`;
+                hora.innerHTML = `${solicitacao[4]}`;
+                contato.innerHTML = `${solicitacao[6]}`;
+                local.innerHTML = `${solicitacao[8]}`;
+
+                nome_paciente.classList = "left";
+                especialidade.classList = "left";
+                contato.classList = "left";
+                local.classList = "left";
+ 
+                linha.appendChild(no_solicitacao);
+                linha.appendChild(prontuario);
+                linha.appendChild(nome_paciente);
+                linha.appendChild(especialidade);
+                linha.appendChild(data);
+                linha.appendChild(hora);
+                linha.appendChild(contato);
+                linha.appendChild(local);
+    
+                document.getElementById("solicitacoes").appendChild(linha);
+                document.getElementById("total").textContent = x;
+
+                x+=1;
+            }
+        }
+
+        document.getElementById("unidade").innerHTML = lista_unidades_solicitacoes;
+        document.getElementById("profissional").innerHTML = (new URLSearchParams(window.location.search)).get('unidade');
+
+
+        filtra();
+    </script></html>

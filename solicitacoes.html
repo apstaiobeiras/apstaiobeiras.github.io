@@ -7,6 +7,7 @@
             background-color: #333; /* Cor de fundo da barra de navegação */
             color: #fff; /* Cor do texto da barra de navegação */
             padding: 10px 0;
+            cursor: pointer!important;
         }
         
         .navbar a {
@@ -27,7 +28,7 @@
         .left { 
             text-align: left;
         }
-      </style><meta name="generator" content="lua-wpp"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar"><a><span id="codigo_profissional">0000</span> - <span id="profissional">Todos os profissionais</span></a></div><h3>Solicitações excluidas - Ano 2023 - Total <span id="total">0</span></h3><h5>Atualizado em <span id="atualizacao"/></h5><div><label>Do dia: <input type="date" id="data_inicial" max="2023-12-31" value="2023-01-01" min="2023-01-01"/></label> <label> até o dia <input type="date" id="data_final" max="2023-12-31" value="2023-12-31" min="2023-01-01"/></label><span id="de"> de </span><select id="unidade" style="max-width: 300px !important;"></select><span id="feitas-por"> feitas por </span><select id="lista-profissional" style="max-width: 300px !important;"></select> <button onclick="filtra()">Filtrar</button><div id="x" v="false"/></div><br/><table><tbody id="solicitacoes"></tbody></table><br/></body><script src="js/solicitacoes_excluidas.js"></script><script src="js/lista_profissionais_solicitacoes.js"></script><script src="js/lista_unidades_solicitacoes.js"></script><script>        var x = 2;
+      </style><meta name="generator" content="lua-wpp"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><link rel="stylesheet" href="assets/css/style.css"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar" onclick="gotoPage((new URLSearchParams(window.location.search)).get('backlink'))"><a><span id="codigo_profissional">0000</span> - <span id="profissional">Todos os profissionais</span></a></div><h3>Solicitações excluidas - Ano 2023 - Total <span id="total">0</span></h3><h5>Atualizado em <span id="atualizacao"/></h5><div><label>Do dia: <input min="2023-01-01" max="2023-12-31" value="2023-01-01" type="date" id="data_inicial"/></label> <label> até o dia <input min="2023-01-01" max="2023-12-31" value="2023-12-31" type="date" id="data_final"/></label><span id="de"> de </span><select id="unidade" style="max-width: 300px !important;"></select><span id="feitas-por"> feitas por </span><select id="lista-profissional" style="max-width: 300px !important;"></select> <button onclick="filtra()">Filtrar</button><div id="x" v="false"/></div><br/><table><tbody id="solicitacoes"></tbody></table><br/></body><script src="js/solicitacoes_excluidas.js"></script><script src="js/lista_profissionais_solicitacoes.js"></script><script src="js/lista_unidades_solicitacoes.js"></script><script src="js/goto.js"></script><script>        var x = 2;
 
         filtra = () => {
             const data_inicial = parseInt(document.getElementById('data_inicial').value.replaceAll('-',''));

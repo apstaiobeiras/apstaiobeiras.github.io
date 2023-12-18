@@ -27,7 +27,7 @@
         .left { 
             text-align: left;
         }
-      </style><meta name="generator" content="lua-wpp"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar"><a>Acessar perfil</a></div><h3 id="cpf-banner"><br/><b>Digite o seu CPF:</b></h3><div id="cpf-input"><input style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;" maxlength="1" id="1" onkeyup="next_input()"/> <input style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;" maxlength="1" id="2" onkeyup="next_input()"/> <input style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;" maxlength="1" id="3" onkeyup="next_input()"/> <span style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;">.</span> <input style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;" maxlength="1" id="4" onkeyup="next_input()"/> <input style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;" maxlength="1" id="5" onkeyup="next_input()"/> <input style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;" maxlength="1" id="6" onkeyup="next_input()"/> <span style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;">.</span> <input style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;" maxlength="1" id="7" onkeyup="next_input()"/> <input style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;" maxlength="1" id="8" onkeyup="next_input()"/> <input style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;" maxlength="1" id="9" onkeyup="next_input()"/> <span style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;">-</span> <input style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;" maxlength="1" id="10" onkeyup="next_input()"/> <input style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;" maxlength="1" id="11" onkeyup="next_input()"/> </div><p id="erro"/></body><script src="js/lista_profissionais.js"></script><script>
+      </style><meta name="generator" content="lua-wpp"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><link rel="stylesheet" href="assets/css/style.css"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar"><a>Acessar perfil</a></div><h3 id="cpf-banner"><br/><b>Digite o seu CPF:</b></h3><div id="cpf-input"><input id="1" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;" onkeyup="next_input()" maxlength="1"/> <input id="2" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;" onkeyup="next_input()" maxlength="1"/> <input id="3" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;" onkeyup="next_input()" maxlength="1"/> <span style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;">.</span> <input id="4" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;" onkeyup="next_input()" maxlength="1"/> <input id="5" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;" onkeyup="next_input()" maxlength="1"/> <input id="6" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;" onkeyup="next_input()" maxlength="1"/> <span style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;">.</span> <input id="7" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;" onkeyup="next_input()" maxlength="1"/> <input id="8" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;" onkeyup="next_input()" maxlength="1"/> <input id="9" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;" onkeyup="next_input()" maxlength="1"/> <span style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;">-</span> <input id="10" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;" onkeyup="next_input()" maxlength="1"/> <input id="11" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;" onkeyup="next_input()" maxlength="1"/> </div><p id="erro"/></body><script src="js/lista_profissionais.js"></script><script>
     function makeid(length) {
         let result = '';
         const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
@@ -72,10 +72,10 @@
         if (cpf == "523676") {
             cpf ="733376"
         }
-        // Profissional não está no CNES
+        // Recepcionista não está no CNES
         if (cpf == "995248") {
             const token   = (new Date()).setSeconds((new Date()).getSeconds()+30).toString(36);
-            window.location.href=`solicitacoes.html?cod=les&token=${token}&unidade=UAPS VEREADOR JOSE SENA&mode=r1`
+            window.location.href=`recepcao.html?cod=les&token=${token}&unidade=UAPS VEREADOR JOSE SENA&mode=r1`
         }
 
         if (listaProfissionais[cpf]) {
@@ -84,9 +84,9 @@
             const unidade = listaProfissionais[cpf][2];
             const token   = (new Date()).setSeconds((new Date()).getSeconds()+30).toString(36);
 
-            pagina = pagina == "recepcionista.html" ? "solicitacoes.html" : pagina;
-            
-            const modo = pagina == "solicitacoes.html" ? "&mode=r1" : "";
+            pagina = pagina == "recepcionista.html" ? "recepcao.html" : pagina;
+
+            const modo = pagina == "recepcao.html" ? "&mode=r1" : "";
 
             window.location.href=`${pagina}?cod=${cod}&token=${token}&unidade=${unidade}${modo}`
         }
