@@ -83,9 +83,19 @@
             padding: 0px  !important; 
           } 
         }
-      </style><meta name="generator" content="lua-wpp"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><link rel="stylesheet" href="assets/css/style.css"/></head><body class="container-lg px-3 my-5 markdown-body no-padding-and-margin"><div class="navbar no-print" onclick="window.location.href = 'acs.html?cod='+(new URLSearchParams(window.location.search)).get('cod')+'&token='+(new Date()).setSeconds((new Date()).getSeconds()+30).toString(36)"><a><span id="micro">00</span> - <span id="profissional">Nome do Agente Comuitário de Saúde</span></a></div><div class="no-print"><h1>Instrutivo</h1><p>Os cadastros marcados com X inicam que há uma inconsistência no campo assinalado, cada campo possui um tipo de inconsistência, são eles:</p><table><tr><td><b>Coluna</b></td><td><b>Tipo de inconsistência</b></td></tr><tr><td>Nome, Pai e Mãe</td><td>São cadastros com abreviações, espaços extras e/ou caracteres inválidos nos campos "Usuário", "Nome da mãe" e "Nome do pai" respectivamente<br>
+      </style><meta name="generator" content="lua-wpp"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><link rel="stylesheet" href="assets/css/style.css"/></head><body class="container-lg px-3 my-5 markdown-body no-padding-and-margin"><div onclick="window.location.href = 'acs.html?cod='+(new URLSearchParams(window.location.search)).get('cod')+'&token='+(new Date()).setSeconds((new Date()).getSeconds()+30).toString(36)" class="navbar no-print"><a><span id="micro">00</span> - <span id="profissional">Nome do Agente Comuitário de Saúde</span></a></div><div class="no-print"><h1>Instrutivo</h1><p>Os cadastros marcados com X inicam que há uma inconsistência no campo assinalado, cada campo possui um tipo de inconsistência, são eles:</p><table><tr><td><b>Coluna</b></td><td><b>Tipo de inconsistência</b></td></tr><tr><td>Nome, Pai e Mãe</td><td>São cadastros com abreviações, espaços extras e/ou caracteres inválidos nos campos "Usuário", "Nome da mãe" e "Nome do pai" respectivamente<br>
                 No caso do nome do pai o nome escrito pode estar com textos como "Sem informação"</td></tr><tr><td>CNS, CPF e NIS</td><td>São cadastros com números inválidos de CNS, CPF e NIS nos respectivos campos<br>
-              Erros comuns incluem CNS iniciando em 2 e quantidade errada de dígitos<br>
+              Erros comuns incluem: 
+                <ul>
+                  <li>CNS iniciando em 2</li>
+                  <li>Quantidade errada de dígitos</li>
+                  <ul>
+                    <li>CNS deve possuir 15 digitos</li>
+                    <li>CPF deve possuir 11 digitos</li>
+                    <li>CNS deve possuir 11 digitos</li>
+                  </ul>
+                  <li>Pontos, traços e espaços</li>
+                </ul>
               Os campos CPF e CNS eles são de preeenchimento obrigatório</td></tr><tr><td>Gestante</td><td>São cadastros de mulheres que, no questionário e-SUS o campo "Está gestante?" não está preenchido,
               esse campo é de preenchimento obrigatório para todas as mulheres com idade entre 8 e 61 anos</td></tr><tr><td>Hipertenso, Diabético, Acamado, Domiciliado e Deficiência</td><td>São cadastros cujos campos: "Tem hipertensão arterial?", "Tem diabetes?", "Está acamado?",
               "Está domiciliado?" e "Tem alguma deficiência?" respectivamente, não estão preenchidos no questionário e-SUS</td></tr><tr><td>Telefone</td><td>São cadastros onde o campo "Telefone", possui um valor inválido<br>
