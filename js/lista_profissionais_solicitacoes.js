@@ -111,4 +111,5 @@ const lista_profissionais_solicitacoes = `
 <option value="479">VIVIANE ROCHA SILVA</option>
 <option value="1106">YASMIM FERNANDES ALMEIDA LEITE</option>
 <option value="1199">ÉRIKA DAMASCENO RUAS</option>
+<option value="1183">Éricles Willy Machado de Oliveira</option>
 `;
