@@ -39,7 +39,7 @@
             let unidade = document.getElementById("unidade").value;
             let profissional = document.getElementById("lista-profissional").value;
 
-            if ((new URLSearchParams(window.location.search)).get('cod') && (new URLSearchParams(window.location.search)).get('mode') == null) {
+            if ((new URLSearchParams(window.location.search)).get('cod') && (new URLSearchParams(window.location.search)).get('mode') == "null") {
                 profissional = parseInt((new URLSearchParams(window.location.search)).get('cod'), 36);
                 document.getElementById("lista-profissional").value = profissional;
                 document.getElementById("codigo_profissional").textContent = profissional;
