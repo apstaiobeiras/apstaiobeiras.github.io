@@ -93,13 +93,14 @@
             }
 
             let x = 1;
+            let y = 0;
             for (var i = 0; i < Solicitacoes_Agendadas.length; i++) {
                 const solicitacao = Solicitacoes_Agendadas[i];
                 const data_solicitacao = parseInt(solicitacao[7]);
     
                 if (data_solicitacao>data_final||data_solicitacao<data_inicial) continue;
 
-                if (!unidades.includes(solicitacao[9]) && unidade != "") continue;
+                if (!unidades.includes(solicitacao[9]) && unidade != "null") continue;
 
                 console.log(unidades.includes(solicitacao[9]));
 
@@ -142,6 +143,10 @@
                 document.getElementById("total").textContent = x;
 
                 x+=1;
+            }
+
+            if (x == 0) {
+                document.getElementById("unidade").innerHTML = "";
             }
         }
 
