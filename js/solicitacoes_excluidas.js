@@ -1,4 +1,4 @@
-document.getElementById('atualizacao').textContent = '20/12/2023';
+document.getElementById('atualizacao').textContent = '21/12/2023';
 const Solicitacoes_Excluidas = [
   ["34957","796", "4074","2","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>detalhar queixa clínica","20230317","Ultrassonografia ombro "],
   ["37418","818", "354","13","<b>Agendar na Atenção Primaria: </b><br>Solicitação com mais de 2 anos, favor reavaliar queixa e solicitar o exame caso preencha critérios e detalhar quadro clínico para melhor priorização.","20230317","Ultrassonografia ombro "],
@@ -1689,6 +1689,7 @@ const Solicitacoes_Excluidas = [
   ["575408","1037", "11968","7","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Paciente está em uso de insulina em dose otimizada (mais de uma unidade por quilograma de peso)? Favor informar peso da paciente em quilogramas (kg). Paciente não apresenta demais condições clínicas que indicam a necessidade de encaminhamento, segundo Protocolo de Encaminhamento para Endocrinologia CEAE Hiperdia disponível no Portal da Atenção Primária. Me coloco a disposição para discussão do caso. ","20231113","Consulta diabetes alto risco"],
   ["575702","1132", "15982","10","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Sugiro encaminhar com investigação mínima para diagnóstico diferencial. Detalhar melhor o quadro clínico.","20231208","Consulta ortopedista"],
   ["575783","1220", "31811","13","<b>Solicitação Indevida: </b><br>PACIENTES QUE DEMANDEM AVALIAÇÃO CIRURGICA DEVEM SER INSERIDOS EM FILA \"\"AVALIAÇÃO CIRURGICA POLICLÍNICA\"\", CONFORME INFORMATIVO. REALIZADO TROCA DE FILAS.","20231116","Consulta cirurgiao geral"],
+  ["575885","1220", "7878","13","Solicitação Indevida","20231221","Ultrassonografia transvaginal"],
   ["576191","1219", "68276","33","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever resultado do último PCCU com a data da realização.","20231116","Consulta ginecologia policlinica"],
   ["576325","1220", "15288","13","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever resultado do último PCCU com a data da realização.Sugiro aguardar resultado de USG.","20231116","Consulta ginecologia policlinica"],
   ["576590","1220", "14287","13","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Sugiro encaminhar com investigação mínima para diagnóstico diferencial. Detalhar melhor o quadro clínico.","20231208","Consulta ortopedista"],
@@ -1830,6 +1831,7 @@ const Solicitacoes_Excluidas = [
   ["605929","1219", "33415","33","<b>Não Se Enquadra nos Criterios: </b><br>Paciente hipertensa e diabética de alto risco cardiovascular. O acompanhamento nutricional deverá ser realizado no CEAE.","20231205","Avaliaçao nutricionista e-multi"],
   ["606060","507", "9593","2","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Qual propedêutica realizada para diagnóstico diferencial?","20231213","Consulta otorrinolaringologia"],
   ["607485","216", "18171","13","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>.","20231218"," consulta psicologia infantojuvenil"],
+  ["607497","1193", "18625","56","Solicitação Indevida","20231221","Ultrassonografia transvaginal"],
   ["608263","1064", "4881","7","<b>Não Se Enquadra nos Criterios: </b><br>Não se enquadra nos critérios da propedêutica de CA de colo uterino do CEAE. Favor agendar via GINECOLOGIA POLICLÍNICA.","20231211","Consulta ginecologia CEAE"],
   ["608394","1227", "28216","34","<b>Não Se Enquadra nos Criterios: </b><br>Miomatose não se enquadra nos critérios da propedêutica de CA de colo uterino do CEAE. Favor agendar via GINECOLOGIA POLICLÍNICA.","20231211","Consulta ginecologia CEAE"],
   ["608495","1227", "29305","34","<b>Não Se Enquadra nos Criterios: </b><br>Não se enquadra nos critérios da propedêutica de CA de colo uterino do CEAE. Favor agendar via GINECOLOGIA POLICLÍNICA.","20231211","Consulta ginecologia CEAE"],
@@ -1857,6 +1859,7 @@ const Solicitacoes_Excluidas = [
   ["615477","1196", "29801","8","<b>Não Se Enquadra nos Criterios: </b><br>De acordo com o Protocolo de Encaminhamento para Endocrinologia CEAE Hiperdia disponível no Portal da Atenção Primária, a paciente não apresenta condições clínicas que indicam a necessidade de encaminhamento para consulta diabetes alto risco. Me coloco a disposição para discussão do caso. ","20231214","Consulta diabetes alto risco"],
   ["615641","1137", "6803","9","<b>Não Se Enquadra nos Criterios: </b><br>Paciente não apresenta demanda multifuncional semanal.","20231215","Avaliaçao de elegibilidade - melhor em casa"],
   ["615651","1216", "600","81","<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA FILA \"\"AVALIAÇÃO CIRURGICA POLICLÍNICA\"\".","20231215","Consulta cirurgiao geral"],
+  ["615739","320", "33107","78","<b>Solicitação Indevida: </b><br>PACIENTE GESTANTE, US OBSTETRICO JA REALIZADO.","20231221","Ultrassonografia transvaginal"],
   ["616050","1194", "21535","6","<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA FILA \"\"AVALIAÇÃO CIRURGICA POLICLÍNICA\"\".","20231215","Consulta cirurgiao geral"],
   ["616269","807", "45466","18","<b>Falta Detalhar Exames: </b><br>Encaminhamento em branco. ","20231215","Consulta pediatria alto risco"],
   ["616318","880", "53068","9","<b>Falta Detalhar Exames: </b><br>Favor descrever o ultimo PCCU.Att.","20231215","Consulta ginecologia policlinica"],
