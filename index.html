@@ -78,6 +78,17 @@
             window.location.href=`recepcao.html?cod=les&token=${token}&unidade=UAPS VEREADOR JOSE SENA&mode=r1`
         }
 
+        // ACS não está no CNES
+        if (cpf == "775356") {
+            let   pagina  = "acs.html";
+            const cod     = "qw";
+            const unidade = "X";//listaProfissionais[cpf][2];
+            const token   = (new Date()).setSeconds((new Date()).getSeconds()+30).toString(36);
+            const modo    = "";
+
+            window.location.href=`${pagina}?cod=${cod}&token=${token}&unidade=${unidade}${modo}`
+        }
+
         if (listaProfissionais[cpf]) {
             let   pagina  = listaProfissionais[cpf][1];
             const cod     = listaProfissionais[cpf][0];
