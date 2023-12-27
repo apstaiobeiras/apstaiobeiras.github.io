@@ -129,7 +129,7 @@
         telefone_invalido : 7,
         cpf_invalido : 8,
         cns_invalido : 9,
-        questionario_esus_incompleto : 10,
+        //questionario_esus_incompleto : 10,
         gestante_nao_informado : 11,
         mulher_em_idade_fertil : 12,
         hipertenso_nao_informado : 13,
@@ -172,6 +172,8 @@
             document.getElementById(`percentual_${indicador}_mes_1`).remove();
             document.getElementById(`percentual_${indicador}_mes_2`).remove();
             document.getElementById(`variacao_${indicador}`).remove();
+
+            console.log(indicador)
 
             document.getElementById(`absoluto_${indicador}_mes_1`).colSpan=6;
             document.getElementById(`absoluto_${indicador}_mes_1`).textContent="Sem inconsistencias no quadrimestre";
