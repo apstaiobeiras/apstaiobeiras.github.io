@@ -103,6 +103,7 @@ const lista_profissionais_solicitacoes = `
 <option value="821">REINALDO ALVES SANTANA</option>
 <option value="884">RENATA MATOS E MATOS</option>
 <option value="176">RENILSON MOREIRA DOS SANTOS</option>
+<option value="1243">ROBERTA CAMARGOS</option>
 <option value="351">RONUARLLEY SILVA MARQUES</option>
 <option value="894">ROSIANE VIEIRA DE SA</option>
 <option value="785">SAMARA FRANTHEISCA ALMEIDA BARBOSA</option>

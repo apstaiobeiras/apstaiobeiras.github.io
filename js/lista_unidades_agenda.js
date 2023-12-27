@@ -1,9 +1,7 @@
 const lista_unidades_solicitacoes = `
 <option value="">Todas as unidades</option>
 <option value="18">CENTRO ESTADUAL DE ATENCAO ESPEC DR SILVIO AMERICANO MENDES</option>
-<option value="9">UAPS AGEU ALMEIDA</option>
 <option value="3">UAPS ANTONINO DE ALMEIDA</option>
-<option value="33">UAPS COMUNIDADES RURAIS</option>
 <option value="4">UAPS DONA NININHA - HARMONIA</option>
 <option value="78">UAPS DONA NININHA - UNIAO</option>
 <option value="2">UAPS ED. FIS. DOUGLAS FREDERICO MIRANDA BATISTA</option>
