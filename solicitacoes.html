@@ -123,6 +123,12 @@
             }
         }
 
+        document.getElementById("data_inicial").value=(new Date()).getFullYear()+"-01-01";
+        document.getElementById("data_final").value=(new Date()).getFullYear()+"-12-31";
+
+        document.getElementById("data_inicial").min=((new Date()).getFullYear()-1)+"-01-01";
+        document.getElementById("data_inicial").max=((new Date()).getFullYear()+1)+"-12-31";
+
         document.getElementById("unidade").innerHTML = lista_unidades_solicitacoes;
         document.getElementById("lista-profissional").innerHTML = lista_profissionais_solicitacoes;
 
