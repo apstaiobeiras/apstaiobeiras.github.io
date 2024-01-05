@@ -77,10 +77,11 @@
     
         const cod_profissional = parseInt((new URLSearchParams(window.location.search)).get('cod'), 36);
         const token = parseInt((new URLSearchParams(window.location.search)).get('token'), 36);
-        if (data_atual>token) window.location.href="index.html";
+        //if (data_atual>token) window.location.href="index.html";
     </script><script>        document.getElementById("micro").textContent = lista_dos_profissionais[cod_profissional][2];
         document.getElementById("profissional").textContent = lista_dos_profissionais[cod_profissional][0];
     </script><script>
+
         let cobertura_total = 0;
 
         let i = -1;
@@ -109,9 +110,9 @@
         }
     
     </script><script>    
-        let cobertura_total = 0;
+        cobertura_total = 0;
 
-        let i = -1;
+        i = -1;
         for (let visitas_mes of visitas_realizadas){
             i+=1; if (!visitas_mes) continue;  if (!visitas_mes[cod_profissional]) continue;
     
@@ -221,7 +222,6 @@
         const denominadores = [];
 
         for (const mes of [1,2]) {
-
             const numerador = situacao_cadastros[mes][cod_profissional][i];
 
             let denominador = situacao_cadastros[mes][cod_profissional][indicador_cadastro.total_cadastros];
