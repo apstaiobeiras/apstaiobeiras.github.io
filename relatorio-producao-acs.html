@@ -109,9 +109,84 @@
         }
     
     </script><script>    
+        let cobertura_total = 0;
+
+        let i = -1;
+        for (let visitas_mes of visitas_realizadas){
+            i+=1; if (!visitas_mes) continue;  if (!visitas_mes[cod_profissional]) continue;
+    
+            let familias            = visitas_mes[cod_profissional][4];
+            let visitas             = visitas_mes[cod_profissional][7];
+            let cobertura           = Math.round(visitas_mes[cod_profissional][9].replace(",",".")*100);
+            let georreferenciamento = Math.round(visitas_mes[cod_profissional][8].replace(",",".")*100);
+            let ausencias           = Math.round(visitas_mes[cod_profissional][10].replace(",",".")*100);
+            let resgate             = visitas_mes[cod_profissional][11];
+    
+            cobertura_total = cobertura;
+        
+            document.getElementById("familia_mes_"+i).textContent             = familias;
+            document.getElementById("visitas_mes_"+i).textContent             = visitas;
+            document.getElementById("cobertura_mes_"+i).textContent           = `${cobertura}%`;
+            document.getElementById("georreferenciamento_mes_"+i).textContent = `${georreferenciamento}%`;
+            document.getElementById("ausencias_mes_"+i).textContent           = `${ausencias}%`;
+            document.getElementById("resgate_ausencias_mes_"+i).textContent   = resgate;
+    
+            colore_percentual(document.getElementById("cobertura_mes_"+i),cobertura,100);
+            colore_percentual(document.getElementById("georreferenciamento_mes_"+i),georreferenciamento,100);
+            colore_percentual(document.getElementById("ausencias_mes_"+i),100-ausencias,100);
+        }
+    
+    </script><script>    
 
     // Cabeçalho
 
+
+    // Mapa de cobertura
+
+    i = 1;
+    
+    let linha_familia_visitada = document.createElement("tr");
+    for (let familia of familias_visitadas[cod_profissional]) {
+        if (familia.length>1) {
+            let celula = document.createElement("td");
+            celula.textContent = familia.substring(1);
+
+            if (familia.charAt(0) == "w" && cobertura_total == 100) {
+                familia = familia.replace("w","y");
+            }
+
+            switch (familia.charAt(0)) {
+                case 'w':
+                  celula.style="background-color:#ea9999;"; // vermelho
+                break;
+
+                case 'x':
+                  celula.style="background-color:#f7cca0;"; // laranja
+                break;
+
+                case 'y':
+                  celula.style="background-color:#b6d7a8;"; // verde
+                break;
+
+                case 'z':
+                  celula.style="background-color:#9fc5e8;"; // azul
+                break;
+            }
+              
+
+            linha_familia_visitada.appendChild(celula);
+            i += 1;
+        }
+
+        if (i == 11) {
+            document.getElementById("familias_visitadas").appendChild(linha_familia_visitada);
+            linha_familia_visitada = document.createElement("tr");
+
+            i = 1;
+        }
+    }
+
+    document.getElementById("familias_visitadas").appendChild(linha_familia_visitada);
 
 
     // Sumario das visitas
@@ -146,6 +221,7 @@
         const denominadores = [];
 
         for (const mes of [1,2]) {
+
             const numerador = situacao_cadastros[mes][cod_profissional][i];
 
             let denominador = situacao_cadastros[mes][cod_profissional][indicador_cadastro.total_cadastros];
@@ -207,54 +283,5 @@
             continue;
         }
     }
-
-    // Mapa de cobertura
-
-    i = 1;
-    
-    let linha_familia_visitada = document.createElement("tr");
-    for (let familia of familias_visitadas[cod_profissional]) {
-        if (familia.length>1) {
-            let celula = document.createElement("td");
-            celula.textContent = familia.substring(1);
-
-            if (familia.charAt(0) == "w" && cobertura_total == 100) {
-                familia = familia.replace("w","y");
-            }
-
-            switch (familia.charAt(0)) {
-                case 'w':
-                  celula.style="background-color:#ea9999;"; // vermelho
-                break;
-
-                case 'x':
-                  celula.style="background-color:#f7cca0;"; // laranja
-                break;
-
-                case 'y':
-                  celula.style="background-color:#b6d7a8;"; // verde
-                break;
-
-                case 'z':
-                  celula.style="background-color:#9fc5e8;"; // azul
-                break;
-            }
-              
-
-            linha_familia_visitada.appendChild(celula);
-            i += 1;
-        }
-
-        if (i == 11) {
-            document.getElementById("familias_visitadas").appendChild(linha_familia_visitada);
-            linha_familia_visitada = document.createElement("tr");
-
-            i = 1;
-        }
-    }
-
-    document.getElementById("familias_visitadas").appendChild(linha_familia_visitada);
-
-
 
     </script></html>
