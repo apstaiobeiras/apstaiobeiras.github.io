@@ -83,7 +83,7 @@
             padding: 0px  !important; 
           } 
         }
-      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body no-padding-and-margin"><div class="navbar no-print" onclick="window.location.href = 'acs.html?cod='+(new URLSearchParams(window.location.search)).get('cod')+'&token='+(new Date()).setSeconds((new Date()).getSeconds()+30).toString(36)"><a><span id="micro">00</span> - <span id="profissional">Nome do Agente Comuitário de Saúde</span></a></div><div class="no-print"><h1>Instrutivo</h1><p>Os cadastros marcados com X inicam que há uma inconsistência no campo assinalado, cada campo possui um tipo de inconsistência, são eles:</p><table><tr><td><b>Coluna</b></td><td><b>Tipo de inconsistência</b></td></tr><tr><td>Nome, Pai e Mãe</td><td>São cadastros com abreviações, espaços extras e/ou caracteres inválidos nos campos "Usuário", "Nome da mãe" e "Nome do pai" respectivamente<br>
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body no-padding-and-margin"><div class="navbar no-print" onclick="backToHome('acs.html');"><a><span id="micro">00</span> - <span id="profissional">Nome do Agente Comuitário de Saúde</span></a></div><div class="no-print"><h1>Instrutivo</h1><p>Os cadastros marcados com X inicam que há uma inconsistência no campo assinalado, cada campo possui um tipo de inconsistência, são eles:</p><table><tr><td><b>Coluna</b></td><td><b>Tipo de inconsistência</b></td></tr><tr><td>Nome, Pai e Mãe</td><td>São cadastros com abreviações, espaços extras e/ou caracteres inválidos nos campos "Usuário", "Nome da mãe" e "Nome do pai" respectivamente<br>
                 No caso do nome do pai o nome escrito pode estar com textos como "Sem informação"</td></tr><tr><td>CNS, CPF e NIS</td><td>São cadastros com números inválidos de CNS, CPF e NIS nos respectivos campos<br>
               Erros comuns incluem: 
                 <ul>
@@ -107,7 +107,7 @@
         const cod_profissional = parseInt((new URLSearchParams(window.location.search)).get('cod'), 36);
         const token = parseInt((new URLSearchParams(window.location.search)).get('token'), 36);
         if (data_atual>token) window.location.href="index.html";
-    </script><script src="js/lista-acs.js"></script><script src="js/cadastros-invalidos.js"></script><script>
+    </script><script src="js/goto.js"></script><script src="js/lista-acs.js"></script><script src="js/cadastros-invalidos.js"></script><script>
     document.getElementsByTagName("body")[0].classList = "container-lg px-3 emy-5 markdown-body no-padding-and-margin";
 
     // Cabeçalho

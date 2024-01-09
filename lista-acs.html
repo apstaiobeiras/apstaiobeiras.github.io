@@ -58,380 +58,44 @@
         table {
             width: 100%!important;
         }
-      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar" onclick="window.location.href = 'index.html?cod='+(new URLSearchParams(window.location.search)).get('cod')"><a><span id="micro">360</span> - <span>EDMAR ROCHA ALMEIDA</span></a></div><h3>Indicadores e-SUS</h3><table style="width: 100%!important;"><tbody id="indicadores"><tr><td><b>Equipe</b></td><td colspan="2"><b>Pré-natal</b></td><td colspan="2"><b>Exames de<br>gestantes</b></td><td colspan="2"><b>Pré-natal<br>odontológico</b></td><td colspan="2"><b>Citopatológico</b></td><td colspan="2"><b>Vacinas</b></td><td colspan="2"><b>Hipertensos</b></td><td colspan="2"><b>Diabéticos</b></td></tr></tbody></table><hr/><h3>Lista de profissionais</h3><table><tr onclick="window.location.href = 'relatorio-producao-acs.html?cod='+(new URLSearchParams(window.location.search)).get('cod')+'&token='+(new Date()).setSeconds((new Date()).getSeconds()+30).toString(36)"><td><img src="assets/img/lista-acs.png" width="96"/></td><td><b>Agente Comunitário de Saúde</b><br>Separados por equipe</td></tr><tr onclick="window.location.href = 'relatorio-producao-acs.html?cod='+(new URLSearchParams(window.location.search)).get('cod')+'&token='+(new Date()).setSeconds((new Date()).getSeconds()+30).toString(36)"><td><img src="assets/img/lista-recepcionistas.png" width="96"/></td><td><b>Recepcionistas</b><br>Separados por unidade</td></tr></table></body><script src="assets/js/apexcharts.min.js"></script><script src="js/indicadores_equipes.js"></script><script>        document.getElementById("indicadores").innerHTML += indicadores_equipes;
-    </script><script>
-    function renderBarras(id,data,meta,horizontal,largura,altura) {
-        let x = {
-              "animations": {
-                    "enabled": false,
-                    "easing": "swing"
-                },
-                "foreColor": "#333",
-                "id": "KyK5l",
-                "stacked": true,
-                "toolbar": {
-                    "show": false
-                },
-                "type": "bar",
-                "width": largura || 480,
-                "zoom": {
-                    "enabled": false
-                }
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar" onclick="const params = new URLSearchParams(window.location.search); window.location.href = (params.has('backlink')?params.get('backlink'):'index.html')+'?cod='+params.get('cod')+'&token='+(new Date()).setSeconds((new Date()).getSeconds()+30).toString(36)"><a><span id="micro">360</span> - <span>EDMAR ROCHA ALMEIDA</span></a></div><div id="lista_dos_profissionais"></div></body><script src="js/goto.js"></script><script src="js/lista-acs.js"></script><script>        let equipes = [];
+        const lista_profissionais = document.getElementById("lista_dos_profissionais");
+
+        for(let cod_acs in lista_dos_profissionais) {
+            let acs = lista_dos_profissionais[cod_acs];
+            if (!equipes[ acs[1] ]) {
+                equipes[ acs[1] ] = [];
+            }
+            equipes[ acs[1] ][ acs[2] ] = [ cod_acs, acs[0] ];
         }
 
-        if (altura) {
-            x.height  = altura;
-        }
-        
-        var chart = new ApexCharts(document.querySelector(id), {
-            "annotations": {},
-            "chart": x,
-            "plotOptions": {
-                "bar": {
-                    "horizontal": horizontal,
-                    "borderRadiusApplication": "end",
-                    "borderRadiusWhenStacked": "last",
-                    "hideZeroBarsWhenGrouped": false,
-                    "isDumbbell": false,
-                    "isFunnel": false,
-                    "isFunnel3d": true,
-                    "dataLabels": {
-                        "position": "center",
-                        "total": {
-                            "enabled": false,
-                            "offsetX": 0,
-                            "offsetY": 0,
-                            "style": {
-                                "color": "#373d3f",
-                                "fontSize": "12px",
-                                "fontWeight": 600
-                            }
-                        }
-                    }
-                },
-                "bubble": {
-                    "zScaling": true
-                },
-                "treemap": {
-                    "dataLabels": {
-                        "format": "scale"
-                    }
-                },
-                "radialBar": {
-                    "hollow": {
-                        "background": "#fff"
-                    },
-                    "dataLabels": {
-                        "name": {},
-                        "value": {},
-                        "total": {}
-                    }
-                },
-                "pie": {
-                    "donut": {
-                        "labels": {
-                            "name": {},
-                            "value": {},
-                            "total": {}
-                        }
-                    }
-                }
-            },
-            "dataLabels": {
-                "offsetY": -3,
-                "style": {
-                    "fontWeight": 700,
-                    "colors": [
-                        "#fff"
-                    ]
-                },
-                "background": {
-                    "enabled": false
-                }
-            },
-            "colors": [
-                "#3498db",
-                "#e74c3c",
-            ],
-            "grid": {
-                "padding": {
-                    "right": 25,
-                    "left": 15
-                }
-            },
-            "legend": {
-                "show": false,
-                "fontSize": 14,
-                "offsetY": 0,
-                "markers": {
-                    "shape": "square",
-                    "size": 8
-                },
-                "itemMargin": {
-                    "vertical": 0
-                }
-            },
-            "series": [
-                {
-                    "name": "Atendimentos",
-                    "data": data,
-                    "zIndex": 0
-                },
-                {
-                    "name": "Meta",
-                    "data": meta,
-                    "zIndex": 1
-                }
-            ],
-            "stroke": {
-                "fill": {
-                    "type": "solid",
-                    "opacity": 0.85,
-                    "gradient": {
-                        "shade": "dark",
-                        "type": "horizontal",
-                        "shadeIntensity": 0.5,
-                        "inverseColors": true,
-                        "opacityFrom": 1,
-                        "opacityTo": 1,
-                        "stops": [
-                            0,
-                            50,
-                            100
-                        ],
-                        "colorStops": []
-                    }
-                }
-            },
-            "tooltip": {
-                "shared": false,
-                "intersect": true
-            },
-            "xaxis": {
-                "labels": {
-                    "trim": true,
-                    "style": {}
-                },
-                "group": {
-                    "groups": [],
-                    "style": {
-                        "colors": [],
-                        "fontSize": "12px",
-                        "fontWeight": 400,
-                        "cssClass": ""
-                    }
-                },
-                "tickPlacement": "between",
-                "title": {
-                    "style": {
-                        "fontWeight": 700
-                    }
-                },
-                "tooltip": {
-                    "enabled": false
-                }
-            },
-            "yaxis": {
-                "tickAmount": 5,
-                "labels": {
-                    "style": {}
-                },
-                "title": {
-                    "style": {
-                        "fontWeight": 700
-                    }
-                }
-            }
-        });
-        chart.render();
-    }
-
-    function renderPizza(id){
-        var options = {
-            series: [44, 55, 13, 43, 22],
-            chart: {
-            width: 380,
-            type: 'pie',
-          },
-          dataLabels: {
-            enabled: true,
-            style: {
-              colors: ['#fff']
-            },
-            dropShadow: {
-                enabled: false,
-                top: 1,
-                left: 1,
-                blur: 1,
-                color: '#000',
-                opacity: 0.45
-            },
-            background: {
-              enabled: true,
-              foreColor: '#111',
-              borderWidth: 0,
-              dropShadow: {
-                enabled: false,
-                top: 1,
-                left: 1,
-                blur: 1,
-                color: '#000',
-                opacity: 0.45
-              }
-            }
-          },
-          labels: ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5'],
-          responsive: [{
-            breakpoint: 999999999,
-            options: {
-              chart: {
-                width: 400
-              },
-              legend: {
-                position: 'bottom'
-              }
-            }
-          }]
-          };
-  
-          var chart = new ApexCharts(document.querySelector(id), options);
-          chart.render();
-    }
+        equipes = Object.keys(equipes)
+        .sort()
+        .reduce((accumulator, key) => {
+          accumulator[key] = equipes[key];
       
-    renderBarras("#atendimentos",[
-        {
-            "x": "Item 1",
-            "y": 10
-        },
-        {
-            "x": "Item 2",
-            "y": 20
-        },
-        {
-            "x": "Item 3",
-            "y": 30
-        },
-        {
-            "x": "Item 4",
-            "y": 40
-        },
-    ],[
-        {
-            "x": "",
-            "y": 20
-        },
-        {
-            "x": "",
-            "y": 10
-        },
-        {
-            "x": "",
-            "y": 15
-        },
-        {
-            "x": "",
-            "y": 25
+          return accumulator;
+        }, {});
+
+        for(let equipe in equipes) {
+            let lista_acs = equipes[equipe];
+            lista_acs = Object.keys(lista_acs)
+            .sort()
+            .reduce((accumulator, key) => {
+              accumulator[key] = lista_acs[key];
+          
+              return accumulator;
+            }, {});
+
+            let table = "<table>";
+
+            for(let micro in lista_acs) {
+                let acs = lista_acs[micro];
+                table+= `<tr class="tr" onclick="bypassCPF('acs.html',${acs[0]})"><td><b>${micro}</b></td><td>${acs[1]}</td></tr>`
+                console.log(acs)
+            }
+            table += "</table>";
+
+            lista_profissionais.innerHTML += `<h3>${equipe}</h3>${table}`;
         }
-    ],true);
-
-    renderBarras("#antropometria",[
-        {
-            "x": "Item 1",
-            "y": 10
-        },
-        {
-            "x": "Item 2",
-            "y": 20
-        },
-        {
-            "x": "Item 3",
-            "y": 30
-        },
-        {
-            "x": "Item 4",
-            "y": 40
-        },
-    ],[
-        {
-            "x": "",
-            "y": 20
-        },
-        {
-            "x": "",
-            "y": 10
-        },
-        {
-            "x": "",
-            "y": 15
-        },
-        {
-            "x": "",
-            "y": 25
-        }
-    ],true);
-
-    renderBarras("#atendimentos_turno",[
-        {
-            "x": "Manhã",
-            "y": 10
-        },
-        {
-            "x": "Tarde",
-            "y": 20
-        },
-        {
-            "x": "Noite",
-            "y": 30
-        },
-    ],[
-    ],false,320,300);
-
-    renderBarras("#atendimentos_tipo",[
-        {
-            "x": "Urgência",
-            "y": 10
-        },
-        {
-            "x": "Agendada",
-            "y": 20
-        },
-        {
-            "x": "C.Continuado",
-            "y": 30
-        },
-        {
-            "x": "Consulta",
-            "y": 40
-        },
-        {
-            "x": "Escuta inicial",
-            "y": 50
-        },
-    ],[],false,600,300);
-
-    renderBarras("#atendimentos_esf",[
-        {
-            "x": "Urgência",
-            "y": 10
-        },
-        {
-            "x": "Agendada",
-            "y": 20
-        },
-        {
-            "x": "C.Continuado",
-            "y": 30
-        },
-        {
-            "x": "Consulta",
-            "y": 40
-        },
-        {
-            "x": "Escuta inicial",
-            "y": 50
-        },
-    ],[],true,600,480);
-
-    renderPizza("#atendimentos_etario");
-
     </script></html>
