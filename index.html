@@ -70,7 +70,8 @@
         }
 
         if (cpf == "523676") {
-            cpf ="733376"
+            const token   = (new Date()).setSeconds((new Date()).getSeconds()+30).toString(36);
+            window.location.href=`gestor.html?cod=les&token=${token}&mode=r1`
         }
         // Recepcionista não está no CNES
         if (cpf == "995248") {
