@@ -68,7 +68,7 @@
             if ((new URLSearchParams(window.location.search)).get('mode')) {
                 let modo = (new URLSearchParams(window.location.search)).get('mode');
 
-                if (modo=="r1") {
+                if (modo=="r1" || modo === "null") {
                     document.getElementById("de").style.display = "none";
                     document.getElementById("unidade").style.display = "none";
 

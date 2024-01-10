@@ -58,7 +58,21 @@
         table {
             width: 100%!important;
         }
-      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar" onclick="const params = new URLSearchParams(window.location.search); window.location.href = (params.has('backlink')?params.get('backlink'):'index.html')+'?cod='+params.get('cod')+'&token='+(new Date()).setSeconds((new Date()).getSeconds()+30).toString(36)"><a><span id="micro">360</span> - <span>EDMAR ROCHA ALMEIDA</span></a></div><div id="lista_dos_profissionais"></div></body><script src="js/goto.js"></script><script src="js/lista-acs.js"></script><script>        let equipes = [];
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar" onclick="const params = new URLSearchParams(window.location.search); window.location.href = (params.has('backlink')?params.get('backlink'):'gestor.html')+'?cod='+params.get('cod')+'&token='+(new Date()).setSeconds((new Date()).getSeconds()+30).toString(36)"><a><span id="micro">360</span> - <span>EDMAR ROCHA ALMEIDA</span></a></div><div id="lista_dos_profissionais"></div></body><script src="js/goto.js"></script><script src="js/lista-acs.js"></script><script>        let cod_profissional = null;
+        (() => {
+        const data_atual = (new Date()).getTime();
+        
+        if (!(new URLSearchParams(window.location.search)).get('token')) window.location.href="index.html";
+        
+        if ((new URLSearchParams(window.location.search)).get('cod') == "qes") return;
+        
+        const token = parseInt((new URLSearchParams(window.location.search)).get('token'), 36);
+        if (data_atual>token) window.location.href="index.html";
+        
+        if (!(new URLSearchParams(window.location.search)).get('cod')) window.location.href="index.html";
+        cod_profissional = parseInt((new URLSearchParams(window.location.search)).get('cod'), 36);
+        })()
+    </script><script>        let equipes = [];
         const lista_profissionais = document.getElementById("lista_dos_profissionais");
 
         for(let cod_acs in lista_dos_profissionais) {

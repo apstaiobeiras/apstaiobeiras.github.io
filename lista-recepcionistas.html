@@ -58,15 +58,32 @@
         table {
             width: 100%!important;
         }
-      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar" onclick="const params = new URLSearchParams(window.location.search); window.location.href = (params.has('backlink')?params.get('backlink'):'index.html')+'?cod='+params.get('cod')+'&token='+(new Date()).setSeconds((new Date()).getSeconds()+30).toString(36)"><a><span id="micro">360</span> - <span>EDMAR ROCHA ALMEIDA</span></a></div><div id="lista_dos_profissionais"></div></body><script src="js/goto.js"></script><script src="js/lista_profissionais.js"></script><script>        let equipes = [];
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar" onclick="const params = new URLSearchParams(window.location.search); window.location.href = (params.has('backlink')?params.get('backlink'):'gestor.html')+'?cod='+params.get('cod')+'&token='+(new Date()).setSeconds((new Date()).getSeconds()+30).toString(36)"><a><span id="micro">360</span> - <span>EDMAR ROCHA ALMEIDA</span></a></div><div id="lista_dos_profissionais"></div></body><script src="js/goto.js"></script><script src="js/lista_profissionais.js"></script><script src="js/nomes_profissionais.js"></script><script>        let cod_profissional = null;
+        (() => {
+        const data_atual = (new Date()).getTime();
+        
+        if (!(new URLSearchParams(window.location.search)).get('token')) window.location.href="index.html";
+        
+        if ((new URLSearchParams(window.location.search)).get('cod') == "qes") return;
+        
+        const token = parseInt((new URLSearchParams(window.location.search)).get('token'), 36);
+        if (data_atual>token) window.location.href="index.html";
+        
+        if (!(new URLSearchParams(window.location.search)).get('cod')) window.location.href="index.html";
+        cod_profissional = parseInt((new URLSearchParams(window.location.search)).get('cod'), 36);
+        })()
+    </script><script>        let equipes = [];
         const lista_profissionais = document.getElementById("lista_dos_profissionais");
 
         for(let _ in listaProfissionais) {
-            let profissional = lista_dos_profissionais[_];
+            let profissional = listaProfissionais[_];
             if (!equipes[ profissional[2] ]) {
                 equipes[ profissional[2] ] = [];
             }
-            equipes[ acs[1] ][ acs[2] ] = [ cod_acs, acs[0] ];
+
+            let nome = nomeProfissional[parseInt(profissional[0],36)];
+
+            equipes[ profissional[2] ][ nome ] = [profissional[0],profissional[1],parseInt(profissional[0],36)];
         }
 
         equipes = Object.keys(equipes)
@@ -78,24 +95,29 @@
         }, {});
 
         for(let equipe in equipes) {
-            let lista_acs = equipes[equipe];
-            lista_acs = Object.keys(lista_acs)
+            if (!equipe.startsWith("UAPS")) continue;
+
+            let lista_profissionais = equipes[equipe];
+            lista_profissionais = Object.keys(lista_profissionais)
             .sort()
             .reduce((accumulator, key) => {
-              accumulator[key] = lista_acs[key];
+              accumulator[key] = lista_profissionais[key];
           
               return accumulator;
             }, {});
 
             let table = "<table>";
 
-            for(let micro in lista_acs) {
-                let acs = lista_acs[micro];
-                table+= `<tr class="tr" onclick="bypassCPF('acs.html',${acs[0]})"><td><b>${micro}</b></td><td>${acs[1]}</td></tr>`
-                console.log(acs)
+            for(let profissional in lista_profissionais) {
+                let acs = lista_profissionais[profissional];
+
+                table+= acs[1] == "recepcionista.html" ? `<tr class="tr" onclick="bypassCPF('recepcao.html','${acs[0]}','${equipe}')"><td><b>${acs[2]}</b></td><td>${profissional}</td></tr>`:'';
             }
             table += "</table>";
 
-            lista_profissionais.innerHTML += `<h3>${equipe}</h3>${table}`;
+            if (table!='<table></table>'){
+                equipe = equipe.replace("ENFERMEIRA","ENF.");
+                document.getElementById("lista_dos_profissionais").innerHTML += `<h3>${equipe}</h3>${table}`;
+            }
         }
     </script></html>

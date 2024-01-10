@@ -1,7 +1,7 @@
 function gotoPage(page) {
     let cod       = (new URLSearchParams(window.location.search)).get('cod');
     let token     = (new Date()).setSeconds((new Date()).getSeconds()+30).toString(36)
-    let mode      = (new URLSearchParams(window.location.search)).get('mode');
+    let mode      = (new URLSearchParams(window.location.search)).get('mode') || 'r1';
     let unidade   = (new URLSearchParams(window.location.search)).get('unidade');
     let home_link = (new URLSearchParams(window.location.search)).get('home_link');
     let old_cod   = (new URLSearchParams(window.location.search)).get('old_cod');
@@ -15,7 +15,7 @@ function backToHome(link) {
 
     let cod       = (new URLSearchParams(window.location.search)).get('cod');
     let token     = (new Date()).setSeconds((new Date()).getSeconds()+30).toString(36)
-    let mode      = (new URLSearchParams(window.location.search)).get('mode');
+    let mode      = (new URLSearchParams(window.location.search)).get('mode')
     let unidade   = (new URLSearchParams(window.location.search)).get('unidade');
     let home_link = (new URLSearchParams(window.location.search)).get('home_link');
     let old_cod   = (new URLSearchParams(window.location.search)).get('old_cod');
@@ -32,7 +32,7 @@ function backToHome(link) {
     window.location.href = `${link}?cod=${cod}&token=${token}&mode=${mode}&unidade=${unidade}&backlink=${backlink}&home_link=${home_link}&old_cod=${old_cod}`;
 }
 
-function bypassCPF(page,new_cod){
+function bypassCPF(page,new_cod,unidade){
     let cod       = (new URLSearchParams(window.location.search)).get('cod');
     let token     = (new Date()).setSeconds((new Date()).getSeconds()+30).toString(36)
     let mode      = (new URLSearchParams(window.location.search)).get('mode');
@@ -41,5 +41,5 @@ function bypassCPF(page,new_cod){
 
     let enc_cod = new_cod.toString(36);
 
-    window.location.href = `${page}?cod=${enc_cod}&token=${token}&mode=${mode}&backlink=${backlink}&home_link=${backlink}&old_cod=${cod}`;
+    window.location.href = `${page}?cod=${enc_cod}&token=${token}&mode=${mode}&backlink=${backlink}&home_link=${backlink}&old_cod=${cod}&unidade=${unidade}`;
 }
