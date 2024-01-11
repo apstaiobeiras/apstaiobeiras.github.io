@@ -69,7 +69,7 @@
             window.location.href=`solicitacoes.html?cod=qes&token=${token}`
         }
 
-        if (cpf == "523676") {
+        if (cpf == "523676" || cpf == "086536" || cpf == "103716") {
             const token   = (new Date()).setSeconds((new Date()).getSeconds()+30).toString(36);
             window.location.href=`gestor.html?cod=les&token=${token}&mode=r1`
         }

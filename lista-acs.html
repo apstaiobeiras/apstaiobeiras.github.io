@@ -58,7 +58,7 @@
         table {
             width: 100%!important;
         }
-      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar" onclick="const params = new URLSearchParams(window.location.search); window.location.href = (params.has('backlink')?params.get('backlink'):'gestor.html')+'?cod='+params.get('cod')+'&token='+(new Date()).setSeconds((new Date()).getSeconds()+30).toString(36)"><a><span id="micro">360</span> - <span>EDMAR ROCHA ALMEIDA</span></a></div><div id="lista_dos_profissionais"></div></body><script src="js/goto.js"></script><script src="js/lista-acs.js"></script><script>        let cod_profissional = null;
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar" onclick="const params = new URLSearchParams(window.location.search); window.location.href = (params.has('backlink')?params.get('backlink'):'gestor.html')+'?cod='+params.get('cod')+'&token='+(new Date()).setSeconds((new Date()).getSeconds()+30).toString(36)"><a><span id="micro">360</span> - <span>EDMAR ROCHA ALMEIDA</span></a></div><div id="lista_dos_profissionais"></div></body><script src="js/goto.js"></script><script src="js/lista-acs.js"></script><script>const visitas_realizadas = [null];</script><script src="js/visitas.js"></script><script>        let cod_profissional = null;
         (() => {
         const data_atual = (new Date()).getTime();
         
@@ -72,7 +72,24 @@
         if (!(new URLSearchParams(window.location.search)).get('cod')) window.location.href="index.html";
         cod_profissional = parseInt((new URLSearchParams(window.location.search)).get('cod'), 36);
         })()
-    </script><script>        let equipes = [];
+    </script><script>        colore_percentual = (percentual,meta) => {
+            console.log(percentual);
+            if ((40*meta)/100 > percentual) {
+                return "#F6CCCC";
+            }
+    
+            if ((69*meta)/100 > percentual) {
+                return "#F7CCA0";
+            }
+    
+            if (100 > percentual) {
+                return"#B4E2CE";
+            }
+    
+            return "#9FC1E3";
+        }
+
+        let equipes = [];
         const lista_profissionais = document.getElementById("lista_dos_profissionais");
 
         for(let cod_acs in lista_dos_profissionais) {
@@ -102,11 +119,28 @@
             }, {});
 
             let table = "<table>";
+            table += "<tr><th></th><th>Nome</th><th>Famílias</th><th>Cobertura</th><th>Ausências</th></tr>"
 
             for(let micro in lista_acs) {
                 let acs = lista_acs[micro];
-                table+= `<tr class="tr" onclick="bypassCPF('acs.html',${acs[0]})"><td><b>${micro}</b></td><td>${acs[1]}</td></tr>`
-                console.log(acs)
+                let familias = visitas_realizadas[visitas_realizadas.length-1][acs[0] ][4];
+                let cobertura = visitas_realizadas[visitas_realizadas.length-1][acs[0] ][9];
+                let ausencias = visitas_realizadas[visitas_realizadas.length-1][acs[0] ][10];
+
+                //let cor_cobertura = colore_percentual(parseInt(ausencias.replace(",",".")*100),100);
+
+                ausencias = parseInt(ausencias.replace(",",".")*100)+"%";
+                cobertura = parseInt(cobertura.replace(",",".")*100)+"%";
+
+
+
+                table+= `<tr class="tr" onclick="bypassCPF('acs.html',${acs[0]})">
+                           <td><b>${micro}</b></td>
+                           <td>${acs[1]}</td>
+                           <td class="right">${familias}</td>
+                           <td class="right">${cobertura}</td>
+                           <td class="right">${ausencias}</td>
+                        </tr>`
             }
             table += "</table>";
 
