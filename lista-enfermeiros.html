@@ -1,0 +1,123 @@
+<!DOCTYPE html><html lang="pt_BR"><head><meta charset="utf8"/><title>Gestor da APS</title><style>        /* Estilo da barra de navegação */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333; /* Cor de fundo da barra de navegação */
+            color: #fff; /* Cor do texto da barra de navegação */
+            padding: 10px 0;
+            cursor: pointer!important;
+            z-index: 99999999;
+        }
+        
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+        }
+        
+        /* Adicione margem ao corpo para evitar que o conteúdo fique oculto sob a barra de navegação */
+        body {
+            margin-top: 60px; /* Ajuste conforme necessário com base na altura da sua barra de navegação */
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .neutro {
+            background: #DFE2E5;
+        }
+
+        .ruim {
+            background: #ea9999!important;
+        }
+
+        .razoavel {
+            background: #f7cca0!important;
+        }
+
+        .proximo {
+            background: #b6d7a8!important;
+        }
+
+        .atingiu {
+            background: #9fc5e8!important;
+        }
+
+        .tr:hover {
+            background: #DFE2E5!important;
+            cursor: pointer!important;
+        }
+
+        .tr:pressed {
+            background: #9FA1A3!important;
+        }
+
+        table {
+            width: 100%!important;
+        }
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar" onclick="const params = new URLSearchParams(window.location.search); window.location.href = (params.has('backlink')?params.get('backlink'):'gestor.html')+'?cod='+params.get('cod')+'&token='+(new Date()).setSeconds((new Date()).getSeconds()+30).toString(36)"><a><span id="micro">360</span> - <span>EDMAR ROCHA ALMEIDA</span></a></div><div id="lista_dos_profissionais"></div></body><script src="js/goto.js"></script><script src="js/lista_profissionais.js"></script><script src="js/nomes_profissionais.js"></script><script>        let cod_profissional = null;
+        (() => {
+        const data_atual = (new Date()).getTime();
+        
+        if (!(new URLSearchParams(window.location.search)).get('token')) window.location.href="index.html";
+        
+        if ((new URLSearchParams(window.location.search)).get('cod') == "qes") return;
+        
+        const token = parseInt((new URLSearchParams(window.location.search)).get('token'), 36);
+        if (data_atual>token) window.location.href="index.html";
+        
+        if (!(new URLSearchParams(window.location.search)).get('cod')) window.location.href="index.html";
+        cod_profissional = parseInt((new URLSearchParams(window.location.search)).get('cod'), 36);
+        })()
+    </script><script>        let equipes = [];
+        const lista_profissionais = document.getElementById("lista_dos_profissionais");
+
+        for(let _ in listaProfissionais) {
+            let profissional = listaProfissionais[_];
+            if (!equipes[ profissional[2] ]) {
+                equipes[ profissional[2] ] = [];
+            }
+
+            let nome = nomeProfissional[parseInt(profissional[0],36)];
+
+            equipes[ profissional[2] ][ nome ] = [profissional[0],profissional[1],parseInt(profissional[0],36)];
+        }
+
+        equipes = Object.keys(equipes)
+        .sort()
+        .reduce((accumulator, key) => {
+          accumulator[key] = equipes[key];
+      
+          return accumulator;
+        }, {});
+
+        for(let equipe in equipes) {
+            if (!equipe.startsWith("UAPS")) continue;
+
+            let lista_profissionais = equipes[equipe];
+            lista_profissionais = Object.keys(lista_profissionais)
+            .sort()
+            .reduce((accumulator, key) => {
+              accumulator[key] = lista_profissionais[key];
+          
+              return accumulator;
+            }, {});
+
+            let table = "<table>";
+
+            for(let profissional in lista_profissionais) {
+                let acs = lista_profissionais[profissional];
+
+                table+= acs[1] == "enfermeiro_esf.html" ? `<tr class="tr" onclick="bypassCPF('enfermeiro_esf.html','${acs[0]}','${equipe}')"><td><b>${acs[2]}</b></td><td>${profissional}</td></tr>`:'';
+            }
+            table += "</table>";
+
+            if (table!='<table></table>'){
+                equipe = equipe.replace("ENFERMEIRA","ENF.");
+                document.getElementById("lista_dos_profissionais").innerHTML += `<h3>${equipe}</h3>${table}`;
+            }
+        }
+    </script></html>
