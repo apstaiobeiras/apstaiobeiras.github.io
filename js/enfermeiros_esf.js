@@ -1,0 +1,26 @@
+
+const enfermeiros_esf = [];
+enfermeiros_esf['880'] = ["RENASCER"];
+enfermeiros_esf['354'] = ["RENASCER"];
+enfermeiros_esf['1239'] = ["ESPETACULAR"];
+enfermeiros_esf['884'] = ["ESPETACULAR"];
+enfermeiros_esf['222'] = ["COMUNIDADES RURAIS"];
+enfermeiros_esf['1241'] = ["HARMONIA", "UNIAO"];
+enfermeiros_esf['1199'] = ["HARMONIA", "UNIAO"];
+enfermeiros_esf['1110'] = ["UNIAO"];
+enfermeiros_esf['1133'] = ["VIVER"];
+enfermeiros_esf['1109'] = ["MAIS SAUDE"];
+enfermeiros_esf['1206'] = ["MAIS SAUDE", "ACOLHER"];
+enfermeiros_esf['1243'] = ["ACOLHER"];
+enfermeiros_esf['1235'] = ["MAIS SAUDE", "ACOLHER"];
+enfermeiros_esf['216'] = ["VIVER"];
+enfermeiros_esf['183'] = ["HUMANIZAR"];
+enfermeiros_esf['1240'] = ["HUMANIZAR"];
+enfermeiros_esf['1064'] = ["VIDA E SAUDE"];
+enfermeiros_esf['1232'] = ["ESPERANÇA"];
+enfermeiros_esf['351'] = ["ESPERANÇA", "CAMINHO"];
+enfermeiros_esf['894'] = ["CAMINHO"];
+enfermeiros_esf['787'] = ["PROGRESSO", "LIBERDADE"];
+enfermeiros_esf['1200'] = ["PROGRESSO"];
+enfermeiros_esf['1107'] = ["LIBERDADE"];
+enfermeiros_esf['785'] = ["PROGRESSO", "LIBERDADE", "ACOLHER", "MAIS SAUDE", "UNIAO", "HARMONIA"];
