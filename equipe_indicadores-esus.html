@@ -58,7 +58,7 @@
         table {
             width: 100%!important;
         }
-      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar" onclick="const params = new URLSearchParams(window.location.search); window.location.href = (params.has('backlink')?params.get('backlink'):'gestor.html')+'?cod='+params.get('cod')+'&token='+(new Date()).setSeconds((new Date()).getSeconds()+30).toString(36)"><a><span id="micro">360</span> - <span>EDMAR ROCHA ALMEIDA</span></a></div><div id="indicadores"></div></body><script src="js/goto.js"></script><script src="js/indicadores_equipes.js"></script><script src="js/enfermeiros_esf.js"></script><script>        /*let cod_profissional = null;
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar" onclick="const params = new URLSearchParams(window.location.search); window.location.href = (params.has('backlink')?params.get('backlink'):'gestor.html')+'?cod='+params.get('cod')+'&token='+(new Date()).setSeconds((new Date()).getSeconds()+30).toString(36)"><a><span id="micro">360</span> - <span>EDMAR ROCHA ALMEIDA</span></a></div><div id="indicadores"></div></body><script src="js/goto.js"></script><script src="js/indicadores_equipes.js"></script><script src="js/enfermeiros_esf.js"></script><script>        let cod_profissional = null;
         (() => {
         const data_atual = (new Date()).getTime();
         
@@ -71,14 +71,16 @@
         
         if (!(new URLSearchParams(window.location.search)).get('cod')) window.location.href="index.html";
         cod_profissional = parseInt((new URLSearchParams(window.location.search)).get('cod'), 36);
-        })()*/
+        })()
     </script><script>        let equipes = enfermeiros_esf[parseInt((new URLSearchParams(window.location.search)).get('cod'), 36)];
 
         for(let i in equipes) {
             let equipe = equipes[i];
-            equipe = equipe.replace("UNIAO","UNIÃO").replace("SAÚDE","SAÚDE")
+            equipe = equipe.replace("UNIAO","UNIÃO").replace("SAÚDE","SAÚDE").replace("COMUNIDADES RURAIS","COMUN. RURAIS")
 
             let table = indicadores_por_equipe[equipe];
+
+            equipe = equipe.replace("COMUN. RURAIS","COMUNIDADES RURAIS")
 
             document.getElementById("indicadores").innerHTML += `<h3>Indicadores e-SUS da equipe ${equipe}</h3><table>${table}</table>`;
 
