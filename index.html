@@ -76,7 +76,7 @@
         // Recepcionista não está no CNES
         if (cpf == "995248") {
             const token   = (new Date()).setSeconds((new Date()).getSeconds()+30).toString(36);
-            window.location.href=`recepcao.html?cod=les&token=${token}&unidade=UAPS VEREADOR JOSE SENA&mode=r1`
+            window.location.href=`recepcao.html?cod=les&home_link=recepcao.html&token=${token}&unidade=UAPS VEREADOR JOSE SENA&mode=r1`
         }
 
         // ACS não está no CNES
@@ -100,7 +100,7 @@
 
             const modo = pagina == "recepcao.html" ? "&mode=r1" : "";
 
-            window.location.href=`${pagina}?cod=${cod}&token=${token}&unidade=${unidade}${modo}`
+            window.location.href=`${pagina}?cod=${cod}&token=${token}&home_link=${pagina}&unidade=${unidade}${modo}`
         }
 
         for (var i = 1; i < 12; i++) {
