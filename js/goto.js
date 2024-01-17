@@ -60,14 +60,14 @@ function backlink() {
 
     if (rotas.acesso_indireto[home_link]) {
         if (rotas.acesso_indireto[home_link] == pagina_atual) {
-            window.location.href = `${home_link}?cod=${old_cod}&token=${token}`;
+            window.location.href = `${home_link}?cod=${old_cod}&token=${token}&backlink=${home_link}`;
             return;
         }
         window.location.href = `${rotas.acesso_indireto[home_link]}?cod=${cod}&token=${token}&mode=${mode}&unidade=${unidade}&backlink=${backlink}&home_link=${home_link}&old_cod=${old_cod}`;
         return;
     }
 
-    if (home_link == "null" && backlink == "enfermeiro_esf.html") {
+    if (home_link == "null" && (backlink == "enfermeiro_esf.html" || backlink == "preceptoria.html")) {
         window.location.href = `lista-enfermeiros.html?cod=les&token=${token}`;
         return;
     }

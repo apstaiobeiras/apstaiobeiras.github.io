@@ -72,9 +72,9 @@
         if (!(new URLSearchParams(window.location.search)).get('cod')) window.location.href="index.html";
         cod_profissional = parseInt((new URLSearchParams(window.location.search)).get('cod'), 36);
         })()
-    </script><script>        listaProfissionais['678996'] = ['lt','enfermeiro_esf.html','Preceptoria'];
-        listaProfissionais['993848'] = ['ij','enfermeiro_esf.html','Preceptoria'];
-        listaProfissionais['803381'] = ['n0','enfermeiro_esf.html','Preceptoria'];
+    </script><script>        listaProfissionais['678996'] = ['lt','preceptoria.html','Preceptoria'];
+        listaProfissionais['993848'] = ['ij','preceptoria.html','Preceptoria'];
+        listaProfissionais['803381'] = ['n0','preceptoria.html','Preceptoria'];
 
         let equipes = [];
         const lista_profissionais = document.getElementById("lista_dos_profissionais");
@@ -115,7 +115,10 @@
             for(let profissional in lista_profissionais) {
                 let acs = lista_profissionais[profissional];
 
-                table+= acs[1] == "enfermeiro_esf.html" ? `<tr class="tr" onclick="bypassCPF('enfermeiro_esf.html','${acs[0]}','${equipe}')"><td><b>${acs[2]}</b></td><td>${profissional}</td></tr>`:'';
+                if (acs[1] != "enfermeiro_esf.html" && acs[1] != "preceptoria.html") continue;
+
+                table+= acs[1] == "enfermeiro_esf.html" ? `<tr class="tr" onclick="bypassCPF('enfermeiro_esf.html','${acs[0]}','${equipe}')"><td><b>${acs[2]}</b></td><td>${profissional}</td></tr>`
+                                                        : `<tr class="tr" onclick="bypassCPF('preceptoria.html','${acs[0]}','${equipe}')"><td><b>${acs[2]}</b></td><td>${profissional}</td></tr>`;
             }
             table += "</table>";
 

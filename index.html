@@ -71,8 +71,23 @@
 
         if (cpf == "523676" || cpf == "086536" || cpf == "103716") {
             const token   = (new Date()).setSeconds((new Date()).getSeconds()+30).toString(36);
+
             window.location.href=`gestor.html?cod=les&token=${token}&mode=r1`
+            return;
         }
+
+        if (cpf == "803381" || cpf == "993848" || cpf == "678996") {
+            let cod = "";
+
+            cod = cpf == "803381" ? 'n0' : cod;
+            cod = cpf == "993848" ? 'ij' : cod;
+            cod = cpf == "678996" ? 'lt' : cod;
+
+            const token   = (new Date()).setSeconds((new Date()).getSeconds()+30).toString(36);
+            window.location.href=`preceptoria.html?cod=${cod}&token=${token}&home_link=preceptoria.html&mode=r1`
+            return;
+        }
+
         // Recepcionista não está no CNES
         if (cpf == "995248") {
             const token   = (new Date()).setSeconds((new Date()).getSeconds()+30).toString(36);

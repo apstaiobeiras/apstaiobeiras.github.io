@@ -1,0 +1,156 @@
+<!DOCTYPE html><html lang="pt_BR"><head><meta charset="utf8"/><title>Gestor da APS</title><style>        /* Estilo da barra de navegação */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333; /* Cor de fundo da barra de navegação */
+            color: #fff; /* Cor do texto da barra de navegação */
+            padding: 10px 0;
+            cursor: pointer!important;
+            z-index: 99999999;
+        }
+        
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+        }
+        
+        /* Adicione margem ao corpo para evitar que o conteúdo fique oculto sob a barra de navegação */
+        body {
+            margin-top: 60px; /* Ajuste conforme necessário com base na altura da sua barra de navegação */
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .neutro {
+            background: #DFE2E5;
+        }
+
+        .ruim {
+            background: #ea9999!important;
+        }
+
+        .razoavel {
+            background: #f7cca0!important;
+        }
+
+        .proximo {
+            background: #b6d7a8!important;
+        }
+
+        .atingiu {
+            background: #9fc5e8!important;
+        }
+
+        .tr:hover {
+            background: #DFE2E5!important;
+            cursor: pointer!important;
+        }
+
+        .tr:pressed {
+            background: #9FA1A3!important;
+        }
+
+        table {
+            width: 100%!important;
+        }
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar" onclick="backlink();"><a><span id="cod">360</span> - <span id="nome">EDMAR ROCHA ALMEIDA</span></a></div><h3></h3><table><tr class="tr" onclick="gotoPage('equipe_indicadores-esus.html')"><td><img src="assets/img/indicadores.jpg" width="96"/></td><td><b>Indicadores Previne Brasil</b><br>Veja como estão os indicadores e-SUS da sua equipe</td></tr></table><div id="lista_dos_profissionais"></div></body><script src="js/goto.js"></script><script src="js/lista-acs.js"></script><script src="js/enfermeiros_esf.js"></script><script src="js/preceptoria.js"></script><script src="js/nomes_profissionais.js"></script><script>const visitas_realizadas = [null];</script><script src="js/visitas.js"></script><script>        let cod_profissional = null;
+        (() => {
+        const data_atual = (new Date()).getTime();
+        
+        if (!(new URLSearchParams(window.location.search)).get('token')) window.location.href="index.html";
+        
+        if ((new URLSearchParams(window.location.search)).get('cod') == "qes") return;
+        
+        const token = parseInt((new URLSearchParams(window.location.search)).get('token'), 36);
+        if (data_atual>token) window.location.href="index.html";
+        
+        if (!(new URLSearchParams(window.location.search)).get('cod')) window.location.href="index.html";
+        cod_profissional = parseInt((new URLSearchParams(window.location.search)).get('cod'), 36);
+
+        })()
+    </script><script>        if (nomeProfissional[cod_profissional]) {
+            document.getElementById("nome").textContent = nomeProfissional[cod_profissional];
+        }
+
+        colore_percentual = (percentual,meta) => {
+            console.log(percentual);
+            if ((40*meta)/100 > percentual) {
+                return "#F6CCCC";
+            }
+    
+            if ((69*meta)/100 > percentual) {
+                return "#F7CCA0";
+            }
+    
+            if (100 > percentual) {
+                return"#B4E2CE";
+            }
+    
+            return "#9FC1E3";
+        }
+
+        let equipes = [];
+        const lista_profissionais = document.getElementById("lista_dos_profissionais");
+
+        for(let cod_acs in lista_dos_profissionais) {
+            let acs = lista_dos_profissionais[cod_acs];
+            if (!equipes[ acs[1] ]) {
+                equipes[ acs[1] ] = [];
+            }
+            equipes[ acs[1] ][ acs[2] ] = [ cod_acs, acs[0] ];
+        }
+
+        equipes = Object.keys(equipes)
+        .sort()
+        .reduce((accumulator, key) => {
+          accumulator[key] = equipes[key];
+      
+          return accumulator;
+        }, {});
+
+        for(let equipe in equipes) {
+            let lista_acs = equipes[equipe];
+            lista_acs = Object.keys(lista_acs)
+            .sort()
+            .reduce((accumulator, key) => {
+              accumulator[key] = lista_acs[key];
+          
+              return accumulator;
+            }, {});
+
+            if (!enfermeiros_esf[parseInt((new URLSearchParams(window.location.search)).get('cod'), 36)].includes(equipe)) continue;
+
+            let table = "<table>";
+            table += "<tr><th></th><th>Nome</th><th>Famílias</th><th>Cobertura</th><th>Ausências</th></tr>"
+
+            for(let micro in lista_acs) {
+                let acs = lista_acs[micro];
+                let familias = visitas_realizadas[visitas_realizadas.length-1][acs[0] ][4];
+                let cobertura = visitas_realizadas[visitas_realizadas.length-1][acs[0] ][9];
+                let ausencias = visitas_realizadas[visitas_realizadas.length-1][acs[0] ][10];
+
+                //let cor_cobertura = colore_percentual(parseInt(ausencias.replace(",",".")*100),100);
+
+                ausencias = parseInt(ausencias.replace(",",".")*100)+"%";
+                cobertura = parseInt(cobertura.replace(",",".")*100)+"%";
+
+
+
+                table+= `<tr class="tr" onclick="bypassCPF('acs.html',${acs[0]},null,'preceptoria.html')">
+                           <td><b>${micro}</b></td>
+                           <td>${acs[1]}</td>
+                           <td class="right">${familias}</td>
+                           <td class="right">${cobertura}</td>
+                           <td class="right">${ausencias}</td>
+                        </tr>`
+            }
+            table += "</table>";
+
+            lista_profissionais.innerHTML += `<h3>${equipe}</h3>${table}`;
+        }
+    </script></html>
