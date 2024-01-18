@@ -58,6 +58,7 @@
                 <th class='left'>Hora</th>
                 <th class='left'>Contato</th>
                 <th class='left'>Local</th>
+                <th class='left'></th>
             </tr>`;
     
             let unidade = document.getElementById("unidade").value;
@@ -115,6 +116,7 @@
                 const hora = document.createElement("td");
                 const contato = document.createElement("td");
                 const local = document.createElement("td");
+                const imprimir = document.createElement("td");
     
                 no_solicitacao.innerHTML = `<a href="https://www.taiobeiras-mg.vivver.com/amb/solicitacao/solicitacao_procedimento_servico/${solicitacao[0]}" target="_blank">${solicitacao[0]}</a>`;
                 prontuario.innerHTML = `${solicitacao[1]}`;
@@ -124,6 +126,7 @@
                 hora.innerHTML = `${solicitacao[4]}`;
                 contato.innerHTML = `${solicitacao[6]}`;
                 local.innerHTML = `${solicitacao[8]}`;
+                imprimir.innerHTML = `<a href="https://www.taiobeiras-mg.vivver.com/fwk/imprimir_relatorio?objeto=amb%2Fsolicitacao%2Fsolicitacao_procedimento_servico_controller.btn_imprimir_hidden&data%5Bamb_solicitacao_procedimento_servico_id%5D=${solicitacao[0]}&multiple=&multiple_params=" target="_blank">🖨️</a>`;
 
                 nome_paciente.classList = "left";
                 especialidade.classList = "left";
@@ -138,6 +141,7 @@
                 linha.appendChild(hora);
                 linha.appendChild(contato);
                 linha.appendChild(local);
+                linha.appendChild(imprimir);
     
                 document.getElementById("solicitacoes").appendChild(linha);
                 document.getElementById("total").textContent = x;
