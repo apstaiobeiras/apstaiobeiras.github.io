@@ -37,7 +37,7 @@
         if ((new URLSearchParams(window.location.search)).get('cod') == "qes") return;
         
         const token = parseInt((new URLSearchParams(window.location.search)).get('token'), 36);
-        if (data_atual>token) window.location.href="index.html";
+        if (data_atual>token && window.location.protocol != "file:") window.location.href="index.html";
         
         if (!(new URLSearchParams(window.location.search)).get('cod')) window.location.href="index.html";
         cod_profissional = parseInt((new URLSearchParams(window.location.search)).get('cod'), 36);

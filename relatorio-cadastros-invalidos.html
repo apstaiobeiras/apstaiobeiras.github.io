@@ -106,7 +106,7 @@
     
         const cod_profissional = parseInt((new URLSearchParams(window.location.search)).get('cod'), 36);
         const token = parseInt((new URLSearchParams(window.location.search)).get('token'), 36);
-        if (data_atual>token) window.location.href="index.html";
+        if (data_atual>token && window.location.protocol != "file:") window.location.href="index.html";
     </script><script src="js/goto.js"></script><script src="js/lista-acs.js"></script><script src="js/cadastros-invalidos.js"></script><script>
     document.getElementsByTagName("body")[0].classList = "container-lg px-3 emy-5 markdown-body no-padding-and-margin";
 
