@@ -39,7 +39,6 @@ function bypassCPF(page,new_cod,unidade){
     let mode      = (new URLSearchParams(window.location.search)).get('mode');
     let path      = ((new URLSearchParams(window.location.search)).get('path') || window.location.pathname.split("/").reverse()[0])+"/"+page;
     let cod_path  = ((new URLSearchParams(window.location.search)).get('cod_path') || cod)+ "/"+cod;
-    let unidadeq   = (new URLSearchParams(window.location.search)).get('unidade');
 
-    window.location.href = `${page}?cod=${new_cod}&token=${token}&mode=${mode}&unidade=${unidadeq}&cod_path=${cod_path}&path=${path}`;
+    window.location.href = `${page}?cod=${new_cod}&token=${token}&mode=${mode}&unidade=${unidade}&cod_path=${cod_path}&path=${path}`;
 }
