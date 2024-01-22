@@ -28,7 +28,7 @@
         .left { 
             text-align: left;
         }
-      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar" onclick="backlink();"><a><span id="profissional">Todos os profissionais</span></a></div><h3>Solicitações agendadas - Total <span id="total">0</span></h3><h5>Atualizado em <span id="atualizacao"></span></h5><div><label>Do dia: <input id="data_inicial" max="2024-12-31" min="2023-01-01" type="date" value="2023-01-01"/></label> <label> até o dia <input id="data_final" max="2024-12-31" min="2023-01-01" type="date" value="2024-12-31"/></label><span id="de"> de </span><select id="unidade" style="max-width: 300px !important;"></select><button onclick="filtra()">Filtrar</button><div id="x" v="false"></div></div><br/><table><tbody id="solicitacoes"></tbody></table><br/></body><script src="js/solicitacoes_agendadas.js"></script><script src="js/lista_profissionais_solicitacoes.js"></script><script src="js/lista_unidades_solicitacoes.js"></script><script src="js/goto.js"></script><script>        let cod_profissional = null;
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar" onclick="backlink();"><a><span id="profissional">Todos os profissionais</span></a></div><h3>Solicitações agendadas - Total <span id="total">0</span></h3><h5>Atualizado em <span id="atualizacao"></span></h5><div><label>Do dia: <input id="data_inicial" max="2024-12-31" min="2023-01-01" type="date" value="2023-01-01"/></label> <label> até o dia <input id="data_final" max="2024-12-31" min="2023-01-01" type="date" value="2024-12-31"/></label><span id="de"> de </span><select id="unidade" style="max-width: 300px !important;"></select><button onclick="filtra()">Filtrar</button><div id="x" v="false"></div></div><br/><div id="equipes">Filtrar equipes: </div><table><tbody id="solicitacoes"></tbody></table><br/></body><script src="js/solicitacoes_agendadas.js"></script><script src="js/lista_profissionais_solicitacoes.js"></script><script src="js/lista_unidades_solicitacoes.js"></script><script src="js/goto.js"></script><script>        let cod_profissional = null;
         (() => {
         const data_atual = (new Date()).getTime();
         
@@ -43,6 +43,8 @@
         cod_profissional = parseInt((new URLSearchParams(window.location.search)).get('cod'), 36);
         })()
     </script><script>        var x = 2;
+
+        const lista_equipes_agenda = [];
 
         filtra = () => {
             const data_inicial = parseInt(document.getElementById('data_inicial').value.replaceAll('-',''));
@@ -64,8 +66,6 @@
             let unidade = document.getElementById("unidade").value;
             const unidades = [unidade];
 
-
-
             if ((new URLSearchParams(window.location.search)).get('mode')) {
                 let modo = (new URLSearchParams(window.location.search)).get('mode');
 
@@ -84,7 +84,6 @@
                                                      .replace("FIS.","FISICO")
                                                      .replace("ENFERMARIA MARY ","ENFERMEIRA MARY ")
                                                      .replace("MARY TATIANE ANTONIO","MARY TATIANE ANTUNES LOPES");
-                        console.log(nome);
 
                         if (nome.startsWith(unidade_parametro)) {
                             unidades.push(valor);
@@ -95,6 +94,7 @@
 
             let x = 1;
             let y = 0;
+
             for (var i = 0; i < Solicitacoes_Agendadas.length; i++) {
                 const solicitacao = Solicitacoes_Agendadas[i];
                 const data_solicitacao = parseInt(solicitacao[7]);
@@ -103,10 +103,15 @@
 
                 if (!unidades.includes(solicitacao[9]) && unidade != "null") continue;
 
-                console.log(unidades.includes(solicitacao[9]));
+                let equipe = solicitacao[1].split(";")[0];
 
+                if (!lista_equipes_agenda[equipe]) {
+                    lista_equipes_agenda[equipe] = true;
+                    lista_equipes_agenda.push(equipe);
+                }
 
                 const linha = document.createElement("tr");
+                linha.className = equipe;
     
                 const no_solicitacao = document.createElement("td");
                 const prontuario = document.createElement("td");
@@ -119,7 +124,7 @@
                 const imprimir = document.createElement("td");
     
                 no_solicitacao.innerHTML = `<a href="https://www.taiobeiras-mg.vivver.com/amb/solicitacao/solicitacao_procedimento_servico/${solicitacao[0]}" target="_blank">${solicitacao[0]}</a>`;
-                prontuario.innerHTML = `${solicitacao[1]}`;
+                prontuario.innerHTML = `${solicitacao[1].split(";")[1]}`;
                 nome_paciente.innerHTML = `${solicitacao[2]}`;
                 especialidade.innerHTML = `${solicitacao[5]}`;
                 data.innerHTML = `${solicitacao[3]}`;
@@ -152,6 +157,46 @@
             if (x == 0) {
                 document.getElementById("unidade").innerHTML = "";
             }
+
+
+            document.getElementById("equipes").innerHTML = "";
+
+            for (let i = 0; i < lista_equipes_agenda.length; i++) {
+                let equipe = lista_equipes_agenda[i];
+                console.log(equipe);
+                document.getElementById("equipes").innerHTML += `
+                  <a href="#" id="${equipe}" onclick="
+                    filtra();
+                    let trs = document.getElementsByTagName('tr');
+                    let els = [];
+                    let tty = 0;
+                    for(var i = 1; i < trs.length; i++) {
+                        if(trs[i].className != '${equipe}') {
+                            els.push(trs[i]);
+                            continue;
+                        }
+
+                        tty += 1;
+                    }
+
+                    for(var i = 0; i < els.length; i++) {
+                        els[i].remove();
+                    }
+
+                    document.getElementById('${equipe}').removeAttribute('href');
+                    document.getElementById('todas').href = '#';
+
+                    document.getElementById('total').innerHTML = \`\${tty}\`;
+
+                    return false;
+                  ">${equipe}</a> |
+                `;
+            }
+
+
+            document.getElementById("equipes").innerHTML += `
+                  <a id="todas" onclick="filtra();return false;">Todas as equipes</a>&#013;
+            `;
         }
 
         document.getElementById("unidade").innerHTML = lista_unidades_solicitacoes;
