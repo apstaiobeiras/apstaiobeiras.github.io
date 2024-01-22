@@ -197,6 +197,10 @@
             document.getElementById("equipes").innerHTML += `
                   <a id="todas" onclick="filtra();return false;">Todas as equipes</a>&#013;
             `;
+
+            if (lista_equipes_agenda.length == 1) {
+                document.getElementById("equipes").innerHTML = "";
+            }
         }
 
         document.getElementById("unidade").innerHTML = lista_unidades_solicitacoes;
