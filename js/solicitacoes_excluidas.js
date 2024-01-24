@@ -1,4 +1,4 @@
-document.getElementById('atualizacao').textContent = '22/01/2024';
+document.getElementById('atualizacao').textContent = '24/01/2024';
 const Solicitacoes_Excluidas = [
   ["34957","796", "4074","2","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>detalhar queixa clínica","20230317","Ultrassonografia ombro "],
   ["37418","818", "354","13","<b>Agendar na Atenção Primaria: </b><br>Solicitação com mais de 2 anos, favor reavaliar queixa e solicitar o exame caso preencha critérios e detalhar quadro clínico para melhor priorização.","20230317","Ultrassonografia ombro "],
