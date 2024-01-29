@@ -123,9 +123,10 @@
 
             for(let micro in lista_acs) {
                 let acs = lista_acs[micro];
-                let familias = visitas_realizadas[visitas_realizadas.length-1][acs[0] ][4];
-                let cobertura = visitas_realizadas[visitas_realizadas.length-1][acs[0] ][9];
-                let ausencias = visitas_realizadas[visitas_realizadas.length-1][acs[0] ][10];
+                //visitas_realizadas.length-1;
+                let familias = visitas_realizadas[1][acs[0] ][4];
+                let cobertura = visitas_realizadas[1][acs[0] ][9];
+                let ausencias = visitas_realizadas[1][acs[0] ][10];
 
                 //let cor_cobertura = colore_percentual(parseInt(ausencias.replace(",",".")*100),100);
 
