@@ -9,12 +9,12 @@ const indicadores_equipes = `
   <td class="right">4</td>
   <td class="atingiu right">52%</td>
   <td class="right"></td>
-  <td class="proximo right">92%</td>
+  <td class="proximo right">93%</td>
   <td class="right">1</td>
-  <td class="razoavel right">30%</td>
-  <td class="right">146</td>
-  <td class="razoavel right">29%</td>
-  <td class="right">51</td>
+  <td class="razoavel right">38%</td>
+  <td class="right">102</td>
+  <td class="razoavel right">32%</td>
+  <td class="right">45</td>
 </tr>
 <tr>
   <td><b>CAMINHO</b></td>
@@ -28,10 +28,10 @@ const indicadores_equipes = `
   <td class="right"></td>
   <td class="atingiu right">100%</td>
   <td class="right"></td>
-  <td class="razoavel right">36%</td>
-  <td class="right">121</td>
-  <td class="razoavel right">32%</td>
-  <td class="right">45</td>
+  <td class="razoavel right">39%</td>
+  <td class="right">102</td>
+  <td class="razoavel right">35%</td>
+  <td class="right">40</td>
 </tr>
 <tr>
   <td><b>COMUN. RURAIS</b></td>
@@ -45,10 +45,10 @@ const indicadores_equipes = `
   <td class="right"></td>
   <td class="atingiu right">100%</td>
   <td class="right"></td>
-  <td class="razoavel right">36%</td>
-  <td class="right">101</td>
-  <td class="ruim right">18%</td>
-  <td class="right">48</td>
+  <td class="razoavel right">40%</td>
+  <td class="right">82</td>
+  <td class="ruim right">22%</td>
+  <td class="right">43</td>
 </tr>
 <tr>
   <td><b>ESPERANÇA</b></td>
@@ -59,13 +59,13 @@ const indicadores_equipes = `
   <td class="atingiu right">100%</td>
   <td class="right"></td>
   <td class="proximo right">45%</td>
-  <td class="right">32</td>
+  <td class="right">28</td>
   <td class="atingiu right">100%</td>
   <td class="right"></td>
-  <td class="razoavel right">33%</td>
-  <td class="right">125</td>
-  <td class="razoavel right">36%</td>
-  <td class="right">29</td>
+  <td class="razoavel right">37%</td>
+  <td class="right">101</td>
+  <td class="razoavel right">40%</td>
+  <td class="right">23</td>
 </tr>
 <tr>
   <td><b>ESPETACULAR</b></td>
@@ -79,10 +79,10 @@ const indicadores_equipes = `
   <td class="right"></td>
   <td class="atingiu right">100%</td>
   <td class="right"></td>
-  <td class="razoavel right">33%</td>
-  <td class="right">151</td>
-  <td class="razoavel right">35%</td>
-  <td class="right">37</td>
+  <td class="razoavel right">37%</td>
+  <td class="right">125</td>
+  <td class="razoavel right">39%</td>
+  <td class="right">30</td>
 </tr>
 <tr>
   <td><b>HARMONIA</b></td>
@@ -92,14 +92,14 @@ const indicadores_equipes = `
   <td class="right"></td>
   <td class="atingiu right">100%</td>
   <td class="right"></td>
-  <td class="atingiu right">51%</td>
+  <td class="atingiu right">52%</td>
   <td class="right"></td>
   <td class="proximo right">88%</td>
   <td class="right">1</td>
-  <td class="razoavel right">31%</td>
-  <td class="right">136</td>
-  <td class="razoavel right">26%</td>
-  <td class="right">47</td>
+  <td class="razoavel right">37%</td>
+  <td class="right">109</td>
+  <td class="razoavel right">33%</td>
+  <td class="right">36</td>
 </tr>
 <tr>
   <td><b>HUMANIZAR</b></td>
@@ -109,52 +109,52 @@ const indicadores_equipes = `
   <td class="right"></td>
   <td class="atingiu right">100%</td>
   <td class="right"></td>
+  <td class="atingiu right">51%</td>
+  <td class="right"></td>
+  <td class="atingiu right">100%</td>
+  <td class="right"></td>
+  <td class="razoavel right">40%</td>
+  <td class="right">94</td>
+  <td class="razoavel right">38%</td>
+  <td class="right">27</td>
+</tr>
+<tr>
+  <td><b>LIBERDADE</b></td>
+  <td class="proximo right">70%</td>
+  <td class="right">1</td>
+  <td class="proximo right">90%</td>
+  <td class="right">1</td>
+  <td class="proximo right">90%</td>
+  <td class="right">1</td>
   <td class="atingiu right">50%</td>
   <td class="right"></td>
   <td class="atingiu right">100%</td>
   <td class="right"></td>
-  <td class="razoavel right">31%</td>
-  <td class="right">142</td>
-  <td class="razoavel right">28%</td>
-  <td class="right">43</td>
-</tr>
-<tr>
-  <td><b>LIBERDADE</b></td>
-  <td class="proximo right">60%</td>
-  <td class="right">2</td>
-  <td class="proximo right">90%</td>
-  <td class="right">1</td>
-  <td class="proximo right">90%</td>
-  <td class="right">1</td>
-  <td class="atingiu right">50%</td>
-  <td class="right"></td>
-  <td class="proximo right">90%</td>
-  <td class="right">1</td>
-  <td class="razoavel right">34%</td>
-  <td class="right">107</td>
-  <td class="ruim right">19%</td>
-  <td class="right">66</td>
+  <td class="razoavel right">36%</td>
+  <td class="right">95</td>
+  <td class="ruim right">21%</td>
+  <td class="right">62</td>
 </tr>
 <tr>
   <td><b>MAIS SAÚDE</b></td>
-  <td class="proximo right">61%</td>
+  <td class="proximo right">58%</td>
   <td class="right">2</td>
-  <td class="proximo right">92%</td>
+  <td class="proximo right">91%</td>
   <td class="right">1</td>
-  <td class="proximo right">92%</td>
+  <td class="proximo right">91%</td>
   <td class="right">1</td>
-  <td class="proximo right">47%</td>
-  <td class="right">15</td>
+  <td class="proximo right">48%</td>
+  <td class="right">13</td>
   <td class="proximo right">94%</td>
   <td class="right">1</td>
-  <td class="razoavel right">31%</td>
-  <td class="right">156</td>
-  <td class="ruim right">18%</td>
-  <td class="right">70</td>
+  <td class="razoavel right">34%</td>
+  <td class="right">138</td>
+  <td class="ruim right">19%</td>
+  <td class="right">68</td>
 </tr>
 <tr>
   <td><b>PROGRESSO</b></td>
-  <td class="atingiu right">81%</td>
+  <td class="atingiu right">90%</td>
   <td class="right"></td>
   <td class="proximo right">90%</td>
   <td class="right">1</td>
@@ -164,78 +164,78 @@ const indicadores_equipes = `
   <td class="right"></td>
   <td class="atingiu right">100%</td>
   <td class="right"></td>
-  <td class="razoavel right">32%</td>
-  <td class="right">126</td>
-  <td class="razoavel right">28%</td>
-  <td class="right">49</td>
+  <td class="razoavel right">37%</td>
+  <td class="right">100</td>
+  <td class="razoavel right">33%</td>
+  <td class="right">41</td>
 </tr>
 <tr>
   <td><b>RENASCER</b></td>
-  <td class="atingiu right">85%</td>
+  <td class="atingiu right">100%</td>
   <td class="right"></td>
   <td class="atingiu right">100%</td>
   <td class="right"></td>
   <td class="razoavel right">57%</td>
   <td class="right">3</td>
   <td class="razoavel right">34%</td>
-  <td class="right">155</td>
+  <td class="right">154</td>
   <td class="proximo right">72%</td>
   <td class="right">3</td>
-  <td class="ruim right">16%</td>
-  <td class="right">367</td>
-  <td class="ruim right">15%</td>
-  <td class="right">121</td>
+  <td class="ruim right">20%</td>
+  <td class="right">333</td>
+  <td class="ruim right">18%</td>
+  <td class="right">115</td>
 </tr>
 <tr>
   <td><b>UNIÃO</b></td>
-  <td class="razoavel right">52%</td>
+  <td class="proximo right">55%</td>
   <td class="right">4</td>
   <td class="proximo right">94%</td>
   <td class="right">1</td>
-  <td class="atingiu right">100%</td>
-  <td class="right"></td>
+  <td class="proximo right">94%</td>
+  <td class="right">1</td>
   <td class="atingiu right">51%</td>
   <td class="right"></td>
   <td class="proximo right">92%</td>
   <td class="right">1</td>
-  <td class="razoavel right">33%</td>
-  <td class="right">119</td>
-  <td class="razoavel right">30%</td>
-  <td class="right">41</td>
+  <td class="razoavel right">36%</td>
+  <td class="right">103</td>
+  <td class="razoavel right">35%</td>
+  <td class="right">33</td>
 </tr>
 <tr>
   <td><b>VIDA</b></td>
-  <td class="razoavel right">50%</td>
+  <td class="proximo right">53%</td>
   <td class="right">4</td>
-  <td class="proximo right">78%</td>
+  <td class="proximo right">80%</td>
   <td class="right">3</td>
-  <td class="proximo right">92%</td>
+  <td class="proximo right">93%</td>
   <td class="right">1</td>
   <td class="proximo right">47%</td>
-  <td class="right">14</td>
+  <td class="right">15</td>
   <td class="proximo right">85%</td>
   <td class="right">1</td>
-  <td class="razoavel right">30%</td>
-  <td class="right">176</td>
-  <td class="ruim right">16%</td>
-  <td class="right">87</td>
+  <td class="razoavel right">34%</td>
+  <td class="right">148</td>
+  <td class="ruim right">21%</td>
+  <td class="right">77</td>
 </tr>
 <tr>
   <td><b>VIDA E SAÚDE</b></td>
-  <td class="ruim right">28%</td>
-  <td class="right">7</td>
+  <td class="razoavel right">41%</td>
+  <td class="right">4</td>
   <td class="atingiu right">100%</td>
   <td class="right"></td>
-  <td class="proximo right">85%</td>
-  <td class="right">2</td>
+  <td class="proximo right">91%</td>
+  <td class="right">1</td>
   <td class="atingiu right">54%</td>
   <td class="right"></td>
-  <td class="proximo right">83%</td>
+  <td class="proximo right">82%</td>
   <td class="right">3</td>
-  <td class="razoavel right">30%</td>
-  <td class="right">171</td>
-  <td class="razoavel right">30%</td>
-  <td class="right">49</td>
+  <td class="razoavel right">37%</td>
+  <td class="right">131</td>
+  <td class="razoavel right">35%</td>
+  <td class="right">40</td>
 </tr>
 <tr>
   <td><b>VIVER</b></td>
@@ -245,31 +245,31 @@ const indicadores_equipes = `
   <td class="right">1</td>
   <td class="proximo right">92%</td>
   <td class="right">1</td>
-  <td class="proximo right">43%</td>
-  <td class="right">59</td>
+  <td class="proximo right">42%</td>
+  <td class="right">60</td>
   <td class="atingiu right">100%</td>
   <td class="right"></td>
-  <td class="razoavel right">25%</td>
-  <td class="right">200</td>
-  <td class="razoavel right">25%</td>
-  <td class="right">62</td>
+  <td class="razoavel right">29%</td>
+  <td class="right">177</td>
+  <td class="razoavel right">30%</td>
+  <td class="right">53</td>
 </tr>
 <tr>
   <td><b>Município</b></td>
-  <td class="proximo right">56%</td>
-  <td class="right">29</td>
+  <td class="proximo right">59%</td>
+  <td class="right">23</td>
   <td class="proximo right">90%</td>
   <td class="right">7</td>
-  <td class="proximo right">88%</td>
+  <td class="proximo right">87%</td>
   <td class="right">11</td>
-  <td class="proximo right">45%</td>
-  <td class="right">456</td>
-  <td class="proximo right">91%</td>
-  <td class="right">5</td>
-  <td class="razoavel right">28%</td>
-  <td class="right">2835</td>
-  <td class="ruim right">23%</td>
-  <td class="right">1014</td>
+  <td class="proximo right">46%</td>
+  <td class="right">427</td>
+  <td class="proximo right">92%</td>
+  <td class="right">4</td>
+  <td class="razoavel right">32%</td>
+  <td class="right">2415</td>
+  <td class="razoavel right">26%</td>
+  <td class="right">905</td>
 </tr>
 `;
 const indicadores_por_equipe = [];
@@ -306,21 +306,21 @@ indicadores_por_equipe['ACOLHER'] = `
   </tr>
   <tr>
     <td>Vacinas</td>
-    <td class="right proximo">92%</td>
+    <td class="right proximo">93%</td>
     <td class="right">95%</td>
     <td class="right">1</td>
   </tr>
   <tr>
     <td>Hipertensos</td>
-    <td class="right razoavel">30%</td>
+    <td class="right razoavel">38%</td>
     <td class="right">57%</td>
-    <td class="right">146</td>
+    <td class="right">102</td>
   </tr>
   <tr>
     <td>Diabéticos</td>
-    <td class="right razoavel">29%</td>
+    <td class="right razoavel">32%</td>
     <td class="right">57%</td>
-    <td class="right">51</td>
+    <td class="right">45</td>
   </tr>
 `
 indicadores_por_equipe['CAMINHO'] = `
@@ -362,15 +362,15 @@ indicadores_por_equipe['CAMINHO'] = `
   </tr>
   <tr>
     <td>Hipertensos</td>
-    <td class="right razoavel">36%</td>
+    <td class="right razoavel">39%</td>
     <td class="right">57%</td>
-    <td class="right">121</td>
+    <td class="right">102</td>
   </tr>
   <tr>
     <td>Diabéticos</td>
-    <td class="right razoavel">32%</td>
+    <td class="right razoavel">35%</td>
     <td class="right">57%</td>
-    <td class="right">45</td>
+    <td class="right">40</td>
   </tr>
 `
 indicadores_por_equipe['COMUN. RURAIS'] = `
@@ -412,15 +412,15 @@ indicadores_por_equipe['COMUN. RURAIS'] = `
   </tr>
   <tr>
     <td>Hipertensos</td>
-    <td class="right razoavel">36%</td>
+    <td class="right razoavel">40%</td>
     <td class="right">57%</td>
-    <td class="right">101</td>
+    <td class="right">82</td>
   </tr>
   <tr>
     <td>Diabéticos</td>
-    <td class="right ruim">18%</td>
+    <td class="right ruim">22%</td>
     <td class="right">57%</td>
-    <td class="right">48</td>
+    <td class="right">43</td>
   </tr>
 `
 indicadores_por_equipe['ESPERANÇA'] = `
@@ -452,7 +452,7 @@ indicadores_por_equipe['ESPERANÇA'] = `
     <td>Citopatológico</td>
     <td class="right proximo">45%</td>
     <td class="right">50%</td>
-    <td class="right">32</td>
+    <td class="right">28</td>
   </tr>
   <tr>
     <td>Vacinas</td>
@@ -462,15 +462,15 @@ indicadores_por_equipe['ESPERANÇA'] = `
   </tr>
   <tr>
     <td>Hipertensos</td>
-    <td class="right razoavel">33%</td>
+    <td class="right razoavel">37%</td>
     <td class="right">57%</td>
-    <td class="right">125</td>
+    <td class="right">101</td>
   </tr>
   <tr>
     <td>Diabéticos</td>
-    <td class="right razoavel">36%</td>
+    <td class="right razoavel">40%</td>
     <td class="right">57%</td>
-    <td class="right">29</td>
+    <td class="right">23</td>
   </tr>
 `
 indicadores_por_equipe['ESPETACULAR'] = `
@@ -512,15 +512,15 @@ indicadores_por_equipe['ESPETACULAR'] = `
   </tr>
   <tr>
     <td>Hipertensos</td>
-    <td class="right razoavel">33%</td>
+    <td class="right razoavel">37%</td>
     <td class="right">57%</td>
-    <td class="right">151</td>
+    <td class="right">125</td>
   </tr>
   <tr>
     <td>Diabéticos</td>
-    <td class="right razoavel">35%</td>
+    <td class="right razoavel">39%</td>
     <td class="right">57%</td>
-    <td class="right">37</td>
+    <td class="right">30</td>
   </tr>
 `
 indicadores_por_equipe['HARMONIA'] = `
@@ -550,7 +550,7 @@ indicadores_por_equipe['HARMONIA'] = `
   </tr>
   <tr>
     <td>Citopatológico</td>
-    <td class="right atingiu">51%</td>
+    <td class="right atingiu">52%</td>
     <td class="right">50%</td>
     <td class="right"></td>
   </tr>
@@ -562,15 +562,15 @@ indicadores_por_equipe['HARMONIA'] = `
   </tr>
   <tr>
     <td>Hipertensos</td>
-    <td class="right razoavel">31%</td>
+    <td class="right razoavel">37%</td>
     <td class="right">57%</td>
-    <td class="right">136</td>
+    <td class="right">109</td>
   </tr>
   <tr>
     <td>Diabéticos</td>
-    <td class="right razoavel">26%</td>
+    <td class="right razoavel">33%</td>
     <td class="right">57%</td>
-    <td class="right">47</td>
+    <td class="right">36</td>
   </tr>
 `
 indicadores_por_equipe['HUMANIZAR'] = `
@@ -600,6 +600,56 @@ indicadores_por_equipe['HUMANIZAR'] = `
   </tr>
   <tr>
     <td>Citopatológico</td>
+    <td class="right atingiu">51%</td>
+    <td class="right">50%</td>
+    <td class="right"></td>
+  </tr>
+  <tr>
+    <td>Vacinas</td>
+    <td class="right atingiu">100%</td>
+    <td class="right">95%</td>
+    <td class="right"></td>
+  </tr>
+  <tr>
+    <td>Hipertensos</td>
+    <td class="right razoavel">40%</td>
+    <td class="right">57%</td>
+    <td class="right">94</td>
+  </tr>
+  <tr>
+    <td>Diabéticos</td>
+    <td class="right razoavel">38%</td>
+    <td class="right">57%</td>
+    <td class="right">27</td>
+  </tr>
+`
+indicadores_por_equipe['LIBERDADE'] = `
+  <tr>
+    <th></th>
+    <th>Percentual<br>atingido</th>
+    <th>Meta</th>
+    <th>Pacientes que faltam<br>para cumprir a meta</th>
+  </tr>
+  <tr>
+    <td>Pré-natal</td>
+    <td class="right proximo">70%</td>
+    <td class="right">75%</td>
+    <td class="right">1</td>
+  </tr>
+  <tr>
+    <td>Exames de gestantes</td>
+    <td class="right proximo">90%</td>
+    <td class="right">95%</td>
+    <td class="right">1</td>
+  </tr>
+  <tr>
+    <td>Pré-natal odontológico</td>
+    <td class="right proximo">90%</td>
+    <td class="right">95%</td>
+    <td class="right">1</td>
+  </tr>
+  <tr>
+    <td>Citopatológico</td>
     <td class="right atingiu">50%</td>
     <td class="right">50%</td>
     <td class="right"></td>
@@ -612,65 +662,15 @@ indicadores_por_equipe['HUMANIZAR'] = `
   </tr>
   <tr>
     <td>Hipertensos</td>
-    <td class="right razoavel">31%</td>
+    <td class="right razoavel">36%</td>
     <td class="right">57%</td>
-    <td class="right">142</td>
+    <td class="right">95</td>
   </tr>
   <tr>
     <td>Diabéticos</td>
-    <td class="right razoavel">28%</td>
+    <td class="right ruim">21%</td>
     <td class="right">57%</td>
-    <td class="right">43</td>
-  </tr>
-`
-indicadores_por_equipe['LIBERDADE'] = `
-  <tr>
-    <th></th>
-    <th>Percentual<br>atingido</th>
-    <th>Meta</th>
-    <th>Pacientes que faltam<br>para cumprir a meta</th>
-  </tr>
-  <tr>
-    <td>Pré-natal</td>
-    <td class="right proximo">60%</td>
-    <td class="right">75%</td>
-    <td class="right">2</td>
-  </tr>
-  <tr>
-    <td>Exames de gestantes</td>
-    <td class="right proximo">90%</td>
-    <td class="right">95%</td>
-    <td class="right">1</td>
-  </tr>
-  <tr>
-    <td>Pré-natal odontológico</td>
-    <td class="right proximo">90%</td>
-    <td class="right">95%</td>
-    <td class="right">1</td>
-  </tr>
-  <tr>
-    <td>Citopatológico</td>
-    <td class="right atingiu">50%</td>
-    <td class="right">50%</td>
-    <td class="right"></td>
-  </tr>
-  <tr>
-    <td>Vacinas</td>
-    <td class="right proximo">90%</td>
-    <td class="right">95%</td>
-    <td class="right">1</td>
-  </tr>
-  <tr>
-    <td>Hipertensos</td>
-    <td class="right razoavel">34%</td>
-    <td class="right">57%</td>
-    <td class="right">107</td>
-  </tr>
-  <tr>
-    <td>Diabéticos</td>
-    <td class="right ruim">19%</td>
-    <td class="right">57%</td>
-    <td class="right">66</td>
+    <td class="right">62</td>
   </tr>
 `
 indicadores_por_equipe['MAIS SAÚDE'] = `
@@ -682,27 +682,27 @@ indicadores_por_equipe['MAIS SAÚDE'] = `
   </tr>
   <tr>
     <td>Pré-natal</td>
-    <td class="right proximo">61%</td>
+    <td class="right proximo">58%</td>
     <td class="right">75%</td>
     <td class="right">2</td>
   </tr>
   <tr>
     <td>Exames de gestantes</td>
-    <td class="right proximo">92%</td>
+    <td class="right proximo">91%</td>
     <td class="right">95%</td>
     <td class="right">1</td>
   </tr>
   <tr>
     <td>Pré-natal odontológico</td>
-    <td class="right proximo">92%</td>
+    <td class="right proximo">91%</td>
     <td class="right">95%</td>
     <td class="right">1</td>
   </tr>
   <tr>
     <td>Citopatológico</td>
-    <td class="right proximo">47%</td>
+    <td class="right proximo">48%</td>
     <td class="right">50%</td>
-    <td class="right">15</td>
+    <td class="right">13</td>
   </tr>
   <tr>
     <td>Vacinas</td>
@@ -712,15 +712,15 @@ indicadores_por_equipe['MAIS SAÚDE'] = `
   </tr>
   <tr>
     <td>Hipertensos</td>
-    <td class="right razoavel">31%</td>
+    <td class="right razoavel">34%</td>
     <td class="right">57%</td>
-    <td class="right">156</td>
+    <td class="right">138</td>
   </tr>
   <tr>
     <td>Diabéticos</td>
-    <td class="right ruim">18%</td>
+    <td class="right ruim">19%</td>
     <td class="right">57%</td>
-    <td class="right">70</td>
+    <td class="right">68</td>
   </tr>
 `
 indicadores_por_equipe['PROGRESSO'] = `
@@ -732,7 +732,7 @@ indicadores_por_equipe['PROGRESSO'] = `
   </tr>
   <tr>
     <td>Pré-natal</td>
-    <td class="right atingiu">81%</td>
+    <td class="right atingiu">90%</td>
     <td class="right">75%</td>
     <td class="right"></td>
   </tr>
@@ -762,15 +762,15 @@ indicadores_por_equipe['PROGRESSO'] = `
   </tr>
   <tr>
     <td>Hipertensos</td>
-    <td class="right razoavel">32%</td>
+    <td class="right razoavel">37%</td>
     <td class="right">57%</td>
-    <td class="right">126</td>
+    <td class="right">100</td>
   </tr>
   <tr>
     <td>Diabéticos</td>
-    <td class="right razoavel">28%</td>
+    <td class="right razoavel">33%</td>
     <td class="right">57%</td>
-    <td class="right">49</td>
+    <td class="right">41</td>
   </tr>
 `
 indicadores_por_equipe['RENASCER'] = `
@@ -782,7 +782,7 @@ indicadores_por_equipe['RENASCER'] = `
   </tr>
   <tr>
     <td>Pré-natal</td>
-    <td class="right atingiu">85%</td>
+    <td class="right atingiu">100%</td>
     <td class="right">75%</td>
     <td class="right"></td>
   </tr>
@@ -802,7 +802,7 @@ indicadores_por_equipe['RENASCER'] = `
     <td>Citopatológico</td>
     <td class="right razoavel">34%</td>
     <td class="right">50%</td>
-    <td class="right">155</td>
+    <td class="right">154</td>
   </tr>
   <tr>
     <td>Vacinas</td>
@@ -812,15 +812,15 @@ indicadores_por_equipe['RENASCER'] = `
   </tr>
   <tr>
     <td>Hipertensos</td>
-    <td class="right ruim">16%</td>
+    <td class="right ruim">20%</td>
     <td class="right">57%</td>
-    <td class="right">367</td>
+    <td class="right">333</td>
   </tr>
   <tr>
     <td>Diabéticos</td>
-    <td class="right ruim">15%</td>
+    <td class="right ruim">18%</td>
     <td class="right">57%</td>
-    <td class="right">121</td>
+    <td class="right">115</td>
   </tr>
 `
 indicadores_por_equipe['UNIÃO'] = `
@@ -832,7 +832,7 @@ indicadores_por_equipe['UNIÃO'] = `
   </tr>
   <tr>
     <td>Pré-natal</td>
-    <td class="right razoavel">52%</td>
+    <td class="right proximo">55%</td>
     <td class="right">75%</td>
     <td class="right">4</td>
   </tr>
@@ -844,9 +844,9 @@ indicadores_por_equipe['UNIÃO'] = `
   </tr>
   <tr>
     <td>Pré-natal odontológico</td>
-    <td class="right atingiu">100%</td>
+    <td class="right proximo">94%</td>
     <td class="right">95%</td>
-    <td class="right"></td>
+    <td class="right">1</td>
   </tr>
   <tr>
     <td>Citopatológico</td>
@@ -862,15 +862,15 @@ indicadores_por_equipe['UNIÃO'] = `
   </tr>
   <tr>
     <td>Hipertensos</td>
-    <td class="right razoavel">33%</td>
+    <td class="right razoavel">36%</td>
     <td class="right">57%</td>
-    <td class="right">119</td>
+    <td class="right">103</td>
   </tr>
   <tr>
     <td>Diabéticos</td>
-    <td class="right razoavel">30%</td>
+    <td class="right razoavel">35%</td>
     <td class="right">57%</td>
-    <td class="right">41</td>
+    <td class="right">33</td>
   </tr>
 `
 indicadores_por_equipe['VIDA'] = `
@@ -882,19 +882,19 @@ indicadores_por_equipe['VIDA'] = `
   </tr>
   <tr>
     <td>Pré-natal</td>
-    <td class="right razoavel">50%</td>
+    <td class="right proximo">53%</td>
     <td class="right">75%</td>
     <td class="right">4</td>
   </tr>
   <tr>
     <td>Exames de gestantes</td>
-    <td class="right proximo">78%</td>
+    <td class="right proximo">80%</td>
     <td class="right">95%</td>
     <td class="right">3</td>
   </tr>
   <tr>
     <td>Pré-natal odontológico</td>
-    <td class="right proximo">92%</td>
+    <td class="right proximo">93%</td>
     <td class="right">95%</td>
     <td class="right">1</td>
   </tr>
@@ -902,7 +902,7 @@ indicadores_por_equipe['VIDA'] = `
     <td>Citopatológico</td>
     <td class="right proximo">47%</td>
     <td class="right">50%</td>
-    <td class="right">14</td>
+    <td class="right">15</td>
   </tr>
   <tr>
     <td>Vacinas</td>
@@ -912,15 +912,15 @@ indicadores_por_equipe['VIDA'] = `
   </tr>
   <tr>
     <td>Hipertensos</td>
-    <td class="right razoavel">30%</td>
+    <td class="right razoavel">34%</td>
     <td class="right">57%</td>
-    <td class="right">176</td>
+    <td class="right">148</td>
   </tr>
   <tr>
     <td>Diabéticos</td>
-    <td class="right ruim">16%</td>
+    <td class="right ruim">21%</td>
     <td class="right">57%</td>
-    <td class="right">87</td>
+    <td class="right">77</td>
   </tr>
 `
 indicadores_por_equipe['VIDA E SAÚDE'] = `
@@ -932,9 +932,9 @@ indicadores_por_equipe['VIDA E SAÚDE'] = `
   </tr>
   <tr>
     <td>Pré-natal</td>
-    <td class="right ruim">28%</td>
+    <td class="right razoavel">41%</td>
     <td class="right">75%</td>
-    <td class="right">7</td>
+    <td class="right">4</td>
   </tr>
   <tr>
     <td>Exames de gestantes</td>
@@ -944,9 +944,9 @@ indicadores_por_equipe['VIDA E SAÚDE'] = `
   </tr>
   <tr>
     <td>Pré-natal odontológico</td>
-    <td class="right proximo">85%</td>
+    <td class="right proximo">91%</td>
     <td class="right">95%</td>
-    <td class="right">2</td>
+    <td class="right">1</td>
   </tr>
   <tr>
     <td>Citopatológico</td>
@@ -956,21 +956,21 @@ indicadores_por_equipe['VIDA E SAÚDE'] = `
   </tr>
   <tr>
     <td>Vacinas</td>
-    <td class="right proximo">83%</td>
+    <td class="right proximo">82%</td>
     <td class="right">95%</td>
     <td class="right">3</td>
   </tr>
   <tr>
     <td>Hipertensos</td>
-    <td class="right razoavel">30%</td>
+    <td class="right razoavel">37%</td>
     <td class="right">57%</td>
-    <td class="right">171</td>
+    <td class="right">131</td>
   </tr>
   <tr>
     <td>Diabéticos</td>
-    <td class="right razoavel">30%</td>
+    <td class="right razoavel">35%</td>
     <td class="right">57%</td>
-    <td class="right">49</td>
+    <td class="right">40</td>
   </tr>
 `
 indicadores_por_equipe['VIVER'] = `
@@ -1000,9 +1000,9 @@ indicadores_por_equipe['VIVER'] = `
   </tr>
   <tr>
     <td>Citopatológico</td>
-    <td class="right proximo">43%</td>
+    <td class="right proximo">42%</td>
     <td class="right">50%</td>
-    <td class="right">59</td>
+    <td class="right">60</td>
   </tr>
   <tr>
     <td>Vacinas</td>
@@ -1012,15 +1012,15 @@ indicadores_por_equipe['VIVER'] = `
   </tr>
   <tr>
     <td>Hipertensos</td>
-    <td class="right razoavel">25%</td>
+    <td class="right razoavel">29%</td>
     <td class="right">57%</td>
-    <td class="right">200</td>
+    <td class="right">177</td>
   </tr>
   <tr>
     <td>Diabéticos</td>
-    <td class="right razoavel">25%</td>
+    <td class="right razoavel">30%</td>
     <td class="right">57%</td>
-    <td class="right">62</td>
+    <td class="right">53</td>
   </tr>
 `
 indicadores_por_equipe['Município'] = `
@@ -1032,9 +1032,9 @@ indicadores_por_equipe['Município'] = `
   </tr>
   <tr>
     <td>Pré-natal</td>
-    <td class="right proximo">56%</td>
+    <td class="right proximo">59%</td>
     <td class="right">75%</td>
-    <td class="right">29</td>
+    <td class="right">23</td>
   </tr>
   <tr>
     <td>Exames de gestantes</td>
@@ -1044,32 +1044,32 @@ indicadores_por_equipe['Município'] = `
   </tr>
   <tr>
     <td>Pré-natal odontológico</td>
-    <td class="right proximo">88%</td>
+    <td class="right proximo">87%</td>
     <td class="right">95%</td>
     <td class="right">11</td>
   </tr>
   <tr>
     <td>Citopatológico</td>
-    <td class="right proximo">45%</td>
+    <td class="right proximo">46%</td>
     <td class="right">50%</td>
-    <td class="right">456</td>
+    <td class="right">427</td>
   </tr>
   <tr>
     <td>Vacinas</td>
-    <td class="right proximo">91%</td>
+    <td class="right proximo">92%</td>
     <td class="right">95%</td>
-    <td class="right">5</td>
+    <td class="right">4</td>
   </tr>
   <tr>
     <td>Hipertensos</td>
-    <td class="right razoavel">28%</td>
+    <td class="right razoavel">32%</td>
     <td class="right">57%</td>
-    <td class="right">2835</td>
+    <td class="right">2415</td>
   </tr>
   <tr>
     <td>Diabéticos</td>
-    <td class="right ruim">23%</td>
+    <td class="right razoavel">26%</td>
     <td class="right">57%</td>
-    <td class="right">1014</td>
+    <td class="right">905</td>
   </tr>
 `
