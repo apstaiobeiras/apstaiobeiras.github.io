@@ -1,0 +1,107 @@
+<!DOCTYPE html><html lang="pt_BR"><head><meta charset="utf8"/><title>Acessar perfil</title><style>        /* Estilo da barra de navegação */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333; /* Cor de fundo da barra de navegação */
+            color: #fff; /* Cor do texto da barra de navegação */
+            padding: 10px 0;
+            cursor: pointer!important;
+        }
+        
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+        }
+        
+        /* Adicione margem ao corpo para evitar que o conteúdo fique oculto sob a barra de navegação */
+        body {
+            margin-top: 60px; /* Ajuste conforme necessário com base na altura da sua barra de navegação */
+        }
+
+        td { 
+            text-align: left;
+        }
+
+        .left { 
+            text-align: left;
+        }
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar" onclick="const params = new URLSearchParams(window.location.search); window.location.href = (params.has('backlink')?params.get('backlink'):'gestor.html')+'?cod='+params.get('cod')+'&token='+(new Date()).setSeconds((new Date()).getSeconds()+30).toString(36)"><a><span id="micro">0</span> - <span>Coordenação da APS</span></a></div><h3 id="cpf-banner"><br/></h3><p id="erro"></p></body><script src="js/visao_geral_solicitacoes.js"></script><script src="js/goto.js"></script><script>        let cod_profissional = null;
+        (() => {
+        const data_atual = (new Date()).getTime();
+        
+        if (!(new URLSearchParams(window.location.search)).get('token')) window.location.href="index.html";
+        
+        if ((new URLSearchParams(window.location.search)).get('cod') == "qes") return;
+        
+        const token = parseInt((new URLSearchParams(window.location.search)).get('token'), 36);
+        if (data_atual>token && window.location.protocol != "file:") window.location.href="index.html";
+        
+        if (!(new URLSearchParams(window.location.search)).get('cod')) window.location.href="index.html";
+        cod_profissional = parseInt((new URLSearchParams(window.location.search)).get('cod'), 36);
+        })()
+    </script><script>        function filtrar(param) {
+            document.getElementById("cpf-banner").innerHTML = '<a href="#" onclick="desfazerFiltro();return false;">Refazer filtragem</a><br>';
+
+            let doc = new DOMParser().parseFromString(solicitacoes_visao_geral, "text/html");
+            let resumo = [];
+            resumo['Agendado'] = 0;
+            resumo['Cancelado'] = 0;
+            resumo['Excluído da fila'] = 0;
+            resumo['Fila de espera'] = 0;
+            resumo['Total'] = 0;
+            
+            for (let row of [].slice.call(doc.getElementsByTagName("tr"))) {
+                if (!row.classList.contains(param)) {
+                    row.remove();
+                    continue;
+                }
+
+                if (!row.children[0].attributes.colspan) {
+                    resumo[row.children[0].innerText ] = parseInt(resumo[row.children[0].innerText ])+parseInt(row.children[1].innerText);
+                }
+            }
+
+            let tabela_resumo = "";
+            tabela_resumo += `<tr>`;
+            tabela_resumo += `  <th colspan=3>Município</th>`;
+            tabela_resumo += `</tr>`;
+            tabela_resumo += `<tr>`;
+            tabela_resumo += `  <td>Agendado</td>`;
+            tabela_resumo += `  <td style="text-align: right;">${resumo['Agendado']}</td>`;
+            tabela_resumo += `  <td style="text-align: right;">${((resumo['Agendado']/resumo['Total'])*100).toFixed(2)}%</td>`;
+            tabela_resumo += `</tr>`;
+            tabela_resumo += `<tr>`;
+            tabela_resumo += `  <td>Cancelado</td>`;
+            tabela_resumo += `  <td style="text-align: right;">${resumo['Cancelado']}</td>`;
+            tabela_resumo += `  <td style="text-align: right;">${((resumo['Cancelado']/resumo['Total'])*100).toFixed(2)}%</td>`;
+            tabela_resumo += `</tr>`;
+            tabela_resumo += `<tr>`;
+            tabela_resumo += `  <td>Excluído da fila</td>`;
+            tabela_resumo += `  <td style="text-align: right;">${resumo['Excluído da fila']}</td>`;
+            tabela_resumo += `  <td style="text-align: right;">${((resumo['Excluído da fila']/resumo['Total'])*100).toFixed(2)}%</td>`;
+            tabela_resumo += `</tr>`;
+            tabela_resumo += `<tr>`;
+            tabela_resumo += `  <td>Fila de espera</td>`;
+            tabela_resumo += `  <td style="text-align: right;">${resumo['Fila de espera']}</td>`;
+            tabela_resumo += `  <td style="text-align: right;">${((resumo['Fila de espera']/resumo['Total'])*100).toFixed(2)}%</td>`;
+            tabela_resumo += `</tr>`;
+            tabela_resumo += `<tr>`;
+            tabela_resumo += `  <td><b>Total</b></td>`;
+            tabela_resumo += `  <td colspan=5>${resumo['Total']}</td>`;
+            tabela_resumo += `</tr>`;
+
+            console.log(resumo);
+            doc.body.children[0].children[0].innerHTML = tabela_resumo+doc.body.children[0].children[0].innerHTML;
+            document.getElementById("erro").innerHTML = doc.body.innerHTML;
+        }
+
+        function desfazerFiltro() {
+            document.getElementById("erro").innerHTML = lista_meses;
+            document.getElementById("cpf-banner").innerHTML = '';
+        }
+
+        desfazerFiltro();
+    </script></html>
