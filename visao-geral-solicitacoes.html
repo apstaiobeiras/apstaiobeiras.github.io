@@ -42,10 +42,10 @@
         if (!(new URLSearchParams(window.location.search)).get('cod')) window.location.href="index.html";
         cod_profissional = parseInt((new URLSearchParams(window.location.search)).get('cod'), 36);
         })()
-    </script><script>        function filtrar(param) {
+    </script><script>        function filtrar(param,tabela) {
             document.getElementById("cpf-banner").innerHTML = '<a href="#" onclick="desfazerFiltro();return false;">Refazer filtragem</a><br>';
 
-            let doc = new DOMParser().parseFromString(solicitacoes_visao_geral, "text/html");
+            let doc = new DOMParser().parseFromString(tabela || solicitacoes_visao_geral, "text/html");
             let resumo = [];
             resumo['Agendado'] = 0;
             resumo['Cancelado'] = 0;
@@ -54,7 +54,7 @@
             resumo['Total'] = 0;
             
             for (let row of [].slice.call(doc.getElementsByTagName("tr"))) {
-                if (!row.classList.contains(param)) {
+                if (param && !row.classList.contains(param)) {
                     row.remove();
                     continue;
                 }

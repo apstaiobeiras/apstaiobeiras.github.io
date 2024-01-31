@@ -1080,11 +1080,84 @@ let solicitacoes_visao_geral = `  <table>    <tr class="01 x-1"><th colspan=4 >U
     <tr class="12 x-15"><td><b>Total</b></td><td style="text-align: right;" colspan=2>80</td></tr>
   </table>`;
 
+let todos_os_meses = `  <table>    <tr class="01"><th colspan=4 >Janeiro</th></tr>
+    <tr class="01"><td>Agendado</td><td style="text-align: right;">1098</td><td style="text-align: right;">67.24%</td></tr>
+    <tr class="01"><td>Cancelado</td><td style="text-align: right;">113</td><td style="text-align: right;">6.92%</td></tr>
+    <tr class="01"><td>Excluído da fila</td><td style="text-align: right;">321</td><td style="text-align: right;">19.66%</td></tr>
+    <tr class="01"><td>Fila de espera</td><td style="text-align: right;">101</td><td style="text-align: right;">6.18%</td></tr>
+    <tr class="01"><td><b>Total</b></td><td style="text-align: right;" colspan=2>1633</td></tr>
+    <tr class="02"><th colspan=4 >Fevereiro</th></tr>
+    <tr class="02"><td>Agendado</td><td style="text-align: right;">976</td><td style="text-align: right;">61.97%</td></tr>
+    <tr class="02"><td>Cancelado</td><td style="text-align: right;">118</td><td style="text-align: right;">7.49%</td></tr>
+    <tr class="02"><td>Excluído da fila</td><td style="text-align: right;">366</td><td style="text-align: right;">23.24%</td></tr>
+    <tr class="02"><td>Fila de espera</td><td style="text-align: right;">115</td><td style="text-align: right;">7.30%</td></tr>
+    <tr class="02"><td><b>Total</b></td><td style="text-align: right;" colspan=2>1575</td></tr>
+    <tr class="03"><th colspan=4 >Março</th></tr>
+    <tr class="03"><td>Agendado</td><td style="text-align: right;">1129</td><td style="text-align: right;">56.91%</td></tr>
+    <tr class="03"><td>Cancelado</td><td style="text-align: right;">143</td><td style="text-align: right;">7.21%</td></tr>
+    <tr class="03"><td>Excluído da fila</td><td style="text-align: right;">420</td><td style="text-align: right;">21.17%</td></tr>
+    <tr class="03"><td>Fila de espera</td><td style="text-align: right;">292</td><td style="text-align: right;">14.72%</td></tr>
+    <tr class="03"><td><b>Total</b></td><td style="text-align: right;" colspan=2>1984</td></tr>
+    <tr class="04"><th colspan=4 >Abril</th></tr>
+    <tr class="04"><td>Agendado</td><td style="text-align: right;">900</td><td style="text-align: right;">58.82%</td></tr>
+    <tr class="04"><td>Cancelado</td><td style="text-align: right;">100</td><td style="text-align: right;">6.54%</td></tr>
+    <tr class="04"><td>Excluído da fila</td><td style="text-align: right;">328</td><td style="text-align: right;">21.44%</td></tr>
+    <tr class="04"><td>Fila de espera</td><td style="text-align: right;">202</td><td style="text-align: right;">13.20%</td></tr>
+    <tr class="04"><td><b>Total</b></td><td style="text-align: right;" colspan=2>1530</td></tr>
+    <tr class="05"><th colspan=4 >Maio</th></tr>
+    <tr class="05"><td>Agendado</td><td style="text-align: right;">1132</td><td style="text-align: right;">61.69%</td></tr>
+    <tr class="05"><td>Cancelado</td><td style="text-align: right;">101</td><td style="text-align: right;">5.50%</td></tr>
+    <tr class="05"><td>Excluído da fila</td><td style="text-align: right;">367</td><td style="text-align: right;">20%</td></tr>
+    <tr class="05"><td>Fila de espera</td><td style="text-align: right;">235</td><td style="text-align: right;">12.81%</td></tr>
+    <tr class="05"><td><b>Total</b></td><td style="text-align: right;" colspan=2>1835</td></tr>
+    <tr class="06"><th colspan=4 >Junho</th></tr>
+    <tr class="06"><td>Agendado</td><td style="text-align: right;">995</td><td style="text-align: right;">55.43%</td></tr>
+    <tr class="06"><td>Cancelado</td><td style="text-align: right;">152</td><td style="text-align: right;">8.47%</td></tr>
+    <tr class="06"><td>Excluído da fila</td><td style="text-align: right;">435</td><td style="text-align: right;">24.23%</td></tr>
+    <tr class="06"><td>Fila de espera</td><td style="text-align: right;">213</td><td style="text-align: right;">11.87%</td></tr>
+    <tr class="06"><td><b>Total</b></td><td style="text-align: right;" colspan=2>1795</td></tr>
+    <tr class="07"><th colspan=4 >Julho</th></tr>
+    <tr class="07"><td>Agendado</td><td style="text-align: right;">1108</td><td style="text-align: right;">56.10%</td></tr>
+    <tr class="07"><td>Cancelado</td><td style="text-align: right;">145</td><td style="text-align: right;">7.34%</td></tr>
+    <tr class="07"><td>Excluído da fila</td><td style="text-align: right;">452</td><td style="text-align: right;">22.89%</td></tr>
+    <tr class="07"><td>Fila de espera</td><td style="text-align: right;">270</td><td style="text-align: right;">13.67%</td></tr>
+    <tr class="07"><td><b>Total</b></td><td style="text-align: right;" colspan=2>1975</td></tr>
+    <tr class="08"><th colspan=4 >Agosto</th></tr>
+    <tr class="08"><td>Agendado</td><td style="text-align: right;">1132</td><td style="text-align: right;">52.48%</td></tr>
+    <tr class="08"><td>Cancelado</td><td style="text-align: right;">155</td><td style="text-align: right;">7.19%</td></tr>
+    <tr class="08"><td>Excluído da fila</td><td style="text-align: right;">434</td><td style="text-align: right;">20.12%</td></tr>
+    <tr class="08"><td>Fila de espera</td><td style="text-align: right;">436</td><td style="text-align: right;">20.21%</td></tr>
+    <tr class="08"><td><b>Total</b></td><td style="text-align: right;" colspan=2>2157</td></tr>
+    <tr class="09"><th colspan=4 >Setembro</th></tr>
+    <tr class="09"><td>Agendado</td><td style="text-align: right;">1044</td><td style="text-align: right;">51.63%</td></tr>
+    <tr class="09"><td>Cancelado</td><td style="text-align: right;">131</td><td style="text-align: right;">6.48%</td></tr>
+    <tr class="09"><td>Excluído da fila</td><td style="text-align: right;">395</td><td style="text-align: right;">19.54%</td></tr>
+    <tr class="09"><td>Fila de espera</td><td style="text-align: right;">452</td><td style="text-align: right;">22.35%</td></tr>
+    <tr class="09"><td><b>Total</b></td><td style="text-align: right;" colspan=2>2022</td></tr>
+    <tr class="10"><th colspan=4 >Outubro</th></tr>
+    <tr class="10"><td>Agendado</td><td style="text-align: right;">1042</td><td style="text-align: right;">55.99%</td></tr>
+    <tr class="10"><td>Cancelado</td><td style="text-align: right;">86</td><td style="text-align: right;">4.62%</td></tr>
+    <tr class="10"><td>Excluído da fila</td><td style="text-align: right;">284</td><td style="text-align: right;">15.26%</td></tr>
+    <tr class="10"><td>Fila de espera</td><td style="text-align: right;">449</td><td style="text-align: right;">24.13%</td></tr>
+    <tr class="10"><td><b>Total</b></td><td style="text-align: right;" colspan=2>1861</td></tr>
+    <tr class="11"><th colspan=4 >Novembro</th></tr>
+    <tr class="11"><td>Agendado</td><td style="text-align: right;">859</td><td style="text-align: right;">50.41%</td></tr>
+    <tr class="11"><td>Cancelado</td><td style="text-align: right;">101</td><td style="text-align: right;">5.93%</td></tr>
+    <tr class="11"><td>Excluído da fila</td><td style="text-align: right;">230</td><td style="text-align: right;">13.50%</td></tr>
+    <tr class="11"><td>Fila de espera</td><td style="text-align: right;">514</td><td style="text-align: right;">30.16%</td></tr>
+    <tr class="11"><td><b>Total</b></td><td style="text-align: right;" colspan=2>1704</td></tr>
+    <tr class="12"><th colspan=4 >Dezembro</th></tr>
+    <tr class="12"><td>Agendado</td><td style="text-align: right;">744</td><td style="text-align: right;">50.34%</td></tr>
+    <tr class="12"><td>Cancelado</td><td style="text-align: right;">44</td><td style="text-align: right;">2.98%</td></tr>
+    <tr class="12"><td>Excluído da fila</td><td style="text-align: right;">157</td><td style="text-align: right;">10.62%</td></tr>
+    <tr class="12"><td>Fila de espera</td><td style="text-align: right;">533</td><td style="text-align: right;">36.06%</td></tr>
+    <tr class="12"><td><b>Total</b></td><td style="text-align: right;" colspan=2>1478</td></tr>
+  </table>`;
 
 let lista_meses = `
 
 <table>
-    <tr><th colspan=4>Filtrar por mes</th></tr>
+    <tr><th colspan=4>Filtrar por mes - <a href="#" onclick="filtrar(undefined,todos_os_meses); return false">Ano todo</a></th></tr>
     <tr>
         <td><a href="#" onclick="filtrar('01'); return false">Janeiro</a></td>
         <td><a href="#" onclick="filtrar('02'); return false">Fevereiro</a></td>
@@ -1103,7 +1176,6 @@ let lista_meses = `
         <td><a href="#" onclick="filtrar('11'); return false">Novembro</a></td>
         <td><a href="#" onclick="filtrar('12'); return false">Dezembro</a></td>
     </tr>
-
       <tr><th colspan=4>Filtrar por unidade</th></tr>
       <tr>
         <td><a href="#" onclick="filtrar('x-1'); return false">UAPS AGEU ALMEIDA</a></td>
