@@ -51,6 +51,7 @@
             resumo['Cancelado'] = 0;
             resumo['Excluído da fila'] = 0;
             resumo['Fila de espera'] = 0;
+            resumo['Solicitações devolvidas'] = 0;
             resumo['Total'] = 0;
             
             for (let row of [].slice.call(doc.getElementsByTagName("tr"))) {
@@ -87,6 +88,11 @@
             tabela_resumo += `  <td>Fila de espera</td>`;
             tabela_resumo += `  <td style="text-align: right;">${resumo['Fila de espera']}</td>`;
             tabela_resumo += `  <td style="text-align: right;">${((resumo['Fila de espera']/resumo['Total'])*100).toFixed(2)}%</td>`;
+            tabela_resumo += `</tr>`;
+            tabela_resumo += `<tr>`;
+            tabela_resumo += `  <td>Solicitações devolvidas</td>`;
+            tabela_resumo += `  <td style="text-align: right;">${resumo['Solicitações devolvidas']}</td>`;
+            tabela_resumo += `  <td style="text-align: right;">${((resumo['Solicitações devolvidas']/resumo['Total'])*100).toFixed(2)}%</td>`;
             tabela_resumo += `</tr>`;
             tabela_resumo += `<tr>`;
             tabela_resumo += `  <td><b>Total</b></td>`;
