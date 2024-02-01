@@ -1,0 +1,362 @@
+<!DOCTYPE html><html lang="pt_BR"><head><meta charset="utf8"/><title>Perfil do profissional</title><style>        /* Estilo da barra de navegação */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333; /* Cor de fundo da barra de navegação */
+            color: #fff; /* Cor do texto da barra de navegação */
+            padding: 10px 0;
+            cursor: pointer!important;
+        }
+        
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+        }
+        
+        /* Adicione margem ao corpo para evitar que o conteúdo fique oculto sob a barra de navegação */
+        body {
+            margin-top: 60px; /* Ajuste conforme necessário com base na altura da sua barra de navegação */
+        }
+
+        td { 
+            text-align: right;
+        }
+
+        .left { 
+            text-align: left;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar" onclick="backlink();"><a><span id="micro">00</span> - <span id="profissional">Nome do Agente Comuitário de Saúde</span></a></div><h3></h3><div>Anteriores | <a href="#" onclick="window.location.href = 'relatorio-producao-acs.html'+window.location.href.replace(/^.*\?/,'?').replace(/&token.*&mode/,'&mode')+
+            '&token='+(new Date()).setSeconds((new Date()).getSeconds()+30).toString(36);
+             return false;">Atual</a></div><h3>Visitas domiciliares</h3><table><tr><th></th><th id="mes_1">Mês 1</th><th id="mes_2">Mês 2</th><th id="mes_3">Mês 3</th><th id="mes_4">Mês 4</th></tr><tr><td class="left"><b>Total de famílias</b></td><td id="familia_mes_1"></td><td id="familia_mes_2"></td><td id="familia_mes_3"></td><td id="familia_mes_4"></td></tr><tr><td class="left"><b>Visitas realizadas</b></td><td id="visitas_mes_1"></td><td id="visitas_mes_2"></td><td id="visitas_mes_3"></td><td id="visitas_mes_4"></td></tr><tr><td class="left"><b>Cobertura de área</b></td><td id="cobertura_mes_1"></td><td id="cobertura_mes_2"></td><td id="cobertura_mes_3"></td><td id="cobertura_mes_4"></td></tr><tr><td class="left"><b>Visitas georreferenciadas</b></td><td id="georreferenciamento_mes_1"></td><td id="georreferenciamento_mes_2"></td><td id="georreferenciamento_mes_3"></td><td id="georreferenciamento_mes_4"></td></tr><tr><td class="left"><b>Visitas ausentes</b></td><td id="ausencias_mes_1"></td><td id="ausencias_mes_2"></td><td id="ausencias_mes_3"></td><td id="ausencias_mes_4"></td></tr><tr><td class="left"><b>Resgate de ausencias</b></td><td id="resgate_ausencias_mes_1"></td><td id="resgate_ausencias_mes_2"></td><td id="resgate_ausencias_mes_3"></td><td id="resgate_ausencias_mes_4"></td></tr></table><h3>Situação - Cadastro Individual</h3><table><tr><th></th><th class="primeiro_mes" colspan="2">Primeiro mês</th><th class="ultimo_mes" colspan="2">Último mês</th><th class="variacao_percentual">Variação<br>percentual</th></tr><tr><td class="left">Total de Cadastros</td><td colspan="2" id="absoluto_total_cadastros_mes_1"></td><td colspan="2" id="absoluto_total_cadastros_mes_2"></td></tr><tr><td class="left" colspan="6"><b>Cadastro Individual</b></td></tr><tr><td class="left">Nome do paciente inválido</td><td id="absoluto_nome_invalido_mes_1"></td><td id="percentual_nome_invalido_mes_1"></td><td id="absoluto_nome_invalido_mes_2"></td><td id="percentual_nome_invalido_mes_2"></td><td id="variacao_nome_invalido"></td></tr><tr><td class="left">Nome da mãe inválido</td><td id="absoluto_nome_mae_invalido_mes_1"></td><td id="percentual_nome_mae_invalido_mes_1"></td><td id="absoluto_nome_mae_invalido_mes_2"></td><td id="percentual_nome_mae_invalido_mes_2"></td><td id="variacao_nome_mae_invalido"></td></tr><tr><td class="left">Nome do pai inválido</td><td id="absoluto_nome_pai_invalido_mes_1"></td><td id="percentual_nome_pai_invalido_mes_1"></td><td id="absoluto_nome_pai_invalido_mes_2"></td><td id="percentual_nome_pai_invalido_mes_2"></td><td id="variacao_nome_pai_invalido"></td></tr><tr><td class="left">Falta o nome do pai*</td><td id="absoluto_falta_nome_pai_mes_1"></td><td id="percentual_falta_nome_pai_mes_1"></td><td id="absoluto_falta_nome_pai_mes_2"></td><td id="percentual_falta_nome_pai_mes_2"></td><td id="variacao_falta_nome_pai"></td></tr><tr><td class="left">Pré cadastro de RN</td><td id="absoluto_pre_cadastro_rn_mes_1"></td><td id="percentual_pre_cadastro_rn_mes_1"></td><td id="absoluto_pre_cadastro_rn_mes_2"></td><td id="percentual_pre_cadastro_rn_mes_2"></td><td id="variacao_pre_cadastro_rn"></td></tr><tr><td class="left">Telefone inválido ou faltando</td><td id="absoluto_telefone_invalido_mes_1"></td><td id="percentual_telefone_invalido_mes_1"></td><td id="absoluto_telefone_invalido_mes_2"></td><td id="percentual_telefone_invalido_mes_2"></td><td id="variacao_telefone_invalido"></td></tr><tr><td class="left">CPF inválido ou faltando</td><td id="absoluto_cpf_invalido_mes_1"></td><td id="percentual_cpf_invalido_mes_1"></td><td id="absoluto_cpf_invalido_mes_2"></td><td id="percentual_cpf_invalido_mes_2"></td><td id="variacao_cpf_invalido"></td></tr><tr><td class="left">CNS inválido ou faltando</td><td id="absoluto_cns_invalido_mes_1"></td><td id="percentual_cns_invalido_mes_1"></td><td id="absoluto_cns_invalido_mes_2"></td><td id="percentual_cns_invalido_mes_2"></td><td id="variacao_cns_invalido"></td></tr><tr><td class="left">NIS inválido</td><td id="absoluto_nis_invalido_mes_1"></td><td id="percentual_nis_invalido_mes_1"></td><td id="absoluto_nis_invalido_mes_2"></td><td id="percentual_nis_invalido_mes_2"></td><td id="variacao_nis_invalido"></td></tr><tr><td class="left" colspan="6"><b>Campos do questionário e-SUS</b></td></tr><tr><td class="left">“Está gestante?” Não Informado</td><td id="absoluto_gestante_nao_informado_mes_1"></td><td id="percentual_gestante_nao_informado_mes_1"></td><td id="absoluto_gestante_nao_informado_mes_2"></td><td id="percentual_gestante_nao_informado_mes_2"></td><td id="variacao_gestante_nao_informado"></td></tr><tr><td class="left">“Tem hipertensão arterial?” Não Informado</td><td id="absoluto_hipertenso_nao_informado_mes_1"></td><td id="percentual_hipertenso_nao_informado_mes_1"></td><td id="absoluto_hipertenso_nao_informado_mes_2"></td><td id="percentual_hipertenso_nao_informado_mes_2"></td><td id="variacao_hipertenso_nao_informado"></td></tr><tr><td class="left">“Tem diabetes?” Não Informado</td><td id="absoluto_diabetico_nao_informado_mes_1"></td><td id="percentual_diabetico_nao_informado_mes_1"></td><td id="absoluto_diabetico_nao_informado_mes_2"></td><td id="percentual_diabetico_nao_informado_mes_2"></td><td id="variacao_diabetico_nao_informado"></td></tr><tr><td class="left">“Está acamado?” Não Informado</td><td id="absoluto_acamado_nao_informado_mes_1"></td><td id="percentual_acamado_nao_informado_mes_1"></td><td id="absoluto_acamado_nao_informado_mes_2"></td><td id="percentual_acamado_nao_informado_mes_2"></td><td id="variacao_acamado_nao_informado"></td></tr><tr><td class="left">“Está domiciliado?” Não Informado</td><td id="absoluto_domiciliado_nao_informado_mes_1"></td><td id="percentual_domiciliado_nao_informado_mes_1"></td><td id="absoluto_domiciliado_nao_informado_mes_2"></td><td id="percentual_domiciliado_nao_informado_mes_2"></td><td id="variacao_domiciliado_nao_informado"></td></tr><tr><td class="left">“Tem alguma deficiência?” Não Informado</td><td id="absoluto_deficiencia_nao_informado_mes_1"></td><td id="percentual_deficiencia_nao_informado_mes_1"></td><td id="absoluto_deficiencia_nao_informado_mes_2"></td><td id="percentual_deficiencia_nao_informado_mes_2"></td><td id="variacao_deficiencia_nao_informado"></td></tr><tr><td class="left">“Ocupação” Não Informado**</td><td id="absoluto_ocupacao_nao_informado_mes_1"></td><td id="percentual_ocupacao_nao_informado_mes_1"></td><td id="absoluto_ocupacao_nao_informado_mes_2"></td><td id="percentual_ocupacao_nao_informado_mes_2"></td><td id="variacao_ocupacao_nao_informado"></td></tr></table><blockquote>* Dado disponível apenas para fins informativos não deve ser usado para avaliação<br/>** Devido a uma falha no sistema Vivver esse dado está indisponível</blockquote><h3>Visitas por dia</h3><div class="row"><div class="column" id="coluna_1"></div><div class="column" id="coluna_2"></div></div><blockquote>            <ul>
+              <li>
+                Cada família visitada conta apenas 1, no dia, por exemplo, ao visitar 10 famílias em um dia mesmo que 30
+                pessoas sejam visitadas, apenas 10 visitas serão contabilizadas
+              </li>
+              <li>
+                Assim como revisitas a uma mesma família no mesmo dia conta apenas 1, no exemplo anterior se foram realizadas
+                10 visitas mas 2 visitas foram a uma mesma família, apenas 9 visitas serão contabilizadas
+              </li>
+            </ul>
+        </blockquote></body><script src="js/goto.js"></script><script>        colore_percentual = (elemento,percentual,meta) => {
+            if ((40*meta)/100 > percentual) {
+                elemento.style.backgroundColor = "#F6CCCC";
+                return;
+            }
+    
+            if ((69*meta)/100 > percentual) {
+                elemento.style.backgroundColor = "#F7CCA0";
+                return;
+            }
+    
+            if (100 > percentual) {
+                elemento.style.backgroundColor = "#B4E2CE";
+                return;
+            }
+    
+            elemento.style.backgroundColor = "#9FC1E3";
+        }
+
+        atualizarValorPorcentagem = (idElemento, valor) => {
+            document.getElementById(idElemento).textContent = (valor + "%").replace('.00', '');
+        }
+        
+        calcularPorcentagem = (numerador, denominador) =>  {
+            return ((numerador / denominador) * 100).toFixed(2);
+        }
+
+        const d = new Date();
+        const mes = (d.getMonth()+1) < 5 ? 12 : d.getMonth()+1;
+
+        const MESES = [null, ["Janeiro","Fevereiro","Março","Abril"], ["Maio","Junho","Julho","Agosto"], ["Setembro","Outubro","Novembro","Dezembro"] ];
+
+        let QUADRIMESTRE =  mes < 5 ? MESES[1] : (mes < 9 ? MESES[2] : MESES[3]);
+        
+        document.getElementById("mes_1").textContent = QUADRIMESTRE[0];
+        document.getElementById("mes_2").textContent = QUADRIMESTRE[1];
+        document.getElementById("mes_3").textContent = QUADRIMESTRE[2];
+        document.getElementById("mes_4").textContent = QUADRIMESTRE[3];
+
+        const visitas_realizadas=[null];
+        const familias_visitadas=[];
+        const situacao_cadastros=[];
+    </script><script src="js/lista-acs.js"></script><script src="js/visitas-quadrimestre-anterior.js"></script><script src="js/quantitativo-situacao-cadastral-quadrimestre-anterior.js"></script><script src="js/visitas-a-familias-por-dias-quadrimestre-anterior.js"></script><script src="js/goto.js"></script><script>        const data_atual = (new Date()).getTime();
+
+        if (!(new URLSearchParams(window.location.search)).get('cod')) window.location.href="index.html";
+        if (!(new URLSearchParams(window.location.search)).get('token')) window.location.href="index.html";
+    
+        const cod_profissional = parseInt((new URLSearchParams(window.location.search)).get('cod'), 36);
+        const token = parseInt((new URLSearchParams(window.location.search)).get('token'), 36);
+        if (data_atual>token && window.location.protocol != "file:") window.location.href="index.html";
+    </script><script>        document.getElementById("micro").textContent = lista_dos_profissionais[cod_profissional][2];
+        document.getElementById("profissional").textContent = lista_dos_profissionais[cod_profissional][0];
+    </script><script>
+        let cobertura_total = 0;
+
+        let i = -1;
+        for (let visitas_mes of visitas_realizadas){
+            i+=1; if (!visitas_mes) continue;  if (!visitas_mes[cod_profissional]) continue;
+    
+            let familias            = visitas_mes[cod_profissional][4];
+            let visitas             = visitas_mes[cod_profissional][7];
+            let cobertura           = Math.round(visitas_mes[cod_profissional][9].replace(",",".")*100);
+            let georreferenciamento = Math.round(visitas_mes[cod_profissional][8].replace(",",".")*100);
+            let ausencias           = Math.round(visitas_mes[cod_profissional][10].replace(",",".")*100);
+            let resgate             = visitas_mes[cod_profissional][11];
+    
+            cobertura_total = cobertura;
+        
+            document.getElementById("familia_mes_"+i).textContent             = familias;
+            document.getElementById("visitas_mes_"+i).textContent             = visitas;
+            document.getElementById("cobertura_mes_"+i).textContent           = `${cobertura}%`;
+            document.getElementById("georreferenciamento_mes_"+i).textContent = `${georreferenciamento}%`;
+            document.getElementById("ausencias_mes_"+i).textContent           = `${ausencias}%`;
+            document.getElementById("resgate_ausencias_mes_"+i).textContent   = resgate;
+    
+            colore_percentual(document.getElementById("cobertura_mes_"+i),cobertura,100);
+            colore_percentual(document.getElementById("georreferenciamento_mes_"+i),georreferenciamento,100);
+            colore_percentual(document.getElementById("ausencias_mes_"+i),100-ausencias,100);
+        }
+    
+    </script><script>    
+        let cobertura_total = 0;
+
+        let i = -1;
+        for (let visitas_mes of visitas_realizadas){
+            i+=1; if (!visitas_mes) continue;  if (!visitas_mes[cod_profissional]) continue;
+    
+            let familias            = visitas_mes[cod_profissional][4];
+            let visitas             = visitas_mes[cod_profissional][7];
+            let cobertura           = Math.round(visitas_mes[cod_profissional][9].replace(",",".")*100);
+            let georreferenciamento = Math.round(visitas_mes[cod_profissional][8].replace(",",".")*100);
+            let ausencias           = Math.round(visitas_mes[cod_profissional][10].replace(",",".")*100);
+            let resgate             = visitas_mes[cod_profissional][11];
+    
+            cobertura_total = cobertura;
+        
+            document.getElementById("familia_mes_"+i).textContent             = familias;
+            document.getElementById("visitas_mes_"+i).textContent             = visitas;
+            document.getElementById("cobertura_mes_"+i).textContent           = `${cobertura}%`;
+            document.getElementById("georreferenciamento_mes_"+i).textContent = `${georreferenciamento}%`;
+            document.getElementById("ausencias_mes_"+i).textContent           = `${ausencias}%`;
+            document.getElementById("resgate_ausencias_mes_"+i).textContent   = resgate;
+    
+            colore_percentual(document.getElementById("cobertura_mes_"+i),cobertura,100);
+            colore_percentual(document.getElementById("georreferenciamento_mes_"+i),georreferenciamento,100);
+            colore_percentual(document.getElementById("ausencias_mes_"+i),100-ausencias,100);
+        }
+    
+    </script><script>    
+
+    // Cabeçalho
+
+
+    // Situação dos cadastros
+
+    const indicador_cadastro = {
+        possui_nis : 0,
+        nis_invalido : 1,
+        nome_invalido : 2,
+        nome_mae_invalido : 3,
+        nome_pai_invalido : 4,
+        falta_nome_pai : 5,
+        pre_cadastro_rn : 6,
+        telefone_invalido : 7,
+        cpf_invalido : 8,
+        cns_invalido : 9,
+        //questionario_esus_incompleto : 10,
+        gestante_nao_informado : 11,
+        mulher_em_idade_fertil : 12,
+        hipertenso_nao_informado : 13,
+        diabetico_nao_informado : 14,
+        acamado_nao_informado : 15,
+        domiciliado_nao_informado : 16,
+        deficiencia_nao_informado : 17,
+        total_familias : 18,
+        total_cadastros : 19
+    }
+
+    for (const [indicador, i] of Object.entries(indicador_cadastro)) {
+        const numeradores = [];
+        const denominadores = [];
+
+        for (const mes of [1,2]) {
+
+            const numerador = situacao_cadastros[mes][cod_profissional][i];
+
+            let denominador = situacao_cadastros[mes][cod_profissional][indicador_cadastro.total_cadastros];
+            denominador = indicador == "gestante_nao_informado"? indicador_cadastro.mulher_em_idade_fertil : denominador;
+
+            numeradores[mes] = numerador;
+            denominadores[mes] = situacao_cadastros[mes][cod_profissional][indicador_cadastro.total_cadastros];
+        
+            const percentual = (numerador/denominador*100).toFixed(2);
+
+            if (document.getElementById(`absoluto_${indicador}_mes_${mes}`)) {
+                document.getElementById(`absoluto_${indicador}_mes_${mes}`).textContent = numerador;
+            }
+
+            if (document.getElementById(`percentual_${indicador}_mes_${mes}`)) {
+                document.getElementById(`percentual_${indicador}_mes_${mes}`).textContent = (percentual+"%").replace("0%","%").replace(".0%","%");
+
+                document.getElementById(`percentual_${indicador}_mes_${mes}`).style.backgroundColor = percentual == "0.00" ? "#B4E2CE" : "#F6CCCC";
+            }
+        }
+
+        if (numeradores[2] == numeradores[1]&&numeradores[2]==0.00) {
+            document.getElementById(`absoluto_${indicador}_mes_2`).remove();
+            document.getElementById(`percentual_${indicador}_mes_1`).remove();
+            document.getElementById(`percentual_${indicador}_mes_2`).remove();
+            document.getElementById(`variacao_${indicador}`).remove();
+
+            console.log(indicador)
+
+            document.getElementById(`absoluto_${indicador}_mes_1`).colSpan=6;
+            document.getElementById(`absoluto_${indicador}_mes_1`).textContent="Sem inconsistencias no quadrimestre";
+            document.getElementById(`absoluto_${indicador}_mes_1`).classList="left";
+            document.getElementById(`absoluto_${indicador}_mes_1`).style.backgroundColor = "#9fc5e8";
+            continue;
+        }
+
+        const variacao_percentual = ((numeradores[2]*denominadores[2])-(numeradores[1]*denominadores[1]))/(numeradores[1]*denominadores[1])*100
+
+        if (document.getElementById(`variacao_${indicador}`)) {
+            document.getElementById(`variacao_${indicador}`).textContent = (variacao_percentual.toFixed(2)+"%").replace("0%","%").replace(".0%","%");;    
+        }
+
+        if (variacao_percentual == -100 && document.getElementById(`variacao_${indicador}`)) {
+            document.getElementById(`variacao_${indicador}`).style.backgroundColor = "#9fc5e8";
+            document.getElementById(`variacao_${indicador}`).textContent = "Resolveu todas";
+            continue;
+        }
+
+        if (variacao_percentual < 0 && document.getElementById(`variacao_${indicador}`)) {
+            document.getElementById(`variacao_${indicador}`).style.backgroundColor = "#B4E2CE";
+            continue;
+        }
+
+        if (document.getElementById(`variacao_${indicador}`)) {
+            document.getElementById(`variacao_${indicador}`).style.backgroundColor = "#F6CCCC";
+            if (document.getElementById(`variacao_${indicador}`).textContent == "Infinity%") {
+                document.getElementById(`variacao_${indicador}`).textContent = "100%";
+            }
+            continue;
+        }
+    }
+
+    </script><script>
+        const visitas = visitas_a_familia_por_dia[cod_profissional];
+
+        const meses = [];
+        meses[1] = "Janeiro";
+        meses[2] = "Fevereiro";
+        meses[3] = "Março";
+        meses[4] = "Abril";
+        meses[5] = "Maio";
+        meses[6] = "Junho";
+        meses[7] = "Julho";
+        meses[8] = "Agosto";
+        meses[9] = "Setembro";
+        meses[10] = "Outubro";
+        meses[11] = "Novembro";
+        meses[12] = "Dezembro";
+        
+        
+        for (let mes in visitas) {
+            let visitas_mes = visitas[mes];
+            let current_row = document.createElement("tr");
+            let current_day_row = document.createElement("tr");
+            let day = 1;
+        
+            let mes_cabecalho = document.createElement("tr");
+            let mes_nome = document.createElement("th");
+            mes_nome.colSpan = 7;
+            mes_nome.textContent = meses[mes];
+        
+            let dias_da_semana = document.createElement("tr");
+            dias_da_semana.innerHTML=("<th>Dom.</th><th>Seg.</th><th>Ter.</th><th>Qua.</th><th>Qui.</th><th>Sex.</th><th>Sáb.</th>")
+        
+            let calendario = document.createElement("table");
+            calendario.style="overflow-y: hidden;";
+            calendario.appendChild(mes_nome);
+            calendario.appendChild(dias_da_semana);
+            
+            let dias_mes = visitas_mes.length;
+
+            switch(mes) {
+                case 9:
+                  dias_mes = 30;
+                break;
+                case 10:
+                  dias_mes = 31;
+                break;
+                case 11:
+                  dias_mes = 30;
+                break;
+                case 12:
+                  dias_mes = 31;
+                break;
+            }
+        
+            for (let i = 1; i < visitas_mes.length; i++){
+                const visitas_realizadas = visitas_mes[i];
+                if (visitas_realizadas != "") {
+                    let day_cell = document.createElement("th");
+                    day_cell.textContent = day;
+        
+                    current_day_row.appendChild(day_cell);
+                    day += 1;
+                } else {
+                    current_day_row.appendChild(document.createElement("th"));
+                }
+        
+                let day_cell = document.createElement("td");
+                day_cell.textContent = visitas_realizadas;
+                day_cell.style="background-color:#B2D9AB;"
+        
+                if (visitas_realizadas == "0") {
+                    day_cell.style="background-color:#EB989A;"
+                }
+        
+                if (visitas_realizadas == "---" || visitas_realizadas == "") {
+                    day_cell.textContent = " ";
+                    day_cell.style="background-color:#F6F8FA"
+                }
+                current_row.appendChild(day_cell);
+        
+                if (i % 7 == 0) {
+                    calendario.appendChild(current_day_row);
+                    calendario.appendChild(current_row);
+                    current_row = document.createElement("tr");
+                    current_day_row = document.createElement("tr");
+                }
+            }
+
+            if (mes == 9) {
+                current_day_row.lastElementChild.remove();
+                current_row.lastElementChild.remove();
+            }
+            if (mes == 11) {
+                current_day_row.lastElementChild.remove();
+                current_row.lastElementChild.remove();
+            }
+
+            calendario.appendChild(current_day_row);
+            calendario.appendChild(current_row);
+            
+            if (mes%2==1) {
+                document.getElementById("coluna_1").appendChild(calendario);
+            } else {
+                document.getElementById("coluna_2").appendChild(calendario);
+            }
+            
+        }
+    </script></html>
