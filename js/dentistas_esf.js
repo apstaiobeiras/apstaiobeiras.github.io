@@ -1,0 +1,19 @@
+
+const dentistas_esf = [];
+dentistas_esf['1056'] = ['RENASCER'];
+dentistas_esf['1174'] = ['ESPETACULAR'];
+dentistas_esf['1145'] = ['COMUNIDADES RURAIS'];
+dentistas_esf['1202'] = ['HARMONIA'];
+dentistas_esf['1175'] = ['UNIAO'];
+dentistas_esf['1142'] = ['VIVER'];
+dentistas_esf['249'] = ['MAIS SAUDE'];
+dentistas_esf['1198'] = ['ACOLHER'];
+dentistas_esf['1038'] = ['ACOLHER'];
+dentistas_esf['1139'] = ['VIDA'];
+dentistas_esf['1147'] = ['HUMANIZAR'];
+dentistas_esf['833'] = ['HUMANIZAR'];
+dentistas_esf['1143'] = ['VIDA E SAUDE'];
+dentistas_esf['1144'] = ['CAMINHO'];
+dentistas_esf['1146'] = ['ESPERANÇA'];
+dentistas_esf['1197'] = ['PROGRESSO'];
+dentistas_esf['1115'] = ['LIBERDADE'];
