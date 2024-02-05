@@ -130,16 +130,21 @@
 
             for(let micro in lista_acs) {
                 let acs = lista_acs[micro];
-                let familias = visitas_realizadas[visitas_realizadas.length-1][acs[0] ][4];
-                let cobertura = visitas_realizadas[visitas_realizadas.length-1][acs[0] ][9];
-                let ausencias = visitas_realizadas[visitas_realizadas.length-1][acs[0] ][10];
+                let i = visitas_realizadas.length-1;
+
+                i = Object.keys(visitas_realizadas[i]).length == 0?visitas_realizadas.length-1:i;
+                i = Object.keys(visitas_realizadas[i]).length == 0?visitas_realizadas.length-2:i;
+                i = Object.keys(visitas_realizadas[i]).length == 0?visitas_realizadas.length-3:i;
+                i = Object.keys(visitas_realizadas[i]).length == 0?visitas_realizadas.length-4:i;
+
+                let familias = visitas_realizadas[i][acs[0] ][4];
+                let cobertura = visitas_realizadas[i][acs[0] ][9];
+                let ausencias = visitas_realizadas[i][acs[0] ][10];
 
                 //let cor_cobertura = colore_percentual(parseInt(ausencias.replace(",",".")*100),100);
 
                 ausencias = parseInt(ausencias.replace(",",".")*100)+"%";
                 cobertura = parseInt(cobertura.replace(",",".")*100)+"%";
-
-
 
                 table+= `<tr class="tr" onclick="bypassCPF('acs.html','${(parseInt(acs[0]).toString(36))}')">
                            <td><b>${micro}</b></td>
@@ -150,6 +155,7 @@
                         </tr>`
             }
             table += "</table>";
+
 
             lista_profissionais.innerHTML += `<h3>${equipe}</h3>${table}`;
         }
