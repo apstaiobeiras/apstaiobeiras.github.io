@@ -5,6 +5,12 @@ function backlink() {
     let unidade        = (new URLSearchParams(window.location.search)).get('unidade');
     let path           = ((new URLSearchParams(window.location.search)).get('path'));
     let cod_path       = (((new URLSearchParams(window.location.search)).get('cod_path')) || "");
+
+    if (!path) {
+        window.location.href = `index.html`;
+        return
+    }
+
     let path_array     = path.split("/");
     let cod_array      = cod_path.split("/").reverse();
 

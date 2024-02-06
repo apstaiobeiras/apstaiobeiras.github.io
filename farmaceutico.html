@@ -58,7 +58,7 @@
         table {
             width: 100%!important;
         }
-      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar" onclick="backlink();"><a><span id="cod">360</span> - <span id="nome">EDMAR ROCHA ALMEIDA</span></a></div><h3></h3><div id="lista_dos_profissionais"></div></body><script src="js/goto.js"></script><script src="js/lista-acs.js"></script><script src="js/dentistas_esf.js"></script><script src="js/nomes_profissionais.js"></script><script>const visitas_realizadas = [null];</script><script src="js/visitas.js"></script><script>        let cod_profissional = null;
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar" onclick="backlink();"><a><span id="cod">360</span> - <span id="nome">EDMAR ROCHA ALMEIDA</span></a></div><h3></h3><div id="lista_dos_profissionais"></div></body><script src="js/goto.js"></script><script src="js/lista-acs.js"></script><script src="js/farmaceuticos_esf.js"></script><script src="js/nomes_profissionais.js"></script><script>const visitas_realizadas = [null];</script><script src="js/visitas.js"></script><script>        let cod_profissional = null;
         (() => {
         const data_atual = (new Date()).getTime();
         
@@ -123,7 +123,7 @@
               return accumulator;
             }, {});
 
-            if (!dentistas_esf[parseInt((new URLSearchParams(window.location.search)).get('cod'), 36)].includes(equipe)) continue;
+            if (!farmaceuticos_esf[parseInt((new URLSearchParams(window.location.search)).get('cod'), 36)].includes(equipe)) continue;
 
             let table = "<table>";
             table += "<tr><th></th><th>Nome</th><th>Famílias</th><th>Cobertura</th><th>Ausências</th></tr>"
