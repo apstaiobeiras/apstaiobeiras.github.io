@@ -161,4 +161,11 @@
         }
 
         lista_ace.innerHTML = lista_dos_ace1;
+
+        for (let ace of document.getElementsByClassName('ace')) {
+            let equipe = ace.getAttribute("name");
+            if (!enfermeiros_esf[parseInt((new URLSearchParams(window.location.search)).get('cod'), 36)].includes(equipe)) {
+                ace.style.display = "none";
+            }
+        }
     </script></html>
