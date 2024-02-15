@@ -58,7 +58,7 @@
             margin-top: 60px; /* Ajuste conforme necessário com base na altura da sua barra de navegação */
         }
 
-        td { 
+        .td { 
             text-align: right;
         }
 
@@ -85,7 +85,7 @@
             display: table;
         }
 
-      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar no-print" onclick="backlink();"><a><span id="micro">00</span> - <span id="profissional">Nome do Agente Comuitário de Saúde</span></a></div><div class="no-print"><h1>Informativo</h1><p>Nesse relatório estão listadas as visitas a imóveis realizdas por dia</p><hr/></div><div class="row"><div class="column" id="coluna_1"></div><div class="column" id="coluna_2"></div></div></body><script src="js/goto.js"></script><script src="js/lista-ace.js"></script><script src="js/visitas_por_imovel.js"></script><script>        const data_atual = (new Date()).getTime();
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar no-print" onclick="backlink();"><a><span id="micro">00</span> - <span id="profissional">Nome do Agente Comuitário de Saúde</span></a></div><div class="no-print"><h1>Informativo</h1><p>Nesse relatório estão listadas as visitas a imóveis realizdas por dia</p><hr/></div><div class="row"><div class="column" id="coluna_1"></div><div class="column" id="coluna_2"></div></div><table><tr><th>Cor</th><th>Significado</th></tr><tr><td style="background-color:#B2D9AB;"></td><td>Teve ao menos uma vistoria realizada</td></tr><tr><td style="background-color:#EB989A;"></td><td>Não teve nenhuma vistoria realizada</td></tr><tr><td style="background-color:#9980FA;"></td><td>Feriados</td></tr><tr><td style="background-color:#4bcffa;"></td><td>Férias/Folga</td></tr><tr><td style="background-color:#f6e58d;"></td><td>Atestado médico/Afastamento</td></tr><tr><td style="background-color:#ffbe76;"></td><td>Reunião</td></tr></table></body><script src="js/goto.js"></script><script src="js/lista-ace.js"></script><script src="js/visitas_por_imovel.js"></script><script>        const data_atual = (new Date()).getTime();
 
         if (!(new URLSearchParams(window.location.search)).get('cod')) window.location.href="index.html";
         if (!(new URLSearchParams(window.location.search)).get('token')) window.location.href="index.html";
@@ -135,11 +135,14 @@
             calendario.appendChild(dias_da_semana);
             
             let dias_no_mes = (new Date((new Date).getYear(), mes, 0).getDate())+1;
+
+            let remover_cor = false;
         
             for (let i = 0; i < visitas_mes.length; i++){
                 const visitas_realizadas = visitas_mes[i];
 
                 let day_cell_h = document.createElement("th");
+                day_cell_h.className="td";
                 current_day_row.appendChild(day_cell_h);
 
                 if (visitas_realizadas != "") {
@@ -148,11 +151,32 @@
                 }
         
                 let day_cell = document.createElement("td");
+                day_cell.className="td";
                 day_cell.textContent = visitas_realizadas;
                 day_cell.style="background-color:#B2D9AB;"
         
                 if (visitas_realizadas == "0") {
                     day_cell.style="background-color:#EB989A;"
+                }
+
+                if (visitas_realizadas == "-1") {
+                    day_cell.style="background-color:#9980FA;"
+                    day_cell.textContent = " ";
+                }
+
+                if (visitas_realizadas == "-2") {
+                    day_cell.style="background-color:#4bcffa;"
+                    day_cell.textContent = " ";
+                }
+
+                if (visitas_realizadas == "-3") {
+                    day_cell.style="background-color:#f6e58d;"
+                    day_cell.textContent = " ";
+                }
+
+                if (visitas_realizadas == "-4") {
+                    day_cell.style="background-color:#ffbe76;"
+                    day_cell.textContent = " ";
                 }
         
                 if (visitas_realizadas == "---" || visitas_realizadas == "") {
@@ -164,9 +188,18 @@
                     day_cell.textContent = " ";
                 }
 
+                if (remover_cor) {
+                    day_cell.style = "";
+                }
+
+                remover_cor = false;
+
                 current_row.appendChild(day_cell);
         
                 if ((i+1) % 7 == 0) {
+                    day_cell.style="";
+
+                    remover_cor = true;
                     calendario.appendChild(current_day_row);
                     calendario.appendChild(current_row);
                     current_row = document.createElement("tr");
