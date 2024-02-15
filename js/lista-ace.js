@@ -1,4 +1,4 @@
-let lista_dos_profissionais = {
+const lista_dos_profissionais = {
   "in": "Adimar Bandeira ",
   "w8": "Alan Carlos Ferreira",
   "gu": "Caique Rodrigues",
