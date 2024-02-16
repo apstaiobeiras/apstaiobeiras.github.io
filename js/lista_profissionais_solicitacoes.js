@@ -1,5 +1,6 @@
 const lista_profissionais_solicitacoes = `
 <option value="">Todos os profissionais</option>
+<option value="1264"> THAUANY CRISTINE GOMES DE ANDRADE</option>
 <option value="1147">ADRIANA BARBOSA RODRIGUES</option>
 <option value="320">ADRIANA RAYSSA TELES COLARES</option>
 <option value="1195">ADRIANO DA SILVA ARAúJO</option>
