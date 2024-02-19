@@ -1,15 +1,2 @@
 const lista_dos_profissionais = {
-  "in": "Adimar Bandeira ",
-  "w8": "Alan Carlos Ferreira",
-  "gu": "Caique Rodrigues",
-  "w1": "Daniel de Jesus",
-  "wb": "Daniel Lima",
-  "57": "Dione Ferraz",
-  "56": "Divone Ferraz",
-  "2bc": "Evila Miriam Agostinho",
-  "5f": "Flavio Almeida",
-  "w7": "Gabriel Dias",
-  "2be": "Moises de Oliveira",
-  "gc": "Selma Barbosa",
-  "w2": "Vittor Gabriel Rodrigues",
 }

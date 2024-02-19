@@ -48,6 +48,7 @@ const lista_profissionais_solicitacoes = `
 <option value="362">GLEICIANE RAMOS BANDEIRA</option>
 <option value="177">GRAZIELLE GREYCE DA ROCHA MENDES</option>
 <option value="1046">HEMILY DE OLIVEIRA CELESTINO</option>
+<option value="846">HERTZ CARDOSO LACERDA</option>
 <option value="1110">HILLARY LIMA ABADE</option>
 <option value="1201">IAN VIEIRA LIMA AMORA DE SOUZA</option>
 <option value="909">IANN FERNANDO GOUVEA JABBUR</option>
