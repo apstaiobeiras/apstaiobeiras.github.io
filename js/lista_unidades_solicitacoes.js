@@ -6,6 +6,7 @@ const lista_unidades_solicitacoes = `
 <option value="11">CLINICA MUNICIPAL DE FISIOTERAPIA JOAO HEIDER BATISTA DA SIL</option>
 <option value="61">CONSULTAS PARTICULARES</option>
 <option value="74">EMULTI B - UAPS VEREADOR MANOEL DOS SANTOS SILVA</option>
+<option value="1">HOSPITAL SANTO ANTONIO</option>
 <option value="79">NASF C - UAPS DONA NININHA</option>
 <option value="16">POLICLINICA MUNICIPAL DR SILVIO A MENDES</option>
 <option value="68">POLICLINICA MUNICIPAL VIVA VIDA</option>
