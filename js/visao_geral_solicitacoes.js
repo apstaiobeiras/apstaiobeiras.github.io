@@ -1370,23 +1370,186 @@ let lista_meses = `
     </tr>
       <tr><th colspan=4>Filtrar por unidade</th></tr>
       <tr>
-        <td><a href="#" onclick="filtrar('x-1'); return false">UAPS AGEU ALMEIDA</a></td>
-        <td><a href="#" onclick="filtrar('x-2'); return false">UAPS ANTONINO DE ALMEIDA</a></td>
-        <td><a href="#" onclick="filtrar('x-3'); return false">UAPS COMUNIDADES RURAIS</a></td>
-        <td><a href="#" onclick="filtrar('x-4'); return false">UAPS DONA NININHA - HARMONIA</a></td>
+        <td><a href="#" onclick="filtrar('x-1',); return false">UAPS AGEU ALMEIDA</a></td>
+        <td><a href="#" onclick="filtrar('x-2',); return false">UAPS ANTONINO DE ALMEIDA</a></td>
+        <td><a href="#" onclick="filtrar('x-3',); return false">UAPS COMUNIDADES RURAIS</a></td>
+        <td><a href="#" onclick="filtrar('x-4',); return false">UAPS DONA NININHA - HARMONIA</a></td>
       </tr>
-        <td><a href="#" onclick="filtrar('x-5'); return false">UAPS DONA NININHA - UNIAO</a></td>
-        <td><a href="#" onclick="filtrar('x-6'); return false">UAPS ED. FIS. DOUGLAS FREDERICO MIRANDA BATISTA</a></td>
-        <td><a href="#" onclick="filtrar('x-7'); return false">UAPS ENFERMARIA MARY TATIANE ANTONIO LOPES - MAIS SAUDE</a></td>
-        <td><a href="#" onclick="filtrar('x-8'); return false">UAPS ENFERMEIRA MARY TATIANE ANTUNES LOPES - ACOLHER</a></td>
+        <td><a href="#" onclick="filtrar('x-5',); return false">UAPS DONA NININHA - UNIAO</a></td>
+        <td><a href="#" onclick="filtrar('x-6',); return false">UAPS ED. FIS. DOUGLAS FREDERICO MIRANDA BATISTA</a></td>
+        <td><a href="#" onclick="filtrar('x-7',); return false">UAPS ENFERMARIA MARY TATIANE ANTONIO LOPES - MAIS SAUDE</a></td>
+        <td><a href="#" onclick="filtrar('x-8',); return false">UAPS ENFERMEIRA MARY TATIANE ANTUNES LOPES - ACOLHER</a></td>
       </tr>
-        <td><a href="#" onclick="filtrar('x-9'); return false">UAPS JOAO DE DEUS SIMOES - VIDA</a></td>
-        <td><a href="#" onclick="filtrar('x-10'); return false">UAPS LAGOA GRANDE LAGOA DOURADA</a></td>
-        <td><a href="#" onclick="filtrar('x-11'); return false">UAPS MILTON MENDES DA SILVA</a></td>
-        <td><a href="#" onclick="filtrar('x-12'); return false">UAPS VEREADOR JOSE SENA - CAMINHO</a></td>
+        <td><a href="#" onclick="filtrar('x-9',); return false">UAPS JOAO DE DEUS SIMOES - VIDA</a></td>
+        <td><a href="#" onclick="filtrar('x-10',); return false">UAPS LAGOA GRANDE LAGOA DOURADA</a></td>
+        <td><a href="#" onclick="filtrar('x-11',); return false">UAPS MILTON MENDES DA SILVA</a></td>
+        <td><a href="#" onclick="filtrar('x-12',); return false">UAPS VEREADOR JOSE SENA - CAMINHO</a></td>
       </tr>
-        <td><a href="#" onclick="filtrar('x-13'); return false">UAPS VEREADOR JOSE SENA - ESPERANÇA</a></td>
-        <td><a href="#" onclick="filtrar('x-14'); return false">UAPS VEREADOR MANOEL DOS SANTOS SILVA - LIBERDADE</a></td>
-        <td><a href="#" onclick="filtrar('x-15'); return false">UAPS VEREADOR MANOEL DOS SANTOS SILVA - PROGRESSO</a></td>
+        <td><a href="#" onclick="filtrar('x-13',); return false">UAPS VEREADOR JOSE SENA - ESPERANÇA</a></td>
+        <td><a href="#" onclick="filtrar('x-14',); return false">UAPS VEREADOR MANOEL DOS SANTOS SILVA - LIBERDADE</a></td>
+        <td><a href="#" onclick="filtrar('x-15',); return false">UAPS VEREADOR MANOEL DOS SANTOS SILVA - PROGRESSO</a></td>
+      <tr><th colspan=4>Filtrar por profissional</th></tr>
+      <tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1147',todos_os_profissionais); return false">1147 - ADRIANA BARBOSA RODRIGUES</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-320',todos_os_profissionais); return false">320 - ADRIANA RAYSSA TELES COLARES</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1195',todos_os_profissionais); return false">1195 - ADRIANO DA SILVA ARAúJO</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-299',todos_os_profissionais); return false">299 - ALINE GOMES FERREIRA</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1202',todos_os_profissionais); return false">1202 - ALINE NAYARA RODRIGUES</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1204',todos_os_profissionais); return false">1204 - AMANDA ATANIELLY RIBEIRO</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1139',todos_os_profissionais); return false">1139 - AMANDA AUGUSTA SANTOS</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1144',todos_os_profissionais); return false">1144 - AMANDA FRóES RIBEIRO</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-781',todos_os_profissionais); return false">781 - AMANDA MIRANDA BRITO ARAUJO</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1217',todos_os_profissionais); return false">1217 - ANA CAROLINA MURTA E SOUSA</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1132',todos_os_profissionais); return false">1132 - ANA JULIA ROCHA BATISTA</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-353',todos_os_profissionais); return false">353 - ANDRESSA FERREIRA COSTA</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1058',todos_os_profissionais); return false">1058 - ANDRESSA SANTANA VIANA </a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-818',todos_os_profissionais); return false">818 - ANDREY FELIX SOARES PEREIRA DA SILVA</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1034',todos_os_profissionais); return false">1034 - ARUANDA KALINCA TEIXEIRA SOARES</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1146',todos_os_profissionais); return false">1146 - ATHOS ALMEIDA CAIRES</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1142',todos_os_profissionais); return false">1142 - AYESKA AGUIAR MARTINS</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1241',todos_os_profissionais); return false">1241 - BEATRIZ MIRANDA RODRIGUES</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1221',todos_os_profissionais); return false">1221 - BRUNA GIOVANNA ABREU XAVIER</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-847',todos_os_profissionais); return false">847 - BRUNA WANELLY SANTANA ARAUJO</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-786',todos_os_profissionais); return false">786 - BRUNNA THAIS COSTA</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-667',todos_os_profissionais); return false">667 - CAMILA DRIELLY CRUZ COSTA</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1238',todos_os_profissionais); return false">1238 - CLEMENTE VINICIUS BORGES DE ARAUJO</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1133',todos_os_profissionais); return false">1133 - CRISTIANE SODRE BERGAMIN</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-222',todos_os_profissionais); return false">222 - DANILO DA ROCHA VIANA</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-880',todos_os_profissionais); return false">880 - DANILO DIEGO FREITAS SILVEIRA</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1143',todos_os_profissionais); return false">1143 - EDNA FERNANDA DIAS LEãO</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-183',todos_os_profissionais); return false">183 - ELIANE APARECIDA DE OLIVEIRA PASCOAL</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-845',todos_os_profissionais); return false">845 - ELOIZA LUIZ SILVA</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1145',todos_os_profissionais); return false">1145 - EMILLE FRANCINE CORDEIRO SILVA SOUSA</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-173',todos_os_profissionais); return false">173 - ERICA MANUELA DA SILVA BOA SORTE</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-216',todos_os_profissionais); return false">216 - FABIOLA DE OLIVEIRA LOBO</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1176',todos_os_profissionais); return false">1176 - FABRICIO DOS SANTOS ROCHA	</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-114',todos_os_profissionais); return false">114 - FLAVIA NAYARA LELES ARAUJO</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1227',todos_os_profissionais); return false">1227 - GABRIEL ALMEIDA FERNANDES MEIRELES MOREIRA</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-177',todos_os_profissionais); return false">177 - GRAZIELLE GREYCE DA ROCHA MENDES</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1046',todos_os_profissionais); return false">1046 - HEMILY DE OLIVEIRA CELESTINO</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1110',todos_os_profissionais); return false">1110 - HILLARY LIMA ABADE</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1201',todos_os_profissionais); return false">1201 - IAN VIEIRA LIMA AMORA DE SOUZA</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-265',todos_os_profissionais); return false">265 - IGOR FERNANDO BARROS PIRES</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1016',todos_os_profissionais); return false">1016 - ISA MATTOS ALVES</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-832',todos_os_profissionais); return false">832 - ISABELLA LOPES SANTOS</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-775',todos_os_profissionais); return false">775 - ISABELLA MENDES DE OLIVEIRA</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-833',todos_os_profissionais); return false">833 - ISAC EVANGELISTA FERREIRA</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-298',todos_os_profissionais); return false">298 - IZABELA CAROLINA SALES VIEIRA LOPES</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-249',todos_os_profissionais); return false">249 - JESSICA NOEME DIAS SANTOS</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-370',todos_os_profissionais); return false">370 - JOAO PEDRO MARQUES MENDES CORREA</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1182',todos_os_profissionais); return false">1182 - JOAO VICTOR SANTANA ARAUJO</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1064',todos_os_profissionais); return false">1064 - JULIA ROCHA DO CARMO</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-25',todos_os_profissionais); return false">25 - JUNEO SOARES DA SILVA REIS</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1109',todos_os_profissionais); return false">1109 - LANDRA GRASIELE SILVA SALDANHA</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1039',todos_os_profissionais); return false">1039 - LARISSA ALVES SANTOS</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1259',todos_os_profissionais); return false">1259 - LARISSA SALLES REIS CARDOSO DE Sá </a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1174',todos_os_profissionais); return false">1174 - LAVINIA MENDES SANTANA	</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1197',todos_os_profissionais); return false">1197 - LAYONEL PEREIRA DA SILVA</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1056',todos_os_profissionais); return false">1056 - LETICIA KARENN SOUZA MENDES</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1232',todos_os_profissionais); return false">1232 - LEYLIARA OLIVEIRA PORTO</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1105',todos_os_profissionais); return false">1105 - LHAIS OLIVEIRA JORGE</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-796',todos_os_profissionais); return false">796 - LIGIA LUIZA MIRANDA PEGO</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-520',todos_os_profissionais); return false">520 - LORENA MIRANDA LIMA</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-507',todos_os_profissionais); return false">507 - LUANA PEREIRA ROCHA</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1240',todos_os_profissionais); return false">1240 - LUANNDA FERREIRA CHAVES</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1198',todos_os_profissionais); return false">1198 - LUCAS GEAZI DA SILVA SOUZA</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-787',todos_os_profissionais); return false">787 - LUIZ CLAUDIO BOREM NORONHA</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1048',todos_os_profissionais); return false">1048 - LUMA MOREIRA RAMOS</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-354',todos_os_profissionais); return false">354 - LYVIA SENA MENDES ESCOBAR</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1150',todos_os_profissionais); return false">1150 - MAIRA LOPES SARMENTO</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-418',todos_os_profissionais); return false">418 - MAIRA TAINIS BARBOSA MOREIRA ALVES</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-62',todos_os_profissionais); return false">62 - MARCOS ALEXANDRE DA SILVA</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1038',todos_os_profissionais); return false">1038 - MARIA APARECIDA DA ROCHA</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1220',todos_os_profissionais); return false">1220 - MARIA BETANIA LESSA COELHO LAMOUNIER</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-141',todos_os_profissionais); return false">141 - MARIA CRISTINA RODRIGUES MORAIS</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1175',todos_os_profissionais); return false">1175 - MARIA EDUARDA SARMENTO FERREIRA</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1216',todos_os_profissionais); return false">1216 - MARIA LUIZA MARQUES BARBOSA</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1218',todos_os_profissionais); return false">1218 - MARIANA GONçALVES DE QUADROS</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1194',todos_os_profissionais); return false">1194 - MARILIA FERNANDA PEREIRA MATOS</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1108',todos_os_profissionais); return false">1108 - MARIVONE DE OLIVEIRA MONTEIRO</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-907',todos_os_profissionais); return false">907 - MARKUS THULIO ALVES GUIMARAES</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1037',todos_os_profissionais); return false">1037 - MARLI DE SOUZA SANTOS</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1137',todos_os_profissionais); return false">1137 - MATHEUS OLIVEIRA NOBRE ANDRADE</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1219',todos_os_profissionais); return false">1219 - MATHEUS SANTOS MARTINS MENDES</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-348',todos_os_profissionais); return false">348 - MAYCK ANTONIO TELES COLARES</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1206',todos_os_profissionais); return false">1206 - MELISSA EMANUELE MEDEIROS NUNES</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1111',todos_os_profissionais); return false">1111 - MICHELLE DAYANE ANTUNES DE ALMEIDA</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1258',todos_os_profissionais); return false">1258 - MICHELLY KAROLINE GONCALVES PEREIRA</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1200',todos_os_profissionais); return false">1200 - OLAVO MAURICIO DE SOUZA NETO</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1107',todos_os_profissionais); return false">1107 - PAULA REGINA KATHLYN DE ABREU</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1196',todos_os_profissionais); return false">1196 - PAULO SéRGIO GONçALVES DE ALCâNTARA</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1052',todos_os_profissionais); return false">1052 - PEDRO HENRIQUE CUNHA BRONDI</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1193',todos_os_profissionais); return false">1193 - RAFAELA VILACA DE QUADROS</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-849',todos_os_profissionais); return false">849 - RAFHAEL ARRUDAS RIBEIRO SOARES</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-414',todos_os_profissionais); return false">414 - RANELLY DE ANDRADE MEIRELES</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1069',todos_os_profissionais); return false">1069 - RAYANE DA CRUZ ALVES</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-884',todos_os_profissionais); return false">884 - RENATA MATOS E MATOS</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1243',todos_os_profissionais); return false">1243 - ROBERTA CAMARGOS</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1131',todos_os_profissionais); return false">1131 - RODRIGO RIBEIRO DOS SANTOS</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-351',todos_os_profissionais); return false">351 - RONUARLLEY SILVA MARQUES</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-894',todos_os_profissionais); return false">894 - ROSIANE VIEIRA DE SA</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-785',todos_os_profissionais); return false">785 - SAMARA FRANTHEISCA ALMEIDA BARBOSA</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1177',todos_os_profissionais); return false">1177 - TALYANE ALVES PEREIRA</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1115',todos_os_profissionais); return false">1115 - TATIANE SOUSA GOMES</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-84',todos_os_profissionais); return false">84 - TAYSA CRISTINA CARDOSO FREITAS</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1235',todos_os_profissionais); return false">1235 - TIFANY ADRIANY PINHEIRO SILVA</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1106',todos_os_profissionais); return false">1106 - YASMIM FERNANDES ALMEIDA LEITE</a></td>
+      </tr>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1199',todos_os_profissionais); return false">1199 - ÉRIKA DAMASCENO RUAS</a></td>
+        <td  colspan=2><a href="#" onclick="filtrar('x-1183',todos_os_profissionais); return false">1183 - Éricles Willy Machado de Oliveira</a></td>
+      </tr>
 </table>
 `;
+let todos_os_profissionais = `<table>    <tr class="table: 0000000003503770"><th colspan=4 >nil</th></tr>
+</table>`;
