@@ -47,6 +47,7 @@
             document.getElementById("cpf-banner").innerHTML = '<a href="#" onclick="desfazerFiltro();return false;">Refazer filtragem</a><br>';
 
             let doc = new DOMParser().parseFromString(tabela || solicitacoes_visao_geral, "text/html");
+            let resumo_titulo = tabela ? "Resumo do ano" : "Município";
             let resumo = [];
             resumo['Agendado'] = 0;
             resumo['Cancelado'] = 0;
@@ -68,7 +69,7 @@
 
             let tabela_resumo = "";
             tabela_resumo += `<tr>`;
-            tabela_resumo += `  <th colspan=3>Município</th>`;
+            tabela_resumo += `  <th colspan=3>${resumo_titulo}</th>`;
             tabela_resumo += `</tr>`;
             tabela_resumo += `<tr>`;
             tabela_resumo += `  <td>Agendado</td>`;
@@ -102,6 +103,12 @@
 
             doc.body.children[0].children[0].innerHTML = tabela_resumo+doc.body.children[0].children[0].innerHTML;
             document.getElementById("erro").innerHTML = doc.body.innerHTML;
+
+            for (let tbl of [].slice.call(document.getElementsByTagName("table"))) {
+                if (tbl.rows.length == 0) {
+                    tbl.style="display:none;"
+                }
+            }
         }
 
         function desfazerFiltro() {

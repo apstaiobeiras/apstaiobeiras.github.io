@@ -1388,170 +1388,174 @@ let lista_meses = `
         <td><a href="#" onclick="filtrar('x-13',); return false">UAPS VEREADOR JOSE SENA - ESPERANÇA</a></td>
         <td><a href="#" onclick="filtrar('x-14',); return false">UAPS VEREADOR MANOEL DOS SANTOS SILVA - LIBERDADE</a></td>
         <td><a href="#" onclick="filtrar('x-15',); return false">UAPS VEREADOR MANOEL DOS SANTOS SILVA - PROGRESSO</a></td>
-      <tr><th colspan=4>Filtrar por profissional</th></tr>
-      <tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1147',todos_os_profissionais); return false">1147 - ADRIANA BARBOSA RODRIGUES</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-320',todos_os_profissionais); return false">320 - ADRIANA RAYSSA TELES COLARES</a></td>
+    <tr><th colspan=4 >Cirurgião Dentista ESF</th></tr>
+<td  colspan=2><a href="#" onclick="filtrar('x-1147',todos_os_profissionais); return false">1147 - ADRIANA BARBOSA RODRIGUES</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1202',todos_os_profissionais); return false">1202 - ALINE NAYARA RODRIGUES</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1195',todos_os_profissionais); return false">1195 - ADRIANO DA SILVA ARAúJO</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-299',todos_os_profissionais); return false">299 - ALINE GOMES FERREIRA</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1139',todos_os_profissionais); return false">1139 - AMANDA AUGUSTA SANTOS</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1144',todos_os_profissionais); return false">1144 - AMANDA FRóES RIBEIRO</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1202',todos_os_profissionais); return false">1202 - ALINE NAYARA RODRIGUES</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1204',todos_os_profissionais); return false">1204 - AMANDA ATANIELLY RIBEIRO</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1146',todos_os_profissionais); return false">1146 - ATHOS ALMEIDA CAIRES</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1142',todos_os_profissionais); return false">1142 - AYESKA AGUIAR MARTINS</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1139',todos_os_profissionais); return false">1139 - AMANDA AUGUSTA SANTOS</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1144',todos_os_profissionais); return false">1144 - AMANDA FRóES RIBEIRO</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-667',todos_os_profissionais); return false">667 - CAMILA DRIELLY CRUZ COSTA</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1143',todos_os_profissionais); return false">1143 - EDNA FERNANDA DIAS LEãO</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-781',todos_os_profissionais); return false">781 - AMANDA MIRANDA BRITO ARAUJO</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1217',todos_os_profissionais); return false">1217 - ANA CAROLINA MURTA E SOUSA</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1145',todos_os_profissionais); return false">1145 - EMILLE FRANCINE CORDEIRO SILVA SOUSA</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1176',todos_os_profissionais); return false">1176 - FABRICIO DOS SANTOS ROCHA	</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1132',todos_os_profissionais); return false">1132 - ANA JULIA ROCHA BATISTA</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-353',todos_os_profissionais); return false">353 - ANDRESSA FERREIRA COSTA</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-114',todos_os_profissionais); return false">114 - FLAVIA NAYARA LELES ARAUJO</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-833',todos_os_profissionais); return false">833 - ISAC EVANGELISTA FERREIRA</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1058',todos_os_profissionais); return false">1058 - ANDRESSA SANTANA VIANA </a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-818',todos_os_profissionais); return false">818 - ANDREY FELIX SOARES PEREIRA DA SILVA</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-249',todos_os_profissionais); return false">249 - JESSICA NOEME DIAS SANTOS</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1039',todos_os_profissionais); return false">1039 - LARISSA ALVES SANTOS</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1034',todos_os_profissionais); return false">1034 - ARUANDA KALINCA TEIXEIRA SOARES</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1146',todos_os_profissionais); return false">1146 - ATHOS ALMEIDA CAIRES</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1174',todos_os_profissionais); return false">1174 - LAVINIA MENDES SANTANA	</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1197',todos_os_profissionais); return false">1197 - LAYONEL PEREIRA DA SILVA</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1142',todos_os_profissionais); return false">1142 - AYESKA AGUIAR MARTINS</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1241',todos_os_profissionais); return false">1241 - BEATRIZ MIRANDA RODRIGUES</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1056',todos_os_profissionais); return false">1056 - LETICIA KARENN SOUZA MENDES</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-520',todos_os_profissionais); return false">520 - LORENA MIRANDA LIMA</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1221',todos_os_profissionais); return false">1221 - BRUNA GIOVANNA ABREU XAVIER</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-847',todos_os_profissionais); return false">847 - BRUNA WANELLY SANTANA ARAUJO</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1198',todos_os_profissionais); return false">1198 - LUCAS GEAZI DA SILVA SOUZA</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1038',todos_os_profissionais); return false">1038 - MARIA APARECIDA DA ROCHA</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-786',todos_os_profissionais); return false">786 - BRUNNA THAIS COSTA</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-667',todos_os_profissionais); return false">667 - CAMILA DRIELLY CRUZ COSTA</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1175',todos_os_profissionais); return false">1175 - MARIA EDUARDA SARMENTO FERREIRA</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1115',todos_os_profissionais); return false">1115 - TATIANE SOUSA GOMES</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1238',todos_os_profissionais); return false">1238 - CLEMENTE VINICIUS BORGES DE ARAUJO</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1133',todos_os_profissionais); return false">1133 - CRISTIANE SODRE BERGAMIN</a></td>
+    <tr><th colspan=4 >Enfermeiro ESF</th></tr>
+<td  colspan=2><a href="#" onclick="filtrar('x-353',todos_os_profissionais); return false">353 - ANDRESSA FERREIRA COSTA</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1034',todos_os_profissionais); return false">1034 - ARUANDA KALINCA TEIXEIRA SOARES</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-222',todos_os_profissionais); return false">222 - DANILO DA ROCHA VIANA</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-880',todos_os_profissionais); return false">880 - DANILO DIEGO FREITAS SILVEIRA</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1241',todos_os_profissionais); return false">1241 - BEATRIZ MIRANDA RODRIGUES</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-786',todos_os_profissionais); return false">786 - BRUNNA THAIS COSTA</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1143',todos_os_profissionais); return false">1143 - EDNA FERNANDA DIAS LEãO</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-183',todos_os_profissionais); return false">183 - ELIANE APARECIDA DE OLIVEIRA PASCOAL</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1133',todos_os_profissionais); return false">1133 - CRISTIANE SODRE BERGAMIN</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-222',todos_os_profissionais); return false">222 - DANILO DA ROCHA VIANA</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-845',todos_os_profissionais); return false">845 - ELOIZA LUIZ SILVA</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1145',todos_os_profissionais); return false">1145 - EMILLE FRANCINE CORDEIRO SILVA SOUSA</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-880',todos_os_profissionais); return false">880 - DANILO DIEGO FREITAS SILVEIRA</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-183',todos_os_profissionais); return false">183 - ELIANE APARECIDA DE OLIVEIRA PASCOAL</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-173',todos_os_profissionais); return false">173 - ERICA MANUELA DA SILVA BOA SORTE</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-216',todos_os_profissionais); return false">216 - FABIOLA DE OLIVEIRA LOBO</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-845',todos_os_profissionais); return false">845 - ELOIZA LUIZ SILVA</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-216',todos_os_profissionais); return false">216 - FABIOLA DE OLIVEIRA LOBO</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1176',todos_os_profissionais); return false">1176 - FABRICIO DOS SANTOS ROCHA	</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-114',todos_os_profissionais); return false">114 - FLAVIA NAYARA LELES ARAUJO</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-177',todos_os_profissionais); return false">177 - GRAZIELLE GREYCE DA ROCHA MENDES</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1110',todos_os_profissionais); return false">1110 - HILLARY LIMA ABADE</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1227',todos_os_profissionais); return false">1227 - GABRIEL ALMEIDA FERNANDES MEIRELES MOREIRA</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-177',todos_os_profissionais); return false">177 - GRAZIELLE GREYCE DA ROCHA MENDES</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1201',todos_os_profissionais); return false">1201 - IAN VIEIRA LIMA AMORA DE SOUZA</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-832',todos_os_profissionais); return false">832 - ISABELLA LOPES SANTOS</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1046',todos_os_profissionais); return false">1046 - HEMILY DE OLIVEIRA CELESTINO</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1110',todos_os_profissionais); return false">1110 - HILLARY LIMA ABADE</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1064',todos_os_profissionais); return false">1064 - JULIA ROCHA DO CARMO</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1109',todos_os_profissionais); return false">1109 - LANDRA GRASIELE SILVA SALDANHA</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1201',todos_os_profissionais); return false">1201 - IAN VIEIRA LIMA AMORA DE SOUZA</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-265',todos_os_profissionais); return false">265 - IGOR FERNANDO BARROS PIRES</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1232',todos_os_profissionais); return false">1232 - LEYLIARA OLIVEIRA PORTO</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1240',todos_os_profissionais); return false">1240 - LUANNDA FERREIRA CHAVES</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1016',todos_os_profissionais); return false">1016 - ISA MATTOS ALVES</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-832',todos_os_profissionais); return false">832 - ISABELLA LOPES SANTOS</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-787',todos_os_profissionais); return false">787 - LUIZ CLAUDIO BOREM NORONHA</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-354',todos_os_profissionais); return false">354 - LYVIA SENA MENDES ESCOBAR</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-775',todos_os_profissionais); return false">775 - ISABELLA MENDES DE OLIVEIRA</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-833',todos_os_profissionais); return false">833 - ISAC EVANGELISTA FERREIRA</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-418',todos_os_profissionais); return false">418 - MAIRA TAINIS BARBOSA MOREIRA ALVES</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1206',todos_os_profissionais); return false">1206 - MELISSA EMANUELE MEDEIROS NUNES</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-298',todos_os_profissionais); return false">298 - IZABELA CAROLINA SALES VIEIRA LOPES</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-249',todos_os_profissionais); return false">249 - JESSICA NOEME DIAS SANTOS</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1200',todos_os_profissionais); return false">1200 - OLAVO MAURICIO DE SOUZA NETO</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1107',todos_os_profissionais); return false">1107 - PAULA REGINA KATHLYN DE ABREU</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-370',todos_os_profissionais); return false">370 - JOAO PEDRO MARQUES MENDES CORREA</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1182',todos_os_profissionais); return false">1182 - JOAO VICTOR SANTANA ARAUJO</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-884',todos_os_profissionais); return false">884 - RENATA MATOS E MATOS</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1243',todos_os_profissionais); return false">1243 - ROBERTA CAMARGOS</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1064',todos_os_profissionais); return false">1064 - JULIA ROCHA DO CARMO</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-25',todos_os_profissionais); return false">25 - JUNEO SOARES DA SILVA REIS</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-351',todos_os_profissionais); return false">351 - RONUARLLEY SILVA MARQUES</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-894',todos_os_profissionais); return false">894 - ROSIANE VIEIRA DE SA</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1109',todos_os_profissionais); return false">1109 - LANDRA GRASIELE SILVA SALDANHA</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1039',todos_os_profissionais); return false">1039 - LARISSA ALVES SANTOS</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-785',todos_os_profissionais); return false">785 - SAMARA FRANTHEISCA ALMEIDA BARBOSA</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-84',todos_os_profissionais); return false">84 - TAYSA CRISTINA CARDOSO FREITAS</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1259',todos_os_profissionais); return false">1259 - LARISSA SALLES REIS CARDOSO DE Sá </a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1174',todos_os_profissionais); return false">1174 - LAVINIA MENDES SANTANA	</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1235',todos_os_profissionais); return false">1235 - TIFANY ADRIANY PINHEIRO SILVA</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1199',todos_os_profissionais); return false">1199 - ÉRIKA DAMASCENO RUAS</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1197',todos_os_profissionais); return false">1197 - LAYONEL PEREIRA DA SILVA</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1056',todos_os_profissionais); return false">1056 - LETICIA KARENN SOUZA MENDES</a></td>
+    <tr><th colspan=4 >Farmacêutico</th></tr>
+<td  colspan=2><a href="#" onclick="filtrar('x-1195',todos_os_profissionais); return false">1195 - ADRIANO DA SILVA ARAúJO</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1204',todos_os_profissionais); return false">1204 - AMANDA ATANIELLY RIBEIRO</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1232',todos_os_profissionais); return false">1232 - LEYLIARA OLIVEIRA PORTO</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1105',todos_os_profissionais); return false">1105 - LHAIS OLIVEIRA JORGE</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1108',todos_os_profissionais); return false">1108 - MARIVONE DE OLIVEIRA MONTEIRO</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1037',todos_os_profissionais); return false">1037 - MARLI DE SOUZA SANTOS</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-796',todos_os_profissionais); return false">796 - LIGIA LUIZA MIRANDA PEGO</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-520',todos_os_profissionais); return false">520 - LORENA MIRANDA LIMA</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1196',todos_os_profissionais); return false">1196 - PAULO SéRGIO GONçALVES DE ALCâNTARA</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1177',todos_os_profissionais); return false">1177 - TALYANE ALVES PEREIRA</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-507',todos_os_profissionais); return false">507 - LUANA PEREIRA ROCHA</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1240',todos_os_profissionais); return false">1240 - LUANNDA FERREIRA CHAVES</a></td>
+    <tr><th colspan=4 >Médico clínico</th></tr>
+<td  colspan=2><a href="#" onclick="filtrar('x-370',todos_os_profissionais); return false">370 - JOAO PEDRO MARQUES MENDES CORREA</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-25',todos_os_profissionais); return false">25 - JUNEO SOARES DA SILVA REIS</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1198',todos_os_profissionais); return false">1198 - LUCAS GEAZI DA SILVA SOUZA</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-787',todos_os_profissionais); return false">787 - LUIZ CLAUDIO BOREM NORONHA</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-62',todos_os_profissionais); return false">62 - MARCOS ALEXANDRE DA SILVA</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-141',todos_os_profissionais); return false">141 - MARIA CRISTINA RODRIGUES MORAIS</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1048',todos_os_profissionais); return false">1048 - LUMA MOREIRA RAMOS</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-354',todos_os_profissionais); return false">354 - LYVIA SENA MENDES ESCOBAR</a></td>
+    <tr><th colspan=4 >Médico ESF</th></tr>
+<td  colspan=2><a href="#" onclick="filtrar('x-320',todos_os_profissionais); return false">320 - ADRIANA RAYSSA TELES COLARES</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-299',todos_os_profissionais); return false">299 - ALINE GOMES FERREIRA</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1150',todos_os_profissionais); return false">1150 - MAIRA LOPES SARMENTO</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-418',todos_os_profissionais); return false">418 - MAIRA TAINIS BARBOSA MOREIRA ALVES</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-781',todos_os_profissionais); return false">781 - AMANDA MIRANDA BRITO ARAUJO</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1217',todos_os_profissionais); return false">1217 - ANA CAROLINA MURTA E SOUSA</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-62',todos_os_profissionais); return false">62 - MARCOS ALEXANDRE DA SILVA</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1038',todos_os_profissionais); return false">1038 - MARIA APARECIDA DA ROCHA</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1132',todos_os_profissionais); return false">1132 - ANA JULIA ROCHA BATISTA</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-818',todos_os_profissionais); return false">818 - ANDREY FELIX SOARES PEREIRA DA SILVA</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1220',todos_os_profissionais); return false">1220 - MARIA BETANIA LESSA COELHO LAMOUNIER</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-141',todos_os_profissionais); return false">141 - MARIA CRISTINA RODRIGUES MORAIS</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1221',todos_os_profissionais); return false">1221 - BRUNA GIOVANNA ABREU XAVIER</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-847',todos_os_profissionais); return false">847 - BRUNA WANELLY SANTANA ARAUJO</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1175',todos_os_profissionais); return false">1175 - MARIA EDUARDA SARMENTO FERREIRA</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1216',todos_os_profissionais); return false">1216 - MARIA LUIZA MARQUES BARBOSA</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1238',todos_os_profissionais); return false">1238 - CLEMENTE VINICIUS BORGES DE ARAUJO</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-173',todos_os_profissionais); return false">173 - ERICA MANUELA DA SILVA BOA SORTE</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1218',todos_os_profissionais); return false">1218 - MARIANA GONçALVES DE QUADROS</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1194',todos_os_profissionais); return false">1194 - MARILIA FERNANDA PEREIRA MATOS</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1227',todos_os_profissionais); return false">1227 - GABRIEL ALMEIDA FERNANDES MEIRELES MOREIRA</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1046',todos_os_profissionais); return false">1046 - HEMILY DE OLIVEIRA CELESTINO</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1108',todos_os_profissionais); return false">1108 - MARIVONE DE OLIVEIRA MONTEIRO</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-907',todos_os_profissionais); return false">907 - MARKUS THULIO ALVES GUIMARAES</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-265',todos_os_profissionais); return false">265 - IGOR FERNANDO BARROS PIRES</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1016',todos_os_profissionais); return false">1016 - ISA MATTOS ALVES</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1037',todos_os_profissionais); return false">1037 - MARLI DE SOUZA SANTOS</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1137',todos_os_profissionais); return false">1137 - MATHEUS OLIVEIRA NOBRE ANDRADE</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-775',todos_os_profissionais); return false">775 - ISABELLA MENDES DE OLIVEIRA</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-298',todos_os_profissionais); return false">298 - IZABELA CAROLINA SALES VIEIRA LOPES</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1219',todos_os_profissionais); return false">1219 - MATHEUS SANTOS MARTINS MENDES</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-348',todos_os_profissionais); return false">348 - MAYCK ANTONIO TELES COLARES</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1182',todos_os_profissionais); return false">1182 - JOAO VICTOR SANTANA ARAUJO</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1259',todos_os_profissionais); return false">1259 - LARISSA SALLES REIS CARDOSO DE Sá </a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1206',todos_os_profissionais); return false">1206 - MELISSA EMANUELE MEDEIROS NUNES</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1111',todos_os_profissionais); return false">1111 - MICHELLE DAYANE ANTUNES DE ALMEIDA</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1105',todos_os_profissionais); return false">1105 - LHAIS OLIVEIRA JORGE</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-796',todos_os_profissionais); return false">796 - LIGIA LUIZA MIRANDA PEGO</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1258',todos_os_profissionais); return false">1258 - MICHELLY KAROLINE GONCALVES PEREIRA</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1200',todos_os_profissionais); return false">1200 - OLAVO MAURICIO DE SOUZA NETO</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-507',todos_os_profissionais); return false">507 - LUANA PEREIRA ROCHA</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1048',todos_os_profissionais); return false">1048 - LUMA MOREIRA RAMOS</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1107',todos_os_profissionais); return false">1107 - PAULA REGINA KATHLYN DE ABREU</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1196',todos_os_profissionais); return false">1196 - PAULO SéRGIO GONçALVES DE ALCâNTARA</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1150',todos_os_profissionais); return false">1150 - MAIRA LOPES SARMENTO</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1220',todos_os_profissionais); return false">1220 - MARIA BETANIA LESSA COELHO LAMOUNIER</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1052',todos_os_profissionais); return false">1052 - PEDRO HENRIQUE CUNHA BRONDI</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1193',todos_os_profissionais); return false">1193 - RAFAELA VILACA DE QUADROS</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1216',todos_os_profissionais); return false">1216 - MARIA LUIZA MARQUES BARBOSA</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1218',todos_os_profissionais); return false">1218 - MARIANA GONçALVES DE QUADROS</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-849',todos_os_profissionais); return false">849 - RAFHAEL ARRUDAS RIBEIRO SOARES</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-414',todos_os_profissionais); return false">414 - RANELLY DE ANDRADE MEIRELES</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1194',todos_os_profissionais); return false">1194 - MARILIA FERNANDA PEREIRA MATOS</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-907',todos_os_profissionais); return false">907 - MARKUS THULIO ALVES GUIMARAES</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1069',todos_os_profissionais); return false">1069 - RAYANE DA CRUZ ALVES</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-884',todos_os_profissionais); return false">884 - RENATA MATOS E MATOS</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1137',todos_os_profissionais); return false">1137 - MATHEUS OLIVEIRA NOBRE ANDRADE</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1219',todos_os_profissionais); return false">1219 - MATHEUS SANTOS MARTINS MENDES</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1243',todos_os_profissionais); return false">1243 - ROBERTA CAMARGOS</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1131',todos_os_profissionais); return false">1131 - RODRIGO RIBEIRO DOS SANTOS</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-348',todos_os_profissionais); return false">348 - MAYCK ANTONIO TELES COLARES</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1111',todos_os_profissionais); return false">1111 - MICHELLE DAYANE ANTUNES DE ALMEIDA</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-351',todos_os_profissionais); return false">351 - RONUARLLEY SILVA MARQUES</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-894',todos_os_profissionais); return false">894 - ROSIANE VIEIRA DE SA</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1258',todos_os_profissionais); return false">1258 - MICHELLY KAROLINE GONCALVES PEREIRA</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1052',todos_os_profissionais); return false">1052 - PEDRO HENRIQUE CUNHA BRONDI</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-785',todos_os_profissionais); return false">785 - SAMARA FRANTHEISCA ALMEIDA BARBOSA</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1177',todos_os_profissionais); return false">1177 - TALYANE ALVES PEREIRA</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1193',todos_os_profissionais); return false">1193 - RAFAELA VILACA DE QUADROS</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-849',todos_os_profissionais); return false">849 - RAFHAEL ARRUDAS RIBEIRO SOARES</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1115',todos_os_profissionais); return false">1115 - TATIANE SOUSA GOMES</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-84',todos_os_profissionais); return false">84 - TAYSA CRISTINA CARDOSO FREITAS</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-414',todos_os_profissionais); return false">414 - RANELLY DE ANDRADE MEIRELES</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1069',todos_os_profissionais); return false">1069 - RAYANE DA CRUZ ALVES</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1235',todos_os_profissionais); return false">1235 - TIFANY ADRIANY PINHEIRO SILVA</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1106',todos_os_profissionais); return false">1106 - YASMIM FERNANDES ALMEIDA LEITE</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1106',todos_os_profissionais); return false">1106 - YASMIM FERNANDES ALMEIDA LEITE</a></td>
+<td  colspan=2><a href="#" onclick="filtrar('x-1183',todos_os_profissionais); return false">1183 - Éricles Willy Machado de Oliveira</a></td>
       </tr>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1199',todos_os_profissionais); return false">1199 - ÉRIKA DAMASCENO RUAS</a></td>
-        <td  colspan=2><a href="#" onclick="filtrar('x-1183',todos_os_profissionais); return false">1183 - Éricles Willy Machado de Oliveira</a></td>
-      </tr>
+    <tr><th colspan=4 >Psicólogo Clínico</th></tr>
+<td  colspan=2><a href="#" onclick="filtrar('x-1131',todos_os_profissionais); return false">1131 - RODRIGO RIBEIRO DOS SANTOS</a></td>
+    <tr><th colspan=4 >Técnico Saúde Bucal ESF</th></tr>
+<td  colspan=2><a href="#" onclick="filtrar('x-1058',todos_os_profissionais); return false">1058 - ANDRESSA SANTANA VIANA </a></td>
 </table>
 `;
-let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIANA BARBOSA RODRIGUES - Janeiro</th></tr>
+let todos_os_profissionais = `<table class="x-1147">    <tr class="x-1147"><th colspan=4 >ADRIANA BARBOSA RODRIGUES - Janeiro</th></tr>
     <tr class="x-1147"><td>Agendado</td><td style="text-align: right;">19</td><td style="text-align: right;">65.52%</td></tr>
     <tr class="x-1147"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1147"><td>Excluído da fila</td><td style="text-align: right;">3</td><td style="text-align: right;">10.34%</td></tr>
@@ -1635,7 +1639,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1147"><td>Fila de espera</td><td style="text-align: right;">17</td><td style="text-align: right;">85%</td></tr>
     <tr class="x-1147"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1147"><td><b>Total</b></td><td style="text-align: right;" colspan=2>20</td></tr>
-</table><table>    <tr class="x-320"><th colspan=4 >ADRIANA RAYSSA TELES COLARES - Janeiro</th></tr>
+</table><table class="x-320">    <tr class="x-320"><th colspan=4 >ADRIANA RAYSSA TELES COLARES - Janeiro</th></tr>
     <tr class="x-320"><td>Agendado</td><td style="text-align: right;">50</td><td style="text-align: right;">57.47%</td></tr>
     <tr class="x-320"><td>Cancelado</td><td style="text-align: right;">8</td><td style="text-align: right;">9.20%</td></tr>
     <tr class="x-320"><td>Excluído da fila</td><td style="text-align: right;">21</td><td style="text-align: right;">24.14%</td></tr>
@@ -1719,7 +1723,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-320"><td>Fila de espera</td><td style="text-align: right;">17</td><td style="text-align: right;">30.91%</td></tr>
     <tr class="x-320"><td>Solicitações devolvidas</td><td style="text-align: right;">2</td><td style="text-align: right;">3.64%</td></tr>
     <tr class="x-320"><td><b>Total</b></td><td style="text-align: right;" colspan=2>55</td></tr>
-</table><table>    <tr class="x-1195"><th colspan=4 >ADRIANO DA SILVA ARAúJO - Janeiro</th></tr>
+</table><table class="x-1195">    <tr class="x-1195"><th colspan=4 >ADRIANO DA SILVA ARAúJO - Janeiro</th></tr>
     <tr class="x-1195"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1195"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1195"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -1803,7 +1807,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1195"><td>Fila de espera</td><td style="text-align: right;">1</td><td style="text-align: right;">50%</td></tr>
     <tr class="x-1195"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1195"><td><b>Total</b></td><td style="text-align: right;" colspan=2>2</td></tr>
-</table><table>    <tr class="x-299"><th colspan=4 >ALINE GOMES FERREIRA - Janeiro</th></tr>
+</table><table class="x-299">    <tr class="x-299"><th colspan=4 >ALINE GOMES FERREIRA - Janeiro</th></tr>
     <tr class="x-299"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-299"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-299"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -1887,7 +1891,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-299"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-299"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-299"><td><b>Total</b></td><td style="text-align: right;" colspan=2>0</td></tr>
-</table><table>    <tr class="x-1202"><th colspan=4 >ALINE NAYARA RODRIGUES - Janeiro</th></tr>
+</table><table class="x-1202">    <tr class="x-1202"><th colspan=4 >ALINE NAYARA RODRIGUES - Janeiro</th></tr>
     <tr class="x-1202"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1202"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1202"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -1971,7 +1975,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1202"><td>Fila de espera</td><td style="text-align: right;">5</td><td style="text-align: right;">83.33%</td></tr>
     <tr class="x-1202"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1202"><td><b>Total</b></td><td style="text-align: right;" colspan=2>6</td></tr>
-</table><table>    <tr class="x-1204"><th colspan=4 >AMANDA ATANIELLY RIBEIRO - Janeiro</th></tr>
+</table><table class="x-1204">    <tr class="x-1204"><th colspan=4 >AMANDA ATANIELLY RIBEIRO - Janeiro</th></tr>
     <tr class="x-1204"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1204"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1204"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -2055,7 +2059,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1204"><td>Fila de espera</td><td style="text-align: right;">1</td><td style="text-align: right;">50%</td></tr>
     <tr class="x-1204"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1204"><td><b>Total</b></td><td style="text-align: right;" colspan=2>2</td></tr>
-</table><table>    <tr class="x-1139"><th colspan=4 >AMANDA AUGUSTA SANTOS - Janeiro</th></tr>
+</table><table class="x-1139">    <tr class="x-1139"><th colspan=4 >AMANDA AUGUSTA SANTOS - Janeiro</th></tr>
     <tr class="x-1139"><td>Agendado</td><td style="text-align: right;">25</td><td style="text-align: right;">83.33%</td></tr>
     <tr class="x-1139"><td>Cancelado</td><td style="text-align: right;">2</td><td style="text-align: right;">6.67%</td></tr>
     <tr class="x-1139"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -2139,7 +2143,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1139"><td>Fila de espera</td><td style="text-align: right;">6</td><td style="text-align: right;">50%</td></tr>
     <tr class="x-1139"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1139"><td><b>Total</b></td><td style="text-align: right;" colspan=2>12</td></tr>
-</table><table>    <tr class="x-1144"><th colspan=4 >AMANDA FRóES RIBEIRO - Janeiro</th></tr>
+</table><table class="x-1144">    <tr class="x-1144"><th colspan=4 >AMANDA FRóES RIBEIRO - Janeiro</th></tr>
     <tr class="x-1144"><td>Agendado</td><td style="text-align: right;">11</td><td style="text-align: right;">73.33%</td></tr>
     <tr class="x-1144"><td>Cancelado</td><td style="text-align: right;">2</td><td style="text-align: right;">13.33%</td></tr>
     <tr class="x-1144"><td>Excluído da fila</td><td style="text-align: right;">2</td><td style="text-align: right;">13.33%</td></tr>
@@ -2223,7 +2227,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1144"><td>Fila de espera</td><td style="text-align: right;">6</td><td style="text-align: right;">66.67%</td></tr>
     <tr class="x-1144"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1144"><td><b>Total</b></td><td style="text-align: right;" colspan=2>9</td></tr>
-</table><table>    <tr class="x-781"><th colspan=4 >AMANDA MIRANDA BRITO ARAUJO - Janeiro</th></tr>
+</table><table class="x-781">    <tr class="x-781"><th colspan=4 >AMANDA MIRANDA BRITO ARAUJO - Janeiro</th></tr>
     <tr class="x-781"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-781"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-781"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -2307,7 +2311,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-781"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-781"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-781"><td><b>Total</b></td><td style="text-align: right;" colspan=2>0</td></tr>
-</table><table>    <tr class="x-1217"><th colspan=4 >ANA CAROLINA MURTA E SOUSA - Janeiro</th></tr>
+</table><table class="x-1217">    <tr class="x-1217"><th colspan=4 >ANA CAROLINA MURTA E SOUSA - Janeiro</th></tr>
     <tr class="x-1217"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1217"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1217"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -2391,7 +2395,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1217"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1217"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1217"><td><b>Total</b></td><td style="text-align: right;" colspan=2>0</td></tr>
-</table><table>    <tr class="x-1132"><th colspan=4 >ANA JULIA ROCHA BATISTA - Janeiro</th></tr>
+</table><table class="x-1132">    <tr class="x-1132"><th colspan=4 >ANA JULIA ROCHA BATISTA - Janeiro</th></tr>
     <tr class="x-1132"><td>Agendado</td><td style="text-align: right;">48</td><td style="text-align: right;">70.59%</td></tr>
     <tr class="x-1132"><td>Cancelado</td><td style="text-align: right;">7</td><td style="text-align: right;">10.29%</td></tr>
     <tr class="x-1132"><td>Excluído da fila</td><td style="text-align: right;">9</td><td style="text-align: right;">13.24%</td></tr>
@@ -2475,7 +2479,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1132"><td>Fila de espera</td><td style="text-align: right;">19</td><td style="text-align: right;">40.43%</td></tr>
     <tr class="x-1132"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1132"><td><b>Total</b></td><td style="text-align: right;" colspan=2>47</td></tr>
-</table><table>    <tr class="x-353"><th colspan=4 >ANDRESSA FERREIRA COSTA - Janeiro</th></tr>
+</table><table class="x-353">    <tr class="x-353"><th colspan=4 >ANDRESSA FERREIRA COSTA - Janeiro</th></tr>
     <tr class="x-353"><td>Agendado</td><td style="text-align: right;">2</td><td style="text-align: right;">100%</td></tr>
     <tr class="x-353"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-353"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -2559,7 +2563,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-353"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-353"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-353"><td><b>Total</b></td><td style="text-align: right;" colspan=2>0</td></tr>
-</table><table>    <tr class="x-1058"><th colspan=4 >ANDRESSA SANTANA VIANA  - Janeiro</th></tr>
+</table><table class="x-1058">    <tr class="x-1058"><th colspan=4 >ANDRESSA SANTANA VIANA  - Janeiro</th></tr>
     <tr class="x-1058"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1058"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1058"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -2643,7 +2647,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1058"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1058"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1058"><td><b>Total</b></td><td style="text-align: right;" colspan=2>0</td></tr>
-</table><table>    <tr class="x-818"><th colspan=4 >ANDREY FELIX SOARES PEREIRA DA SILVA - Janeiro</th></tr>
+</table><table class="x-818">    <tr class="x-818"><th colspan=4 >ANDREY FELIX SOARES PEREIRA DA SILVA - Janeiro</th></tr>
     <tr class="x-818"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-818"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-818"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -2727,7 +2731,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-818"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-818"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-818"><td><b>Total</b></td><td style="text-align: right;" colspan=2>0</td></tr>
-</table><table>    <tr class="x-1034"><th colspan=4 >ARUANDA KALINCA TEIXEIRA SOARES - Janeiro</th></tr>
+</table><table class="x-1034">    <tr class="x-1034"><th colspan=4 >ARUANDA KALINCA TEIXEIRA SOARES - Janeiro</th></tr>
     <tr class="x-1034"><td>Agendado</td><td style="text-align: right;">1</td><td style="text-align: right;">20%</td></tr>
     <tr class="x-1034"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1034"><td>Excluído da fila</td><td style="text-align: right;">4</td><td style="text-align: right;">80%</td></tr>
@@ -2811,7 +2815,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1034"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1034"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1034"><td><b>Total</b></td><td style="text-align: right;" colspan=2>0</td></tr>
-</table><table>    <tr class="x-1146"><th colspan=4 >ATHOS ALMEIDA CAIRES - Janeiro</th></tr>
+</table><table class="x-1146">    <tr class="x-1146"><th colspan=4 >ATHOS ALMEIDA CAIRES - Janeiro</th></tr>
     <tr class="x-1146"><td>Agendado</td><td style="text-align: right;">10</td><td style="text-align: right;">100%</td></tr>
     <tr class="x-1146"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1146"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -2895,7 +2899,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1146"><td>Fila de espera</td><td style="text-align: right;">7</td><td style="text-align: right;">41.18%</td></tr>
     <tr class="x-1146"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1146"><td><b>Total</b></td><td style="text-align: right;" colspan=2>17</td></tr>
-</table><table>    <tr class="x-1142"><th colspan=4 >AYESKA AGUIAR MARTINS - Janeiro</th></tr>
+</table><table class="x-1142">    <tr class="x-1142"><th colspan=4 >AYESKA AGUIAR MARTINS - Janeiro</th></tr>
     <tr class="x-1142"><td>Agendado</td><td style="text-align: right;">16</td><td style="text-align: right;">53.33%</td></tr>
     <tr class="x-1142"><td>Cancelado</td><td style="text-align: right;">4</td><td style="text-align: right;">13.33%</td></tr>
     <tr class="x-1142"><td>Excluído da fila</td><td style="text-align: right;">1</td><td style="text-align: right;">3.33%</td></tr>
@@ -2979,7 +2983,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1142"><td>Fila de espera</td><td style="text-align: right;">5</td><td style="text-align: right;">50%</td></tr>
     <tr class="x-1142"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1142"><td><b>Total</b></td><td style="text-align: right;" colspan=2>10</td></tr>
-</table><table>    <tr class="x-1241"><th colspan=4 >BEATRIZ MIRANDA RODRIGUES - Janeiro</th></tr>
+</table><table class="x-1241">    <tr class="x-1241"><th colspan=4 >BEATRIZ MIRANDA RODRIGUES - Janeiro</th></tr>
     <tr class="x-1241"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1241"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1241"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -3063,7 +3067,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1241"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1241"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1241"><td><b>Total</b></td><td style="text-align: right;" colspan=2>0</td></tr>
-</table><table>    <tr class="x-1221"><th colspan=4 >BRUNA GIOVANNA ABREU XAVIER - Janeiro</th></tr>
+</table><table class="x-1221">    <tr class="x-1221"><th colspan=4 >BRUNA GIOVANNA ABREU XAVIER - Janeiro</th></tr>
     <tr class="x-1221"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1221"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1221"><td>Excluído da fila</td><td style="text-align: right;">1</td><td style="text-align: right;">100%</td></tr>
@@ -3147,7 +3151,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1221"><td>Fila de espera</td><td style="text-align: right;">15</td><td style="text-align: right;">30.61%</td></tr>
     <tr class="x-1221"><td>Solicitações devolvidas</td><td style="text-align: right;">4</td><td style="text-align: right;">8.16%</td></tr>
     <tr class="x-1221"><td><b>Total</b></td><td style="text-align: right;" colspan=2>49</td></tr>
-</table><table>    <tr class="x-847"><th colspan=4 >BRUNA WANELLY SANTANA ARAUJO - Janeiro</th></tr>
+</table><table class="x-847">    <tr class="x-847"><th colspan=4 >BRUNA WANELLY SANTANA ARAUJO - Janeiro</th></tr>
     <tr class="x-847"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-847"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-847"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -3231,7 +3235,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-847"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-847"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-847"><td><b>Total</b></td><td style="text-align: right;" colspan=2>0</td></tr>
-</table><table>    <tr class="x-786"><th colspan=4 >BRUNNA THAIS COSTA - Janeiro</th></tr>
+</table><table class="x-786">    <tr class="x-786"><th colspan=4 >BRUNNA THAIS COSTA - Janeiro</th></tr>
     <tr class="x-786"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-786"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-786"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -3315,7 +3319,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-786"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-786"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-786"><td><b>Total</b></td><td style="text-align: right;" colspan=2>0</td></tr>
-</table><table>    <tr class="x-667"><th colspan=4 >CAMILA DRIELLY CRUZ COSTA - Janeiro</th></tr>
+</table><table class="x-667">    <tr class="x-667"><th colspan=4 >CAMILA DRIELLY CRUZ COSTA - Janeiro</th></tr>
     <tr class="x-667"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-667"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-667"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -3399,7 +3403,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-667"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-667"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-667"><td><b>Total</b></td><td style="text-align: right;" colspan=2>1</td></tr>
-</table><table>    <tr class="x-1238"><th colspan=4 >CLEMENTE VINICIUS BORGES DE ARAUJO - Janeiro</th></tr>
+</table><table class="x-1238">    <tr class="x-1238"><th colspan=4 >CLEMENTE VINICIUS BORGES DE ARAUJO - Janeiro</th></tr>
     <tr class="x-1238"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1238"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1238"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -3483,7 +3487,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1238"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1238"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1238"><td><b>Total</b></td><td style="text-align: right;" colspan=2>0</td></tr>
-</table><table>    <tr class="x-1133"><th colspan=4 >CRISTIANE SODRE BERGAMIN - Janeiro</th></tr>
+</table><table class="x-1133">    <tr class="x-1133"><th colspan=4 >CRISTIANE SODRE BERGAMIN - Janeiro</th></tr>
     <tr class="x-1133"><td>Agendado</td><td style="text-align: right;">7</td><td style="text-align: right;">63.64%</td></tr>
     <tr class="x-1133"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1133"><td>Excluído da fila</td><td style="text-align: right;">4</td><td style="text-align: right;">36.36%</td></tr>
@@ -3567,7 +3571,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1133"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1133"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1133"><td><b>Total</b></td><td style="text-align: right;" colspan=2>9</td></tr>
-</table><table>    <tr class="x-222"><th colspan=4 >DANILO DA ROCHA VIANA - Janeiro</th></tr>
+</table><table class="x-222">    <tr class="x-222"><th colspan=4 >DANILO DA ROCHA VIANA - Janeiro</th></tr>
     <tr class="x-222"><td>Agendado</td><td style="text-align: right;">2</td><td style="text-align: right;">28.57%</td></tr>
     <tr class="x-222"><td>Cancelado</td><td style="text-align: right;">1</td><td style="text-align: right;">14.29%</td></tr>
     <tr class="x-222"><td>Excluído da fila</td><td style="text-align: right;">2</td><td style="text-align: right;">28.57%</td></tr>
@@ -3651,7 +3655,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-222"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-222"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-222"><td><b>Total</b></td><td style="text-align: right;" colspan=2>3</td></tr>
-</table><table>    <tr class="x-880"><th colspan=4 >DANILO DIEGO FREITAS SILVEIRA - Janeiro</th></tr>
+</table><table class="x-880">    <tr class="x-880"><th colspan=4 >DANILO DIEGO FREITAS SILVEIRA - Janeiro</th></tr>
     <tr class="x-880"><td>Agendado</td><td style="text-align: right;">4</td><td style="text-align: right;">44.44%</td></tr>
     <tr class="x-880"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-880"><td>Excluído da fila</td><td style="text-align: right;">3</td><td style="text-align: right;">33.33%</td></tr>
@@ -3735,7 +3739,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-880"><td>Fila de espera</td><td style="text-align: right;">5</td><td style="text-align: right;">19.23%</td></tr>
     <tr class="x-880"><td>Solicitações devolvidas</td><td style="text-align: right;">3</td><td style="text-align: right;">11.54%</td></tr>
     <tr class="x-880"><td><b>Total</b></td><td style="text-align: right;" colspan=2>26</td></tr>
-</table><table>    <tr class="x-1143"><th colspan=4 >EDNA FERNANDA DIAS LEãO - Janeiro</th></tr>
+</table><table class="x-1143">    <tr class="x-1143"><th colspan=4 >EDNA FERNANDA DIAS LEãO - Janeiro</th></tr>
     <tr class="x-1143"><td>Agendado</td><td style="text-align: right;">13</td><td style="text-align: right;">68.42%</td></tr>
     <tr class="x-1143"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1143"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -3819,7 +3823,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1143"><td>Fila de espera</td><td style="text-align: right;">3</td><td style="text-align: right;">100%</td></tr>
     <tr class="x-1143"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1143"><td><b>Total</b></td><td style="text-align: right;" colspan=2>3</td></tr>
-</table><table>    <tr class="x-183"><th colspan=4 >ELIANE APARECIDA DE OLIVEIRA PASCOAL - Janeiro</th></tr>
+</table><table class="x-183">    <tr class="x-183"><th colspan=4 >ELIANE APARECIDA DE OLIVEIRA PASCOAL - Janeiro</th></tr>
     <tr class="x-183"><td>Agendado</td><td style="text-align: right;">5</td><td style="text-align: right;">31.25%</td></tr>
     <tr class="x-183"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-183"><td>Excluído da fila</td><td style="text-align: right;">8</td><td style="text-align: right;">50%</td></tr>
@@ -3903,7 +3907,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-183"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-183"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-183"><td><b>Total</b></td><td style="text-align: right;" colspan=2>11</td></tr>
-</table><table>    <tr class="x-845"><th colspan=4 >ELOIZA LUIZ SILVA - Janeiro</th></tr>
+</table><table class="x-845">    <tr class="x-845"><th colspan=4 >ELOIZA LUIZ SILVA - Janeiro</th></tr>
     <tr class="x-845"><td>Agendado</td><td style="text-align: right;">6</td><td style="text-align: right;">50%</td></tr>
     <tr class="x-845"><td>Cancelado</td><td style="text-align: right;">2</td><td style="text-align: right;">16.67%</td></tr>
     <tr class="x-845"><td>Excluído da fila</td><td style="text-align: right;">3</td><td style="text-align: right;">25%</td></tr>
@@ -3987,7 +3991,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-845"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-845"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-845"><td><b>Total</b></td><td style="text-align: right;" colspan=2>0</td></tr>
-</table><table>    <tr class="x-1145"><th colspan=4 >EMILLE FRANCINE CORDEIRO SILVA SOUSA - Janeiro</th></tr>
+</table><table class="x-1145">    <tr class="x-1145"><th colspan=4 >EMILLE FRANCINE CORDEIRO SILVA SOUSA - Janeiro</th></tr>
     <tr class="x-1145"><td>Agendado</td><td style="text-align: right;">14</td><td style="text-align: right;">70%</td></tr>
     <tr class="x-1145"><td>Cancelado</td><td style="text-align: right;">5</td><td style="text-align: right;">25%</td></tr>
     <tr class="x-1145"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -4071,7 +4075,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1145"><td>Fila de espera</td><td style="text-align: right;">5</td><td style="text-align: right;">55.56%</td></tr>
     <tr class="x-1145"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1145"><td><b>Total</b></td><td style="text-align: right;" colspan=2>9</td></tr>
-</table><table>    <tr class="x-173"><th colspan=4 >ERICA MANUELA DA SILVA BOA SORTE - Janeiro</th></tr>
+</table><table class="x-173">    <tr class="x-173"><th colspan=4 >ERICA MANUELA DA SILVA BOA SORTE - Janeiro</th></tr>
     <tr class="x-173"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-173"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-173"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -4155,7 +4159,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-173"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-173"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-173"><td><b>Total</b></td><td style="text-align: right;" colspan=2>0</td></tr>
-</table><table>    <tr class="x-216"><th colspan=4 >FABIOLA DE OLIVEIRA LOBO - Janeiro</th></tr>
+</table><table class="x-216">    <tr class="x-216"><th colspan=4 >FABIOLA DE OLIVEIRA LOBO - Janeiro</th></tr>
     <tr class="x-216"><td>Agendado</td><td style="text-align: right;">9</td><td style="text-align: right;">39.13%</td></tr>
     <tr class="x-216"><td>Cancelado</td><td style="text-align: right;">1</td><td style="text-align: right;">4.35%</td></tr>
     <tr class="x-216"><td>Excluído da fila</td><td style="text-align: right;">9</td><td style="text-align: right;">39.13%</td></tr>
@@ -4239,7 +4243,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-216"><td>Fila de espera</td><td style="text-align: right;">3</td><td style="text-align: right;">42.86%</td></tr>
     <tr class="x-216"><td>Solicitações devolvidas</td><td style="text-align: right;">1</td><td style="text-align: right;">14.29%</td></tr>
     <tr class="x-216"><td><b>Total</b></td><td style="text-align: right;" colspan=2>7</td></tr>
-</table><table>    <tr class="x-1176"><th colspan=4 >FABRICIO DOS SANTOS ROCHA	 - Janeiro</th></tr>
+</table><table class="x-1176">    <tr class="x-1176"><th colspan=4 >FABRICIO DOS SANTOS ROCHA	 - Janeiro</th></tr>
     <tr class="x-1176"><td>Agendado</td><td style="text-align: right;">16</td><td style="text-align: right;">84.21%</td></tr>
     <tr class="x-1176"><td>Cancelado</td><td style="text-align: right;">1</td><td style="text-align: right;">5.26%</td></tr>
     <tr class="x-1176"><td>Excluído da fila</td><td style="text-align: right;">1</td><td style="text-align: right;">5.26%</td></tr>
@@ -4323,7 +4327,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1176"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1176"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1176"><td><b>Total</b></td><td style="text-align: right;" colspan=2>0</td></tr>
-</table><table>    <tr class="x-114"><th colspan=4 >FLAVIA NAYARA LELES ARAUJO - Janeiro</th></tr>
+</table><table class="x-114">    <tr class="x-114"><th colspan=4 >FLAVIA NAYARA LELES ARAUJO - Janeiro</th></tr>
     <tr class="x-114"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-114"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-114"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -4407,7 +4411,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-114"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-114"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-114"><td><b>Total</b></td><td style="text-align: right;" colspan=2>0</td></tr>
-</table><table>    <tr class="x-1227"><th colspan=4 >GABRIEL ALMEIDA FERNANDES MEIRELES MOREIRA - Janeiro</th></tr>
+</table><table class="x-1227">    <tr class="x-1227"><th colspan=4 >GABRIEL ALMEIDA FERNANDES MEIRELES MOREIRA - Janeiro</th></tr>
     <tr class="x-1227"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1227"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1227"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -4491,7 +4495,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1227"><td>Fila de espera</td><td style="text-align: right;">10</td><td style="text-align: right;">25%</td></tr>
     <tr class="x-1227"><td>Solicitações devolvidas</td><td style="text-align: right;">7</td><td style="text-align: right;">17.50%</td></tr>
     <tr class="x-1227"><td><b>Total</b></td><td style="text-align: right;" colspan=2>40</td></tr>
-</table><table>    <tr class="x-177"><th colspan=4 >GRAZIELLE GREYCE DA ROCHA MENDES - Janeiro</th></tr>
+</table><table class="x-177">    <tr class="x-177"><th colspan=4 >GRAZIELLE GREYCE DA ROCHA MENDES - Janeiro</th></tr>
     <tr class="x-177"><td>Agendado</td><td style="text-align: right;">1</td><td style="text-align: right;">20%</td></tr>
     <tr class="x-177"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-177"><td>Excluído da fila</td><td style="text-align: right;">4</td><td style="text-align: right;">80%</td></tr>
@@ -4575,7 +4579,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-177"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-177"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-177"><td><b>Total</b></td><td style="text-align: right;" colspan=2>0</td></tr>
-</table><table>    <tr class="x-1046"><th colspan=4 >HEMILY DE OLIVEIRA CELESTINO - Janeiro</th></tr>
+</table><table class="x-1046">    <tr class="x-1046"><th colspan=4 >HEMILY DE OLIVEIRA CELESTINO - Janeiro</th></tr>
     <tr class="x-1046"><td>Agendado</td><td style="text-align: right;">19</td><td style="text-align: right;">67.86%</td></tr>
     <tr class="x-1046"><td>Cancelado</td><td style="text-align: right;">2</td><td style="text-align: right;">7.14%</td></tr>
     <tr class="x-1046"><td>Excluído da fila</td><td style="text-align: right;">5</td><td style="text-align: right;">17.86%</td></tr>
@@ -4659,7 +4663,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1046"><td>Fila de espera</td><td style="text-align: right;">14</td><td style="text-align: right;">35%</td></tr>
     <tr class="x-1046"><td>Solicitações devolvidas</td><td style="text-align: right;">2</td><td style="text-align: right;">5%</td></tr>
     <tr class="x-1046"><td><b>Total</b></td><td style="text-align: right;" colspan=2>40</td></tr>
-</table><table>    <tr class="x-1110"><th colspan=4 >HILLARY LIMA ABADE - Janeiro</th></tr>
+</table><table class="x-1110">    <tr class="x-1110"><th colspan=4 >HILLARY LIMA ABADE - Janeiro</th></tr>
     <tr class="x-1110"><td>Agendado</td><td style="text-align: right;">9</td><td style="text-align: right;">42.86%</td></tr>
     <tr class="x-1110"><td>Cancelado</td><td style="text-align: right;">2</td><td style="text-align: right;">9.52%</td></tr>
     <tr class="x-1110"><td>Excluído da fila</td><td style="text-align: right;">8</td><td style="text-align: right;">38.10%</td></tr>
@@ -4743,7 +4747,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1110"><td>Fila de espera</td><td style="text-align: right;">8</td><td style="text-align: right;">27.59%</td></tr>
     <tr class="x-1110"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1110"><td><b>Total</b></td><td style="text-align: right;" colspan=2>29</td></tr>
-</table><table>    <tr class="x-1201"><th colspan=4 >IAN VIEIRA LIMA AMORA DE SOUZA - Janeiro</th></tr>
+</table><table class="x-1201">    <tr class="x-1201"><th colspan=4 >IAN VIEIRA LIMA AMORA DE SOUZA - Janeiro</th></tr>
     <tr class="x-1201"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1201"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1201"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -4827,7 +4831,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1201"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1201"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1201"><td><b>Total</b></td><td style="text-align: right;" colspan=2>0</td></tr>
-</table><table>    <tr class="x-265"><th colspan=4 >IGOR FERNANDO BARROS PIRES - Janeiro</th></tr>
+</table><table class="x-265">    <tr class="x-265"><th colspan=4 >IGOR FERNANDO BARROS PIRES - Janeiro</th></tr>
     <tr class="x-265"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-265"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-265"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -4911,7 +4915,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-265"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-265"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-265"><td><b>Total</b></td><td style="text-align: right;" colspan=2>0</td></tr>
-</table><table>    <tr class="x-1016"><th colspan=4 >ISA MATTOS ALVES - Janeiro</th></tr>
+</table><table class="x-1016">    <tr class="x-1016"><th colspan=4 >ISA MATTOS ALVES - Janeiro</th></tr>
     <tr class="x-1016"><td>Agendado</td><td style="text-align: right;">50</td><td style="text-align: right;">72.46%</td></tr>
     <tr class="x-1016"><td>Cancelado</td><td style="text-align: right;">5</td><td style="text-align: right;">7.25%</td></tr>
     <tr class="x-1016"><td>Excluído da fila</td><td style="text-align: right;">9</td><td style="text-align: right;">13.04%</td></tr>
@@ -4995,7 +4999,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1016"><td>Fila de espera</td><td style="text-align: right;">17</td><td style="text-align: right;">39.53%</td></tr>
     <tr class="x-1016"><td>Solicitações devolvidas</td><td style="text-align: right;">3</td><td style="text-align: right;">6.98%</td></tr>
     <tr class="x-1016"><td><b>Total</b></td><td style="text-align: right;" colspan=2>43</td></tr>
-</table><table>    <tr class="x-832"><th colspan=4 >ISABELLA LOPES SANTOS - Janeiro</th></tr>
+</table><table class="x-832">    <tr class="x-832"><th colspan=4 >ISABELLA LOPES SANTOS - Janeiro</th></tr>
     <tr class="x-832"><td>Agendado</td><td style="text-align: right;">2</td><td style="text-align: right;">66.67%</td></tr>
     <tr class="x-832"><td>Cancelado</td><td style="text-align: right;">1</td><td style="text-align: right;">33.33%</td></tr>
     <tr class="x-832"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -5079,7 +5083,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-832"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-832"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-832"><td><b>Total</b></td><td style="text-align: right;" colspan=2>0</td></tr>
-</table><table>    <tr class="x-775"><th colspan=4 >ISABELLA MENDES DE OLIVEIRA - Janeiro</th></tr>
+</table><table class="x-775">    <tr class="x-775"><th colspan=4 >ISABELLA MENDES DE OLIVEIRA - Janeiro</th></tr>
     <tr class="x-775"><td>Agendado</td><td style="text-align: right;">55</td><td style="text-align: right;">74.32%</td></tr>
     <tr class="x-775"><td>Cancelado</td><td style="text-align: right;">6</td><td style="text-align: right;">8.11%</td></tr>
     <tr class="x-775"><td>Excluído da fila</td><td style="text-align: right;">10</td><td style="text-align: right;">13.51%</td></tr>
@@ -5163,7 +5167,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-775"><td>Fila de espera</td><td style="text-align: right;">33</td><td style="text-align: right;">46.48%</td></tr>
     <tr class="x-775"><td>Solicitações devolvidas</td><td style="text-align: right;">4</td><td style="text-align: right;">5.63%</td></tr>
     <tr class="x-775"><td><b>Total</b></td><td style="text-align: right;" colspan=2>71</td></tr>
-</table><table>    <tr class="x-833"><th colspan=4 >ISAC EVANGELISTA FERREIRA - Janeiro</th></tr>
+</table><table class="x-833">    <tr class="x-833"><th colspan=4 >ISAC EVANGELISTA FERREIRA - Janeiro</th></tr>
     <tr class="x-833"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-833"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-833"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -5247,7 +5251,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-833"><td>Fila de espera</td><td style="text-align: right;">5</td><td style="text-align: right;">100%</td></tr>
     <tr class="x-833"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-833"><td><b>Total</b></td><td style="text-align: right;" colspan=2>5</td></tr>
-</table><table>    <tr class="x-298"><th colspan=4 >IZABELA CAROLINA SALES VIEIRA LOPES - Janeiro</th></tr>
+</table><table class="x-298">    <tr class="x-298"><th colspan=4 >IZABELA CAROLINA SALES VIEIRA LOPES - Janeiro</th></tr>
     <tr class="x-298"><td>Agendado</td><td style="text-align: right;">21</td><td style="text-align: right;">63.64%</td></tr>
     <tr class="x-298"><td>Cancelado</td><td style="text-align: right;">2</td><td style="text-align: right;">6.06%</td></tr>
     <tr class="x-298"><td>Excluído da fila</td><td style="text-align: right;">3</td><td style="text-align: right;">9.09%</td></tr>
@@ -5331,7 +5335,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-298"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-298"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-298"><td><b>Total</b></td><td style="text-align: right;" colspan=2>0</td></tr>
-</table><table>    <tr class="x-249"><th colspan=4 >JESSICA NOEME DIAS SANTOS - Janeiro</th></tr>
+</table><table class="x-249">    <tr class="x-249"><th colspan=4 >JESSICA NOEME DIAS SANTOS - Janeiro</th></tr>
     <tr class="x-249"><td>Agendado</td><td style="text-align: right;">16</td><td style="text-align: right;">72.73%</td></tr>
     <tr class="x-249"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-249"><td>Excluído da fila</td><td style="text-align: right;">2</td><td style="text-align: right;">9.09%</td></tr>
@@ -5415,7 +5419,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-249"><td>Fila de espera</td><td style="text-align: right;">6</td><td style="text-align: right;">40%</td></tr>
     <tr class="x-249"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-249"><td><b>Total</b></td><td style="text-align: right;" colspan=2>15</td></tr>
-</table><table>    <tr class="x-370"><th colspan=4 >JOAO PEDRO MARQUES MENDES CORREA - Janeiro</th></tr>
+</table><table class="x-370">    <tr class="x-370"><th colspan=4 >JOAO PEDRO MARQUES MENDES CORREA - Janeiro</th></tr>
     <tr class="x-370"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-370"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-370"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -5499,7 +5503,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-370"><td>Fila de espera</td><td style="text-align: right;">1</td><td style="text-align: right;">16.67%</td></tr>
     <tr class="x-370"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-370"><td><b>Total</b></td><td style="text-align: right;" colspan=2>6</td></tr>
-</table><table>    <tr class="x-1182"><th colspan=4 >JOAO VICTOR SANTANA ARAUJO - Janeiro</th></tr>
+</table><table class="x-1182">    <tr class="x-1182"><th colspan=4 >JOAO VICTOR SANTANA ARAUJO - Janeiro</th></tr>
     <tr class="x-1182"><td>Agendado</td><td style="text-align: right;">39</td><td style="text-align: right;">55.71%</td></tr>
     <tr class="x-1182"><td>Cancelado</td><td style="text-align: right;">4</td><td style="text-align: right;">5.71%</td></tr>
     <tr class="x-1182"><td>Excluído da fila</td><td style="text-align: right;">16</td><td style="text-align: right;">22.86%</td></tr>
@@ -5583,7 +5587,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1182"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1182"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1182"><td><b>Total</b></td><td style="text-align: right;" colspan=2>0</td></tr>
-</table><table>    <tr class="x-1064"><th colspan=4 >JULIA ROCHA DO CARMO - Janeiro</th></tr>
+</table><table class="x-1064">    <tr class="x-1064"><th colspan=4 >JULIA ROCHA DO CARMO - Janeiro</th></tr>
     <tr class="x-1064"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1064"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1064"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -5667,7 +5671,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1064"><td>Fila de espera</td><td style="text-align: right;">4</td><td style="text-align: right;">28.57%</td></tr>
     <tr class="x-1064"><td>Solicitações devolvidas</td><td style="text-align: right;">1</td><td style="text-align: right;">7.14%</td></tr>
     <tr class="x-1064"><td><b>Total</b></td><td style="text-align: right;" colspan=2>14</td></tr>
-</table><table>    <tr class="x-25"><th colspan=4 >JUNEO SOARES DA SILVA REIS - Janeiro</th></tr>
+</table><table class="x-25">    <tr class="x-25"><th colspan=4 >JUNEO SOARES DA SILVA REIS - Janeiro</th></tr>
     <tr class="x-25"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-25"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-25"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -5751,7 +5755,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-25"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-25"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-25"><td><b>Total</b></td><td style="text-align: right;" colspan=2>0</td></tr>
-</table><table>    <tr class="x-1109"><th colspan=4 >LANDRA GRASIELE SILVA SALDANHA - Janeiro</th></tr>
+</table><table class="x-1109">    <tr class="x-1109"><th colspan=4 >LANDRA GRASIELE SILVA SALDANHA - Janeiro</th></tr>
     <tr class="x-1109"><td>Agendado</td><td style="text-align: right;">2</td><td style="text-align: right;">100%</td></tr>
     <tr class="x-1109"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1109"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -5835,7 +5839,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1109"><td>Fila de espera</td><td style="text-align: right;">1</td><td style="text-align: right;">12.50%</td></tr>
     <tr class="x-1109"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1109"><td><b>Total</b></td><td style="text-align: right;" colspan=2>8</td></tr>
-</table><table>    <tr class="x-1039"><th colspan=4 >LARISSA ALVES SANTOS - Janeiro</th></tr>
+</table><table class="x-1039">    <tr class="x-1039"><th colspan=4 >LARISSA ALVES SANTOS - Janeiro</th></tr>
     <tr class="x-1039"><td>Agendado</td><td style="text-align: right;">12</td><td style="text-align: right;">60%</td></tr>
     <tr class="x-1039"><td>Cancelado</td><td style="text-align: right;">1</td><td style="text-align: right;">5%</td></tr>
     <tr class="x-1039"><td>Excluído da fila</td><td style="text-align: right;">2</td><td style="text-align: right;">10%</td></tr>
@@ -5919,7 +5923,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1039"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1039"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1039"><td><b>Total</b></td><td style="text-align: right;" colspan=2>0</td></tr>
-</table><table>    <tr class="x-1259"><th colspan=4 >LARISSA SALLES REIS CARDOSO DE Sá  - Janeiro</th></tr>
+</table><table class="x-1259">    <tr class="x-1259"><th colspan=4 >LARISSA SALLES REIS CARDOSO DE Sá  - Janeiro</th></tr>
     <tr class="x-1259"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1259"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1259"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -6003,7 +6007,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1259"><td>Fila de espera</td><td style="text-align: right;">5</td><td style="text-align: right;">35.71%</td></tr>
     <tr class="x-1259"><td>Solicitações devolvidas</td><td style="text-align: right;">1</td><td style="text-align: right;">7.14%</td></tr>
     <tr class="x-1259"><td><b>Total</b></td><td style="text-align: right;" colspan=2>14</td></tr>
-</table><table>    <tr class="x-1174"><th colspan=4 >LAVINIA MENDES SANTANA	 - Janeiro</th></tr>
+</table><table class="x-1174">    <tr class="x-1174"><th colspan=4 >LAVINIA MENDES SANTANA	 - Janeiro</th></tr>
     <tr class="x-1174"><td>Agendado</td><td style="text-align: right;">5</td><td style="text-align: right;">71.43%</td></tr>
     <tr class="x-1174"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1174"><td>Excluído da fila</td><td style="text-align: right;">1</td><td style="text-align: right;">14.29%</td></tr>
@@ -6087,7 +6091,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1174"><td>Fila de espera</td><td style="text-align: right;">9</td><td style="text-align: right;">69.23%</td></tr>
     <tr class="x-1174"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1174"><td><b>Total</b></td><td style="text-align: right;" colspan=2>13</td></tr>
-</table><table>    <tr class="x-1197"><th colspan=4 >LAYONEL PEREIRA DA SILVA - Janeiro</th></tr>
+</table><table class="x-1197">    <tr class="x-1197"><th colspan=4 >LAYONEL PEREIRA DA SILVA - Janeiro</th></tr>
     <tr class="x-1197"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1197"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1197"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -6171,7 +6175,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1197"><td>Fila de espera</td><td style="text-align: right;">7</td><td style="text-align: right;">77.78%</td></tr>
     <tr class="x-1197"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1197"><td><b>Total</b></td><td style="text-align: right;" colspan=2>9</td></tr>
-</table><table>    <tr class="x-1056"><th colspan=4 >LETICIA KARENN SOUZA MENDES - Janeiro</th></tr>
+</table><table class="x-1056">    <tr class="x-1056"><th colspan=4 >LETICIA KARENN SOUZA MENDES - Janeiro</th></tr>
     <tr class="x-1056"><td>Agendado</td><td style="text-align: right;">13</td><td style="text-align: right;">59.09%</td></tr>
     <tr class="x-1056"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1056"><td>Excluído da fila</td><td style="text-align: right;">2</td><td style="text-align: right;">9.09%</td></tr>
@@ -6255,7 +6259,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1056"><td>Fila de espera</td><td style="text-align: right;">12</td><td style="text-align: right;">63.16%</td></tr>
     <tr class="x-1056"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1056"><td><b>Total</b></td><td style="text-align: right;" colspan=2>19</td></tr>
-</table><table>    <tr class="x-1232"><th colspan=4 >LEYLIARA OLIVEIRA PORTO - Janeiro</th></tr>
+</table><table class="x-1232">    <tr class="x-1232"><th colspan=4 >LEYLIARA OLIVEIRA PORTO - Janeiro</th></tr>
     <tr class="x-1232"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1232"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1232"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -6339,7 +6343,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1232"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1232"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1232"><td><b>Total</b></td><td style="text-align: right;" colspan=2>1</td></tr>
-</table><table>    <tr class="x-1105"><th colspan=4 >LHAIS OLIVEIRA JORGE - Janeiro</th></tr>
+</table><table class="x-1105">    <tr class="x-1105"><th colspan=4 >LHAIS OLIVEIRA JORGE - Janeiro</th></tr>
     <tr class="x-1105"><td>Agendado</td><td style="text-align: right;">40</td><td style="text-align: right;">72.73%</td></tr>
     <tr class="x-1105"><td>Cancelado</td><td style="text-align: right;">5</td><td style="text-align: right;">9.09%</td></tr>
     <tr class="x-1105"><td>Excluído da fila</td><td style="text-align: right;">5</td><td style="text-align: right;">9.09%</td></tr>
@@ -6423,7 +6427,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1105"><td>Fila de espera</td><td style="text-align: right;">5</td><td style="text-align: right;">25%</td></tr>
     <tr class="x-1105"><td>Solicitações devolvidas</td><td style="text-align: right;">3</td><td style="text-align: right;">15%</td></tr>
     <tr class="x-1105"><td><b>Total</b></td><td style="text-align: right;" colspan=2>20</td></tr>
-</table><table>    <tr class="x-796"><th colspan=4 >LIGIA LUIZA MIRANDA PEGO - Janeiro</th></tr>
+</table><table class="x-796">    <tr class="x-796"><th colspan=4 >LIGIA LUIZA MIRANDA PEGO - Janeiro</th></tr>
     <tr class="x-796"><td>Agendado</td><td style="text-align: right;">73</td><td style="text-align: right;">75.26%</td></tr>
     <tr class="x-796"><td>Cancelado</td><td style="text-align: right;">6</td><td style="text-align: right;">6.19%</td></tr>
     <tr class="x-796"><td>Excluído da fila</td><td style="text-align: right;">15</td><td style="text-align: right;">15.46%</td></tr>
@@ -6507,7 +6511,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-796"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-796"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-796"><td><b>Total</b></td><td style="text-align: right;" colspan=2>0</td></tr>
-</table><table>    <tr class="x-520"><th colspan=4 >LORENA MIRANDA LIMA - Janeiro</th></tr>
+</table><table class="x-520">    <tr class="x-520"><th colspan=4 >LORENA MIRANDA LIMA - Janeiro</th></tr>
     <tr class="x-520"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-520"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-520"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -6591,7 +6595,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-520"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-520"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-520"><td><b>Total</b></td><td style="text-align: right;" colspan=2>0</td></tr>
-</table><table>    <tr class="x-507"><th colspan=4 >LUANA PEREIRA ROCHA - Janeiro</th></tr>
+</table><table class="x-507">    <tr class="x-507"><th colspan=4 >LUANA PEREIRA ROCHA - Janeiro</th></tr>
     <tr class="x-507"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-507"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-507"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -6675,7 +6679,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-507"><td>Fila de espera</td><td style="text-align: right;">25</td><td style="text-align: right;">35.71%</td></tr>
     <tr class="x-507"><td>Solicitações devolvidas</td><td style="text-align: right;">3</td><td style="text-align: right;">4.29%</td></tr>
     <tr class="x-507"><td><b>Total</b></td><td style="text-align: right;" colspan=2>70</td></tr>
-</table><table>    <tr class="x-1240"><th colspan=4 >LUANNDA FERREIRA CHAVES - Janeiro</th></tr>
+</table><table class="x-1240">    <tr class="x-1240"><th colspan=4 >LUANNDA FERREIRA CHAVES - Janeiro</th></tr>
     <tr class="x-1240"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1240"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1240"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -6759,7 +6763,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1240"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1240"><td>Solicitações devolvidas</td><td style="text-align: right;">2</td><td style="text-align: right;">22.22%</td></tr>
     <tr class="x-1240"><td><b>Total</b></td><td style="text-align: right;" colspan=2>9</td></tr>
-</table><table>    <tr class="x-1198"><th colspan=4 >LUCAS GEAZI DA SILVA SOUZA - Janeiro</th></tr>
+</table><table class="x-1198">    <tr class="x-1198"><th colspan=4 >LUCAS GEAZI DA SILVA SOUZA - Janeiro</th></tr>
     <tr class="x-1198"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1198"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1198"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -6843,7 +6847,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1198"><td>Fila de espera</td><td style="text-align: right;">9</td><td style="text-align: right;">75%</td></tr>
     <tr class="x-1198"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1198"><td><b>Total</b></td><td style="text-align: right;" colspan=2>12</td></tr>
-</table><table>    <tr class="x-787"><th colspan=4 >LUIZ CLAUDIO BOREM NORONHA - Janeiro</th></tr>
+</table><table class="x-787">    <tr class="x-787"><th colspan=4 >LUIZ CLAUDIO BOREM NORONHA - Janeiro</th></tr>
     <tr class="x-787"><td>Agendado</td><td style="text-align: right;">3</td><td style="text-align: right;">60%</td></tr>
     <tr class="x-787"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-787"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -6927,7 +6931,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-787"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-787"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-787"><td><b>Total</b></td><td style="text-align: right;" colspan=2>0</td></tr>
-</table><table>    <tr class="x-1048"><th colspan=4 >LUMA MOREIRA RAMOS - Janeiro</th></tr>
+</table><table class="x-1048">    <tr class="x-1048"><th colspan=4 >LUMA MOREIRA RAMOS - Janeiro</th></tr>
     <tr class="x-1048"><td>Agendado</td><td style="text-align: right;">53</td><td style="text-align: right;">74.65%</td></tr>
     <tr class="x-1048"><td>Cancelado</td><td style="text-align: right;">3</td><td style="text-align: right;">4.23%</td></tr>
     <tr class="x-1048"><td>Excluído da fila</td><td style="text-align: right;">12</td><td style="text-align: right;">16.90%</td></tr>
@@ -7011,7 +7015,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1048"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1048"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1048"><td><b>Total</b></td><td style="text-align: right;" colspan=2>0</td></tr>
-</table><table>    <tr class="x-354"><th colspan=4 >LYVIA SENA MENDES ESCOBAR - Janeiro</th></tr>
+</table><table class="x-354">    <tr class="x-354"><th colspan=4 >LYVIA SENA MENDES ESCOBAR - Janeiro</th></tr>
     <tr class="x-354"><td>Agendado</td><td style="text-align: right;">10</td><td style="text-align: right;">76.92%</td></tr>
     <tr class="x-354"><td>Cancelado</td><td style="text-align: right;">1</td><td style="text-align: right;">7.69%</td></tr>
     <tr class="x-354"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -7095,7 +7099,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-354"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-354"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-354"><td><b>Total</b></td><td style="text-align: right;" colspan=2>0</td></tr>
-</table><table>    <tr class="x-1150"><th colspan=4 >MAIRA LOPES SARMENTO - Janeiro</th></tr>
+</table><table class="x-1150">    <tr class="x-1150"><th colspan=4 >MAIRA LOPES SARMENTO - Janeiro</th></tr>
     <tr class="x-1150"><td>Agendado</td><td style="text-align: right;">39</td><td style="text-align: right;">58.21%</td></tr>
     <tr class="x-1150"><td>Cancelado</td><td style="text-align: right;">8</td><td style="text-align: right;">11.94%</td></tr>
     <tr class="x-1150"><td>Excluído da fila</td><td style="text-align: right;">13</td><td style="text-align: right;">19.40%</td></tr>
@@ -7179,7 +7183,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1150"><td>Fila de espera</td><td style="text-align: right;">5</td><td style="text-align: right;">31.25%</td></tr>
     <tr class="x-1150"><td>Solicitações devolvidas</td><td style="text-align: right;">4</td><td style="text-align: right;">25%</td></tr>
     <tr class="x-1150"><td><b>Total</b></td><td style="text-align: right;" colspan=2>16</td></tr>
-</table><table>    <tr class="x-418"><th colspan=4 >MAIRA TAINIS BARBOSA MOREIRA ALVES - Janeiro</th></tr>
+</table><table class="x-418">    <tr class="x-418"><th colspan=4 >MAIRA TAINIS BARBOSA MOREIRA ALVES - Janeiro</th></tr>
     <tr class="x-418"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-418"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-418"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -7263,7 +7267,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-418"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-418"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-418"><td><b>Total</b></td><td style="text-align: right;" colspan=2>0</td></tr>
-</table><table>    <tr class="x-62"><th colspan=4 >MARCOS ALEXANDRE DA SILVA - Janeiro</th></tr>
+</table><table class="x-62">    <tr class="x-62"><th colspan=4 >MARCOS ALEXANDRE DA SILVA - Janeiro</th></tr>
     <tr class="x-62"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-62"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-62"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -7347,7 +7351,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-62"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-62"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-62"><td><b>Total</b></td><td style="text-align: right;" colspan=2>0</td></tr>
-</table><table>    <tr class="x-1038"><th colspan=4 >MARIA APARECIDA DA ROCHA - Janeiro</th></tr>
+</table><table class="x-1038">    <tr class="x-1038"><th colspan=4 >MARIA APARECIDA DA ROCHA - Janeiro</th></tr>
     <tr class="x-1038"><td>Agendado</td><td style="text-align: right;">18</td><td style="text-align: right;">66.67%</td></tr>
     <tr class="x-1038"><td>Cancelado</td><td style="text-align: right;">3</td><td style="text-align: right;">11.11%</td></tr>
     <tr class="x-1038"><td>Excluído da fila</td><td style="text-align: right;">1</td><td style="text-align: right;">3.70%</td></tr>
@@ -7431,7 +7435,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1038"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1038"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1038"><td><b>Total</b></td><td style="text-align: right;" colspan=2>0</td></tr>
-</table><table>    <tr class="x-1220"><th colspan=4 >MARIA BETANIA LESSA COELHO LAMOUNIER - Janeiro</th></tr>
+</table><table class="x-1220">    <tr class="x-1220"><th colspan=4 >MARIA BETANIA LESSA COELHO LAMOUNIER - Janeiro</th></tr>
     <tr class="x-1220"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1220"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1220"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -7515,7 +7519,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1220"><td>Fila de espera</td><td style="text-align: right;">17</td><td style="text-align: right;">30.91%</td></tr>
     <tr class="x-1220"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1220"><td><b>Total</b></td><td style="text-align: right;" colspan=2>55</td></tr>
-</table><table>    <tr class="x-141"><th colspan=4 >MARIA CRISTINA RODRIGUES MORAIS - Janeiro</th></tr>
+</table><table class="x-141">    <tr class="x-141"><th colspan=4 >MARIA CRISTINA RODRIGUES MORAIS - Janeiro</th></tr>
     <tr class="x-141"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-141"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-141"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -7599,7 +7603,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-141"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-141"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-141"><td><b>Total</b></td><td style="text-align: right;" colspan=2>0</td></tr>
-</table><table>    <tr class="x-1175"><th colspan=4 >MARIA EDUARDA SARMENTO FERREIRA - Janeiro</th></tr>
+</table><table class="x-1175">    <tr class="x-1175"><th colspan=4 >MARIA EDUARDA SARMENTO FERREIRA - Janeiro</th></tr>
     <tr class="x-1175"><td>Agendado</td><td style="text-align: right;">25</td><td style="text-align: right;">86.21%</td></tr>
     <tr class="x-1175"><td>Cancelado</td><td style="text-align: right;">4</td><td style="text-align: right;">13.79%</td></tr>
     <tr class="x-1175"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -7683,7 +7687,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1175"><td>Fila de espera</td><td style="text-align: right;">7</td><td style="text-align: right;">70%</td></tr>
     <tr class="x-1175"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1175"><td><b>Total</b></td><td style="text-align: right;" colspan=2>10</td></tr>
-</table><table>    <tr class="x-1216"><th colspan=4 >MARIA LUIZA MARQUES BARBOSA - Janeiro</th></tr>
+</table><table class="x-1216">    <tr class="x-1216"><th colspan=4 >MARIA LUIZA MARQUES BARBOSA - Janeiro</th></tr>
     <tr class="x-1216"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1216"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1216"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -7767,7 +7771,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1216"><td>Fila de espera</td><td style="text-align: right;">21</td><td style="text-align: right;">41.18%</td></tr>
     <tr class="x-1216"><td>Solicitações devolvidas</td><td style="text-align: right;">2</td><td style="text-align: right;">3.92%</td></tr>
     <tr class="x-1216"><td><b>Total</b></td><td style="text-align: right;" colspan=2>51</td></tr>
-</table><table>    <tr class="x-1218"><th colspan=4 >MARIANA GONçALVES DE QUADROS - Janeiro</th></tr>
+</table><table class="x-1218">    <tr class="x-1218"><th colspan=4 >MARIANA GONçALVES DE QUADROS - Janeiro</th></tr>
     <tr class="x-1218"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1218"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1218"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -7851,7 +7855,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1218"><td>Fila de espera</td><td style="text-align: right;">5</td><td style="text-align: right;">16.13%</td></tr>
     <tr class="x-1218"><td>Solicitações devolvidas</td><td style="text-align: right;">1</td><td style="text-align: right;">3.23%</td></tr>
     <tr class="x-1218"><td><b>Total</b></td><td style="text-align: right;" colspan=2>31</td></tr>
-</table><table>    <tr class="x-1194"><th colspan=4 >MARILIA FERNANDA PEREIRA MATOS - Janeiro</th></tr>
+</table><table class="x-1194">    <tr class="x-1194"><th colspan=4 >MARILIA FERNANDA PEREIRA MATOS - Janeiro</th></tr>
     <tr class="x-1194"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1194"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1194"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -7935,7 +7939,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1194"><td>Fila de espera</td><td style="text-align: right;">12</td><td style="text-align: right;">28.57%</td></tr>
     <tr class="x-1194"><td>Solicitações devolvidas</td><td style="text-align: right;">4</td><td style="text-align: right;">9.52%</td></tr>
     <tr class="x-1194"><td><b>Total</b></td><td style="text-align: right;" colspan=2>42</td></tr>
-</table><table>    <tr class="x-1108"><th colspan=4 >MARIVONE DE OLIVEIRA MONTEIRO - Janeiro</th></tr>
+</table><table class="x-1108">    <tr class="x-1108"><th colspan=4 >MARIVONE DE OLIVEIRA MONTEIRO - Janeiro</th></tr>
     <tr class="x-1108"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1108"><td>Cancelado</td><td style="text-align: right;">1</td><td style="text-align: right;">33.33%</td></tr>
     <tr class="x-1108"><td>Excluído da fila</td><td style="text-align: right;">1</td><td style="text-align: right;">33.33%</td></tr>
@@ -8019,7 +8023,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1108"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1108"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1108"><td><b>Total</b></td><td style="text-align: right;" colspan=2>0</td></tr>
-</table><table>    <tr class="x-907"><th colspan=4 >MARKUS THULIO ALVES GUIMARAES - Janeiro</th></tr>
+</table><table class="x-907">    <tr class="x-907"><th colspan=4 >MARKUS THULIO ALVES GUIMARAES - Janeiro</th></tr>
     <tr class="x-907"><td>Agendado</td><td style="text-align: right;">52</td><td style="text-align: right;">83.87%</td></tr>
     <tr class="x-907"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-907"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -8103,7 +8107,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-907"><td>Fila de espera</td><td style="text-align: right;">18</td><td style="text-align: right;">37.50%</td></tr>
     <tr class="x-907"><td>Solicitações devolvidas</td><td style="text-align: right;">3</td><td style="text-align: right;">6.25%</td></tr>
     <tr class="x-907"><td><b>Total</b></td><td style="text-align: right;" colspan=2>48</td></tr>
-</table><table>    <tr class="x-1037"><th colspan=4 >MARLI DE SOUZA SANTOS - Janeiro</th></tr>
+</table><table class="x-1037">    <tr class="x-1037"><th colspan=4 >MARLI DE SOUZA SANTOS - Janeiro</th></tr>
     <tr class="x-1037"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1037"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1037"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -8187,7 +8191,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1037"><td>Fila de espera</td><td style="text-align: right;">1</td><td style="text-align: right;">10%</td></tr>
     <tr class="x-1037"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1037"><td><b>Total</b></td><td style="text-align: right;" colspan=2>10</td></tr>
-</table><table>    <tr class="x-1137"><th colspan=4 >MATHEUS OLIVEIRA NOBRE ANDRADE - Janeiro</th></tr>
+</table><table class="x-1137">    <tr class="x-1137"><th colspan=4 >MATHEUS OLIVEIRA NOBRE ANDRADE - Janeiro</th></tr>
     <tr class="x-1137"><td>Agendado</td><td style="text-align: right;">28</td><td style="text-align: right;">59.57%</td></tr>
     <tr class="x-1137"><td>Cancelado</td><td style="text-align: right;">6</td><td style="text-align: right;">12.77%</td></tr>
     <tr class="x-1137"><td>Excluído da fila</td><td style="text-align: right;">9</td><td style="text-align: right;">19.15%</td></tr>
@@ -8271,7 +8275,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1137"><td>Fila de espera</td><td style="text-align: right;">31</td><td style="text-align: right;">35.23%</td></tr>
     <tr class="x-1137"><td>Solicitações devolvidas</td><td style="text-align: right;">3</td><td style="text-align: right;">3.41%</td></tr>
     <tr class="x-1137"><td><b>Total</b></td><td style="text-align: right;" colspan=2>88</td></tr>
-</table><table>    <tr class="x-1219"><th colspan=4 >MATHEUS SANTOS MARTINS MENDES - Janeiro</th></tr>
+</table><table class="x-1219">    <tr class="x-1219"><th colspan=4 >MATHEUS SANTOS MARTINS MENDES - Janeiro</th></tr>
     <tr class="x-1219"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1219"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1219"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -8355,7 +8359,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1219"><td>Fila de espera</td><td style="text-align: right;">20</td><td style="text-align: right;">28.99%</td></tr>
     <tr class="x-1219"><td>Solicitações devolvidas</td><td style="text-align: right;">5</td><td style="text-align: right;">7.25%</td></tr>
     <tr class="x-1219"><td><b>Total</b></td><td style="text-align: right;" colspan=2>69</td></tr>
-</table><table>    <tr class="x-348"><th colspan=4 >MAYCK ANTONIO TELES COLARES - Janeiro</th></tr>
+</table><table class="x-348">    <tr class="x-348"><th colspan=4 >MAYCK ANTONIO TELES COLARES - Janeiro</th></tr>
     <tr class="x-348"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-348"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-348"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -8439,7 +8443,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-348"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-348"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-348"><td><b>Total</b></td><td style="text-align: right;" colspan=2>2</td></tr>
-</table><table>    <tr class="x-1206"><th colspan=4 >MELISSA EMANUELE MEDEIROS NUNES - Janeiro</th></tr>
+</table><table class="x-1206">    <tr class="x-1206"><th colspan=4 >MELISSA EMANUELE MEDEIROS NUNES - Janeiro</th></tr>
     <tr class="x-1206"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1206"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1206"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -8523,7 +8527,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1206"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1206"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1206"><td><b>Total</b></td><td style="text-align: right;" colspan=2>0</td></tr>
-</table><table>    <tr class="x-1111"><th colspan=4 >MICHELLE DAYANE ANTUNES DE ALMEIDA - Janeiro</th></tr>
+</table><table class="x-1111">    <tr class="x-1111"><th colspan=4 >MICHELLE DAYANE ANTUNES DE ALMEIDA - Janeiro</th></tr>
     <tr class="x-1111"><td>Agendado</td><td style="text-align: right;">29</td><td style="text-align: right;">65.91%</td></tr>
     <tr class="x-1111"><td>Cancelado</td><td style="text-align: right;">5</td><td style="text-align: right;">11.36%</td></tr>
     <tr class="x-1111"><td>Excluído da fila</td><td style="text-align: right;">6</td><td style="text-align: right;">13.64%</td></tr>
@@ -8607,7 +8611,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1111"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1111"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1111"><td><b>Total</b></td><td style="text-align: right;" colspan=2>0</td></tr>
-</table><table>    <tr class="x-1258"><th colspan=4 >MICHELLY KAROLINE GONCALVES PEREIRA - Janeiro</th></tr>
+</table><table class="x-1258">    <tr class="x-1258"><th colspan=4 >MICHELLY KAROLINE GONCALVES PEREIRA - Janeiro</th></tr>
     <tr class="x-1258"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1258"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1258"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -8691,7 +8695,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1258"><td>Fila de espera</td><td style="text-align: right;">16</td><td style="text-align: right;">34.78%</td></tr>
     <tr class="x-1258"><td>Solicitações devolvidas</td><td style="text-align: right;">5</td><td style="text-align: right;">10.87%</td></tr>
     <tr class="x-1258"><td><b>Total</b></td><td style="text-align: right;" colspan=2>46</td></tr>
-</table><table>    <tr class="x-1200"><th colspan=4 >OLAVO MAURICIO DE SOUZA NETO - Janeiro</th></tr>
+</table><table class="x-1200">    <tr class="x-1200"><th colspan=4 >OLAVO MAURICIO DE SOUZA NETO - Janeiro</th></tr>
     <tr class="x-1200"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1200"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1200"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -8775,7 +8779,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1200"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1200"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1200"><td><b>Total</b></td><td style="text-align: right;" colspan=2>2</td></tr>
-</table><table>    <tr class="x-1107"><th colspan=4 >PAULA REGINA KATHLYN DE ABREU - Janeiro</th></tr>
+</table><table class="x-1107">    <tr class="x-1107"><th colspan=4 >PAULA REGINA KATHLYN DE ABREU - Janeiro</th></tr>
     <tr class="x-1107"><td>Agendado</td><td style="text-align: right;">3</td><td style="text-align: right;">33.33%</td></tr>
     <tr class="x-1107"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1107"><td>Excluído da fila</td><td style="text-align: right;">6</td><td style="text-align: right;">66.67%</td></tr>
@@ -8859,7 +8863,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1107"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1107"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1107"><td><b>Total</b></td><td style="text-align: right;" colspan=2>11</td></tr>
-</table><table>    <tr class="x-1196"><th colspan=4 >PAULO SéRGIO GONçALVES DE ALCâNTARA - Janeiro</th></tr>
+</table><table class="x-1196">    <tr class="x-1196"><th colspan=4 >PAULO SéRGIO GONçALVES DE ALCâNTARA - Janeiro</th></tr>
     <tr class="x-1196"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1196"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1196"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -8943,7 +8947,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1196"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1196"><td>Solicitações devolvidas</td><td style="text-align: right;">1</td><td style="text-align: right;">16.67%</td></tr>
     <tr class="x-1196"><td><b>Total</b></td><td style="text-align: right;" colspan=2>6</td></tr>
-</table><table>    <tr class="x-1052"><th colspan=4 >PEDRO HENRIQUE CUNHA BRONDI - Janeiro</th></tr>
+</table><table class="x-1052">    <tr class="x-1052"><th colspan=4 >PEDRO HENRIQUE CUNHA BRONDI - Janeiro</th></tr>
     <tr class="x-1052"><td>Agendado</td><td style="text-align: right;">42</td><td style="text-align: right;">76.36%</td></tr>
     <tr class="x-1052"><td>Cancelado</td><td style="text-align: right;">4</td><td style="text-align: right;">7.27%</td></tr>
     <tr class="x-1052"><td>Excluído da fila</td><td style="text-align: right;">7</td><td style="text-align: right;">12.73%</td></tr>
@@ -9027,7 +9031,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1052"><td>Fila de espera</td><td style="text-align: right;">6</td><td style="text-align: right;">40%</td></tr>
     <tr class="x-1052"><td>Solicitações devolvidas</td><td style="text-align: right;">1</td><td style="text-align: right;">6.67%</td></tr>
     <tr class="x-1052"><td><b>Total</b></td><td style="text-align: right;" colspan=2>15</td></tr>
-</table><table>    <tr class="x-1193"><th colspan=4 >RAFAELA VILACA DE QUADROS - Janeiro</th></tr>
+</table><table class="x-1193">    <tr class="x-1193"><th colspan=4 >RAFAELA VILACA DE QUADROS - Janeiro</th></tr>
     <tr class="x-1193"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1193"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1193"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -9111,7 +9115,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1193"><td>Fila de espera</td><td style="text-align: right;">38</td><td style="text-align: right;">32.48%</td></tr>
     <tr class="x-1193"><td>Solicitações devolvidas</td><td style="text-align: right;">2</td><td style="text-align: right;">1.71%</td></tr>
     <tr class="x-1193"><td><b>Total</b></td><td style="text-align: right;" colspan=2>117</td></tr>
-</table><table>    <tr class="x-849"><th colspan=4 >RAFHAEL ARRUDAS RIBEIRO SOARES - Janeiro</th></tr>
+</table><table class="x-849">    <tr class="x-849"><th colspan=4 >RAFHAEL ARRUDAS RIBEIRO SOARES - Janeiro</th></tr>
     <tr class="x-849"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-849"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-849"><td>Excluído da fila</td><td style="text-align: right;">1</td><td style="text-align: right;">50%</td></tr>
@@ -9195,7 +9199,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-849"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-849"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-849"><td><b>Total</b></td><td style="text-align: right;" colspan=2>0</td></tr>
-</table><table>    <tr class="x-414"><th colspan=4 >RANELLY DE ANDRADE MEIRELES - Janeiro</th></tr>
+</table><table class="x-414">    <tr class="x-414"><th colspan=4 >RANELLY DE ANDRADE MEIRELES - Janeiro</th></tr>
     <tr class="x-414"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-414"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-414"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -9279,7 +9283,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-414"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-414"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-414"><td><b>Total</b></td><td style="text-align: right;" colspan=2>0</td></tr>
-</table><table>    <tr class="x-1069"><th colspan=4 >RAYANE DA CRUZ ALVES - Janeiro</th></tr>
+</table><table class="x-1069">    <tr class="x-1069"><th colspan=4 >RAYANE DA CRUZ ALVES - Janeiro</th></tr>
     <tr class="x-1069"><td>Agendado</td><td style="text-align: right;">59</td><td style="text-align: right;">67.05%</td></tr>
     <tr class="x-1069"><td>Cancelado</td><td style="text-align: right;">3</td><td style="text-align: right;">3.41%</td></tr>
     <tr class="x-1069"><td>Excluído da fila</td><td style="text-align: right;">16</td><td style="text-align: right;">18.18%</td></tr>
@@ -9363,7 +9367,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1069"><td>Fila de espera</td><td style="text-align: right;">24</td><td style="text-align: right;">47.06%</td></tr>
     <tr class="x-1069"><td>Solicitações devolvidas</td><td style="text-align: right;">8</td><td style="text-align: right;">15.69%</td></tr>
     <tr class="x-1069"><td><b>Total</b></td><td style="text-align: right;" colspan=2>51</td></tr>
-</table><table>    <tr class="x-884"><th colspan=4 >RENATA MATOS E MATOS - Janeiro</th></tr>
+</table><table class="x-884">    <tr class="x-884"><th colspan=4 >RENATA MATOS E MATOS - Janeiro</th></tr>
     <tr class="x-884"><td>Agendado</td><td style="text-align: right;">4</td><td style="text-align: right;">36.36%</td></tr>
     <tr class="x-884"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-884"><td>Excluído da fila</td><td style="text-align: right;">6</td><td style="text-align: right;">54.55%</td></tr>
@@ -9447,7 +9451,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-884"><td>Fila de espera</td><td style="text-align: right;">2</td><td style="text-align: right;">22.22%</td></tr>
     <tr class="x-884"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-884"><td><b>Total</b></td><td style="text-align: right;" colspan=2>9</td></tr>
-</table><table>    <tr class="x-1243"><th colspan=4 >ROBERTA CAMARGOS - Janeiro</th></tr>
+</table><table class="x-1243">    <tr class="x-1243"><th colspan=4 >ROBERTA CAMARGOS - Janeiro</th></tr>
     <tr class="x-1243"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1243"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1243"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -9531,7 +9535,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1243"><td>Fila de espera</td><td style="text-align: right;">1</td><td style="text-align: right;">12.50%</td></tr>
     <tr class="x-1243"><td>Solicitações devolvidas</td><td style="text-align: right;">1</td><td style="text-align: right;">12.50%</td></tr>
     <tr class="x-1243"><td><b>Total</b></td><td style="text-align: right;" colspan=2>8</td></tr>
-</table><table>    <tr class="x-1131"><th colspan=4 >RODRIGO RIBEIRO DOS SANTOS - Janeiro</th></tr>
+</table><table class="x-1131">    <tr class="x-1131"><th colspan=4 >RODRIGO RIBEIRO DOS SANTOS - Janeiro</th></tr>
     <tr class="x-1131"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1131"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1131"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -9615,7 +9619,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1131"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1131"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1131"><td><b>Total</b></td><td style="text-align: right;" colspan=2>0</td></tr>
-</table><table>    <tr class="x-351"><th colspan=4 >RONUARLLEY SILVA MARQUES - Janeiro</th></tr>
+</table><table class="x-351">    <tr class="x-351"><th colspan=4 >RONUARLLEY SILVA MARQUES - Janeiro</th></tr>
     <tr class="x-351"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-351"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-351"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -9699,7 +9703,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-351"><td>Fila de espera</td><td style="text-align: right;">1</td><td style="text-align: right;">100%</td></tr>
     <tr class="x-351"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-351"><td><b>Total</b></td><td style="text-align: right;" colspan=2>1</td></tr>
-</table><table>    <tr class="x-894"><th colspan=4 >ROSIANE VIEIRA DE SA - Janeiro</th></tr>
+</table><table class="x-894">    <tr class="x-894"><th colspan=4 >ROSIANE VIEIRA DE SA - Janeiro</th></tr>
     <tr class="x-894"><td>Agendado</td><td style="text-align: right;">17</td><td style="text-align: right;">68%</td></tr>
     <tr class="x-894"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-894"><td>Excluído da fila</td><td style="text-align: right;">4</td><td style="text-align: right;">16%</td></tr>
@@ -9783,7 +9787,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-894"><td>Fila de espera</td><td style="text-align: right;">3</td><td style="text-align: right;">20%</td></tr>
     <tr class="x-894"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-894"><td><b>Total</b></td><td style="text-align: right;" colspan=2>15</td></tr>
-</table><table>    <tr class="x-785"><th colspan=4 >SAMARA FRANTHEISCA ALMEIDA BARBOSA - Janeiro</th></tr>
+</table><table class="x-785">    <tr class="x-785"><th colspan=4 >SAMARA FRANTHEISCA ALMEIDA BARBOSA - Janeiro</th></tr>
     <tr class="x-785"><td>Agendado</td><td style="text-align: right;">1</td><td style="text-align: right;">50%</td></tr>
     <tr class="x-785"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-785"><td>Excluído da fila</td><td style="text-align: right;">1</td><td style="text-align: right;">50%</td></tr>
@@ -9867,7 +9871,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-785"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-785"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-785"><td><b>Total</b></td><td style="text-align: right;" colspan=2>2</td></tr>
-</table><table>    <tr class="x-1177"><th colspan=4 >TALYANE ALVES PEREIRA - Janeiro</th></tr>
+</table><table class="x-1177">    <tr class="x-1177"><th colspan=4 >TALYANE ALVES PEREIRA - Janeiro</th></tr>
     <tr class="x-1177"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1177"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1177"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -9951,7 +9955,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1177"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1177"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1177"><td><b>Total</b></td><td style="text-align: right;" colspan=2>0</td></tr>
-</table><table>    <tr class="x-1115"><th colspan=4 >TATIANE SOUSA GOMES - Janeiro</th></tr>
+</table><table class="x-1115">    <tr class="x-1115"><th colspan=4 >TATIANE SOUSA GOMES - Janeiro</th></tr>
     <tr class="x-1115"><td>Agendado</td><td style="text-align: right;">10</td><td style="text-align: right;">90.91%</td></tr>
     <tr class="x-1115"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1115"><td>Excluído da fila</td><td style="text-align: right;">1</td><td style="text-align: right;">9.09%</td></tr>
@@ -10035,7 +10039,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1115"><td>Fila de espera</td><td style="text-align: right;">15</td><td style="text-align: right;">78.95%</td></tr>
     <tr class="x-1115"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1115"><td><b>Total</b></td><td style="text-align: right;" colspan=2>19</td></tr>
-</table><table>    <tr class="x-84"><th colspan=4 >TAYSA CRISTINA CARDOSO FREITAS - Janeiro</th></tr>
+</table><table class="x-84">    <tr class="x-84"><th colspan=4 >TAYSA CRISTINA CARDOSO FREITAS - Janeiro</th></tr>
     <tr class="x-84"><td>Agendado</td><td style="text-align: right;">6</td><td style="text-align: right;">33.33%</td></tr>
     <tr class="x-84"><td>Cancelado</td><td style="text-align: right;">1</td><td style="text-align: right;">5.56%</td></tr>
     <tr class="x-84"><td>Excluído da fila</td><td style="text-align: right;">9</td><td style="text-align: right;">50%</td></tr>
@@ -10119,7 +10123,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-84"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-84"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-84"><td><b>Total</b></td><td style="text-align: right;" colspan=2>0</td></tr>
-</table><table>    <tr class="x-1235"><th colspan=4 >TIFANY ADRIANY PINHEIRO SILVA - Janeiro</th></tr>
+</table><table class="x-1235">    <tr class="x-1235"><th colspan=4 >TIFANY ADRIANY PINHEIRO SILVA - Janeiro</th></tr>
     <tr class="x-1235"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1235"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1235"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -10203,7 +10207,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1235"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1235"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1235"><td><b>Total</b></td><td style="text-align: right;" colspan=2>4</td></tr>
-</table><table>    <tr class="x-1106"><th colspan=4 >YASMIM FERNANDES ALMEIDA LEITE - Janeiro</th></tr>
+</table><table class="x-1106">    <tr class="x-1106"><th colspan=4 >YASMIM FERNANDES ALMEIDA LEITE - Janeiro</th></tr>
     <tr class="x-1106"><td>Agendado</td><td style="text-align: right;">66</td><td style="text-align: right;">82.50%</td></tr>
     <tr class="x-1106"><td>Cancelado</td><td style="text-align: right;">5</td><td style="text-align: right;">6.25%</td></tr>
     <tr class="x-1106"><td>Excluído da fila</td><td style="text-align: right;">4</td><td style="text-align: right;">5%</td></tr>
@@ -10287,7 +10291,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1106"><td>Fila de espera</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1106"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1106"><td><b>Total</b></td><td style="text-align: right;" colspan=2>0</td></tr>
-</table><table>    <tr class="x-1199"><th colspan=4 >ÉRIKA DAMASCENO RUAS - Janeiro</th></tr>
+</table><table class="x-1199">    <tr class="x-1199"><th colspan=4 >ÉRIKA DAMASCENO RUAS - Janeiro</th></tr>
     <tr class="x-1199"><td>Agendado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1199"><td>Cancelado</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1199"><td>Excluído da fila</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
@@ -10371,7 +10375,7 @@ let todos_os_profissionais = `<table>    <tr class="x-1147"><th colspan=4 >ADRIA
     <tr class="x-1199"><td>Fila de espera</td><td style="text-align: right;">4</td><td style="text-align: right;">28.57%</td></tr>
     <tr class="x-1199"><td>Solicitações devolvidas</td><td style="text-align: right;">0</td><td style="text-align: right;">0%</td></tr>
     <tr class="x-1199"><td><b>Total</b></td><td style="text-align: right;" colspan=2>14</td></tr>
-</table><table>    <tr class="x-1183"><th colspan=4 >Éricles Willy Machado de Oliveira - Janeiro</th></tr>
+</table><table class="x-1183">    <tr class="x-1183"><th colspan=4 >Éricles Willy Machado de Oliveira - Janeiro</th></tr>
     <tr class="x-1183"><td>Agendado</td><td style="text-align: right;">18</td><td style="text-align: right;">81.82%</td></tr>
     <tr class="x-1183"><td>Cancelado</td><td style="text-align: right;">2</td><td style="text-align: right;">9.09%</td></tr>
     <tr class="x-1183"><td>Excluído da fila</td><td style="text-align: right;">1</td><td style="text-align: right;">4.55%</td></tr>
