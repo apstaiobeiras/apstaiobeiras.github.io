@@ -66,6 +66,7 @@ const lista_profissionais_solicitacoes = `
 <option value="1109">LANDRA GRASIELE SILVA SALDANHA</option>
 <option value="1042">LARISSA KELLY BATISTA DE FREITAS</option>
 <option value="1259">LARISSA SALLES REIS CARDOSO DE Sá </option>
+<option value="1267">LAíSA MIRANDA BRITO ARAúJO</option>
 <option value="1056">LETICIA KARENN SOUZA MENDES</option>
 <option value="1232">LEYLIARA OLIVEIRA PORTO</option>
 <option value="1105">LHAIS OLIVEIRA JORGE</option>
