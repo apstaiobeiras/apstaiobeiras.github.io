@@ -1,0 +1,49 @@
+<!DOCTYPE html><html lang="pt_BR"><head><meta charset="utf8"/><title>Acessar perfil</title><style>        /* Estilo da barra de navegação */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333; /* Cor de fundo da barra de navegação */
+            color: #fff; /* Cor do texto da barra de navegação */
+            padding: 10px 0;
+        }
+        
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+        }
+        
+        /* Adicione margem ao corpo para evitar que o conteúdo fique oculto sob a barra de navegação */
+        body {
+            margin-top: 60px; /* Ajuste conforme necessário com base na altura da sua barra de navegação */
+        }
+
+        td { 
+            text-align: left;
+        }
+
+        .left { 
+            text-align: left;
+        }
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar"><a>Acessar perfil</a></div><h3 id="cpf-banner"><br/><b>Digite o seu CPF:</b></h3><div id="cpf-input"><input id="1" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <input id="2" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <input id="3" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <span style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;">.</span> <input id="4" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <input id="5" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <input id="6" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <span style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;">.</span> <input id="7" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <input id="8" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <input id="9" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <span style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;">-</span> <input id="10" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <input id="11" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> </div><p id="erro"></p></body><script src="js/lista_profissionais.js"></script>
+      <script>
+ 
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2">
+import { createClient } from '@supabase/supabase-js'
+
+// Create a single supabase client for interacting with your database
+const supabase = createClient('https://jrituhahjsqscvrnbzet.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpyaXR1aGFoanNxc2N2cm5iemV0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDg3MTA0ODEsImV4cCI6MjAyNDI4NjQ4MX0.KAamxrDP71y4OUkva4gJQ1tIUCpHK6xg4h_5lHyH860');
+
+
+const { data, error } = await supabase
+  .from('Teste')
+  .insert([
+  { nis: 1, peso: 2, altura: 3, peso: 4 },
+  ])
+  .select();
+          
+    </script>
+    </html>
