@@ -90,8 +90,8 @@
                 let menor_atendimentos = document.createElement("td");
                 menor_atendimentos.classList = "right";
             
-                maior.textContent = profissionais_ranking[i];
-                menor.textContent = profissionais_ranking[i+11];
+                maior.textContent = profissionais_ranking[i].split(":")[0];
+                menor.textContent = profissionais_ranking[i+11].split(":")[0];
                 maior_atendimentos.textContent = Math.abs(atendidos_ranking[i][0]);
                 menor_atendimentos.textContent = Math.abs(atendidos_ranking[i+11][0]);
             
