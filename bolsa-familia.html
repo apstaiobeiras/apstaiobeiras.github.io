@@ -33,6 +33,37 @@
         }
       </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar"><a>Bolsa Família</a></div><h3></h3><table id="busca"><tr><td>Acompanhar pelo NIS: </td><td><input id="nis"/></td><td><button onclick="acompanhar()">Carregar família</button></td></tr><tr><td>Acompanhar pela data de nascimento: </td><td><input id="dn" type="date"/></td><td><button onclick="procurarPorData()">Procurar</button></td></tr></table><h3></h3><div><table style="overflow: hidden"><tbody id="dados_familia"></tbody></table><br/></div><button class="oculto" id="cancelar" onclick="cancelar()">Cancelar acompanhamento</button> <button class="oculto" id="salvar" onclick="salvar()">Salvar acompanhamento</button></body><script src="js/listaNIS.js"></script><script src="js/nis2familia.js"></script><script>        document.body.classList.remove('container-lg');
 
+        const apiUrl = "https://jrituhahjsqscvrnbzet.supabase.co/rest/v1/acompanhamento_bolsa_familia";
+        const apiKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpyaXR1aGFoanNxc2N2cm5iemV0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDg3MTA0ODEsImV4cCI6MjAyNDI4NjQ4MX0.KAamxrDP71y4OUkva4gJQ1tIUCpHK6xg4h_5lHyH860";
+
+        function salvar() {
+
+const data = {
+  nis: 1,
+  peso: 2,
+  altura: 3,
+  acs: 4
+};
+
+fetch(apiUrl, {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+    'apikey': apiKey
+  },
+  body: JSON.stringify(data)
+})
+.then(function(response) {
+  return response.json();
+})
+.then(function(result) {
+  console.log(result); // You can replace this with an alert if needed
+})
+.catch(function(error) {
+  console.error('Error:', error);
+});
+        }
+
         function cancelar(){
             document.getElementById("cancelar").classList = "oculto";
             document.getElementById("salvar").classList = "oculto";
@@ -47,15 +78,13 @@
             document.getElementById(linha).children[3].remove();
 
             document.getElementById(linha).innerHTML += `
-              <td><input style="max-width: 64px"></td>
-              <td><input style="max-width: 64px"></td>
-              <td><input type="date"></td>
+              <td><input style="max-width: 64px" class="${linha}" ></td>
+              <td><input style="max-width: 64px" class="${linha}"></td>
+              <td><input type="date" class="${linha}"></td>
             `;
 
             return false;
         }
-
-        
 
         function procurarPorData() {
             let dn = document.getElementById("dn").value.split("-");
