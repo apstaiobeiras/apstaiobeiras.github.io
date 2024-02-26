@@ -58,7 +58,7 @@
         table {
             width: 100%!important;
         }
-      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar" onclick="window.location.href = 'index.html?cod='+(new URLSearchParams(window.location.search)).get('cod')"><a><span id="micro">0</span> - <span>Coordenação da APS</span></a></div><h3>Indicadores e-SUS</h3><h6>Atualizado em: <span id="atualizacao-indicadores"></span></h6><table style="width: 100%!important;"><tbody id="indicadores"><tr><td><b>Equipe</b></td><td colspan="2"><b>Pré-natal</b></td><td colspan="2"><b>Exames de<br>gestantes</b></td><td colspan="2"><b>Pré-natal<br>odontológico</b></td><td colspan="2"><b>Citopatológico</b></td><td colspan="2"><b>Vacinas</b></td><td colspan="2"><b>Hipertensos</b></td><td colspan="2"><b>Diabéticos</b></td></tr></tbody></table><hr/><h3>Lista de profissionais</h3><table><tr class="tr" onclick="gotoPage('lista-acs.html');"><td><img src="assets/img/lista-acs.png" width="96"/></td><td><b>Agente Comunitário de Saúde</b><br>Separados por equipe</td></tr><tr class="tr" onclick="gotoPage('lista-recepcionistas.html');"><td><img src="assets/img/lista-recepcionistas.png" width="96"/></td><td><b>Recepcionistas</b><br>Separados por unidade</td></tr><tr class="tr" onclick="gotoPage('lista-enfermeiros.html');"><td><img src="assets/img/lista-enfermeiros.png" width="96"/></td><td><b>Enfermeiros e preceptores</b><br>Separados por unidade</td></tr><tr class="tr" onclick="gotoPage('visao-geral-solicitacoes.html');"><td><img src="assets/img/visao-geral-solicitacoes.png" width="96"/></td><td><b>Visão geral das solicitações</b><br>Mostra o quantitativo das solicitações</td></tr></table></body><script src="assets/js/apexcharts.min.js"></script><script src="js/indicadores_equipes.js"></script><script src="js/goto.js"></script><script>        let cod_profissional = null;
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar" onclick="window.location.href = 'index.html?cod='+(new URLSearchParams(window.location.search)).get('cod')"><a><span id="micro">0</span> - <span>Coordenação da APS</span></a></div><h3>Indicadores e-SUS</h3><h6>Atualizado em: <span id="atualizacao-indicadores"></span></h6><table style="width: 100%!important;"><tbody id="indicadores"><tr><td><b>Equipe</b></td><td colspan="2"><b>Pré-natal</b></td><td colspan="2"><b>Exames de<br>gestantes</b></td><td colspan="2"><b>Pré-natal<br>odontológico</b></td><td colspan="2"><b>Citopatológico</b></td><td colspan="2"><b>Vacinas</b></td><td colspan="2"><b>Hipertensos</b></td><td colspan="2"><b>Diabéticos</b></td></tr></tbody></table><hr/><h3>Lista de profissionais</h3><table><tr class="tr" onclick="gotoPage('lista-acs.html');"><td><img src="assets/img/lista-acs.png" width="96"/></td><td><b>Agente Comunitário de Saúde</b><br>Separados por equipe</td></tr><tr class="tr" onclick="gotoPage('lista-recepcionistas.html');"><td><img src="assets/img/lista-recepcionistas.png" width="96"/></td><td><b>Recepcionistas</b><br>Separados por unidade</td></tr><tr class="tr" onclick="gotoPage('lista-enfermeiros.html');"><td><img src="assets/img/lista-enfermeiros.png" width="96"/></td><td><b>Enfermeiros e preceptores</b><br>Separados por unidade</td></tr><tr class="tr" onclick="gotoPage('visao-geral-solicitacoes.html');"><td><img src="assets/img/visao-geral-solicitacoes.png" width="96"/></td><td><b>Visão geral das solicitações</b><br>Mostra o quantitativo das solicitações</td></tr></table><hr/><h3>Ranking de atendimentos por profissional</h3><p><a href="#" id="Enfermeiro da estratégia de saúde da família" onclick="filtrarRanking('Enfermeiro da estratégia de saúde da família'); return false">Enfermeiro ESF</a> | <a href="#" id="Médico da estratégia de saúde da família" onclick="filtrarRanking('Médico da estratégia de saúde da família'); return false">Médico ESF</a></p><table><tbody id="ranking"><tr><td colspan="2"><b>Mais atenderam 🔼</b></td><td colspan="2"><b>Menos atenderam 🔽</b></td></tr></tbody></table></body><script src="js/tabela_atendimentos_geral.js"></script><script src="assets/js/apexcharts.min.js"></script><script src="js/indicadores_equipes.js"></script><script src="js/goto.js"></script><script>        let cod_profissional = null;
         (() => {
         const data_atual = (new Date()).getTime();
         
@@ -73,379 +73,39 @@
         cod_profissional = parseInt((new URLSearchParams(window.location.search)).get('cod'), 36);
         })()
     </script><script>        document.getElementById("indicadores").innerHTML += indicadores_equipes;
-    </script><script>
-    function renderBarras(id,data,meta,horizontal,largura,altura) {
-        let x = {
-              "animations": {
-                    "enabled": false,
-                    "easing": "swing"
-                },
-                "foreColor": "#333",
-                "id": "KyK5l",
-                "stacked": true,
-                "toolbar": {
-                    "show": false
-                },
-                "type": "bar",
-                "width": largura || 480,
-                "zoom": {
-                    "enabled": false
-                }
-        }
 
-        if (altura) {
-            x.height  = altura;
-        }
-        
-        var chart = new ApexCharts(document.querySelector(id), {
-            "annotations": {},
-            "chart": x,
-            "plotOptions": {
-                "bar": {
-                    "horizontal": horizontal,
-                    "borderRadiusApplication": "end",
-                    "borderRadiusWhenStacked": "last",
-                    "hideZeroBarsWhenGrouped": false,
-                    "isDumbbell": false,
-                    "isFunnel": false,
-                    "isFunnel3d": true,
-                    "dataLabels": {
-                        "position": "center",
-                        "total": {
-                            "enabled": false,
-                            "offsetX": 0,
-                            "offsetY": 0,
-                            "style": {
-                                "color": "#373d3f",
-                                "fontSize": "12px",
-                                "fontWeight": 600
-                            }
-                        }
-                    }
-                },
-                "bubble": {
-                    "zScaling": true
-                },
-                "treemap": {
-                    "dataLabels": {
-                        "format": "scale"
-                    }
-                },
-                "radialBar": {
-                    "hollow": {
-                        "background": "#fff"
-                    },
-                    "dataLabels": {
-                        "name": {},
-                        "value": {},
-                        "total": {}
-                    }
-                },
-                "pie": {
-                    "donut": {
-                        "labels": {
-                            "name": {},
-                            "value": {},
-                            "total": {}
-                        }
-                    }
-                }
-            },
-            "dataLabels": {
-                "offsetY": -3,
-                "style": {
-                    "fontWeight": 700,
-                    "colors": [
-                        "#fff"
-                    ]
-                },
-                "background": {
-                    "enabled": false
-                }
-            },
-            "colors": [
-                "#3498db",
-                "#e74c3c",
-            ],
-            "grid": {
-                "padding": {
-                    "right": 25,
-                    "left": 15
-                }
-            },
-            "legend": {
-                "show": false,
-                "fontSize": 14,
-                "offsetY": 0,
-                "markers": {
-                    "shape": "square",
-                    "size": 8
-                },
-                "itemMargin": {
-                    "vertical": 0
-                }
-            },
-            "series": [
-                {
-                    "name": "Atendimentos",
-                    "data": data,
-                    "zIndex": 0
-                },
-                {
-                    "name": "Meta",
-                    "data": meta,
-                    "zIndex": 1
-                }
-            ],
-            "stroke": {
-                "fill": {
-                    "type": "solid",
-                    "opacity": 0.85,
-                    "gradient": {
-                        "shade": "dark",
-                        "type": "horizontal",
-                        "shadeIntensity": 0.5,
-                        "inverseColors": true,
-                        "opacityFrom": 1,
-                        "opacityTo": 1,
-                        "stops": [
-                            0,
-                            50,
-                            100
-                        ],
-                        "colorStops": []
-                    }
-                }
-            },
-            "tooltip": {
-                "shared": false,
-                "intersect": true
-            },
-            "xaxis": {
-                "labels": {
-                    "trim": true,
-                    "style": {}
-                },
-                "group": {
-                    "groups": [],
-                    "style": {
-                        "colors": [],
-                        "fontSize": "12px",
-                        "fontWeight": 400,
-                        "cssClass": ""
-                    }
-                },
-                "tickPlacement": "between",
-                "title": {
-                    "style": {
-                        "fontWeight": 700
-                    }
-                },
-                "tooltip": {
-                    "enabled": false
-                }
-            },
-            "yaxis": {
-                "tickAmount": 5,
-                "labels": {
-                    "style": {}
-                },
-                "title": {
-                    "style": {
-                        "fontWeight": 700
-                    }
-                }
+        function filtrarRanking(estrategia) {
+            document.getElementById("ranking").innerHTML = "";
+
+            let profissionais_ranking = Object.keys(atendimentos_ranking[estrategia]);
+            let atendidos_ranking  = Object.values(atendimentos_ranking[estrategia]);
+            let podium_ranking = profissionais_ranking.length/2;
+            
+            for (let i = 0;i < podium_ranking-1;i++) {
+                let tr = document.createElement("tr");
+                let maior = document.createElement("td");
+                let maior_atendimentos = document.createElement("td");
+                maior_atendimentos.classList = "right";
+                let menor = document.createElement("td");
+                let menor_atendimentos = document.createElement("td");
+                menor_atendimentos.classList = "right";
+            
+                maior.textContent = profissionais_ranking[i];
+                menor.textContent = profissionais_ranking[i+11];
+                maior_atendimentos.textContent = Math.abs(atendidos_ranking[i][0]);
+                menor_atendimentos.textContent = Math.abs(atendidos_ranking[i+11][0]);
+            
+                maior_atendimentos.classList+= atendidos_ranking[i][0]> 0?" proximo":" ruim";
+                menor_atendimentos.classList+= atendidos_ranking[i+11][0]> 0?" proximo":" ruim";
+            
+                tr.appendChild(maior_atendimentos);
+                tr.appendChild(maior);
+                tr.appendChild(menor);
+                tr.appendChild(menor_atendimentos);
+            
+                document.getElementById("ranking").appendChild(tr);
             }
-        });
-        chart.render();
-    }
-
-    function renderPizza(id){
-        var options = {
-            series: [44, 55, 13, 43, 22],
-            chart: {
-            width: 380,
-            type: 'pie',
-          },
-          dataLabels: {
-            enabled: true,
-            style: {
-              colors: ['#fff']
-            },
-            dropShadow: {
-                enabled: false,
-                top: 1,
-                left: 1,
-                blur: 1,
-                color: '#000',
-                opacity: 0.45
-            },
-            background: {
-              enabled: true,
-              foreColor: '#111',
-              borderWidth: 0,
-              dropShadow: {
-                enabled: false,
-                top: 1,
-                left: 1,
-                blur: 1,
-                color: '#000',
-                opacity: 0.45
-              }
-            }
-          },
-          labels: ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5'],
-          responsive: [{
-            breakpoint: 999999999,
-            options: {
-              chart: {
-                width: 400
-              },
-              legend: {
-                position: 'bottom'
-              }
-            }
-          }]
-          };
-  
-          var chart = new ApexCharts(document.querySelector(id), options);
-          chart.render();
-    }
-      
-    renderBarras("#atendimentos",[
-        {
-            "x": "Item 1",
-            "y": 10
-        },
-        {
-            "x": "Item 2",
-            "y": 20
-        },
-        {
-            "x": "Item 3",
-            "y": 30
-        },
-        {
-            "x": "Item 4",
-            "y": 40
-        },
-    ],[
-        {
-            "x": "",
-            "y": 20
-        },
-        {
-            "x": "",
-            "y": 10
-        },
-        {
-            "x": "",
-            "y": 15
-        },
-        {
-            "x": "",
-            "y": 25
         }
-    ],true);
 
-    renderBarras("#antropometria",[
-        {
-            "x": "Item 1",
-            "y": 10
-        },
-        {
-            "x": "Item 2",
-            "y": 20
-        },
-        {
-            "x": "Item 3",
-            "y": 30
-        },
-        {
-            "x": "Item 4",
-            "y": 40
-        },
-    ],[
-        {
-            "x": "",
-            "y": 20
-        },
-        {
-            "x": "",
-            "y": 10
-        },
-        {
-            "x": "",
-            "y": 15
-        },
-        {
-            "x": "",
-            "y": 25
-        }
-    ],true);
-
-    renderBarras("#atendimentos_turno",[
-        {
-            "x": "Manhã",
-            "y": 10
-        },
-        {
-            "x": "Tarde",
-            "y": 20
-        },
-        {
-            "x": "Noite",
-            "y": 30
-        },
-    ],[
-    ],false,320,300);
-
-    renderBarras("#atendimentos_tipo",[
-        {
-            "x": "Urgência",
-            "y": 10
-        },
-        {
-            "x": "Agendada",
-            "y": 20
-        },
-        {
-            "x": "C.Continuado",
-            "y": 30
-        },
-        {
-            "x": "Consulta",
-            "y": 40
-        },
-        {
-            "x": "Escuta inicial",
-            "y": 50
-        },
-    ],[],false,600,300);
-
-    renderBarras("#atendimentos_esf",[
-        {
-            "x": "Urgência",
-            "y": 10
-        },
-        {
-            "x": "Agendada",
-            "y": 20
-        },
-        {
-            "x": "C.Continuado",
-            "y": 30
-        },
-        {
-            "x": "Consulta",
-            "y": 40
-        },
-        {
-            "x": "Escuta inicial",
-            "y": 50
-        },
-    ],[],true,600,480);
-
-    renderPizza("#atendimentos_etario");
-
+        filtrarRanking("Enfermeiro da estratégia de saúde da família");
     </script></html>
