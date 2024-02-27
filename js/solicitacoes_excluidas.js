@@ -1,4 +1,4 @@
-document.getElementById('atualizacao').textContent = '26/02/2024';
+document.getElementById('atualizacao').textContent = '27/02/2024';
 const Solicitacoes_Excluidas = [
   ["34957","796", "4074","2","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>detalhar queixa clínica","20230317","Ultrassonografia ombro "],
   ["37418","818", "354","13","<b>Agendar na Atenção Primaria: </b><br>Solicitação com mais de 2 anos, favor reavaliar queixa e solicitar o exame caso preencha critérios e detalhar quadro clínico para melhor priorização.","20230317","Ultrassonografia ombro "],
@@ -1559,6 +1559,7 @@ const Solicitacoes_Excluidas = [
   ["518092","1218", "12997","3","<b>Não Se Enquadra nos Criterios: </b><br>De acordo com o Protocolo de Encaminhamento para Endocrinologia CEAE Hiperdia disponível no Portal da Atenção Primária, a paciente não apresenta condições clínicas que indicam a necessidade de encaminhamento para consulta diabetes alto risco. Me coloco a disposição para discussão do caso. ","20230905","Consulta diabetes alto risco"],
   ["518151","1137", "32541","9","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor anexar ou informar resultado de exame de hemoglobina glicada/glicemia, com data","20230906","Consulta diabetes alto risco"],
   ["518505","1132", "58114","10","<b>Não Se Enquadra nos Criterios: </b><br>Em caso de desvio anatômico do membro, seria interessante uma avaliação do Ortopedista.","20230920","Consulta pediatra policlinica"],
+  ["518648","1193", "70716","56","Paciente não localizado","20240226","Consulta neurologia"],
   ["518781","1109", "14738","75","<b>Não Se Enquadra nos Criterios: </b><br>Não consta sintomas ou prejuízos que se enquadrem nos critérios do protocolo de atendimento deste Serviço.","20230918"," consulta psicologia infantojuvenil"],
   ["519014","1216", "21770","81","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Por favor nos informar data e resultado do ultimo citologico.","20230906","Consulta ginecologia policlinica"],
   ["519026","1193", "27664","56","<b>Procedimento agendado: </b><br>Avaliação 07/02/24 as 07:00","20240206","Fisioterapia - alteraçoes motoras"],
@@ -1806,6 +1807,7 @@ const Solicitacoes_Excluidas = [
   ["554696","764", "28733","18","Procedimento agendado","20240110","Ultrassonografia mamaria bilateral"],
   ["554760","775", "19836","7","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever resultado do último PCCU com a data da realização.","20231023","Consulta ginecologia policlinica"],
   ["555117","1218", "12979","3","<b>Solicitação Indevida: </b><br>TRANSFERIDOS A FILA \"\"AVALIAÇÃO CIRURGICA POLICLÍNICA\"\".","20231024","Consulta cirurgiao geral"],
+  ["555165","907", "23207","78","Procedimento Realizado","20240226","Consulta neurologia"],
   ["555396","1221", "10157","4","<b>Solicitação Indevida: </b><br>Lançada na fila de espera errada. Favor lançar na fila GESTANTE ALTO RISCO.","20231023","Consulta ginecologia policlinica"],
   ["555914","1137", "15573","9","<b>Não Se Enquadra nos Criterios: </b><br>A FAIXA ETÁRIA DISPONÍVEL PARA AVALIAÇÃO COM ESPECIALISTA É A PARTIR DOS 12 ANOS, CONFORME PROTOCOLO CLÍNICO.<br>VAL RESSALTAR QUE O MUNICÍPIO NÃO DISPOE DE ENDOCRINOLOGISTA PEDIÁTRICO.GRATA.","20231123","Consulta endocrinologia"],
   ["556220","1150", "13027","3","Paciente Recusou o Procedimento","20240122","Colonoscopia com biopsia"],
@@ -1874,6 +1876,7 @@ const Solicitacoes_Excluidas = [
   ["564398","1220", "31787","13","<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA FILA \"\"AVALIAÇÃO CIRURGICA POLICLÍNICA\"\".","20231107","Consulta cirurgiao geral"],
   ["564501","794", "4174","16","<b>Regulação de Serviços: </b><br>TRANSFERIDO PARA FILA DE AVALIAÇÃO CIRURGICA.","20240109","Pequena cirurgia policlinica"],
   ["564754","1199", "25556","4","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Descrição insuficiente de condições clínicas que indicam a necessidade de encaminhamento para cardiologia de alto risco. De acordo com o Protocolo de encaminhamento para cardiologista CEAE HIPERDIA, disponível no Portal da Atenção Primária o encaminhamento deve conter no mínimo: Sinais e sintomas; medicações em uso, com posologia, com avaliação clínica da adesão ao tratamento; duas medidas de pressão arterial, em dias diferentes; alterações em exames laboratoriais, com data; Anexar laudo de exames cardiológicos, preferencialmente, ou descrever na íntegra os seus resultados, com data. Me coloco a disposição para discussão do caso.","20231025","Consulta hipertenso alto risco"],
+  ["564970","1150", "26009","3","Procedimento Realizado","20240226","Consulta neurologia"],
   ["565154","1199", "23788","4","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Descrição insuficiente de condições clínicas que indicam a necessidade de encaminhamento para cardiologia de alto risco. De acordo com o Protocolo de encaminhamento para cardiologista CEAE HIPERDIA, disponível no Portal da Atenção Primária o encaminhamento deve conter no mínimo: Sinais e sintomas; medicações em uso, com posologia, com avaliação clínica da adesão ao tratamento; duas medidas de pressão arterial, em dias diferentes; alterações em exames laboratoriais, com data; Anexar laudo de exames cardiológicos, preferencialmente, ou descrever na íntegra os seus resultados, com data. Me coloco a disposição para discussão do caso.","20231025","Consulta hipertenso alto risco"],
   ["565313","46", "21879","16","<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA FILA DE RETORNO.","20231227","Consulta ortopedista"],
   ["565316","1216", "40553","81","Procedimento Realizado","20240115","Monitoramento pelo sistema holter 24 hs (3 canais)"],
@@ -1997,6 +2000,7 @@ const Solicitacoes_Excluidas = [
   ["583605","1109", "47165","75","<b>Solicitação Indevida: </b><br>PACIENTE DEVE SER ENCAMINHADA A GINECOLOGIA POLICLÍNICA.","20231116","Consulta cirurgiao geral"],
   ["583667","1227", "26047","34","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor aguardar resultado de PCCU.","20231117","Consulta ginecologia CEAE"],
   ["583969","1069", "14884","75","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>AUSENCIA DE DESCRIÇÃO DE RCV. (OBS: PACIENTES ALTO RISCO DEVEM SER ENCAMINHADOS AO CEAE).","20231114","Consulta cardiologia + ECG Dr Renan"],
+  ["584096","72", "33437","206","<b>Procedimento agendado: </b><br>iniciou atendimento fonoaudiologico","20240226","Atendimento fonoaudiologia"],
   ["584212","1219", "41102","33","Não Se Enquadra nos Criterios","20231117","Consulta  urologia policlinica"],
   ["584213","1220", "7323","13","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Sugiro encaminhar com investigação mínima para diagnóstico diferencial. Detalhar melhor o quadro clínico.","20231208","Consulta ortopedista"],
   ["584418","1069", "14681","75","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever medicamentos em uso, com posologia, com avaliação clínica da adesão ao tratamento.  Me coloco a disposição para discussão do caso.","20231129","Consulta hipertenso alto risco"],
@@ -2763,6 +2767,7 @@ const Solicitacoes_Excluidas = [
   ["648925","1175", "13317","78","Solicitação do Usuário","20240215","Consulta cirurgiao dentista"],
   ["649423","758", "2146","16","Solicitação Indevida","20240215","Retorno consulta ortopedista"],
   ["649497","46", "25222","16","<b>Solicitação Indevida: </b><br>PROFISSIONAL INADEQUADO. REINSERIDO EM NOME DE CLEIBER.","20240215","Retorno consulta ortopedista"],
+  ["649738","1193", "20931","56","Procedimento agendado","20240226","Consulta em prÁticas integrativas"],
   ["649754","1220", "13152","13","Procedimento Realizado","20240221","Avaliaçao cirurgica policlinica"],
   ["649775","775", "20901","7","<b>Solicitação Indevida: </b><br>Favor reavaliar o encaminhamento, está com descrição igual a outra paciente também encaminhada.<br>Mulher 70 anos com DIU?Att. ","20240216","Consulta ginecologia policlinica"],
   ["649797","1064", "51312","7","<b>Indisponibilidade do Usuário: </b><br>Paciente encontra-se internação hospitalar ","20240222","Avaliaçao de elegibilidade - melhor em casa"],
@@ -2820,5 +2825,6 @@ const Solicitacoes_Excluidas = [
   ["654238","1263", "20151","34","<b>Não Se Enquadra nos Criterios: </b><br>Endometriose deve ser lançado na fila da GINECOLOGIA POLICLÍNICA.","20240223","Consulta ginecologia CEAE"],
   ["654245","1056", "7267","9","<b>Solicitação do Usuário: </b><br>.","20240221","Consulta cirurgiao dentista"],
   ["654629","1267", "51879","8","<b>Solicitação Indevida: </b><br>solicitação inserida equivocadamente.","20240222","Ultrassonografia obstetrica"],
-  ["655151","880", "18912","9","Procedimento Realizado","20240226","Pequena cirurgia policlinica"]
+  ["655151","880", "18912","9","Procedimento Realizado","20240226","Pequena cirurgia policlinica"],
+  ["656577","880", "21462","9","Procedimento agendado","20240226","Ultrassonografia obstetrica"]
 ]
