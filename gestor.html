@@ -79,15 +79,18 @@
 
             let profissionais_ranking = Object.keys(atendimentos_ranking[estrategia]);
             let atendidos_ranking  = Object.values(atendimentos_ranking[estrategia]);
-            let podium_ranking = profissionais_ranking.length/2;
+            
+            let mais_atendeu = profissionais_ranking.slice(0,Math.ceil(profissionais_ranking.length/2));
+            let mais_atendeu_atendimentos = atendidos_ranking.slice(0,Math.ceil(profissionais_ranking.length/2));
 
-
+            let menos_atendeu = profissionais_ranking.slice(Math.ceil(profissionais_ranking.length/2),profissionais_ranking.length);
+            let menos_atendeu_atendimentos = atendidos_ranking.slice(Math.ceil(profissionais_ranking.length/2),profissionais_ranking.length);
 
             let cabecalho = document.createElement("tr");
             cabecalho.innerHTML = '<tr><td colspan="2"><b>Mais atenderam 🔼</b></td><td colspan="2"><b>Menos atenderam 🔽</b></td></tr>';
             document.getElementById(ranking ||"ranking-profissionais").appendChild(cabecalho);
             
-            for (let i = 0;i < podium_ranking;i++) {
+            for (let i = 0;i < mais_atendeu.length;i++) {
                 let tr = document.createElement("tr");
                 let maior = document.createElement("td");
                 let maior_atendimentos = document.createElement("td");
@@ -96,22 +99,22 @@
                 let menor_atendimentos = document.createElement("td");
                 menor_atendimentos.classList = "right";
 
-                let mes = profissionais_ranking[i].split(":")[1];;
-                let codigo = profissionais_ranking[i].split(":")[2];;
-                let nome = profissionais_ranking[i].split(":")[0];
+                let mes = mais_atendeu[i].split(":")[1];;
+                let codigo = mais_atendeu[i].split(":")[2];;
+                let nome = mais_atendeu[i].split(":")[0];
 
                 maior.innerHTML = '<a onclick="gotoPage(\'calendario_producao.html\',\'id='+codigo+'\');" href="#">📅 '+nome+'</a>';
-                maior_atendimentos.textContent = Math.abs(atendidos_ranking[i][0]);
-                maior_atendimentos.classList+= atendidos_ranking[i][0]> 0?" proximo":" ruim";
+                maior_atendimentos.textContent = Math.abs(mais_atendeu_atendimentos[i][0]);
+                maior_atendimentos.classList+= mais_atendeu_atendimentos[i][0]> 0?" proximo":" ruim";
 
-                if (profissionais_ranking[i+11]) {
-                    mes = profissionais_ranking[i+11].split(":")[1];;
-                    codigo = profissionais_ranking[i+11].split(":")[2];;
-                    nome = profissionais_ranking[i+11].split(":")[0];
+                if (menos_atendeu[i]) {
+                    mes = menos_atendeu [i].split(":")[1];;
+                    codigo = menos_atendeu [i].split(":")[2];;
+                    nome = menos_atendeu [i].split(":")[0];
                     menor.innerHTML = '<a onclick="gotoPage(\'calendario_producao.html\',\'id='+codigo+'\');" href="#">📅 '+nome+'</a>';
-                    menor_atendimentos.textContent = Math.abs(atendidos_ranking[i+11][0]);
+                    menor_atendimentos.textContent = Math.abs(menos_atendeu_atendimentos[i][0]);
                 
-                    menor_atendimentos.classList+= atendidos_ranking[i+11][0]> 0?" proximo":" ruim";
+                    menor_atendimentos.classList+= atendidos_ranking[i][0]> 0?" proximo":" ruim";
                 }
 
                 tr.appendChild(maior_atendimentos);
