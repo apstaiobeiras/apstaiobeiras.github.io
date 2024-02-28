@@ -81,11 +81,13 @@
             let atendidos_ranking  = Object.values(atendimentos_ranking[estrategia]);
             let podium_ranking = profissionais_ranking.length/2;
 
+
+
             let cabecalho = document.createElement("tr");
             cabecalho.innerHTML = '<tr><td colspan="2"><b>Mais atenderam 🔼</b></td><td colspan="2"><b>Menos atenderam 🔽</b></td></tr>';
             document.getElementById(ranking ||"ranking-profissionais").appendChild(cabecalho);
             
-            for (let i = 0;i < podium_ranking-1;i++) {
+            for (let i = 0;i < podium_ranking;i++) {
                 let tr = document.createElement("tr");
                 let maior = document.createElement("td");
                 let maior_atendimentos = document.createElement("td");
@@ -98,37 +100,20 @@
                 let codigo = profissionais_ranking[i].split(":")[2];;
                 let nome = profissionais_ranking[i].split(":")[0];
 
-                let url = (`https://www.taiobeiras-mg.vivver.com/bit/relatorio/48/download.xls?utf8=✓
-                  &_method=patch
-                  &relatorio[filtro][0][_destroy]=false
-                  &relatorio[filtro][0][logico]=e
-                  &relatorio[filtro][0][nome]=nome_especialidade
-                  &relatorio[filtro][0][operador]==
-                  &relatorio[filtro][0][valor]=
-                  &relatorio[filtro][1][_destroy]=false
-                  &relatorio[filtro][1][logico]=e
-                  &relatorio[filtro][1][nome]=data_atendimento
-                  &relatorio[filtro][1][operador]=(*.)
-                  &relatorio[filtro][1][valor]=${mes}
-                  &relatorio[filtro][2][_destroy]=false
-                  &relatorio[filtro][2][logico]=e
-                  &relatorio[filtro][2][nome]=codigo_profissional_esus
-                  &relatorio[filtro][2][operador]==
-                  &relatorio[filtro][2][valor]=${codigo}`);
-
                 maior.innerHTML = '<a onclick="gotoPage(\'calendario_producao.html\',\'id='+codigo+'\');" href="#">📅 '+nome+'</a>';
-
-                mes = profissionais_ranking[i+11].split(":")[1];;
-                codigo = profissionais_ranking[i+11].split(":")[2];;
-                nome = profissionais_ranking[i+11].split(":")[0];
-                menor.innerHTML = '<a onclick="gotoPage(\'calendario_producao.html\',\'id='+codigo+'\');" href="#">📅 '+nome+'</a>';
-                //menor.textContent = profissionais_ranking[i+11].split(":")[0];
                 maior_atendimentos.textContent = Math.abs(atendidos_ranking[i][0]);
-                menor_atendimentos.textContent = Math.abs(atendidos_ranking[i+11][0]);
-            
                 maior_atendimentos.classList+= atendidos_ranking[i][0]> 0?" proximo":" ruim";
-                menor_atendimentos.classList+= atendidos_ranking[i+11][0]> 0?" proximo":" ruim";
-            
+
+                if (profissionais_ranking[i+11]) {
+                    mes = profissionais_ranking[i+11].split(":")[1];;
+                    codigo = profissionais_ranking[i+11].split(":")[2];;
+                    nome = profissionais_ranking[i+11].split(":")[0];
+                    menor.innerHTML = '<a onclick="gotoPage(\'calendario_producao.html\',\'id='+codigo+'\');" href="#">📅 '+nome+'</a>';
+                    menor_atendimentos.textContent = Math.abs(atendidos_ranking[i+11][0]);
+                
+                    menor_atendimentos.classList+= atendidos_ranking[i+11][0]> 0?" proximo":" ruim";
+                }
+
                 tr.appendChild(maior_atendimentos);
                 tr.appendChild(maior);
                 tr.appendChild(menor_atendimentos);

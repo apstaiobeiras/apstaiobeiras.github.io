@@ -85,7 +85,7 @@
             display: table;
         }
 
-      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar no-print" onclick="backlink();"><a><span id="micro">00</span> - <span id="profissional">Nome do profissional</span></a></div><div class="no-print"><h1>Informativo</h1><p>Nesse relatório estão listadas os atendimentos realizados por dia:</p><hr/></div><div class="row"><div class="column" id="coluna_1"></div><div class="column" id="coluna_2"></div></div></body><script src="js/goto.js"></script><script src="js/lista-acs.js"></script><script src="js/producao_por_dia_nivel_superior.js"></script><script>        const data_atual = (new Date()).getTime();
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar no-print" onclick="backlink();"><a><span id="micro">00</span> - <span id="profissional">Nome do profissional</span></a></div><div class="no-print"><h1>Informativo</h1><p>Nesse relatório estão listadas os atendimentos realizados por dia:</p><hr/></div><div class="row"><div class="column" id="coluna_1"></div><div class="column" id="coluna_2"></div></div></body><script src="js/goto.js"></script><script src="js/lista-acs.js"></script><script src="js/producao_por_dia_nivel_superior.js"></script><script src="js/tabela_atendimentos_geral.js"></script><script>        const data_atual = (new Date()).getTime();
 
         if (!(new URLSearchParams(window.location.search)).get('cod')) window.location.href="index.html";
         if (!(new URLSearchParams(window.location.search)).get('token')) window.location.href="index.html";
@@ -93,6 +93,8 @@
         const cod_profissional = parseInt((new URLSearchParams(window.location.search)).get('cod'), 36);
         const token = parseInt((new URLSearchParams(window.location.search)).get('token'), 36);
         if (data_atual>token && window.location.protocol != "file:") window.location.href="index.html";
+    </script><script>        document.getElementById("micro").textContent = (new URLSearchParams(window.location.search)).get('id').replace("9999","");
+        document.getElementById("profissional").textContent = nomes_profissionais[(new URLSearchParams(window.location.search)).get('id')];
     </script><script>        const id_profissional = parseInt((new URLSearchParams(window.location.search)).get('id'));
         const visitas = producao_por_dia[id_profissional];
 
@@ -146,7 +148,6 @@
                     day_cell_h.textContent = day;
                     day += 1;
                 }
-
         
                 let day_cell = document.createElement("td");
                 day_cell.textContent = visitas_realizadas;
