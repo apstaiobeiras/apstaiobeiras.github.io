@@ -6,11 +6,32 @@ const atendimentos = {
     "MARLI DE SOUZA SANTOS:/02/2024:1037": [-29, 87],
     "PAULO SéRGIO GONçALVES DE ALCâNTARA:/02/2024:1196": [-41, 49]
   },
-  "Médico clínico": {
-    "JOAO PEDRO MARQUES MENDES CORREA:/02/2024:370": [-15, 0]
+  "Profissional de educação física na saúde": {
+    "ISCARLATH DA SILVA MENDES:/02/2024:897": [-15, 74],
+    "RENILSON MOREIRA DOS SANTOS:/02/2024:176": [-11, 100]
   },
   "Enfermeiro sanitarista": {
     "RUI RIBEIRO CHAGAS FILHO:/02/2024:23": [-37, 0]
+  },
+  "Unidade": {
+    "ACADEMIA DA SAUDE DE TAIOBEIRAS:/02/2024:999923": [15, 73],
+    "ACOLHER:/02/2024:99998": [670, 67],
+    "CAMINHO:/02/2024:999956": [340, 87],
+    "COMUNIDADES RURAIS:/02/2024:999933": [289, 71],
+    "EMULTI A:/02/2024:999980": [136, 51],
+    "EMULTI B:/02/2024:999974": [186, 17],
+    "ESPERANÇA:/02/2024:99996": [358, 62],
+    "ESPETACULAR:/02/2024:99993": [419, 54],
+    "HARMONIA:/02/2024:99994": [302, 69],
+    "HUMANIZAR:/02/2024:999934": [426, 49],
+    "LIBERDADE:/02/2024:999981": [213, 52],
+    "MAIS SAUDE:/02/2024:999975": [313, 34],
+    "PROGRESSO:/02/2024:999910": [651, 29],
+    "RENASCER:/02/2024:99999": [408, 19],
+    "UNIAO:/02/2024:999978": [674, 79],
+    "VIDA E SAÚDE:/02/2024:99997": [327, 78],
+    "VIDA:/02/2024:999913": [588, 78],
+    "VIVER:/02/2024:99992": [366, 65]
   },
   "Enfermeiro da estratégia de saúde da família": {
     "BEATRIZ MIRANDA RODRIGUES:/02/2024:1241": [-14, 100],
@@ -37,18 +58,14 @@ const atendimentos = {
     "TIFANY ADRIANY PINHEIRO SILVA:/02/2024:1235": [-54, 69],
     "ÉRIKA DAMASCENO RUAS:/02/2024:1199": [-59, 87]
   },
-  "Psicólogo clínico": {
-    "ERIKA BARBOSA DE OLIVEIRA:/02/2024:814": [-83, 0],
-    "MARIANA LANZONI:/02/2024:1068": [-53, 0],
-    "RODRIGO RIBEIRO DOS SANTOS:/02/2024:1131": [-59, 0]
-  },
   "Nutricionista": {
     "CAMILA RAIMUNDI LOPES ANTUNES:/02/2024:1222": [-77, 91],
     "ROBERTA CLAVER MENDES DE OLIVEIRA:/02/2024:1262": [-39, 54]
   },
-  "Profissional de educação física na saúde": {
-    "ISCARLATH DA SILVA MENDES:/02/2024:897": [-15, 74],
-    "RENILSON MOREIRA DOS SANTOS:/02/2024:176": [-11, 100]
+  "Psicólogo clínico": {
+    "ERIKA BARBOSA DE OLIVEIRA:/02/2024:814": [-83, 0],
+    "MARIANA LANZONI:/02/2024:1068": [-53, 0],
+    "RODRIGO RIBEIRO DOS SANTOS:/02/2024:1131": [-59, 0]
   },
   "Médico da estratégia de saúde da família": {
     "ADRIANA RAYSSA TELES COLARES:/02/2024:320": [-198, 76],
@@ -74,6 +91,9 @@ const atendimentos = {
     "PEDRO HENRIQUE CUNHA BRONDI:/02/2024:1052": [-79, 73],
     "RAFAELA VILACA DE QUADROS:/02/2024:1193": [271, 86],
     "RAYANE DA CRUZ ALVES:/02/2024:1069": [-250, 52]
+  },
+  "Médico clínico": {
+    "JOAO PEDRO MARQUES MENDES CORREA:/02/2024:370": [-15, 0]
   }
 }
 
@@ -85,11 +105,32 @@ const atendimentos_ranking = {
     "AMANDA ATANIELLY RIBEIRO:/02/2024:1204": [-3, 67],
     "ANGELA NEVES COSTA:/02/2024:1213": [-2, 50]
   },
-  "Médico clínico": {
-    "JOAO PEDRO MARQUES MENDES CORREA:/02/2024:370": [-15, 0]
+  "Profissional de educação física na saúde": {
+    "ISCARLATH DA SILVA MENDES:/02/2024:897": [-15, 74],
+    "RENILSON MOREIRA DOS SANTOS:/02/2024:176": [-11, 100]
   },
   "Enfermeiro sanitarista": {
     "RUI RIBEIRO CHAGAS FILHO:/02/2024:23": [-37, 0]
+  },
+  "Unidade": {
+    "UNIAO:/02/2024:999978": [674, 79],
+    "ACOLHER:/02/2024:99998": [670, 67],
+    "PROGRESSO:/02/2024:999910": [651, 29],
+    "VIDA:/02/2024:999913": [588, 78],
+    "HUMANIZAR:/02/2024:999934": [426, 49],
+    "ESPETACULAR:/02/2024:99993": [419, 54],
+    "RENASCER:/02/2024:99999": [408, 19],
+    "VIVER:/02/2024:99992": [366, 65],
+    "ESPERANÇA:/02/2024:99996": [358, 62],
+    "CAMINHO:/02/2024:999956": [340, 87],
+    "VIDA E SAÚDE:/02/2024:99997": [327, 78],
+    "MAIS SAUDE:/02/2024:999975": [313, 34],
+    "HARMONIA:/02/2024:99994": [302, 69],
+    "COMUNIDADES RURAIS:/02/2024:999933": [289, 71],
+    "LIBERDADE:/02/2024:999981": [213, 52],
+    "EMULTI B:/02/2024:999974": [186, 17],
+    "EMULTI A:/02/2024:999980": [136, 51],
+    "ACADEMIA DA SAUDE DE TAIOBEIRAS:/02/2024:999923": [15, 73]
   },
   "Enfermeiro da estratégia de saúde da família": {
     "FABIOLA DE OLIVEIRA LOBO:/02/2024:216": [255, 94],
@@ -116,18 +157,14 @@ const atendimentos_ranking = {
     "MELISSA EMANUELE MEDEIROS NUNES:/02/2024:1206": [-2, 50],
     "RONUARLLEY SILVA MARQUES:/02/2024:351": [-2, 100]
   },
-  "Psicólogo clínico": {
-    "ERIKA BARBOSA DE OLIVEIRA:/02/2024:814": [-83, 0],
-    "RODRIGO RIBEIRO DOS SANTOS:/02/2024:1131": [-59, 0],
-    "MARIANA LANZONI:/02/2024:1068": [-53, 0]
-  },
   "Nutricionista": {
     "CAMILA RAIMUNDI LOPES ANTUNES:/02/2024:1222": [-77, 91],
     "ROBERTA CLAVER MENDES DE OLIVEIRA:/02/2024:1262": [-39, 54]
   },
-  "Profissional de educação física na saúde": {
-    "ISCARLATH DA SILVA MENDES:/02/2024:897": [-15, 74],
-    "RENILSON MOREIRA DOS SANTOS:/02/2024:176": [-11, 100]
+  "Psicólogo clínico": {
+    "ERIKA BARBOSA DE OLIVEIRA:/02/2024:814": [-83, 0],
+    "RODRIGO RIBEIRO DOS SANTOS:/02/2024:1131": [-59, 0],
+    "MARIANA LANZONI:/02/2024:1068": [-53, 0]
   },
   "Médico da estratégia de saúde da família": {
     "MARKUS THULIO ALVES GUIMARAES:/02/2024:907": [346, 76],
@@ -153,5 +190,8 @@ const atendimentos_ranking = {
     "LAíSA MIRANDA BRITO ARAúJO:/02/2024:1267": [-114, 48],
     "MARIANA GONçALVES DE QUADROS:/02/2024:1218": [-102, 16],
     "PEDRO HENRIQUE CUNHA BRONDI:/02/2024:1052": [-79, 73]
+  },
+  "Médico clínico": {
+    "JOAO PEDRO MARQUES MENDES CORREA:/02/2024:370": [-15, 0]
   }
 }
