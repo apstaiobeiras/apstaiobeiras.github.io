@@ -4,6 +4,7 @@ const lista_profissionais_solicitacoes = `
 <option value="1147">ADRIANA BARBOSA RODRIGUES</option>
 <option value="320">ADRIANA RAYSSA TELES COLARES</option>
 <option value="1195">ADRIANO DA SILVA ARAúJO</option>
+<option value="52">ALESSANDRA APARECIDA PIRES PINTO</option>
 <option value="764">ALEX DE SOUZA SANTOS</option>
 <option value="1102">ALEXANDRE LUAN SILVA MORAIS</option>
 <option value="299">ALINE GOMES FERREIRA</option>
