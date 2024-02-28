@@ -116,8 +116,13 @@
                   &relatorio[filtro][2][operador]==
                   &relatorio[filtro][2][valor]=${codigo}`);
 
-                maior.innerHTML = '<a href="'+url.replace(" ","")+'">📄'+nome+'</a>';
-                menor.textContent = profissionais_ranking[i+11].split(":")[0];
+                maior.innerHTML = '<a onclick="gotoPage(\'calendario_producao.html\',\'id='+codigo+'\');" href="#">📅 '+nome+'</a>';
+
+                mes = profissionais_ranking[i+11].split(":")[1];;
+                codigo = profissionais_ranking[i+11].split(":")[2];;
+                nome = profissionais_ranking[i+11].split(":")[0];
+                menor.innerHTML = '<a onclick="gotoPage(\'calendario_producao.html\',\'id='+codigo+'\');" href="#">📅 '+nome+'</a>';
+                //menor.textContent = profissionais_ranking[i+11].split(":")[0];
                 maior_atendimentos.textContent = Math.abs(atendidos_ranking[i][0]);
                 menor_atendimentos.textContent = Math.abs(atendidos_ranking[i+11][0]);
             

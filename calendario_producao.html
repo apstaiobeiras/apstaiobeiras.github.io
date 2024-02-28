@@ -1,0 +1,188 @@
+<!DOCTYPE html><html lang="pt_BR"><head><meta charset="utf8"/><title>Perfil do profissional</title><style>        @media print
+        {    
+            .no-print, .no-print *
+            {
+                display: none !important;
+            }
+        
+            h3
+            {
+                display: none !important;
+            }
+
+            h4
+            {
+                display: block !important;
+            }
+        
+            table {
+              margin: 0  !important;
+            }
+        
+            @page {
+                size: landscape;
+                margin: 0mm; 
+            }
+            
+            body  { 
+            margin: 0px  !important;
+            padding: 0px  !important; 
+            zoom: 94%;
+          } 
+
+          .no-padding-and-margin  { 
+            margin: 0px  !important;
+            padding: 0px  !important; 
+          } 
+        }
+      </style><style>        /* Estilo da barra de navegação */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333; /* Cor de fundo da barra de navegação */
+            color: #fff; /* Cor do texto da barra de navegação */
+            padding: 10px 0;
+            cursor: pointer!important;
+        }
+        
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+        }
+        
+        /* Adicione margem ao corpo para evitar que o conteúdo fique oculto sob a barra de navegação */
+        body {
+            margin-top: 60px; /* Ajuste conforme necessário com base na altura da sua barra de navegação */
+        }
+
+        td { 
+            text-align: right;
+        }
+
+        .left { 
+            text-align: left;
+        }
+
+
+        .row {
+            margin-left:-5px;
+            margin-right:-5px;
+        }
+  
+        .column {
+            float: left;
+            width: 50%;
+            padding: 5px;
+        }
+
+/* Clearfix (clear floats) */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar no-print" onclick="backlink();"><a><span id="micro">00</span> - <span id="profissional">Nome do profissional</span></a></div><div class="no-print"><h1>Informativo</h1><p>Nesse relatório estão listadas as visitas realizadas por dia e por família.<br>Não são contadas:</p><ul><li>Duas ou mais visitas no mesmo dia a mesma família</li><li>Visitas para mais de um membro da família</li></ul><hr/></div><div class="row"><div class="column" id="coluna_1"></div><div class="column" id="coluna_2"></div></div></body><script src="js/goto.js"></script><script src="js/lista-acs.js"></script><script src="js/producao_por_dia_nivel_superior.js"></script><script>        const data_atual = (new Date()).getTime();
+
+        if (!(new URLSearchParams(window.location.search)).get('cod')) window.location.href="index.html";
+        if (!(new URLSearchParams(window.location.search)).get('token')) window.location.href="index.html";
+    
+        const cod_profissional = parseInt((new URLSearchParams(window.location.search)).get('cod'), 36);
+        const token = parseInt((new URLSearchParams(window.location.search)).get('token'), 36);
+        if (data_atual>token && window.location.protocol != "file:") window.location.href="index.html";
+    </script><script>        const id_profissional = parseInt((new URLSearchParams(window.location.search)).get('id'));
+        const visitas = producao_por_dia[id_profissional];
+
+        const meses = [];
+        meses[1] = "Janeiro";
+        meses[2] = "Fevereiro";
+        meses[3] = "Março";
+        meses[4] = "Abril";
+        meses[5] = "Maio";
+        meses[6] = "Junho";
+        meses[7] = "Julho";
+        meses[8] = "Agosto";
+        meses[9] = "Setembro";
+        meses[10] = "Outubro";
+        meses[11] = "Novembro";
+        meses[12] = "Dezembro";
+        
+        
+        for (let mes in visitas) {
+            let visitas_mes = visitas[mes];
+            let current_row = document.createElement("tr");
+            let current_day_row = document.createElement("tr");
+            let day = 1;
+        
+            let mes_cabecalho = document.createElement("tr");
+            let mes_nome = document.createElement("th");
+            mes_nome.colSpan = 7;
+            mes_nome.textContent = meses[mes];
+        
+            let dias_da_semana = document.createElement("tr");
+            dias_da_semana.innerHTML=("<th>Dom.</th><th>Seg.</th><th>Ter.</th><th>Qua.</th><th>Qui.</th><th>Sex.</th><th>Sáb.</th>")
+        
+            let calendario = document.createElement("table");
+            calendario.appendChild(mes_nome);
+            calendario.appendChild(dias_da_semana);
+            
+            let dias_no_mes = (new Date((new Date).getYear(), mes, 0).getDate())+1;
+
+            console.log(visitas);
+            let x = false;
+
+            for (let i = 0; i < visitas_mes.length; i++){
+                let visitas_realizadas = visitas_mes[i];
+
+                let day_cell_h = document.createElement("th");
+                current_day_row.appendChild(day_cell_h);
+
+                x = x && x || visitas_realizadas != "";
+
+                if (x) {
+                    day_cell_h.textContent = day;
+                    day += 1;
+                }
+
+        
+                let day_cell = document.createElement("td");
+                day_cell.textContent = visitas_realizadas;
+                day_cell.style="background-color:#B2D9AB;"
+
+                if (visitas_realizadas == "") {
+                    day_cell.style="";
+                }
+
+                if (visitas_realizadas == "0") {
+                    day_cell.style="background-color:#EB989A;"
+                }
+
+                if (visitas_realizadas == "---") {
+                    day_cell.style="color: rgba(0,0,0,0);";
+                }
+        
+                current_row.appendChild(day_cell);
+
+                if (visitas_realizadas == "---" && visitas_mes[i+1] == "---") {
+                    calendario.appendChild(current_day_row);
+                    calendario.appendChild(current_row);
+                    current_row = document.createElement("tr");
+                    current_day_row = document.createElement("tr");
+                }
+
+        
+            }
+            calendario.appendChild(current_day_row);
+            calendario.appendChild(current_row);
+            
+            if (mes%2==1) {
+                document.getElementById("coluna_1").appendChild(calendario);
+            } else {
+                document.getElementById("coluna_2").appendChild(calendario);
+            }
+            
+        }
+    </script></html>

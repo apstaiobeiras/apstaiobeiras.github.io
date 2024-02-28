@@ -28,7 +28,8 @@ function backlink() {
     window.location.href = `${back_page}?cod=${cod}&token=${token}&mode=${mode}&unidade=${unidade}&cod_path=${cod_array.join("/")}&path=${path_array.reverse().join("/")}`;
 }
 
-function gotoPage(page) {
+function gotoPage(page,nargs) {
+    let args      = nargs && "&"+nargs || "";
     let cod       = (new URLSearchParams(window.location.search)).get('cod');
     let token     = (new Date()).setSeconds((new Date()).getSeconds()+30).toString(36)
     let mode      = (new URLSearchParams(window.location.search)).get('mode') || 'r1';
@@ -36,7 +37,7 @@ function gotoPage(page) {
     let path      = ((new URLSearchParams(window.location.search)).get('path') || window.location.pathname.split("/").reverse()[0])+"/"+page;
     let cod_path  = (((new URLSearchParams(window.location.search)).get('cod_path')) || "")+"/"+cod;
 
-    window.location.href = `${page}?cod=${cod}&token=${token}&mode=${mode}&unidade=${unidade}&cod_path=${cod_path}&path=${path}`;
+    window.location.href = `${page}?cod=${cod}&token=${token}&mode=${mode}&unidade=${unidade}&cod_path=${cod_path}&path=${path}${args}`;
 }
 
 function bypassCPF(page,new_cod,unidade){
