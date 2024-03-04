@@ -58,7 +58,7 @@
         table {
             width: 100%!important;
         }
-      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar" onclick="window.location.href = 'index.html?cod='+(new URLSearchParams(window.location.search)).get('cod')"><a><span id="micro">0</span> - <span>Coordenação da APS</span></a></div><h3>Indicadores e-SUS</h3><h6>Atualizado em: <span id="atualizacao-indicadores"></span></h6><table style="width: 100%!important;"><tbody id="indicadores"><tr><td><b>Equipe</b></td><td colspan="2"><b>Pré-natal</b></td><td colspan="2"><b>Exames de<br>gestantes</b></td><td colspan="2"><b>Pré-natal<br>odontológico</b></td><td colspan="2"><b>Citopatológico</b></td><td colspan="2"><b>Vacinas</b></td><td colspan="2"><b>Hipertensos</b></td><td colspan="2"><b>Diabéticos</b></td></tr></tbody></table><hr/><h3>Lista de profissionais</h3><table><tr class="tr" onclick="gotoPage('lista-acs.html');"><td><img src="assets/img/lista-acs.png" width="96"/></td><td><b>Agente Comunitário de Saúde</b><br>Separados por equipe</td></tr><tr class="tr" onclick="gotoPage('lista-recepcionistas.html');"><td><img src="assets/img/lista-recepcionistas.png" width="96"/></td><td><b>Recepcionistas</b><br>Separados por unidade</td></tr><tr class="tr" onclick="gotoPage('lista-enfermeiros.html');"><td><img src="assets/img/lista-enfermeiros.png" width="96"/></td><td><b>Enfermeiros e preceptores</b><br>Separados por unidade</td></tr><tr class="tr" onclick="gotoPage('visao-geral-solicitacoes.html');"><td><img src="assets/img/visao-geral-solicitacoes.png" width="96"/></td><td><b>Visão geral das solicitações</b><br>Mostra o quantitativo das solicitações</td></tr></table><hr/><h3>Ranking de atendimentos por profissional</h3><p><a href="#" id="Enfermeiro da estratégia de saúde da família" onclick="filtrarRanking('Enfermeiro da estratégia de saúde da família'); return false">Enfermeiro ESF</a> | <a href="#" id="Médico da estratégia de saúde da família" onclick="filtrarRanking('Médico da estratégia de saúde da família'); return false">Médico ESF</a></p><table><tbody id="ranking-profissionais"><tr><td colspan="2"><b>Mais atenderam 🔼</b></td><td colspan="2"><b>Menos atenderam 🔽</b></td></tr></tbody></table><h3>Ranking de atendimentos por unidade</h3><table><tbody id="ranking-unidade"><tr><td colspan="2"><b>Mais atenderam 🔼</b></td><td colspan="2"><b>Menos atenderam 🔽</b></td></tr></tbody></table></body><script src="js/tabela_atendimentos_geral.js"></script><script src="assets/js/apexcharts.min.js"></script><script src="js/indicadores_equipes.js"></script><script src="js/goto.js"></script><script>        let cod_profissional = null;
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar" onclick="window.location.href = 'index.html?cod='+(new URLSearchParams(window.location.search)).get('cod')"><a><span id="micro">0</span> - <span>Coordenação da APS</span></a></div><h3>Indicadores e-SUS</h3><h6>Atualizado em: <span id="atualizacao-indicadores"></span></h6><table style="width: 100%!important;"><tbody id="indicadores"><tr><td><b>Equipe</b></td><td colspan="2"><b>Pré-natal</b></td><td colspan="2"><b>Exames de<br>gestantes</b></td><td colspan="2"><b>Pré-natal<br>odontológico</b></td><td colspan="2"><b>Citopatológico</b></td><td colspan="2"><b>Vacinas</b></td><td colspan="2"><b>Hipertensos</b></td><td colspan="2"><b>Diabéticos</b></td></tr></tbody></table><hr/><h3>Lista de profissionais</h3><table><tr class="tr" onclick="gotoPage('lista-acs.html');"><td><img src="assets/img/lista-acs.png" width="96"/></td><td><b>Agente Comunitário de Saúde</b><br>Separados por equipe</td></tr><tr class="tr" onclick="gotoPage('lista-recepcionistas.html');"><td><img src="assets/img/lista-recepcionistas.png" width="96"/></td><td><b>Recepcionistas</b><br>Separados por unidade</td></tr><tr class="tr" onclick="gotoPage('lista-enfermeiros.html');"><td><img src="assets/img/lista-enfermeiros.png" width="96"/></td><td><b>Enfermeiros e preceptores</b><br>Separados por unidade</td></tr><tr class="tr" onclick="gotoPage('visao-geral-solicitacoes.html');"><td><img src="assets/img/visao-geral-solicitacoes.png" width="96"/></td><td><b>Visão geral das solicitações</b><br>Mostra o quantitativo das solicitações</td></tr></table><hr/><table><tr><td colspan="12" style="text-align:center;"><b>Mês</b></td></tr><tr><td><a href="#" id="1" onclick="filtrarRanking('Unidade','ranking-unidade',1);filtrarRanking(estrategia_usada,null,1); return false;">01</a></td><td><a href="#" id="2" onclick="filtrarRanking('Unidade','ranking-unidade',1);filtrarRanking(estrategia_usada,null,2); return false;">02</a></td><td><a href="#" id="3" onclick="filtrarRanking('Unidade','ranking-unidade',1);filtrarRanking(estrategia_usada,null,3); return false;">03</a></td><td><a href="#" id="4" onclick="filtrarRanking('Unidade','ranking-unidade',1);filtrarRanking(estrategia_usada,null,4); return false;">04</a></td><td><a href="#" id="5" onclick="filtrarRanking('Unidade','ranking-unidade',1);filtrarRanking(estrategia_usada,null,5); return false;">05</a></td><td><a href="#" id="6" onclick="filtrarRanking('Unidade','ranking-unidade',1);filtrarRanking(estrategia_usada,null,6); return false;">06</a></td><td><a href="#" id="7" onclick="filtrarRanking('Unidade','ranking-unidade',1);filtrarRanking(estrategia_usada,null,7); return false;">07</a></td><td><a href="#" id="8" onclick="filtrarRanking('Unidade','ranking-unidade',1);filtrarRanking(estrategia_usada,null,8); return false;">08</a></td><td><a href="#" id="9" onclick="filtrarRanking('Unidade','ranking-unidade',1);filtrarRanking(estrategia_usada,null,9); return false;">09</a></td><td><a href="#" id="10" onclick="filtrarRanking('Unidade','ranking-unidade',1);filtrarRanking(estrategia_usada,null,10); return false;">10</a></td><td><a href="#" id="11" onclick="filtrarRanking('Unidade','ranking-unidade',1);filtrarRanking(estrategia_usada,null,11); return false;">11</a></td><td><a href="#" id="12" onclick="filtrarRanking('Unidade','ranking-unidade',1);filtrarRanking(estrategia_usada,null,12); return false;">12</a></td></tr></table><h3>Ranking de atendimentos por profissional</h3><table><tr><td><a href="#" id="Enfermeiro" onclick="filtrarRanking('Enfermeiro',null,mes_ativo); return false">Enfermeiro</a></td><td><a href="#" id="Enfermeiro da estratégia de saúde da família" onclick="filtrarRanking('Enfermeiro da estratégia de saúde da família',null,mes_ativo); return false">Enfermeiro ESF</a></td><td><a href="#" id="Enfermeiro sanitarista" onclick="filtrarRanking('Enfermeiro sanitarista',null,mes_ativo); return false">Enf. sanitarista</a></td><td><a href="#" id="Farmacêutico" onclick="filtrarRanking('Farmacêutico',null,mes_ativo); return false">Farmacêutico</a></td><td><a href="#" id="Fisioterapeuta geral" onclick="filtrarRanking('Fisioterapeuta geral',null,mes_ativo); return false">Fisioterapeuta</a></td></tr><tr><td><a href="#" id="Médico clínico" onclick="filtrarRanking('Médico clínico',null,mes_ativo); return false">Médico</a></td><td><a href="#" id="Médico da estratégia de saúde da família" onclick="filtrarRanking('Médico da estratégia de saúde da família',null,mes_ativo); return false">Médico ESF</a></td><td><a href="#" id="Nutricionista" onclick="filtrarRanking('Nutricionista',null,mes_ativo); return false">Nutricionista</a></td><td><a href="#" id="Psicólogo clínico" onclick="filtrarRanking('Psicólogo clínico',null,mes_ativo); return false">Psicólogo</a></td></tr></table><table><tbody id="ranking-profissionais"><tr><td colspan="2"><b>Mais atenderam 🔼</b></td><td colspan="2"><b>Menos atenderam 🔽</b></td></tr></tbody></table><h3>Ranking de atendimentos por unidade</h3><table><tbody id="ranking-unidade"><tr><td colspan="2"><b>Mais atenderam 🔼</b></td><td colspan="2"><b>Menos atenderam 🔽</b></td></tr></tbody></table></body><script src="js/tabela_atendimentos_geral.js"></script><script src="assets/js/apexcharts.min.js"></script><script src="js/indicadores_equipes.js"></script><script src="js/goto.js"></script><script>        let cod_profissional = null;
         (() => {
         const data_atual = (new Date()).getTime();
         
@@ -73,13 +73,39 @@
         cod_profissional = parseInt((new URLSearchParams(window.location.search)).get('cod'), 36);
         })()
     </script><script>        document.getElementById("indicadores").innerHTML += indicadores_equipes;
+        var estrategia_usada = "Enfermeiro da estratégia de saúde da família";
+        var mes_ativo = UltimoMes;
 
-        function filtrarRanking(estrategia,ranking) {
+        function filtrarRanking(estrategia,ranking,_mes) {
+            document.getElementById(estrategia_usada).style.color = "";
+            document.getElementById(estrategia_usada).style.fontWeight="";
+            document.getElementById(mes_ativo).style.color = "";
+            document.getElementById(mes_ativo).style.fontWeight="";
+
+            mes_ativo = _mes;
+            estrategia_usada = estrategia == "Unidade" ? estrategia_usada : estrategia;
+
+            document.getElementById(estrategia_usada).style.fontWeight=600;
+            document.getElementById(estrategia_usada).style.color = "#000000";
+            document.getElementById(mes_ativo).style.fontWeight=600;
+            document.getElementById(mes_ativo).style.color = "#000000";
+
             document.getElementById(ranking ||"ranking-profissionais").innerHTML = "";
 
-            let profissionais_ranking = Object.keys(atendimentos_ranking[estrategia]);
-            let atendidos_ranking  = Object.values(atendimentos_ranking[estrategia]);
-            
+            let profissionais_ranking = [];
+            let atendidos_ranking  = [];
+            let mes = (_mes < 10 ? "/0"+_mes : "/"+_mes)+"/";
+
+            Object.keys(atendimentos_ranking[estrategia]).forEach(
+                function (key, index) {
+                    self = atendimentos_ranking[estrategia];
+                    if (key.match(mes)) {
+                        profissionais_ranking.push(key);
+                        atendidos_ranking.push(self[key]);
+                    }
+                }
+            );
+
             let mais_atendeu = profissionais_ranking.slice(0,Math.ceil(profissionais_ranking.length/2));
             let mais_atendeu_atendimentos = atendidos_ranking.slice(0,Math.ceil(profissionais_ranking.length/2));
 
@@ -106,6 +132,8 @@
                 maior.innerHTML = '<a onclick="gotoPage(\'calendario_producao.html\',\'id='+codigo+'\');" href="#">📅 '+nome+'</a>';
                 maior_atendimentos.textContent = Math.abs(mais_atendeu_atendimentos[i][0]);
                 maior_atendimentos.classList+= mais_atendeu_atendimentos[i][0]> 0?" proximo":" ruim";
+                maior_atendimentos.classList+= " "+parseInt(mes);
+
 
                 if (menos_atendeu[i]) {
                     mes = menos_atendeu [i].split(":")[1];;
@@ -114,7 +142,9 @@
                     menor.innerHTML = '<a onclick="gotoPage(\'calendario_producao.html\',\'id='+codigo+'\');" href="#">📅 '+nome+'</a>';
                     menor_atendimentos.textContent = Math.abs(menos_atendeu_atendimentos[i][0]);
                 
-                    menor_atendimentos.classList+= atendidos_ranking[i][0]> 0?" proximo":" ruim";
+                    menor_atendimentos.classList = " ruim";
+
+                    menor_atendimentos.classList = estrategia == "Unidade" && "" || menor_atendimentos.classList;
                 }
 
                 tr.appendChild(maior_atendimentos);
@@ -126,6 +156,6 @@
             }
         }
 
-        filtrarRanking("Enfermeiro da estratégia de saúde da família");
-        filtrarRanking("Unidade","ranking-unidade");
+        filtrarRanking("Enfermeiro da estratégia de saúde da família",null,UltimoMes);
+        filtrarRanking("Unidade","ranking-unidade",UltimoMes);
     </script></html>
