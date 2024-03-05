@@ -1,4 +1,4 @@
-document.getElementById('atualizacao').textContent = '04/03/2024';
+document.getElementById('atualizacao').textContent = '05/03/2024';
 const Solicitacoes_Excluidas = [
   ["34957","796", "4074","2","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>detalhar queixa clínica","20230317","Ultrassonografia ombro "],
   ["37418","818", "354","13","<b>Agendar na Atenção Primaria: </b><br>Solicitação com mais de 2 anos, favor reavaliar queixa e solicitar o exame caso preencha critérios e detalhar quadro clínico para melhor priorização.","20230317","Ultrassonografia ombro "],
@@ -222,8 +222,12 @@ const Solicitacoes_Excluidas = [
   ["305253","1", "27118","16","<b>Procedimento agendado: </b><br>SECRETARIA ENTROU EM CONTATO COM A GENITORA POR TELEFONE DIA 21/02/2024 AS 10:00 HORAS E AGENDOU O ATENDIMENTO PARA DIA 29/02/2024 AS 08:10 E PACIENTE NÃO COMPARECEU AO ATENDIMENTO.","20240229","Atendimento fonoaudiologia"],
   ["305263","1", "4761","16","<b>Procedimento agendado: </b><br>INICIOU ATENDIMENTO FONOAUDIOLOGICO","20240229","Atendimento fonoaudiologia"],
   ["305268","1", "26797","16","<b>Procedimento agendado: </b><br>INICIOU ATENDIMENTO FONOAUDIOLOGICO","20240227","Atendimento fonoaudiologia"],
+  ["305270","1", "26661","16","<b>Procedimento Realizado: </b><br>INICIOU ATENDIMENTO FONOAUDIOLOGICO.","20240304","Atendimento fonoaudiologia"],
   ["305273","1", "43108","16","<b>Solicitação do Usuário: </b><br>INICIOU ATENDIMENTO FONOAUDIOLOGICO","20240229","Atendimento fonoaudiologia"],
   ["305275","1", "35861","16","<b>Procedimento agendado: </b><br>INICIOU ATENDIMENTO FONOAUDIOLOGICO","20240228","Atendimento fonoaudiologia"],
+  ["305279","1", "3449","16","Paciente Recusou o Procedimento","20240305","Atendimento fonoaudiologia"],
+  ["305280","1", "24103","16","Paciente Recusou o Procedimento","20240305","Atendimento fonoaudiologia"],
+  ["305281","1", "59041","16","<b>Paciente não localizado: </b><br>MUDOU PARA SÃO PAULO","20240305","Atendimento fonoaudiologia"],
   ["305284","1", "38254","16","<b>Procedimento Realizado: </b><br>INICIOU ATENDIMENTO FONOAUDIOLOGICO","20240229","Atendimento fonoaudiologia"],
   ["305327","1", "46559","1","<b>Procedimento agendado: </b><br>AGENDADO PELA FONO JÉSSICA NO DIA 20/02/2024","20240220","Atendimento fonoaudiologia"],
   ["305637","796", "33915","2","<b>Solicitação Indevida: </b><br>AUSÊNCIA  DE PRESTADOR MUNICIPAL. PREENCHER TFD.","20230414","Consulta neurologia"],
@@ -518,6 +522,7 @@ const Solicitacoes_Excluidas = [
   ["386399","1194", "25460","6","<b>Solicitação Indevida: </b><br>TRANFERIDO AO CENTRO HIPERDIA.","20230411","Consulta cardiologia +ECG Dr Nikolas"],
   ["386584","1150", "31046","34","<b>Não Se Enquadra nos Criterios: </b><br>Quadro apresentado se enquadra nos critérios do CEAE. Favor, reencaminhar na fila Pediatria Alto Risco. ","20230404","Consulta pediatra policlinica"],
   ["386587","1069", "7528","75","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Para inserção do DIU, faz-se necessário o resultado do último PCCU.","20230503","Consulta ginecologia policlinica"],
+  ["386747","1143", "4240","7","<b>Regulação de Serviços: </b><br>O DENTE FRATUROU E NÃO HÁ MAIS POSSIBILIDADES DE RECUPERAÇÃO. SERÁ NECESSÁRIO EXODONTIA.","20240304","Tratamento endodôntico de dente permanente com três ou mais raízes"],
   ["386979","1192", "5767","68","<b>Não Se Enquadra nos Criterios: </b><br>Paciente deve ser encaminhado ao serviço de Nefrologia em Salinas com os exames em mãos.<br>Segundo o protocolo de DRC.Quadro 02 – Exames necessários<br>para encaminhamento dos<br>pacientes estágios 4 e 5 da DRC<br><br>Hemograma, ureia, creatinina, sódio,<br>potássio, urina rotina, urocultura e<br>ultrassonografia de rins e vias<br>urinárias.<br><br>orientar ao paciente que<br>compareça a Secretaria<br>Municipal de Saúde com<br>encaminhamento e exames<br>prontos, além de identidade e<br>comprovante de endereço para<br>envio dos mesmos ao Serviço deNefrologia em Salinas.","20230425","Consulta nefrologista"],
   ["387411","1132", "2240","10","<b>Solicitação Indevida: </b><br>TRANSFERIDO AO CENTRO HIPERDIA.","20230411","Consulta cardiologia + ECG Dr Renan"],
   ["387465","775", "4211","7","<b>Solicitação Indevida: </b><br>TRANSFERIDO AO CENTRO HIPERDIA.","20230411","Consulta cardiologia + ECG Dr Renan"],
@@ -2493,6 +2498,7 @@ const Solicitacoes_Excluidas = [
   ["625418","806", "12729","68","Procedimento Realizado","20240201","Ultrassonografia de prostata por via abdominal"],
   ["625449","1258", "68079","34","<b>Solicitação Indevida: </b><br> E PACIENTE APRESENTA ALTO RISCO CARDIOVASCULAR, SENDO CONTRARREFERENCIADA PARA A FILA DE ESPERA  \"\"HIPERTENSO ALTO RISCO\"\", DEVIDO AOS CRITERIOS, NAO DEVENDO SER ACOMPANHADA POR RENAN.","20240111","Consulta cardiologia + ECG Dr Renan"],
   ["625549","1137", "42824","9","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>AUSENCIA DE DUM E IG. REINSERIR COM TAIS DADOS PARA MELHOR CONDUTA POR PARTE DA REGULAÇÃO.","20240103","Ultrassonografia obstetrica"],
+  ["625618","1216", "21134","81","<b>Procedimento agendado: </b><br>AGENDADO ATENDIMENTO DOMICILIAR PELA FONO JÉSSICA LUIZA","20240305","Atendimento fonoaudiologia"],
   ["625644","1224", "59995","11","<b>Procedimento agendado: </b><br>Avaliação 29/01/24 as 07:00","20240126","Acolhimento de fisioterapia"],
   ["625657","1224", "17562","11","<b>Procedimento agendado: </b><br>Avaliação 29/01/23 às 10:00 - Camilla","20240126","Acolhimento de fisioterapia"],
   ["625738","1216", "6794","81","<b>Regulação de Serviços: </b><br>Favor reencaminhar na fila Ginecologia Policlínica.Att.","20240103","Consulta ginecologia CEAE"],
@@ -2604,6 +2610,7 @@ const Solicitacoes_Excluidas = [
   ["631731","183", "35145","34","<b>Não Se Enquadra nos Criterios: </b><br>Paciente com bom padrão alimentar, exames sem alterações, com queixa de perda de peso segundo encaminhamento. Não se enquadra nos critérios de acordo com o Protocolo de Encaminhamento para a Nutrição (aprovado em novembro/2023).","20240116","Avaliaçao nutricionista e-multi"],
   ["632060","1150", "26149","3","Procedimento Realizado","20240202","Consulta ortopedista"],
   ["632178","1216", "58014","81","<b>Solicitação Indevida: </b><br>SOLICITAÇÃO DEVE SER FEITA PELO CIRURGIÃO EXECUTANTE. PACIENTE APRESENTANDO RISCO CARDIOLOGICO DE JANEIRO DE 2023, NÃO SENDO MAIS VALIDO PARA O PROCEDIMENTO. INICAREMOS PROCESSO DE RISCO CIRURGICO DO INICIO.","20240118","Avaliaçao pre anestesica"],
+  ["632240","1194", "29248","6","<b>Procedimento agendado: </b><br>AGENDADO ATENDIMENTO DOMICILIAR POR JÉSSICA LUIZA","20240305","Atendimento fonoaudiologia"],
   ["632425","1144", "11082","56","<b>Solicitação Indevida: </b><br>ERRO NA SOLICITAÇÃO. REALIZADA NOVAMENTE.","20240112","Tratamento endodôntico de dente permanente unirradicular"],
   ["632562","46", "12969","16","<b>Solicitação Indevida: </b><br>REINSERIDO COM DEFINIÇÃO DE PROFISIONAL.","20240125","Retorno consulta ortopedista"],
   ["632582","1259", "7476","75","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>DESCREVER A INVESTIGAÇÃO REALIZADA PARA DIAGNÓSTICO DIFERENCIAL","20240122","Consulta ortopedista"],
@@ -2698,6 +2705,7 @@ const Solicitacoes_Excluidas = [
   ["638556","758", "7785","16","<b>Solicitação Indevida: </b><br>REINSERIDO COM DEFINIÇÃO DE PROFISSIONAL.","20240125","Retorno consulta ortopedista"],
   ["638567","770", "16070","61","Procedimento Realizado","20240229","Ultrassonografia de abdômen superior"],
   ["638569","1225", "354","11","<b>Procedimento agendado: </b><br>chamado para atendimento","20240205","Acolhimento de fisioterapia"],
+  ["638580","1216", "16071","81","Procedimento Realizado","20240304","Colonoscopia com biopsia"],
   ["638635","1032", "19373","11","<b>Solicitação Indevida: </b><br>INSERIDO COMO RETORNO PARA OUTRO ORTOPEDISTA.REINSERIDO COM DEFINIÇÃO DE ORTOPEDISTA CORRETO.","20240219","Consulta ortopedista"],
   ["638651","1137", "31622","9","<b>Não Se Enquadra nos Criterios: </b><br>Autismo não é critério para acompanhamento psicológico na unidade. ","20240130","Avaliaçao psicologo e-multi"],
   ["638746","1220", "14802","13","<b>Não Se Enquadra nos Criterios: </b><br>De acordo com o Protocolo de Encaminhamento para Endocrinologia CEAE Hiperdia disponível no Portal da Atenção Primária, a paciente não apresenta condições clínicas que indicam a necessidade de encaminhamento para consulta diabetes alto risco. Favor avaliar possibilidade de encaminhamento pelo Protocolo da Endocrinologia Adulto, também disponível no Portal da Atenção Primária. Me coloco a disposição para discussão do caso. ","20240124","Consulta diabetes alto risco"],
@@ -2890,6 +2898,7 @@ const Solicitacoes_Excluidas = [
   ["650878","1207", "25198","18","Procedimento Realizado","20240216","Monitoramento pelo sistema holter 24 hs (3 canais)"],
   ["650921","1069", "63310","6","Regulação de Serviços","20240222","Avaliaçao psicologo e-multi"],
   ["650980","987", "6200","11","<b>Regulação de Serviços: </b><br>chamado para atendimento","20240228","Fisioterapia - paciente pre ou pos"],
+  ["651062","1219", "25599","33","Procedimento agendado","20240304","Consulta em prÁticas integrativas"],
   ["651318","1052", "7553","8","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever o resultado do último PCCU realizado pela paciente, caso tenha mais de 2 anos, realizar o exame e após reencaminhar.Att.","20240220","Consulta ginecologia policlinica"],
   ["651329","1207", "17155","18","Procedimento agendado","20240219","Ecocardiograma com doopler"],
   ["651582","1194", "25212","6","<b>Solicitação Indevida: </b><br>INSERIDO EM FILA INADEQUADA. REINSERIDO EM FILA DE \"\"AVALIAÇÃO CIRURGICA POLICLÍNICA'.","20240221","Consulta cirurgiao geral"],
@@ -2954,5 +2963,7 @@ const Solicitacoes_Excluidas = [
   ["657092","1193", "72827","56","<b>Solicitação Indevida: </b><br>PACIENTE EM ACOMPANHAMENTO NA PEDIATRIA ALTO RISCO (CEAE). TRANSFERIDO PARA FILA DE TAL SERVIÇO.","20240227","Consulta pediatra policlinica"],
   ["657125","805", "25976","16","<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA FILA DE PEQUENA CIRURGIA.","20240227","Avaliaçao cirurgica policlinica"],
   ["657310","1052", "15374","8","Procedimento Realizado","20240229","Ultrassonografia obstetrica"],
-  ["657861","770", "15478","61","Solicitação Indevida","20240228","Colonoscopia com biopsia"]
+  ["657861","770", "15478","61","Solicitação Indevida","20240228","Colonoscopia com biopsia"],
+  ["658334","1218", "28831","3","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>DETALHAR IG E DUM. JA ENTRADO EM CONTATO COM SOLICITANTE.","20240304","Ultrassonografia obstetrica"],
+  ["658798","1174", "26588","3","Solicitação Indevida","20240304","Consulta estomatologia"]
 ]
