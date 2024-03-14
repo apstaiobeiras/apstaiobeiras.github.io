@@ -3107,6 +3107,7 @@ const Solicitacoes_Excluidas = [
   ["660354","1200", "2356","10","<b>Procedimento Realizado: </b><br>Paciente admitida para avaliação multiprofissional.","20240306","Avaliaçao de elegibilidade - melhor em casa"],
   ["660490","1137", "7","9","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever exames laboratoriais e outros (de acordo protocolo solicita), que o paciente tenha realizado. Att. ","20240311","Consulta hipertenso alto risco"],
   ["660503","805", "28406","16","<b>Agendar na Atenção Primaria: </b><br>Ausência de justificativa clínica. Agendar avaliação na APS.","20240307","Consulta ortopedista"],
+  ["660733","1219", "37772","33","<b>Solicitação Indevida: </b><br>transferido para fila \"\"AVALIAÇÃO CIRURGICA POLICLÍNICA\"\".","20240314","Consulta cirurgiao geral"],
   ["661108","1267", "14768","8","<b>Não Se Enquadra nos Criterios: </b><br>Isabella orientou a equipe sobre a necessidade da paciente. ","20240307","Consulta pediatria alto risco"],
   ["661489","1259", "49236","75","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever resultados de exames laboratórios e outros (de acordo protocolo) que o paciente tenha realizado para prosseguir com agendamento.Att.","20240311","Consulta hipertenso alto risco"],
   ["661610","1207", "6720","18","<b>Agendar na Atenção Primaria: </b><br>Médico da APS deve acompanhar e encaminhar, caso seja necessário, mediante evolução clínica.","20240307","Consulta ortopedista"],
@@ -3114,6 +3115,7 @@ const Solicitacoes_Excluidas = [
   ["661939","1216", "15873","81","<b>Não Se Enquadra nos Criterios: </b><br>Somente obesidade grau 3 (IMC = 40) se enquadra como gestação de alto risco.<br>PA = 120x80mmHg não é considerada Hipertensão.USO com peso fetal no limite superior da normalidade ainda é normalidade.","20240306","Consulta - obstétrica / puerpério"],
   ["662130","1069", "17260","9","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever resultados de exames laboratórios e outros (de acordo protocolo) que o paciente tenha realizado para prosseguir com agendamento.Att.","20240311","Consulta hipertenso alto risco"],
   ["662389","1032", "17834","11","Procedimento agendado","20240312","Fisioterapia - alteraçoes motoras"],
+  ["662861","1267", "14520","8","<b>Solicitação Indevida: </b><br>transferido para fila \"\"AVALIAÇÃO CIRURGICA POLICLÍNICA\"\".","20240314","Consulta cirurgiao geral"],
   ["662862","1207", "18605","18","","20240306","Teste de esforco / teste ergometrico"],
   ["662862","1207", "18605","18","Regulação de Serviços","20240306","Ecocardiograma com doopler"],
   ["662963","987", "18816","11","Procedimento agendado","20240312","Fisioterapia - paciente pre ou pos"],
@@ -3128,6 +3130,7 @@ const Solicitacoes_Excluidas = [
   ["664006","1194", "6609","6","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>A paciente só foi atendida pelo endocrinologista, favor classificar o RCV da paciente, reencaminhar com a descrição dos dados solicitados de acordo protocolo de atendimento hipertenso alto risco (descrever resultado de exames laboratoriais e outros, risco cardiovascular, e histórico clinico).Att.","20240311","Consulta hipertenso alto risco"],
   ["664048","1069", "13914","6","<b>Não Se Enquadra nos Criterios: </b><br>Se não possui alterações mamárias e nem em MMG, não se enquadra nos critérios do CEAE.","20240313","Consulta mastologia CEAE"],
   ["664318","1267", "30309","8","<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA FILA DE PEQUENA CIRURGIA.","20240313","Avaliaçao cirurgica policlinica"],
+  ["664508","1267", "34315","8","<b>Regulação de Serviços: </b><br>TRANSFERIDO PARA FILA \"\"AVALIAÇÃO CIRURGICA POLICLÍNICA.","20240314","Consulta cirurgiao geral"],
   ["664523","985", "29908","11","<b>Procedimento agendado: </b><br>CHAMADA PARA INICIAR ATENDIMENTO (ESTÁGIO UNIBTA)","20240312","Fisioterapia - alteraçoes motoras"],
   ["664646","907", "27772","78","<b>Não Se Enquadra nos Criterios: </b><br>Quadro de miomatose deve ser lançado na fila da GINECOLOGIA POLICLÍNICA.","20240313","Consulta ginecologia CEAE"],
   ["664885","1207", "21270","18","Procedimento agendado","20240314","Teste de esforco / teste ergometrico"],
@@ -3135,7 +3138,9 @@ const Solicitacoes_Excluidas = [
   ["665320","1258", "46213","34","<b>Não Se Enquadra nos Criterios: </b><br>Quadro de adenomiose deve ser lançado na fila da GINECOLOGIA POLICLÍNICA.","20240313","Consulta ginecologia CEAE"],
   ["666206","18", "54885","68","<b>Não Se Enquadra nos Criterios: </b><br>AUSENCIA DE JUSTIFICATIVA CLINICA.","20240313","Consulta otorrinolaringologia"],
   ["666223","1200", "7892","10","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Qual a DUM? Qual a IG?","20240312","Consulta gestante alto risco"],
+  ["666356","1258", "29944","34","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever a data e últimos exames laboratoriais e de imagem realizados (ECG e outros que tenha realizado, para prosseguir com agendamento.","20240314","Consulta hipertenso alto risco"],
   ["666728","1200", "7892","10","<b>Regulação de Serviços: </b><br>Favor encaminhar paciente com cesariana prévia com IG = 30 semanas para avaliação de via de parto.","20240313","Consulta gestante alto risco"],
   ["666871","986", "32613","11","<b>Procedimento agendado: </b><br>chamada para iniciar atendimento","20240314","Fisioterapia - paciente pre ou pos"],
-  ["666977","1259", "24105","8","<b>Não Se Enquadra nos Criterios: </b><br>Quadro de endometriose deve ser lançado na fila da GINECOLOGIA POLICLÍNICA.","20240313","Consulta ginecologia CEAE"]
+  ["666977","1259", "24105","8","<b>Não Se Enquadra nos Criterios: </b><br>Quadro de endometriose deve ser lançado na fila da GINECOLOGIA POLICLÍNICA.","20240313","Consulta ginecologia CEAE"],
+  ["667100","1267", "27973","8","<b>Solicitação Indevida: </b><br>transferido para fila \"\"AVALIAÇÃO CIRURGICA POLICLÍNICA\"\".","20240314","Consulta cirurgiao geral"]
 ]
