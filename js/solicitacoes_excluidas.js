@@ -3046,6 +3046,7 @@ const Solicitacoes_Excluidas = [
   ["653919","507", "8317","2","<b>Não Se Enquadra nos Criterios: </b><br>Endometriose deve ser lançado na fila da GINECOLOGIA POLICLÍNICA.","20240223","Consulta ginecologia CEAE"],
   ["653963","1207", "40034","18","Procedimento agendado","20240307","Teste de esforco / teste ergometrico"],
   ["653972","1221", "19538","4","<b>Não Se Enquadra nos Criterios: </b><br>solicitar avaliação na ginecologia da policlínica.","20240301","Ultrassonografia transvaginal"],
+  ["654031","1046", "15945","8","Procedimento Realizado","20240314","Colonoscopia com biopsia"],
   ["654074","1240", "28293","34","<b>Não Se Enquadra nos Criterios: </b><br>Lançada na fila de espera errada e não é considerada gestação de alto risco.","20240223","Consulta ginecologia CEAE"],
   ["654104","320", "8107","78","<b>Solicitação Indevida: </b><br>PACIENTE ALTO RISCO CARDIOVASCULAR, COM ATENDIMENTO AGENDADO JA NO CEAE PELA SOLICITAÇÃO 654025.","20240229","Consulta cardiologia +ECG Dr Nikolas"],
   ["654150","1137", "51294","9","<b>Não Se Enquadra nos Criterios: </b><br>solicitar avaliação na ginecologia da policlínica.","20240301","Ultrassonografia transvaginal"],
