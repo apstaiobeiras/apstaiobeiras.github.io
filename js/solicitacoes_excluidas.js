@@ -2005,6 +2005,7 @@ const Solicitacoes_Excluidas = [
   ["569354","806", "18957","68","Procedimento agendado","20240221","Consulta  urologia policlinica"],
   ["569441","1193", "22687","56","<b>Agendar na Atenção Primaria: </b><br>agendado avaliação","20231107","Fisioterapia - alteraçoes motoras"],
   ["569501","1110", "37582","78","<b>Não Se Enquadra nos Criterios: </b><br>INSERIDA NA FILA DO DIABETES DE ALTO RISCO","20231030","Consulta endocrinologia"],
+  ["569506","1193", "28165","56","<b>Regulação de Serviços: </b><br>agendado","20240314","Fisioterapia respiratoria "],
   ["569578","1193", "22439","56","Procedimento agendado","20240129","Fisioterapia - alteraçoes motoras"],
   ["569693","806", "14332","68","Procedimento agendado","20240220","Consulta  urologia policlinica"],
   ["569784","1132", "2201","10","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>AUSENCIA DE RCV.CASO SE TRATA DE PACIENTE ALTO RISCO, ENCAMINHAR AO CEAE.","20231031","Consulta cardiologia + ECG Dr Renan"],
@@ -3134,5 +3135,6 @@ const Solicitacoes_Excluidas = [
   ["666206","18", "54885","68","<b>Não Se Enquadra nos Criterios: </b><br>AUSENCIA DE JUSTIFICATIVA CLINICA.","20240313","Consulta otorrinolaringologia"],
   ["666223","1200", "7892","10","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Qual a DUM? Qual a IG?","20240312","Consulta gestante alto risco"],
   ["666728","1200", "7892","10","<b>Regulação de Serviços: </b><br>Favor encaminhar paciente com cesariana prévia com IG = 30 semanas para avaliação de via de parto.","20240313","Consulta gestante alto risco"],
+  ["666871","986", "32613","11","<b>Procedimento agendado: </b><br>chamada para iniciar atendimento","20240314","Fisioterapia - paciente pre ou pos"],
   ["666977","1259", "24105","8","<b>Não Se Enquadra nos Criterios: </b><br>Quadro de endometriose deve ser lançado na fila da GINECOLOGIA POLICLÍNICA.","20240313","Consulta ginecologia CEAE"]
 ]

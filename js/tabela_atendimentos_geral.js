@@ -1,5 +1,9 @@
 var UltimoMes = 3;
 const atendimentos = {
+  "Médico clínico": {
+    "BRUNA WANELLY SANTANA ARAUJO:/03/2024:847": [-1, 0],
+    "JOAO PEDRO MARQUES MENDES CORREA:/03/2024:370": [-13, 16]
+  },
   "Unidade": {
     "ACOLHER:/03/2024:99998": [525, 48],
     "CAMINHO:/03/2024:999956": [191, 86],
@@ -7,7 +11,7 @@ const atendimentos = {
     "COMUNIDADES RURAIS:/03/2024:999933": [168, 70],
     "EMULTI A:/03/2024:999980": [85, 56],
     "EMULTI B:/03/2024:999974": [38, 39],
-    "ESPERANÇA:/03/2024:99996": [261, 68],
+    "ESPERANÇA:/03/2024:99996": [263, 68],
     "ESPETACULAR:/03/2024:99993": [248, 55],
     "HARMONIA:/03/2024:99994": [152, 60],
     "HUMANIZAR:/03/2024:999934": [255, 58],
@@ -20,13 +24,6 @@ const atendimentos = {
     "VIDA:/03/2024:999913": [356, 78],
     "VIVER:/03/2024:99992": [224, 66]
   },
-  "Enfermeiro": {
-    "DANILO DA ROCHA VIANA:/03/2024:222": [-18, 62]
-  },
-  "Médico clínico": {
-    "BRUNA WANELLY SANTANA ARAUJO:/03/2024:847": [-1, 0],
-    "JOAO PEDRO MARQUES MENDES CORREA:/03/2024:370": [-13, 16]
-  },
   "Farmacêutico": {
     "AMANDA ATANIELLY RIBEIRO:/03/2024:1204": [-2, 0],
     "ANGELA NEVES COSTA:/03/2024:1213": [-7, 86],
@@ -34,6 +31,16 @@ const atendimentos = {
     "KATIELLE BEZERRA DA SILVA:/03/2024:1283": [-10, 50],
     "MARLI DE SOUZA SANTOS:/03/2024:1037": [-24, 75],
     "PAULO SéRGIO GONçALVES DE ALCâNTARA:/03/2024:1196": [-30, 40]
+  },
+  "Nutricionista": {
+    "CAMILA RAIMUNDI LOPES ANTUNES:/03/2024:1222": [-49, 98],
+    "ROBERTA CLAVER MENDES DE OLIVEIRA:/03/2024:1262": [-20, 75]
+  },
+  "Enfermeiro": {
+    "DANILO DA ROCHA VIANA:/03/2024:222": [-18, 62]
+  },
+  "Enfermeiro sanitarista": {
+    "RUI RIBEIRO CHAGAS FILHO:/03/2024:23": [-16, 0]
   },
   "Enfermeiro da estratégia de saúde da família": {
     "DANILO DIEGO FREITAS SILVEIRA:/03/2024:880": [-84, 22],
@@ -82,10 +89,7 @@ const atendimentos = {
     "MICHELLY KAROLINE GONCALVES PEREIRA:/03/2024:1258": [-181, 48],
     "PEDRO HENRIQUE CUNHA BRONDI:/03/2024:1052": [-73, 90],
     "RAFAELA VILACA DE QUADROS:/03/2024:1193": [-180, 87],
-    "RAYANE DA CRUZ ALVES:/03/2024:1069": [-128, 68]
-  },
-  "Enfermeiro sanitarista": {
-    "RUI RIBEIRO CHAGAS FILHO:/03/2024:23": [-16, 0]
+    "RAYANE DA CRUZ ALVES:/03/2024:1069": [-130, 67]
   },
   "Psicólogo clínico": {
     "CLáUDIA SIMONE CUSTóDIO DUARTE:/03/2024:1286": [-1, 0],
@@ -93,21 +97,21 @@ const atendimentos = {
     "MARIANA KRUSCHEWSKY FRANCO RIBEIRO:/03/2024:1288": [-1, 0],
     "MARIANA LANZONI:/03/2024:1068": [-14, 0],
     "RODRIGO RIBEIRO DOS SANTOS:/03/2024:1131": [-36, 0]
-  },
-  "Nutricionista": {
-    "CAMILA RAIMUNDI LOPES ANTUNES:/03/2024:1222": [-49, 98],
-    "ROBERTA CLAVER MENDES DE OLIVEIRA:/03/2024:1262": [-20, 75]
   }
 }
 
 const atendimentos_ranking = {
+  "Médico clínico": {
+    "JOAO PEDRO MARQUES MENDES CORREA:/03/2024:370": [-13, 16],
+    "BRUNA WANELLY SANTANA ARAUJO:/03/2024:847": [-1, 0]
+  },
   "Unidade": {
     "ACOLHER:/03/2024:99998": [525, 48],
     "UNIAO:/03/2024:999978": [393, 79],
     "VIDA:/03/2024:999913": [356, 78],
     "RENASCER:/03/2024:99999": [345, 22],
     "PROGRESSO:/03/2024:999910": [323, 25],
-    "ESPERANÇA:/03/2024:99996": [261, 68],
+    "ESPERANÇA:/03/2024:99996": [263, 68],
     "HUMANIZAR:/03/2024:999934": [255, 58],
     "ESPETACULAR:/03/2024:99993": [248, 55],
     "VIVER:/03/2024:99992": [224, 66],
@@ -121,13 +125,6 @@ const atendimentos_ranking = {
     "EMULTI B:/03/2024:999974": [38, 39],
     "CENTRO DE ENFRENTAMENTO DA COVID-19 DE TAIOBEIRAS:/03/2024:999999": [6, 66]
   },
-  "Enfermeiro": {
-    "DANILO DA ROCHA VIANA:/03/2024:222": [-18, 62]
-  },
-  "Médico clínico": {
-    "JOAO PEDRO MARQUES MENDES CORREA:/03/2024:370": [-13, 16],
-    "BRUNA WANELLY SANTANA ARAUJO:/03/2024:847": [-1, 0]
-  },
   "Farmacêutico": {
     "PAULO SéRGIO GONçALVES DE ALCâNTARA:/03/2024:1196": [-30, 40],
     "MARLI DE SOUZA SANTOS:/03/2024:1037": [-24, 75],
@@ -135,6 +132,16 @@ const atendimentos_ranking = {
     "JAQUELINE OLIVEIRA DOS SANTOS:/03/2024:1278": [-9, 78],
     "ANGELA NEVES COSTA:/03/2024:1213": [-7, 86],
     "AMANDA ATANIELLY RIBEIRO:/03/2024:1204": [-2, 0]
+  },
+  "Nutricionista": {
+    "CAMILA RAIMUNDI LOPES ANTUNES:/03/2024:1222": [-49, 98],
+    "ROBERTA CLAVER MENDES DE OLIVEIRA:/03/2024:1262": [-20, 75]
+  },
+  "Enfermeiro": {
+    "DANILO DA ROCHA VIANA:/03/2024:222": [-18, 62]
+  },
+  "Enfermeiro sanitarista": {
+    "RUI RIBEIRO CHAGAS FILHO:/03/2024:23": [-16, 0]
   },
   "Enfermeiro da estratégia de saúde da família": {
     "FABIOLA DE OLIVEIRA LOBO:/03/2024:216": [154, 91],
@@ -173,7 +180,7 @@ const atendimentos_ranking = {
     "ADRIANA RAYSSA TELES COLARES:/03/2024:320": [-145, 82],
     "MATHEUS OLIVEIRA NOBRE ANDRADE:/03/2024:1137": [-141, 4],
     "MARIA LUIZA MARQUES BARBOSA:/03/2024:1216": [-131, 47],
-    "RAYANE DA CRUZ ALVES:/03/2024:1069": [-128, 68],
+    "RAYANE DA CRUZ ALVES:/03/2024:1069": [-130, 67],
     "ISABELLA MENDES DE OLIVEIRA:/03/2024:775": [-128, 77],
     "BRUNA GIOVANNA ABREU XAVIER:/03/2024:1221": [-127, 59],
     "LARISSA SALLES REIS CARDOSO DE Sá :/03/2024:1259": [-126, 19],
@@ -185,19 +192,12 @@ const atendimentos_ranking = {
     "ISA MATTOS ALVES:/03/2024:1016": [-50, 90],
     "AMANDA DE ALMEIDA MURTA SALES:/03/2024:1291": [-48, 13]
   },
-  "Enfermeiro sanitarista": {
-    "RUI RIBEIRO CHAGAS FILHO:/03/2024:23": [-16, 0]
-  },
   "Psicólogo clínico": {
     "RODRIGO RIBEIRO DOS SANTOS:/03/2024:1131": [-36, 0],
     "MARIANA LANZONI:/03/2024:1068": [-14, 0],
     "ERIKA BARBOSA DE OLIVEIRA:/03/2024:814": [-4, 0],
     "MARIANA KRUSCHEWSKY FRANCO RIBEIRO:/03/2024:1288": [-1, 0],
     "CLáUDIA SIMONE CUSTóDIO DUARTE:/03/2024:1286": [-1, 0]
-  },
-  "Nutricionista": {
-    "CAMILA RAIMUNDI LOPES ANTUNES:/03/2024:1222": [-49, 98],
-    "ROBERTA CLAVER MENDES DE OLIVEIRA:/03/2024:1262": [-20, 75]
   }
 }
 
