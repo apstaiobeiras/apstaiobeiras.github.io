@@ -1,4 +1,38 @@
-<!DOCTYPE html><html lang="pt_BR"><head><meta charset="utf8"/><title>Bolsa família</title><style>        /* Estilo da barra de navegação */
+<!DOCTYPE html><html lang="pt_BR"><head><meta charset="utf8"/><title>Acessar perfil</title><style>        @media print
+        {
+            .no-print, .no-print *
+            {
+                display: none !important;
+            }
+
+
+            h4
+            {
+                display: block !important;
+            }
+
+            table {
+              margin: 0  !important;
+            }
+
+
+            @page {
+                size: landscape;
+                margin: 0mm;
+            }
+
+            body  {
+            margin: 0px  !important;
+            padding: 0px  !important;
+            zoom: 94%;
+          }
+
+          .no-padding-and-margin  {
+            margin: 0px  !important;
+            padding: 0px  !important;
+          }
+        }
+      </style><style>        /* Estilo da barra de navegação */
         .navbar {
             position: fixed;
             top: 0;
@@ -31,7 +65,7 @@
         .oculto {
             display: none;
         }
-      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar"><a>Bolsa Família</a></div><h3></h3><table id="busca"><tr><td>Acompanhar pelo NIS: </td><td><input id="nis"/></td><td><button onclick="acompanhar()">Carregar família</button></td></tr><tr><td>Acompanhar pelo CNS: </td><td><input id="cns"/></td><td><button onclick="procurar(5,'cns')">Procurar</button></td></tr><tr><td>Acompanhar pelo Cód ACS: </td><td><input id="cod"/></td><td><button onclick="procurar(4,'cod')">Procurar</button></td></tr><tr><td>Acompanhar pela data de nascimento: </td><td><input id="dn" type="date"/></td><td><button onclick="procurar(4,'dn')">Procurar</button></td></tr></table><h3></h3><div><table style="overflow: hidden"><tbody id="dados_familia"></tbody></table><br/></div><button class="oculto" id="cancelar" onclick="cancelar()">Cancelar acompanhamento</button> <button class="oculto" id="salvar" onclick="salvar()">Salvar acompanhamento</button></body><script src="js/listaNIS.js"></script><script src="js/nis2familia.js"></script><script>        document.body.classList.remove('container-lg');
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="no-print"><div class="navbar"><a>Bolsa Família</a></div><h3></h3><table id="lista_dos_profissionais"></table></div><h3 class="no-print"></h3><div id="tabelas"></div><button class="oculto" id="cancelar" onclick="cancelar()">Cancelar acompanhamento</button> <button class="oculto" id="salvar" onclick="salvar()">Salvar acompanhamento</button></body><script src="js/listaNIS.js"></script><script src="js/nis2familia.js"></script><script src="js/lista-acs.js"></script><script>        document.body.classList.remove('container-lg');
 
         function cancelar(){
             document.getElementById("cancelar").classList = "oculto";
@@ -57,15 +91,17 @@
 
         
 
-        function procurar(indice,id) {
-            let valor = document.getElementById(id).value;
+        function procurar(nome,id) {
+            document.getElementById("tabelas").innerHTML = "";
 
-            if (id == "dn") {
-                let dn = document.getElementById(id).value.split("-");
-                valor = dn[2]+"/"+dn[1]+"/"+dn[0];
-            }
+            let valor = id;
+            let indice = 4;
+
+            console.log(nome,id,indice);
 
             let membros = "";
+            let conta_membros = 0;
+            let folha = 0;
 
             listaNIS.forEach(function (item){
                 if (item[indice].includes(valor)) {
@@ -74,67 +110,112 @@
                       <td>${item[0]}</td>
                       <td>${item[1]}</td>
                       <td>${item[2]}</td>
-                      <td>${item[indice]}</td>
-                      <td colspan=3><a href="#" onclick="acompanhar('${item[0]}'); return false;">Listar membros<br>dessa família</a></td>
+                      <td>____/____/________</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
                     <tr>
                     `;
-                }
-            });
 
-            document.getElementById("dados_familia").innerHTML = `
+                    conta_membros += 1;
+
+                    if (conta_membros == 18) {
+                    folha += 1;
+                      document.getElementById("tabelas").innerHTML += `
+            <table style="overflow: hidden; width: 100% !important;page-break-after: always;" class="lista-nis" id="x-${folha}">
+                          <tr>
+                <th colspan=7>${nome}</th>
+              </tr>
               <tr>
                 <th>ID Família</th>
                 <th>NIS</th>
                 <th>Nome</th>
-                <th></th>
+                <th>Data de acompanhamento</th>
+                <th>Peso</th>
+                <th>Altura</th>
+                <th>Vacinação em dia?</th>
               <tr>
               ${membros}
+            </table><h3> </h3>
             `;
-
-            document.getElementById("cancelar").classList = "";
-        }
-
-        function acompanhar(_familia) {
-            let familia = _familia || nis2familia[document.getElementById("nis").value];
-
-            if (familia == "") {
-                alert("Informe o NIS antes!");
-                return;
-            }
-
-            if (!familia) {
-                alert("NIS não encontrado no sistema");
-                return;
-            }
-
-            let membros = "";
-
-            listaNIS.forEach(function (item){
-                if (item[0] == familia) {
-                    membros += `
-                    <tr id=${item[1]}>
-                      <td>${item[1]}</td>
-                      <td>${item[2]}</td>
-                      <td>${item[3]}</td>
-                      <td colspan=3><a href="#" onclick="iniciarAcompanhamento('${item[1]}'); return false;">Acompanhar</a></td>
-                    <tr>
-                    `;
+                     conta_membros = 0;
+                      membros = "";
+                    }
                 }
             });
 
-            document.getElementById("dados_familia").innerHTML = `
+            if (membros!="") {
+            folha += 1;
+            document.getElementById("tabelas").innerHTML += `
+            <table style="overflow: hidden; width: 100% !important;page-break-after: always;" class="lista-nis" id="x-${folha}">
               <tr>
+                <th colspan=7>${nome}</th>
+              </tr>
+              <tr>
+                <th>ID Família</th>
                 <th>NIS</th>
                 <th>Nome</th>
-                <th>Data<br>nascimento</th>
+                <th>Data de acompanhamento</th>
                 <th>Peso</th>
                 <th>Altura</th>
-                <th>Data<br>acompanhamento</th>
+                <th>Vacinação em dia?</th>
               <tr>
               ${membros}
+            </table><h3> </h3>
             `;
 
-            document.getElementById("cancelar").classList = "";
-            document.getElementById("salvar").classList = "";
+            }
+
+
+            document.getElementById("x-"+folha).style="overflow: hidden; display: block !important; width: 100% !important;";
+            //document.getElementById("cancelar").classList = "";
+        }
+
+
+        let equipes = [];
+        const lista_profissionais = document.getElementById("lista_dos_profissionais");
+
+        for(let cod_acs in lista_dos_profissionais) {
+            let acs = lista_dos_profissionais[cod_acs];
+            if (!equipes[ acs[1] ]) {
+                equipes[ acs[1] ] = [];
+            }
+            equipes[ acs[1] ][ acs[2] ] = [ cod_acs, acs[0] ];
+        }
+
+        equipes = Object.keys(equipes)
+        .sort()
+        .reduce((accumulator, key) => {
+          accumulator[key] = equipes[key];
+
+          return accumulator;
+        }, {});
+
+for(let equipe in equipes) {
+            let lista_acs = equipes[equipe];
+            lista_acs = Object.keys(lista_acs)
+            .sort()
+            .reduce((accumulator, key) => {
+              accumulator[key] = lista_acs[key];
+
+              return accumulator;
+            }, {});
+
+            let table = "<table>";
+            table += "<tr><th></th><th>Nome</th><th></th></tr>"
+
+            for(let micro in lista_acs) {
+                let acs = lista_acs[micro];
+                acs[1]=acs[1].replace("'","`");
+
+                table+= `<tr class="tr">
+                           <td><b>${micro}</b></td>
+                           <td>${acs[1]}</td>
+                           <td><a href="#" onclick="procurar('${acs[1]}','${acs[0]}');window.print();return false;">🖨️Imprimir</a></td>
+                        </tr>`
+            }
+            table += "</table>";
+
+            lista_profissionais.innerHTML += `<h3>${equipe}</h3>${table}`;
         }
     </script></html>
