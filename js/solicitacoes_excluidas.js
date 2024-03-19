@@ -2240,6 +2240,7 @@ const Solicitacoes_Excluidas = [
   ["600635","806", "14919","68","<b>Solicitação Indevida: </b><br> REINSERIDO COMO RETORNO.","20231201","Consulta  urologia policlinica"],
   ["600759","770", "950","61","<b>Agendar na Atenção Primaria: </b><br>INVESTIGAÇÃO DOS SINTOMAS CLINICOS E ENCAMINHAR COM DIAGNOSTICO DIFERENCIAL ","20231129","Consulta neurologia"],
   ["600761","1193", "15415","56","<b>Procedimento agendado: </b><br>Avaliação 30/01/24 as 10:00","20240125","Fisioterapia - alteraçoes motoras"],
+  ["600827","1193", "64053","56","<b>Procedimento agendado: </b><br>Avaliação 22/03/24 as 09:00","20240319","Fisioterapia - alteraçoes motoras"],
   ["600953","770", "24294","61","Procedimento Realizado","20240129","Colonoscopia com biopsia"],
   ["600997","507", "12605","2","<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA FILA DE PRIMEIRA CONSULTA.","20231215","Retorno consulta ortopedista"],
   ["601114","1219", "24608","33","<b>Não Se Enquadra nos Criterios: </b><br>Paciente hipertenso de alto risco cardiovascular deverá ser encaminhado ao CEAE conforme protocolo de encaminhamento para Nutrição NASF-APS aprovado em 25/05/2023","20231129","Avaliaçao nutricionista e-multi"],
