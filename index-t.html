@@ -1,0 +1,129 @@
+<!DOCTYPE html><html lang="pt_BR"><head><meta charset="utf8"/><title>Acessar perfil</title><style>        /* Estilo da barra de navegação */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333; /* Cor de fundo da barra de navegação */
+            color: #fff; /* Cor do texto da barra de navegação */
+            padding: 10px 0;
+        }
+        
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+        }
+        
+        /* Adicione margem ao corpo para evitar que o conteúdo fique oculto sob a barra de navegação */
+        body {
+            margin-top: 60px; /* Ajuste conforme necessário com base na altura da sua barra de navegação */
+        }
+
+        td { 
+            text-align: left;
+        }
+
+        .left { 
+            text-align: left;
+        }
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar"><a>Acessar perfil</a></div><h3 id="cpf-banner"><br/><b>Digite o seu CPF:</b></h3><div id="cpf-input"><input id="1" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <input id="2" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <input id="3" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <span style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;">.</span> <input id="4" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <input id="5" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <input id="6" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <span style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;">.</span> <input id="7" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <input id="8" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <input id="9" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <span style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;">-</span> <input id="10" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <input id="11" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> </div><p id="erro"></p></body><script src="js/lista_profissionais.js"></script><script>
+    function makeid(length) {
+        let result = '';
+        const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+        const charactersLength = characters.length;
+        let counter = 0;
+
+        while (counter < length) {
+            result += characters.charAt(Math.floor(Math.random() * charactersLength));
+            counter += 1;
+        }
+        return result;
+    }
+
+    String.prototype.shuffle = function () {
+        var a = this.split(""),
+            n = a.length;
+    
+        for(var i = n - 1; i > 0; i--) {
+            var j = Math.floor(Math.random() * (i + 1));
+            var tmp = a[i];
+            a[i] = a[j];
+            a[j] = tmp;
+        }
+        return a.join("");
+    }
+
+    function next_input(){
+        const proximo_input = document.getElementById(parseInt(event.target.id)+1+"");
+        if (event.target.value == "") return;
+        if (proximo_input) {proximo_input.focus(); return;}
+
+        let cpf = "";
+
+        for (var i = 4; i < 10; i++) {
+            cpf += document.getElementById(i+"").value;
+        }
+        // Isabela
+        if (cpf == "227026") {
+            window.location.href=`solicitacoes.html?cod=qes&token=${token}`
+        }
+
+        if (cpf == "523676" || cpf == "086536" || cpf == "103716") {
+            const token   = (new Date()).setSeconds((new Date()).getSeconds()+30).toString(36);
+
+            window.location.href=`gestor.html?cod=les&token=${token}&mode=r1`
+            return;
+        }
+
+        if (cpf == "803381" || cpf == "993848" || cpf == "678996") {
+            let cod = "";
+
+            cod = cpf == "803381" ? 'n0' : cod;
+            cod = cpf == "993848" ? 'ij' : cod;
+            cod = cpf == "678996" ? 'lt' : cod;
+
+            const token   = (new Date()).setSeconds((new Date()).getSeconds()+30).toString(36);
+            window.location.href=`preceptoria.html?cod=${cod}&token=${token}&home_link=preceptoria.html&mode=r1`
+            return;
+        }
+
+        // Recepcionista não está no CNES
+        if (cpf == "995248") {
+            const token   = (new Date()).setSeconds((new Date()).getSeconds()+30).toString(36);
+            window.location.href=`recepcao.html?cod=les&home_link=recepcao.html&token=${token}&unidade=UAPS VEREADOR JOSE SENA&mode=r1`
+        }
+
+        // ACS não está no CNES
+        if (cpf == "775356") {
+            let   pagina  = "acs.html";
+            const cod     = "qw";
+            const unidade = "X";//listaProfissionais[cpf][2];
+            const token   = (new Date()).setSeconds((new Date()).getSeconds()+30).toString(36);
+            const modo    = "";
+
+            window.location.href=`${pagina}?cod=${cod}&token=${token}&unidade=${unidade}${modo}`
+        }
+
+        if (listaProfissionais[cpf]) {
+            let   pagina  = listaProfissionais[cpf][1];
+            const cod     = listaProfissionais[cpf][0];
+            const unidade = listaProfissionais[cpf][2];
+            const token   = (new Date()).setSeconds((new Date()).getSeconds()+30).toString(36);
+
+            pagina = pagina == "recepcionista.html" ? "recepcao.html" : pagina;
+            pagina = pagina == "recepcionista.html" ? "recepcao.html" : pagina;
+
+            const modo = pagina == "recepcao.html" ? "&mode=r1" : "";
+
+            window.location.href=`${pagina}?cod=${cod}&token=${token}&home_link=${pagina}&unidade=${unidade}${modo}`
+        }
+
+        for (var i = 1; i < 12; i++) {
+            document.getElementById(i+"").value = "";
+        }
+
+        document.getElementById("1").focus();
+        document.getElementById("erro").innerHTML = "<b>Error:</b> CPF não encontrado na base do Vivver";
+    }
+    </script></html>

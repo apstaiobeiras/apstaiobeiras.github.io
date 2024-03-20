@@ -11,6 +11,7 @@ const lista_profissionais_solicitacoes = `
 <option value="1202">ALINE NAYARA RODRIGUES</option>
 <option value="1204">AMANDA ATANIELLY RIBEIRO</option>
 <option value="1139">AMANDA AUGUSTA SANTOS</option>
+<option value="1291">AMANDA DE ALMEIDA MURTA SALES</option>
 <option value="1144">AMANDA FRóES RIBEIRO</option>
 <option value="1217">ANA CAROLINA MURTA E SOUSA</option>
 <option value="1132">ANA JULIA ROCHA BATISTA</option>
