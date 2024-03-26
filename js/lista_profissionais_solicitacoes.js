@@ -100,6 +100,7 @@ const lista_profissionais_solicitacoes = `
 <option value="1068">MARIANA LANZONI</option>
 <option value="1165">MARIETA LOPES DE OLIVEIRA NETA</option>
 <option value="1194">MARILIA FERNANDA PEREIRA MATOS</option>
+<option value="1277">MARINALVA MARTINS FERREIRA</option>
 <option value="1108">MARIVONE DE OLIVEIRA MONTEIRO</option>
 <option value="907">MARKUS THULIO ALVES GUIMARAES</option>
 <option value="1037">MARLI DE SOUZA SANTOS</option>
