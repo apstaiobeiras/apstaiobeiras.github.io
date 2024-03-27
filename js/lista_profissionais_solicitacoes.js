@@ -68,6 +68,7 @@ const lista_profissionais_solicitacoes = `
 <option value="1064">JULIA ROCHA DO CARMO</option>
 <option value="25">JUNEO SOARES DA SILVA REIS</option>
 <option value="1260">KAIO HENRIQUE PEREIRA SENA</option>
+<option value="1053">LAIS CRISTINA ALVES OLIVEIRA </option>
 <option value="1109">LANDRA GRASIELE SILVA SALDANHA</option>
 <option value="1042">LARISSA KELLY BATISTA DE FREITAS</option>
 <option value="1104">LARISSA MELO FRANCO SOUTO</option>
