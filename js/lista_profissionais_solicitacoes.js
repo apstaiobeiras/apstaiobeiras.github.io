@@ -113,6 +113,7 @@ const lista_profissionais_solicitacoes = `
 <option value="348">MAYCK ANTONIO TELES COLARES</option>
 <option value="1206">MELISSA EMANUELE MEDEIROS NUNES</option>
 <option value="1111">MICHELLE DAYANE ANTUNES DE ALMEIDA</option>
+<option value="200">MICHELLE SOARES MARQUES</option>
 <option value="1258">MICHELLY KAROLINE GONCALVES PEREIRA</option>
 <option value="987">MONICA MARTINS TEIXEIRA</option>
 <option value="740">MONICA SANTOS LOPES</option>
