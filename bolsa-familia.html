@@ -104,7 +104,8 @@
             let folha = 0;
 
             listaNIS.forEach(function (item){
-                if (item[indice].includes(valor)) {
+                let acs_possiveis = item[indice].split(":");
+                if (acs_possiveis.includes(valor) || acs_possiveis.includes("!"+valor)) {
                     membros += `
                     <tr>
                       <td>${item[0]}</td>
