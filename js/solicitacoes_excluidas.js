@@ -2020,6 +2020,7 @@ const Solicitacoes_Excluidas = [
   ["540971","1218", "13341","3","<b>Solicitação Indevida: </b><br>Paciente foi encaminhado de forma indevida e a recepção da unidade pediu para excluir da fila.","20231003","Avaliaçao nutricionista e-multi"],
   ["540978","1218", "52838","3","<b>Solicitação Indevida: </b><br>TRANSFERIDOA FILA DE AVALIAÇÃO CIRURGICA.","20231006","Consulta cirurgiao geral"],
   ["541184","1220", "20980","13","<b>Não Se Enquadra nos Criterios: </b><br>De acordo com o Protocolo de Encaminhamento para Endocrinologia CEAE Hiperdia disponível no Portal da Atenção Primária, a paciente não apresenta condições clínicas que indicam a necessidade de encaminhamento para consulta diabetes alto risco. Me coloco a disposição para discussão do caso","20231006","Consulta diabetes alto risco"],
+  ["541254","764", "68657","68","Procedimento agendado","20240424","Ultrassonografia mamaria bilateral"],
   ["541325","805", "7185","16","<b>Procedimento Realizado: </b><br>PAC VAI PAGAR O EX","20240110","Colonoscopia com biopsia"],
   ["541382","1016", "53107","8","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>NO ENCAMINHAMENTO DEVE TER O DETALHAMENTO CLÍNICO MÍNIMO DE ACORDO COM O PROTOCOLO.","20231204","Consulta oftalmologia"],
   ["541503","1069", "45598","75","<b>Não Se Enquadra nos Criterios: </b><br>A demanda é Transtorno do Espectro Autista (TEA)  deve ser encaminhada ao serviço do SERDI.","20231002"," consulta psicologia infantojuvenil"],
@@ -3953,11 +3954,13 @@ const Solicitacoes_Excluidas = [
   ["688129","1282", "6247","6","<b>Procedimento Realizado: </b><br>Realizado avaliação de elegibilidade e admitido para acompanhamento na modalidade AD2","20240422","Avaliaçao de elegibilidade - melhor em casa"],
   ["688298","1219", "39517","33","<b>Solicitação Indevida: </b><br>Erro de lançamento.","20240419","Consulta ginecologia policlinica"],
   ["688425","1204", "16115","81","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor colocar a data da realização dos exames para prosseguir com agendamento.Att.","20240419","Consulta hipertenso alto risco"],
+  ["688492","985", "59742","11","<b>: </b><br>Paciente atendido pelo estágio ","20240424","Fisioterapia - alteraçoes motoras"],
   ["688516","1193", "21412","56","<b>Procedimento Realizado: </b><br>Realizado avaliação de elegibilidade e admitido para acompanhamento na modalidade AD2","20240422","Avaliaçao de elegibilidade - melhor em casa"],
   ["688750","1258", "30977","34","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data os últimos resultados de exames bioquímicos realizados pela paciente, para prosseguir com agendamento.Att.","20240419","Consulta hipertenso alto risco"],
   ["689716","1258", "26904","34","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever os resultados da glicemia e hg realizados pela paciente com data para prosseguir com agendamento.Att.","20240423","Consulta diabetes alto risco"],
   ["689744","1258", "28280","34","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data os resultados de exames bioquímicos que o paciente realizou para prosseguir com agendamento.Att.","20240423","Consulta hipertenso alto risco"],
   ["690153","1200", "20053","10","<b>Procedimento Realizado: </b><br>Avaliado e admitido no SAD","20240423","Avaliaçao de elegibilidade - melhor em casa"],
   ["690532","1032", "74330","11","Solicitação Indevida","20240423","Fisioterapia - paciente pre ou pos"],
-  ["690686","794", "32228","16","<b>Solicitação Indevida: </b><br> ","20240423","Pequena cirurgia policlinica"]
+  ["690686","794", "32228","16","<b>Solicitação Indevida: </b><br> ","20240423","Pequena cirurgia policlinica"],
+  ["690814","986", "74192","11","<b>: </b><br>Paciente atendida pelo estágio ","20240424","Fisioterapia - paciente pre ou pos"]
 ]
