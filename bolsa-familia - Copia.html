@@ -111,24 +111,10 @@
                       <td>${item[0]}</td>
                       <td>${item[1]}</td>
                       <td>${item[2]}</td>
-                      <td><input type="date" style="min-width: 200px;"></td>
-                      <td><input type="number" style="max-width: 72px;"></td>
-                      <td><input type="number" style="max-width: 72px;"></td>
-                      <td>
-                      <select style="max-width: 150px;">
-                      <option value="" selected="selected">Selecione</option>
-                      <option value="0">Sim</option>
-<option value="1">Condições de saúde que impedem a ida à UBS</option>
-<option value="2">Fatos que impedem o deslocamento/acesso à UBS (enchente, falta de transporte, violência no território, etc.)</option>
-<option value="3">Horário de atendimento na UBS inviável para o(a) responsável/beneficiário(a).</option>
-<option value="4">Responsável/Beneficiário(a) não cumpriu as condicionalidades por questões sociais, culturais, étnicas ou religiosas.</option>
-<option value="9">Houve recusa em realizar o acompanhamento das condicionalidades dentro da rotina de Atenção Básica de Saúde.</option>
-<option value="10">Indícios de situação de risco social tal como negligência, abuso sexual, violência intrafamiliar ou outras.</option>
-<option value="11">Responsável/Beneficiário(a) afirma que a  não é mais do programa.</option>
-<option value="12">Criança com condição específica de saúde que necessita de vacina especial (CRIE)</option>
-<option value="13">Falta de oferta de vacina ou de insumos necessários para vacinação (seringas, luvas, algodão, etc.)</option>
-</select>
-                      </td>
+                      <td>____/____/________</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
                     <tr>
                     `;
 
@@ -226,7 +212,7 @@ for(let equipe in equipes) {
                 table+= `<tr class="tr">
                            <td><b>${micro}</b></td>
                            <td>${acs[1]}</td>
-                           <td><a href="#" onclick="procurar('${acs[1]}','${acs[0]}');return false;">🖨️Imprimir</a></td>
+                           <td><a href="#" onclick="procurar('${acs[1]}','${acs[0]}');window.print();return false;">🖨️Imprimir</a></td>
                         </tr>`
             }
             table += "</table>";

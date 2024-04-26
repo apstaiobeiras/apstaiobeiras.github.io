@@ -138,6 +138,7 @@ const lista_profissionais_solicitacoes = `
 <option value="351">RONUARLLEY SILVA MARQUES</option>
 <option value="894">ROSIANE VIEIRA DE SA</option>
 <option value="785">SAMARA FRANTHEISCA ALMEIDA BARBOSA</option>
+<option value="1289">SANDRO MARTINS RIBEIRO</option>
 <option value="1138">SUELY ALVES DA SILVA</option>
 <option value="1115">TATIANE SOUSA GOMES</option>
 <option value="84">TAYSA CRISTINA CARDOSO FREITAS</option>
