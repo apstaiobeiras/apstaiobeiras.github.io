@@ -58,7 +58,7 @@
         table {
             width: 100%!important;
         }
-      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar" onclick="backlink();"><a><span id="cod">360</span> - <span id="nome">EDMAR ROCHA ALMEIDA</span></a></div><h3></h3><table><tr class="tr" onclick="gotoPage('solicitacoes.html')"><td><img src="assets/img/solicitacoes.png" width="96"/></td><td><b>Solicitações de procedimento excluidas</b><br>Lista das solicitações excluídas feitas na unidade com motivo e explicação</td></tr><tr class="tr" onclick="gotoPage('agendados.html')"><td><img src="assets/img/agendados.png" width="96"/></td><td><b>Pacientes agendados</b><br>Veja os pacientes com atendimento especializados agendados para os próximos dias</td></tr><tr class="tr" onclick="gotoPage('equipe_indicadores-esus.html')"><td><img src="assets/img/indicadores.jpg" width="96"/></td><td><b>Indicadores Previne Brasil</b><br>Veja como estão os indicadores e-SUS da sua equipe</td></tr></table><div id="lista_dos_profissionais"></div><h3>Lista dos ACEs</h3><div id="lista_dos_ace"></div></body><script src="js/lista_ace_tabela.js"></script><script src="js/goto.js"></script><script src="js/lista-acs.js"></script><script src="js/enfermeiros_esf.js"></script><script src="js/nomes_profissionais.js"></script><script>const visitas_realizadas = [null];</script><script src="js/visitas.js"></script><script>        let cod_profissional = null;
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar" onclick="backlink();"><a><span id="micro">360</span> - <span id="profissional">EDMAR ROCHA ALMEIDA</span></a></div><h3></h3><table><tr class="tr" onclick="gotoPage('solicitacoes.html')"><td><img src="assets/img/solicitacoes.png" width="96"/></td><td><b>Solicitações de procedimento excluidas</b><br>Lista das solicitações excluídas feitas na unidade com motivo e explicação</td></tr><tr class="tr" onclick="gotoPage('agendados.html')"><td><img src="assets/img/agendados.png" width="96"/></td><td><b>Pacientes agendados</b><br>Veja os pacientes com atendimento especializados agendados para os próximos dias</td></tr><tr class="tr" onclick="gotoPage('equipe_indicadores-esus.html')"><td><img src="assets/img/indicadores.jpg" width="96"/></td><td><b>Indicadores Previne Brasil</b><br>Veja como estão os indicadores e-SUS da sua equipe</td></tr></table><div id="lista_dos_profissionais"></div><hr/><h3>ACE</h3><div id="lista_dos_ace"></div></body><script src="js/lista_ace_tabela.js"></script><script src="js/goto.js"></script><script src="js/lista-acs.js"></script><script src="js/lista_equipes.js"></script><script src="js/nomes_profissionais.js"></script><script>const visitas_realizadas = [null];</script><script src="js/visitas.js"></script><script>        let cod_profissional = null;
         (() => {
         const data_atual = (new Date()).getTime();
         
@@ -73,27 +73,15 @@
         cod_profissional = parseInt((new URLSearchParams(window.location.search)).get('cod'), 36);
 
         })()
-    </script><script>        if (nomeProfissional[cod_profissional]) {
-            document.getElementById("nome").textContent = nomeProfissional[cod_profissional];
-        }
+    </script><script>
 
-        colore_percentual = (percentual,meta) => {
-            console.log(percentual);
-            if ((40*meta)/100 > percentual) {
-                return "#F6CCCC";
-            }
-    
-            if ((69*meta)/100 > percentual) {
-                return "#F7CCA0";
-            }
-    
-            if (100 > percentual) {
-                return"#B4E2CE";
-            }
-    
-            return "#9FC1E3";
-        }
+    // Cabeçalho
 
+    document.getElementById("micro").textContent = cod_profissional;
+    document.getElementById("profissional").textContent = nomeProfissional[cod_profissional];
+
+
+    </script><script>
         let equipes = [];
         const lista_profissionais = document.getElementById("lista_dos_profissionais");
         const lista_ace = document.getElementById("lista_dos_ace");
@@ -124,10 +112,12 @@
               return accumulator;
             }, {});
 
-            if (!enfermeiros_esf[parseInt((new URLSearchParams(window.location.search)).get('cod'), 36)].includes(equipe)) continue;
+            equipe = equipe.replace("SAÙDE","SAÚDE");
+
+            if (!equipe_profissional[parseInt((new URLSearchParams(window.location.search)).get('cod'), 36)].includes(equipe)) continue;
 
             let table = "<table>";
-            table += "<tr><th></th><th>Nome</th><th>Famílias</th><th>Cobertura</th><th>Ausências</th></tr>"
+            //table += "<tr><th></th><th>Nome</th></tr>"
 
             for(let micro in lista_acs) {
                 let acs = lista_acs[micro];
@@ -142,17 +132,12 @@
                 let cobertura = visitas_realizadas[i][acs[0] ][9];
                 let ausencias = visitas_realizadas[i][acs[0] ][10];
 
-                //let cor_cobertura = colore_percentual(parseInt(ausencias.replace(",",".")*100),100);
-
                 ausencias = parseInt(ausencias.replace(",",".")*100)+"%";
                 cobertura = parseInt(cobertura.replace(",",".")*100)+"%";
 
                 table+= `<tr class="tr" onclick="bypassCPF('acs.html','${(parseInt(acs[0]).toString(36))}')">
                            <td><b>${micro}</b></td>
                            <td>${acs[1]}</td>
-                           <td class="right">${familias}</td>
-                           <td class="right">${cobertura}</td>
-                           <td class="right">${ausencias}</td>
                         </tr>`
             }
             table += "</table>";
@@ -164,8 +149,9 @@
 
         for (let ace of document.getElementsByClassName('ace')) {
             let equipe = ace.getAttribute("name");
-            if (!enfermeiros_esf[parseInt((new URLSearchParams(window.location.search)).get('cod'), 36)].includes(equipe)) {
-                ace.style.display = "none";
+            if (!equipe_profissional[parseInt((new URLSearchParams(window.location.search)).get('cod'), 36)].includes(equipe)) {
+                ace.style.display = "none";//
             }
+            ace.children[1].innerHTML += "       ";
         }
     </script></html>

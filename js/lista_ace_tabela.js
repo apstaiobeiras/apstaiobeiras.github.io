@@ -1,8 +1,5 @@
 const lista_dos_ace1 = `
   <table>
-    <tr>
-      <th></th><th>Nome ACE</th>
-    </tr>
     <tr class="tr ace" name="ACOLHER" onclick="bypassCPF('relatorio-visitas-por-dia-por-imovel.html','w1')">
       <td><b>---</b></td>
       <td>Daniel de Jesus</td>

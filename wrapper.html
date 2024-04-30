@@ -81,33 +81,10 @@
             return;
         }
 
-        if (cpf == "803381" || cpf == "993848" || cpf == "678996") {
-            let cod = "";
-
-            cod = cpf == "803381" ? 'n0' : cod;
-            cod = cpf == "993848" ? 'ij' : cod;
-            cod = cpf == "678996" ? 'lt' : cod;
-
-            const token   = (new Date()).setSeconds((new Date()).getSeconds()+30).toString(36);
-            window.location.href=`preceptoria.html?cod=${cod}&token=${token}&home_link=preceptoria.html&mode=r1`
-            return;
-        }
-
         // Recepcionista não está no CNES
         if (cpf == "995248") {
             const token   = (new Date()).setSeconds((new Date()).getSeconds()+30).toString(36);
             window.location.href=`recepcao.html?cod=les&home_link=recepcao.html&token=${token}&unidade=UAPS VEREADOR JOSE SENA&mode=r1`
-        }
-
-        // ACS não está no CNES
-        if (cpf == "775356") {
-            let   pagina  = "acs.html";
-            const cod     = "qw";
-            const unidade = "X";//listaProfissionais[cpf][2];
-            const token   = (new Date()).setSeconds((new Date()).getSeconds()+30).toString(36);
-            const modo    = "";
-
-            window.location.href=`${pagina}?cod=${cod}&token=${token}&unidade=${unidade}${modo}`
         }
 
         if (listaProfissionais[cpf]) {
