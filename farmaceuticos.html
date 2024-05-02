@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="pt_BR"><head><meta charset="utf8"/><title>Gestor da APS</title><style>        /* Estilo da barra de navegação */
+<!DOCTYPE html><html lang="pt_BR"><head><meta charset="utf8"/><title>Perfil do profissional</title><style>        /* Estilo da barra de navegação */
         .navbar {
             position: fixed;
             top: 0;
@@ -8,7 +8,6 @@
             color: #fff; /* Cor do texto da barra de navegação */
             padding: 10px 0;
             cursor: pointer!important;
-            z-index: 99999999;
         }
         
         .navbar a {
@@ -22,30 +21,6 @@
             margin-top: 60px; /* Ajuste conforme necessário com base na altura da sua barra de navegação */
         }
 
-        .right {
-            text-align: right;
-        }
-
-        .neutro {
-            background: #DFE2E5;
-        }
-
-        .ruim {
-            background: #ea9999!important;
-        }
-
-        .razoavel {
-            background: #f7cca0!important;
-        }
-
-        .proximo {
-            background: #b6d7a8!important;
-        }
-
-        .atingiu {
-            background: #9fc5e8!important;
-        }
-
         .tr:hover {
             background: #DFE2E5!important;
             cursor: pointer!important;
@@ -54,11 +29,7 @@
         .tr:pressed {
             background: #9FA1A3!important;
         }
-
-        table {
-            width: 100%!important;
-        }
-      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar" onclick="backlink();"><a><span id="cod">360</span> - <span id="nome">EDMAR ROCHA ALMEIDA</span></a></div><h3></h3><div id="lista_dos_profissionais"></div></body><script src="js/goto.js"></script><script src="js/lista-acs.js"></script><script src="js/farmaceuticos_esf.js"></script><script src="js/nomes_profissionais.js"></script><script>const visitas_realizadas = [null];</script><script src="js/visitas.js"></script><script>        let cod_profissional = null;
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar" onclick="backlink();"><a><span id="micro">00</span> - <span id="profissional">Nome do Agente Comuitário de Saúde</span></a></div><h3>Relatórios</h3><table><tr class="tr" onclick="gotoPage('equipe_indicadores-esus.html')"><td><img src="assets/img/indicadores.jpg" width="96"/></td><td><b>Indicadores Previne Brasil</b><br>Veja como estão os indicadores e-SUS da sua equipe</td></tr></table><div id="lista_dos_profissionais"></div><hr/><h3>ACE</h3><div id="lista_dos_ace"></div></body><script src="js/lista_ace_tabela.js"></script><script src="js/goto.js"></script><script src="js/nomes_profissionais.js"></script><script src="js/lista-acs.js"></script><script src="js/lista_equipes.js"></script><script>const visitas_realizadas = [null];</script><script src="js/visitas.js"></script><script>        let cod_profissional = null;
         (() => {
         const data_atual = (new Date()).getTime();
         
@@ -71,31 +42,19 @@
         
         if (!(new URLSearchParams(window.location.search)).get('cod')) window.location.href="index.html";
         cod_profissional = parseInt((new URLSearchParams(window.location.search)).get('cod'), 36);
-
         })()
-    </script><script>        if (nomeProfissional[cod_profissional]) {
-            document.getElementById("nome").textContent = nomeProfissional[cod_profissional];
-        }
+    </script><script>
 
-        colore_percentual = (percentual,meta) => {
-            console.log(percentual);
-            if ((40*meta)/100 > percentual) {
-                return "#F6CCCC";
-            }
-    
-            if ((69*meta)/100 > percentual) {
-                return "#F7CCA0";
-            }
-    
-            if (100 > percentual) {
-                return"#B4E2CE";
-            }
-    
-            return "#9FC1E3";
-        }
+    // Cabeçalho
 
+    document.getElementById("micro").textContent = cod_profissional;
+    document.getElementById("profissional").textContent = nomeProfissional[cod_profissional];
+
+
+    </script><script>
         let equipes = [];
         const lista_profissionais = document.getElementById("lista_dos_profissionais");
+        const lista_ace = document.getElementById("lista_dos_ace");
 
         for(let cod_acs in lista_dos_profissionais) {
             let acs = lista_dos_profissionais[cod_acs];
@@ -123,10 +82,12 @@
               return accumulator;
             }, {});
 
-            if (!farmaceuticos_esf[parseInt((new URLSearchParams(window.location.search)).get('cod'), 36)].includes(equipe)) continue;
+            equipe = equipe.replace("SAÙDE","SAÚDE");
+
+            if (!equipe_profissional[parseInt((new URLSearchParams(window.location.search)).get('cod'), 36)].includes(equipe)) continue;
 
             let table = "<table>";
-            table += "<tr><th></th><th>Nome</th><th>Famílias</th><th>Cobertura</th><th>Ausências</th></tr>"
+            //table += "<tr><th></th><th>Nome</th></tr>"
 
             for(let micro in lista_acs) {
                 let acs = lista_acs[micro];
@@ -141,21 +102,26 @@
                 let cobertura = visitas_realizadas[i][acs[0] ][9];
                 let ausencias = visitas_realizadas[i][acs[0] ][10];
 
-                //let cor_cobertura = colore_percentual(parseInt(ausencias.replace(",",".")*100),100);
-
                 ausencias = parseInt(ausencias.replace(",",".")*100)+"%";
                 cobertura = parseInt(cobertura.replace(",",".")*100)+"%";
 
                 table+= `<tr class="tr" onclick="bypassCPF('acs.html','${(parseInt(acs[0]).toString(36))}')">
                            <td><b>${micro}</b></td>
                            <td>${acs[1]}</td>
-                           <td class="right">${familias}</td>
-                           <td class="right">${cobertura}</td>
-                           <td class="right">${ausencias}</td>
                         </tr>`
             }
             table += "</table>";
 
             lista_profissionais.innerHTML += `<h3>${equipe}</h3>${table}`;
+        }
+
+        lista_ace.innerHTML = lista_dos_ace1;
+
+        for (let ace of document.getElementsByClassName('ace')) {
+            let equipe = ace.getAttribute("name");
+            if (!equipe_profissional[parseInt((new URLSearchParams(window.location.search)).get('cod'), 36)].includes(equipe)) {
+                ace.style.display = "none";//
+            }
+            ace.children[1].innerHTML += "       ";
         }
     </script></html>
