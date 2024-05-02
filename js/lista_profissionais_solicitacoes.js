@@ -108,6 +108,7 @@ const lista_profissionais_solicitacoes = `
 <option value="1108">MARIVONE DE OLIVEIRA MONTEIRO</option>
 <option value="907">MARKUS THULIO ALVES GUIMARAES</option>
 <option value="1037">MARLI DE SOUZA SANTOS</option>
+<option value="1306">MATEUS VASCONCELOS DOS SANTOS</option>
 <option value="1073">MATHEUS FERREIRA GOMES</option>
 <option value="794">MATHEUS MENDES CUSTODIO</option>
 <option value="1137">MATHEUS OLIVEIRA NOBRE ANDRADE</option>
