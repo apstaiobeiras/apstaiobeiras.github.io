@@ -5,6 +5,7 @@ function backlink() {
     let unidade        = (new URLSearchParams(window.location.search)).get('unidade');
     let path           = ((new URLSearchParams(window.location.search)).get('path'));
     let cod_path       = (((new URLSearchParams(window.location.search)).get('cod_path')) || "");
+    let pagina       = (((new URLSearchParams(window.location.search)).get('pagina')) || "up");
 
     if (!path) {
         window.location.href = `index.html`;
@@ -25,7 +26,7 @@ function backlink() {
         return
     }
 
-    window.location.href = `${back_page}?cod=${cod}&token=${token}&mode=${mode}&unidade=${unidade}&cod_path=${cod_array.join("/")}&path=${path_array.reverse().join("/")}`;
+    window.location.href = `${back_page}?cod=${cod}&token=${token}&mode=${mode}&unidade=${unidade}&cod_path=${cod_array.join("/")}&path=${path_array.reverse().join("/")}&pagina=${pagina}`;
 }
 
 function gotoPage(page,nargs) {
@@ -36,8 +37,9 @@ function gotoPage(page,nargs) {
     let unidade   = (new URLSearchParams(window.location.search)).get('unidade');
     let path      = ((new URLSearchParams(window.location.search)).get('path') || window.location.pathname.split("/").reverse()[0])+"/"+page;
     let cod_path  = (((new URLSearchParams(window.location.search)).get('cod_path')) || "")+"/"+cod;
+    let pagina       = (((new URLSearchParams(window.location.search)).get('pagina')) || "up");
 
-    window.location.href = `${page}?cod=${cod}&token=${token}&mode=${mode}&unidade=${unidade}&cod_path=${cod_path}&path=${path}${args}`;
+    window.location.href = `${page}?cod=${cod}&token=${token}&mode=${mode}&unidade=${unidade}&cod_path=${cod_path}&path=${path}${args}&pagina=${pagina}`;
 }
 
 function bypassCPF(page,new_cod,unidade){
@@ -46,6 +48,7 @@ function bypassCPF(page,new_cod,unidade){
     let mode      = (new URLSearchParams(window.location.search)).get('mode');
     let path      = ((new URLSearchParams(window.location.search)).get('path') || window.location.pathname.split("/").reverse()[0])+"/"+page;
     let cod_path  = ((new URLSearchParams(window.location.search)).get('cod_path') || cod)+ "/"+cod;
+    let pagina       = (((new URLSearchParams(window.location.search)).get('pagina')) || "up");
 
-    window.location.href = `${page}?cod=${new_cod}&token=${token}&mode=${mode}&unidade=${unidade}&cod_path=${cod_path}&path=${path}`;
+    window.location.href = `${page}?cod=${new_cod}&token=${token}&mode=${mode}&unidade=${unidade}&cod_path=${cod_path}&path=${path}&pagina=${pagina}`;
 }
