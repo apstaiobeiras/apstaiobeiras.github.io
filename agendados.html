@@ -67,20 +67,15 @@
 
             let unidade = document.getElementById("unidade").value;
             let unidades = [];
+            let endereco = "";
 
+            document.getElementById("codigo_profissional").innerHTML = parseInt((new URLSearchParams(window.location.search)).get('cod'), 36);
+            document.getElementById("profissional").innerHTML = nomeProfissional[parseInt((new URLSearchParams(window.location.search)).get('cod'), 36)];
      
 
             if ((new URLSearchParams(window.location.search)).get('path').indexOf("recepcao.html") == -1) {
-                profissional = document.getElementById("lista-profissional").value = parseInt((new URLSearchParams(window.location.search)).get('cod'), 36);
-
-                document.getElementById("feitas-por").style.display = "none";
-                document.getElementById("lista-profissional").style.display = "none";
-
-                document.getElementById("codigo_profissional").innerHTML = parseInt((new URLSearchParams(window.location.search)).get('cod'), 36);
-                document.getElementById("profissional").innerHTML = nomeProfissional[parseInt((new URLSearchParams(window.location.search)).get('cod'), 36)];
+                endereco = '<span style="white-space: nowrap;">PSF</span>';
             }
-
-
 
             if ((new URLSearchParams(window.location.search)).get('mode')) {
                 let modo = (new URLSearchParams(window.location.search)).get('mode');
@@ -110,7 +105,8 @@
                 if (data_solicitacao>data_final||data_solicitacao<data_inicial) continue;
 
                 if (!unidades.includes(solicitacao[9])) continue;
-                console.log(solicitacao[9]);
+                if (endereco != "" && solicitacao[8] != endereco) continue;
+
 
                 let equipe = solicitacao[1].split(";")[0];
 
