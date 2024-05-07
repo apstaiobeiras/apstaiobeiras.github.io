@@ -28,7 +28,7 @@
         .left { 
             text-align: left;
         }
-      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar" onclick="backlink();"><a><span id="codigo_profissional">0000</span> - <span id="profissional">Todos os profissionais</span></a></div><h3>Solicitações excluidas - Total <span id="total">0</span></h3><h5>Atualizado em <span id="atualizacao"></span></h5><div><label>Do dia: <input id="data_inicial" max="2023-12-31" min="2023-01-01" type="date" value="2023-01-01"/></label> <label> até o dia <input id="data_final" max="2023-12-31" min="2023-01-01" type="date" value="2023-12-31"/></label><span id="de"> de </span><select id="unidade" style="max-width: 300px !important;"></select><span id="feitas-por"> feitas por </span><select id="lista-profissional" style="max-width: 300px !important;"></select> <button onclick="filtra()">Filtrar</button><div id="x" v="false"></div></div><br/><table><tbody id="solicitacoes"></tbody></table><br/></body><script src="js/solicitacoes_excluidas.js"></script><script src="js/lista_profissionais_solicitacoes.js"></script><script src="js/lista_unidades_solicitacoes.js"></script><script src="js/goto.js"></script><script>        let cod_profissional = null;
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar" onclick="backlink();"><a><span id="codigo_profissional">0000</span> - <span id="profissional">Todos os profissionais</span></a></div><h3>Solicitações excluidas - Total <span id="total">0</span></h3><h5>Atualizado em <span id="atualizacao"></span></h5><div><label>Do dia: <input id="data_inicial" max="2023-12-31" min="2023-01-01" type="date" value="2023-01-01"/></label> <label> até o dia <input id="data_final" max="2023-12-31" min="2023-01-01" type="date" value="2023-12-31"/></label><span id="de"> de </span><select id="unidade" style="max-width: 300px !important;"></select><span id="feitas-por"> feitas por </span><select id="lista-profissional" style="max-width: 300px !important;"></select> <button onclick="filtra()">Filtrar</button><div id="x" v="false"></div></div><br/><table><tbody id="solicitacoes"></tbody></table><br/></body><script src="js/solicitacoes_excluidas.js"></script><script src="js/lista_profissionais_solicitacoes.js"></script><script src="js/lista_unidades_solicitacoes.js"></script><script src="js/nomes_profissionais.js"></script><script src="js/lista_profissionais.js"></script><script src="js/esf2cod.js"></script><script src="js/goto.js"></script><script>        let cod_profissional = null;
         (() => {
         const data_atual = (new Date()).getTime();
         
@@ -53,56 +53,30 @@
             let unidade = document.getElementById("unidade").value;
             let profissional = document.getElementById("lista-profissional").value;
 
-            if ((new URLSearchParams(window.location.search)).get('cod') && (new URLSearchParams(window.location.search)).get('mode') == "null" && (new URLSearchParams(window.location.search)).get('old_cod') == "null") {
-                profissional = parseInt((new URLSearchParams(window.location.search)).get('cod'), 36);
-                document.getElementById("lista-profissional").value = profissional;
-                document.getElementById("codigo_profissional").textContent = profissional;
 
-                document.getElementById("profissional").textContent = document.getElementById("lista-profissional").options[document.getElementById("lista-profissional").selectedIndex].text
+            if ((new URLSearchParams(window.location.search)).get('path').indexOf("recepcao.html") == -1) {
+                profissional = document.getElementById("lista-profissional").value = parseInt((new URLSearchParams(window.location.search)).get('cod'), 36);
 
-                document.getElementById("unidade").style.display = "none";
-                document.getElementById("lista-profissional").style.display = "none";
-                document.getElementById("de").style.display = "none";
-                document.getElementById("feitas-por").style.display = "none";
-            }
-
-            const unidades = [unidade];
-
-            document.getElementById("lista-profissional").value = parseInt((new URLSearchParams(window.location.search)).get('cod'), 36);
-
-            if (document.getElementById("lista-profissional").value != "") {
                 document.getElementById("feitas-por").style.display = "none";
                 document.getElementById("lista-profissional").style.display = "none";
-            } else {
-                document.getElementById("lista-profissional").value = "";
+
+                document.getElementById("codigo_profissional").innerHTML = parseInt((new URLSearchParams(window.location.search)).get('cod'), 36);
+                document.getElementById("profissional").innerHTML = nomeProfissional[parseInt((new URLSearchParams(window.location.search)).get('cod'), 36)];
             }
 
             if ((new URLSearchParams(window.location.search)).get('mode')) {
                 let modo = (new URLSearchParams(window.location.search)).get('mode');
 
-                if (modo=="r1" || (new URLSearchParams(window.location.search)).get('old_cod') !== "null") {
+                if (modo=="r1") {
+                    document.getElementById("codigo_profissional").innerHTML = parseInt((new URLSearchParams(window.location.search)).get('cod'), 36);
+                    document.getElementById("profissional").innerHTML = nomeProfissional[parseInt((new URLSearchParams(window.location.search)).get('cod'), 36)];
+
+                    document.getElementById("unidade").value = esf2codigoUnidade[listaProfissionais[(new URLSearchParams(window.location.search)).get('cod')][2] ];
+
+                    unidade = document.getElementById("unidade").value
+
                     document.getElementById("de").style.display = "none";
                     document.getElementById("unidade").style.display = "none";
-
-                    unidades.pop();
-                    unidade = "x";
-
-                    let unidade_parametro = (new URLSearchParams(window.location.search)).get('unidade');
-                    document.getElementById("profissional").textContent = unidade_parametro;
-                    document.getElementById("codigo_profissional").textContent = profissional;
-
-                    for (option of document.getElementById("unidade").children) {
-                        let valor = option.value;
-                        let nome = option.textContent.replace("ED.","EDUCADOR")
-                                                     .replace("FIS.","FISICO")
-                                                     .replace("ENFERMARIA MARY ","ENFERMEIRA MARY ")
-                                                     .replace("MARY TATIANE ANTONIO","MARY TATIANE ANTUNES LOPES");
-                        console.log(nome);
-
-                        if (nome.startsWith(unidade_parametro)) {
-                            unidades.push(valor);
-                        }
-                    }
                 }
             }
 
@@ -115,8 +89,6 @@
 
                 if (unidade != "" && unidade != solicitacao[3] && unidade != "x") continue;
                 if (profissional != "" && solicitacao[1] != profissional) continue;
-
-                if (!unidades.includes(solicitacao[3]) && unidade == "x") continue;
 
 
                 const linha = document.createElement("tr");

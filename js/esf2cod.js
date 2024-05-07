@@ -1,0 +1,16 @@
+const esf2codigoUnidade = [];
+esf2codigoUnidade['ACOLHER'] = '8';
+esf2codigoUnidade['CAMINHO'] = '56';
+esf2codigoUnidade['COMUNIDADES RURAIS'] = '33';
+esf2codigoUnidade['ESPERANÇA'] = '6';
+esf2codigoUnidade['ESPETACULAR'] = '3';
+esf2codigoUnidade['HARMONIA'] = '4';
+esf2codigoUnidade['HUMANIZAR'] = '34';
+esf2codigoUnidade['LIBERDADE'] = '81';
+esf2codigoUnidade['MAIS SAUDE'] = '75';
+esf2codigoUnidade['PROGRESSO'] = '10';
+esf2codigoUnidade['RENASCER'] = '9';
+esf2codigoUnidade['UNIAO'] = '78';
+esf2codigoUnidade['VIDA'] = '13';
+esf2codigoUnidade['VIDA E SAUDE'] = '7';
+esf2codigoUnidade['VIVER'] = '2';

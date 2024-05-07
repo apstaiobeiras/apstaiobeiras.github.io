@@ -24,6 +24,7 @@ const lista_profissionais_solicitacoes = `
 <option value="1221">BRUNA GIOVANNA ABREU XAVIER</option>
 <option value="786">BRUNNA THAIS COSTA</option>
 <option value="667">CAMILA DRIELLY CRUZ COSTA</option>
+<option value="87">CAMILLA CALDEIRA CARDOSO</option>
 <option value="1032">CAMILLA RODRIGUES FONSECA</option>
 <option value="1192">CARLOS FERNANDO DE SOUZA JUNIOR</option>
 <option value="748">CLAUDIO DO PRADO BARBOSA</option>
