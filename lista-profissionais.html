@@ -103,6 +103,8 @@
           return accumulator;
         }, {});
 
+        let modo_lista = (new URLSearchParams(window.location.search)).get('modo_lista');
+
         for(let equipe in equipes) {
             //if (!equipe.startsWith("UAPS") && equipe != "Preceptoria") continue;
 
@@ -128,7 +130,15 @@
 
             if (table!='<table></table>'){
                 equipe = equipe.replace("ENFERMEIRA","ENF.");
+
+                equipe = modo_lista == "primeiro" ? "Preceptores(as)" : equipe;
                 document.getElementById("lista_dos_profissionais").innerHTML += `<h3>${equipe}</h3>${table}`;
+
+                if (modo_lista == "primeiro") {
+                    break
+                }
             }
+
+            
         }
     </script></html>

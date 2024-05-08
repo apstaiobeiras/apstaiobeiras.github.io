@@ -27,7 +27,7 @@
         .left { 
             text-align: left;
         }
-      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar"><a>Acessar perfil</a></div><h3 id="cpf-banner"><br/><b>Digite o seu CPF:</b></h3><div id="cpf-input"><input id="1" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <input id="2" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <input id="3" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <span style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;">.</span> <input id="4" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <input id="5" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <input id="6" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <span style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;">.</span> <input id="7" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <input id="8" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <input id="9" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <span style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;">-</span> <input id="10" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <input id="11" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> </div><p id="erro"></p></body><script src="js/lista_profissionais.js"></script><script>
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar"><a>Acessar perfil</a></div><h3 id="cpf-banner"><br/><b>Digite o seu CPF:</b></h3><div id="cpf-input"><input id="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <input id="2" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <input id="3" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <span style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;">.</span> <input id="4" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <input id="5" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <input id="6" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <span style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;">.</span> <input id="7" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <input id="8" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <input id="9" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <span style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;">-</span> <input id="10" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> <input id="11" maxlength="1" onkeyup="next_input()" style="text-align:center;min-height:24pt;max-width:40pt;font-size: 18pt;"/> </div><p id="erro"></p></body><script src="js/lista_profissionais.js"></script><script>
     function makeid(length) {
         let result = '';
         const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
@@ -59,6 +59,15 @@
             event.target.value == "";
             document.getElementById(parseInt(event.target.id)-1+"").focus();
         }
+
+        if (event.target.value.length>1) {
+            for(var i = 0; i <= 11; i++) {
+                console.log(event.target.value);
+            }
+            return false;
+        }
+
+
 
         const proximo_input = document.getElementById(parseInt(event.target.id)+1+"");
         if (event.target.value == "") return;
