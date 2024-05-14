@@ -1003,10 +1003,10 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>CLECIVANIA RODRIGUES DE OLIVEIRA</td>
     <td style="text-align: center;">🔴</td>
     <td style="text-align: center;">🔴</td>
-  </tr><tr class="548 UNIAO 0-varicela 0-triplice 0">
+  </tr><tr class="548 UNIAO 0-varicela 0-triplice 1">
     <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/88055/?workMode=wmBrowse" target=_blank>68888</a></td>
     <td>Ayla Sophia Santos Rocha</td>
-    <td>0 anos e 0 meses</td>
+    <td>1 ano e 0 meses</td>
     <td>11/05/2023</td>
     <td>GEISIANE CARVALHO</td>
     <td style="text-align: center;">🔴</td>
@@ -1315,7 +1315,7 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>DARLENE MARIA PEREIRA</td>
     <td style="text-align: center;">🟡</td>
     <td style="text-align: center;">🔴</td>
-  </tr><tr class="515 ACOLHER 0-varicela 0-triplice 0">
+  </tr><tr class="515 ACOLHER 0-varicela 0-triplice 1">
     <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/87988/?workMode=wmBrowse" target=_blank>68885</a></td>
     <td>Celia Lima de Souza</td>
     <td>1 ano e 0 meses</td>
@@ -1345,14 +1345,6 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>1 ano e 7 meses</td>
     <td>14/10/2022</td>
     <td>ILCA ANTUNIS DA SILVA</td>
-    <td style="text-align: center;">🟢</td>
-    <td style="text-align: center;">🟢</td>
-  </tr><tr class="493 VIVER 1-varicela 2-triplice 1">
-    <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/62919/?workMode=wmBrowse" target=_blank>61796</a></td>
-    <td>Clarice Caldeira Cardoso</td>
-    <td>1 ano e 0 meses</td>
-    <td>12/05/2022</td>
-    <td>ELIANE PEREIRA FREITAS</td>
     <td style="text-align: center;">🟢</td>
     <td style="text-align: center;">🟢</td>
   </tr><tr class="301 UNIAO 0-varicela 0-triplice 0">
@@ -1931,7 +1923,7 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>JESSICA ANA DE JESUS</td>
     <td style="text-align: center;">🟡</td>
     <td style="text-align: center;">🔴</td>
-  </tr><tr class="1120 ESPERANÇA 0-varicela 0-triplice 0">
+  </tr><tr class="1120 ESPERANÇA 0-varicela 0-triplice 1">
     <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/88122/?workMode=wmBrowse" target=_blank>68892</a></td>
     <td>Felipe Mikael Costa Miranda</td>
     <td>1 ano e 0 meses</td>
@@ -2659,14 +2651,6 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>MARTA BARBOSA DE OLIVEIRA</td>
     <td style="text-align: center;">🟢</td>
     <td style="text-align: center;">🔴</td>
-  </tr><tr class="1135 LIBERDADE 1-varicela 2-triplice 1">
-    <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/62787/?workMode=wmBrowse" target=_blank>61672</a></td>
-    <td>Isadora Teixeira da Silva</td>
-    <td>1 ano e 0 meses</td>
-    <td>14/05/2022</td>
-    <td>LUANA RODRIGUES DE OLIVEIRA</td>
-    <td style="text-align: center;">🟢</td>
-    <td style="text-align: center;">🟢</td>
   </tr><tr class="802 HUMANIZAR 1-varicela 2-triplice 1">
     <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/71801/?workMode=wmBrowse" target=_blank>65764</a></td>
     <td>Isadora de Jesus Alves</td>
@@ -2722,6 +2706,14 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>31/03/2023</td>
     <td>MAISA OLIVEIRA BARBOSA</td>
     <td style="text-align: center;">🟡</td>
+    <td style="text-align: center;">🔴</td>
+  </tr><tr class="456 LIBERDADE 0-varicela 0-triplice 0">
+    <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/123168/?workMode=wmBrowse" target=_blank>74713</a></td>
+    <td>Isis Manuelly Barbosa Santos</td>
+    <td>0 anos e 2 meses</td>
+    <td>09/03/2024</td>
+    <td>DAIANE ALVES</td>
+    <td style="text-align: center;">🔴</td>
     <td style="text-align: center;">🔴</td>
   </tr><tr class="271 HARMONIA 0-varicela 0-triplice 1">
     <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/80714/?workMode=wmBrowse" target=_blank>67655</a></td>
@@ -2859,14 +2851,6 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>CLECIVANIA RODRIGUES DE OLIVEIRA</td>
     <td style="text-align: center;">🟡</td>
     <td style="text-align: center;">🔴</td>
-  </tr><tr class="67 RENASCER 1-varicela 2-triplice 1">
-    <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/62857/?workMode=wmBrowse" target=_blank>61734</a></td>
-    <td>Joao Inácio Moreira Sena</td>
-    <td>1 ano e 0 meses</td>
-    <td>11/05/2022</td>
-    <td>LUZINETE APARECIDA OLIVEIRA MEIRELES</td>
-    <td style="text-align: center;">🟢</td>
-    <td style="text-align: center;">🟢</td>
   </tr><tr class="564 UNIAO 0-varicela 0-triplice 0">
     <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/97312/?workMode=wmBrowse" target=_blank>70231</a></td>
     <td>Joao Lorenzo Pereira de Souza</td>
@@ -2913,14 +2897,6 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>1 ano e 7 meses</td>
     <td>25/10/2022</td>
     <td>DAYANE SOARES MENDES SANTOS</td>
-    <td style="text-align: center;">🟢</td>
-    <td style="text-align: center;">🟢</td>
-  </tr><tr class="615 VIVER 1-varicela 2-triplice 1">
-    <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/62886/?workMode=wmBrowse" target=_blank>61763</a></td>
-    <td>Joao Pedro Silva Rocha</td>
-    <td>2 anos e 0 meses</td>
-    <td>10/05/2022</td>
-    <td>MICAELY PEREIRA ALVES</td>
     <td style="text-align: center;">🟢</td>
     <td style="text-align: center;">🟢</td>
   </tr><tr class="590 MAIS-SAUDE 0-varicela 0-triplice 0">
@@ -3019,6 +2995,14 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>JUSSELY SOARES DE SOUZA</td>
     <td style="text-align: center;">🟡</td>
     <td style="text-align: center;">🟣</td>
+  </tr><tr class="433 HUMANIZAR 0-varicela 0-triplice 0">
+    <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/nil/?workMode=wmBrowse" target=_blank>75345</a></td>
+    <td>José Pedro Cardoso Leal</td>
+    <td>0 anos e 1 mes</td>
+    <td>18/04/2024</td>
+    <td>JULIANA FERREIRA DA SILVA</td>
+    <td style="text-align: center;">🔴</td>
+    <td style="text-align: center;">🔴</td>
   </tr><tr class="404 VIDA 0-varicela 1-triplice 1">
     <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/76811/?workMode=wmBrowse" target=_blank>66869</a></td>
     <td>Jovane de Sousa Teixeira</td>
@@ -3537,14 +3521,6 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>1 ano e 11 meses</td>
     <td>04/06/2022</td>
     <td>ALINE DE JESUS SILVA</td>
-    <td style="text-align: center;">🟢</td>
-    <td style="text-align: center;">🟢</td>
-  </tr><tr class="31 VIDA 1-varicela 2-triplice 1">
-    <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/63185/?workMode=wmBrowse" target=_blank>62060</a></td>
-    <td>Luanne de Oliveira Celestino Santos</td>
-    <td>2 anos e 0 meses</td>
-    <td>10/05/2022</td>
-    <td>KATIANA FERREIRA</td>
     <td style="text-align: center;">🟢</td>
     <td style="text-align: center;">🟢</td>
   </tr><tr class="1184 MAIS-SAUDE 0-varicela 1-triplice 1">
@@ -4091,10 +4067,10 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>CERLIOS MARQUES DOS SANTOS</td>
     <td style="text-align: center;">🔴</td>
     <td style="text-align: center;">🔴</td>
-  </tr><tr class="226 HARMONIA 0-varicela 0-triplice 0">
+  </tr><tr class="226 HARMONIA 0-varicela 0-triplice 1">
     <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/88251/?workMode=wmBrowse" target=_blank>68925</a></td>
     <td>Maria Flor Ferreira Cotrim</td>
-    <td>0 anos e 0 meses</td>
+    <td>1 ano e 0 meses</td>
     <td>12/05/2023</td>
     <td>GEISSIANE MARQUES FERREIRA</td>
     <td style="text-align: center;">🔴</td>
@@ -4267,6 +4243,14 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>NELCI RAMOS CORREIA</td>
     <td style="text-align: center;">🟢</td>
     <td style="text-align: center;">🟢</td>
+  </tr><tr class="170 VIDA 0-varicela 0-triplice 0">
+    <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/nil/?workMode=wmBrowse" target=_blank>75392</a></td>
+    <td>Maria Rita Ribeiro Mendes</td>
+    <td>0 anos e 0 meses</td>
+    <td>07/05/2024</td>
+    <td>GISLENE FERREIRA BARBOSA</td>
+    <td style="text-align: center;">🔴</td>
+    <td style="text-align: center;">🔴</td>
   </tr><tr class="590 MAIS-SAUDE 0-varicela 0-triplice 0">
     <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/122755/?workMode=wmBrowse" target=_blank>74411</a></td>
     <td>Maria Rocha Costa Santana</td>
@@ -4698,6 +4682,14 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>23/08/2023</td>
     <td>NAGILA MARIA DOS SANTOS</td>
     <td style="text-align: center;">🔴</td>
+    <td style="text-align: center;">🔴</td>
+  </tr><tr class="637 ESPETACULAR 0-varicela 2-triplice 1">
+    <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/72139/?workMode=wmBrowse" target=_blank>65848</a></td>
+    <td>Miguel de Oliveira Rocha</td>
+    <td>1 ano e 5 meses</td>
+    <td>10/12/2022</td>
+    <td>OZANIA ALVES MOREIRA</td>
+    <td style="text-align: center;">🟢</td>
     <td style="text-align: center;">🔴</td>
   </tr><tr class="1149 ESPERANÇA 0-varicela 1-triplice 1">
     <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/80375/?workMode=wmBrowse" target=_blank>67605</a></td>
@@ -5227,10 +5219,10 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>PATRICIA CALDEIRA DOS SANTOS</td>
     <td style="text-align: center;">🔴</td>
     <td style="text-align: center;">🔴</td>
-  </tr><tr class="446 LIBERDADE 0-varicela 0-triplice 0">
+  </tr><tr class="446 LIBERDADE 0-varicela 0-triplice 1">
     <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/88203/?workMode=wmBrowse" target=_blank>68909</a></td>
     <td>Rafael Silva Ferraz</td>
-    <td>0 anos e 0 meses</td>
+    <td>1 ano e 0 meses</td>
     <td>13/05/2023</td>
     <td>DARCIELIA EURIDES DOS SANTOS</td>
     <td style="text-align: center;">🔴</td>
@@ -5395,6 +5387,14 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>KELY CRISTINA RODRIGUES ARAúJO</td>
     <td style="text-align: center;">🔴</td>
     <td style="text-align: center;">🔴</td>
+  </tr><tr class="209 LIBERDADE 0-varicela 0-triplice 0">
+    <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/nil/?workMode=wmBrowse" target=_blank>75480</a></td>
+    <td>Ravi Teixeira Rodrigues Dos Santos</td>
+    <td>0 anos e 0 meses</td>
+    <td>08/05/2024</td>
+    <td>SONIA BISPO DE ALMEIDA</td>
+    <td style="text-align: center;">🔴</td>
+    <td style="text-align: center;">🔴</td>
   </tr><tr class="168 ACOLHER 0-varicela 1-triplice 1">
     <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/85701/?workMode=wmBrowse" target=_blank>68557</a></td>
     <td>Ravi da Silva Santos</td>
@@ -5435,6 +5435,14 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>ALICE DOS SANTOS NETA</td>
     <td style="text-align: center;">🟢</td>
     <td style="text-align: center;">🟢</td>
+  </tr><tr class="1122 ESPETACULAR 0-varicela 0-triplice 1">
+    <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/123626/?workMode=wmBrowse" target=_blank>75010</a></td>
+    <td>Rayssa Vieira Gomes</td>
+    <td>1 ano e 3 meses</td>
+    <td>14/02/2023</td>
+    <td>KEYTIANE DA SILVA</td>
+    <td style="text-align: center;">🔴</td>
+    <td style="text-align: center;">🔴</td>
   </tr><tr class="513 MAIS-SAUDE 0-varicela 0-triplice 1">
     <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/80322/?workMode=wmBrowse" target=_blank>67585</a></td>
     <td>Rebeca Oliveira Braga</td>
@@ -5459,14 +5467,6 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>LEISIANE ALVES RIBEIRO</td>
     <td style="text-align: center;">🔴</td>
     <td style="text-align: center;">🔴</td>
-  </tr><tr class="513 MAIS-SAUDE 1-varicela 2-triplice 1">
-    <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/62900/?workMode=wmBrowse" target=_blank>61777</a></td>
-    <td>Rhavi Henrique Santos Lima</td>
-    <td>1 ano e 0 meses</td>
-    <td>12/05/2022</td>
-    <td>IRIS TANIA TEIXEIRA ALVES</td>
-    <td style="text-align: center;">🟢</td>
-    <td style="text-align: center;">🟢</td>
   </tr><tr class="223 UNIAO 0-varicela 0-triplice 0">
     <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/109702/?workMode=wmBrowse" target=_blank>71624</a></td>
     <td>Ricardo Daniel Miranda Celio</td>
@@ -5514,6 +5514,14 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>04/08/2022</td>
     <td>RONICLEIA DIAS ROCHA</td>
     <td style="text-align: center;">🟡</td>
+    <td style="text-align: center;">🔴</td>
+  </tr><tr class="1149 ESPERANÇA 0-varicela 0-triplice 0">
+    <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/nil/?workMode=wmBrowse" target=_blank>75432</a></td>
+    <td>Samuel Buçard Magalhães</td>
+    <td>0 anos e 1 mes</td>
+    <td>27/04/2024</td>
+    <td>LIVIA KAMILLY SOARES DOS SANTOS</td>
+    <td style="text-align: center;">🔴</td>
     <td style="text-align: center;">🔴</td>
   </tr><tr class="590 MAIS-SAUDE 1-varicela 2-triplice 1">
     <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/66260/?workMode=wmBrowse" target=_blank>64027</a></td>
@@ -5563,14 +5571,6 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>PATRICIA CALDEIRA DOS SANTOS</td>
     <td style="text-align: center;">🔴</td>
     <td style="text-align: center;">🔴</td>
-  </tr><tr class="1184 MAIS-SAUDE 1-varicela 2-triplice 1">
-    <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/62768/?workMode=wmBrowse" target=_blank>61653</a></td>
-    <td>Sara Viana Dos Santos</td>
-    <td>0 anos e 1 mes</td>
-    <td>04/04/2024</td>
-    <td>CINTIA MELGES DE OLIVEIRA COSTA</td>
-    <td style="text-align: center;">🟢</td>
-    <td style="text-align: center;">🟢</td>
   </tr><tr class="223 UNIAO 1-varicela 2-triplice 1">
     <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/71321/?workMode=wmBrowse" target=_blank>65637</a></td>
     <td>Sarah Eloá Rodrigues de Souza</td>
@@ -5745,14 +5745,6 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>1 ano e 11 meses</td>
     <td>19/06/2022</td>
     <td>PATRICIA ONOFRE DA CRUZ</td>
-    <td style="text-align: center;">🟢</td>
-    <td style="text-align: center;">🟢</td>
-  </tr><tr class="493 VIVER 1-varicela 2-triplice 1">
-    <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/62815/?workMode=wmBrowse" target=_blank>61697</a></td>
-    <td>Theo Felipe Santos Martins</td>
-    <td>1 ano e 0 meses</td>
-    <td>14/05/2022</td>
-    <td>ELIANE PEREIRA FREITAS</td>
     <td style="text-align: center;">🟢</td>
     <td style="text-align: center;">🟢</td>
   </tr><tr class="564 UNIAO 0-varicela 0-triplice 0">
