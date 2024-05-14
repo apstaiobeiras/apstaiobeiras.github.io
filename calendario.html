@@ -85,7 +85,7 @@
             display: table;
         }
 
-      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar no-print" onclick="backlink();"><a><span id="micro">00</span> - <span id="profissional">Nome do Agente Comuitário de Saúde</span></a></div><div class="no-print"><h1>Informativo</h1><p>Nesse relatório estão listadas as visitas realizadas por dia e por família.<br>Não são contadas:</p><ul><li>Duas ou mais visitas no mesmo dia a mesma família</li><li>Visitas para mais de um membro da família</li></ul><hr/></div><div class="row"><div class="column" id="coluna_1"></div><div class="column" id="coluna_2"></div></div></body><script src="js/goto.js"></script><script src="js/lista-acs.js"></script><script src="js/visitas-a-familias-por-dias.js"></script><script>        const data_atual = (new Date()).getTime();
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar no-print" onclick="backlink();"><a><span id="micro">00</span> - <span id="profissional">Nome do profissional</span></a></div><div class="no-print"><h1>Informativo</h1><p>Nesse relatório estão listadas os atendimentos realizados por dia:</p><hr/></div><div class="row"><div class="column" id="coluna_1"></div><div class="column" id="coluna_2"></div></div><hr/><h3>Legenda</h3><table><tr><td style="background-color:#9980FA;"></td><td style="text-align: left;">Feriado</td></tr><tr><td style="background-color:#ffbe76;"> </td><td style="text-align: left;">LIRAa/Regulação/Reunião/Capacitação</td></tr><tr><td style="background-color:#4bcffa;"></td><td style="text-align: left;">Folga/Férias</td></tr><tr><td style="background-color:#f6e58d;"></td><td style="text-align: left;">Atestados</td></tr><tr><td style="background-color:#e74c3c;"></td><td style="text-align: left;">Falta ou não teve nenhuma vistoria realizada</td></tr><tr><td style="background-color:#95a5a6;"></td><td style="text-align: left;">Bloqueio</td></tr><tr><td style="background-color:#2ecc71;"></td><td style="text-align: left;">Teve ao menos uma vistoria realizada</td></tr></table></body><script src="js/goto.js"></script><script src="js/calendario-ace.js"></script><script src="js/lista_profissionais.js"></script><script src="js/nomes_profissionais.js"></script><script>        const data_atual = (new Date()).getTime();
 
         if (!(new URLSearchParams(window.location.search)).get('cod')) window.location.href="index.html";
         if (!(new URLSearchParams(window.location.search)).get('token')) window.location.href="index.html";
@@ -93,10 +93,10 @@
         const cod_profissional = parseInt((new URLSearchParams(window.location.search)).get('cod'), 36);
         const token = parseInt((new URLSearchParams(window.location.search)).get('token'), 36);
         if (data_atual>token && window.location.protocol != "file:") window.location.href="index.html";
-    </script><script>        document.getElementById("micro").textContent = lista_dos_acs[cod_profissional][2];
-        document.getElementById("profissional").textContent = lista_dos_acs[cod_profissional][0];
-    </script><script>
-        const visitas = visitas_a_familia_por_dia[cod_profissional];
+    </script><script>        document.getElementById("micro").textContent = cod_profissional;
+        document.getElementById("profissional").textContent = nomeProfissional[cod_profissional];
+    </script><script>        const id_profissional = parseInt((new URLSearchParams(window.location.search)).get('cod'),36);
+        const visitas = visitas_a_imoveis_por_dia[id_profissional];
 
         const meses = [];
         meses[1] = "Janeiro";
@@ -131,43 +131,60 @@
             calendario.appendChild(mes_nome);
             calendario.appendChild(dias_da_semana);
             
-            let dias_no_mes = (new Date((new Date).getYear(), mes, 0).getDate())+1;
-        
-            for (let i = 0; i < visitas_mes.length; i++){
-                const visitas_realizadas = visitas_mes[i];
+            //let dias_no_mes = (new Date((new Date).getYear(), mes, 0).getDate())+1;
 
+            let j = 1;
+
+            for (let i = 0; i < visitas_mes.length; i++){
+                let visitas_realizadas = visitas_mes[i];
+
+                let day_cell = document.createElement("td");
+                day_cell.innerHTML = visitas_realizadas.replace("FERIADO"," ");
+                day_cell.style = "background-color:#2ecc71;";
+
+                if (visitas_realizadas == "---") day_cell.style = "";
+                if (visitas_realizadas == "") day_cell.style = "";
+                if (visitas_realizadas == "0") day_cell.style = "background-color:#e74c3c;";
+                if (visitas_realizadas == "FERIADO") day_cell.style = "background-color:#9980FA;";
+                if (visitas_realizadas == "LIRAa") day_cell.style = "background-color:#ffbe76;";
+                if (visitas_realizadas == "RG") day_cell.style = "background-color:#ffbe76;";
+                if (visitas_realizadas == "CAPACITAÇÃO") day_cell.style = "background-color:#ffbe76;";
+                if (visitas_realizadas == "VIGILANCIA SANITÁRIA") day_cell.style = "background-color:#ffbe76;";
+                if (visitas_realizadas == "FOLGA") day_cell.style = "background-color:#4bcffa;";
+                if (visitas_realizadas == "FERIAS") day_cell.style = "background-color:#4bcffa;";
+                if (visitas_realizadas == "ATESTADO") day_cell.style = "background-color:#f6e58d;";
+                if (visitas_realizadas == "BLOQUEIO") day_cell.style = "background-color:#95a5a6;";
+
+                if (visitas_realizadas == "0") day_cell.innerHTML = " ";
+                if (visitas_realizadas == "FERIADO") day_cell.innerHTML = " ";
+                if (visitas_realizadas == "LIRAa") day_cell.innerHTML = " ";
+                if (visitas_realizadas == "RG") day_cell.innerHTML = " ";
+                if (visitas_realizadas == "CAPACITAÇÃO") day_cell.innerHTML = " ";
+                if (visitas_realizadas == "VIGILANCIA SANITÁRIA") day_cell.innerHTML = " ";
+                if (visitas_realizadas == "FOLGA") day_cell.innerHTML = " ";
+                if (visitas_realizadas == "FERIAS") day_cell.innerHTML = " ";
+                if (visitas_realizadas == "ATESTADO") day_cell.innerHTML = " ";
+                if (visitas_realizadas == "BLOQUEIO") day_cell.innerHTML = " ";
+                if (visitas_realizadas == "---") day_cell.innerHTML = " ";
+
+                current_row.appendChild(day_cell);
+
+                
                 let day_cell_h = document.createElement("th");
                 current_day_row.appendChild(day_cell_h);
 
                 if (visitas_realizadas != "") {
-                    day_cell_h.textContent = day;
-                    day += 1;
+                    day_cell_h.innerHTML = j;
+                    j = j+1;
                 }
-        
-                let day_cell = document.createElement("td");
-                day_cell.textContent = visitas_realizadas;
-                day_cell.style="background-color:#B2D9AB;"
-        
-                if (visitas_realizadas == "0") {
-                    day_cell.style="background-color:#EB989A;"
-                }
-        
-                if (visitas_realizadas == "---" || visitas_realizadas == "") {
-                    day_cell.textContent = " ";
-                    day_cell.style="background-color:#F6F8FA"
-                }
-                current_row.appendChild(day_cell);
-        
-                if ((i+1) % 7 == 0) {
+
+                if ((1+i)%7 == 0) {
                     calendario.appendChild(current_day_row);
                     calendario.appendChild(current_row);
                     current_row = document.createElement("tr");
                     current_day_row = document.createElement("tr");
                 }
 
-                if (day == dias_no_mes) {
-                    break;
-                }
         
             }
             calendario.appendChild(current_day_row);

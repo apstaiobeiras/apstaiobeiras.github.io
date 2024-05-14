@@ -1,0 +1,54 @@
+<!DOCTYPE html><html lang="pt_BR"><head><meta charset="utf8"/><title>Perfil do profissional</title><style>        /* Estilo da barra de navegação */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333; /* Cor de fundo da barra de navegação */
+            color: #fff; /* Cor do texto da barra de navegação */
+            padding: 10px 0;
+            cursor: pointer!important;
+        }
+        
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+        }
+        
+        /* Adicione margem ao corpo para evitar que o conteúdo fique oculto sob a barra de navegação */
+        body {
+            margin-top: 60px; /* Ajuste conforme necessário com base na altura da sua barra de navegação */
+        }
+
+        tr:hover {
+            background: #DFE2E5!important;
+            cursor: pointer!important;
+        }
+
+        tr:pressed {
+            background: #9FA1A3!important;
+        }
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar" onclick="backlink();"><a><span id="micro">00</span> - <span id="profissional">Nome do Agente Comuitário de Saúde</span></a></div><h3>Relatórios</h3><table><tr onclick="gotoPage('calendario.html','&planilha=vacina-triplice-varicela&titulo=Situação+das+vacinas+Triplice+viral+e+Varicela');"><td><img src="assets/img/visitas-por-dia.png" width="96"/></td><td><b>Vistorias diárias</b><br>Lista quantas imóveis foram vistoriados por dia durante o mês</td></tr></table></body><script src="js/goto.js"></script><script src="js/nomes_profissionais.js"></script><script>        let cod_profissional = null;
+        (() => {
+        const data_atual = (new Date()).getTime();
+        
+        if (!(new URLSearchParams(window.location.search)).get('token')) window.location.href="index.html";
+        
+        if ((new URLSearchParams(window.location.search)).get('cod') == "qes") return;
+        
+        const token = parseInt((new URLSearchParams(window.location.search)).get('token'), 36);
+        if (data_atual>token && window.location.protocol != "file:") window.location.href="index.html";
+        
+        if (!(new URLSearchParams(window.location.search)).get('cod')) window.location.href="index.html";
+        cod_profissional = parseInt((new URLSearchParams(window.location.search)).get('cod'), 36);
+        })()
+    </script><script>
+
+    // Cabeçalho
+
+    document.getElementById("micro").textContent = cod_profissional;
+    document.getElementById("profissional").textContent = nomeProfissional[cod_profissional];
+
+
+    </script></html>
