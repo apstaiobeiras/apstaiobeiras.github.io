@@ -138,7 +138,6 @@ nomeProfissional['1220'] = 'MARIA BETANIA LESSA COELHO LAMOUNIER';
 nomeProfissional['1285'] = 'MARIA EDUARDA MEDEIROS DE LIMA';
 nomeProfissional['687'] = 'MARIA HELENA DE JESUS';
 nomeProfissional['99991'] = 'MARIA ILMA TEIXEIRA COSTA';
-nomeProfissional['99991'] = 'MARIA ILMA TEIXEIRA COSTA';
 nomeProfissional['1216'] = 'MARIA LUIZA MARQUES BARBOSA';
 nomeProfissional['1218'] = 'MARIANA GONÇALVES DE QUADROS';
 nomeProfissional['1194'] = 'MARILIA FERNANDA PEREIRA MATOS';

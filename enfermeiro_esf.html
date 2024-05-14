@@ -177,8 +177,20 @@
             }, {});
 
             equipe = equipe.replace("SAÙDE","SAÚDE");
+            let equipes_coodenador = equipe_profissional[parseInt((new URLSearchParams(window.location.search)).get('cod'), 36)];
 
-            if (!equipe_profissional[parseInt((new URLSearchParams(window.location.search)).get('cod'), 36)].includes(equipe)) continue;
+            let pular = true;
+            for (let equipe_coodenador of equipes_coodenador) {
+                if (equipes_profissional.includes(equipe_coodenador)) {
+                    pular = false;
+                    break;
+                }
+            }
+            if (pular) continue;
+
+            //if (!equipe_profissional[parseInt((new URLSearchParams(window.location.search)).get('cod'), 36)].includes(equipe)) continue;
+
+            console.log(equipe_profissional[parseInt((new URLSearchParams(window.location.search)).get('cod'), 36)]);
 
             let table = "<table>";
             //table += "<tr><th></th><th>Nome</th></tr>"
