@@ -62,7 +62,7 @@
 
         const MESES = [null, ["Janeiro","Fevereiro","Março","Abril"], ["Maio","Junho","Julho","Agosto"], ["Setembro","Outubro","Novembro","Dezembro"] ];
 
-        let QUADRIMESTRE =  MESES[4]; //mes < 5 ? MESES[1] : (mes < 9 ? MESES[2] : MESES[3]);
+        let QUADRIMESTRE =  MESES[1]; //mes < 5 ? MESES[1] : (mes < 9 ? MESES[2] : MESES[3]);
         
         document.getElementById("mes_1").textContent = QUADRIMESTRE[0];
         document.getElementById("mes_2").textContent = QUADRIMESTRE[1];
@@ -84,34 +84,6 @@
     </script><script>        document.getElementById("micro").textContent = lista_dos_acs[cod_profissional][2];
         document.getElementById("profissional").textContent = lista_dos_acs[cod_profissional][0];
     </script><script>
-        let cobertura_total = 0;
-
-        let i = -1;
-        for (let visitas_mes of visitas_realizadas){
-            i+=1; if (!visitas_mes) continue;  if (!visitas_mes[cod_profissional]) continue;
-    
-            let familias            = visitas_mes[cod_profissional][4];
-            let visitas             = visitas_mes[cod_profissional][7];
-            let cobertura           = Math.round(visitas_mes[cod_profissional][9].replace(",",".")*100);
-            let georreferenciamento = Math.round(visitas_mes[cod_profissional][8].replace(",",".")*100);
-            let ausencias           = Math.round(visitas_mes[cod_profissional][10].replace(",",".")*100);
-            let resgate             = visitas_mes[cod_profissional][11];
-    
-            cobertura_total = cobertura;
-        
-            document.getElementById("familia_mes_"+i).textContent             = familias;
-            document.getElementById("visitas_mes_"+i).textContent             = visitas;
-            document.getElementById("cobertura_mes_"+i).textContent           = `${cobertura}%`;
-            document.getElementById("georreferenciamento_mes_"+i).textContent = `${georreferenciamento}%`;
-            document.getElementById("ausencias_mes_"+i).textContent           = `${ausencias}%`;
-            document.getElementById("resgate_ausencias_mes_"+i).textContent   = resgate;
-    
-            colore_percentual(document.getElementById("cobertura_mes_"+i),cobertura,100);
-            colore_percentual(document.getElementById("georreferenciamento_mes_"+i),georreferenciamento,100);
-            colore_percentual(document.getElementById("ausencias_mes_"+i),100-ausencias,100);
-        }
-    
-    </script><script>    
         let cobertura_total = 0;
 
         let i = -1;
