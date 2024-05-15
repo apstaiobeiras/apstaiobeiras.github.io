@@ -62,7 +62,7 @@
 
         const MESES = [null, ["Janeiro","Fevereiro","Março","Abril"], ["Maio","Junho","Julho","Agosto"], ["Setembro","Outubro","Novembro","Dezembro"] ];
 
-        let QUADRIMESTRE =  mes < 5 ? MESES[1] : (mes < 9 ? MESES[2] : MESES[3]);
+        let QUADRIMESTRE =  MESES[4]; //mes < 5 ? MESES[1] : (mes < 9 ? MESES[2] : MESES[3]);
         
         document.getElementById("mes_1").textContent = QUADRIMESTRE[0];
         document.getElementById("mes_2").textContent = QUADRIMESTRE[1];
