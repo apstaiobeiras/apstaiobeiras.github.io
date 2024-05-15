@@ -1587,6 +1587,14 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>KELY CRISTINA RODRIGUES ARAúJO</td>
     <td style="text-align: center;">🔴</td>
     <td style="text-align: center;">🔴</td>
+  </tr><tr class="226 HARMONIA 0-varicela 0-triplice 0">
+    <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/nil/?workMode=wmBrowse" target=_blank>75564</a></td>
+    <td>Eduardo Maranhão Batista</td>
+    <td>0 anos e 0 meses</td>
+    <td>10/05/2024</td>
+    <td>GEISSIANE MARQUES FERREIRA</td>
+    <td style="text-align: center;">🔴</td>
+    <td style="text-align: center;">🔴</td>
   </tr><tr class="801 CAMINHO 0-varicela 1-triplice 1">
     <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/71538/?workMode=wmBrowse" target=_blank>65694</a></td>
     <td>Elena Rodrigues Ventura</td>
@@ -5165,7 +5173,7 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td style="text-align: center;">🔴</td>
   </tr><tr class="1141 ESPETACULAR 0-varicela 0-triplice 1">
     <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/90457/?workMode=wmBrowse" target=_blank>69271</a></td>
-    <td>Piêtra Nascimento de Souza</td>
+    <td>Piêtra Nascimento de Souza Almeida</td>
     <td>1 ano e 0 meses</td>
     <td>15/05/2023</td>
     <td>NATALIA COSTA DE SOUZA</td>
