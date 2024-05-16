@@ -2347,10 +2347,10 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>AMANDA MARIA SOARES SANTOS</td>
     <td style="text-align: center;">🟡</td>
     <td style="text-align: center;">🔴</td>
-  </tr><tr class="801 CAMINHO 0-varicela 0-triplice 0">
+  </tr><tr class="801 CAMINHO 0-varicela 0-triplice 1">
     <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/88731/?workMode=wmBrowse" target=_blank>68979</a></td>
     <td>Helena Lacerda Santos</td>
-    <td>0 anos e 0 meses</td>
+    <td>1 ano e 0 meses</td>
     <td>16/05/2023</td>
     <td>ANGELICA PEREIRA DE OLIVEIRA</td>
     <td style="text-align: center;">🔴</td>
@@ -2635,10 +2635,10 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>CELMA DOS SANTOS</td>
     <td style="text-align: center;">🔴</td>
     <td style="text-align: center;">🔴</td>
-  </tr><tr class="802 HUMANIZAR 0-varicela 0-triplice 0">
+  </tr><tr class="802 HUMANIZAR 0-varicela 0-triplice 1">
     <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/88981/?workMode=wmBrowse" target=_blank>69032</a></td>
     <td>Isadora Martins de Oliveira</td>
-    <td>0 anos e 0 meses</td>
+    <td>1 ano e 0 meses</td>
     <td>16/05/2023</td>
     <td>DARLENE MARIA PEREIRA</td>
     <td style="text-align: center;">🔴</td>
@@ -3777,6 +3777,14 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>0 anos e 2 meses</td>
     <td>20/03/2024</td>
     <td>KAMILA MARIA PEREIRA</td>
+    <td style="text-align: center;">🔴</td>
+    <td style="text-align: center;">🔴</td>
+  </tr><tr class="621 VIDA 0-varicela 0-triplice 0">
+    <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/nil/?workMode=wmBrowse" target=_blank>75566</a></td>
+    <td>Maite Silva Oliveira</td>
+    <td>0 anos e 0 meses</td>
+    <td>02/05/2024</td>
+    <td>IVANI MENDES DE DEUS CHAGAS</td>
     <td style="text-align: center;">🔴</td>
     <td style="text-align: center;">🔴</td>
   </tr><tr class="1234 ESPETACULAR 0-varicela 0-triplice 0">
@@ -5089,14 +5097,6 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>1 ano e 4 meses</td>
     <td>07/01/2023</td>
     <td>MARTA PEREIRA DE OLIVEIRA</td>
-    <td style="text-align: center;">🟢</td>
-    <td style="text-align: center;">🟢</td>
-  </tr><tr class="621 VIDA 1-varicela 2-triplice 1">
-    <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/62874/?workMode=wmBrowse" target=_blank>61751</a></td>
-    <td>Pedro de Almeida Veiga</td>
-    <td>1 ano e 0 meses</td>
-    <td>16/05/2022</td>
-    <td>IVANI MENDES DE DEUS CHAGAS</td>
     <td style="text-align: center;">🟢</td>
     <td style="text-align: center;">🟢</td>
   </tr><tr class="564 UNIAO 1-varicela 2-triplice 1">

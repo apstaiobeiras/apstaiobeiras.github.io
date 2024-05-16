@@ -1,4 +1,4 @@
-document.getElementById('atualizacao').textContent = '15/05/2024';
+document.getElementById('atualizacao').textContent = '16/05/2024';
 const Solicitacoes_Excluidas = [
   ["149235","764", "17525","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
   ["152679","764", "25742","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
@@ -419,6 +419,7 @@ const Solicitacoes_Excluidas = [
   ["675873","775", "5022","7","<b>Agendar na Atenção Primaria: </b><br>O médico da APS deve avaliar a paciente e indicar as intervenções necessárias.","20240411","Consulta ortopedista"],
   ["675884","1137", "15035","9","<b>Não Se Enquadra nos Criterios: </b><br>SEM QUEIXAS INTESTINAIS OU DE COMPROMETIMENTO CLÍNICO QUE JUSTIFIQUE O EXAME. SOMENTE PELA IDADE, CONSIDERARIA O EXAME SOMENTE PARA RASTREIO DE CCR.SUGIRO INVESTIGAR COM EDA+LABORATORIAL INCLUINDO PSOF - FERRITINA ETC... ALÉM DA FUNÇAO RENAL.","20240507","Colonoscopia com biopsia"],
   ["675891","1219", "27977","33","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever o resultado do último PCCU realizado pela paciente para prosseguir com agendamento.Att.","20240408","Consulta ginecologia policlinica"],
+  ["675965","1214", "20883","56","<b>Solicitação Indevida: </b><br>Alteração para alta prioridade, solicitação errada. Elemento 24 já foi realizado exodontia, foi encaminhado o 38 que se apresenta girado.","20240516","Consulta cirurgiao dentista"],
   ["676089","1016", "27939","8","<b>Agendar na Atenção Primaria: </b><br>O médico da APS deve avaliar a paciente e indicar as intervenções necessárias.","20240411","Consulta ortopedista"],
   ["676262","1279", "20957","78","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Não está informado o procedimento - Elemento dental a ser tratado","20240416","Tratamento endodôntico de dente permanente birradicular"],
   ["676349","1219", "2805","33","<b>Não Se Enquadra nos Criterios: </b><br>enviado para urologia.","20240409","Consulta neurologia"],
@@ -534,6 +535,7 @@ const Solicitacoes_Excluidas = [
   ["693950","46", "14718","16","<b>Solicitação Indevida: </b><br>transferida para fila de retorno-ortopedia","20240430","Consulta ortopedista"],
   ["694016","775", "74036","7","<b>Solicitação Indevida: </b><br>REINSERIDO COM DEFINIÇÃO DE ORTOPEDISTA.","20240430","Consulta cardiologia + risco cirúrgico (ECG, MAPA, HOLTER, RX) Dr Renan"],
   ["694072","758", "74675","16","<b>Agendar na Atenção Primaria: </b><br>Avaliação médica na APS para Justificar a solicitação adequadamente com sinais e sintomas para melhor priorização.","20240430","Consulta otorrinolaringologia"],
+  ["694464","1290", "10034","6","Solicitação Indevida","20240515","Tratamento endodôntico de dente permanente birradicular"],
   ["694668","46", "12298","16","<b>Solicitação Indevida: </b><br>REINSERIDO COM DEFINIÇÃO CORRETA DE SOLICITANTE.","20240502","Consulta cardiologia + ECG Dr Renan"],
   ["694847","1194", "21767","6","<b>Não Se Enquadra nos Criterios: </b><br>ENVIADA PARA DIABETES DE ALTO RISCO CEAE","20240507","Consulta endocrinologia"],
   ["695025","1046", "16073","10","<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA FILA 'AVALIAÇÃO CIRURGICA\"\".","20240509","Consulta cirurgiao geral"],
