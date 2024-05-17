@@ -102,6 +102,8 @@
           }
   
           i += mantem ? 1 : 0;
+
+          mantem = t == 0 ? true : mantem;
           t += 1;
           linha.style.display = mantem ? '' : 'none';
       }
