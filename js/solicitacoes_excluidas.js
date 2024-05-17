@@ -1,4 +1,4 @@
-document.getElementById('atualizacao').textContent = '16/05/2024';
+document.getElementById('atualizacao').textContent = '17/05/2024';
 const Solicitacoes_Excluidas = [
   ["149235","764", "17525","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
   ["152679","764", "25742","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
@@ -171,6 +171,7 @@ const Solicitacoes_Excluidas = [
   ["641934","1137", "11061","9","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever o resultado do último PCCU realizado pela paciente.Att.","20240130","Consulta ginecologia policlinica"],
   ["641941","1220", "20902","13","<b>Não Se Enquadra nos Criterios: </b><br>SUGIRO AVALIAÇÃO DA PNEUMOLOGIA, CASO JA ESTEJA EM OTIMIZAÇÃO TERAPÊUTICA DA ASMA, SEM SUCESSO, REENCAMINHAR COM JUSTIFICATIVA.","20240205","Consulta otorrinolaringologia"],
   ["641948","1194", "16962","6","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever o resultado do último PCCU realizado pela paciente.Att.","20240130","Consulta ginecologia policlinica"],
+  ["642012","1263", "31187","34","<b>Não Se Enquadra nos Criterios: </b><br>Não há alterações nos hormônios tireoideanos nos exames solicitados. Sugiro suplementar com ferro e vitamina D, somente, e a depender da clínica atual, repetir exames se necessário.","20240516","Consulta endocrinologia"],
   ["642071","1243", "14768","8","<b>Não Se Enquadra nos Criterios: </b><br>.","20240205"," consulta psicologia infantojuvenil"],
   ["642076","1216", "23074","81","<b>Não Se Enquadra nos Criterios: </b><br>Para se enquadrar nos critérios deve ter no histórico da gestação atual, 03 episódios de ITU confirmados por exames laboratoriais.","20240130","Consulta - obstétrica / puerpério"],
   ["642327","1260", "68468","10","<b>Não Se Enquadra nos Criterios: </b><br>Quadro de miomatose e DIU deve ser lançado na fila da GINECOLOGIA POLICLÍNICA.","20240130","Consulta ginecologia CEAE"],
@@ -565,9 +566,11 @@ const Solicitacoes_Excluidas = [
   ["699454","1218", "34745","34","<b>Não Se Enquadra nos Criterios: </b><br>O quadro clínico ocorreu há 1 ano, a criança teve algum sintoma respiratório após esse episódio? Faz uso de medicação para tal de forma continua? Após 1 ano sem complicações ou crises, já não se enquadra nos critérios de atendimento. Me coloco a disposição para discussão do caso.Att.","20240509","Consulta pediatria alto risco"],
   ["699585","1220", "5424","13","Não Se Enquadra nos Criterios","20240509","Avaliaçao cirurgica policlinica"],
   ["700247","1282", "4703","6","<b>Não Se Enquadra nos Criterios: </b><br>De acordo protocolo de atendimento diabetes alto risco, a HG do paciente deve estar acima de 9% para que se enquadre nos critérios de atendimento. Sugiro acompanhamento nutricional e mudança de estilo de vida para adequação do peso.Att.","20240513","Consulta diabetes alto risco"],
+  ["700548","1016", "7913","13","<b>Não Se Enquadra nos Criterios: </b><br>Transferida para fila de diabetes alto risco.","20240516","Consulta endocrinologia"],
   ["700720","1216", "48580","9","<b>Não Se Enquadra nos Criterios: </b><br>Avidez alta para toxoplasmose com IG menor que 16 semanas, indica infecção anterior à gestação.","20240513","Consulta gestante alto risco"],
   ["700729","46", "46457","16","Solicitação Indevida","20240510","Retorno consulta ortopedista"],
   ["700756","1267", "8853","8","<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA FILA \"\"AVALIAÇÃO CIRURGICA POLICLÍNICA\"\".","20240510","Consulta cirurgiao geral"],
+  ["700868","1219", "25599","33","<b>Não Se Enquadra nos Criterios: </b><br>Sugiro reavaliar a paciente para repetir o exame, caso mantenha alterado encaminhar. ","20240516","Consulta endocrinologia"],
   ["700932","1221", "11738","4","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>FAVOR DESCREVER RESULTADOS DE EXAMES DE IMAGEM REALIZADOS. (US DE MAMAS OU MAMOGRAFIA).","20240515","Consulta mastologia CEAE"],
   ["701078","1220", "23721","13","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com a data o resultado dos exames bioquímicos realizados pelo paciente para prosseguir com agendamento.Att.","20240514","Consulta hipertenso alto risco"],
   ["701183","1150", "23824","3","<b>Não Se Enquadra nos Criterios: </b><br>Caso de pequenas cirurgias. Encaminho para fila correta.","20240514","Avaliaçao cirurgica policlinica"],
@@ -575,5 +578,7 @@ const Solicitacoes_Excluidas = [
   ["701465","1317", "58776","3","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Paciente faz acompanhamento com o psiquiatra?","20240514","Consulta gestante alto risco"],
   ["701579","1291", "11126","75","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com a data o resultado dos exames bioquímicos realizados pelo paciente para prosseguir com agendamento.Att.","20240514","Consulta hipertenso alto risco"],
   ["701821","1221", "53976","4","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever peso e estatura.Att.","20240514","Consulta pediatria alto risco"],
-  ["702515","1258", "33024","34","<b>Não Se Enquadra nos Criterios: </b><br>Encaminhado para fila das pequenas cirurgias.","20240514","Avaliaçao cirurgica policlinica"]
+  ["701965","1219", "25459","33","<b>Não Se Enquadra nos Criterios: </b><br>Como está assintomática, repita o exame e acompanhe mensalmente.","20240516","Consulta endocrinologia"],
+  ["702515","1258", "33024","34","<b>Não Se Enquadra nos Criterios: </b><br>Encaminhado para fila das pequenas cirurgias.","20240514","Avaliaçao cirurgica policlinica"],
+  ["704146","507", "6849","2","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever as medicações em uso e posologia para prosseguir com agendamento.Att.","20240516","Consulta hipertenso alto risco"]
 ]
