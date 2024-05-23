@@ -1,4 +1,4 @@
-document.getElementById('atualizacao').textContent = '22/05/2024';
+document.getElementById('atualizacao').textContent = '23/05/2024';
 const Solicitacoes_Excluidas = [
   ["149235","764", "17525","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
   ["152679","764", "25742","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
@@ -569,6 +569,7 @@ const Solicitacoes_Excluidas = [
   ["698729","1194", "21767","6","<b>Não Se Enquadra nos Criterios: </b><br>De acordo protocolo de atendimento a HG do paciente deve estar acima de 9% , os exames demonstram valores abaixo disso, sendo acompanhada pela UBS. Me coloco a disposição para discussão do caso.Att.","20240508","Consulta diabetes alto risco"],
   ["698894","507", "20352","2","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Descrever intervenção realizada, medicações e exames solicitados.","20240521","Consulta ortopedista"],
   ["698986","1221", "46932","4","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Deve conter as intervenções realizadas para investigação,  medicações prescritas e exames solicitados.","20240521","Consulta ortopedista"],
+  ["699059","1264", "12819","2","<b>Não Se Enquadra nos Criterios: </b><br>Paciente lançada na fila de espera errada. Favor lançar na fila GINECOLOGIA POLICLÍNICA.Favor descrever resultado do último PCCU com a data da realização.","20240522","Consulta ginecologia CEAE"],
   ["699221","216", "5979","13","<b>Não Se Enquadra nos Criterios: </b><br>SOMENTE MASTALGIA NÃO É CRITÉRIO DE ENCAMINHAMENTO AO CEAE. ","20240515","Consulta - mastologista"],
   ["699454","1218", "34745","34","<b>Não Se Enquadra nos Criterios: </b><br>O quadro clínico ocorreu há 1 ano, a criança teve algum sintoma respiratório após esse episódio? Faz uso de medicação para tal de forma continua? Após 1 ano sem complicações ou crises, já não se enquadra nos critérios de atendimento. Me coloco a disposição para discussão do caso.Att.","20240509","Consulta pediatria alto risco"],
   ["699585","1220", "5424","13","Não Se Enquadra nos Criterios","20240509","Avaliaçao cirurgica policlinica"],
@@ -601,5 +602,11 @@ const Solicitacoes_Excluidas = [
   ["704513","775", "9815","7","<b>Não Se Enquadra nos Criterios: </b><br>Somente transtornos psiquiátrico graves se enquadram nos critérios do CEAE, ou seja, realizando acompanhamento com o psiquiatra.","20240521","Consulta gestante alto risco"],
   ["704632","1132", "2799","10","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data os últimos exames bioquímicos realizados pela paciente para prosseguir com agendamento.Att.","20240521","Consulta hipertenso alto risco"],
   ["704855","1199", "17199","81","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Qual o valor de glicemia alterado com a data de realização do exame?","20240521","Consulta gestante alto risco"],
-  ["706149","1291", "11572","75","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>DESCREVER INVESTIGAÇÃO LABORATORIAL PARA DIAGNÓSTICO DIFERENCIAL, SUGIRO AVALIAÇÃO DA NEUROLOGIA E PELA CARDIO E ENDOCRINO DO CEAE","20240521","Consulta clinico/geriatra"]
+  ["704926","222", "13306","33","<b>Não Se Enquadra nos Criterios: </b><br>BI-RADS 1 não se enquadra nos critérios do CEAE.","20240522","Consulta - mastologista"],
+  ["704930","1194", "8332","6","<b>Não Se Enquadra nos Criterios: </b><br>Sugiro solicitar avaliação da odontologia especializada.","20240522","Pequena cirurgia policlinica"],
+  ["705964","507", "33085","2","<b>Não Se Enquadra nos Criterios: </b><br>Sintomas de climatério deve ser lançado na fila da GINECOLOGIA POLICLÍNICA.","20240522","Consulta ginecologia CEAE"],
+  ["706149","1291", "11572","75","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>DESCREVER INVESTIGAÇÃO LABORATORIAL PARA DIAGNÓSTICO DIFERENCIAL, SUGIRO AVALIAÇÃO DA NEUROLOGIA E PELA CARDIO E ENDOCRINO DO CEAE","20240521","Consulta clinico/geriatra"],
+  ["706282","1258", "27993","34","<b>Solicitação Indevida: </b><br>Médica da unidade encaminhou de forma indevida, solicitando que o mesmo pudesse ser excluído da fila.","20240522","Avaliaçao nutricionista e-multi"],
+  ["707013","507", "14203","2","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor detalhar as características do nódulo. Imóvel ou móvel? Borda regular ou irregular?","20240522","Consulta mastologia CEAE"],
+  ["707063","764", "38103","18","<b>Solicitação Indevida: </b><br>REGULAÇÃO.","20240522","Ecocardiograma com doopler"]
 ]
