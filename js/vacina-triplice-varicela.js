@@ -13,7 +13,7 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
   <option value="UNIAO">UNIAO</option>
   <option value="VIDA">VIDA</option>
   <option value="VIDA-E-SAUDE">VIDA E SAUDE</option>
-  <option value="VIVER">VIVER</option></select></label><label>, do ACS <select id="profissional">  <option value="540 1149 271 1122 247 1184 1129 441 548 581 484 968 743 493 376 226 525 599 550 447 590 1120 404 168 374 456 1135 78 315 254 1130 301 654 615 515 67 214 621 439 207 1126 31 1127 1125 1128 1123 497 801 389 8 219 564 513 1134 512 196 489 433 481 528 624 223 499 637 446 804 802 170 1173 492 317 50 120 287 756 209 346 1234 602 194 1124 1141 452">Todas as ACS</option>
+  <option value="VIVER">VIVER</option></select></label><label>, do ACS <select id="profissional">  <option value="540 1149 271 1122 247 1184 1129 441 513 548 581 484 968 743 493 376 226 525 599 550 447 590 1120 404 168 374 456 1135 78 315 254 1130 301 654 615 515 67 214 621 439 207 1126 31 1127 1125 1128 1123 497 801 389 8 219 564 1134 512 196 489 433 481 528 624 223 499 637 446 804 802 170 1173 492 317 50 120 287 756 209 346 1234 602 194 1124 1141 452">Todas as ACS</option>
   <option x="ALCY MENDES" value="287">ALCY MENDES</option>
   <option x="ALICE DOS SANTOS NETA" value="223">ALICE DOS SANTOS NETA</option>
   <option x="ALINE DE JESUS SILVA" value="489">ALINE DE JESUS SILVA</option>
@@ -209,6 +209,14 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>0 anos e 1 mes</td>
     <td>30/04/2024</td>
     <td>LIVIA KAMILLY SOARES DOS SANTOS</td>
+    <td style="text-align: center;">🔴</td>
+    <td style="text-align: center;">🔴</td>
+  </tr><tr class="513 MAIS-SAUDE 0-varicela 0-triplice 0">
+    <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/nil/?workMode=wmBrowse" target=_blank>75679</a></td>
+    <td>Alberto Silva Ribeiro</td>
+    <td>0 anos e 0 meses</td>
+    <td>19/05/2024</td>
+    <td>IRIS TANIA TEIXEIRA ALVES</td>
     <td style="text-align: center;">🔴</td>
     <td style="text-align: center;">🔴</td>
   </tr><tr class="548 UNIAO 0-varicela 0-triplice 0">
@@ -3155,14 +3163,6 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>GREICIELE DO CARMO DE JESUS</td>
     <td style="text-align: center;">🟡</td>
     <td style="text-align: center;">🔴</td>
-  </tr><tr class="1129 CAMINHO 1-varicela 2-triplice 1">
-    <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/75191/?workMode=wmBrowse" target=_blank>66458</a></td>
-    <td>Kendrick Oliveira Chaves</td>
-    <td>1 ano e 4 meses</td>
-    <td>12/01/2023</td>
-    <td>DENIZ CAROLINE PEREIRA MARTINS</td>
-    <td style="text-align: center;">🟢</td>
-    <td style="text-align: center;">🟢</td>
   </tr><tr class="481 VIDA-E-SAUDE 0-varicela 1-triplice 1">
     <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/74192/?workMode=wmBrowse" target=_blank>66276</a></td>
     <td>Kevin Alves Gomes</td>

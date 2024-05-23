@@ -604,9 +604,11 @@ const Solicitacoes_Excluidas = [
   ["704855","1199", "17199","81","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Qual o valor de glicemia alterado com a data de realização do exame?","20240521","Consulta gestante alto risco"],
   ["704926","222", "13306","33","<b>Não Se Enquadra nos Criterios: </b><br>BI-RADS 1 não se enquadra nos critérios do CEAE.","20240522","Consulta - mastologista"],
   ["704930","1194", "8332","6","<b>Não Se Enquadra nos Criterios: </b><br>Sugiro solicitar avaliação da odontologia especializada.","20240522","Pequena cirurgia policlinica"],
+  ["705376","1258", "26904","34","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor solicitar ou descrever o resultado da HG da paciente para prosseguir com agendamento.Att.","20240523","Consulta diabetes alto risco"],
   ["705964","507", "33085","2","<b>Não Se Enquadra nos Criterios: </b><br>Sintomas de climatério deve ser lançado na fila da GINECOLOGIA POLICLÍNICA.","20240522","Consulta ginecologia CEAE"],
   ["706149","1291", "11572","75","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>DESCREVER INVESTIGAÇÃO LABORATORIAL PARA DIAGNÓSTICO DIFERENCIAL, SUGIRO AVALIAÇÃO DA NEUROLOGIA E PELA CARDIO E ENDOCRINO DO CEAE","20240521","Consulta clinico/geriatra"],
   ["706282","1258", "27993","34","<b>Solicitação Indevida: </b><br>Médica da unidade encaminhou de forma indevida, solicitando que o mesmo pudesse ser excluído da fila.","20240522","Avaliaçao nutricionista e-multi"],
   ["707013","507", "14203","2","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor detalhar as características do nódulo. Imóvel ou móvel? Borda regular ou irregular?","20240522","Consulta mastologia CEAE"],
-  ["707063","764", "38103","18","<b>Solicitação Indevida: </b><br>REGULAÇÃO.","20240522","Ecocardiograma com doopler"]
+  ["707063","764", "38103","18","<b>Solicitação Indevida: </b><br>REGULAÇÃO.","20240522","Ecocardiograma com doopler"],
+  ["707211","1258", "10513","34","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever as medicações em uso e posologia, para prosseguir com agendamento. Att. ","20240523","Consulta hipertenso alto risco"]
 ]
