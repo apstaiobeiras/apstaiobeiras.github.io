@@ -85,7 +85,7 @@
             display: table;
         }
 
-      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar no-print" onclick="backlink();"><a><span id="micro">00</span> - <span id="profissional">Nome do profissional</span></a></div><div class="no-print"><h1>Informativo</h1><p>Nesse relatório estão listadas os atendimentos realizados por dia:</p><hr/></div><div class="row"><div class="column" id="coluna_1"></div><div class="column" id="coluna_2"></div></div><hr/><h3>Legenda</h3><table><tr><td style="background-color:#9980FA;"></td><td style="text-align: left;">Feriado</td></tr><tr><td style="background-color:#ffbe76;"> </td><td style="text-align: left;">LIRAa/Regulação/Reunião/Capacitação</td></tr><tr><td style="background-color:#4bcffa;"></td><td style="text-align: left;">Folga/Férias</td></tr><tr><td style="background-color:#f6e58d;"></td><td style="text-align: left;">Atestados</td></tr><tr><td style="background-color:#e74c3c;"></td><td style="text-align: left;">Falta ou não teve nenhuma vistoria realizada</td></tr><tr><td style="background-color:#95a5a6;"></td><td style="text-align: left;">Bloqueio</td></tr><tr><td style="background-color:#2ecc71;"></td><td style="text-align: left;">Teve ao menos uma vistoria realizada</td></tr></table></body><script src="js/goto.js"></script><script src="js/calendario-ace.js"></script><script src="js/lista_profissionais.js"></script><script src="js/nomes_profissionais.js"></script><script>        const data_atual = (new Date()).getTime();
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar no-print" onclick="backlink();"><a><span id="micro">00</span> - <span id="profissional">Nome do profissional</span></a></div><div class="no-print"><h3>Resumo sintético</h3></div><table><tr><th>Quadrimestre</th><th>Total</th><th>Média mensal</th></tr><tr><td>Janeiro a Abril</td><td id="Q1">0</td><td id="Q1_Media">0</td></tr><tr><td>Maio a Agosto</td><td id="Q2">0</td><td id="Q2_Media">0</td></tr><tr><td>Setembro a Dezembro</td><td id="Q3">0</td><td id="Q3_Media">0</td></tr><tr><td><b>Total</b></td><td id="Q4">0</td><td id="Q4_Media">0</td></tr></table><hr/><div class="row"><div class="column" id="coluna_1"></div><div class="column" id="coluna_2"></div></div><hr/><h3>Legenda</h3><table><tr><td style="background-color:#9980FA;"></td><td style="text-align: left;">Feriado</td></tr><tr><td style="background-color:#ffbe76;"> </td><td style="text-align: left;">LIRAa/Regulação/Reunião/Capacitação</td></tr><tr><td style="background-color:#4bcffa;"></td><td style="text-align: left;">Folga/Férias</td></tr><tr><td style="background-color:#f6e58d;"></td><td style="text-align: left;">Atestados</td></tr><tr><td style="background-color:#e74c3c;"></td><td style="text-align: left;">Falta ou não teve nenhuma vistoria realizada</td></tr><tr><td style="background-color:#95a5a6;"></td><td style="text-align: left;">Bloqueio</td></tr><tr><td style="background-color:#2ecc71;"></td><td style="text-align: left;">Teve ao menos uma vistoria realizada</td></tr></table></body><script src="js/goto.js"></script><script src="js/calendario-ace.js"></script><script src="js/lista_profissionais.js"></script><script src="js/nomes_profissionais.js"></script><script>        const data_atual = (new Date()).getTime();
 
         if (!(new URLSearchParams(window.location.search)).get('cod')) window.location.href="index.html";
         if (!(new URLSearchParams(window.location.search)).get('token')) window.location.href="index.html";
@@ -122,7 +122,6 @@
             let mes_cabecalho = document.createElement("tr");
             let mes_nome = document.createElement("th");
             mes_nome.colSpan = 7;
-            mes_nome.textContent = meses[mes];
         
             let dias_da_semana = document.createElement("tr");
             dias_da_semana.innerHTML=("<th>Dom.</th><th>Seg.</th><th>Ter.</th><th>Qua.</th><th>Qui.</th><th>Sex.</th><th>Sáb.</th>")
@@ -134,6 +133,7 @@
             //let dias_no_mes = (new Date((new Date).getYear(), mes, 0).getDate())+1;
 
             let j = 1;
+            let total = 0;
 
             for (let i = 0; i < visitas_mes.length; i++){
                 let visitas_realizadas = visitas_mes[i];
@@ -169,6 +169,7 @@
                 if (visitas_realizadas == "BLOQUEIO") day_cell.innerHTML = " ";
                 if (visitas_realizadas == "---") day_cell.innerHTML = " ";
 
+                if (!isNaN(parseInt(day_cell.innerHTML))) total += parseInt(day_cell.innerHTML);
                 current_row.appendChild(day_cell);
 
                 
@@ -186,9 +187,10 @@
                     current_row = document.createElement("tr");
                     current_day_row = document.createElement("tr");
                 }
-
-        
             }
+
+            mes_nome.textContent = meses[mes] + " - Total: " +total;
+
             calendario.appendChild(current_day_row);
             calendario.appendChild(current_row);
             
@@ -197,6 +199,24 @@
             } else {
                 document.getElementById("coluna_2").appendChild(calendario);
             }
-            
+
+            document.getElementById("Q4").innerHTML = parseInt(document.getElementById("Q4").innerHTML)+total;
+            document.getElementById("Q4_Media").innerHTML = Math.floor(parseInt(document.getElementById("Q4").innerHTML)/12);
+
+            if (mes>8) {
+                document.getElementById("Q3").innerHTML = parseInt(document.getElementById("Q3").innerHTML)+total;
+                document.getElementById("Q3_Media").innerHTML = Math.floor(parseInt(document.getElementById("Q3").innerHTML)/4);
+                continue;
+            }
+
+            if (mes>4) {
+                document.getElementById("Q2").innerHTML = parseInt(document.getElementById("Q2").innerHTML)+total;
+                document.getElementById("Q2_Media").innerHTML = Math.floor(parseInt(document.getElementById("Q2").innerHTML)/4);
+                continue;
+            }
+
+            document.getElementById("Q1").innerHTML = parseInt(document.getElementById("Q1").innerHTML)+total;
+            document.getElementById("Q1_Media").innerHTML = Math.floor(parseInt(document.getElementById("Q1").innerHTML)/4);
+            continue;
         }
     </script></html>
