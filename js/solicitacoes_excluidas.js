@@ -1,4 +1,4 @@
-document.getElementById('atualizacao').textContent = '23/05/2024';
+document.getElementById('atualizacao').textContent = '28/05/2024';
 const Solicitacoes_Excluidas = [
   ["149235","764", "17525","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
   ["152679","764", "25742","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
@@ -24,6 +24,7 @@ const Solicitacoes_Excluidas = [
   ["463361","1032", "11161","11","Agendar na Atenção Primaria","20240409","Grupo de coluna-  fisioterapia"],
   ["475757","1218", "25689","3","<b>Solicitação Indevida: </b><br>SOLICITAÇÃO INSERIDA EM FILA INADEQUADA. DEVIDO AO TEMPO DE SOLICITAÇÃO, SUGIRO NOVA AVALIAÇÃO MDO ATUAL QUADRO DE SAÚDE E CONDUTA.","20240409","Retorno fratura ortopedia"],
   ["493028","1056", "14803","9","<b>Não Se Enquadra nos Criterios: </b><br>dente fraturado","20240305","Tratamento endodôntico de dente permanente com três ou mais raízes"],
+  ["508573","986", "39773","11","Agendar na Atenção Primaria","20240527","Fisioterapia - alteraçoes motoras"],
   ["509214","1221", "36321","4","Encaminhamento incompleto / Falta detalhar exames","20240418","Consulta oftalmologia"],
   ["516948","1056", "25366","9","<b>Solicitação Indevida: </b><br>Duplicada a solicitação","20240509","Remoçao de dente retido (incluso / impactado)"],
   ["526215","249", "17698","75","<b>Não Se Enquadra nos Criterios: </b><br>dente fraturado","20240315","Tratamento endodôntico de dente permanente com três ou mais raízes"],
@@ -610,5 +611,9 @@ const Solicitacoes_Excluidas = [
   ["706282","1258", "27993","34","<b>Solicitação Indevida: </b><br>Médica da unidade encaminhou de forma indevida, solicitando que o mesmo pudesse ser excluído da fila.","20240522","Avaliaçao nutricionista e-multi"],
   ["707013","507", "14203","2","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor detalhar as características do nódulo. Imóvel ou móvel? Borda regular ou irregular?","20240522","Consulta mastologia CEAE"],
   ["707063","764", "38103","18","<b>Solicitação Indevida: </b><br>REGULAÇÃO.","20240522","Ecocardiograma com doopler"],
-  ["707211","1258", "10513","34","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever as medicações em uso e posologia, para prosseguir com agendamento. Att. ","20240523","Consulta hipertenso alto risco"]
+  ["707211","1258", "10513","34","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever as medicações em uso e posologia, para prosseguir com agendamento. Att. ","20240523","Consulta hipertenso alto risco"],
+  ["707699","1132", "23403","10","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever as medicações em uso e posologia e os exames bioquímicos realizados pelo paciente para prosseguir com agendamento.Att.","20240524","Consulta hipertenso alto risco"],
+  ["708427","1317", "9392","3","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever a data de realização dos exames bioquímicos para prosseguir com agendamento.Att.","20240524","Consulta hipertenso alto risco"],
+  ["708428","1132", "32119","10","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor verificar os resultados da HG e Glicemia que não constam no encaminhamento.Att.","20240524","Consulta diabetes alto risco"],
+  ["709305","1291", "10448","75","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>As consultas cardiológicas não tem demorado para serem agendadas, por esse motivo, assim que os exames estiverem prontos, favor reencaminhar com os resultados e data.Att.","20240527","Consulta hipertenso alto risco"]
 ]
