@@ -1,0 +1,255 @@
+<!DOCTYPE html><html lang="pt_BR"><head><meta charset="utf8"/><title>Perfil do profissional</title><style>        @media print
+        {    
+            .no-print, .no-print *
+            {
+                display: none !important;
+            }
+        
+            h3
+            {
+                display: none !important;
+            }
+
+            h4
+            {
+                display: block !important;
+            }
+        
+            table {
+              margin: 0  !important;
+            }
+        
+            @page {
+                size: landscape;
+                margin: 0mm; 
+            }
+            
+            body  { 
+            margin: 0px  !important;
+            padding: 0px  !important; 
+            zoom: 94%;
+          } 
+
+          .no-padding-and-margin  { 
+            margin: 0px  !important;
+            padding: 0px  !important; 
+          } 
+        }
+      </style><style>        /* Estilo da barra de navegação */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333; /* Cor de fundo da barra de navegação */
+            color: #fff; /* Cor do texto da barra de navegação */
+            padding: 10px 0;
+            cursor: pointer!important;
+        }
+        
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+        }
+        
+        /* Adicione margem ao corpo para evitar que o conteúdo fique oculto sob a barra de navegação */
+        body {
+            margin-top: 60px; /* Ajuste conforme necessário com base na altura da sua barra de navegação */
+        }
+
+        .td { 
+            text-align: right;
+        }
+
+        .left { 
+            text-align: left;
+        }
+
+
+        .row {
+            margin-left:-5px;
+            margin-right:-5px;
+        }
+  
+        .column {
+            float: left;
+            width: 50%;
+            padding: 5px;
+        }
+
+/* Clearfix (clear floats) */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar no-print" onclick="backlink();"><a><span id="micro">00</span> - <span id="profissional">Nome do Agente Comuitário de Saúde</span></a></div><div class="no-print"><h1>Informativo</h1><p>Nesse relatório estão listados os atendimentos realizados por dia, pelo profissional ou unidade</p><hr/></div><table><tbody id="tabelas"></tbody></table><table><tr><th> </th><th>Significado</th></tr><tr><td style="background-color:#B2D9AB;"></td><td>Teve ao menos um atendimento</td></tr><tr><td style="background-color:#EB989A;"></td><td>Não teve nenhuma atendimento</td></tr></table></body><script src="js/goto.js"></script><script src="js/nomes_profissionais.js"></script><script src="js/producao-profissionais-nivel-superior-turno.js"></script><script src="js/producao-unidades-turno.js"></script><script>        const data_atual = (new Date()).getTime();
+
+        if (!(new URLSearchParams(window.location.search)).get('cod')) window.location.href="index.html";
+        if (!(new URLSearchParams(window.location.search)).get('token')) window.location.href="index.html";
+    
+        const cod_profissional = (new URLSearchParams(window.location.search)).get('cod');
+        const token = parseInt((new URLSearchParams(window.location.search)).get('token'), 36);
+        if (data_atual>token && window.location.protocol != "file:") window.location.href="index.html";
+    </script><script>        document.getElementById("micro").textContent = parseInt(cod_profissional, 36);
+        document.getElementById("profissional").textContent = nomeProfissional[parseInt(cod_profissional, 36)];
+    </script><script>        function somaItensNumericos(array) {
+            return array.reduce((soma, item) => {
+                // Tenta converter o item para número
+                const numero = parseFloat(item);
+                // Verifica se a conversão foi bem-sucedida (não é NaN)
+                if (!isNaN(numero)) {
+                    return soma + numero;
+                }
+                return soma;
+            }, 0);
+        }
+
+        function contaItensNumericos(array) {
+            return array.reduce((soma, item) => {
+                // Tenta converter o item para número
+                const numero = parseFloat(item);
+                // Verifica se a conversão foi bem-sucedida (não é NaN)
+                if (!isNaN(numero)) {
+                    return soma + 1;
+                }
+                return soma;
+            }, 0);
+        }
+
+        function tiraMedia(array) {
+            let total = array.pop();
+            let media = Math.ceil(somaItensNumericos(array)/contaItensNumericos(array));
+
+            array.push(total);
+
+            return media;
+        }
+    </script><script>
+        document.body.classList.remove('container-lg');
+
+        const meses = [];
+        meses[1] = "Janeiro";
+        meses[2] = "Fevereiro";
+        meses[3] = "Março";
+        meses[4] = "Abril";
+        meses[5] = "Maio";
+        meses[6] = "Junho";
+        meses[7] = "Julho";
+        meses[8] = "Agosto";
+        meses[9] = "Setembro";
+        meses[10] = "Outubro";
+        meses[11] = "Novembro";
+        meses[12] = "Dezembro";
+        
+        let primeiro_mes = -1;
+
+        for (let mes in meses) {
+            if (!mes) continue;
+            let atendimentos_do_mes = profissional_nivel_superior[mes];
+            if (!atendimentos_do_mes) continue;
+
+            let atendimentos_do_profissional = atendimentos_do_mes[parseInt(cod_profissional, 36)];
+            if (!atendimentos_do_profissional && nomeProfissional[parseInt(cod_profissional, 36)] == undefined) {
+                atendimentos_do_profissional = producao_unidades[mes][cod_profissional];
+                document.getElementById("micro").textContent = cod_profissional;
+                document.getElementById("profissional").textContent = (new URLSearchParams(window.location.search)).get('unidade');
+            }
+            
+            if (!atendimentos_do_profissional) continue;
+
+            while (atendimentos_do_profissional.manha.length < 31) atendimentos_do_profissional.manha.push("");
+            while (atendimentos_do_profissional.tarde.length < 31) atendimentos_do_profissional.tarde.push("");
+            while (atendimentos_do_profissional.noite.length < 31) atendimentos_do_profissional.noite.push("");
+            while (atendimentos_do_profissional.almoco.length < 31) atendimentos_do_profissional.almoco.push("");
+            while (atendimentos_do_profissional.total.length < 31) atendimentos_do_profissional.total.push("");
+
+            atendimentos_do_profissional.manha.push(-somaItensNumericos(atendimentos_do_profissional.manha))
+            atendimentos_do_profissional.tarde.push(-somaItensNumericos(atendimentos_do_profissional.tarde))
+            atendimentos_do_profissional.noite.push(-somaItensNumericos(atendimentos_do_profissional.noite))
+            atendimentos_do_profissional.almoco.push(-somaItensNumericos(atendimentos_do_profissional.almoco))
+            atendimentos_do_profissional.total.push(-somaItensNumericos(atendimentos_do_profissional.total))
+
+            atendimentos_do_profissional.manha.push(-tiraMedia(atendimentos_do_profissional.manha))
+            atendimentos_do_profissional.tarde.push(-tiraMedia(atendimentos_do_profissional.tarde))
+            atendimentos_do_profissional.noite.push(-tiraMedia(atendimentos_do_profissional.noite))
+            atendimentos_do_profissional.almoco.push(-tiraMedia(atendimentos_do_profissional.almoco))
+            atendimentos_do_profissional.total.push(-tiraMedia(atendimentos_do_profissional.total))
+            
+            let tabela = document.createElement("table");
+            let cabecalho = document.createElement("tr");
+            cabecalho.innerHTML = `<th colspan=34>${meses[mes]}</th>`;
+
+            let linha_manha = document.createElement("tr");
+            linha_manha.innerHTML = `<td>${atendimentos_do_profissional.manha.join("</td><td>")}</td>`;
+            linha_manha.innerHTML = linha_manha.innerHTML.replaceAll("<td>",'<td style="background-color:#B2D9AB;">');
+            linha_manha.innerHTML = linha_manha.innerHTML.replaceAll('<td style="background-color:#B2D9AB;">---</td>',"<td>---</td>");
+            linha_manha.innerHTML = linha_manha.innerHTML.replaceAll('<td style="background-color:#B2D9AB;"></td>',"<td></td>");
+            linha_manha.innerHTML = linha_manha.innerHTML.replaceAll('<td style="background-color:#B2D9AB;">0</td>','<td style="background-color:#EB989A;">0</td>');
+            linha_manha.innerHTML = linha_manha.innerHTML.replaceAll('<td style="background-color:#B2D9AB;">-','<td style="text-align:center;">');
+            linha_manha.innerHTML = linha_manha.innerHTML.replaceAll('<td style="','<td style="text-align:center;');
+            linha_manha.innerHTML = "<td><b>Manhã</b></td>"+linha_manha.innerHTML;
+            
+            let linha_almoco= document.createElement("tr");
+            linha_almoco.innerHTML = `<td>${atendimentos_do_profissional.almoco.join("</td><td>")}</td>`;
+            linha_almoco.innerHTML = linha_almoco.innerHTML.replaceAll("<td>",'<td style="background-color:#B2D9AB;">');
+            linha_almoco.innerHTML = linha_almoco.innerHTML.replaceAll('<td style="background-color:#B2D9AB;">---</td>',"<td>---</td>");
+            linha_almoco.innerHTML = linha_almoco.innerHTML.replaceAll('<td style="background-color:#B2D9AB;"></td>',"<td></td>");
+            linha_almoco.innerHTML = linha_almoco.innerHTML.replaceAll('<td style="background-color:#B2D9AB;">0</td>','<td style="background-color:#EB989A;">0</td>');
+            linha_almoco.innerHTML = linha_almoco.innerHTML.replaceAll('<td style="background-color:#B2D9AB;">-','<td style="text-align:center;">');
+            linha_almoco.innerHTML = linha_almoco.innerHTML.replaceAll('<td style="','<td style="text-align:center;');
+            linha_almoco.innerHTML = "<td><b>Almoço</b></td>"+linha_almoco.innerHTML;
+            
+
+            let linha_tarde = document.createElement("tr");
+            linha_tarde.innerHTML = `<td>${atendimentos_do_profissional.tarde.join("</td><td>")}</td>`;
+            linha_tarde.innerHTML = linha_tarde.innerHTML.replaceAll("<td>",'<td style="background-color:#B2D9AB;">');
+            linha_tarde.innerHTML = linha_tarde.innerHTML.replaceAll('<td style="background-color:#B2D9AB;">---</td>',"<td>---</td>");
+            linha_tarde.innerHTML = linha_tarde.innerHTML.replaceAll('<td style="background-color:#B2D9AB;"></td>',"<td></td>");
+            linha_tarde.innerHTML = linha_tarde.innerHTML.replaceAll('<td style="background-color:#B2D9AB;">0</td>','<td style="background-color:#EB989A;">0</td>');
+            linha_tarde.innerHTML = linha_tarde.innerHTML.replaceAll('<td style="background-color:#B2D9AB;">-','<td style="text-align:center;">');
+            linha_tarde.innerHTML = linha_tarde.innerHTML.replaceAll('<td style="','<td style="text-align:center;');
+            linha_tarde.innerHTML = "<td><b>Tarde</b></td>"+linha_tarde.innerHTML;
+
+            let linha_noite= document.createElement("tr");
+            linha_noite.innerHTML = `<td>${atendimentos_do_profissional.noite.join("</td><td>")}</td>`;
+            linha_noite.innerHTML = linha_noite.innerHTML.replaceAll("<td>",'<td style="background-color:#B2D9AB;">');
+            linha_noite.innerHTML = linha_noite.innerHTML.replaceAll('<td style="background-color:#B2D9AB;">---</td>',"<td>---</td>");
+            linha_noite.innerHTML = linha_noite.innerHTML.replaceAll('<td style="background-color:#B2D9AB;"></td>',"<td></td>");
+            linha_noite.innerHTML = linha_noite.innerHTML.replaceAll('<td style="background-color:#B2D9AB;">0</td>','<td style="background-color:#EB989A;">0</td>');
+            linha_noite.innerHTML = linha_noite.innerHTML.replaceAll('<td style="background-color:#B2D9AB;">-','<td style="text-align:center;">');
+            linha_noite.innerHTML = linha_noite.innerHTML.replaceAll('<td style="','<td style="text-align:center;');
+            linha_noite.innerHTML = "<td><b>Noite</b></td>"+linha_noite.innerHTML;
+
+            let linha_total = document.createElement("tr");
+            linha_total.innerHTML = `<td>${atendimentos_do_profissional.total.join("</td><td>")}</td>`;
+            linha_total.innerHTML = linha_total.innerHTML.replaceAll("<td>",'<td style="background-color:#B2D9AB;">');
+            linha_total.innerHTML = linha_total.innerHTML.replaceAll('<td style="background-color:#B2D9AB;">---</td>',"<td>---</td>");
+            linha_total.innerHTML = linha_total.innerHTML.replaceAll('<td style="background-color:#B2D9AB;"></td>',"<td></td>");
+            linha_total.innerHTML = linha_total.innerHTML.replaceAll('<td style="background-color:#B2D9AB;">0</td>','<td style="background-color:#EB989A;">0</td>');
+            linha_total.innerHTML = linha_total.innerHTML.replaceAll('<td style="background-color:#B2D9AB;">-','<td style="text-align:center;">');
+            linha_total.innerHTML = linha_total.innerHTML.replaceAll('<td style="','<td style="text-align:center;');
+            linha_total.innerHTML = "<td><b>Total</b></td>"+linha_total.innerHTML;
+
+
+            let dias = document.createElement("tr");
+            dias.innerHTML = `<th></th>
+              <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th>
+              <th> 8</th><th> 9</th><th>10</th><th>11</th><th>12</th><th>13</th><th>14</th>
+              <th>15</th><th>16</th><th>17</th><th>18</th><th>19</th><th>20</th><th>21</th>
+              <th>22</th><th>23</th><th>24</th><th>25</th><th>26</th><th>27</th><th>28</th>
+              <th>29</th><th>30</th><th>31</th><th>Total</th><th>Média</th>`;
+
+            tabela = document.getElementById("tabelas");
+            tabela.appendChild(cabecalho);
+            tabela.appendChild(dias);
+            tabela.appendChild(linha_manha);
+            tabela.appendChild(linha_almoco);
+            tabela.appendChild(linha_tarde);
+            tabela.appendChild(linha_noite);
+            tabela.appendChild(linha_total);
+            
+        }
+    </script></html>

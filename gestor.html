@@ -76,9 +76,9 @@
         document.getElementById("indicadores").innerHTML += indicadores_equipes;
     </script><script>        for (let item of producao_unidades.lista) {
             if (typeof(item) == "string") {
-                console.log(item);
-                document.getElementById("lista-unidades").innerHTML += `<tr class="tr">
-                  <td>${item}</td>
+                let unidade = item.split(":");
+                document.getElementById("lista-unidades").innerHTML += `<tr class="tr" onclick="bypassCPF('producao-diaria-nivel-superior.html','${unidade[1]}','${unidade[0]}');">
+                  <td>${unidade[0]}</td>
                 </tr>`
             }
         }
