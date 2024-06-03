@@ -1370,3 +1370,33 @@ nomes_profissionais['1295'] = 'EDJA SILVA SILVESTRE DE CARVALHO';
 nomes_profissionais['84'] = 'TAYSA CRISTINA CARDOSO FREITAS';
 nomes_profissionais['742'] = 'VANUSIA CHAVES DE ARAGAO';
 nomes_profissionais['1201'] = 'IAN VIEIRA LIMA AMORA DE SOUZA';
+
+
+const atendimentos_ranking = nil
+
+const nomes_profissionais = [];
+
+
+const atendimentos_ranking = nil
+
+const nomes_profissionais = [];
+
+
+const atendimentos_ranking = nil
+
+const nomes_profissionais = [];
+
+
+const atendimentos_ranking = nil
+
+const nomes_profissionais = [];
+
+
+const atendimentos_ranking = nil
+
+const nomes_profissionais = [];
+
+
+const atendimentos_ranking = nil
+
+const nomes_profissionais = [];

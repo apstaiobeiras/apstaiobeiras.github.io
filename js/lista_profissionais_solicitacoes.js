@@ -73,6 +73,7 @@ const lista_profissionais_solicitacoes = `
 <option value="1193">RAFAELA VILACA DE QUADROS</option>
 <option value="849">RAFHAEL ARRUDAS RIBEIRO SOARES</option>
 <option value="1069">RAYANE DA CRUZ ALVES</option>
+<option value="1292">RENATA DE OLIVEIRA COSTA</option>
 <option value="884">RENATA MATOS E MATOS</option>
 <option value="1243">ROBERTA CAMARGOS</option>
 <option value="894">ROSIANE VIEIRA DE SA</option>
