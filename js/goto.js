@@ -42,7 +42,8 @@ function gotoPage(page,nargs) {
     window.location.href = `${page}?cod=${cod}&token=${token}&mode=${mode}&unidade=${unidade}&cod_path=${cod_path}&path=${path}${args}&pagina=${pagina}`;
 }
 
-function bypassCPF(page,new_cod,unidade){
+function bypassCPF(page,new_cod,unidade,extra){
+    extra = extra || "";
     let cod       = (new URLSearchParams(window.location.search)).get('cod');
     let token     = (new Date()).setSeconds((new Date()).getSeconds()+30).toString(36)
     let mode      = (new URLSearchParams(window.location.search)).get('mode');
@@ -50,5 +51,5 @@ function bypassCPF(page,new_cod,unidade){
     let cod_path  = ((new URLSearchParams(window.location.search)).get('cod_path') || cod)+ "/"+cod;
     let pagina       = (((new URLSearchParams(window.location.search)).get('pagina')) || "up");
 
-    window.location.href = `${page}?cod=${new_cod}&token=${token}&mode=${mode}&unidade=${unidade}&cod_path=${cod_path}&path=${path}&pagina=${pagina}`;
+    window.location.href = `${page}?cod=${new_cod}&token=${token}&mode=${mode}&unidade=${unidade}&cod_path=${cod_path}&path=${path}&pagina=${pagina}${extra}`;
 }

@@ -152,7 +152,8 @@
             if (!atendimentos_do_mes) continue;
 
             let atendimentos_do_profissional = atendimentos_do_mes[parseInt(cod_profissional, 36)];
-            if (!atendimentos_do_profissional && nomeProfissional[parseInt(cod_profissional, 36)] == undefined) {
+
+            if ((new URLSearchParams(window.location.search)).get('xunidade')) {
                 atendimentos_do_profissional = producao_unidades[mes][cod_profissional];
                 document.getElementById("micro").textContent = cod_profissional;
                 document.getElementById("profissional").textContent = (new URLSearchParams(window.location.search)).get('unidade');

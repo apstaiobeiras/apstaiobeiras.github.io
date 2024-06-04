@@ -77,7 +77,7 @@
     </script><script>        for (let item of producao_unidades.lista) {
             if (typeof(item) == "string") {
                 let unidade = item.split(":");
-                document.getElementById("lista-unidades").innerHTML += `<tr class="tr" onclick="bypassCPF('producao-diaria-nivel-superior.html','${unidade[1]}','${unidade[0]}');">
+                document.getElementById("lista-unidades").innerHTML += `<tr class="tr" onclick="bypassCPF('producao-diaria-nivel-superior.html','${unidade[1]}','${unidade[0]}','&xunidade=true');">
                   <td>${unidade[0]}</td>
                 </tr>`
             }
