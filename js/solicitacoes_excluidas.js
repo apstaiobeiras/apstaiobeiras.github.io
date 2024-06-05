@@ -1,4 +1,4 @@
-document.getElementById('atualizacao').textContent = '04/06/2024';
+document.getElementById('atualizacao').textContent = '05/06/2024';
 const Solicitacoes_Excluidas = [
   ["149235","764", "17525","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
   ["152679","764", "25742","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
@@ -21,6 +21,7 @@ const Solicitacoes_Excluidas = [
   ["349913","907", "4145","4","<b>Solicitação Indevida: </b><br>PROCEDIMENTO VINCULADO A MASTOLOGIA CEAE.PACIENTE APRESENTANDO CRITÉRIOS DE ENCAMINHAMENTO À ESPECIALIDADE.","20240404","Ultrassonografia mamaria bilateral"],
   ["358464","806", "5856","68","Solicitação Indevida","20240510","Consulta  urologia policlinica"],
   ["367255","880", "21201","9","Não Se Enquadra nos Criterios","20240408","Avaliaçao fisioterapeuta NASF APS - mirian"],
+  ["378480","807", "39411","18","Solicitação Indevida","20240604","Consulta ginecologista - PPI"],
   ["380831","884", "28611","3","<b>Solicitação Indevida: </b><br>GESTAÇÃO JA CONCLUIDA.","20240223","Ultrassonografia morfologico"],
   ["383889","1064", "6580","7","Não Se Enquadra nos Criterios","20240408","Avaliaçao fisioterapeuta NASF APS - mirian"],
   ["402659","806", "49022","68","Solicitação Indevida","20240423","Ultrassonografia de aparelho urinÁrio"],
@@ -41,6 +42,7 @@ const Solicitacoes_Excluidas = [
   ["536677","1132", "2254","10","<b>Não Se Enquadra nos Criterios: </b><br>PACIENTE AVISADA E RETIRADA DA FILA POR NÃO SE ENQUADRAR NOS NOVOS CRITÉRIOS DE ATENDIMENTO","20240603","Atendimento fonoaudiologia"],
   ["550810","1220", "35","13","<b>Não Se Enquadra nos Criterios: </b><br>Sugiro prosseguir com investigação complementar. Encaminhar se novos exames alterados.","20240401","Consulta nefrologista"],
   ["551004","1132", "2559","10","<b>Não Se Enquadra nos Criterios: </b><br>Sugiro prosseguir com investigação complementar. Encaminhar se novos exames alterados.","20240401","Consulta nefrologista"],
+  ["560599","740", "40184","11","Agendar na Atenção Primaria","20240604","Acolhimento de fisioterapia"],
   ["565790","1109", "54964","75","<b>Solicitação Indevida: </b><br>PACIENTES ADMITIDOS NO PROGRAMA MELHOR EM CASA.","20240219","Atendimento fonoaudiologia"],
   ["566096","72", "42346","206","<b>Não Se Enquadra nos Criterios: </b><br>PACIENTE AVISADA E RETIRADA DA FILA POR NÃO SE ENQUADRAR NOS NOVOS CRITÉRIOS DE ATENDIMENTO","20240603","Atendimento fonoaudiologia"],
   ["573940","1069", "13977","75","<b>Não Se Enquadra nos Criterios: </b><br>Quadro clínico apresentado é característico de mastite, após interromper a amamentação e o nódulo persista, favor reencaminhar.Att.","20240202","Consulta - mastologista"],
@@ -571,6 +573,7 @@ const Solicitacoes_Excluidas = [
   ["696095","1259", "67619","8","<b>Não Se Enquadra nos Criterios: </b><br>encaminhe para oftalmologia, por gentileza.","20240513","Consulta pediatra policlinica"],
   ["696403","1132", "18839","10","<b>Não Se Enquadra nos Criterios: </b><br>Para se enquadrar nos critérios o nódulo palpável deve ser endurecido, imóvel, fixo ao tecido subjacente, sem margens definidas.","20240507","Consulta mastologia CEAE"],
   ["696490","1291", "5317","75","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Deve descrever investigação realizada, principalmente a laboratorial e iniciar prevenção secundária para AVCi , ","20240521","Consulta clinico/geriatra"],
+  ["696545","1219", "41117","33","<b>Solicitação Indevida: </b><br>PACIENTE RESIDENTE DO MUNICÍPIO DE RIO PARDO. ","20240605","Endoscopia com biopsia / pesquisa <i>H. Piloly</i>"],
   ["696687","1132", "2359","10","<b>Não Se Enquadra nos Criterios: </b><br>Paciente deve ser lançado na fila da GINECOLOGIA POLICLÍNICA.","20240507","Consulta ginecologia CEAE"],
   ["696734","507", "33188","2","<b>Não Se Enquadra nos Criterios: </b><br>ENVIADA PARA FILA DE ESPERA DO CEAE : DIABETES DE ALTO RISCO","20240507","Consulta endocrinologia"],
   ["696799","1221", "57525","4","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever o nódulo. Endurecido? Móvel? Margens?","20240507","Consulta mastologia CEAE"],
@@ -650,6 +653,7 @@ const Solicitacoes_Excluidas = [
   ["709305","1291", "10448","75","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>As consultas cardiológicas não tem demorado para serem agendadas, por esse motivo, assim que os exames estiverem prontos, favor reencaminhar com os resultados e data.Att.","20240527","Consulta hipertenso alto risco"],
   ["709485","354", "20061","9","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data o resultado do PCCU realizado pela paciente para prosseguir com agendamento.Att.","20240529","Consulta ginecologia policlinica"],
   ["709552","1267", "66133","8","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>NECESSARIO DETALHAMENTO DO RISCO CARDIOVASCULAR. CASO PACIENTE ALTO RISCO, ENCAMINHAR PARA FILA \"\"HIPERTENSO ALTO RISCO\"\". CASO RISCO INTEMEDIARIO OU BAIXO, REENCAMINHAR (VIA SISTEMA - CONSULTA CARDIOLOGISTA+ECG RENAN) COM TAL DESCRIÇAO.","20240529","Consulta cardiologia + ECG Dr Renan"],
+  ["709620","1150", "24400","3","<b>Não Se Enquadra nos Criterios: </b><br>Paciente em acompanhamento no Serviço de Oncologia de Taiobeiras, portanto, receberá os cuidados nutricionais pelo Serviço de Nutrição da Oncologia. Discutido o caso com a médica Maíra (que realizou o encaminhamento) e a Nutricionista Karine (do serviço de Oncologia).","20240604","Avaliaçao nutricionista e-multi"],
   ["709757","1032", "3719","11","Solicitação Indevida","20240528","Fisioterapia - paciente pre ou pos"],
   ["709908","907", "16708","78","<b>Não Se Enquadra nos Criterios: </b><br>FAVOR INSERIR NA FILA DAS PEQUENAS CIRURGIAS.","20240528","Avaliaçao cirurgica policlinica"],
   ["710214","907", "41165","18","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>AUSENCIA DE DUM/IG.","20240529","Ultrassonografia obstetrica"],
@@ -663,5 +667,6 @@ const Solicitacoes_Excluidas = [
   ["711301","320", "13092","78","<b>Não Se Enquadra nos Criterios: </b><br>De acordo protocolo atendimento a HG da paciente deve estar igual ou superior a 9%, o que não é o caso da paciente. Att. ","20240603","Consulta diabetes alto risco"],
   ["711302","320", "13092","78","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever resultados de exames bioquímicos com data para prosseguir com agendamento, caso haja alguma ressalva, entrar em contato.  Att.","20240603","Consulta hipertenso alto risco"],
   ["711926","1291", "11677","75","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever o resultado de PCCU realizado pela paciente para prosseguir com agendamento.Att.","20240603","Consulta ginecologia policlinica"],
-  ["712333","1291", "14761","75","<b>Não Se Enquadra nos Criterios: </b><br>De acordo protocolo o atendimento é para o Hipertenso de alto risco, caso haja alguma ressalva, entrar em contato.Att.","20240603","Consulta hipertenso alto risco"]
+  ["712333","1291", "14761","75","<b>Não Se Enquadra nos Criterios: </b><br>De acordo protocolo o atendimento é para o Hipertenso de alto risco, caso haja alguma ressalva, entrar em contato.Att.","20240603","Consulta hipertenso alto risco"],
+  ["712771","1267", "31657","8","<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA FILA DE AVALIAÇÃO CIRURGICA.","20240605","Consulta cirurgiao geral"]
 ]

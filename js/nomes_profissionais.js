@@ -1,4 +1,5 @@
 const nomeProfissional = [];
+nomeProfissional[''] = '';
 nomeProfissional['671'] = 'ADIMAR BANDEIRA DA SILVA ';
 nomeProfissional['320'] = 'ADRIANA RAYSSA TELES COLARES';
 nomeProfissional['1160'] = 'ALAN CARLOS FERREIRA CHAVES ';
