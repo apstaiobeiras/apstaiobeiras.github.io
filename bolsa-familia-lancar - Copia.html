@@ -1,0 +1,201 @@
+<!DOCTYPE html><html lang="pt_BR"><head><meta charset="utf8"/><title>Acessar perfil</title><style>        @media print
+        {
+            .no-print, .no-print *
+            {
+                display: none !important;
+            }
+
+            h3
+            {
+                display: none !important;
+            }
+
+            h4
+            {
+                display: block !important;
+            }
+
+            table {
+              margin: 0  !important;
+            }
+
+            @page {
+                size: landscape;
+                margin: 0mm;
+            }
+
+            body  {
+            margin: 0px  !important;
+            padding: 0px  !important;
+            zoom: 94%;
+          }
+
+          .no-padding-and-margin  {
+            margin: 0px  !important;
+            padding: 0px  !important;
+          }
+        }
+      </style><style>        /* Estilo da barra de navegação */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333; /* Cor de fundo da barra de navegação */
+            color: #fff; /* Cor do texto da barra de navegação */
+            padding: 10px 0;
+        }
+        
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+        }
+        
+        /* Adicione margem ao corpo para evitar que o conteúdo fique oculto sob a barra de navegação */
+        body {
+            margin-top: 60px; /* Ajuste conforme necessário com base na altura da sua barra de navegação */
+        }
+
+        td { 
+            text-align: left;
+        }
+
+        .left { 
+            text-align: left;
+        }
+
+        .oculto {
+            display: none;
+        }
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="no-print"><div class="navbar"><a>Bolsa Família</a></div><h3></h3><table id="busca"><tr><td>Acompanhar pelo NIS: </td><td><input id="nis"/></td><td><button onclick="acompanhar()">Carregar família</button></td></tr><tr><td>Acompanhar pelo CNS: </td><td><input id="cns"/></td><td><button onclick="procurar(5,'cns')">Procurar</button></td></tr><tr><td>Acompanhar pelo Cód ACS: </td><td><input id="cod"/></td><td><button onclick="procurar(4,'cod')">Procurar</button></td></tr><tr><td>Acompanhar pela data de nascimento: </td><td><input id="dn" type="date"/></td><td><button onclick="procurar(4,'dn')">Procurar</button></td></tr></table></div><h3 class="no-print"></h3><div><table style="overflow: hidden"><tbody id="dados_familia"></tbody></table><br/></div><button class="oculto" id="cancelar" onclick="cancelar()">Cancelar acompanhamento</button> <button class="oculto" id="salvar" onclick="salvar()">Salvar acompanhamento</button></body><script src="js/listaNIS.js"></script><script src="js/nis2familia.js"></script><script src="js/digitados.js"></script><script>        document.body.classList.remove('container-lg');
+
+        function cancelar(){
+            document.getElementById("cancelar").classList = "oculto";
+            document.getElementById("salvar").classList = "oculto";
+            document.getElementById("busca").classList = "";
+
+            document.getElementById("dados_familia").innerHTML = "";
+
+        }
+
+        function iniciarAcompanhamento(linha) {
+            document.getElementById("busca").classList = "oculto";
+            document.getElementById(linha).children[3].remove();
+
+            document.getElementById(linha).innerHTML += `
+              <td><input style="max-width: 64px"></td>
+              <td><input style="max-width: 64px"></td>
+              <td><input type="date"></td>
+            `;
+
+            return false;
+        }
+
+        function salvar() {
+          console.log(event.target);
+        }
+
+        function procurar(indice,id) {
+            let valor = document.getElementById(id).value;
+
+            if (id == "dn") {
+                let dn = document.getElementById(id).value.split("-");
+                valor = dn[2]+"/"+dn[1]+"/"+dn[0];
+            }
+
+            let membros = "";
+
+            if (id == "cod") {
+              listaNIS.forEach(function (item){
+                if (item[indice].includes(valor)) {
+                    let digitados = `
+                      <td><input style="max-width: 64px"></td>
+                      <td><input style="max-width: 64px"></td>
+                      <td><input type="date"></td>
+                    `;
+
+                    digitados = listaDigitados[item[1]] == false && digitados || "";
+
+                    membros += `
+                    <tr id=${item[1]}>
+                      <td>${item[1]}</td>
+                      <td>${item[2]}</td>
+                      <td>${item[3]}</td>
+                      ${digitados}
+                    <tr>
+                    `;
+                }
+              });
+            } else {
+              listaNIS.forEach(function (item){
+                if (item[indice].includes(valor)) {
+                    membros += `
+                    <tr>
+                      <td>${item[0]}</td>
+                      <td>${item[1]}</td>
+                      <td>${item[2]}</td>
+                      <td colspan=3><a href="#" onclick="acompanhar('${item[0]}'); return false;">Listar membros<br>dessa família</a></td>
+                    <tr>
+                    `;
+                }
+              });
+            }
+
+            document.getElementById("dados_familia").innerHTML = `
+              <tr>
+                <th>ID Família</th>
+                <th>NIS</th>
+                <th>Nome</th>
+                <th></th>
+              <tr>
+              ${membros}
+            `;
+
+            document.getElementById("cancelar").classList = "";
+        }
+
+        function acompanhar(_familia) {
+            let familia = _familia || nis2familia[document.getElementById("nis").value];
+
+            if (familia == "") {
+                alert("Informe o NIS antes!");
+                return;
+            }
+
+            if (!familia) {
+                alert("NIS não encontrado no sistema");
+                return;
+            }
+
+            let membros = "";
+
+            listaNIS.forEach(function (item){
+                if (item[0] == familia) {
+                    membros += `
+                    <tr id=${item[1]}>
+                      <td>${item[1]}</td>
+                      <td>${item[2]}</td>
+                      <td>${item[3]}</td>
+                      <td colspan=3><a href="#" onclick="iniciarAcompanhamento('${item[1]}'); return false;">Acompanhar</a></td>
+                    <tr>
+                    `;
+                }
+            });
+
+            document.getElementById("dados_familia").innerHTML = `
+              <tr>
+                <th>NIS</th>
+                <th>Nome</th>
+                <th>Data<br>nascimento</th>
+                <th>Peso</th>
+                <th>Altura</th>
+                <th>Data<br>acompanhamento</th>
+              <tr>
+              ${membros}
+            `;
+
+            document.getElementById("cancelar").classList = "";
+            document.getElementById("salvar").classList = "";
+        }
+    </script></html>
