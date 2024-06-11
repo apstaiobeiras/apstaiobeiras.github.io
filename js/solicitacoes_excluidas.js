@@ -1,4 +1,4 @@
-document.getElementById('atualizacao').textContent = '10/06/2024';
+document.getElementById('atualizacao').textContent = '11/06/2024';
 const Solicitacoes_Excluidas = [
   ["149235","764", "17525","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
   ["152679","764", "25742","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
@@ -27,6 +27,7 @@ const Solicitacoes_Excluidas = [
   ["402659","806", "49022","68","Solicitação Indevida","20240423","Ultrassonografia de aparelho urinÁrio"],
   ["435697","770", "28144","61","<b>Não Se Enquadra nos Criterios: </b><br>PACIENTE AVISADO E RETIRADO DA FILA POR NÃO SE ENQUADRAR NOS NOVOS CRITÉRIOS DE ATENDIMENTO","20240603","Atendimento fonoaudiologia"],
   ["444730","1198", "5988","8","<b>Não Se Enquadra nos Criterios: </b><br>dente fraturado","20240305","Tratamento endodôntico de dente permanente com três ou mais raízes"],
+  ["458019","1193", "19163","56","Agendar na Atenção Primaria","20240610","Fisioterapia - consulta"],
   ["463361","1032", "11161","11","Agendar na Atenção Primaria","20240409","Grupo de coluna-  fisioterapia"],
   ["472486","122", "46516","206","<b>Não Se Enquadra nos Criterios: </b><br>PACIENTE AVISADA E RETIRADA DA FILA POR NÃO SE ENQUADRAR NOS NOVOS CRITÉRIOS DE ATENDIMENTO","20240603","Atendimento fonoaudiologia"],
   ["475757","1218", "25689","3","<b>Solicitação Indevida: </b><br>SOLICITAÇÃO INSERIDA EM FILA INADEQUADA. DEVIDO AO TEMPO DE SOLICITAÇÃO, SUGIRO NOVA AVALIAÇÃO MDO ATUAL QUADRO DE SAÚDE E CONDUTA.","20240409","Retorno fratura ortopedia"],
@@ -672,6 +673,7 @@ const Solicitacoes_Excluidas = [
   ["711301","320", "13092","78","<b>Não Se Enquadra nos Criterios: </b><br>De acordo protocolo atendimento a HG da paciente deve estar igual ou superior a 9%, o que não é o caso da paciente. Att. ","20240603","Consulta diabetes alto risco"],
   ["711302","320", "13092","78","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever resultados de exames bioquímicos com data para prosseguir com agendamento, caso haja alguma ressalva, entrar em contato.  Att.","20240603","Consulta hipertenso alto risco"],
   ["711926","1291", "11677","75","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever o resultado de PCCU realizado pela paciente para prosseguir com agendamento.Att.","20240603","Consulta ginecologia policlinica"],
+  ["712258","216", "51597","13","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Paciente está em acompanhamento no CAPS atualmente?","20240610","Consulta gestante alto risco"],
   ["712333","1291", "14761","75","<b>Não Se Enquadra nos Criterios: </b><br>De acordo protocolo o atendimento é para o Hipertenso de alto risco, caso haja alguma ressalva, entrar em contato.Att.","20240603","Consulta hipertenso alto risco"],
   ["712606","1259", "26547","8","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data o último exame de PCCU realizado pela paciente para prosseguir com agendamento.Att.","20240605","Consulta ginecologia policlinica"],
   ["712771","1267", "31657","8","<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA FILA DE AVALIAÇÃO CIRURGICA.","20240605","Consulta cirurgiao geral"],
@@ -680,6 +682,7 @@ const Solicitacoes_Excluidas = [
   ["713447","1258", "10513","34","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever os resultados de exames bioquímicos com data realizado pelo paciente para prosseguir com agendamento. Caso haja alguma ressalva do caso em especifico, entrar em contato.  Att.","20240605","Consulta hipertenso alto risco"],
   ["713611","1216", "61678","9","<b>Não Se Enquadra nos Criterios: </b><br>Paciente com  hipótese diagnóstica de TEA ,deve ser encaminhado ao CER II .","20240606"," consulta psicologia infantojuvenil"],
   ["713613","1046", "11295","10","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data o último exame de PCCU realizado pela paciente para prosseguir com agendamento.Att.","20240605","Consulta ginecologia policlinica"],
+  ["713615","1259", "8930","8","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Rever investigação radiológica realizada além de abordagem terapêutica que justifique o encaminhamento.","20240610","Consulta ortopedista"],
   ["713692","1317", "28616","3","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>PACIENTE HIPERTENSA, SEM DETALHAMENTO DE RISCO CARDIOVASCULAR.SE RISCO MODERADO/BAIXO, REINSERIR SOLICITACAO NA FILA \"\"CONSULTA CARDIOLOGIA RENAN+ECG\"\". SE ALTO RISCO, ENCAMINHAR A FILA \"\"HIPERTENSO ALTO RISCO\"\". ","20240609","Consulta cardiologia + ECG Dr Renan"],
   ["714006","1193", "67703","56","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data o último exame de PCCU realizado pela paciente para prosseguir com agendamento.Att.","20240605","Consulta ginecologia policlinica"],
   ["714124","832", "3177","9","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data o último exame de PCCU realizado pela paciente para prosseguir com agendamento.Att.","20240605","Consulta ginecologia policlinica"],
