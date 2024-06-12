@@ -32,6 +32,7 @@ const lista_profissionais_solicitacoes = `
 <option value="72">GISELE MARQUES RIBEIRO</option>
 <option value="1046">HEMILY DE OLIVEIRA CELESTINO</option>
 <option value="1110">HILLARY LIMA ABADE</option>
+<option value="909">IANN FERNANDO GOUVEA JABBUR</option>
 <option value="1016">ISA MATTOS ALVES</option>
 <option value="832">ISABELLA LOPES SANTOS</option>
 <option value="775">ISABELLA MENDES DE OLIVEIRA</option>

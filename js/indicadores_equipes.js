@@ -1,4 +1,4 @@
-document.getElementById('atualizacao-indicadores').textContent = '11/06/2024';
+document.getElementById('atualizacao-indicadores').textContent = '12/06/2024';
 const indicadores_equipes = `
 <tr>
   <td><b>ACOLHER</b></td>
@@ -273,7 +273,7 @@ const indicadores_equipes = `
   <td class="right">830</td>
 </tr>
 `;
-document.getElementById('atualizacao-indicadores').textContent = '11/06/2024';
+document.getElementById('atualizacao-indicadores').textContent = '12/06/2024';
 const indicadores_por_equipe = [];
 indicadores_por_equipe['ACOLHER'] = `
   <tr>

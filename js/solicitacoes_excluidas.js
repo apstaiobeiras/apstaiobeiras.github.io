@@ -1,9 +1,11 @@
-document.getElementById('atualizacao').textContent = '11/06/2024';
+document.getElementById('atualizacao').textContent = '12/06/2024';
 const Solicitacoes_Excluidas = [
   ["149235","764", "17525","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
   ["152679","764", "25742","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
   ["159387","764", "36217","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
   ["162709","849", "52003","56","Não Se Enquadra nos Criterios","20240408","Avaliaçao fisioterapeuta NASF APS - mirian"],
+  ["202396","909", "28712","3","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor reavaliar paciente, caso haja critério para investigação, reencaminhe.","20240611","Anuscopia / retoscopia"],
+  ["214451","909", "29731","3","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor reavaliar paciente, caso haja critério para investigação, reencaminhe.","20240611","Anuscopia / retoscopia"],
   ["257763","849", "21283","56","Não Se Enquadra nos Criterios","20240408","Avaliaçao fisioterapeuta NASF APS - mirian"],
   ["257820","1106", "33252","3","Não Se Enquadra nos Criterios","20240408","Avaliaçao fisioterapeuta NASF APS - mirian"],
   ["257918","52", "26905","78","<b>Não Se Enquadra nos Criterios: </b><br>CONTATO TELEFÔNICO DIA 27/02/24 DENTE QUEBROU","20240227","Tratamento endodôntico de dente permanente com três ou mais raízes"],
@@ -666,6 +668,7 @@ const Solicitacoes_Excluidas = [
   ["710411","1267", "5096","8","<b>Não Se Enquadra nos Criterios: </b><br>Encaminhar para Diabetes Alto Risco.","20240529","Consulta endocrinologia"],
   ["710698","1219", "37815","33","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data o resultado do PCCU realizado pela paciente para prosseguir com agendamento.Att.","20240529","Consulta ginecologia policlinica"],
   ["710904","353", "15447","9","<b>Não Se Enquadra nos Criterios: </b><br>Só entra para o alto risco:<br>Sífilis terciária ou resistente ao tratamento com Penicilina;Uso abusivo de drogas lícitas e ilícitas com repercussão na gestação atual.","20240529","Consulta - obstétrica / puerpério"],
+  ["710954","507", "5821","2","<b>Não Se Enquadra nos Criterios: </b><br>Pelos dados clínicos e sintomas citados sugiro solicitar anuscopia.","20240611","Colonoscopia com biopsia"],
   ["711107","1260", "507","81","<b>Não Se Enquadra nos Criterios: </b><br>Encaminhar para avaliação cirúrgica.","20240529","Pequena cirurgia policlinica"],
   ["711145","805", "24468","16","<b>Agendar na Atenção Primaria: </b><br>Paciente deve ser encaminhada com detalhamento clínico que justifique a avaliação.direta com o  especialista.","20240610","Consulta ortopedista"],
   ["711201","907", "15760","78","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever resultado exame de PCCU realizado pela paciente para prosseguir com agendamento.Att.","20240603","Consulta ginecologia policlinica"],
@@ -689,6 +692,11 @@ const Solicitacoes_Excluidas = [
   ["714355","1132", "2871","10","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data os últimos resultados de exames bioquímicos realizados pela paciente para prosseguir com agendamento.Att.","20240606","Consulta hipertenso alto risco"],
   ["714356","1258", "30214","34","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data os últimos resultados de exames bioquímicos realizados pela paciente para prosseguir com agendamento.Att.","20240606","Consulta hipertenso alto risco"],
   ["714365","1260", "4925","81","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data os resultados de exames bioquímicos realizados pelo paciente para prosseguir com agendamento.Att.","20240606","Consulta hipertenso alto risco"],
+  ["714419","1277", "731","4","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Qual a IG? Qual o histórico obstétrico? Favor descrever o quadro da gestante.","20240611","Consulta gestante alto risco"],
+  ["714461","354", "22097","9","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever o laudo do USG obstétrico e lançar na fila GESTANTE ALTO RISCO.","20240611","Consulta - obstétrica / puerpério"],
   ["714785","775", "13279","7","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Falta detalhamento da história clínica, resultado de exame radiológico...","20240607","Consulta ortopedista"],
-  ["715231","90707011", "31759","18","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>AUSENCIA DE DUM E IG.","20240609","Ultrassonografia obstetrica"]
+  ["715231","90707011", "31759","18","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>AUSENCIA DE DUM E IG.","20240609","Ultrassonografia obstetrica"],
+  ["715877","1259", "14529","8","<b>Não Se Enquadra nos Criterios: </b><br>Pelos dados clínicos, sugiro solicitar Anuscopia.","20240611","Colonoscopia com biopsia"],
+  ["717126","1277", "10562","4","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>AUSENCIA DE DUM E IG. JA REALIZADO CONTATO COM PROFISSIONAL SOLICITANTE.","20240611","Ultrassonografia obstetrica"],
+  ["717205","1277", "10153","4","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>AUSENCIA DE DUM E IG. REINSERIR COM DETALHAMENTO CLÍNICO NECESSÁRIO.JA REALIZADO CONTATO COM SOLICITANTE.","20240611","Ultrassonografia obstetrica"]
 ]
