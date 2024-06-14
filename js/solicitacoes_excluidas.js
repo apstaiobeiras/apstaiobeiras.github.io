@@ -1,4 +1,4 @@
-document.getElementById('atualizacao').textContent = '13/06/2024';
+document.getElementById('atualizacao').textContent = '14/06/2024';
 const Solicitacoes_Excluidas = [
   ["149235","764", "17525","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
   ["152679","764", "25742","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
@@ -35,6 +35,7 @@ const Solicitacoes_Excluidas = [
   ["475757","1218", "25689","3","<b>Solicitação Indevida: </b><br>SOLICITAÇÃO INSERIDA EM FILA INADEQUADA. DEVIDO AO TEMPO DE SOLICITAÇÃO, SUGIRO NOVA AVALIAÇÃO MDO ATUAL QUADRO DE SAÚDE E CONDUTA.","20240409","Retorno fratura ortopedia"],
   ["480555","1069", "41716","75","<b>Não Se Enquadra nos Criterios: </b><br>PACIENTE AVISADA E RETIRADA DA FILA POR NÃO SE ENQUADRAR NOS NOVOS CRITÉRIOS DE ATENDIMENTO","20240603","Atendimento fonoaudiologia"],
   ["493028","1056", "14803","9","<b>Não Se Enquadra nos Criterios: </b><br>dente fraturado","20240305","Tratamento endodôntico de dente permanente com três ou mais raízes"],
+  ["495281","1225", "12875","11","Agendar na Atenção Primaria","20240613","Fisioterapia - alteraçoes motoras"],
   ["508573","986", "39773","11","Agendar na Atenção Primaria","20240527","Fisioterapia - alteraçoes motoras"],
   ["509214","1221", "36321","4","Encaminhamento incompleto / Falta detalhar exames","20240418","Consulta oftalmologia"],
   ["516416","1107", "16416","81","<b>Não Se Enquadra nos Criterios: </b><br>PACIENTE AVISADA E RETIRADA DA FILA POR NÃO SE ENQUADRAR NOS NOVOS CRITÉRIOS DE ATENDIMENTO","20240603","Atendimento fonoaudiologia"],
@@ -448,6 +449,7 @@ const Solicitacoes_Excluidas = [
   ["676382","1291", "52658","75","<b>Não Se Enquadra nos Criterios: </b><br>PACIENTE NÃO SE ENQUADRA NOS CRITÉRIOS DE ATENDIMENTIO PEDIATRICO AMBULATORIAL.TRANSFERIDO PARA PEDIATRIA ALTO RISCO.","20240412","Consulta pediatra policlinica"],
   ["676563","1016", "74627","8","<b>Solicitação Indevida: </b><br>PACIENTE ALTO RISCO CARDIOVASCULAR, APRESENTANDO CRITÉRIOS DE CEAE. REALIZADO TRANSFERENCIA PARA FILA \"\"CONSULTA HIPERTENSO ALTO RISCO\"\".","20240404","Consulta cardiologia + ECG Dr Renan"],
   ["676615","1150", "25194","3","<b>Agendar na Atenção Primaria: </b><br>O médico da APS deve avaliar a paciente e indicar as intervenções necessárias.","20240411","Consulta ortopedista"],
+  ["676880","122", "20789","206","<b>Não Se Enquadra nos Criterios: </b><br>AVISADA PELA ACS CLEIDE","20240613","Atendimento fonoaudiologia"],
   ["677067","1291", "18981","75","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever o resultado do último PCCU realizado pela paciente para prosseguir com agendamento.Att.","20240408","Consulta ginecologia policlinica"],
   ["677112","1219", "25014","33","<b>Solicitação Indevida: </b><br>PACIENTE ALTO RISCO CARDIOVASCULAR, APRESENTANDO CRITÉRIOS DE CEAE. REALIZADO TRANSFERENCIA PARA FILA \"\"CONSULTA HIPERTENSO ALTO RISCO\"\".","20240404","Consulta cardiologia + ECG Dr Renan"],
   ["677710","1046", "6791","10","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Realizou alguma propedêutica ou tratamento?","20240424","Consulta ortopedista"],
@@ -699,5 +701,6 @@ const Solicitacoes_Excluidas = [
   ["715877","1259", "14529","8","<b>Não Se Enquadra nos Criterios: </b><br>Pelos dados clínicos, sugiro solicitar Anuscopia.","20240611","Colonoscopia com biopsia"],
   ["717126","1277", "10562","4","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>AUSENCIA DE DUM E IG. JA REALIZADO CONTATO COM PROFISSIONAL SOLICITANTE.","20240611","Ultrassonografia obstetrica"],
   ["717205","1277", "10153","4","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>AUSENCIA DE DUM E IG. REINSERIR COM DETALHAMENTO CLÍNICO NECESSÁRIO.JA REALIZADO CONTATO COM SOLICITANTE.","20240611","Ultrassonografia obstetrica"],
-  ["717569","740", "10547","11","Agendar na Atenção Primaria","20240612","Acolhimento de fisioterapia"]
+  ["717569","740", "10547","11","Agendar na Atenção Primaria","20240612","Acolhimento de fisioterapia"],
+  ["718013","249", "30094","34","<b>Solicitação Indevida: </b><br>Alterar para endo","20240613","Consulta cirurgiao dentista"]
 ]

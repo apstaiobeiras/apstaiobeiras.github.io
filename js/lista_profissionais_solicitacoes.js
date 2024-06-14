@@ -22,6 +22,7 @@ const lista_profissionais_solicitacoes = `
 <option value="222">DANILO DA ROCHA VIANA</option>
 <option value="880">DANILO DIEGO FREITAS SILVEIRA</option>
 <option value="1282">DEBORA ANDRADE GOMES</option>
+<option value="1225">DIEGO VERISSIMO DE SOUZA ALMEIDA</option>
 <option value="183">ELIANE APARECIDA DE OLIVEIRA PASCOAL</option>
 <option value="758">FABIO ARAUJO MARTINS MOTA</option>
 <option value="216">FABIOLA DE OLIVEIRA LOBO</option>
