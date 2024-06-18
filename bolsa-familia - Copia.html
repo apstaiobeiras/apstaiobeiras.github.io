@@ -65,7 +65,7 @@
         .oculto {
             display: none;
         }
-      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="no-print"><div class="navbar"><a>Bolsa Família</a></div><h3></h3><table id="lista_dos_profissionais"></table></div><h3 class="no-print"></h3><div id="tabelas"></div><button class="oculto" id="cancelar" onclick="cancelar()">Cancelar acompanhamento</button> <button class="oculto" id="salvar" onclick="salvar()">Salvar acompanhamento</button></body><script src="js/listaNIS.js"></script><script src="js/nis2familia.js"></script><script src="js/lista-acs.js"></script><script>        document.body.classList.remove('container-lg');
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="no-print"><div class="navbar"><a>Bolsa Família</a></div><h3></h3><table id="lista_dos_profissionais"></table></div><h3 class="no-print"></h3><div id="tabelas"></div><button class="oculto" id="cancelar" onclick="cancelar()">Cancelar acompanhamento</button> <button class="oculto" id="salvar" onclick="salvar1()">Salvar acompanhamento</button></body><script src="js/listaNIS.js"></script><script src="js/nis2familia.js"></script><script src="js/lista-acs.js"></script><script>        document.body.classList.remove('container-lg');
 
         function cancelar(){
             document.getElementById("cancelar").classList = "oculto";
@@ -75,6 +75,31 @@
             document.getElementById("dados_familia").innerHTML = "";
 
         }
+
+        function salvar1() {
+          let script = "tabela = [";
+
+          for (let pessoa of [...document.getElementById("dados_familia").children]) {
+            if (pessoa.id == "") continue;
+            if (pessoa.children[4] == undefined) continue;
+            if (pessoa.children[4].children[0].value == "") continue;
+            if (pessoa.children[5].children[0].value == "") continue;
+            if (pessoa.children[6].children[0].value == "") continue;
+
+            let nis = pessoa.id;
+            let peso = pessoa.children[4].children[0].value;
+            let altura = pessoa.children[5].children[0].value;
+            let data_de_acompanhamento = ((d) => d.split("-")[1]+"/"+d.split("-")[1]+"/"+d.split("-")[0])(pessoa.children[6].children[0].value);
+
+            script += `["${nis}","${peso}","${altura}","${data_de_acompanhamento}"],`;
+
+          }
+          script += "null];"
+          document.write(script);
+
+        }
+
+
 
         function iniciarAcompanhamento(linha) {
             document.getElementById("busca").classList = "oculto";
@@ -192,7 +217,7 @@
           return accumulator;
         }, {});
 
-for(let equipe in equipes) {
+        for(let equipe in equipes) {
             let lista_acs = equipes[equipe];
             lista_acs = Object.keys(lista_acs)
             .sort()

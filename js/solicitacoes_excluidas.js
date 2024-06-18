@@ -1,4 +1,4 @@
-document.getElementById('atualizacao').textContent = '14/06/2024';
+document.getElementById('atualizacao').textContent = '18/06/2024';
 const Solicitacoes_Excluidas = [
   ["149235","764", "17525","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
   ["152679","764", "25742","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
@@ -628,6 +628,7 @@ const Solicitacoes_Excluidas = [
   ["701821","1221", "53976","4","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever peso e estatura.Att.","20240514","Consulta pediatria alto risco"],
   ["701965","1219", "25459","33","<b>Não Se Enquadra nos Criterios: </b><br>Como está assintomática, repita o exame e acompanhe mensalmente.","20240516","Consulta endocrinologia"],
   ["702515","1258", "33024","34","<b>Não Se Enquadra nos Criterios: </b><br>Encaminhado para fila das pequenas cirurgias.","20240514","Avaliaçao cirurgica policlinica"],
+  ["702717","320", "6241","78","<b>Não Se Enquadra nos Criterios: </b><br>FAVOR REISERIR NA CONSULTA PARA UROLOGIA.","20240617","Consulta neurologia"],
   ["703115","1317", "24294","3","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Quais intervenções já realizadas? Drogas prescritas com doses, fisioterapia, foi investigado para fazer diagnóstico diferencial?","20240521","Consulta ortopedista"],
   ["703507","1259", "194","8","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Envie com resultado do RX, caso haja fratura entra como prioridade máxima.","20240521","Consulta ortopedista"],
   ["703538","320", "35860","78","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor reencaminhar com resultados de exames bioquímicos para prosseguir com agendamento.Att.","20240521","Consulta hipertenso alto risco"],
@@ -653,11 +654,13 @@ const Solicitacoes_Excluidas = [
   ["707611","1221", "41719","4","<b>Solicitação Indevida: </b><br>CRIANÇA NAO APRESENTA CRITÉRIOS DE PEDIATRIA AMBULATORIAL. TRANSFERIDO PARA PEDIATRIA ALTO RISCO.","20240602","Consulta pediatra policlinica"],
   ["707651","1291", "8058","75","<b>Não Se Enquadra nos Criterios: </b><br>Paciente deve ser estratificada e caso preencha critérios para acompanhar no Diabetes Alto Risco, poderá reenviar. Caso contrário,manter seguimento semestral na APS, com nutricionista e MEV associados à terapêutica.","20240529","Consulta endocrinologia"],
   ["707699","1132", "23403","10","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever as medicações em uso e posologia e os exames bioquímicos realizados pelo paciente para prosseguir com agendamento.Att.","20240524","Consulta hipertenso alto risco"],
+  ["708129","1216", "9595","9","<b>Não Se Enquadra nos Criterios: </b><br>Quadro de miomatose deve ser lançado na fila da GINECOLOGIA POLICLÍNICA.","20240617","Consulta ginecologia CEAE"],
   ["708427","1317", "9392","3","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever a data de realização dos exames bioquímicos para prosseguir com agendamento.Att.","20240524","Consulta hipertenso alto risco"],
   ["708428","1132", "32119","10","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor verificar os resultados da HG e Glicemia que não constam no encaminhamento.Att.","20240524","Consulta diabetes alto risco"],
   ["708488","1292", "28163","56","<b>Não Se Enquadra nos Criterios: </b><br>Cirurgia prévia de mioma não entra nos critérios do alto risco.","20240529","Consulta gestante alto risco"],
   ["708531","1260", "2919","81","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever resultados de exames bioquímicos com data para prosseguir com agendamento, caso haja alguma ressalva, entrar em contato.  Att.","20240603","Consulta hipertenso alto risco"],
   ["708697","1200", "19860","10","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever se os partos anteriores foram naturais ou cesáreos. ","20240529","Consulta ginecologia policlinica"],
+  ["708744","1259", "40529","8","<b>Não Se Enquadra nos Criterios: </b><br>Quadro de miomatose deve ser lançado na fila da GINECOLOGIA POLICLÍNICA.","20240617","Consulta ginecologia CEAE"],
   ["709267","46", "12829","16","<b>Solicitação Indevida: </b><br>TRANSFERIDA PARA FILA DE RETORNO.","20240529","Consulta ortopedista"],
   ["709305","1291", "10448","75","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>As consultas cardiológicas não tem demorado para serem agendadas, por esse motivo, assim que os exames estiverem prontos, favor reencaminhar com os resultados e data.Att.","20240527","Consulta hipertenso alto risco"],
   ["709485","354", "20061","9","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data o resultado do PCCU realizado pela paciente para prosseguir com agendamento.Att.","20240529","Consulta ginecologia policlinica"],
@@ -677,6 +680,7 @@ const Solicitacoes_Excluidas = [
   ["711250","507", "12475","2","<b>Não Se Enquadra nos Criterios: </b><br>Encaminhar para Diabetes Alto Risco.","20240529","Consulta endocrinologia"],
   ["711301","320", "13092","78","<b>Não Se Enquadra nos Criterios: </b><br>De acordo protocolo atendimento a HG da paciente deve estar igual ou superior a 9%, o que não é o caso da paciente. Att. ","20240603","Consulta diabetes alto risco"],
   ["711302","320", "13092","78","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever resultados de exames bioquímicos com data para prosseguir com agendamento, caso haja alguma ressalva, entrar em contato.  Att.","20240603","Consulta hipertenso alto risco"],
+  ["711846","1289", "10106","4","<b>Solicitação Indevida: </b><br>Solicitação errada","20240614","Tratamento endodôntico de dente permanente unirradicular"],
   ["711926","1291", "11677","75","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever o resultado de PCCU realizado pela paciente para prosseguir com agendamento.Att.","20240603","Consulta ginecologia policlinica"],
   ["712258","216", "51597","13","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Paciente está em acompanhamento no CAPS atualmente?","20240610","Consulta gestante alto risco"],
   ["712333","1291", "14761","75","<b>Não Se Enquadra nos Criterios: </b><br>De acordo protocolo o atendimento é para o Hipertenso de alto risco, caso haja alguma ressalva, entrar em contato.Att.","20240603","Consulta hipertenso alto risco"],
@@ -697,10 +701,18 @@ const Solicitacoes_Excluidas = [
   ["714419","1277", "731","4","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Qual a IG? Qual o histórico obstétrico? Favor descrever o quadro da gestante.","20240611","Consulta gestante alto risco"],
   ["714461","354", "22097","9","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever o laudo do USG obstétrico e lançar na fila GESTANTE ALTO RISCO.","20240611","Consulta - obstétrica / puerpério"],
   ["714785","775", "13279","7","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Falta detalhamento da história clínica, resultado de exame radiológico...","20240607","Consulta ortopedista"],
+  ["714799","1221", "7676","4","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor detalhar o nódulo. Irregular? fixo?","20240617","Consulta mastologia CEAE"],
   ["715231","90707011", "31759","18","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>AUSENCIA DE DUM E IG.","20240609","Ultrassonografia obstetrica"],
   ["715877","1259", "14529","8","<b>Não Se Enquadra nos Criterios: </b><br>Pelos dados clínicos, sugiro solicitar Anuscopia.","20240611","Colonoscopia com biopsia"],
+  ["716928","1260", "26644","81","<b>Não Se Enquadra nos Criterios: </b><br>Transferir para fila de avaliação cirúrgica.","20240617","Pequena cirurgia policlinica"],
   ["717126","1277", "10562","4","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>AUSENCIA DE DUM E IG. JA REALIZADO CONTATO COM PROFISSIONAL SOLICITANTE.","20240611","Ultrassonografia obstetrica"],
   ["717205","1277", "10153","4","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>AUSENCIA DE DUM E IG. REINSERIR COM DETALHAMENTO CLÍNICO NECESSÁRIO.JA REALIZADO CONTATO COM SOLICITANTE.","20240611","Ultrassonografia obstetrica"],
   ["717569","740", "10547","11","Agendar na Atenção Primaria","20240612","Acolhimento de fisioterapia"],
-  ["718013","249", "30094","34","<b>Solicitação Indevida: </b><br>Alterar para endo","20240613","Consulta cirurgiao dentista"]
+  ["717912","1194", "10286","6","<b>Não Se Enquadra nos Criterios: </b><br>Somente mastalgia não é critério para a mastologia do CEAE.","20240617","Consulta - mastologista"],
+  ["718013","249", "30094","34","<b>Solicitação Indevida: </b><br>Alterar para endo","20240613","Consulta cirurgiao dentista"],
+  ["718032","1259", "10966","8","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Qual a data de realização da MMG?","20240617","Consulta mastologia CEAE"],
+  ["718046","320", "11490","78","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>REALIZAR INVESTIGAÇÃO CLÍNICA, PELO RELATO SEM CRISES CONVULSIVAS HA 2 ANOS.","20240617","Consulta neurologia"],
+  ["719489","320", "37441","78","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Os exames foram solicitados pela cardiologia? No prontuário a paciente não foi atendida pelo endocrinologista, de acordo os critérios de atendimento ela não se enquadra, caso for pela cardiologia, encaminhar via fila Hipertenso Alto Risco. Qualquer coisa, entrar em contato por favor. Att. ","20240617","Consulta diabetes alto risco"],
+  ["719940","907", "15322","9","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever as medicações em uso e posologia, exames bioquímicos realizados pelo paciente com data. Além das patologias descritas também é portador de HAS?Att.","20240617","Consulta hipertenso alto risco"],
+  ["720403","1219", "25641","33","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor realizar exame de imagem.","20240617","Consulta - mastologista"]
 ]
