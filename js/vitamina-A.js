@@ -544,14 +544,14 @@ const tabelaVitamina= `<label>Mostrar apenas da equipe
     <td>MIKAELY CRISTINA SOUZA</td>
     <td style="text-align: center;">🔴</td>
   </tr>
-  <tr class="NÃO HUMANIZAR 489">
+  <tr class="SIM HUMANIZAR 489">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/94602/?workMode=wmBrowse" target=_blank>69790</a></td>
     <td>Emanuel Neres Santos</td>
     <td>04/07/2023</td>
     <td>HUMANIZAR</td>
     <td  style="text-align: center;">11 meses</td>
     <td>ALINE DE JESUS SILVA</td>
-    <td style="text-align: center;">🔴</td>
+    <td style="text-align: center;">🟢</td>
   </tr>
   <tr class="NÃO PROGRESSO 254">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/115293/?workMode=wmBrowse" target=_blank>72198</a></td>
@@ -877,14 +877,14 @@ const tabelaVitamina= `<label>Mostrar apenas da equipe
     <td>LEISIANE ALVES RIBEIRO</td>
     <td style="text-align: center;">🔴</td>
   </tr>
-  <tr class="NÃO HUMANIZAR 802">
+  <tr class="SIM HUMANIZAR 802">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/108833/?workMode=wmBrowse" target=_blank>71503</a></td>
     <td>Joquebede Gomes Pereira</td>
     <td>08/10/2023</td>
     <td>HUMANIZAR</td>
     <td  style="text-align: center;">8 meses</td>
     <td>DARLENE MARIA PEREIRA</td>
-    <td style="text-align: center;">🔴</td>
+    <td style="text-align: center;">🟢</td>
   </tr>
   <tr class="NÃO HARMONIA 376">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/96102/?workMode=wmBrowse" target=_blank>70022</a></td>
@@ -1030,14 +1030,14 @@ const tabelaVitamina= `<label>Mostrar apenas da equipe
     <td>ALMERINDA DE OLIVEIRA SANTOS</td>
     <td style="text-align: center;">🔴</td>
   </tr>
-  <tr class="SIM HARMONIA 1125">
+  <tr class="NÃO HARMONIA 1125">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/94594/?workMode=wmBrowse" target=_blank>69782</a></td>
     <td>Lorenzo Rodrigues Santos</td>
     <td>03/07/2023</td>
     <td>HARMONIA</td>
     <td  style="text-align: center;">11 meses</td>
     <td>JEYSLANE MENDES DE OLIVEIRA</td>
-    <td style="text-align: center;">🟢</td>
+    <td style="text-align: center;">🔴</td>
   </tr>
   <tr class="NÃO ESPETACULAR 287">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/120515/?workMode=wmBrowse" target=_blank>72830</a></td>
@@ -1246,23 +1246,23 @@ const tabelaVitamina= `<label>Mostrar apenas da equipe
     <td>GISLENE FERREIRA BARBOSA</td>
     <td style="text-align: center;">🔴</td>
   </tr>
-  <tr class="SIM HARMONIA 226">
+  <tr class="NÃO HARMONIA 226">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/94651/?workMode=wmBrowse" target=_blank>69806</a></td>
     <td>Matheus Henrique Martins Dias</td>
     <td>07/07/2023</td>
     <td>HARMONIA</td>
     <td  style="text-align: center;">11 meses</td>
     <td>GEISSIANE MARQUES FERREIRA</td>
-    <td style="text-align: center;">🟢</td>
+    <td style="text-align: center;">🔴</td>
   </tr>
-  <tr class="NÃO HARMONIA 376">
+  <tr class="SIM HARMONIA 376">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/95109/?workMode=wmBrowse" target=_blank>69877</a></td>
     <td>Matheus Morais Souza</td>
     <td>11/07/2023</td>
     <td>HARMONIA</td>
     <td  style="text-align: center;">11 meses</td>
     <td>WANESSA MOREIRA DE SOUZA</td>
-    <td style="text-align: center;">🔴</td>
+    <td style="text-align: center;">🟢</td>
   </tr>
   <tr class="NÃO HARMONIA 271">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/103028/?workMode=wmBrowse" target=_blank>70875</a></td>
@@ -1372,14 +1372,14 @@ const tabelaVitamina= `<label>Mostrar apenas da equipe
     <td>MIRIAN DIAS MOREIRA ALVES</td>
     <td style="text-align: center;">🔴</td>
   </tr>
-  <tr class="NÃO UNIAO 548">
+  <tr class="SIM UNIAO 548">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/96465/?workMode=wmBrowse" target=_blank>70093</a></td>
     <td>Noah Gabriel Santos Oliveira</td>
     <td>21/07/2023</td>
     <td>UNIAO</td>
     <td  style="text-align: center;">11 meses</td>
     <td>GEISIANE CARVALHO</td>
-    <td style="text-align: center;">🔴</td>
+    <td style="text-align: center;">🟢</td>
   </tr>
   <tr class="SIM HARMONIA 271">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/103437/?workMode=wmBrowse" target=_blank>70928</a></td>

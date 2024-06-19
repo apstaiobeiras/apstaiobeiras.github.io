@@ -80,7 +80,7 @@
 
     let select = `<select id="cod">`;
     for (let chave of [...chaves]) {
-      select += `  <option value="${chave}">${lista_dos_acs[chave][0]}</option>`;
+      select += `  <option value="${chave}:${lista_dos_acs[chave][0]}">${lista_dos_acs[chave][0]}</option>`;
     }
     select += `</select>`;
 
@@ -109,6 +109,20 @@
 
             return false;
         }
+
+        function download(filename, text) {
+          let element = document.createElement('a');
+          element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+          element.setAttribute('download', filename);
+
+          element.style.display = 'none';
+          document.body.appendChild(element);
+
+          element.click();
+
+          document.body.removeChild(element);
+        }
+
         function salvar() {
           let script = "tabela = [";
 
@@ -128,7 +142,8 @@
 
           }
           script += "null];"
-          document.write(script);
+          
+          download(document.getElementById("cod").value.split(":")[1]+".json", script);
 
         }
 
@@ -152,6 +167,7 @@
             let membros = "";
 
             if (id == "cod") {
+              valor = valor.split(":")[0];
               listaNIS.forEach(function (item){
                 if (item[indice].includes(valor)) {
                     let digitados = `

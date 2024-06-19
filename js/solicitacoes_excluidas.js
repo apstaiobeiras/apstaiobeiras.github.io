@@ -1,4 +1,4 @@
-document.getElementById('atualizacao').textContent = '18/06/2024';
+document.getElementById('atualizacao').textContent = '19/06/2024';
 const Solicitacoes_Excluidas = [
   ["149235","764", "17525","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
   ["152679","764", "25742","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
@@ -709,10 +709,20 @@ const Solicitacoes_Excluidas = [
   ["717205","1277", "10153","4","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>AUSENCIA DE DUM E IG. REINSERIR COM DETALHAMENTO CLÍNICO NECESSÁRIO.JA REALIZADO CONTATO COM SOLICITANTE.","20240611","Ultrassonografia obstetrica"],
   ["717569","740", "10547","11","Agendar na Atenção Primaria","20240612","Acolhimento de fisioterapia"],
   ["717912","1194", "10286","6","<b>Não Se Enquadra nos Criterios: </b><br>Somente mastalgia não é critério para a mastologia do CEAE.","20240617","Consulta - mastologista"],
+  ["717977","320", "23363","78","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Descrever investigação diagnóstica já realizada, comorbidades, medicações em uso.","20240618","Consulta otorrinolaringologia"],
   ["718013","249", "30094","34","<b>Solicitação Indevida: </b><br>Alterar para endo","20240613","Consulta cirurgiao dentista"],
   ["718032","1259", "10966","8","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Qual a data de realização da MMG?","20240617","Consulta mastologia CEAE"],
   ["718046","320", "11490","78","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>REALIZAR INVESTIGAÇÃO CLÍNICA, PELO RELATO SEM CRISES CONVULSIVAS HA 2 ANOS.","20240617","Consulta neurologia"],
+  ["718165","18", "17168","68","<b>Agendar na Atenção Primaria: </b><br>AUSENCIA DE JUSTIFICATIVA CLÍNICA.","20240618","Consulta oftalmologia"],
+  ["718185","507", "61742","2","<b>Não Se Enquadra nos Criterios: </b><br>Quadro agudo, único, não é indicação para avaliação do otorrino. Somente se Otite de repetição, de qualquer tipo.","20240618","Consulta otorrinolaringologia"],
+  ["718876","1219", "74822","33","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever último exame de PCCU com data  realizado pela paciente para prosseguir com agendamento.Att.","20240619","Consulta ginecologia policlinica"],
+  ["719164","1260", "15878","81","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever último exame de PCCU com data  realizado pela paciente para prosseguir com agendamento.Att.","20240619","Consulta ginecologia policlinica"],
+  ["719435","1193", "53081","56","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Sugiro solicitação de ultrassom transvaginal para verificar quadro atual da paciente (último exame realizado há 3 anos), após realização, reencaminhar. Att. ","20240619","Consulta ginecologia policlinica"],
   ["719489","320", "37441","78","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Os exames foram solicitados pela cardiologia? No prontuário a paciente não foi atendida pelo endocrinologista, de acordo os critérios de atendimento ela não se enquadra, caso for pela cardiologia, encaminhar via fila Hipertenso Alto Risco. Qualquer coisa, entrar em contato por favor. Att. ","20240617","Consulta diabetes alto risco"],
+  ["719509","320", "37441","78","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever último exame de PCCU com data  realizado pela paciente para prosseguir com agendamento.Att.","20240619","Consulta ginecologia policlinica"],
   ["719940","907", "15322","9","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever as medicações em uso e posologia, exames bioquímicos realizados pelo paciente com data. Além das patologias descritas também é portador de HAS?Att.","20240617","Consulta hipertenso alto risco"],
-  ["720403","1219", "25641","33","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor realizar exame de imagem.","20240617","Consulta - mastologista"]
+  ["720403","1219", "25641","33","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor realizar exame de imagem.","20240617","Consulta - mastologista"],
+  ["720559","1193", "20824","56","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>A paciente é portadora de Hipertensão Arterial? Quais as medicações em uso e posologia? A mesma realizou exames bioquímicos, se realizou, favor descrever com data os resultados dos últimos exames realizados. Att.","20240619","Consulta hipertenso alto risco"],
+  ["720624","1046", "15984","10","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever último exame de PCCU com data  realizado pela paciente para prosseguir com agendamento.Att.","20240619","Consulta ginecologia policlinica"],
+  ["721837","1016", "11094","2","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Sugiro solicitar us transvaginal para que já compareça a consulta especializa com resultado em mãos, ao reencaminhar, descrever o resultado do exame de PCCU com data.Att.","20240619","Consulta ginecologia policlinica"]
 ]
