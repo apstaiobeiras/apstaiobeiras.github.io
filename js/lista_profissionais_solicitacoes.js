@@ -52,6 +52,7 @@ const lista_profissionais_solicitacoes = `
 <option value="1240">LUANNDA FERREIRA CHAVES</option>
 <option value="1198">LUCAS GEAZI DA SILVA SOUZA</option>
 <option value="1207">LUCAS MOTA GURGEL</option>
+<option value="829">LUCIANY DIAS LIMA</option>
 <option value="1048">LUMA MOREIRA RAMOS</option>
 <option value="354">LYVIA SENA MENDES ESCOBAR</option>
 <option value="1150">MAIRA LOPES SARMENTO</option>
