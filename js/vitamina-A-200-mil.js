@@ -882,14 +882,14 @@ const tabelaVitamina= `<label>Mostrar apenas da equipe
     <td style="text-align: center;">🟢</td>
     <td>07/06/2024</td>
   </tr>
-  <tr class="SIM HUMANIZAR 1126">
+  <tr class="NÃO HUMANIZAR 1126">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/64755/?workMode=wmBrowse" target=_blank>63560</a></td>
     <td>Eloísa Neres Lima</td>
     <td>05/08/2022</td>
     <td  style="text-align: center;">1 ano e 10 meses</td>
     <td>KELY CRISTINA RODRIGUES ARAúJO</td>
-    <td style="text-align: center;">🟢</td>
-    <td>08/11/2023</td>
+    <td style="text-align: center;">🔴</td>
+    <td></td>
   </tr>
   <tr class="NÃO ESPETACULAR 287">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/66611/?workMode=wmBrowse" target=_blank>64312</a></td>
@@ -1287,14 +1287,14 @@ const tabelaVitamina= `<label>Mostrar apenas da equipe
     <td style="text-align: center;">🟢</td>
     <td>18/04/2024</td>
   </tr>
-  <tr class="NÃO UNIAO 447">
+  <tr class="SIM UNIAO 447">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/65187/?workMode=wmBrowse" target=_blank>63674</a></td>
     <td>Isadora Tayna Almeida Santos</td>
     <td>18/08/2022</td>
     <td  style="text-align: center;">1 ano e 10 meses</td>
     <td>MARTA BARBOSA DE OLIVEIRA</td>
-    <td style="text-align: center;">🔴</td>
-    <td></td>
+    <td style="text-align: center;">🟢</td>
+    <td>08/04/2024</td>
   </tr>
   <tr class="NÃO HUMANIZAR 802">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/71801/?workMode=wmBrowse" target=_blank>65764</a></td>
@@ -1998,14 +1998,14 @@ const tabelaVitamina= `<label>Mostrar apenas da equipe
     <td style="text-align: center;">🔴</td>
     <td></td>
   </tr>
-  <tr class="NÃO RENASCER 196">
+  <tr class="SIM RENASCER 196">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/66464/?workMode=wmBrowse" target=_blank>64197</a></td>
     <td>Maria Antonieta Freitas Martins</td>
     <td>09/09/2022</td>
     <td  style="text-align: center;">1 ano e 9 meses</td>
     <td>JOSELANE MENDES TEIXEIRA</td>
-    <td style="text-align: center;">🔴</td>
-    <td></td>
+    <td style="text-align: center;">🟢</td>
+    <td>31/10/2023</td>
   </tr>
   <tr class="NÃO VIVER 615">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/65418/?workMode=wmBrowse" target=_blank>63776</a></td>
@@ -2124,14 +2124,14 @@ const tabelaVitamina= `<label>Mostrar apenas da equipe
     <td style="text-align: center;">🔴</td>
     <td></td>
   </tr>
-  <tr class="NÃO HUMANIZAR 484">
+  <tr class="SIM HUMANIZAR 484">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/68251/?workMode=wmBrowse" target=_blank>64785</a></td>
     <td>Maria Vitoria Teixeira Santos</td>
     <td>11/10/2022</td>
     <td  style="text-align: center;">1 ano e 8 meses</td>
     <td>ELISENE DE JESUS SOUZA</td>
-    <td style="text-align: center;">🔴</td>
-    <td></td>
+    <td style="text-align: center;">🟢</td>
+    <td>14/11/2023</td>
   </tr>
   <tr class="NÃO VIDA-E-SAUDE 525">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/68587/?workMode=wmBrowse" target=_blank>64922</a></td>
@@ -2196,14 +2196,14 @@ const tabelaVitamina= `<label>Mostrar apenas da equipe
     <td style="text-align: center;">🔴</td>
     <td></td>
   </tr>
-  <tr class="NÃO HUMANIZAR 489">
+  <tr class="SIM HUMANIZAR 489">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/63849/?workMode=wmBrowse" target=_blank>62706</a></td>
     <td>Matteo Barbosa Dos Santos</td>
     <td>01/07/2022</td>
     <td  style="text-align: center;">1 ano e 11 meses</td>
     <td>ALINE DE JESUS SILVA</td>
-    <td style="text-align: center;">🔴</td>
-    <td></td>
+    <td style="text-align: center;">🟢</td>
+    <td>09/11/2023</td>
   </tr>
   <tr class="NÃO ESPERANÇA 968">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/80930/?workMode=wmBrowse" target=_blank>67700</a></td>
