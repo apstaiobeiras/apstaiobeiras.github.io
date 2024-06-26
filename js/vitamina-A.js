@@ -445,14 +445,14 @@ const tabelaVitamina= `<label>Mostrar apenas da equipe
     <td>GISLENE FERREIRA BARBOSA</td>
     <td style="text-align: center;">🟢</td>
   </tr>
-  <tr class="NÃO UNIAO 301">
+  <tr class="SIM UNIAO 301">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/114152/?workMode=wmBrowse" target=_blank>72086</a></td>
     <td>Clarice Mendes Nogueira</td>
     <td>08/11/2023</td>
     <td>UNIAO</td>
     <td  style="text-align: center;">7 meses</td>
     <td>CERLIOS MARQUES DOS SANTOS</td>
-    <td style="text-align: center;">🔴</td>
+    <td style="text-align: center;">🟢</td>
   </tr>
   <tr class="NÃO RENASCER 624">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/118895/?workMode=wmBrowse" target=_blank>72506</a></td>
@@ -652,14 +652,14 @@ const tabelaVitamina= `<label>Mostrar apenas da equipe
     <td>JUSSELY SOARES DE SOUZA</td>
     <td style="text-align: center;">🟢</td>
   </tr>
-  <tr class="NÃO RENASCER 196">
+  <tr class="SIM RENASCER 196">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/102736/?workMode=wmBrowse" target=_blank>70838</a></td>
     <td>Gabriel Rocha Santos</td>
     <td>30/08/2023</td>
     <td>RENASCER</td>
     <td  style="text-align: center;">10 meses</td>
     <td>JOSELANE MENDES TEIXEIRA</td>
-    <td style="text-align: center;">🔴</td>
+    <td style="text-align: center;">🟢</td>
   </tr>
   <tr class="SIM UNIAO 223">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/108799/?workMode=wmBrowse" target=_blank>71500</a></td>
@@ -1246,14 +1246,14 @@ const tabelaVitamina= `<label>Mostrar apenas da equipe
     <td>GISLENE FERREIRA BARBOSA</td>
     <td style="text-align: center;">🔴</td>
   </tr>
-  <tr class="SIM HARMONIA 226">
+  <tr class="NÃO HARMONIA 226">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/94651/?workMode=wmBrowse" target=_blank>69806</a></td>
     <td>Matheus Henrique Martins Dias</td>
     <td>07/07/2023</td>
     <td>HARMONIA</td>
     <td  style="text-align: center;">11 meses</td>
     <td>GEISSIANE MARQUES FERREIRA</td>
-    <td style="text-align: center;">🟢</td>
+    <td style="text-align: center;">🔴</td>
   </tr>
   <tr class="NÃO HARMONIA 376">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/95109/?workMode=wmBrowse" target=_blank>69877</a></td>
@@ -1372,14 +1372,14 @@ const tabelaVitamina= `<label>Mostrar apenas da equipe
     <td>MIRIAN DIAS MOREIRA ALVES</td>
     <td style="text-align: center;">🔴</td>
   </tr>
-  <tr class="NÃO UNIAO 548">
+  <tr class="SIM UNIAO 548">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/96465/?workMode=wmBrowse" target=_blank>70093</a></td>
     <td>Noah Gabriel Santos Oliveira</td>
     <td>21/07/2023</td>
     <td>UNIAO</td>
     <td  style="text-align: center;">11 meses</td>
     <td>GEISIANE CARVALHO</td>
-    <td style="text-align: center;">🔴</td>
+    <td style="text-align: center;">🟢</td>
   </tr>
   <tr class="NÃO HARMONIA 271">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/103437/?workMode=wmBrowse" target=_blank>70928</a></td>
@@ -1660,14 +1660,14 @@ const tabelaVitamina= `<label>Mostrar apenas da equipe
     <td>CLECIVANIA RODRIGUES DE OLIVEIRA</td>
     <td style="text-align: center;">🟢</td>
   </tr>
-  <tr class="NÃO HARMONIA 226">
+  <tr class="SIM HARMONIA 226">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/96172/?workMode=wmBrowse" target=_blank>70029</a></td>
     <td>Ânthony Miguel de Jesus Correia</td>
     <td>19/07/2023</td>
     <td>HARMONIA</td>
     <td  style="text-align: center;">11 meses</td>
     <td>GEISSIANE MARQUES FERREIRA</td>
-    <td style="text-align: center;">🔴</td>
+    <td style="text-align: center;">🟢</td>
   </tr>
 </table>
 

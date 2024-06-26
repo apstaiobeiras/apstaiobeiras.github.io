@@ -882,14 +882,14 @@ const tabelaVitamina= `<label>Mostrar apenas da equipe
     <td style="text-align: center;">🟢</td>
     <td>07/06/2024</td>
   </tr>
-  <tr class="NÃO HUMANIZAR 1126">
+  <tr class="SIM HUMANIZAR 1126">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/64755/?workMode=wmBrowse" target=_blank>63560</a></td>
     <td>Eloísa Neres Lima</td>
     <td>05/08/2022</td>
     <td  style="text-align: center;">1 ano e 10 meses</td>
     <td>KELY CRISTINA RODRIGUES ARAúJO</td>
-    <td style="text-align: center;">🔴</td>
-    <td></td>
+    <td style="text-align: center;">🟢</td>
+    <td>08/11/2023</td>
   </tr>
   <tr class="NÃO ESPETACULAR 287">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/66611/?workMode=wmBrowse" target=_blank>64312</a></td>
@@ -1278,14 +1278,14 @@ const tabelaVitamina= `<label>Mostrar apenas da equipe
     <td style="text-align: center;">🟢</td>
     <td>17/06/2024</td>
   </tr>
-  <tr class="SIM LIBERDADE 209">
+  <tr class="NÃO LIBERDADE 209">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/123299/?workMode=wmBrowse" target=_blank>74798</a></td>
     <td>Isadora Sophie Almeida Santos</td>
     <td>06/04/2023</td>
     <td  style="text-align: center;">1 ano e 2 meses</td>
     <td>SONIA BISPO DE ALMEIDA</td>
-    <td style="text-align: center;">🟢</td>
-    <td>18/04/2024</td>
+    <td style="text-align: center;">🔴</td>
+    <td></td>
   </tr>
   <tr class="SIM UNIAO 447">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/65187/?workMode=wmBrowse" target=_blank>63674</a></td>
@@ -2664,14 +2664,14 @@ const tabelaVitamina= `<label>Mostrar apenas da equipe
     <td style="text-align: center;">🟢</td>
     <td>10/01/2024</td>
   </tr>
-  <tr class="NÃO ACOLHER 168">
+  <tr class="SIM ACOLHER 168">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/85701/?workMode=wmBrowse" target=_blank>68557</a></td>
     <td>Ravi da Silva Santos</td>
     <td>18/04/2023</td>
     <td  style="text-align: center;">1 ano e 2 meses</td>
     <td>THAIS ROSA DE ALMEIDA SILVA</td>
-    <td style="text-align: center;">🔴</td>
-    <td></td>
+    <td style="text-align: center;">🟢</td>
+    <td>25/06/2024</td>
   </tr>
   <tr class="NÃO VIDA 743">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/66122/?workMode=wmBrowse" target=_blank>63987</a></td>

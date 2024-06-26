@@ -1,4 +1,4 @@
-document.getElementById('atualizacao').textContent = '25/06/2024';
+document.getElementById('atualizacao').textContent = '26/06/2024';
 const Solicitacoes_Excluidas = [
   ["149235","764", "17525","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
   ["152679","764", "25742","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
@@ -747,5 +747,7 @@ const Solicitacoes_Excluidas = [
   ["722565","829", "5388","7","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data os últimos exames bioquímicos realizados pelo paciente para prosseguir com agendamento.Att.","20240619","Consulta hipertenso alto risco"],
   ["722987","1267", "62627","8","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data o último resultado de PCCU realizado pela paciente para prosseguir com agendamento.Att.","20240625","Consulta ginecologia policlinica"],
   ["722992","216", "5601","13","<b>Agendar na Atenção Primaria: </b><br>Agendado inicio do acompanhamento para 25/06/2024.","20240621","Avaliaçao psicologo e-multi"],
-  ["722995","1194", "24580","6","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data o último resultado de PCCU realizado pela paciente para prosseguir com agendamento.Att.","20240625","Consulta ginecologia policlinica"]
+  ["722995","1194", "24580","6","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data o último resultado de PCCU realizado pela paciente para prosseguir com agendamento.Att.","20240625","Consulta ginecologia policlinica"],
+  ["723391","907", "24465","9","<b>Não Se Enquadra nos Criterios: </b><br>.","20240625"," consulta psicologia infantojuvenil"],
+  ["725021","1263", "31881","34","<b>Solicitação Indevida: </b><br>MAE ALEGA QUE O PACIENTE NAO ESTA ESPERANDO O EX","20240625","Endoscopia com presença de anestesista"]
 ]
