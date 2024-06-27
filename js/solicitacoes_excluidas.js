@@ -1,4 +1,4 @@
-document.getElementById('atualizacao').textContent = '26/06/2024';
+document.getElementById('atualizacao').textContent = '27/06/2024';
 const Solicitacoes_Excluidas = [
   ["149235","764", "17525","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
   ["152679","764", "25742","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
@@ -741,13 +741,17 @@ const Solicitacoes_Excluidas = [
   ["720403","1219", "25641","33","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor realizar exame de imagem.","20240617","Consulta - mastologista"],
   ["720559","1193", "20824","56","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>A paciente é portadora de Hipertensão Arterial? Quais as medicações em uso e posologia? A mesma realizou exames bioquímicos, se realizou, favor descrever com data os resultados dos últimos exames realizados. Att.","20240619","Consulta hipertenso alto risco"],
   ["720624","1046", "15984","10","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever último exame de PCCU com data  realizado pela paciente para prosseguir com agendamento.Att.","20240619","Consulta ginecologia policlinica"],
+  ["721835","1325", "10128","78","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>AUSENCIA DE DUM E IG. REALIZADO CONTATO COM PROFISSIONAL SOLICITANTE.","20240627","Ultrassonografia obstetrica"],
   ["721837","1016", "11094","2","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Sugiro solicitar us transvaginal para que já compareça a consulta especializa com resultado em mãos, ao reencaminhar, descrever o resultado do exame de PCCU com data.Att.","20240619","Consulta ginecologia policlinica"],
   ["722180","829", "26223","7","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data os últimos exames bioquímicos realizados pelo paciente para prosseguir com agendamento, caso alguma ressalva a respeito do caso, reencaminhar e entrar em contato.Att.","20240619","Consulta hipertenso alto risco"],
   ["722268","1194", "9535","6","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data os últimos  resultados dos exames bioquímicos realizados pela paciente para prosseguir com agendamento.Att.","20240619","Consulta hipertenso alto risco"],
+  ["722552","1325", "8186","78","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>AUSENCIA DE DUM E IG. REALIZADO CONTATO COM PROFISSIONAL SOLICITANTE.","20240627","Ultrassonografia obstetrica"],
   ["722565","829", "5388","7","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data os últimos exames bioquímicos realizados pelo paciente para prosseguir com agendamento.Att.","20240619","Consulta hipertenso alto risco"],
   ["722987","1267", "62627","8","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data o último resultado de PCCU realizado pela paciente para prosseguir com agendamento.Att.","20240625","Consulta ginecologia policlinica"],
   ["722992","216", "5601","13","<b>Agendar na Atenção Primaria: </b><br>Agendado inicio do acompanhamento para 25/06/2024.","20240621","Avaliaçao psicologo e-multi"],
   ["722995","1194", "24580","6","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data o último resultado de PCCU realizado pela paciente para prosseguir com agendamento.Att.","20240625","Consulta ginecologia policlinica"],
   ["723391","907", "24465","9","<b>Não Se Enquadra nos Criterios: </b><br>.","20240625"," consulta psicologia infantojuvenil"],
-  ["725021","1263", "31881","34","<b>Solicitação Indevida: </b><br>MAE ALEGA QUE O PACIENTE NAO ESTA ESPERANDO O EX","20240625","Endoscopia com presença de anestesista"]
+  ["724930","507", "69619","2","<b>Solicitação Indevida: </b><br>Paciente não apresenta critérios de pediatria ambulatorial. Já em acompanhamento no alto risco! Realizado transferência de procedimento “Consulta pediatria alto risco”.","20240626","Consulta pediatra policlinica"],
+  ["725021","1263", "31881","34","<b>Solicitação Indevida: </b><br>MAE ALEGA QUE O PACIENTE NAO ESTA ESPERANDO O EX","20240625","Endoscopia com presença de anestesista"],
+  ["725042","1069", "72204","6","<b>Solicitação Indevida: </b><br>Paciente não se enquadra nos critérios de pediatria ambulatorial. Transferido para fila “Pediatria alto risco” devido critério de “Doença do refluxo gastresofágico”.","20240626","Consulta pediatra policlinica"]
 ]
