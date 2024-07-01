@@ -1,5 +1,6 @@
 const lista_unidades_solicitacoes = `
 <option value="">Todas as unidades</option>
+<option value="17">CENTRO DE ESPECIALIDADES ODONTOLOGICAS</option>
 <option value="18">CENTRO ESTADUAL DE ATENCAO ESPEC DR SILVIO AMERICANO MENDES</option>
 <option value="206">CENTRO MUNICIPAL DE ATENDIMENTO MULTIDICIPLINAR</option>
 <option value="11">CLINICA MUNICIPAL DE FISIOTERAPIA JOAO HEIDER BATISTA DA SIL</option>
