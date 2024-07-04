@@ -5,6 +5,7 @@ const lista_unidades_solicitacoes = `
 <option value="206">CENTRO MUNICIPAL DE ATENDIMENTO MULTIDICIPLINAR</option>
 <option value="11">CLINICA MUNICIPAL DE FISIOTERAPIA JOAO HEIDER BATISTA DA SIL</option>
 <option value="61">CONSULTAS PARTICULARES</option>
+<option value="74">EMULTI B - UAPS VEREADOR MANOEL DOS SANTOS SILVA</option>
 <option value="16">POLICLINICA MUNICIPAL DR SILVIO A MENDES</option>
 <option value="68">POLICLINICA MUNICIPAL VIVA VIDA</option>
 <option value="9">UAPS AGEU ALMEIDA</option>
