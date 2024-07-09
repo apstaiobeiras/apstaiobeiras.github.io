@@ -1,4 +1,4 @@
-document.getElementById('atualizacao').textContent = '08/07/2024';
+document.getElementById('atualizacao').textContent = '09/07/2024';
 const Solicitacoes_Excluidas = [
   ["149235","764", "17525","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
   ["152679","764", "25742","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
@@ -714,6 +714,7 @@ const Solicitacoes_Excluidas = [
   ["707691","907", "23521","78","<b>Não Se Enquadra nos Criterios: </b><br>Pelos sintomas relatados, não há sinais de alerta. Quadro deve ser conduzido na APS. Caso haja dúvidas, contacte a regulação.","20240701","Consulta neurologia"],
   ["707699","1132", "23403","10","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever as medicações em uso e posologia e os exames bioquímicos realizados pelo paciente para prosseguir com agendamento.Att.","20240524","Consulta hipertenso alto risco"],
   ["707801","987", "27752","11","Agendar na Atenção Primaria","20240704","Fisioterapia - alteraçoes motoras"],
+  ["707807","987", "16001","11","Agendar na Atenção Primaria","20240708","Fisioterapia - alteraçoes motoras"],
   ["708129","1216", "9595","9","<b>Não Se Enquadra nos Criterios: </b><br>Quadro de miomatose deve ser lançado na fila da GINECOLOGIA POLICLÍNICA.","20240617","Consulta ginecologia CEAE"],
   ["708200","1194", "21032","6","<b>Não Se Enquadra nos Criterios: </b><br>Poderia investigar a queixa com exame clínico neurológico simples e laboratorial, além de EEG, para fazer diagnóstico diferencial.","20240702","Consulta neurologia"],
   ["708235","1264", "37931","2","<b>Agendar na Atenção Primaria: </b><br>Agendado primeiro atendimento.","20240619","Avaliaçao psicologo e-multi"],
@@ -857,5 +858,6 @@ const Solicitacoes_Excluidas = [
   ["730993","1207", "53729","18","Solicitação Indevida","20240704","Teste de esforco / teste ergometrico"],
   ["731014","907", "40101","9","<b>Não Se Enquadra nos Criterios: </b><br>Conforme critérios descritos no Protocolo do Serviço de Psicologia, não consta no encaminhamento quais são os prejuízos funcionais e/ou alterações emocionais que justifique o encaminhamento.","20240704","Avaliaçao psicologo e-multi"],
   ["731506","1150", "9438","3","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data os últimos  resultados de exames bioquímicos realizados pelo paciente para prosseguir com agendamento.Att.","20240704","Consulta hipertenso alto risco"],
-  ["731885","1317", "25529","3","<b>Não Se Enquadra nos Criterios: </b><br>Paciente com DRC estágio 4 e hipertenso de Alto Risco, conforme protocolo de acesso deve receber acompanhamento nutricional no CEAE.","20240705","Avaliaçao nutricionista e-multi"]
+  ["731885","1317", "25529","3","<b>Não Se Enquadra nos Criterios: </b><br>Paciente com DRC estágio 4 e hipertenso de Alto Risco, conforme protocolo de acesso deve receber acompanhamento nutricional no CEAE.","20240705","Avaliaçao nutricionista e-multi"],
+  ["732110","320", "60550","78","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Qual investigação realizada? Tem sinal de alerta neurológico?","20240708","Consulta neurologia"]
 ]

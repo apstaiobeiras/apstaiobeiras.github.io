@@ -1,0 +1,202 @@
+<!DOCTYPE html><html lang="pt_BR"><head><meta charset="utf8"/><title>Perfil do profissional</title><style>        /* Estilo da barra de navegação */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333; /* Cor de fundo da barra de navegação */
+            color: #fff; /* Cor do texto da barra de navegação */
+            padding: 10px 0;
+        }
+        
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+        }
+        
+        /* Adicione margem ao corpo para evitar que o conteúdo fique oculto sob a barra de navegação */
+        body {
+            margin-top: 60px; /* Ajuste conforme necessário com base na altura da sua barra de navegação */
+        }
+        tr,table, td, th {
+            /*border: 1px solid #dfe2e5;*/
+            background-color: transparent !important;
+            border: 0 !important;
+        }
+
+        .header {
+            background-color: #F6F8FA !important;
+        }
+
+        .border {
+            border: 1px solid #dfe2e5 !important;
+        }
+
+        ::backdrop {
+          background-image: linear-gradient(
+            45deg,
+            rgb(0, 0, 0),
+            rgb(0, 0, 0)
+            );
+          opacity: 0.75;
+        }
+
+
+
+
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head>
+      <body class="container-lg px-3 my-5 markdown-body"><div class="navbar"><a href="controle-home.html"><span>Voltar</span> - <span>Editor de listas de profissionais</span></a></div>
+      
+      <h3><br></h3>
+    
+      <table>
+ 
+        <tr>
+            <td colspan="2" align="left"><h3><br>Listas dos profissionais </h3>&nbsp;</td>
+            <td><button onclick="document.getElementById('adicionaProfissaoDialogo').showModal();">Adicionar</button></td>
+        </tr>
+        <tr class="border header" id="links">
+            <th colspan="2"  align="left">Descrição</th>
+            <th class="border"></th>
+        </tr>
+
+      </table>
+
+      <dialog id="adicionaProfissaoDialogo" style="border: 0;">
+        <table>
+          <tr>
+            <td>Nome: </td>
+            <td><input id="tituloProfissao"></td>
+          </tr>
+          <tr>
+            <td>Imagem: </td>
+            <td><input id="iconeProfissao" type="file" onchange="carregarArquivo();"></td>
+          </tr>
+          <tr>
+            <td>Pré-visualização: </td>
+            <td><img src="" id="imagemExemplo" width="96" height="96"></td>
+          </tr>
+          <tr>
+            <td><button onclick="limpaInputs();">Cancelar</button></td>
+            <td align="right"><button onclick="adicionarProfissao();">Adicionar</button></td>
+          </tr>
+        </table>
+      </dialog>
+
+      <dialog id="avisoSalvar" style="border: 0;">
+        <table>
+          <tr>
+            <td colspan="2">
+              Lembre-se de colocar o arquivo baixado na pasta script
+            </td>
+          </tr>
+          <tr>
+            <td><button onclick="limpaInputs();">Cancelar</button></td>
+            <td align="right"><button onclick="serialize();">Adicionar</button></td>
+          </tr>
+        </table>
+      </dialog>
+
+      <h3><br></h3>
+      <button style="padding: 9px 18px 9px 18px;" onclick="serialize()"> Salvar Listas</button>
+      <h3><br></h3>
+
+      <script src="scripts/listasDosProfissionais.js"></script>
+      <script>
+                
+      for (const [nome, imagem] of Object.entries(listaProfissionais)) {
+          document.getElementById("links").outerHTML += `
+          <tr class="border profissao" >
+            <td>
+              <img src="${imagem}" width="96" style="min-width: 96px; !important;">
+            </td>
+            <td style="width: 100% !important; text-align: left !important;"><b>${nome}</b></td>
+            <td>
+              <button onclick="removerProfissao();">Remover</button>
+            </td>
+          </tr>
+      `;
+
+        }
+      </script>
+
+      <script>
+    function carregarArquivo() {
+      const fileInput = document.getElementById('iconeProfissao');
+
+      const file = fileInput.files[0];
+      if (!file) {
+        return;
+      }
+
+      const reader = new FileReader();
+      reader.onload = function(event) {
+        const base64String = event.target.result.split(',')[1];
+        const mimeType = event.target.result.split(':')[1].split(';')[0]; // Extract MIME type
+        const dataWithMimeType = `data:${mimeType};base64,${base64String}`;
+
+        document.getElementById('imagemExemplo').src = dataWithMimeType;
+      };
+
+      reader.readAsDataURL(file);
+    }
+
+    function limpaInputs(){
+      document.getElementById("tituloProfissao").value = "";
+      document.getElementById("imagemExemplo").src = "";
+      document.getElementById('adicionaProfissaoDialogo').close();
+      document.getElementById('avisoSalvar').close();
+    }
+
+    function removerProfissao() {
+      console.log(event.target.parentElement.parentElement.remove());
+    }
+
+    function adicionarProfissao() {
+      let nome = document.getElementById("tituloProfissao").value;
+      let imagem = document.getElementById("imagemExemplo").src;
+
+      document.getElementById("links").outerHTML += `
+        <tr class="border profissao">
+          <td>
+            <img src="${imagem}" width="96">
+          </td>
+          <td><b>${nome}</b></td>
+          <td>
+            <button onclick="removerProfissao();">Remover</button>
+          </td>
+          </tr>
+      `;
+
+      limpaInputs();
+    }
+
+    function serialize() {
+      let obj = {}
+      for (let linha of [...document.getElementsByClassName("profissao")]) {
+        let image = linha.children[0].children[0].src;
+        let title = linha.children[1].children[0].innerText;
+
+        obj[title] = image;
+      }
+
+      // Why save dialog not show?
+      let element = document.createElement('a');
+      element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent("let listasDosProfissionais = "+JSON.stringify(obj)));
+      element.setAttribute('download', "listasDosProfissionais.js");
+      
+      element.style.position = 'absolute';
+      element.style.left = '-9999px';
+      document.body.appendChild(element);
+
+      setTimeout(function() {
+        element.click();
+        document.body.removeChild(element); // Clean up after download
+      }, 100);
+    }
+
+
+      </script>
+    
+      </body></html>

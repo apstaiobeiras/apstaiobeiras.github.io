@@ -1564,6 +1564,14 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>IRANI MENDES ALVES OLIVEIRA</td>
     <td style="text-align: center;">🔴</td>
     <td style="text-align: center;">🔴</td>
+  </tr><tr class="548 UNIAO 0-varicela 0-triplice 0">
+    <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/nil/?workMode=wmBrowse" target=_blank>76400</a></td>
+    <td>Elisa Rocha de Oliveira</td>
+    <td>0 anos e 3 meses</td>
+    <td>18/04/2024</td>
+    <td>GEISIANE CARVALHO</td>
+    <td style="text-align: center;">🔴</td>
+    <td style="text-align: center;">🔴</td>
   </tr><tr class="513 MAIS-SAUDE 0-varicela 0-triplice 0">
     <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/123128/?workMode=wmBrowse" target=_blank>74675</a></td>
     <td>Elisa Santos Cruz</td>
@@ -2900,6 +2908,14 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>NORMA TRANCOSO VIANA</td>
     <td style="text-align: center;">🔴</td>
     <td style="text-align: center;">🔴</td>
+  </tr><tr class="581 VIVER 0-varicela 0-triplice 0">
+    <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/nil/?workMode=wmBrowse" target=_blank>76411</a></td>
+    <td>José Víctor Pereira Novais Menezes</td>
+    <td>0 anos e 0 meses</td>
+    <td>03/07/2024</td>
+    <td>JESSICA ANA DE JESUS</td>
+    <td style="text-align: center;">🔴</td>
+    <td style="text-align: center;">🔴</td>
   </tr><tr class="404 VIDA 0-varicela 1-triplice 1">
     <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/76811/?workMode=wmBrowse" target=_blank>66869</a></td>
     <td>Jovane de Sousa Teixeira</td>
@@ -3196,6 +3212,14 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>KEYTIANE DA SILVA</td>
     <td style="text-align: center;">🔴</td>
     <td style="text-align: center;">🔴</td>
+  </tr><tr class="1184 MAIS-SAUDE 0-varicela 1-triplice 1">
+    <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/79036/?workMode=wmBrowse" target=_blank>67342</a></td>
+    <td>Laura Silva Soares</td>
+    <td>1 ano e 5 meses</td>
+    <td>17/02/2023</td>
+    <td>CINTIA MELGES DE OLIVEIRA COSTA</td>
+    <td style="text-align: center;">🟡</td>
+    <td style="text-align: center;">🔴</td>
   </tr><tr class="301 UNIAO 0-varicela 0-triplice 1">
     <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/105020/?workMode=wmBrowse" target=_blank>71093</a></td>
     <td>Laura Sousa Santos</td>
@@ -3234,6 +3258,14 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>0 anos e 3 meses</td>
     <td>17/04/2024</td>
     <td>ELAINE GONCALVES NUNES SANTOS</td>
+    <td style="text-align: center;">🔴</td>
+    <td style="text-align: center;">🔴</td>
+  </tr><tr class="214 ACOLHER 0-varicela 0-triplice 0">
+    <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/nil/?workMode=wmBrowse" target=_blank>75832</a></td>
+    <td>Lavinia Rodrigues Sousa</td>
+    <td>0 anos e 2 meses</td>
+    <td>31/05/2024</td>
+    <td>ALMERINDA DE OLIVEIRA SANTOS</td>
     <td style="text-align: center;">🔴</td>
     <td style="text-align: center;">🔴</td>
   </tr><tr class="67 RENASCER 1-varicela 2-triplice 1">
@@ -4676,14 +4708,6 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>ALLICY SANTOS LEAO</td>
     <td style="text-align: center;">🔴</td>
     <td style="text-align: center;">🔴</td>
-  </tr><tr class="1127 CAMINHO 1-varicela 2-triplice 1">
-    <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/70200/?workMode=wmBrowse" target=_blank>65353</a></td>
-    <td>Noah Vilela Floriano</td>
-    <td>1 ano e 8 meses</td>
-    <td>10/11/2022</td>
-    <td>KEILA DOS SANTOS SOUSA</td>
-    <td style="text-align: center;">🟢</td>
-    <td style="text-align: center;">🟢</td>
   </tr><tr class="223 UNIAO 0-varicela 0-triplice 0">
     <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/123052/?workMode=wmBrowse" target=_blank>74637</a></td>
     <td>Noah da Silva Santos</td>

@@ -1,0 +1,425 @@
+<!DOCTYPE html><html lang="pt_BR"><head><meta charset="utf8"/><title>Perfil do profissional</title><style>        /* Estilo da barra de navegação */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333; /* Cor de fundo da barra de navegação */
+            color: #fff; /* Cor do texto da barra de navegação */
+            padding: 10px 0;
+        }
+        
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+        }
+        
+        /* Adicione margem ao corpo para evitar que o conteúdo fique oculto sob a barra de navegação */
+        body {
+            margin-top: 60px; /* Ajuste conforme necessário com base na altura da sua barra de navegação */
+        }
+        tr,table, td, th {
+            /*border: 1px solid #dfe2e5;*/
+            background-color: transparent !important;
+            border: 0 !important;
+        }
+
+        .header {
+            background-color: #F6F8FA !important;
+        }
+
+        .border {
+            border: 1px solid #dfe2e5 !important;
+        }
+
+        ::backdrop {
+          background-image: linear-gradient(
+            45deg,
+            rgb(0, 0, 0),
+            rgb(0, 0, 0)
+            );
+          opacity: 0.75;
+        }
+
+
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="navbar"><a><span id="micro">Editor de página de acesso</span></a></div>
+      
+      <h3><br></h3>
+    
+      <table>
+        <tr>
+            <th colspan="3" align="left"><h3>Páginas:</h3></th>
+        </tr>
+        <tr class="border header">
+            <th class="border">Disponível?</th>
+            <th colspan="2"  align="left">Descrição</th>
+        </tr>
+        <tr class="border">
+          <td align="center">
+            <input type=checkbox name="producaoConsolidada">
+          </td>
+          <td>
+            <img src="assets/img/producao.jpg" width="96">
+          </td>
+          <td>
+            <b>Produção consolidada</b>
+            <br>
+            Lista a produção do profissional de forma consolidada no quadrimestre atual
+          </td>
+        </tr>
+        <tr class="border">
+            <td align="center">
+              <input type=checkbox name="producaoPorDia">
+            </td>
+            <td>
+              <img src="assets/img/visitas-por-dia.png" width="96">
+            </td>
+            <td>
+              <b>Produção diária</b>
+              <br>
+              Lista a produção do profissional diária ao longo do dia
+            </td>
+        </tr>
+        <tr class="border">
+            <td align="center">
+              <input type=checkbox name="producaoESF">
+            </td>
+            <td>
+              <img src="assets/img/producao-esf.png" width="96">
+            </td>
+            <td>
+              <b>Produção das ESFs</b>
+              <br>
+              Lista a produção do profissional diária ao longo do dia
+            </td>
+        </tr>
+
+        <tr>
+            <th colspan="3" align="left"><h3><br>Relatórios:</h3></th>
+        </tr>
+        <tr class="border header">
+            <th class="border">Disponível?</th>
+            <th colspan="2"  align="left">Descrição</th>
+        </tr>
+
+        <tr class="border">
+          <td align="center">
+            <input type=checkbox name="relatorioSitua">
+          </td>
+          <td>
+            <img src="assets/img/situacao-cadastros.png" width="96">
+          </td>
+          <td>
+            <b>Solicitações de procedimento excluidas</b>
+            <br>
+            Lista das solicitações excluídas feitas na unidade com motivo e explicação
+          </td>
+        </tr>
+        <tr class="border">
+            <td align="center">
+              <input type=checkbox>
+            </td>
+            <td>
+              <img src="assets/img/lista-prontuario.png" width="96">
+            </td>
+            <td>
+              <b>Solicitações de procedimento excluidas</b>
+              <br>
+              Lista das solicitações excluídas feitas na unidade com motivo e explicação
+            </td>
+        </tr>
+        <tr class="border">
+            <td align="center">
+              <input type=checkbox>
+            </td>
+            <td>
+              <img src="assets/img/indicadores.jpg" width="96">
+            </td>
+            <td>
+              <b>Solicitações de procedimento excluidas</b>
+              <br>
+              Lista das solicitações excluídas feitas na unidade com motivo e explicação
+            </td>
+        </tr>
+        <tr class="border">
+            <td align="center">
+              <input type=checkbox>
+            </td>
+            <td>
+              <img src="assets/img/solicitacoes.png" width="96">
+            </td>
+            <td>
+              <b>Solicitações de procedimento excluidas</b>
+              <br>
+              Lista das solicitações excluídas feitas na unidade com motivo e explicação
+            </td>
+        </tr>
+        <tr class="border">
+            <td align="center">
+              <input type=checkbox>
+            </td>
+            <td>
+              <img src="assets/img/agendados.png" width="96">
+            </td>
+            <td>
+              <b>Solicitações de procedimento excluidas</b>
+              <br>
+              Lista das solicitações excluídas feitas na unidade com motivo e explicação
+            </td>
+        </tr>
+
+
+        <tr>
+            <th colspan="3" align="left"><h3><br>Planilhas online:</h3></th>
+        </tr>
+        <tr class="border header">
+            <th class="border">Disponível?</th>
+            <th colspan="2"  align="left">Descrição</th>
+        </tr>
+        <tr class="border">
+          <td align="center">
+            <input type=checkbox>
+          </td>
+          <td>
+            <img src="assets/img/google-sheets.png" width="96">
+          </td>
+          <td>
+            <b>Painel vacinação de crianças Triplice viral e Varicela</b>
+            <br>
+             
+          </td>
+        </tr>
+        <tr class="border">
+            <td align="center">
+              <input type=checkbox>
+            </td>
+            <td>
+              <img src="assets/img/google-sheets.png" width="96">
+            </td>
+            <td>
+              <b>Relação de crianças sobre Administração de Vitamina A</b>
+              <br>
+               100 mil UI
+            </td>
+        </tr>
+        <tr class="border">
+            <td align="center">
+              <input type=checkbox>
+            </td>
+            <td>
+              <img src="assets/img/google-sheets.png" width="96">
+            </td>
+            <td>
+              <b>Relação de crianças sobre Administração de Vitamina A</b>
+              <br>
+               200 mil UI
+            </td>
+        </tr>
+
+        <tr>
+            <th colspan="3" align="left"><h3><br>Lista de profissionais:</h3></th>
+        </tr>
+        <tr class="border header">
+            <th class="border">Disponível?</th>
+            <th colspan="2"  align="left">Descrição</th>
+        </tr>
+        <tr class="border">
+          <td align="center">
+            <input type=checkbox>
+          </td>
+          <td>
+            <img src="assets/img/lista-acs.png" width="96">
+          </td>
+          <td>
+            <b>Agentes Comunitários de Saúde</b>
+          </td>
+        </tr>
+        <tr class="border">
+          <td align="center">
+            <input type=checkbox>
+          </td>
+          <td>
+            <img src="assets/img/solicitacoes.png" width="96">
+          </td>
+          <td>
+            <b>Agente de Combate a Endemias</b>
+          </td>
+        </tr>
+        <tr class="border">
+          <td align="center">
+            <input type=checkbox>
+          </td>
+          <td>
+            <img src="assets/img/dentista.png" width="96">
+          </td>
+          <td>
+            <b>Dentistas</b>
+          </td>
+        </tr>
+        <tr class="border">
+          <td align="center">
+            <input type=checkbox>
+          </td>
+          <td>
+            <img src="assets/img/lista-enfermeiros.png" width="96">
+          </td>
+          <td>
+            <b>Enfermeiros</b>
+          </td>
+        </tr>
+        <tr class="border">
+          <td align="center">
+            <input type=checkbox>
+          </td>
+          <td>
+            <img src="assets/img/farmaceutico.png" width="96">
+          </td>
+          <td>
+            <b>Farmacêuticos</b>
+          </td>
+        </tr>
+        <tr class="border">
+          <td align="center">
+            <input type=checkbox>
+          </td>
+          <td>
+            <img src="assets/img/medico.png" width="96">
+          </td>
+          <td>
+            <b>Médicos</b>
+          </td>
+        </tr>
+        <tr class="border">
+          <td align="center">
+            <input type=checkbox>
+          </td>
+          <td>
+            <img src="assets/img/preceptores.png" width="96">
+          </td>
+          <td>
+            <b>Preceptores</b>
+          </td>
+        </tr>
+        <tr class="border">
+          <td align="center">
+            <input type=checkbox>
+          </td>
+          <td>
+            <img src="assets/img/lista-recepcionistas.png" width="96">
+          </td>
+          <td>
+            <b>Recepcionistas</b>
+          </td>
+        </tr>
+
+        
+        <tr>
+            <td colspan="3" align="left"><h3><br>Links</h3><button onclick="document.getElementById('adicionaLinkDialogo').showModal();">Adicionar</button></td>
+        </tr>
+        <tr class="border header" id="links">
+            <th class="border"></th>
+            <th colspan="2"  align="left">Descrição</th>
+        </tr>
+
+      </table>
+
+      <dialog id="adicionaLinkDialogo" style="border: 0;">
+        <table>
+          <tr>
+            <td>Título: </td>
+            <td><input id="tituloLink"></td>
+          </tr>
+          <tr>
+            <td>Descrição: </td>
+            <td><input id="descricaoLink"></td>
+          </tr>
+          <tr>
+            <td>URL: </td>
+            <td><input id="urlLink" type="url"></td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <details>
+                <summary>Parâmetros especiais para a URL</summary>
+                <br>
+                <table class="border">
+                  <tr>
+                    <th class="border">Parâmetro</th>
+                    <th class="border">Valor</th>
+                  </tr>
+                  <tr>
+                    <td class="border"><code>${NOME}</code></td>
+                    <td class="border">Nome completo do profissional</td>
+                  </tr>
+                  <tr>
+                    <td class="border"><code>${VIVVER}</code></td>
+                    <td class="border">Código profissional no Vivver</td>
+                  </tr>
+                  <tr>
+                    <td class="border"><code>${ESF}</code></td>
+                    <td class="border">Equipe do profissional</td>
+                  </tr>
+                  <tr>
+                    <td class="border"><code>${UAPS}</code></td>
+                    <td class="border">Unidade do profissional</td>
+                  </tr>
+                  <tr>
+                    <td class="border"><code>${MICRO}</code></td>
+                    <td class="border">Microarea do profissional</td>
+                  </tr>
+                </table>
+                <br>
+              </details>
+            </td>
+          </tr>
+          <tr>
+            <td><button onclick="limpaInputs();">Cancelar</button></td>
+            <td align="right"><button onclick="adicionarLinkExterno();">Adicionar</button></td>
+          </tr>
+        </table>
+      </dialog>
+
+      <h3><br></h3>
+      <button style="padding: 9px;"> Salvar perfil</button>
+      <h3><br></h3>
+
+      <script>
+        function limpaInputs(){
+          document.getElementById("tituloLink").value = "";
+          document.getElementById("descricaoLink").value = "";
+          document.getElementById("urlLink").value = "";
+          document.getElementById('adicionaLinkDialogo').close();
+        }
+
+        function removerLinkExterno() {
+          console.log(event.target.parentElement.parentElement.remove());
+        }
+
+        function adicionarLinkExterno() {
+            let titulo = document.getElementById("tituloLink").value;
+            let descricao = document.getElementById("descricaoLink").value;
+            let url = document.getElementById("urlLink").value;
+
+            document.getElementById("links").outerHTML += `
+              <tr class="border link-externo">
+                <td>
+                    <button onclick="removerLinkExterno();">Remover</button>
+                </td>
+                <td>
+                    <img src="assets/img/enviar-arquivo.png" width="96">
+                </td>
+                <td>
+                    <a target="_blank" href="${url}">
+                    <b>${titulo}</b>
+                    <br>
+                    ${descricao}</a>
+                </td>
+              </tr>
+            `;
+
+            limpaInputs();
+        }
+      </script>
+    
+      </body></html>
