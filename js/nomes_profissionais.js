@@ -107,6 +107,7 @@ nomeProfissional['1303'] = 'JUSSILANE SOARES DE SOUZA SILVA';
 nomeProfissional['1260'] = 'KAIO HENRIQUE PEREIRA SENA';
 nomeProfissional['540'] = 'KAMILA MARIA PEREIRA';
 nomeProfissional['835'] = 'KAREN FERNANDA GOMES LOPES';
+nomeProfissional['1284'] = 'KAROLINE RODRIGUES DE LIMA LEITE';
 nomeProfissional['1239'] = 'KATHIUSCIA PEREIRA PINTO';
 nomeProfissional['1124'] = 'KATIANA ANDRADE SENA';
 nomeProfissional['31'] = 'KATIANA FERREIRA';
