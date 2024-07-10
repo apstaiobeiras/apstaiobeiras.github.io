@@ -1339,14 +1339,14 @@ const tabelaVitamina= `<label>Mostrar apenas da equipe
     <td>MIRIAN DIAS MOREIRA ALVES</td>
     <td style="text-align: center;">🔴</td>
   </tr>
-  <tr class="NÃO HARMONIA 271">
+  <tr class="SIM HARMONIA 271">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/103437/?workMode=wmBrowse" target=_blank>70928</a></td>
     <td>Noah Harrison Santos Barbosa</td>
     <td>08/09/2023</td>
     <td>HARMONIA</td>
     <td  style="text-align: center;">10 meses</td>
     <td>MARLANE DA SILVA SANTOS</td>
-    <td style="text-align: center;">🔴</td>
+    <td style="text-align: center;">🟢</td>
   </tr>
   <tr class="SIM PROGRESSO 219">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/100072/?workMode=wmBrowse" target=_blank>70549</a></td>
