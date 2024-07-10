@@ -1396,6 +1396,14 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>CLEIDIANE DOS SANTOS MEIRELES</td>
     <td style="text-align: center;">🔴</td>
     <td style="text-align: center;">🔴</td>
+  </tr><tr class="214 ACOLHER 0-varicela 0-triplice 0">
+    <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/nil/?workMode=wmBrowse" target=_blank>76269</a></td>
+    <td>Davi Luiz Oliveira Souza</td>
+    <td>0 anos e 1 mes</td>
+    <td>27/06/2024</td>
+    <td>ALMERINDA DE OLIVEIRA SANTOS</td>
+    <td style="text-align: center;">🔴</td>
+    <td style="text-align: center;">🔴</td>
   </tr><tr class="1332 RENASCER 0-varicela 0-triplice 0">
     <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/118895/?workMode=wmBrowse" target=_blank>72506</a></td>
     <td>Davi Mendes Oliveira</td>
@@ -5516,20 +5524,12 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>LUANA RODRIGUES DE OLIVEIRA</td>
     <td style="text-align: center;">🟡</td>
     <td style="text-align: center;">🔴</td>
-  </tr><tr class="170 VIDA 1-varicela 2-triplice 1">
-    <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/64074/?workMode=wmBrowse" target=_blank>62928</a></td>
-    <td>Thalisson Dos Santos Barbosa</td>
-    <td>1 ano e 0 meses</td>
-    <td>10/07/2022</td>
-    <td>GISLENE FERREIRA BARBOSA</td>
-    <td style="text-align: center;">🟢</td>
-    <td style="text-align: center;">🟢</td>
-  </tr><tr class="1126 HUMANIZAR 0-varicela 0-triplice 0">
+  </tr><tr class="1234 ESPETACULAR 0-varicela 0-triplice 0">
     <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/123352/?workMode=wmBrowse" target=_blank>74846</a></td>
     <td>Thalles Henrique Moreira</td>
     <td>0 anos e 4 meses</td>
     <td>09/03/2024</td>
-    <td>KELY CRISTINA RODRIGUES ARAúJO</td>
+    <td>MIRIAN DIAS MOREIRA ALVES</td>
     <td style="text-align: center;">🔴</td>
     <td style="text-align: center;">🔴</td>
   </tr><tr class="564 UNIAO 0-varicela 0-triplice 0">

@@ -1,4 +1,4 @@
-document.getElementById('atualizacao').textContent = '09/07/2024';
+document.getElementById('atualizacao').textContent = '10/07/2024';
 const Solicitacoes_Excluidas = [
   ["149235","764", "17525","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
   ["152679","764", "25742","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
@@ -130,6 +130,7 @@ const Solicitacoes_Excluidas = [
   ["630585","1258", "11945","34","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever o resultado do último PCCU.Att.","20240111","Consulta ginecologia policlinica"],
   ["630629","1258", "28216","34","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever o resultado do último PCCU.Att.","20240111","Consulta ginecologia policlinica"],
   ["630636","1137", "15360","9","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>DETALHAR RESULTADOS DOS EXAMES REALIZADOS, ","20240122","Consulta ortopedista"],
+  ["630742","785", "8768","8","<b>Não Se Enquadra nos Criterios: </b><br>NÃO ENTRA EM CRITERIOS DE ATENDIMENTO","20240709","Atendimento fonoaudiologia"],
   ["630871","1259", "15105","75","<b>Solicitação Indevida: </b><br>PROCEDIMENTO VINCULADO AO CEAE. SUGIRO VERIFICAÇÃO DOS CRITÉRIOS DE ENCAMINHAMENTO A MASTOLOGIA. SE NECESSÁRIO, DISCUTIR O QUADRO COM COORDENAÇÃO DO CEAE (MICHELLE). GRATA!","20240404","Ultrassonografia mamaria bilateral"],
   ["630963","1258", "28293","34","<b>Não Se Enquadra nos Criterios: </b><br>Não se enquadra nos critérios da propedêutica de CA de colo uterino do CEAE. Favor agendar via GINECOLOGIA POLICLÍNICA.","20240115","Consulta ginecologia CEAE"],
   ["631059","1243", "8737","8","<b>Solicitação Indevida: </b><br>PACIENTE NÃO APRESENTA CRITÉRIOS PARA ENDOCRINOLOGIA AMBULATORIAL. A MESMA JA SE ENCONTRA COM SULTA AGENDADA NO SERVIÇO DE ALTO RISCO.","20240123","Consulta endocrinologia"],
@@ -398,6 +399,7 @@ const Solicitacoes_Excluidas = [
   ["666223","1200", "7892","10","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Qual a DUM? Qual a IG?","20240312","Consulta gestante alto risco"],
   ["666247","1259", "6242","8","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data último resultado de PCCU realizado pela paciente para prosseguir com agendamento.Att.","20240408","Consulta ginecologia policlinica"],
   ["666356","1258", "29944","34","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever a data e últimos exames laboratoriais e de imagem realizados (ECG e outros que tenha realizado, para prosseguir com agendamento.","20240314","Consulta hipertenso alto risco"],
+  ["666709","72", "42175","206","<b>Não Se Enquadra nos Criterios: </b><br>NÃO ENTRA EM CRITERIOS DE ATENDIMENTO","20240709","Atendimento fonoaudiologia"],
   ["666879","1221", "54279","4","<b>Não Se Enquadra nos Criterios: </b><br>.","20240318"," consulta psicologia infantojuvenil"],
   ["666884","987", "25828","11","Agendar na Atenção Primaria","20240315","Atendimento domiciliar - fisioterapia"],
   ["666977","1259", "24105","8","<b>Não Se Enquadra nos Criterios: </b><br>Quadro de endometriose deve ser lançado na fila da GINECOLOGIA POLICLÍNICA.","20240313","Consulta ginecologia CEAE"],
@@ -842,6 +844,7 @@ const Solicitacoes_Excluidas = [
   ["727816","507", "10310","2","<b>Não Se Enquadra nos Criterios: </b><br>PACIENTE JÁ EM ACOMPANHAMENTO CLÍNICO COM ORTOPEDISTA (DR. FRANCISCO), O QUAL JÁ ESTA EM CONDUÇÃO DO QUADRO, SENDO INDICADO BORDAGEM CIRURGICA, COM SOLICITAÇÃO DE RISCO CARDIOLOGICO E ANSTESICO. A MESMA NÃO APRESENTA CRITÉRIOS QUE SUSTENTEM A NECESSIDADE DE UMA NOVA AVALIAÇÃO COM OUTRO PROFISSIONAL, A FINS DE SUS. GRATA.","20240705","Consulta ortopedista"],
   ["728515","717", "24773","16","<b>Solicitação Indevida: </b><br>REINSERIDO COM DEFINIÇÃO CORRETA DE ORTOPEDISTA.","20240704","Retorno consulta ortopedista"],
   ["728604","507", "47932","2","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Qual a categoria de classificação do exame de imagem?","20240702","Consulta mastologia CEAE"],
+  ["728714","1150", "9438","3","<b>Solicitação Indevida: </b><br>SOLICITADO A UNIDADE ESTRATIFICAÇÃO DE RCV, PACIENTE ALTO RISCO. ORIENTADO A DAR SEGUIMENTO NO CEAE, POR NÃO APRESENTAR CRITÉRIOS DE AMBULATORIO.","20240710","Retorno consulta Dr Renan"],
   ["728824","1325", "7285","78","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data o último exame de PCCU realizado pela paciente para prosseguir com agendamento.Att. ","20240702","Consulta ginecologia policlinica"],
   ["728937","1194", "60565","6","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data os últimos resultados de exames bioquímicos realizados pelo paciente para prosseguir com agendamento.Att.","20240702","Consulta hipertenso alto risco"],
   ["729059","1317", "25778","3","<b>Não Se Enquadra nos Criterios: </b><br>O encaminhamento não contempla o conteúdo descritivo mínimo, conforme protocolo de encaminhamento para Nutrição, de forma que não é possível avaliar se o paciente atende aos critérios de dislipidemia. Há suspeita de compulsão alimentar, mas transtornos alimentares não fazem parte dos critérios.","20240702","Avaliaçao nutricionista e-multi"],
@@ -859,5 +862,6 @@ const Solicitacoes_Excluidas = [
   ["731014","907", "40101","9","<b>Não Se Enquadra nos Criterios: </b><br>Conforme critérios descritos no Protocolo do Serviço de Psicologia, não consta no encaminhamento quais são os prejuízos funcionais e/ou alterações emocionais que justifique o encaminhamento.","20240704","Avaliaçao psicologo e-multi"],
   ["731506","1150", "9438","3","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data os últimos  resultados de exames bioquímicos realizados pelo paciente para prosseguir com agendamento.Att.","20240704","Consulta hipertenso alto risco"],
   ["731885","1317", "25529","3","<b>Não Se Enquadra nos Criterios: </b><br>Paciente com DRC estágio 4 e hipertenso de Alto Risco, conforme protocolo de acesso deve receber acompanhamento nutricional no CEAE.","20240705","Avaliaçao nutricionista e-multi"],
-  ["732110","320", "60550","78","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Qual investigação realizada? Tem sinal de alerta neurológico?","20240708","Consulta neurologia"]
+  ["732110","320", "60550","78","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Qual investigação realizada? Tem sinal de alerta neurológico?","20240708","Consulta neurologia"],
+  ["732275","1267", "4365","8","<b>Não Se Enquadra nos Criterios: </b><br>PACIENTE NÃO SE ENQUADRA NOS CRITÉRIOS DA CARDIOLOGIA AMBULATORIAL POR SDE TRATAR DE HIPERTESNO ALTO RISCO. TRANSFERIDO PARA FILA DO CEAE.","20240710","Consulta cardiologia + ECG Dr Renan"]
 ]
