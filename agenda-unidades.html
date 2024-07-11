@@ -1,0 +1,185 @@
+<!DOCTYPE html><html lang="pt_BR"><head><meta charset="utf8"/><title>Solicitações Agendadas</title><style>        /* Estilo da barra de navegação */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333; /* Cor de fundo da barra de navegação */
+            color: #fff; /* Cor do texto da barra de navegação */
+            padding: 10px 0;
+            cursor: pointer!important;
+        }
+        
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+        }
+        
+        /* Adicione margem ao corpo para evitar que o conteúdo fique oculto sob a barra de navegação */
+        body {
+            margin-top: 60px; /* Ajuste conforme necessário com base na altura da sua barra de navegação */
+        }
+
+        .td { 
+            text-align: right;
+        }
+
+        .left { 
+            text-align: left;
+        }
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head>
+      
+      <body class="container-lg px-3 my-5 markdown-body">
+        <div class="navbar" onclick="backlink();">
+            <a><span>Agenda Centro de Especialidades Odontológicas</span> - <span>2024</span></a>
+        </div>
+        <h3><br>Consolidado da Agenda do CEO 2024</h3>
+        <label>Filtrar por
+            <select id="filtro" onchange="filtrar();"></select>
+        </label>
+        <h6>&nbsp;</h6>
+        <table>
+            <tbody id="lista">
+
+            </tbody>
+        </table>
+        </body>
+        <script src="js/agendaCEO.js"></script>
+        <script src="js/goto.js"></script>
+        <script>
+        let cod_profissional = null;
+        (() => {
+        const data_atual = (new Date()).getTime();
+        
+
+        if ((new URLSearchParams(window.location.search)).get('cod') == "qes") return;
+        
+        const token = parseInt((new URLSearchParams(window.location.search)).get('token'), 36);
+
+        cod_profissional = parseInt((new URLSearchParams(window.location.search)).get('cod'), 36);
+        })()
+        </script>
+        <script>
+function clonaArray(array) {
+    let clone = [];
+
+    for (let key in array){
+        clone[key] = Array.isArray(array[key])? clonaArray(array[key]) : array[key];
+    }
+    return clone;
+}
+
+        </script>
+
+        <script>
+var filtroPreenchido = false;
+
+const meses = [];
+meses[1] = "Janeiro";
+meses[2] = "Fevereiro";
+meses[3] = "Março";
+meses[4] = "Abril";
+meses[5] = "Maio";
+meses[6] = "Junho";
+meses[7] = "Julho";
+meses[8] = "Agosto";
+meses[9] = "Setembro";
+meses[10] = "Outubro";
+meses[11] = "Novembro";
+meses[12] = "Dezembro";
+
+function filtrar() {
+  let classes = [...document.getElementById("filtro").value.split(" ")];
+  geraTabela();
+  for (let elemento of [...document.getElementById("lista").children]) {
+    let remove = true;
+    for (let className of elemento.classList) {
+        if (classes.includes(className)) remove = false;
+    }
+    if (remove) elemento.remove();
+  }
+
+  if (isNaN(parseInt(classes[0]))) {
+    let i = 1;
+    for (let elemento of [...document.getElementById("lista").getElementsByClassName("solicitante")]) {
+        elemento.innerHTML = `<b>${meses[i].toUpperCase()}</b>`;
+        i+=1;
+    }
+  }
+}
+
+function geraTabela() {
+  const solicitantes = [];
+  document.getElementById("lista").innerHTML = "";
+
+  if (filtroPreenchido == false) {
+    document.getElementById("filtro").innerHTML = `
+                <option value="1 2 3 4 5 6 7 8 9 10 11 12">Ano todo</option>
+                <option value="1 2 3 4">Quadrimestre 1</option>
+                <option value="5 6 7 8">Quadrimestre 2</option>
+                <option value="9 10 11 12">Quadrimestre 3</option>
+            `;
+  }
+
+  let agendaCEO_local = clonaArray(agendaCEO);
+  console.log(agendaCEO_local)
+
+  for (let mes in agendaCEO_local) {
+    let linhaMes = document.createElement("tr");
+    linhaMes.innerHTML = `<td colspan="7" align=center><b>${meses[mes]}</b></td>`;
+    linhaMes.classList = mes;
+
+    document.getElementById("lista").appendChild(linhaMes);
+
+    for (let solicitante in agendaCEO_local[mes]) {
+      let linhaSolicitante = document.createElement("tr");
+      linhaSolicitante.classList = `${mes} ${solicitante.replaceAll(" ", "-").replaceAll("<b>", "").replaceAll("</b>", "")}`;
+      linhaSolicitante.innerHTML = `<td class="solicitante">${solicitante}</td>`;
+
+      document.getElementById("lista").appendChild(linhaSolicitante);
+      let adicionadoSituacao = false;
+
+      if (!solicitantes[solicitante]) {
+        solicitantes[solicitante] = true;
+        if (filtroPreenchido == false) {
+            document.getElementById("filtro").innerHTML += `
+                          <option value="${solicitante.replaceAll(" ", "-").replaceAll("<b>", "").replaceAll("</b>", "")}">${solicitante}</option>
+                        `;
+        }
+      }
+
+      let cboTotal = 0;
+      for (let cbo in agendaCEO_local[mes][solicitante]) {
+        let linhaCBO = document.createElement("tr");
+        linhaCBO.innerHTML = `<td>${cbo}</td>`;
+        linhaCBO.classList = `${mes} ${solicitante.replaceAll(" ", "-").replaceAll("<b>", "").replaceAll("</b>", "")}`;
+
+        document.getElementById("lista").appendChild(linhaCBO);
+        for (let situacao in agendaCEO_local[mes][solicitante][cbo]) {
+          linhaCBO.innerHTML += `<td align="right">${agendaCEO_local[mes][solicitante][cbo][situacao]}</td>`;
+          console.log(situacao);
+          if (situacao == "Agendados") continue;
+          agendaCEO_local[mes][solicitante][cbo].Agendados +=
+            agendaCEO_local[mes][solicitante][cbo][situacao];
+
+          agendaCEO_local[mes][solicitante]["<b>Total</b>"][situacao] +=
+            agendaCEO_local[mes][solicitante][cbo][situacao];
+        }
+        linhaCBO.children[1].innerHTML =
+          agendaCEO_local[mes][solicitante][cbo].Agendados;
+
+        if (adicionadoSituacao) continue;
+        for (let situacao in agendaCEO_local[mes][solicitante][cbo]) {
+          linhaSolicitante.innerHTML += `<td>${situacao}</td>`;
+          adicionadoSituacao = true;
+        }
+      }
+    }
+  }
+}
+geraTabela();
+filtroPreenchido = true;
+
+        </script>
+</html>
