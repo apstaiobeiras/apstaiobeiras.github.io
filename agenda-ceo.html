@@ -1,0 +1,117 @@
+<!DOCTYPE html><html lang="pt_BR"><head><meta charset="utf8"/><title>Solicitações Agendadas</title><style>        /* Estilo da barra de navegação */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333; /* Cor de fundo da barra de navegação */
+            color: #fff; /* Cor do texto da barra de navegação */
+            padding: 10px 0;
+            cursor: pointer!important;
+        }
+        
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+        }
+        
+        /* Adicione margem ao corpo para evitar que o conteúdo fique oculto sob a barra de navegação */
+        body {
+            margin-top: 60px; /* Ajuste conforme necessário com base na altura da sua barra de navegação */
+        }
+
+        .td { 
+            text-align: right;
+        }
+
+        .left { 
+            text-align: left;
+        }
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head>
+      
+      <body class="container-lg px-3 my-5 markdown-body">
+        <div class="navbar" onclick="backlink();">
+            <a><span id="codigo_profissional">0000</span> - <span id="profissional">Todos os profissionais</span></a>
+        </div>
+        <h3> </h3>
+        <table>
+            <tbody id="lista">
+
+            </tbody>
+        </table>
+        </body>
+        <script src="js/agendaCEO.js"></script>
+        <script src="js/goto.js"></script>
+        <script>
+        let cod_profissional = null;
+        (() => {
+        const data_atual = (new Date()).getTime();
+        
+
+        if ((new URLSearchParams(window.location.search)).get('cod') == "qes") return;
+        
+        const token = parseInt((new URLSearchParams(window.location.search)).get('token'), 36);
+
+        cod_profissional = parseInt((new URLSearchParams(window.location.search)).get('cod'), 36);
+        })()
+        </script>
+        <script>
+            function geraTabela() {
+                const meses = [];
+            meses[1] = 'Janeiro';
+            meses[2] = 'Fevereiro';
+            meses[3] = 'Março';
+            meses[4] = 'Abril';
+            meses[5] = 'Maio';
+            meses[6] = 'Junho';
+            meses[7] = 'Julho';
+            meses[8] = 'Agosto';
+            meses[9] = 'Setembro';
+            meses[10] = 'Outubro';
+            meses[11] = 'Novembro';
+            meses[12] = 'Dezembro';
+
+            for (let mes in agendaCEO) {
+                let linhaMes = document.createElement("tr");
+                    linhaMes.innerHTML = `<td colspan="7" align=center><b>${meses[mes]}</b></td>`;
+                    linhaMes.classList=mes;
+
+                document.getElementById("lista").appendChild(linhaMes);
+
+                for (let solicitante in agendaCEO[mes]) {
+                    let linhaSolicitante = document.createElement("tr");
+                    linhaSolicitante.classList=mes;
+                    linhaSolicitante.innerHTML = `<td>${solicitante}</td>`;
+
+                    document.getElementById("lista").appendChild(linhaSolicitante);
+                    let adicionadoSituacao = false;
+
+                    let cboTotal = 0;
+                    for (let cbo in agendaCEO[mes][solicitante]){
+                        let linhaCBO = document.createElement("tr");
+                        linhaCBO.innerHTML = `<td>${cbo}</td>`;
+                        linhaCBO.classList=`mes ${solicitante.replaceAll(" ","-")}`;
+                        
+                        document.getElementById("lista").appendChild(linhaCBO);
+                        for (let situacao in agendaCEO[mes][solicitante][cbo]) {
+                            linhaCBO.innerHTML += `<td align="right">${agendaCEO[mes][solicitante][cbo][situacao]}</td>`;
+                            console.log(situacao);
+                            if (situacao == "Agendados") continue;
+                            agendaCEO[mes][solicitante][cbo].Agendados += agendaCEO[mes][solicitante][cbo][situacao];
+
+                            agendaCEO[mes][solicitante]["<b>Total</b>"][situacao] += agendaCEO[mes][solicitante][cbo][situacao];
+                        }
+                        linhaCBO.children[1].innerHTML = agendaCEO[mes][solicitante][cbo].Agendados;
+
+                        if (adicionadoSituacao) continue;
+                        for (let situacao in agendaCEO[mes][solicitante][cbo]) {
+                            linhaSolicitante.innerHTML += `<td>${situacao}</td>`;
+                            adicionadoSituacao = true;
+                        }
+                    }
+                }
+            } 
+            }
+        </script>
+</html>

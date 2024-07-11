@@ -24,6 +24,7 @@ const lista_profissionais_solicitacoes = `
 <option value="1325">DAYANNA KELLY MELO MENDES</option>
 <option value="1282">DEBORA ANDRADE GOMES</option>
 <option value="1225">DIEGO VERISSIMO DE SOUZA ALMEIDA</option>
+<option value="1143">EDNA FERNANDA DIAS LEãO</option>
 <option value="183">ELIANE APARECIDA DE OLIVEIRA PASCOAL</option>
 <option value="758">FABIO ARAUJO MARTINS MOTA</option>
 <option value="216">FABIOLA DE OLIVEIRA LOBO</option>
