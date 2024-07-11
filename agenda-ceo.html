@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="pt_BR"><head><meta charset="utf8"/><title>Agenda Consolidada</title><style>        /* Estilo da barra de navegação */
+<!DOCTYPE html><html lang="pt_BR"><head><meta charset="utf8"/><title>Solicitações Agendadas</title><style>        /* Estilo da barra de navegação */
         .navbar {
             position: fixed;
             top: 0;
@@ -28,48 +28,17 @@
         .left { 
             text-align: left;
         }
-
-        tr, td, th {
-            /*border: 1px solid #dfe2e5;*/
-            background-color: transparent !important;
-        }
-
-        .header {
-            background-color: #F6F8FA !important;
-        }
-
-        .no-border,table {
-          border: 0 !important;
-        }
-        @media print {
-          @page  { 
-            size: A4 portrait;   /* auto is the initial value */
-            margin: 10mm;  
-          }
-
-          .no-print {
-            display: none;
-          }
-
-          body {
-            margin: 0;
-          };
-        }
-
-
       </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head>
       
       <body class="container-lg px-3 my-5 markdown-body">
-        <div class="navbar no-print" onclick="backlink();">
+        <div class="navbar" onclick="backlink();">
             <a><span>Agenda Centro de Especialidades Odontológicas</span> - <span>2024</span></a>
         </div>
-        <div class="no-print">
-        <h3><br>Secretária Municipal de Taiobeiras MG - Consolidado CEO 2024 - <a href="#" onclick="window.print();">🖨️</a></h3>
+        <h3><br>Consolidado da Agenda do CEO 2024</h3>
         <label>Filtrar por
             <select id="filtro" onchange="filtrar();"></select>
         </label>
         <h6>&nbsp;</h6>
-      </div>
         <table>
             <tbody id="lista">
 
@@ -100,16 +69,6 @@ function clonaArray(array) {
     return clone;
 }
 
-function capitalize(str) {
-  let words = str.split(' ');
-  for (let i = 0; i < words.length; i++) {
-    words[i] = words[i].replaceAll("<b>","")
-    words[i] = words[i].substring(0, 1).toUpperCase()+words[i].substring(1).toLowerCase();
-
-    words[i] = words[i].length == 2 ?  words[i].toLowerCase() : words[i];
-  }
-  return words.join(' ');
-}
         </script>
 
         <script>
@@ -143,40 +102,9 @@ function filtrar() {
   if (isNaN(parseInt(classes[0]))) {
     let i = 1;
     for (let elemento of [...document.getElementById("lista").getElementsByClassName("solicitante")]) {
-        elemento.innerHTML = `<b> ${elemento.innerText} - ${meses[i].toUpperCase().substring(0,3)}</b>`;
+        elemento.innerHTML = `<b>${meses[i].toUpperCase()}</b>`;
         i+=1;
     }
-  }
-
-  if (document.getElementsByClassName("mes")[0]) {
-    document.getElementsByClassName("mes")[0].style="";
-  }
-
-  if (isNaN(parseInt(classes[0]))) {
-    let i = 0;
-    let ultimomes = 1;
-    for (let elemento of [...document.getElementsByClassName("solicitante")]) {
-      if (i == 3) {
-        elemento.style="page-break-before: always;";
-        i = 0;
-      } 
-      i +=1;
-    }
-    return
-  }
-
-  let i = 0;
-  let ultimomes = 1;
-  for (let elemento of [...document.getElementsByClassName("solicitante")]) {
-    if (i == 3 && ultimomes == elemento.parentElement.classList[0]) {
-      elemento.style="page-break-before: always;";
-      i = 0;
-    } 
-
-    if (ultimomes != elemento.parentElement.classList[0])i = 0;
-
-    ultimomes = elemento.parentElement.classList[0]
-    i +=1;
   }
 }
 
@@ -186,7 +114,7 @@ function geraTabela() {
 
   if (filtroPreenchido == false) {
     document.getElementById("filtro").innerHTML = `
-                <option value="1 2 3 4 5 6 7 8 9 10 11 12">Ano todo e Todos os Municípios</option>
+                <option value="1 2 3 4 5 6 7 8 9 10 11 12">Ano todo</option>
                 <option value="1">Janeiro</option>
                 <option value="2">Fevereiro</option>
                 <option value="3">Março</option>
@@ -206,17 +134,18 @@ function geraTabela() {
   }
 
   let agendaCEO_local = clonaArray(agendaCEO);
+  console.log(agendaCEO_local)
 
   for (let mes in agendaCEO_local) {
     let linhaMes = document.createElement("tr");
-    linhaMes.innerHTML = `<td colspan="7" align=center class="no-border mes" style="page-break-before: always;"><h2>${meses[mes]}</h2></td>`;
+    linhaMes.innerHTML = `<td colspan="7" align=center><b>${meses[mes]}</b></td>`;
     linhaMes.classList = mes;
 
     document.getElementById("lista").appendChild(linhaMes);
 
     for (let solicitante in agendaCEO_local[mes]) {
       let linhaSolicitante = document.createElement("tr");
-      linhaSolicitante.classList = `${mes} ${solicitante.replaceAll(" ", "-").replaceAll("<b>", "").replaceAll("</b>", "")} header`;
+      linhaSolicitante.classList = `${mes} ${solicitante.replaceAll(" ", "-").replaceAll("<b>", "").replaceAll("</b>", "")}`;
       linhaSolicitante.innerHTML = `<td class="solicitante">${solicitante}</td>`;
 
       document.getElementById("lista").appendChild(linhaSolicitante);
@@ -226,7 +155,7 @@ function geraTabela() {
         solicitantes[solicitante] = true;
         if (filtroPreenchido == false) {
             document.getElementById("filtro").innerHTML += `
-                          <option value="${solicitante.replaceAll(" ", "-").replaceAll("<b>", "").replaceAll("</b>", "")}">${capitalize(solicitante)}</option>
+                          <option value="${solicitante.replaceAll(" ", "-").replaceAll("<b>", "").replaceAll("</b>", "")}">${solicitante}</option>
                         `;
         }
       }
@@ -240,7 +169,7 @@ function geraTabela() {
         document.getElementById("lista").appendChild(linhaCBO);
         for (let situacao in agendaCEO_local[mes][solicitante][cbo]) {
           linhaCBO.innerHTML += `<td align="right">${agendaCEO_local[mes][solicitante][cbo][situacao]}</td>`;
-
+          console.log(situacao);
           if (situacao == "Agendados") continue;
           agendaCEO_local[mes][solicitante][cbo].Agendados +=
             agendaCEO_local[mes][solicitante][cbo][situacao];
@@ -261,7 +190,6 @@ function geraTabela() {
   }
 }
 geraTabela();
-filtrar();
 filtroPreenchido = true;
 
         </script>
