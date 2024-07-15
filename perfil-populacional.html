@@ -1,0 +1,310 @@
+<!DOCTYPE html><html lang="pt_BR"><head><meta charset="utf8"/><title>Agenda Consolidada</title><style>        /* Estilo da barra de navegação */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333; /* Cor de fundo da barra de navegação */
+            color: #fff; /* Cor do texto da barra de navegação */
+            padding: 10px 0;
+            cursor: pointer!important;
+        }
+        
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+        }
+        
+        /* Adicione margem ao corpo para evitar que o conteúdo fique oculto sob a barra de navegação */
+        body {
+            margin-top: 60px; /* Ajuste conforme necessário com base na altura da sua barra de navegação */
+        }
+
+        .td { 
+            text-align: right;
+        }
+
+        .left { 
+            text-align: left;
+        }
+
+        tr, td, th {
+            /*border: 1px solid #dfe2e5;*/
+            background-color: transparent !important;
+        }
+
+        .header {
+            background-color: #F6F8FA !important;
+        }
+
+        .no-border,table {
+          border: 0 !important;
+        }
+        @media print {
+          @page  { 
+            size: A4 portrait;   /* auto is the initial value */
+            margin: 10mm;  
+          }
+
+          .no-print {
+            display: none;
+          }
+
+          body {
+            margin: 0;
+          };
+        }
+
+
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head>
+      
+      <body class="container-lg px-3 my-5 markdown-body">
+        <div class="navbar no-print" onclick="backlink();">
+            <a><span>Atenção primária SMS Taiobeiras</span> - <span>Perfil populacional</span></a>
+        </div>
+        <div class="no-print">
+        <h3><br></h3>
+        <label>
+            <select id="filtro">
+              <option>Não filtrar por equipe</option>
+            </select>,
+            <select id="filtro">
+              <option>não filtrar por bairro</option>
+            </select>,
+            <select id="filtro">
+              <option>da zona rural e urbana</option>
+            </select>
+            e
+            <select id="filtro">
+              <option>de todas as ACS</option>
+            </select>
+        </label>
+        <button onclick="gerarRelatorio();">Gerar Relatório</button>
+        <h6>&nbsp;</h6>
+      </div>
+            <div id="documento">
+
+            </div>
+        </body>
+        <script>
+          const nil = undefined;
+        </script>
+        <script src="js/Cadastros.js"></script>
+        <script src="js/CadastrosChaves.js"></script>
+        <script src="js/goto.js"></script>
+        <script>
+        let cod_profissional = null;
+        (() => {
+        const data_atual = (new Date()).getTime();
+        
+
+        if ((new URLSearchParams(window.location.search)).get('cod') == "qes") return;
+        
+        const token = parseInt((new URLSearchParams(window.location.search)).get('token'), 36);
+
+        cod_profissional = parseInt((new URLSearchParams(window.location.search)).get('cod'), 36);
+        })()
+        </script>
+        <script>
+          function gerarRelatorio() {
+            let dados = {
+              gestantesTotal: 0,
+              gestantesMenor18_Urbano: 0,
+              gestantesMenor18_Rural: 0,
+              gestantesMenor18_Total: 0,
+
+              gestantesMenor23_Urbano: 0,
+              gestantesMenor23_Rural: 0,
+              gestantesMenor23_Total: 0,
+
+              gestantesMenor31_Urbano: 0,
+              gestantesMenor31_Rural: 0,
+              gestantesMenor31_Total: 0,
+
+              gestantesMaior30_Urbano: 0,
+              gestantesMaior30_Rural: 0,
+              gestantesMaior30_Total: 0,
+
+              gestantesTotal_Urbano: 0,
+              gestantesTotal_Rural: 0,
+
+              hipertensosTotal: 0,
+              hipertensosMenor18_Urbano: 0,
+              hipertensosMenor18_Rural: 0,
+              hipertensosMenor18_Total: 0,
+
+              hipertensosMenor23_Urbano: 0,
+              hipertensosMenor23_Rural: 0,
+              hipertensosMenor23_Total: 0,
+
+              hipertensosMenor31_Urbano: 0,
+              hipertensosMenor31_Rural: 0,
+              hipertensosMenor31_Total: 0,
+
+              hipertensosMaior30_Urbano: 0,
+              hipertensosMaior30_Rural: 0,
+              hipertensosMaior30_Total: 0,
+
+              hipertensosTotal_Urbano: 0,
+              hipertensosTotal_Rural: 0,
+
+            };
+
+            function de(min,max,value){
+              if (value <= min) return false;
+              if (max <= value) return false;
+              return true
+            }
+
+            function preencheDados(faixa,zona_rural,titulo,cadastro) {
+              for ()
+            }
+
+            for (let cadastro of Cadastros) {
+              // Gestantes
+              if (cadastro[k.indgestante] == 1) {
+                if (cadastro[k.zona_rural] == 1) {
+                  dados.gestantesMenor18_Rural+=de(0,17,cadastro[k.idade])   ? 1 : 0;
+                  dados.gestantesMenor23_Rural+=de(18,22,cadastro[k.idade])  ? 1 : 0;
+                  dados.gestantesMenor31_Rural+=de(23,31,cadastro[k.idade])  ? 1 : 0;
+                  dados.gestantesMaior30_Rural+=de(31,200,cadastro[k.idade]) ? 1 : 0;
+                } else {
+                  dados.gestantesMenor18_Urbano+=de(0,17,cadastro[k.idade])   ? 1 : 0;
+                  dados.gestantesMenor23_Urbano+=de(18,22,cadastro[k.idade])  ? 1 : 0;
+                  dados.gestantesMenor31_Urbano+=de(23,31,cadastro[k.idade])  ? 1 : 0;
+                  dados.gestantesMaior30_Urbano+=de(31,200,cadastro[k.idade]) ? 1 : 0;
+                }
+              }
+
+              if (cadastro[k.indhipertensaoarterial] == 1) {
+                if (cadastro[k.zona_rural] == 1) {
+                  dados.hipertensosMenor18_Rural+=de(0,17,cadastro[k.idade])   ? 1 : 0;
+                  dados.hipertensosMenor23_Rural+=de(18,22,cadastro[k.idade])  ? 1 : 0;
+                  dados.hipertensosMenor31_Rural+=de(23,31,cadastro[k.idade])  ? 1 : 0;
+                  dados.hipertensosMaior30_Rural+=de(31,200,cadastro[k.idade]) ? 1 : 0;
+                } else {
+                  dados.hipertensosMenor18_Urbano+=de(0,17,cadastro[k.idade])   ? 1 : 0;
+                  dados.hipertensosMenor23_Urbano+=de(18,22,cadastro[k.idade])  ? 1 : 0;
+                  dados.hipertensosMenor31_Urbano+=de(23,31,cadastro[k.idade])  ? 1 : 0;
+                  dados.hipertensosMaior30_Urbano+=de(31,200,cadastro[k.idade]) ? 1 : 0;
+                }
+              }
+            }
+
+            dados.gestantesMenor18_Total = dados.gestantesMenor18_Urbano+dados.gestantesMenor18_Rural;
+            dados.gestantesMenor23_Total = dados.gestantesMenor23_Urbano+dados.gestantesMenor23_Rural;
+            dados.gestantesMenor31_Total = dados.gestantesMenor31_Urbano+dados.gestantesMenor31_Rural;
+            dados.gestantesMaior30_Total = dados.gestantesMaior30_Urbano+dados.gestantesMaior30_Rural;
+            
+            dados.gestantesTotal_Urbano = dados.gestantesMenor18_Urbano+dados.gestantesMenor23_Urbano+dados.gestantesMenor31_Urbano+dados.gestantesMaior30_Urbano;
+            dados.gestantesTotal_Rural = dados.gestantesMenor18_Rural+dados.gestantesMenor23_Rural+dados.gestantesMenor31_Rural+dados.gestantesMaior30_Rural;
+            dados.gestantesTotal = dados.gestantesTotal_Urbano+dados.gestantesTotal_Rural;
+
+            dados.hipertensosMenor18_Total = dados.hipertensosMenor18_Urbano+dados.hipertensosMenor18_Rural;
+            dados.hipertensosMenor23_Total = dados.hipertensosMenor23_Urbano+dados.hipertensosMenor23_Rural;
+            dados.hipertensosMenor31_Total = dados.hipertensosMenor31_Urbano+dados.hipertensosMenor31_Rural;
+            dados.hipertensosMaior30_Total = dados.hipertensosMaior30_Urbano+dados.hipertensosMaior30_Rural;
+            
+            dados.hipertensosTotal_Urbano = dados.hipertensosMenor18_Urbano+dados.hipertensosMenor23_Urbano+dados.hipertensosMenor31_Urbano+dados.hipertensosMaior30_Urbano;
+            dados.hipertensosTotal_Rural = dados.hipertensosMenor18_Rural+dados.hipertensosMenor23_Rural+dados.hipertensosMenor31_Rural+dados.hipertensosMaior30_Rural;
+            dados.hipertensosTotal = dados.hipertensosTotal_Urbano+dados.hipertensosTotal_Rural;
+
+            let template = `
+            <div class="${dados.gestantesTotal}">
+              <h1>Gestantes</h1>
+
+              <p>Existem ${dados.gestantesTotal} gestantes cadastradas com o seguinte perfil:</p>
+
+              <table>
+                <tr>
+                  <th>Faixa Etária</th>
+                  <th>Zona urbana</th>
+                  <th>Zona rural</th>
+                  <th>Total</th>
+                </tr>
+                <tr>
+                  <td class=>Menor de 18 anos</td>
+                  <td  class="td">${dados.gestantesMenor18_Urbano}</td>
+                  <td  class="td">${dados.gestantesMenor18_Rural}</td>
+                  <td  class="td">${dados.gestantesMenor18_Total}</td>
+                </tr>
+                <tr>
+                  <td>18 a 22 anos</td>
+                  <td  class="td">${dados.gestantesMenor23_Urbano}</td>
+                  <td  class="td">${dados.gestantesMenor23_Rural}</td>
+                  <td  class="td">${dados.gestantesMenor23_Total}</td>
+                </tr>
+                <tr>
+                  <td>23 a 30 anos</td>
+                  <td  class="td">${dados.gestantesMenor31_Urbano}</td>
+                  <td  class="td">${dados.gestantesMenor31_Rural}</td>
+                  <td  class="td">${dados.gestantesMenor31_Total}</td>
+                </tr>
+                <tr>
+                  <td>Mais de 30 anos</td>
+                  <td  class="td">${dados.gestantesMaior30_Urbano}</td>
+                  <td  class="td">${dados.gestantesMaior30_Rural}</td>
+                  <td  class="td">${dados.gestantesMaior30_Total}</td>
+                </tr>
+                <tr>
+                  <th class="left">Total</th>
+                  <td  class="td">${dados.gestantesTotal_Urbano}</td>
+                  <td  class="td">${dados.gestantesTotal_Rural}</td>
+                  <td  class="td">${dados.gestantesTotal}</td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="${dados.hipertensosTotal}">
+              <h1>Hipertensos</h1>
+
+              <p>Existem ${dados.hipertensosTotal} hipertensos cadastradas com o seguinte perfil:</p>
+
+              <table>
+                <tr>
+                  <th>Faixa Etária</th>
+                  <th>Zona urbana</th>
+                  <th>Zona rural</th>
+                  <th>Total</th>
+                </tr>
+                <tr>
+                  <td class=>Menor de 18 anos</td>
+                  <td  class="td">${dados.hipertensosMenor18_Urbano}</td>
+                  <td  class="td">${dados.hipertensosMenor18_Rural}</td>
+                  <td  class="td">${dados.hipertensosMenor18_Total}</td>
+                </tr>
+                <tr>
+                  <td>18 a 22 anos</td>
+                  <td  class="td">${dados.hipertensosMenor23_Urbano}</td>
+                  <td  class="td">${dados.hipertensosMenor23_Rural}</td>
+                  <td  class="td">${dados.hipertensosMenor23_Total}</td>
+                </tr>
+                <tr>
+                  <td>23 a 30 anos</td>
+                  <td  class="td">${dados.hipertensosMenor31_Urbano}</td>
+                  <td  class="td">${dados.hipertensosMenor31_Rural}</td>
+                  <td  class="td">${dados.hipertensosMenor31_Total}</td>
+                </tr>
+                <tr>
+                  <td>Mais de 30 anos</td>
+                  <td  class="td">${dados.hipertensosMaior30_Urbano}</td>
+                  <td  class="td">${dados.hipertensosMaior30_Rural}</td>
+                  <td  class="td">${dados.hipertensosMaior30_Total}</td>
+                </tr>
+                <tr>
+                  <th class="left">Total</th>
+                  <td  class="td">${dados.hipertensosTotal_Urbano}</td>
+                  <td  class="td">${dados.hipertensosTotal_Rural}</td>
+                  <td  class="td">${dados.hipertensosTotal}</td>
+                </tr>
+              </table>
+            </div>
+            `;
+
+            document.getElementById("documento").innerHTML = template;
+
+          }
+          gerarRelatorio();
+        </script>
+</html>

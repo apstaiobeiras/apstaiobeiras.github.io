@@ -18,6 +18,7 @@ const lista_profissionais_solicitacoes = `
 <option value="1192">CARLOS FERNANDO DE SOUZA JUNIOR</option>
 <option value="717">CLEIBER FREDERICO BOTTA</option>
 <option value="122">DAIANY SOUSA RODRIGUES</option>
+<option value="1322">DAILSON SOUSA DUTRA</option>
 <option value="736">DANIELA DE FREITAS TELES</option>
 <option value="222">DANILO DA ROCHA VIANA</option>
 <option value="880">DANILO DIEGO FREITAS SILVEIRA</option>
