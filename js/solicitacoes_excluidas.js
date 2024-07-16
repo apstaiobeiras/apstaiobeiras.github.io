@@ -1,4 +1,4 @@
-document.getElementById('atualizacao').textContent = '15/07/2024';
+document.getElementById('atualizacao').textContent = '16/07/2024';
 const Solicitacoes_Excluidas = [
   ["149235","764", "17525","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
   ["152679","764", "25742","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
@@ -38,6 +38,7 @@ const Solicitacoes_Excluidas = [
   ["427844","1143", "68762","7","Solicitação Indevida","20240710","Consulta cirurgiao dentista"],
   ["435244","1165", "32150","206","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>PACIENTE EXCLUIDO DA FILA EM DECORRÊNCIA DA FALTA DE DETALHES NO ENCAMINHAMENTO","20240710"," consulta psicologia infantojuvenil"],
   ["435697","770", "28144","61","<b>Não Se Enquadra nos Criterios: </b><br>PACIENTE AVISADO E RETIRADO DA FILA POR NÃO SE ENQUADRAR NOS NOVOS CRITÉRIOS DE ATENDIMENTO","20240603","Atendimento fonoaudiologia"],
+  ["443432","18", "45965","68","<b>Solicitação Indevida: </b><br>PACIENTE ENCONTRA SE EM ATENDIMENTO CER 2","20240715","Atendimento fonoaudiologia"],
   ["444730","1198", "5988","8","<b>Não Se Enquadra nos Criterios: </b><br>dente fraturado","20240305","Tratamento endodôntico de dente permanente com três ou mais raízes"],
   ["458019","1193", "19163","56","Agendar na Atenção Primaria","20240610","Fisioterapia - consulta"],
   ["463361","1032", "11161","11","Agendar na Atenção Primaria","20240409","Grupo de coluna-  fisioterapia"],
@@ -712,6 +713,7 @@ const Solicitacoes_Excluidas = [
   ["705376","1258", "26904","34","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor solicitar ou descrever o resultado da HG da paciente para prosseguir com agendamento.Att.","20240523","Consulta diabetes alto risco"],
   ["705633","1297", "37291","7","Não Se Enquadra nos Criterios","20240606"," consulta psicologia infantojuvenil"],
   ["705698","1219", "20311","33","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data o resultado do PCCU realizado pela paciente para prosseguir com agendamento.Att.","20240529","Consulta ginecologia policlinica"],
+  ["705848","1258", "1451","34","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Deve ter descrição mínima, sobre investigação prévia sore os sintomas.","20240715","Consulta otorrinolaringologia"],
   ["705964","507", "33085","2","<b>Não Se Enquadra nos Criterios: </b><br>Sintomas de climatério deve ser lançado na fila da GINECOLOGIA POLICLÍNICA.","20240522","Consulta ginecologia CEAE"],
   ["706149","1291", "11572","75","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>DESCREVER INVESTIGAÇÃO LABORATORIAL PARA DIAGNÓSTICO DIFERENCIAL, SUGIRO AVALIAÇÃO DA NEUROLOGIA E PELA CARDIO E ENDOCRINO DO CEAE","20240521","Consulta clinico/geriatra"],
   ["706282","1258", "27993","34","<b>Solicitação Indevida: </b><br>Médica da unidade encaminhou de forma indevida, solicitando que o mesmo pudesse ser excluído da fila.","20240522","Avaliaçao nutricionista e-multi"],
@@ -787,6 +789,7 @@ const Solicitacoes_Excluidas = [
   ["716667","1132", "654","10","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Por favor aguardar o resultado do Us endovaginal, para enc. já com o resultado.<br>E nos informar a data da coleta do ultimo citologico.Estamos a disposição para maiores esclarecimentos.","20240628","Consulta ginecologia CEAE"],
   ["716928","1260", "26644","81","<b>Não Se Enquadra nos Criterios: </b><br>Transferir para fila de avaliação cirúrgica.","20240617","Pequena cirurgia policlinica"],
   ["717126","1277", "10562","4","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>AUSENCIA DE DUM E IG. JA REALIZADO CONTATO COM PROFISSIONAL SOLICITANTE.","20240611","Ultrassonografia obstetrica"],
+  ["717130","1193", "75017","56","<b>Solicitação Indevida: </b><br>PACIENTE ENCAMINHADO AO MONITORAMENTO AUDITIVO.","20240715","Atendimento fonoaudiologia"],
   ["717205","1277", "10153","4","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>AUSENCIA DE DUM E IG. REINSERIR COM DETALHAMENTO CLÍNICO NECESSÁRIO.JA REALIZADO CONTATO COM SOLICITANTE.","20240611","Ultrassonografia obstetrica"],
   ["717569","740", "10547","11","Agendar na Atenção Primaria","20240612","Acolhimento de fisioterapia"],
   ["717912","1194", "10286","6","<b>Não Se Enquadra nos Criterios: </b><br>Somente mastalgia não é critério para a mastologia do CEAE.","20240617","Consulta - mastologista"],
@@ -868,6 +871,7 @@ const Solicitacoes_Excluidas = [
   ["729962","1216", "44398","9","<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA FILA \"\"AVALIAÇÃO CIRURGICA POLICLÍNICA\"\".","20240704","Consulta cirurgiao geral"],
   ["730386","1258", "68414","34","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever data de realização dos exames bioquímicos para prosseguir com agendamento.Att. ","20240704","Consulta hipertenso alto risco"],
   ["730449","1260", "58514","81","<b>Não Se Enquadra nos Criterios: </b><br>Favor encaminhar na fila de mastologia CEAE.Att.  ","20240704","Consulta ginecologia policlinica"],
+  ["730469","1219", "23102","33","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Quais exames solicitados para ser feito  diagnóstico diferencial?","20240715","Consulta otorrinolaringologia"],
   ["730482","1132", "550","10","<b>Não Se Enquadra nos Criterios: </b><br>De acordo protocolo diabetes alto risco, o paciente deve apresentar uma HG acima de 9%, o que o paciente não apresenta no momento, mesmo fazendo uso irregular da medicação a HG do mesmo se mantem estável. Coloco a disposição para discussão do caso.Att. ","20240704","Consulta diabetes alto risco"],
   ["730755","907", "117","9","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor aguardar os resultados dos exames bioquímicos e reencaminhar com descrição da data de realização para prosseguir com agendamento.Att.","20240704","Consulta hipertenso alto risco"],
   ["730933","1260", "16399","81","<b>Não Se Enquadra nos Criterios: </b><br>Favor encaminhar na fila Ginecologia CEAE.Att. ","20240704","Consulta ginecologia policlinica"],
@@ -877,6 +881,7 @@ const Solicitacoes_Excluidas = [
   ["731885","1317", "25529","3","<b>Não Se Enquadra nos Criterios: </b><br>Paciente com DRC estágio 4 e hipertenso de Alto Risco, conforme protocolo de acesso deve receber acompanhamento nutricional no CEAE.","20240705","Avaliaçao nutricionista e-multi"],
   ["732110","320", "60550","78","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Qual investigação realizada? Tem sinal de alerta neurológico?","20240708","Consulta neurologia"],
   ["732275","1267", "4365","8","<b>Não Se Enquadra nos Criterios: </b><br>PACIENTE NÃO SE ENQUADRA NOS CRITÉRIOS DA CARDIOLOGIA AMBULATORIAL POR SDE TRATAR DE HIPERTESNO ALTO RISCO. TRANSFERIDO PARA FILA DO CEAE.","20240710","Consulta cardiologia + ECG Dr Renan"],
+  ["732999","122", "32779","206","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Falta detalhamento clínico.","20240715","Consulta otorrinolaringologia"],
   ["733444","1260", "15391","81","<b>Não Se Enquadra nos Criterios: </b><br>Encaminhar para avaliação nas pequenas cirurgias.","20240710","Avaliaçao cirurgica policlinica"],
   ["733610","1322", "45549","75","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Qual a IG atual?","20240711","Consulta - obstétrica / puerpério"],
   ["733829","1291", "28583","75","<b>Não Se Enquadra nos Criterios: </b><br>Deverá aguardar confirmação laboratorial.","20240710","Consulta endocrinologia"],
@@ -885,6 +890,7 @@ const Solicitacoes_Excluidas = [
   ["734051","1199", "17320","81","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data o último PCCU realizado pela paciente para prosseguir com agendamento.Att.","20240711","Consulta ginecologia policlinica"],
   ["734127","1322", "2408","75","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>AUSENCIA DE DUM E IG.JA REALIZADO CONTATO COM PROFISSIONAL SOLICITANTE.","20240712","Ultrassonografia obstetrica"],
   ["734129","1317", "32059","3","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>DETALHAR DUM E IG. JA REALIZADO CONTATO COM PROFISSIONAL.","20240712","Ultrassonografia obstetrica"],
+  ["734694","1267", "7436","8","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Qual a classificação do exame de imagem? (BI-RADS)","20240715","Consulta - mastologista"],
   ["734948","507", "8463","2","<b>Não Se Enquadra nos Criterios: </b><br>Se não foi observada PA elevada na avaliação, não tem critérios para o alto risco.","20240711","Consulta gestante alto risco"],
   ["735127","1046", "26798","10","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>A paciente tem uma gestação de alto risco, mas não encontrei registros de atendimento dela no CEAE,  a mesma faz acompanhamento com obstetra particular? No caso da laqueadura não existe o fluxo de atendimento ginecológico para agendar a laqueadura, sugiro que ela faça o planejamento familiar na UBS, assine o termo 60 dias antes do parto que ela tem esse desejo da laqueadura e leve para maternidade, caso a cesárea seja realizada de acordo avaliação médica, ela pode conversar com o profissional e informar que está com o termo em mãos. Outra sugestão é que ela pode conversar com seu médico obstetra sobre o desejo do procedimento. Caso ela não seja assistida por um especialista encaminhar para gestação alto risco se ela apresenta os critérios de acordo protocolo. Me coloco a disposição para discussão do caso.Att.","20240711","Consulta ginecologia policlinica"],
   ["735203","1138", "7886","56","<b>Não Se Enquadra nos Criterios: </b><br>Controle do DIU deve ser lançado na fila de espera GINECOLOGIA POLICLÍNICA.","20240712","Consulta ginecologia CEAE"],
@@ -900,5 +906,8 @@ const Solicitacoes_Excluidas = [
   ["736142","1194", "20490","6","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Tem que ser descrita a investigação radiológica, minimamente.","20240712","Consulta ortopedista"],
   ["736221","1267", "11766","8","<b>Não Se Enquadra nos Criterios: </b><br>Quadro de leiomioma deve ser lançado na fila da GINECOLOGIA POLICLÍNICA.","20240712","Consulta ginecologia CEAE"],
   ["736292","1194", "28149","6","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Deve ter descrição mínima do exame solicitado.","20240712","Consulta ortopedista"],
-  ["736335","829", "18172","7","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data os resultados dos últimos exames bioquímicos realizados pela paciente para prosseguir com agendamento.Att. ","20240712","Consulta hipertenso alto risco"]
+  ["736335","829", "18172","7","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data os resultados dos últimos exames bioquímicos realizados pela paciente para prosseguir com agendamento.Att. ","20240712","Consulta hipertenso alto risco"],
+  ["736428","1239", "31763","3","<b>Não Se Enquadra nos Criterios: </b><br>Baixo peso e insatisfação com imagem corporal não se enquadram nos critérios da Nutrição da e-MULTI.","20240715","Avaliaçao nutricionista e-multi"],
+  ["737434","1317", "23704","3","<b>Não Se Enquadra nos Criterios: </b><br>Paciente com HAS de alto risco (cardiopata, DRC III, hipotireoidismo descompensado...) deve receber o acompanhamento no CEAE.","20240715","Avaliaçao nutricionista e-multi"],
+  ["737996","1165", "29793","78","Solicitação Indevida","20240715"," consulta psicologia infantojuvenil"]
 ]
