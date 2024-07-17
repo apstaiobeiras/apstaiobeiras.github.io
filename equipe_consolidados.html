@@ -1,0 +1,193 @@
+<!DOCTYPE html><html lang="pt_BR"><head><meta charset="utf8"/><title>Consolidado anual de produção das Unidades</title><style>        /* Estilo da barra de navegação */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333; /* Cor de fundo da barra de navegação */
+            color: #fff; /* Cor do texto da barra de navegação */
+            padding: 10px 0;
+            cursor: pointer!important;
+            z-index: 99999999;
+        }
+        
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+        }
+        
+        /* Adicione margem ao corpo para evitar que o conteúdo fique oculto sob a barra de navegação */
+        body {
+            margin-top: 60px; /* Ajuste conforme necessário com base na altura da sua barra de navegação */
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .neutro {
+            background: #DFE2E5;
+        }
+
+        .ruim {
+            background: #ea9999!important;
+        }
+
+        .razoavel {
+            background: #f7cca0!important;
+        }
+
+        .proximo {
+            background: #b6d7a8!important;
+        }
+
+        .atingiu {
+            background: #9fc5e8!important;
+        }
+
+        .tr:hover {
+            background: #DFE2E5!important;
+            cursor: pointer!important;
+        }
+
+        .tr:pressed {
+            background: #9FA1A3!important;
+        }
+
+        table {
+            width: 100%!important;
+        }
+
+        @media print {
+          @page  { 
+            size: A4 portrait;   /* auto is the initial value */
+            margin: 2mm;  
+          }
+
+          .no-print {
+            display: none;
+          }
+
+          body {
+            margin: 0;
+            padding: 0;
+          };
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head>
+      <body class="container-lg px-3 my-5 markdown-body">
+        <div class="navbar no-print" onclick="backlink()"><a><span >Consolidado anual de produção das Unidades</span></a></div>
+        <h3 class="no-print"><br></h3>
+        <div class="no-print">Filtar equipe: <select id="lista_equipes" onchange="filtrarPorEquipe();"></select></div>
+        <br>
+        <div id="atendimentos"></div></body><script src="js/goto.js"></script><script src="js/producao_esf_consolidado.js"></script><script src="js/lista_equipes.js"></script><script src="js/nomes_profissionais.js"></script><script>        let cod_profissional = null;
+        (() => {
+        const data_atual = (new Date()).getTime();
+        
+        //if (!(new URLSearchParams(window.location.search)).get('token')) window.location.href="index.html";
+        
+        if ((new URLSearchParams(window.location.search)).get('cod') == "qes") return;
+        
+        const token = parseInt((new URLSearchParams(window.location.search)).get('token'), 36);
+        //if (data_atual>token && window.location.protocol != "file:") window.location.href="index.html";
+        
+        //if (!(new URLSearchParams(window.location.search)).get('cod')) window.location.href="index.html";
+        cod_profissional = parseInt((new URLSearchParams(window.location.search)).get('cod'), 36);
+        })()
+    </script><script>
+        const meses = [];
+        meses[1] = "Janeiro";
+        meses[2] = "Fevereiro";
+        meses[3] = "Março";
+        meses[4] = "Abril";
+        meses[5] = "Maio";
+        meses[6] = "Junho";
+        meses[7] = "Julho";
+        meses[8] = "Agosto";
+        meses[9] = "Setembro";
+        meses[10] = "Outubro";
+        meses[11] = "Novembro";
+        meses[12] = "Dezembro";
+
+        function filtrarPorEquipe() {
+            if (document.getElementById("lista_equipes").value == ""){
+                filtrarPorMes();
+                return;
+            }
+            document.getElementById("atendimentos").innerHTML = "";
+
+            let tableDados = document.createElement("table");
+            let trCabecalho = document.createElement("tr");
+            tableDados.append(trCabecalho);
+
+            for (let mes in AtendimentosESFConsolidados) {
+                let trMes = document.createElement("tr");
+                tableDados.append(trMes);
+
+                trMes.innerHTML += `<td>${meses[mes]}</td>`;
+                for (let esf in AtendimentosESFConsolidados[mes]) {
+                    if (document.getElementById("lista_equipes").value != esf) continue;
+
+                    for (let tipoAtendimento in AtendimentosESFConsolidados[mes][esf]) {
+                        trMes.innerHTML += `<td class="right">${AtendimentosESFConsolidados[mes][esf][tipoAtendimento]}</td>`;
+                    }
+
+                    if (trCabecalho.innerHTML == "") {
+                        trCabecalho.innerHTML += `<th>Mês<th>`;
+                        for (let tipoAtendimento in AtendimentosESFConsolidados[mes][esf]) {
+                            trCabecalho.innerHTML += `<th>${tipoAtendimento}<th>`;
+                        }
+                        trCabecalho.innerHTML = trCabecalho.innerHTML.replaceAll("<th></th>","")
+                    }
+                }
+
+                if (mes == (new Date()).getMonth()+1) break;
+            }
+            document.getElementById("atendimentos").append(tableDados);
+        }
+
+        function filtrarPorMes() {
+            document.getElementById("atendimentos").innerHTML = "";
+            for (let mes in AtendimentosESFConsolidados) {
+                let tableDados = document.createElement("table");
+
+                let trMes = document.createElement("tr");
+                trMes.innerHTML += `<th colspan=6>${meses[mes]}</th>`;
+                tableDados.appendChild(trMes);
+
+                trCabecalho = document.createElement("tr");
+                tableDados.appendChild(trCabecalho);
+
+                for (let esf in AtendimentosESFConsolidados[mes]) {
+                    let trESF = document.createElement("tr");
+                    trESF.innerHTML += `<td>${esf.replaceAll(" DE TAIOBEIRAS","")}</td>`;
+                    trESF.className = `${esf}`;
+                    for (let tipoAtendimento in AtendimentosESFConsolidados[mes][esf]) {
+                        trESF.innerHTML += `<td class="right">${AtendimentosESFConsolidados[mes][esf][tipoAtendimento]}</td>`;
+                    }
+                    tableDados.append(trESF);
+
+                    if (trCabecalho.innerHTML=="") {
+                        for (let tipoAtendimento in AtendimentosESFConsolidados[mes][esf]) {
+                            trCabecalho.innerHTML += `<th>${tipoAtendimento}</th>`;
+                        }
+                        trCabecalho.innerHTML = `<th>ESF</th>${trCabecalho.innerHTML}`;
+                    }
+                }
+
+                if (document.getElementById("lista_equipes").innerHTML=="") {
+                    document.getElementById("lista_equipes").innerHTML+= `<option value=""> </option>`
+                    for (let esf in AtendimentosESFConsolidados[mes]) {
+                        document.getElementById("lista_equipes").innerHTML+= `<option value="${esf}">${esf.replaceAll(" DE TAIOBEIRAS","")}</option>`;
+                    }
+                }
+
+                document.getElementById("atendimentos").append(tableDados);
+
+                if (mes == (new Date()).getMonth()+1) break;
+            }
+
+            
+        }
+
+        filtrarPorMes();
+    </script></html>
