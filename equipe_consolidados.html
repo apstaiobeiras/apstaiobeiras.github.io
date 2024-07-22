@@ -77,7 +77,7 @@
       <body class="container-lg px-3 my-5 markdown-body">
         <div class="navbar no-print" onclick="backlink()"><a><span >Consolidado anual de produção das Unidades</span></a></div>
         <h3 class="no-print"><br></h3>
-        <div class="no-print">Filtar equipe: <select id="lista_equipes" onchange="filtrarPorEquipe();"></select></div>
+        <div class="no-print">Filtar equipe: <select id="lista_equipes" onchange="filtrarPorEquipe();"></select> e por ano <select id="lista_anos" onchange="filtrarAno();"></select></div>
         <br>
         <div id="atendimentos"></div></body><script src="js/goto.js"></script><script src="js/producao_esf_consolidado.js"></script><script src="js/lista_equipes.js"></script><script src="js/nomes_profissionais.js"></script><script>        let cod_profissional = null;
         (() => {
@@ -108,6 +108,24 @@
         meses[11] = "Novembro";
         meses[12] = "Dezembro";
 
+        let dados = [];
+
+        for (let ano in AtendimentosESFConsolidados) {
+            document.getElementById("lista_anos").innerHTML+= `<option value="${ano}">${ano}</option>`;
+            document.getElementById("lista_anos").value = ano;
+        }
+
+        function filtrarAno(){
+            dados = AtendimentosESFConsolidados[document.getElementById("lista_anos").value];
+            if (document.getElementById("lista_equipes").innerHTML=="") {
+                    document.getElementById("lista_equipes").innerHTML+= `<option value=""> </option>`
+                    for (let esf in dados[01]) {
+                        document.getElementById("lista_equipes").innerHTML+= `<option value="${esf}">${esf.replaceAll(" DE TAIOBEIRAS","")}</option>`;
+                    }
+                }
+            filtrarPorEquipe();
+        }
+
         function filtrarPorEquipe() {
             if (document.getElementById("lista_equipes").value == ""){
                 filtrarPorMes();
@@ -119,21 +137,21 @@
             let trCabecalho = document.createElement("tr");
             tableDados.append(trCabecalho);
 
-            for (let mes in AtendimentosESFConsolidados) {
+            for (let mes in dados) {
                 let trMes = document.createElement("tr");
                 tableDados.append(trMes);
 
                 trMes.innerHTML += `<td>${meses[mes]}</td>`;
-                for (let esf in AtendimentosESFConsolidados[mes]) {
+                for (let esf in dados[mes]) {
                     if (document.getElementById("lista_equipes").value != esf) continue;
 
-                    for (let tipoAtendimento in AtendimentosESFConsolidados[mes][esf]) {
-                        trMes.innerHTML += `<td class="right">${AtendimentosESFConsolidados[mes][esf][tipoAtendimento]}</td>`;
+                    for (let tipoAtendimento in dados[mes][esf]) {
+                        trMes.innerHTML += `<td class="right">${dados[mes][esf][tipoAtendimento]}</td>`;
                     }
 
                     if (trCabecalho.innerHTML == "") {
                         trCabecalho.innerHTML += `<th>Mês<th>`;
-                        for (let tipoAtendimento in AtendimentosESFConsolidados[mes][esf]) {
+                        for (let tipoAtendimento in dados[mes][esf]) {
                             trCabecalho.innerHTML += `<th>${tipoAtendimento}<th>`;
                         }
                         trCabecalho.innerHTML = trCabecalho.innerHTML.replaceAll("<th></th>","")
@@ -147,7 +165,7 @@
 
         function filtrarPorMes() {
             document.getElementById("atendimentos").innerHTML = "";
-            for (let mes in AtendimentosESFConsolidados) {
+            for (let mes in dados) {
                 let tableDados = document.createElement("table");
 
                 let trMes = document.createElement("tr");
@@ -157,27 +175,20 @@
                 trCabecalho = document.createElement("tr");
                 tableDados.appendChild(trCabecalho);
 
-                for (let esf in AtendimentosESFConsolidados[mes]) {
+                for (let esf in dados[mes]) {
                     let trESF = document.createElement("tr");
                     trESF.innerHTML += `<td>${esf.replaceAll(" DE TAIOBEIRAS","")}</td>`;
                     trESF.className = `${esf}`;
-                    for (let tipoAtendimento in AtendimentosESFConsolidados[mes][esf]) {
-                        trESF.innerHTML += `<td class="right">${AtendimentosESFConsolidados[mes][esf][tipoAtendimento]}</td>`;
+                    for (let tipoAtendimento in dados[mes][esf]) {
+                        trESF.innerHTML += `<td class="right">${dados[mes][esf][tipoAtendimento]}</td>`;
                     }
                     tableDados.append(trESF);
 
                     if (trCabecalho.innerHTML=="") {
-                        for (let tipoAtendimento in AtendimentosESFConsolidados[mes][esf]) {
+                        for (let tipoAtendimento in dados[mes][esf]) {
                             trCabecalho.innerHTML += `<th>${tipoAtendimento}</th>`;
                         }
                         trCabecalho.innerHTML = `<th>ESF</th>${trCabecalho.innerHTML}`;
-                    }
-                }
-
-                if (document.getElementById("lista_equipes").innerHTML=="") {
-                    document.getElementById("lista_equipes").innerHTML+= `<option value=""> </option>`
-                    for (let esf in AtendimentosESFConsolidados[mes]) {
-                        document.getElementById("lista_equipes").innerHTML+= `<option value="${esf}">${esf.replaceAll(" DE TAIOBEIRAS","")}</option>`;
                     }
                 }
 
@@ -189,5 +200,5 @@
             
         }
 
-        filtrarPorMes();
+        filtrarAno();
     </script></html>
