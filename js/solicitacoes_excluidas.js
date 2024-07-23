@@ -1,4 +1,4 @@
-document.getElementById('atualizacao').textContent = '22/07/2024';
+document.getElementById('atualizacao').textContent = '23/07/2024';
 const Solicitacoes_Excluidas = [
   ["149235","764", "17525","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
   ["152679","764", "25742","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
@@ -64,6 +64,7 @@ const Solicitacoes_Excluidas = [
   ["536948","1105", "33035","10","<b>Agendar na Atenção Primaria: </b><br>REAVALIAR  NODULO, E VERIFICAR CRITÉRIOS  DE ENCAMINHAMENTO A MASTOLOGIA.","20240627","Ultrassonografia mamaria bilateral"],
   ["550810","1220", "35","13","<b>Não Se Enquadra nos Criterios: </b><br>Sugiro prosseguir com investigação complementar. Encaminhar se novos exames alterados.","20240401","Consulta nefrologista"],
   ["551004","1132", "2559","10","<b>Não Se Enquadra nos Criterios: </b><br>Sugiro prosseguir com investigação complementar. Encaminhar se novos exames alterados.","20240401","Consulta nefrologista"],
+  ["555461","320", "60360","78","<b>Solicitação Indevida: </b><br>PACIENTE DISSE ESTAR AGUARDANDO UMA RESSONANCIA DO OMBRO.","20240722","Ultrassonografia joelho"],
   ["560599","740", "40184","11","Agendar na Atenção Primaria","20240604","Acolhimento de fisioterapia"],
   ["562629","1165", "29793","206","Agendar na Atenção Primaria","20240718"," consulta psicologia infantojuvenil"],
   ["565790","1109", "54964","75","<b>Solicitação Indevida: </b><br>PACIENTES ADMITIDOS NO PROGRAMA MELHOR EM CASA.","20240219","Atendimento fonoaudiologia"],
@@ -126,6 +127,7 @@ const Solicitacoes_Excluidas = [
   ["628217","1259", "59689","75","<b>Solicitação Indevida: </b><br>REINSERIDO COM DEFINIÇÃO DE ORTOPEDISTA.","20240108","Consulta ortopedista"],
   ["628425","1064", "47287","7","<b>Não Se Enquadra nos Criterios: </b><br>Favor reencaminhar na fila ginecologia- CEAEAtt.","20240108","Consulta ginecologia policlinica"],
   ["628744","1193", "57368","56","<b>Solicitação Indevida: </b><br>PACIENTE  APRESENTA CRITERIOS DE CEAE. REALIZADO TRANSFEREWNCIA PARA FILA \"\"CONSULTA PEDIATRIA ALTO RISCO\"\".","20240108","Consulta pediatra policlinica"],
+  ["628903","985", "34754","11","Agendar na Atenção Primaria","20240722","Fisioterapia - alteraçoes motoras"],
   ["628990","1216", "11296","81","<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA FILA DE AVALIAÇÃO CIRURGICA.","20240118","Consulta cirurgiao geral"],
   ["629267","1069", "42182","6","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>COMPLEMENTAR DADOS CLÍNICOS, LIMITAÇÕES, TRATAMENTOS, EXAMES JA REALIZADOS.","20240122","Consulta ortopedista"],
   ["629376","894", "21107","56","<b>Não Se Enquadra nos Criterios: </b><br>Favor reencaminhar na fila Ginecologia CEAE.Att.","20240108","Consulta ginecologia policlinica"],
@@ -238,6 +240,7 @@ const Solicitacoes_Excluidas = [
   ["643259","46", "6609","16","<b>Solicitação Indevida: </b><br>REINSERIDO COM DEFINIÇÃO DE ESPECIALISTA.","20240409","Retorno consulta ortopedista"],
   ["643507","1150", "12935","3","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever último resultado de PCCU que a paciente realizou e reencaminhar.Att.","20240207","Consulta ginecologia policlinica"],
   ["643522","1052", "10966","8","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever último resultado de PCCU que a paciente realizou e reencaminhar.Att.","20240207","Consulta ginecologia policlinica"],
+  ["644017","987", "31270","11","Agendar na Atenção Primaria","20240722","Fisioterapia - alteraçoes motoras"],
   ["644181","1259", "14681","75","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Descrição insuficiente de condições clínicas que indicam a necessidade de encaminhamento para cardiologia de alto risco. De acordo com o Protocolo de encaminhamento para cardiologista CEAE HIPERDIA, disponível no Portal da Atenção Primária o encaminhamento deve conter no mínimo: Sinais e sintomas; medicamentos em uso, com posologia, com avaliação clínica da adesão ao tratamento; duas medidas de pressão arterial, em dias diferentes; alterações em exames laboratoriais, com data; Anexar laudo de exames cardiológicos, preferencialmente, ou descrever na íntegra os seus resultados, com data. Me coloco a disposição para discussão do caso.","20240207","Consulta hipertenso alto risco"],
   ["644389","1016", "8511","8","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Por gentileza, descrever investigação realizada previamente ao encaminhamento.","20240219","Consulta ortopedista"],
   ["644637","1069", "60565","6","<b>Solicitação Indevida: </b><br>Paciente encaminhada para fila da endócrinologista alto risco, porém em descrição é relatado que paciente deseja acompanhamento com cardiologista. Favor verificar se a paciente apresenta condições clínicas que indicam a necessidade de encaminhamento e enviar para fila correspondente. Me coloco a disposição para discussão do caso. ","20240207","Consulta diabetes alto risco"],
@@ -859,6 +862,7 @@ const Solicitacoes_Excluidas = [
   ["725850","1325", "13151","78","<b>Solicitação Indevida: </b><br>PACIENTE EM ACOMPANHAMENTO NO CEAE. TRANSFERIDO PARA FILA \"\"CONSULTA HIPERTENSO ALTO RISCO\"\".","20240628","Consulta cardiologia + ECG Dr Renan"],
   ["725907","1150", "38581","3","<b>Solicitação Indevida: </b><br>PACIENTE NÃO APRESENTA FAIXA ETÁRIA DE ENCAMINHAMENTO À PEDIATRIA.","20240712","Consulta pediatra policlinica"],
   ["726177","1243", "21677","9","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Qual a Categoria do resultado do exame?","20240702","Consulta mastologia CEAE"],
+  ["726362","1243", "43128","9","Não Se Enquadra nos Criterios","20240722","Avaliaçao nutricionista e-multi"],
   ["726364","1192", "9837","18","<b>Agendar na Atenção Primaria: </b><br>AVALIAÇÃO DO MÉDICO DA APS PARA INVESTIGAÇÃO ETIOLÓGICA DA ANEMIA COM EXAMES LABORAT E DE IMAGEM, BEM COMO AVALIAR NECESSIDADE DE  ACOMPANHAMENTO ESPECIALIZADO.","20240627","Consulta gastroenterologia"],
   ["726446","1144", "72787","75","<b>Solicitação Indevida: </b><br>.","20240702","Tratamento endodôntico de dente permanente birradicular"],
   ["726639","764", "12667","18","<b>Agendar na Atenção Primaria: </b><br>SOLICITO REAVALIAÇÃO DO ATUAL QUADRO CLÍNICO E CONDUTA.","20240627","Ultrassonografia mamaria bilateral"],
@@ -900,6 +904,7 @@ const Solicitacoes_Excluidas = [
   ["732978","216", "51597","13","<b>Agendar na Atenção Primaria: </b><br>Agendado inicio do acompanhamento.","20240719","Avaliaçao psicologo e-multi"],
   ["732999","122", "32779","206","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Falta detalhamento clínico.","20240715","Consulta otorrinolaringologia"],
   ["733011","1317", "33971","3","<b>Não Se Enquadra nos Criterios: </b><br>Paciente com HAS de muito alto risco conforme encaminhamento médico:<br>\"\"PACIENTE,44 ANOS, HAS MUITO ALTO RISCO, PRÉ DIABETICA COM HISTORICO DE INDICAÇÃO DE CATE HÁ 5 ANOS PELO DR EDGAR, PORÉM NÃO REALIZADA POR DECISÃO DA PACIENTE. <br>HAS EM USO DE LOSARTANA 50 MG BID,HCTZ 25 MG MID , ANLODIPINO 10 MG MID,ROSUVASTATINA 20 MG. \"\"<br>De acordo com o protocolo de encaminhamento, o acompanhamento deve ser feito no CEAE.","20240718","Avaliaçao nutricionista e-multi"],
+  ["733236","1016", "15022","13","Não Se Enquadra nos Criterios","20240722","Atendimento fonoaudiologia"],
   ["733444","1260", "15391","81","<b>Não Se Enquadra nos Criterios: </b><br>Encaminhar para avaliação nas pequenas cirurgias.","20240710","Avaliaçao cirurgica policlinica"],
   ["733610","1322", "45549","75","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Qual a IG atual?","20240711","Consulta - obstétrica / puerpério"],
   ["733640","1069", "29452","6","<b>Solicitação Indevida: </b><br>Favor lançar no CBO de médico mastologista para realizarmos o agendamento.","20240716","Consulta mastologia CEAE"],
@@ -938,10 +943,12 @@ const Solicitacoes_Excluidas = [
   ["737996","1165", "29793","78","Solicitação Indevida","20240715"," consulta psicologia infantojuvenil"],
   ["738423","1317", "13030","3","<b>Não Se Enquadra nos Criterios: </b><br>Paciente diabética, com HbA1C = 11% segundo últimos exames laboratoriais, deve ser encaminhada para acompanhamento no CEAE, conforme protocolo de regulação da endocrinologia CEAE HIPERDIA","20240716","Avaliaçao nutricionista e-multi"],
   ["738604","1216", "15305","9","<b>Solicitação Indevida: </b><br>Paciente apresentando fratura. realizado agendamento direto em ambulatório de fratura.","20240716","Consulta ortopedista"],
+  ["738678","1016", "27467","2","<b>Não Se Enquadra nos Criterios: </b><br>Adenomiose não se enquadra nos critérios da propedêutica de CA de colo uterino do CEAE. Favor lançar na fila da GINECOLOGIA POLICLÍNICA.","20240722","Consulta ginecologia CEAE"],
   ["738748","1325", "35566","78","<b>Solicitação Indevida: </b><br>Transferido para fila de avaliação cirurgica.","20240717","Consulta cirurgiao geral"],
   ["738778","1016", "13710","2","<b>Agendar na Atenção Primaria: </b><br>Agendado inicio do acompanhamento psicológico.","20240717","Avaliaçao psicologo e-multi"],
   ["738799","1132", "67233","10","<b>Não Se Enquadra nos Criterios: </b><br>Favor verificar protocolo pediatria ambulatorial. item 21. Anemia. <br>O quadro respiratório da criança não se enquadra nos critérios de atendimento pediatria alto risco, por ter sido 1 episódio, de acordo protocolo: ●	Bebê chiador – mais de 3 (três) episódios de broncoespasmo em 60 dias, sem melhora ao tratamento adequado; ●	Crianças com asma persistente moderada não controlada e persistente grave conforme (acompanhamento <br>compartilhado com a APS);  ou 2 episódio de pneumonia nos últimos 12 meses. Caso tenha informações adicionais, reencaminhar. Att.","20240717","Consulta pediatria alto risco"],
   ["739398","1258", "26271","34","<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA PEQUENAS CIRURGAS.","20240717","Avaliaçao cirurgica policlinica"],
   ["739622","907", "28167","9","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever resultado do último PCCU com data, realizado pela paciente para prosseguir com agendamento.Att.","20240718","Consulta ginecologia policlinica"],
-  ["740621","1267", "30475","8","<b>Não Se Enquadra nos Criterios: </b><br>Favor encaminhar na fila de gestante alto risco. Att.","20240719","Consulta ginecologia policlinica"]
+  ["740621","1267", "30475","8","<b>Não Se Enquadra nos Criterios: </b><br>Favor encaminhar na fila de gestante alto risco. Att.","20240719","Consulta ginecologia policlinica"],
+  ["742237","507", "9563","2","<b>Solicitação Indevida: </b><br>PACIENTE NÃO SE ENQUADRA NOS CRITERIO DA ENDOCRINOLOGIA AMBULATORIAL. TRANSFERIDO PARA O ALTO RISCO.","20240722","Consulta endocrinologia"]
 ]

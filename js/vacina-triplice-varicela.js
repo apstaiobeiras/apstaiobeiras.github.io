@@ -13,7 +13,7 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
   <option value="UNIAO">UNIAO</option>
   <option value="VIDA">VIDA</option>
   <option value="VIDA-E-SAUDE">VIDA E SAUDE</option>
-  <option value="VIVER">VIVER</option></select></label><label>, do ACS <select id="profissional">  <option value="1149 540 271 1122 247 1184 1129 441 525 513 548 581 484 968 743 493 376 226 599 447 590 1120 404 168 374 456 1135 433 301 1130 654 615 515 214 621 439 207 1126 31 1127 1125 1128 1123 497 801 389 8 219 1134 512 315 196 550 489 564 528 1332 223 499 637 446 804 802 170 1173 492 1321 317 254 50 120 287 756 209 346 481 602 194 78 67 1234 1124 1141 452">Todas as ACS</option>
+  <option value="VIVER">VIVER</option></select></label><label>, do ACS <select id="profissional">  <option value="1149 540 271 1122 247 1184 1129 441 525 513 548 581 484 968 743 493 376 226 599 447 590 1120 404 168 374 456 1135 433 301 654 615 515 214 621 439 207 1126 31 1127 1130 1125 1128 1123 497 801 389 8 219 1134 512 315 196 550 489 564 528 1332 223 499 637 446 804 802 170 1173 492 1321 317 254 50 120 287 756 209 346 481 602 194 78 67 1234 1124 1141 452">Todas as ACS</option>
   <option x="ALCY MENDES" value="287">ALCY MENDES</option>
   <option x="ALICE DOS SANTOS NETA" value="223">ALICE DOS SANTOS NETA</option>
   <option x="ALINE DE JESUS SILVA" value="489">ALINE DE JESUS SILVA</option>
@@ -420,14 +420,6 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>GEISIANE CARVALHO</td>
     <td style="text-align: center;">🔴</td>
     <td style="text-align: center;">🔴</td>
-  </tr><tr class="1130 PROGRESSO 1-varicela 2-triplice 1">
-    <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/64250/?workMode=wmBrowse" target=_blank>63098</a></td>
-    <td>Ana Vitoria Ferreira Martins</td>
-    <td>1 ano e 0 meses</td>
-    <td>23/07/2022</td>
-    <td>ANELISA MARIA DO NASCIMENTO</td>
-    <td style="text-align: center;">🟢</td>
-    <td style="text-align: center;">🟢</td>
   </tr><tr class="1135 LIBERDADE 0-varicela 1-triplice 1">
     <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/71275/?workMode=wmBrowse" target=_blank>65623</a></td>
     <td>Ana Vitória Rodrigues da Silva</td>
