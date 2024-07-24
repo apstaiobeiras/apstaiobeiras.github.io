@@ -1,4 +1,4 @@
-document.getElementById('atualizacao').textContent = '23/07/2024';
+document.getElementById('atualizacao').textContent = '24/07/2024';
 const Solicitacoes_Excluidas = [
   ["149235","764", "17525","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
   ["152679","764", "25742","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
@@ -43,6 +43,7 @@ const Solicitacoes_Excluidas = [
   ["458019","1193", "19163","56","Agendar na Atenção Primaria","20240610","Fisioterapia - consulta"],
   ["463361","1032", "11161","11","Agendar na Atenção Primaria","20240409","Grupo de coluna-  fisioterapia"],
   ["464963","1016", "62627","8","<b>Agendar na Atenção Primaria: </b><br>SUGIRO REAVALIAR ATUAL QUADRO CLÍNICO.","20240627","Ultrassonografia mamaria bilateral"],
+  ["466781","770", "34089","61","<b>Não Se Enquadra nos Criterios: </b><br>PACIENTE INSERIDO NO CER II","20240723","Atendimento fonoaudiologia"],
   ["467997","1165", "22540","206","<b>Agendar na Atenção Primaria: </b><br>ATENDIMENTO REALIZADO DIA 05/07","20240705"," consulta psicologia infantojuvenil"],
   ["472486","122", "46516","206","<b>Não Se Enquadra nos Criterios: </b><br>PACIENTE AVISADA E RETIRADA DA FILA POR NÃO SE ENQUADRAR NOS NOVOS CRITÉRIOS DE ATENDIMENTO","20240603","Atendimento fonoaudiologia"],
   ["475757","1218", "25689","3","<b>Solicitação Indevida: </b><br>SOLICITAÇÃO INSERIDA EM FILA INADEQUADA. DEVIDO AO TEMPO DE SOLICITAÇÃO, SUGIRO NOVA AVALIAÇÃO MDO ATUAL QUADRO DE SAÚDE E CONDUTA.","20240409","Retorno fratura ortopedia"],
@@ -929,6 +930,7 @@ const Solicitacoes_Excluidas = [
   ["735721","1297", "3478","7","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Qual o tipo de mioma? Submucos, Multiplos ou intramural maior que 4cm?","20240711","Consulta gestante alto risco"],
   ["735769","1258", "30734","34","<b>Solicitação Indevida: </b><br>PACIENTE NÃO APRESENTA FAIXA ETÁRIA DE ENCAMINHAMENTO À PEDIATRIA.","20240712","Consulta pediatra policlinica"],
   ["735780","1317", "26277","3","<b>Não Se Enquadra nos Criterios: </b><br>Paciente de Alto Risco Cardiovascular segundo encaminhamento:<br>\"\"PACIENTE, 76 ANOS, HAS ALTO RISCO, PRE DIABÉTICO  E DISLIPIDEMICO.  <br>#ALTO RISCO CARDIOVASCULAR. \"\"<br>De acordo com o protocolo de encaminhamento, o acompanhamento dever ser feito no CEAE.","20240718","Avaliaçao nutricionista e-multi"],
+  ["735827","1132", "32119","10","<b>Não Se Enquadra nos Criterios: </b><br>Paciente não enquadra nos critérios pois o quadro clínico é de alto risco (Ver protocolo de encaminhamento para nutrição E-MULTI, nota do Item 5) .","20240723","Avaliaçao nutricionista e-multi"],
   ["735962","1132", "18320","10","<b>Não Se Enquadra nos Criterios: </b><br>Quadro de adenomiose deve ser lançado na fila da GINECOLOGIA POLICLÍNICA.","20240712","Consulta ginecologia CEAE"],
   ["736023","320", "19287","78","<b>Não Se Enquadra nos Criterios: </b><br>De acordo protocolo a HG do paciente deve estar acima de 9%, o que não é o caso do mesmo. O resultado CRE é 231, mesmo? Não consegui identificar outra demanda, favor reencaminhar caso tenha. O quadro clínico não se enquadra nos critérios de atendimento. <br>Att.","20240712","Consulta diabetes alto risco"],
   ["736126","507", "15478","2","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data o último resultado de PCCU realizado pela paciente para prosseguir com agendamento.Att.","20240712","Consulta ginecologia policlinica"],
@@ -950,5 +952,6 @@ const Solicitacoes_Excluidas = [
   ["739398","1258", "26271","34","<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA PEQUENAS CIRURGAS.","20240717","Avaliaçao cirurgica policlinica"],
   ["739622","907", "28167","9","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever resultado do último PCCU com data, realizado pela paciente para prosseguir com agendamento.Att.","20240718","Consulta ginecologia policlinica"],
   ["740621","1267", "30475","8","<b>Não Se Enquadra nos Criterios: </b><br>Favor encaminhar na fila de gestante alto risco. Att.","20240719","Consulta ginecologia policlinica"],
-  ["742237","507", "9563","2","<b>Solicitação Indevida: </b><br>PACIENTE NÃO SE ENQUADRA NOS CRITERIO DA ENDOCRINOLOGIA AMBULATORIAL. TRANSFERIDO PARA O ALTO RISCO.","20240722","Consulta endocrinologia"]
+  ["742237","507", "9563","2","<b>Solicitação Indevida: </b><br>PACIENTE NÃO SE ENQUADRA NOS CRITERIO DA ENDOCRINOLOGIA AMBULATORIAL. TRANSFERIDO PARA O ALTO RISCO.","20240722","Consulta endocrinologia"],
+  ["742524","1150", "61609","3","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Paciente foi encaminhado devido à asma não controlada ou alterações dos desenvolvimento neuropsicomotor?","20240723","Consulta pediatria alto risco"]
 ]

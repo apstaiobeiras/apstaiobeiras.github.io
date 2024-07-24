@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="utf8" />
+    <title>Perfil do profissional</title>
+    <style>
+      /* Estilo da barra de navegação */
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333; /* Cor de fundo da barra de navegação */
+        color: #fff; /* Cor do texto da barra de navegação */
+        padding: 10px 0;
+      }
+
+      .navbar a {
+        color: #fff;
+        text-decoration: none;
+        padding: 15px;
+      }
+
+      /* Adicione margem ao corpo para evitar que o conteúdo fique oculto sob a barra de navegação */
+      body {
+        margin-top: 60px; 
+      }
+
+      tr,table,td,th {
+        /*border: 1px solid #dfe2e5;*/
+        background-color: transparent !important;
+        border: 0 !important;
+      }
+
+      .header {
+        background-color: #f6f8fa !important;
+      }
+
+      .border {
+        border: 1px solid #dfe2e5 !important;
+      }
+
+      ::backdrop {
+        background-image: linear-gradient(45deg, rgb(0, 0, 0), rgb(0, 0, 0));
+        opacity: 0.75;
+      }
+
+      .tr:hover {
+        background: #dfe2e5 !important;
+        cursor: pointer !important;
+      }
+
+      .tr:pressed {
+        background: #9fa1a3 !important;
+      }
+
+    </style>
+    <meta content="lua-wpp" name="generator" />
+    <meta content="width=device-width,initial-scale=1.0" name="viewport" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+  </head>
+  <body class="container-lg px-3 my-5 markdown-body">
+    <div class="navbar">
+      <a><span id="cod"></span> - <span id="nome"></span></a>
+    </div>
+
+    <h3><br /></h3>
+
+    <table>
+      <tbody id="lista-sessoes">
+
+      </tbody >
+      <!--<tr class="border header">
+        <th colspan="2" align="left">Páginas</th>
+      </tr>
+      <tr class="border tr">
+        <td class="border">
+          <img src="assets/img/producao.jpg" width="96" />
+        </td>
+        <td>
+          <b>Produção consolidada</b>
+          <br />
+          Lista a produção do profissional de forma consolidada no quadrimestre
+          atual
+        </td>
+      </tr>
+      <tr class="border tr">
+        <td class="border">
+          <img src="assets/img/visitas-por-dia.png" width="96" />
+        </td>
+        <td>
+          <b>Produção diária</b>
+          <br />
+          Lista a produção do profissional diária ao longo do dia
+        </td>
+      </tr>
+      <tr class="border tr">
+        <td class="border">
+          <img src="assets/img/producao-esf.png" width="96" />
+        </td>
+        <td>
+          <b>Produção das ESFs</b>
+          <br />
+          Lista a produção do profissional diária ao longo do dia
+        </td>
+      </tr>-->
+    </table>
+
+    <h3><br /></h3>
+
+    <script src="js/Profissionais-cadastrados.js"></script>
+    <script>
+      const Sections = {
+        "Páginas": [
+          ["assets/img/producao.jpg","Produção","Veja o consolidado da sua produção","producao-consolidada"]
+        ]
+      }
+    </script>
+    <script>
+      document.getElementById("cod").innerText = localStorage.cod_profissional;
+      for (let profissional of Profissionais) {
+        if (profissional[0] == localStorage.cod_profissional) {
+          document.getElementById("nome").innerText = profissional[1];
+          break;
+        }
+      }
+
+      for (const [titulo, items] of Object.entries(Sections)) {
+        document.getElementById("lista-sessoes").innerHTML+=`
+          <tr class="border header">
+            <th colspan="2" align="left">${titulo}</th>
+          </tr>
+        `;
+      }
+    </script>
+  </body>
+</html>
