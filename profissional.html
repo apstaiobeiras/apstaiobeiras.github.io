@@ -54,56 +54,38 @@
         background: #9fa1a3 !important;
       }
 
+      tbody {
+        width: 100%;
+      }
+
+
+      
+  /* CSS for image column */
+  tr img {
+    min-width: 96px; /* Ensure image does not exceed column width */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  /* CSS for text column */
+tr td:last-child {
+    width: 100%; /* Make text column stretch to fill remaining space */
+    padding-left: 10px; /* Add padding to separate image and text */
+  }
     </style>
     <meta content="lua-wpp" name="generator" />
     <meta content="width=device-width,initial-scale=1.0" name="viewport" />
     <link href="assets/css/style.css" rel="stylesheet" />
   </head>
   <body class="container-lg px-3 my-5 markdown-body">
-    <div class="navbar">
+    <div class="navbar" style="display: flex;justify-content: space-between; padding: 0;">
       <a><span id="cod"></span> - <span id="nome"></span></a>
+      <a> Fazer logout</a>
     </div>
 
     <h3><br /></h3>
 
     <table>
-      <tbody id="lista-sessoes">
-
-      </tbody >
-      <!--<tr class="border header">
-        <th colspan="2" align="left">Páginas</th>
-      </tr>
-      <tr class="border tr">
-        <td class="border">
-          <img src="assets/img/producao.jpg" width="96" />
-        </td>
-        <td>
-          <b>Produção consolidada</b>
-          <br />
-          Lista a produção do profissional de forma consolidada no quadrimestre
-          atual
-        </td>
-      </tr>
-      <tr class="border tr">
-        <td class="border">
-          <img src="assets/img/visitas-por-dia.png" width="96" />
-        </td>
-        <td>
-          <b>Produção diária</b>
-          <br />
-          Lista a produção do profissional diária ao longo do dia
-        </td>
-      </tr>
-      <tr class="border tr">
-        <td class="border">
-          <img src="assets/img/producao-esf.png" width="96" />
-        </td>
-        <td>
-          <b>Produção das ESFs</b>
-          <br />
-          Lista a produção do profissional diária ao longo do dia
-        </td>
-      </tr>-->
+      <tbody id="lista-sessoes"></tbody >
     </table>
 
     <h3><br /></h3>
@@ -112,7 +94,30 @@
     <script>
       const Sections = {
         "Páginas": [
-          ["assets/img/producao.jpg","Produção","Veja o consolidado da sua produção","producao-consolidada"]
+          ["Produção","Veja o consolidado da sua produção ao longo do ano","producao"],
+          ["Situação descritiva dos cadastros","Veja uma lista descritiva dos cadastros com problemas","situacao-cadastros"],
+          ["Produção diária","Acompanhe sua produção dia a dia ao longo do ano","producao-diaria"],
+          ["Tabela de indicadores e-SUS","Acompanhe semanalmente os indicadores e-SUS","indicadores-esus"],
+        ],
+
+        "Tabelas-mapa": [
+          ["Famílias visitadas","Mapa que mostra as famílias que receberam visitas dos ACS ao longo do ano","grafico-de-mapa?script=familias-visitadas"],
+          ["Situação dos pacientes e-SUS","Mapa que mostra o acompanhamento dos pacientes com condicionalidades dos indicadores e-SUS","grafico-de-mapa?acompanhamento-esus"],
+        ],
+
+        "Listas e planilhas": [
+          ["Lista de prontuários","Veja uma lista dos pacientes agrupados por família e micro-área","lista-prontuario"],
+          ["Lista de crianças - Vitamina A de 100 mil UI","Planilha de monitoramento de crianças que receberam ou não a <i>Vitamina A de 100 mil UI</i>","planilhas?script=vitamina-a-100-mil"],
+          ["Lista de crianças - Vitamina A de 200 mil UI","Planilha de monitoramento de crianças que receberam ou não a <i>Vitamina A de 200 mil UI</i>","planilhas?script=vitamina-a-200-mil"],
+        ],
+
+        "Solicitações": [
+          ["Agendadas","Solicitações agendadas ativas","agendados"],
+          ["Devolvidas","Soluções com problemas que precisam ser analisados","solicitacoes"],
+        ],
+        "Links": [
+          ["Envio de documentos","Envie e/ou atualize sua documentação profissional","enviar-arquivo"],
+          ["Devolvidas","Soluções com problemas que precisam ser analisados","solicitacoes"],
         ]
       }
     </script>
@@ -126,11 +131,32 @@
       }
 
       for (const [titulo, items] of Object.entries(Sections)) {
+        if (document.getElementById("lista-sessoes").innerHTML != "") {
+          document.getElementById("lista-sessoes").innerHTML+=`
+            <tr>
+              <th colspan="2" align="left"><br></th>
+            </tr>
+        `;
+        }
+
         document.getElementById("lista-sessoes").innerHTML+=`
           <tr class="border header">
             <th colspan="2" align="left">${titulo}</th>
           </tr>
         `;
+
+        for (item of items) {
+          document.getElementById("lista-sessoes").innerHTML+=`
+          <tr class="border tr" onclick="gotoPage('${item[2].split("?")[0]}.html?${item[2].split("?")[1]}');">
+            <td class="border">
+              <img src="assets/img/${item[2].split("?")[0]}.png" width="96" />
+            </td>
+            <td style="">
+              <b>${item[0]}</b><br/>${item[1]}
+            </td>
+         </tr>
+        `;
+        }
       }
     </script>
   </body>

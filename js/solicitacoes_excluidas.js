@@ -1,4 +1,4 @@
-document.getElementById('atualizacao').textContent = '24/07/2024';
+document.getElementById('atualizacao').textContent = '25/07/2024';
 const Solicitacoes_Excluidas = [
   ["149235","764", "17525","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
   ["152679","764", "25742","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
@@ -950,8 +950,20 @@ const Solicitacoes_Excluidas = [
   ["738778","1016", "13710","2","<b>Agendar na Atenção Primaria: </b><br>Agendado inicio do acompanhamento psicológico.","20240717","Avaliaçao psicologo e-multi"],
   ["738799","1132", "67233","10","<b>Não Se Enquadra nos Criterios: </b><br>Favor verificar protocolo pediatria ambulatorial. item 21. Anemia. <br>O quadro respiratório da criança não se enquadra nos critérios de atendimento pediatria alto risco, por ter sido 1 episódio, de acordo protocolo: ●	Bebê chiador – mais de 3 (três) episódios de broncoespasmo em 60 dias, sem melhora ao tratamento adequado; ●	Crianças com asma persistente moderada não controlada e persistente grave conforme (acompanhamento <br>compartilhado com a APS);  ou 2 episódio de pneumonia nos últimos 12 meses. Caso tenha informações adicionais, reencaminhar. Att.","20240717","Consulta pediatria alto risco"],
   ["739398","1258", "26271","34","<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA PEQUENAS CIRURGAS.","20240717","Avaliaçao cirurgica policlinica"],
+  ["739471","320", "3516","78","<b>Não Se Enquadra nos Criterios: </b><br>Favor encaminhar na fila GINECOLOGIA POLICLÍNICA.","20240724","Consulta ginecologia CEAE"],
+  ["739614","1016", "4816","2","<b>Não Se Enquadra nos Criterios: </b><br>Favor encaminhar na fila da GINECOLOGIA POLICLÍNICA e descrever resultado do último PCCU com a data de realização.","20240724","Consulta ginecologia CEAE"],
   ["739622","907", "28167","9","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever resultado do último PCCU com data, realizado pela paciente para prosseguir com agendamento.Att.","20240718","Consulta ginecologia policlinica"],
   ["740621","1267", "30475","8","<b>Não Se Enquadra nos Criterios: </b><br>Favor encaminhar na fila de gestante alto risco. Att.","20240719","Consulta ginecologia policlinica"],
+  ["741121","1267", "5886","8","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data os último resultados de exames bioquímicos realizados pelo paciente para prosseguir com agendamento.Att.","20240724","Consulta hipertenso alto risco"],
+  ["741180","1069", "20790","6","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data os último resultados de exames bioquímicos realizados pelo paciente para prosseguir com agendamento.Att.","20240724","Consulta hipertenso alto risco"],
   ["742237","507", "9563","2","<b>Solicitação Indevida: </b><br>PACIENTE NÃO SE ENQUADRA NOS CRITERIO DA ENDOCRINOLOGIA AMBULATORIAL. TRANSFERIDO PARA O ALTO RISCO.","20240722","Consulta endocrinologia"],
-  ["742524","1150", "61609","3","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Paciente foi encaminhado devido à asma não controlada ou alterações dos desenvolvimento neuropsicomotor?","20240723","Consulta pediatria alto risco"]
+  ["742316","1267", "6340","8","<b>Não Se Enquadra nos Criterios: </b><br>SOP não se enquadra nos critérios da propedêutica de CA de colo uterino do CEAE. Favor lançar na fila da GINECOLOGIA POLICLÍNICA.","20240724","Consulta ginecologia CEAE"],
+  ["742380","216", "17718","13","<b>Solicitação Indevida: </b><br>Favor lançar alterações no colo como suspeita de pólipo na GINECOLOGIA CEAE.","20240724","Consulta ginecologia policlinica"],
+  ["742384","1221", "11344","4","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Qual o resultado do último PCCU com a data de realização?","20240724","Consulta ginecologia policlinica"],
+  ["742408","907", "2117","9","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Qual o resultado do último PCCU com a data de realização?","20240724","Consulta ginecologia policlinica"],
+  ["742409","907", "2117","9","<b>Não Se Enquadra nos Criterios: </b><br>De acordo com o encaminhamento, a paciente apresenta comprometimento cognitivo e demanda um manejo especializado . Dessa forma, sugere-se que o caso seja direcionado ao CER II. ","20240724","Avaliaçao psicologo e-multi"],
+  ["742524","1150", "61609","3","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Paciente foi encaminhado devido à asma não controlada ou alterações dos desenvolvimento neuropsicomotor?","20240723","Consulta pediatria alto risco"],
+  ["743014","1267", "16704","8","<b>Não Se Enquadra nos Criterios: </b><br>ENCAMINHAR A PACIENTE PARA A GINECOLOGIA POLICLÍNICA, POR SE TRATAR DE REVISÃO DE DIU. O PROCEDIMENTO ESTA VINCULADO A POLICLÍNICA.","20240724","Ultrassonografia pelvica (ginecologica)"],
+  ["743360","320", "13791","78","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Foi realizado algum exame de imagem? Foi realizada exame clínico das mamas ou só o relato da paciente?","20240724","Consulta mastologia CEAE"],
+  ["744043","1016", "7239","13","<b>Não Se Enquadra nos Criterios: </b><br>Favor lançar na fila de espera GINECOLOGIA POLICLÍNICA com resultado de PCCU.","20240724","Consulta ginecologia CEAE"]
 ]
