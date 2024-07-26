@@ -155,7 +155,6 @@ equipe_profissional['1174'] = ['ESPETACULAR'];
 equipe_profissional['1184'] = ['MAIS SAÙDE'];
 equipe_profissional['1193'] = ['CAMINHO'];
 equipe_profissional['1193'] = ['CAMINHO'];
-equipe_profissional['1193'] = ['CAMINHO'];
 equipe_profissional['1194'] = ['ESPERANÇA'];
 equipe_profissional['1194'] = ['ESPERANÇA'];
 equipe_profissional['1196'] = ['PROGRESSO'];
