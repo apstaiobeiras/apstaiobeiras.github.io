@@ -176,6 +176,7 @@ nomeProfissional['1196'] = 'PAULO SÉRGIO GONÇALVES DE ALCÂNTARA';
 nomeProfissional['286'] = 'PRISCILA MARIA DA SILVA ';
 nomeProfissional['1193'] = 'RAFAELA VILACA DE QUADROS';
 nomeProfissional['1193'] = 'RAFAELA VILACA DE QUADROS';
+nomeProfissional['1193'] = 'RAFAELA VILACA DE QUADROS';
 nomeProfissional['1069'] = 'RAYANE DA CRUZ ALVES';
 nomeProfissional['1069'] = 'RAYANE DA CRUZ ALVES';
 nomeProfissional['1120'] = 'RAYANNE CHAVES MOREIRA';

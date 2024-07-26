@@ -1,4 +1,4 @@
-document.getElementById('atualizacao').textContent = '25/07/2024';
+document.getElementById('atualizacao').textContent = '26/07/2024';
 const Solicitacoes_Excluidas = [
   ["149235","764", "17525","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
   ["152679","764", "25742","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
@@ -965,5 +965,6 @@ const Solicitacoes_Excluidas = [
   ["742524","1150", "61609","3","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Paciente foi encaminhado devido à asma não controlada ou alterações dos desenvolvimento neuropsicomotor?","20240723","Consulta pediatria alto risco"],
   ["743014","1267", "16704","8","<b>Não Se Enquadra nos Criterios: </b><br>ENCAMINHAR A PACIENTE PARA A GINECOLOGIA POLICLÍNICA, POR SE TRATAR DE REVISÃO DE DIU. O PROCEDIMENTO ESTA VINCULADO A POLICLÍNICA.","20240724","Ultrassonografia pelvica (ginecologica)"],
   ["743360","320", "13791","78","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Foi realizado algum exame de imagem? Foi realizada exame clínico das mamas ou só o relato da paciente?","20240724","Consulta mastologia CEAE"],
-  ["744043","1016", "7239","13","<b>Não Se Enquadra nos Criterios: </b><br>Favor lançar na fila de espera GINECOLOGIA POLICLÍNICA com resultado de PCCU.","20240724","Consulta ginecologia CEAE"]
+  ["744043","1016", "7239","13","<b>Não Se Enquadra nos Criterios: </b><br>Favor lançar na fila de espera GINECOLOGIA POLICLÍNICA com resultado de PCCU.","20240724","Consulta ginecologia CEAE"],
+  ["744203","1016", "15321","13","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever resultados de exames laboratoriais da paciente e PA.","20240725","Consulta hipertenso alto risco"]
 ]
