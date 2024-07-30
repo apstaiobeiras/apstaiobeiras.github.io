@@ -63,6 +63,7 @@ const lista_profissionais_solicitacoes = `
 <option value="1048">LUMA MOREIRA RAMOS</option>
 <option value="354">LYVIA SENA MENDES ESCOBAR</option>
 <option value="1150">MAIRA LOPES SARMENTO</option>
+<option value="1101">MARCIA CRISTINA SOUZA DE ALMEIDA</option>
 <option value="18">MARCIA MARTINS FREIRE MENDES</option>
 <option value="806">MARCIO ANDRE FERNANDES TEIXEIRA</option>
 <option value="1220">MARIA BETANIA LESSA COELHO LAMOUNIER</option>
