@@ -181,6 +181,7 @@ nomeProfissional['1069'] = 'RAYANE DA CRUZ ALVES';
 nomeProfissional['1120'] = 'RAYANNE CHAVES MOREIRA';
 nomeProfissional['975'] = 'RENATA CATARINA DA SILVA';
 nomeProfissional['884'] = 'RENATA MATOS E MATOS';
+nomeProfissional['1243'] = 'ROBERTA CAMARGOS';
 nomeProfissional['247'] = 'RONICLEIA DIAS ROCHA';
 nomeProfissional['452'] = 'ROSA RODRIGUES DE SOUZA';
 nomeProfissional['785'] = 'SAMARA FRANTHEISCA ALMEIDA BARBOSA';

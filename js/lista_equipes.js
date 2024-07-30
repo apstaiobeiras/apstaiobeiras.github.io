@@ -172,6 +172,7 @@ equipe_profissional['1221'] = ['HARMONIA'];
 equipe_profissional['1234'] = ['ESPETACULAR'];
 equipe_profissional['1236'] = ['ESPETACULAR'];
 equipe_profissional['1239'] = ['EAP','ESPETACULAR'];
+equipe_profissional['1243'] = ['ACOLHER','RENASCER'];
 equipe_profissional['1246'] = ['HUMANIZAR'];
 equipe_profissional['1258'] = ['HUMANIZAR'];
 equipe_profissional['1258'] = ['HUMANIZAR'];
