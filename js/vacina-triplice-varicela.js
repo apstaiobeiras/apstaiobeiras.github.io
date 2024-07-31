@@ -836,10 +836,10 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>ELIANE PEREIRA FREITAS</td>
     <td style="text-align: center;">🟡</td>
     <td style="text-align: center;">🔴</td>
-  </tr><tr class="581 VIVER 0-varicela 0-triplice 0">
+  </tr><tr class="581 VIVER 0-varicela 0-triplice 1">
     <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/97418/?workMode=wmBrowse" target=_blank>70242</a></td>
     <td>Augusto Silva Rocha</td>
-    <td>0 anos e 0 meses</td>
+    <td>1 ano e 0 meses</td>
     <td>31/07/2023</td>
     <td>JESSICA ANA DE JESUS</td>
     <td style="text-align: center;">🔴</td>
@@ -2500,6 +2500,14 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>LAURY MADALENA DA ROCHA</td>
     <td style="text-align: center;">🔴</td>
     <td style="text-align: center;">🔴</td>
+  </tr><tr class="743 VIDA 0-varicela 0-triplice 0">
+    <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/nil/?workMode=wmBrowse" target=_blank>76794</a></td>
+    <td>Icaro Rhavy Ribeiro de Oliveira</td>
+    <td>0 anos e 0 meses</td>
+    <td>24/07/2024</td>
+    <td>ILCA ANTUNIS DA SILVA</td>
+    <td style="text-align: center;">🔴</td>
+    <td style="text-align: center;">🔴</td>
   </tr><tr class="564 UNIAO 0-varicela 0-triplice 0">
     <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/102345/?workMode=wmBrowse" target=_blank>70800</a></td>
     <td>Inacio Silva</td>
@@ -2834,14 +2842,6 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>1 ano e 6 meses</td>
     <td>19/01/2023</td>
     <td>IVANILDE MARIA DO NASCIMENTO</td>
-    <td style="text-align: center;">🟢</td>
-    <td style="text-align: center;">🟢</td>
-  </tr><tr class="301 UNIAO 1-varicela 2-triplice 1">
-    <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/79983/?workMode=wmBrowse" target=_blank>67512</a></td>
-    <td>Joao Miguel Oliveira Sousa</td>
-    <td>1 ano e 0 meses</td>
-    <td>31/07/2022</td>
-    <td>CERLIOS MARQUES DOS SANTOS</td>
     <td style="text-align: center;">🟢</td>
     <td style="text-align: center;">🟢</td>
   </tr><tr class="1123 ESPETACULAR 0-varicela 0-triplice 0">
@@ -3364,14 +3364,6 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>GEISSIANE MARQUES FERREIRA</td>
     <td style="text-align: center;">🟢</td>
     <td style="text-align: center;">🟢</td>
-  </tr><tr class="207 VIDA-E-SAUDE 1-varicela 2-triplice 1">
-    <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/64469/?workMode=wmBrowse" target=_blank>63311</a></td>
-    <td>Liz Cardoso Mendes</td>
-    <td>1 ano e 0 meses</td>
-    <td>31/07/2022</td>
-    <td>ELIANA MARIA SANTOS DE OLIVEIRA</td>
-    <td style="text-align: center;">🟢</td>
-    <td style="text-align: center;">🟢</td>
   </tr><tr class="389 VIDA-E-SAUDE 1-varicela 2-triplice 1">
     <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/70106/?workMode=wmBrowse" target=_blank>65323</a></td>
     <td>Liz Freitas Martins</td>
@@ -3499,6 +3491,14 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>07/04/2023</td>
     <td>CINTIA MELGES DE OLIVEIRA COSTA</td>
     <td style="text-align: center;">🟡</td>
+    <td style="text-align: center;">🔴</td>
+  </tr><tr class="654 ESPERANÇA 0-varicela 0-triplice 0">
+    <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/nil/?workMode=wmBrowse" target=_blank>76810</a></td>
+    <td>Luca Salles de Souza</td>
+    <td>0 anos e 0 meses</td>
+    <td>22/07/2024</td>
+    <td>LAURY MADALENA DA ROCHA</td>
+    <td style="text-align: center;">🔴</td>
     <td style="text-align: center;">🔴</td>
   </tr><tr class="374 CAMINHO 0-varicela 0-triplice 0">
     <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/123282/?workMode=wmBrowse" target=_blank>74783</a></td>

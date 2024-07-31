@@ -1,4 +1,4 @@
-document.getElementById('atualizacao').textContent = '30/07/2024';
+document.getElementById('atualizacao').textContent = '31/07/2024';
 const Solicitacoes_Excluidas = [
   ["149235","764", "17525","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
   ["152679","764", "25742","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
@@ -972,9 +972,18 @@ const Solicitacoes_Excluidas = [
   ["743014","1267", "16704","8","<b>Não Se Enquadra nos Criterios: </b><br>ENCAMINHAR A PACIENTE PARA A GINECOLOGIA POLICLÍNICA, POR SE TRATAR DE REVISÃO DE DIU. O PROCEDIMENTO ESTA VINCULADO A POLICLÍNICA.","20240724","Ultrassonografia pelvica (ginecologica)"],
   ["743154","907", "48135","9","<b>Solicitação Indevida: </b><br>CRIANÇA ACOMPANHADA PELO ALTO RISCO. REALIZADA TRANSFERENCIA DE FILAS.","20240729","Consulta pediatra policlinica"],
   ["743360","320", "13791","78","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Foi realizado algum exame de imagem? Foi realizada exame clínico das mamas ou só o relato da paciente?","20240724","Consulta mastologia CEAE"],
+  ["743397","1259", "29962","8","Não Se Enquadra nos Criterios","20240730","Avaliaçao nutricionista e-multi"],
   ["744043","1016", "7239","13","<b>Não Se Enquadra nos Criterios: </b><br>Favor lançar na fila de espera GINECOLOGIA POLICLÍNICA com resultado de PCCU.","20240724","Consulta ginecologia CEAE"],
   ["744203","1016", "15321","13","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever resultados de exames laboratoriais da paciente e PA.","20240725","Consulta hipertenso alto risco"],
   ["744229","1016", "3902","13","<b>Não Se Enquadra nos Criterios: </b><br>.","20240726","Avaliaçao psicologo e-multi"],
+  ["744348","320", "37868","78","<b>Solicitação Indevida: </b><br>Favor lançar na fila de espera GINECOLOGIA CEAE.","20240730","Consulta ginecologia policlinica"],
   ["745497","986", "66997","11","<b>Solicitação Indevida: </b><br>teste","20240726","Reabilitaçao física"],
-  ["745866","46", "31624","16","<b>Solicitação Indevida: </b><br>INSERIDA EM FILA DE RETORNO.","20240729","Consulta ortopedista"]
+  ["745866","46", "31624","16","<b>Solicitação Indevida: </b><br>INSERIDA EM FILA DE RETORNO.","20240729","Consulta ortopedista"],
+  ["746246","1317", "44428","3","<b>Não Se Enquadra nos Criterios: </b><br>Paciente encaminhado com a justificativa de dislipidemia leve (CT:206 LDL:149,6 HDL:37), sem outras comorbidades, não se encaixa nos critérios conforme protocolo clínico da nutrição.","20240730","Avaliaçao nutricionista e-multi"],
+  ["746247","1317", "66441","3","<b>Não Se Enquadra nos Criterios: </b><br>Paciente encaminhado com a justificativa de dislipidemia leve (CT:228 LDL:152,2 HDL:38), sem outras comorbidades, não se encaixa nos critérios conforme protocolo clínico da nutrição.","20240730","Avaliaçao nutricionista e-multi"],
+  ["746385","1258", "27480","34","<b>Não Se Enquadra nos Criterios: </b><br>Paciente com DM2, em uso de insulina, (15/07/2024) HBA1C 9,7% .Foi encaminhado para acompanhamento especializado no CEAE.","20240730","Avaliaçao nutricionista e-multi"],
+  ["746396","1132", "866","10","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor detalhar resultado do último PCCU com a data da realização.","20240730","Consulta ginecologia policlinica"],
+  ["746659","1306", "55886","8","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Qual seria o motivo do encaminhamento para o alto risco?","20240730","Consulta gestante alto risco"],
+  ["747139","1243", "35407","9","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor detalhar resultado do último PCCU com a data da realização.","20240730","Consulta ginecologia policlinica"],
+  ["747627","1260", "19840","81","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor encaminhar após resultado de PCCU.","20240730","Consulta ginecologia policlinica"]
 ]

@@ -54,7 +54,7 @@
         background: #9fa1a3 !important;
       }
 
-      tbody {
+      .tbody {
         width: 100%;
       }
 
@@ -78,7 +78,8 @@ tr td:last-child {
   </head>
   <body class="container-lg px-3 my-5 markdown-body">
     <div class="navbar" style="display: flex;justify-content: space-between; padding: 0;">
-      <a><span id="cod"></span> - <span id="nome"></span></a>
+      <a href="profissional.html"><span>Inicio</span></a>
+      <a>Lista dos profissionais - <span id="nome"></span></a>
       <a href="#" onclick="logout()"> Fazer logout</a>
     </div>
 
@@ -93,57 +94,40 @@ tr td:last-child {
     <script src="js/Profissionais-cadastrados.js"></script>
     <script src="js/lista_profissionais_solicitacoes.js"></script>
     <script>
-      const Sections = {
-        "Páginas": [
-          ["Produção","Veja o consolidado da sua produção ao longo do ano","producao"],
-          ["Situação descritiva dos cadastros","Veja uma lista descritiva dos cadastros com problemas","situacao-cadastros"],
-          ["Produção diária","Acompanhe sua produção dia a dia ao longo do ano","producao-diaria"],
-          ["Tabela de indicadores e-SUS","Acompanhe semanalmente os indicadores e-SUS","indicadores-esus"],
-        ],
 
-        "Tabelas-mapa": [
-          ["Famílias visitadas","Mapa que mostra as famílias que receberam visitas dos ACS ao longo do ano","grafico-de-mapa?script=familias-visitadas"],
-          ["Situação dos pacientes e-SUS","Mapa que mostra o acompanhamento dos pacientes com condicionalidades dos indicadores e-SUS","grafico-de-mapa?acompanhamento-esus"],
-        ],
-
-        "Listas e planilhas": [
-          ["Lista de prontuários","Veja uma lista dos pacientes agrupados por família e micro-área","lista-prontuario"],
-          ["Lista de crianças - Vitamina A de 100 mil UI","Planilha de monitoramento de crianças que receberam ou não a <i>Vitamina A de 100 mil UI</i>","planilhas?script=vitamina-a-100-mil"],
-          ["Lista de crianças - Vitamina A de 200 mil UI","Planilha de monitoramento de crianças que receberam ou não a <i>Vitamina A de 200 mil UI</i>","planilhas?script=vitamina-a-200-mil"],
-        ],
-
-        "Solicitações": [
-          ["Agendadas","Solicitações agendadas ativas","agendados"],
-          ["Devolvidas","Soluções com problemas que precisam ser analisados","solicitacoes"],
-        ],
-        "Links": [
-          ["Envio de documentos","Envie e/ou atualize sua documentação profissional","enviar-arquivo"],
-        ],
-        "Profissionais de nível médio": [
-          ["Agente de Combate a Endemias","","lista-profissional-ace"],
-          ["Agente Comunitário de Saúde","","lista-profissional-acs"],
-          ["Recepcionista","","lista-profissional-recepcionistas"],
-        ],
-        "Profissionais de nível superior": [
-          ["Cirurgião dentista","","lista-profissional-cirurgiao-dentista"],
-          ["Enfermeiro","","lista-profissional-enfermeiros"],
-          ["Farmacêutico","","lista-profissional-farmaceutico"],
-          ["Médico","","lista-profissional-farmaceutico-medico"],
-        ],
-      }
     </script>
     <script>
       let cbo = "";
-      document.getElementById("cod").innerText = localStorage.cod_profissional;
+      let equipesProfissional = [];
+      let equipes = [];
+
+      let cargo = (new URLSearchParams(window.location.search)).get('q').split("?")[0];
+
+      cargo = cargo == "acs" ? "Agente comunitário de saúde" : cargo;
+
+      document.getElementById("nome").innerText = cargo;
+
       for (let profissional of Profissionais) {
         if (profissional[0] == localStorage.cod_profissional) {
-          document.getElementById("nome").innerText = profissional[1];
           cbo = profissional[4];
+          equipesProfissional = profissional[5].split(",");
           break;
         }
       }
 
-      for (const [titulo, items] of Object.entries(Sections)) {
+
+      for (let profissional of Profissionais) {
+        //if (profissional[4]!="cargo") continue;
+        if (profissional[4]==cargo) {
+          let equipesLista = profissional[5].split(",");
+          for (let equipe of equipesLista) {
+            equipes[equipe] = equipes[equipe] || [];
+            equipes[equipe].push([profissional[0],profissional[1]]);
+          }
+        }
+      }
+
+      for (let equipe of equipesProfissional) {
         if (document.getElementById("lista-sessoes").innerHTML != "") {
           document.getElementById("lista-sessoes").innerHTML+=`
             <tr>
@@ -153,59 +137,25 @@ tr td:last-child {
         }
 
         document.getElementById("lista-sessoes").innerHTML+=`
-          <tr class="border header" name="${titulo}">
-            <th colspan="2" align="left">${titulo}</th>
+          <tr class="border header" name="${equipe}">
+            <th colspan="2" align="left">${equipe}</th>
           </tr>
         `;
 
-        for (item of items) {
-
-          let pagina = item[2].split("?")[0];
-          let query = item[2].split("?")[1] || "q=undefined";
-
-          if (item[2].split("?")[0].startsWith("lista-profissional")) {
-            query = "q="+pagina.replace("lista-profissional-","");
-            pagina = "lista-profissional";
-          }
-
-
+        for (let profissional of equipes[equipe]) {
           document.getElementById("lista-sessoes").innerHTML+=`
-          <tr class="border tr" onclick="gotoPage('${pagina}.html?${query}');" name="${titulo}" id="${item[0]}">
+          <tr class="border tr" onclick="gotoPage('');"  id="${profissional[0]}">
             <td>
-              <img src="assets/img/${item[2].split("?")[0]}.png" width="96" />
+              <img src="assets/img/acesso.png" style="width: 48px !important; height: 48px !important; min-width: 48px !important; min-height: 48px !important; max-width: 48px !important; max-height: 48px !important;" />
             </td>
             <td style="">
-              <b>${item[0]}</b><br/>${item[1]}
+              <b>${profissional[1]}</b> - ${profissional[0]}
             </td>
-         </tr>
+          </tr>
         `;
         }
       }
 
-      document.getElementById("lista-sessoes").innerHTML = document.getElementById("lista-sessoes").innerHTML.replace(/<!--.*?-->/g, '')
-                                                                                                             .replace(/\s{2,}/g, ' ')
-                                                                                                             .replace(/(\r\n|\n|\r)/gm, '')
-                                                                                                             .replace(/>\s+</g, '><');
-
-      let profissionais = document.createElement("select");
-      profissionais.innerHTML = lista_profissionais_solicitacoes;
-      profissionais.value = document.getElementById("cod").innerText;
-
-      if (profissionais.value == '') {
-        document.getElementById('Devolvidas').remove();
-      }
-
-      if (Sections["Profissionais de nível superior"][cbo]) {
-        for (let linha of [...document.getElementsByName("Profissionais de nível médio")]) {
-          linha.remove();
-        }
-      }
-
-      if (cbo != "Administrativo") {
-        for (let linha of [...document.getElementsByName("Profissionais de nível superior")]) {
-          linha.remove();
-        }
-      }
 
     </script>
   </body>
