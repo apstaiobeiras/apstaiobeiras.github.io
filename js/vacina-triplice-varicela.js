@@ -2812,6 +2812,14 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>LUANA RODRIGUES DE OLIVEIRA</td>
     <td style="text-align: center;">🔴</td>
     <td style="text-align: center;">🔴</td>
+  </tr><tr class="317 HUMANIZAR 0-varicela 0-triplice 0">
+    <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/nil/?workMode=wmBrowse" target=_blank>76849</a></td>
+    <td>Jasminy Sousa Oliveira</td>
+    <td>0 anos e 1 mes</td>
+    <td>23/07/2024</td>
+    <td>NORMA TRANCOSO VIANA</td>
+    <td style="text-align: center;">🔴</td>
+    <td style="text-align: center;">🔴</td>
   </tr><tr class="376 HARMONIA 0-varicela 0-triplice 0">
     <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/123918/?workMode=wmBrowse" target=_blank>75247</a></td>
     <td>Jeferson Alves Mendes Filho</td>
