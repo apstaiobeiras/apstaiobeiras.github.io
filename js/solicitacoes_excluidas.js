@@ -1,4 +1,4 @@
-document.getElementById('atualizacao').textContent = '01/08/2024';
+document.getElementById('atualizacao').textContent = '02/08/2024';
 const Solicitacoes_Excluidas = [
   ["149235","764", "17525","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
   ["152679","764", "25742","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
@@ -47,6 +47,7 @@ const Solicitacoes_Excluidas = [
   ["467997","1165", "22540","206","<b>Agendar na Atenção Primaria: </b><br>ATENDIMENTO REALIZADO DIA 05/07","20240705"," consulta psicologia infantojuvenil"],
   ["472486","122", "46516","206","<b>Não Se Enquadra nos Criterios: </b><br>PACIENTE AVISADA E RETIRADA DA FILA POR NÃO SE ENQUADRAR NOS NOVOS CRITÉRIOS DE ATENDIMENTO","20240603","Avaliaçao fonoaudiologia e-multi"],
   ["475757","1218", "25689","3","<b>Solicitação Indevida: </b><br>SOLICITAÇÃO INSERIDA EM FILA INADEQUADA. DEVIDO AO TEMPO DE SOLICITAÇÃO, SUGIRO NOVA AVALIAÇÃO MDO ATUAL QUADRO DE SAÚDE E CONDUTA.","20240409","Retorno fratura ortopedia"],
+  ["478441","987", "20332","11","Agendar na Atenção Primaria","20240801","Grupo de coluna-  fisioterapia"],
   ["480517","1216", "21770","81","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>DETALHAR CARACTERISTICAS DO NÓDULO. VERIFICAR CRITÉRIOS DE ENCAMINHAMENTO A MASTOLOGIA CEAE.","20240627","Ultrassonografia mamaria bilateral"],
   ["480555","1069", "41716","75","<b>Não Se Enquadra nos Criterios: </b><br>PACIENTE AVISADA E RETIRADA DA FILA POR NÃO SE ENQUADRAR NOS NOVOS CRITÉRIOS DE ATENDIMENTO","20240603","Avaliaçao fonoaudiologia e-multi"],
   ["489866","1194", "20133","6","<b>Solicitação Indevida: </b><br>Resultados de exames de imagem com laudo de classificação BI-RADS 3 devem ser encaminhados  a Mastologia CEAE.","20240627","Ultrassonografia mamaria bilateral"],
@@ -773,6 +774,7 @@ const Solicitacoes_Excluidas = [
   ["711250","507", "12475","2","<b>Não Se Enquadra nos Criterios: </b><br>Encaminhar para Diabetes Alto Risco.","20240529","Consulta endocrinologia"],
   ["711301","320", "13092","78","<b>Não Se Enquadra nos Criterios: </b><br>De acordo protocolo atendimento a HG da paciente deve estar igual ou superior a 9%, o que não é o caso da paciente. Att. ","20240603","Consulta diabetes alto risco"],
   ["711302","320", "13092","78","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever resultados de exames bioquímicos com data para prosseguir com agendamento, caso haja alguma ressalva, entrar em contato.  Att.","20240603","Consulta hipertenso alto risco"],
+  ["711706","1291", "45598","75","Não Se Enquadra nos Criterios","20240801","Avaliaçao nutricionista e-multi"],
   ["711846","1289", "10106","4","<b>Solicitação Indevida: </b><br>Solicitação errada","20240614","Tratamento endodôntico de dente permanente unirradicular"],
   ["711926","1291", "11677","75","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever o resultado de PCCU realizado pela paciente para prosseguir com agendamento.Att.","20240603","Consulta ginecologia policlinica"],
   ["711997","1216", "33613","9","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Ausência da estratificação de risco cardiovascular.","20240716","Ecocardiograma com doopler"],
