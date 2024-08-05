@@ -32,6 +32,7 @@ const lista_profissionais_solicitacoes = `
 <option value="985">FERNANDA DE MOURA MESQUITA</option>
 <option value="46">FRANCISCO PEREIRA DONATO NETO</option>
 <option value="750">FREDERICO AUGUSTO SCHUFFNER</option>
+<option value="1328">FREDERICO LUCAS MENDES FILHO</option>
 <option value="1227">GABRIEL ALMEIDA FERNANDES MEIRELES MOREIRA</option>
 <option value="1224">GEIZIANE SOUZA ROCHA </option>
 <option value="72">GISELE MARQUES RIBEIRO</option>
