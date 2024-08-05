@@ -1,4 +1,4 @@
-document.getElementById('atualizacao').textContent = '02/08/2024';
+document.getElementById('atualizacao').textContent = '05/08/2024';
 const Solicitacoes_Excluidas = [
   ["149235","764", "17525","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
   ["152679","764", "25742","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
@@ -651,6 +651,7 @@ const Solicitacoes_Excluidas = [
   ["695496","1204", "14022","81","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever a data de realização dos exames informados.Att.","20240502","Consulta diabetes alto risco"],
   ["695521","1260", "17424","81","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data os últimos exames bioquímicos realizados pela paciente para prosseguir com agendamento.Att. ","20240503","Consulta hipertenso alto risco"],
   ["695570","1174", "41124","3","<b>Solicitação Indevida: </b><br>.","20240502","Protese total mandibular"],
+  ["695619","1037", "11926","7","<b>Agendar na Atenção Primaria: </b><br>Atendimento agendado para o dia 08/08/2024","20240802","Avaliaçao psicologo e-multi"],
   ["695687","1221", "53976","4","<b>Não Se Enquadra nos Criterios: </b><br>CRIANÇA COM MAGREZA OU MAGREZA  ACENTUDA SE APRESENTAM COMO CRITÉROS DO ALTO RISCO. TRANSFERIDO PARA FILA \"\"PEDIATRIA ALTO RISCO\"\". ","20240513","Consulta pediatra policlinica"],
   ["695848","1291", "14745","75","<b>Solicitação Indevida: </b><br>Encaminhada na fila errada. Favor lançar na fila GESTANTE ALTO RISCO.","20240507","Consulta ginecologia CEAE"],
   ["696095","1259", "67619","8","<b>Não Se Enquadra nos Criterios: </b><br>encaminhe para oftalmologia, por gentileza.","20240513","Consulta pediatra policlinica"],
@@ -728,6 +729,7 @@ const Solicitacoes_Excluidas = [
   ["705633","1297", "37291","7","Não Se Enquadra nos Criterios","20240606"," consulta psicologia infantojuvenil"],
   ["705698","1219", "20311","33","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data o resultado do PCCU realizado pela paciente para prosseguir com agendamento.Att.","20240529","Consulta ginecologia policlinica"],
   ["705848","1258", "1451","34","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Deve ter descrição mínima, sobre investigação prévia sore os sintomas.","20240715","Consulta otorrinolaringologia"],
+  ["705924","1297", "18984","7","<b>Agendar na Atenção Primaria: </b><br>Atendimento agendado para o dia 08/08/24","20240802","Avaliaçao psicologo e-multi"],
   ["705964","507", "33085","2","<b>Não Se Enquadra nos Criterios: </b><br>Sintomas de climatério deve ser lançado na fila da GINECOLOGIA POLICLÍNICA.","20240522","Consulta ginecologia CEAE"],
   ["706149","1291", "11572","75","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>DESCREVER INVESTIGAÇÃO LABORATORIAL PARA DIAGNÓSTICO DIFERENCIAL, SUGIRO AVALIAÇÃO DA NEUROLOGIA E PELA CARDIO E ENDOCRINO DO CEAE","20240521","Consulta clinico/geriatra"],
   ["706282","1258", "27993","34","<b>Solicitação Indevida: </b><br>Médica da unidade encaminhou de forma indevida, solicitando que o mesmo pudesse ser excluído da fila.","20240522","Avaliaçao nutricionista e-multi"],
@@ -775,6 +777,7 @@ const Solicitacoes_Excluidas = [
   ["711301","320", "13092","78","<b>Não Se Enquadra nos Criterios: </b><br>De acordo protocolo atendimento a HG da paciente deve estar igual ou superior a 9%, o que não é o caso da paciente. Att. ","20240603","Consulta diabetes alto risco"],
   ["711302","320", "13092","78","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever resultados de exames bioquímicos com data para prosseguir com agendamento, caso haja alguma ressalva, entrar em contato.  Att.","20240603","Consulta hipertenso alto risco"],
   ["711706","1291", "45598","75","Não Se Enquadra nos Criterios","20240801","Avaliaçao nutricionista e-multi"],
+  ["711711","775", "13754","7","<b>Agendar na Atenção Primaria: </b><br>Atendimento agendado 12/08/2024","20240802","Avaliaçao psicologo e-multi"],
   ["711846","1289", "10106","4","<b>Solicitação Indevida: </b><br>Solicitação errada","20240614","Tratamento endodôntico de dente permanente unirradicular"],
   ["711926","1291", "11677","75","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever o resultado de PCCU realizado pela paciente para prosseguir com agendamento.Att.","20240603","Consulta ginecologia policlinica"],
   ["711997","1216", "33613","9","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Ausência da estratificação de risco cardiovascular.","20240716","Ecocardiograma com doopler"],
@@ -805,6 +808,7 @@ const Solicitacoes_Excluidas = [
   ["715231","90707011", "31759","18","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>AUSENCIA DE DUM E IG.","20240609","Ultrassonografia obstetrica"],
   ["715877","1259", "14529","8","<b>Não Se Enquadra nos Criterios: </b><br>Pelos dados clínicos, sugiro solicitar Anuscopia.","20240611","Colonoscopia com biopsia"],
   ["715908","1259", "23366","8","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Deve ter a estratificação de risco na justificativa.","20240716","Ecocardiograma com doopler"],
+  ["716466","775", "7608","7","<b>Agendar na Atenção Primaria: </b><br>Atendimento agendado 12/08/2024","20240802","Avaliaçao psicologo e-multi"],
   ["716667","1132", "654","10","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Por favor aguardar o resultado do Us endovaginal, para enc. já com o resultado.<br>E nos informar a data da coleta do ultimo citologico.Estamos a disposição para maiores esclarecimentos.","20240628","Consulta ginecologia CEAE"],
   ["716928","1260", "26644","81","<b>Não Se Enquadra nos Criterios: </b><br>Transferir para fila de avaliação cirúrgica.","20240617","Pequena cirurgia policlinica"],
   ["717126","1277", "10562","4","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>AUSENCIA DE DUM E IG. JA REALIZADO CONTATO COM PROFISSIONAL SOLICITANTE.","20240611","Ultrassonografia obstetrica"],
@@ -826,6 +830,7 @@ const Solicitacoes_Excluidas = [
   ["718525","1192", "32072","16","<b>Agendar na Atenção Primaria: </b><br>Avaliação inicial deve ser feita pelo médico da APS, para investigação e diagnóstico diferencial.","20240627","Consulta gastroenterologia"],
   ["718809","1306", "27176","8","<b>Não Se Enquadra nos Criterios: </b><br>Paciente não enquadra nos critérios do protocolo de atendimento. Foi verificado peso, altura e IMC, e mesmo assim não se enquadra.","20240704","Avaliaçao nutricionista e-multi"],
   ["718876","1219", "74822","33","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever último exame de PCCU com data  realizado pela paciente para prosseguir com agendamento.Att.","20240619","Consulta ginecologia policlinica"],
+  ["719092","775", "3413","7","<b>Agendar na Atenção Primaria: </b><br>Atendimento agendado 15/08/2024","20240802","Avaliaçao psicologo e-multi"],
   ["719105","1258", "31022","34","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Sugiro descrever medicações em uso e as comorbidades existentes, alem de repetir o perfil laboratorial para afastar causas de demências reversíveis. ","20240702","Consulta neurologia"],
   ["719164","1260", "15878","81","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever último exame de PCCU com data  realizado pela paciente para prosseguir com agendamento.Att.","20240619","Consulta ginecologia policlinica"],
   ["719435","1193", "53081","56","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Sugiro solicitação de ultrassom transvaginal para verificar quadro atual da paciente (último exame realizado há 3 anos), após realização, reencaminhar. Att. ","20240619","Consulta ginecologia policlinica"],
@@ -937,6 +942,7 @@ const Solicitacoes_Excluidas = [
   ["735780","1317", "26277","3","<b>Não Se Enquadra nos Criterios: </b><br>Paciente de Alto Risco Cardiovascular segundo encaminhamento:<br>\"\"PACIENTE, 76 ANOS, HAS ALTO RISCO, PRE DIABÉTICO  E DISLIPIDEMICO.  <br>#ALTO RISCO CARDIOVASCULAR. \"\"<br>De acordo com o protocolo de encaminhamento, o acompanhamento dever ser feito no CEAE.","20240718","Avaliaçao nutricionista e-multi"],
   ["735827","1132", "32119","10","<b>Não Se Enquadra nos Criterios: </b><br>Paciente não enquadra nos critérios pois o quadro clínico é de alto risco (Ver protocolo de encaminhamento para nutrição E-MULTI, nota do Item 5) .","20240723","Avaliaçao nutricionista e-multi"],
   ["735962","1132", "18320","10","<b>Não Se Enquadra nos Criterios: </b><br>Quadro de adenomiose deve ser lançado na fila da GINECOLOGIA POLICLÍNICA.","20240712","Consulta ginecologia CEAE"],
+  ["735966","775", "29849","7","<b>Agendar na Atenção Primaria: </b><br>Atendimento agendado para o dia 12/08/2024.","20240802","Avaliaçao psicologo e-multi"],
   ["736023","320", "19287","78","<b>Não Se Enquadra nos Criterios: </b><br>De acordo protocolo a HG do paciente deve estar acima de 9%, o que não é o caso do mesmo. O resultado CRE é 231, mesmo? Não consegui identificar outra demanda, favor reencaminhar caso tenha. O quadro clínico não se enquadra nos critérios de atendimento. <br>Att.","20240712","Consulta diabetes alto risco"],
   ["736126","507", "15478","2","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data o último resultado de PCCU realizado pela paciente para prosseguir com agendamento.Att.","20240712","Consulta ginecologia policlinica"],
   ["736142","1194", "20490","6","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Tem que ser descrita a investigação radiológica, minimamente.","20240712","Consulta ortopedista"],
@@ -990,5 +996,8 @@ const Solicitacoes_Excluidas = [
   ["746396","1132", "866","10","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor detalhar resultado do último PCCU com a data da realização.","20240730","Consulta ginecologia policlinica"],
   ["746659","1306", "55886","8","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Qual seria o motivo do encaminhamento para o alto risco?","20240730","Consulta gestante alto risco"],
   ["747139","1243", "35407","9","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor detalhar resultado do último PCCU com a data da realização.","20240730","Consulta ginecologia policlinica"],
-  ["747627","1260", "19840","81","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor encaminhar após resultado de PCCU.","20240730","Consulta ginecologia policlinica"]
+  ["747339","1259", "16521","8","<b>Solicitação Indevida: </b><br>sem justificativa","20240802","Ultrassonografia de abdomen total"],
+  ["747627","1260", "19840","81","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor encaminhar após resultado de PCCU.","20240730","Consulta ginecologia policlinica"],
+  ["750022","986", "66997","11","<b>Solicitação Indevida: </b><br>teste","20240802","Reabilitaçao física"],
+  ["750338","829", "6517","7","Solicitação Indevida","20240802","Consulta hipertenso alto risco"]
 ]
