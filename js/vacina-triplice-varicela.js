@@ -2772,6 +2772,14 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>ANELISA MARIA DO NASCIMENTO</td>
     <td style="text-align: center;">🔴</td>
     <td style="text-align: center;">🔴</td>
+  </tr><tr class="513 MAIS-SAUDE 0-varicela 0-triplice 0">
+    <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/nil/?workMode=wmBrowse" target=_blank>76885</a></td>
+    <td>Jade Oliveira da Silva</td>
+    <td>0 anos e 1 mes</td>
+    <td>30/07/2024</td>
+    <td>IRIS TANIA TEIXEIRA ALVES</td>
+    <td style="text-align: center;">🔴</td>
+    <td style="text-align: center;">🔴</td>
   </tr><tr class="481 VIDA-E-SAUDE 0-varicela 1-triplice 1">
     <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/86041/?workMode=wmBrowse" target=_blank>68606</a></td>
     <td>Jade Rodrigues Dos Santos</td>
@@ -5770,6 +5778,14 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>0 anos e 1 mes</td>
     <td>11/07/2024</td>
     <td>ELIETE MARIA DE OLIVEIRA GOMES</td>
+    <td style="text-align: center;">🔴</td>
+    <td style="text-align: center;">🔴</td>
+  </tr><tr class="513 MAIS-SAUDE 0-varicela 0-triplice 0">
+    <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/nil/?workMode=wmBrowse" target=_blank>76989</a></td>
+    <td>rn de Janaina Pereira Dos Santos</td>
+    <td>0 anos e 0 meses</td>
+    <td>03/08/2024</td>
+    <td>IRIS TANIA TEIXEIRA ALVES</td>
     <td style="text-align: center;">🔴</td>
     <td style="text-align: center;">🔴</td>
   </tr><tr class="346 ESPETACULAR 0-varicela 0-triplice 0">

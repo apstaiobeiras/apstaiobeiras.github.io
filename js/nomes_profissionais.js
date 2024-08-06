@@ -43,6 +43,7 @@ nomeProfissional['880'] = 'DANILO DIEGO FREITAS SILVEIRA';
 nomeProfissional['234'] = 'DARCI DA SILVA MARQUES GOMES';
 nomeProfissional['446'] = 'DARCIELIA EURIDES DOS SANTOS';
 nomeProfissional['802'] = 'DARLENE MARIA PEREIRA';
+nomeProfissional['1328'] = 'DAYANA';
 nomeProfissional['602'] = 'DAYANE DE OLIVEIRA SILVA';
 nomeProfissional['315'] = 'DAYANE SOARES MENDES SANTOS';
 nomeProfissional['1282'] = 'DEBORA ANDRADE GOMES';

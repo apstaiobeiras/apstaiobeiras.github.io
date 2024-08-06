@@ -199,6 +199,7 @@ equipe_profissional['1303'] = ['CAMINHO'];
 equipe_profissional['1306'] = ['ACOLHER'];
 equipe_profissional['1321'] = ['COMUNIDADES RURAIS'];
 equipe_profissional['1328'] = ['UNIÃO'];
+equipe_profissional['1328'] = ['UNIÃO'];
 equipe_profissional['1342'] = ['HUMANIZAR'];
 equipe_profissional['99991'] = ['CAMINHO','ESPERANÇA'];
 equipe_profissional['99992'] = ['RENASCER'];

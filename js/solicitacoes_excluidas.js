@@ -1007,6 +1007,7 @@ const Solicitacoes_Excluidas = [
   ["744348","320", "37868","78","<b>Solicitação Indevida: </b><br>Favor lançar na fila de espera GINECOLOGIA CEAE.","20240730","Consulta ginecologia policlinica"],
   ["744434","1150", "32004","3","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>AUSENCIA DE RCV.SE ALTO RISCO, ENCAMINHAR AO CEAE. SE MODERADO/BAIXO, REINSERIR SOLICITAÇÃO DIRETAMENTE EM FILA DE ESPERA (CONSULTA CARDIOLOGIA RENAN).","20240801","Consulta cardiologia Dr Renan"],
   ["744487","1016", "5736","13","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>AUSENCIA DE RCV.SE ALTO RISCO, ENCAMINHAR AO CEAE. SE MODERADO/BAIXO, REINSERIR SOLICITAÇÃO DIRETAMENTE EM FILA DE ESPERA (CONSULTA CARDIOLOGIA RENAN).","20240801","Consulta cardiologia Dr Renan"],
+  ["745367","216", "8540","13","<b>Agendar na Atenção Primaria: </b><br>Agendado inicio do acompanhamento psicológico.","20240806","Avaliaçao psicologo e-multi"],
   ["745497","986", "66997","11","<b>Solicitação Indevida: </b><br>teste","20240726","Reabilitaçao física"],
   ["745866","46", "31624","16","<b>Solicitação Indevida: </b><br>INSERIDA EM FILA DE RETORNO.","20240729","Consulta ortopedista"],
   ["746246","1317", "44428","3","<b>Não Se Enquadra nos Criterios: </b><br>Paciente encaminhado com a justificativa de dislipidemia leve (CT:206 LDL:149,6 HDL:37), sem outras comorbidades, não se encaixa nos critérios conforme protocolo clínico da nutrição.","20240730","Avaliaçao nutricionista e-multi"],
@@ -1021,6 +1022,7 @@ const Solicitacoes_Excluidas = [
   ["747723","1150", "27083","3","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Sem descrição de tratamento prévio medicamentoso e fisioterápico.","20240805","Consulta ortopedista"],
   ["748959","1016", "10558","13","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Ausência da descrição de tratamento medicamentoso e fisioterápico instituídos.","20240805","Consulta ortopedista"],
   ["749068","1016", "13219","13","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Ausência de descrição do tratamento medicamentoso e fisioterápico instituídos.","20240805","Consulta ortopedista"],
+  ["749708","1291", "14761","75","<b>Não Se Enquadra nos Criterios: </b><br>Paciente de baixo risco cardiovascular.","20240806","Consulta hipertenso alto risco"],
   ["750022","986", "66997","11","<b>Solicitação Indevida: </b><br>teste","20240802","Reabilitaçao física"],
   ["750338","829", "6517","7","Solicitação Indevida","20240802","Consulta hipertenso alto risco"]
 ]
