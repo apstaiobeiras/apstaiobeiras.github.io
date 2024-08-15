@@ -107,6 +107,7 @@ const lista_profissionais_solicitacoes = `
 <option value="1289">SANDRO MARTINS RIBEIRO</option>
 <option value="1138">SUELY ALVES DA SILVA</option>
 <option value="1318">SUZANA DA SILVA SANTOS</option>
+<option value="1342">TIFANNY BEATRIZ BRITO MENDES</option>
 <option value="1235">TIFANY ADRIANY PINHEIRO SILVA</option>
 <option value="805">VINICIUS SAMPAIO CAMPOS</option>
 <option value="1106">YASMIM FERNANDES ALMEIDA LEITE</option>
