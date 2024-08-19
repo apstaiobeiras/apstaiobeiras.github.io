@@ -91,7 +91,6 @@ tr td:last-child {
     <h3><br /></h3>
     <script src="js/goto.js"></script>
     <script src="js/Profissionais-cadastrados.js"></script>
-    <script src="js/lista_profissionais_solicitacoes.js"></script>
     <script>
       const Sections = {
         "Páginas": [
@@ -102,7 +101,7 @@ tr td:last-child {
         ],
 
         "Tabelas-mapa": [
-          ["Famílias visitadas","Mapa que mostra as famílias que receberam visitas dos ACS ao longo do ano","grafico-de-mapa?script=familias-visitadas"],
+          ["Famílias visitadas","Mapa que mostra as famílias que receberam visitas dos ACS ao longo do ano","grafico-de-mapa?script=monitoramento-acs"],
           ["Situação dos pacientes e-SUS","Mapa que mostra o acompanhamento dos pacientes com condicionalidades dos indicadores e-SUS","grafico-de-mapa?acompanhamento-esus"],
         ],
 
@@ -189,14 +188,8 @@ tr td:last-child {
                                                                                                              .replace(/(\r\n|\n|\r)/gm, '')
                                                                                                              .replace(/>\s+</g, '><');
 
-      let profissionais = document.createElement("select");
-      profissionais.innerHTML = lista_profissionais_solicitacoes;
-      profissionais.value = document.getElementById("cod").innerText;
 
-      if (profissionais.value == '') {
-        document.getElementById('Devolvidas').remove();
-      }
-
+/*
       if (Sections["Profissionais de nível superior"][cbo]) {
         for (let linha of [...document.getElementsByName("Profissionais de nível médio")]) {
           linha.remove();
@@ -208,7 +201,7 @@ tr td:last-child {
           linha.remove();
         }
       }
-
+*/
     </script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-document.getElementById('atualizacao').textContent = '15/08/2024';
+document.getElementById('atualizacao').textContent = '19/08/2024';
 const Solicitacoes_Excluidas = [
   ["149235","764", "17525","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
   ["152679","764", "25742","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
@@ -865,7 +865,9 @@ const Solicitacoes_Excluidas = [
   ["719435","1193", "53081","56","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Sugiro solicitação de ultrassom transvaginal para verificar quadro atual da paciente (último exame realizado há 3 anos), após realização, reencaminhar. Att. ","20240619","Consulta ginecologia policlinica"],
   ["719489","320", "37441","78","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Os exames foram solicitados pela cardiologia? No prontuário a paciente não foi atendida pelo endocrinologista, de acordo os critérios de atendimento ela não se enquadra, caso for pela cardiologia, encaminhar via fila Hipertenso Alto Risco. Qualquer coisa, entrar em contato por favor. Att. ","20240617","Consulta diabetes alto risco"],
   ["719509","320", "37441","78","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever último exame de PCCU com data  realizado pela paciente para prosseguir com agendamento.Att.","20240619","Consulta ginecologia policlinica"],
+  ["719915","1297", "4302","7","<b>Agendar na Atenção Primaria: </b><br>Atendimento agendado 29/08/24.","20240815","Avaliaçao psicologo e-multi"],
   ["719940","907", "15322","9","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever as medicações em uso e posologia, exames bioquímicos realizados pelo paciente com data. Além das patologias descritas também é portador de HAS?Att.","20240617","Consulta hipertenso alto risco"],
+  ["720352","775", "28503","7","<b>Agendar na Atenção Primaria: </b><br>Atendimento agendado 29/08/24","20240815","Avaliaçao psicologo e-multi"],
   ["720403","1219", "25641","33","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor realizar exame de imagem.","20240617","Consulta - mastologista"],
   ["720487","1258", "30488","34","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Pode ser investigada na APS, ja que não apresenta sinais de alarme com investigação por EEG- TCC-consulta oftalmológica e av laboratorial, para descartar outras causas. ","20240702","Consulta neurologia"],
   ["720506","1221", "61952","4","<b>Não Se Enquadra nos Criterios: </b><br>VERIFICAR CRITÉRIOS DE ENCAMINHAMENTO A REABILITAÇÃO INTELECTUAL OU EQUIPE E-MULTI, CONFORME PROTOCOLOS DE ACESSO.","20240805","Consulta pediatra policlinica"],
@@ -1047,6 +1049,7 @@ const Solicitacoes_Excluidas = [
   ["744348","320", "37868","78","<b>Solicitação Indevida: </b><br>Favor lançar na fila de espera GINECOLOGIA CEAE.","20240730","Consulta ginecologia policlinica"],
   ["744434","1150", "32004","3","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>AUSENCIA DE RCV.SE ALTO RISCO, ENCAMINHAR AO CEAE. SE MODERADO/BAIXO, REINSERIR SOLICITAÇÃO DIRETAMENTE EM FILA DE ESPERA (CONSULTA CARDIOLOGIA RENAN).","20240801","Consulta cardiologia Dr Renan"],
   ["744487","1016", "5736","13","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>AUSENCIA DE RCV.SE ALTO RISCO, ENCAMINHAR AO CEAE. SE MODERADO/BAIXO, REINSERIR SOLICITAÇÃO DIRETAMENTE EM FILA DE ESPERA (CONSULTA CARDIOLOGIA RENAN).","20240801","Consulta cardiologia Dr Renan"],
+  ["744790","1032", "56789","11","Agendar na Atenção Primaria","20240815","Fisioterapia - alteraçoes motoras"],
   ["745227","1267", "30475","8","<b>Não Se Enquadra nos Criterios: </b><br>LT não faz parte dos critérios da ginecologia CEAE.Favor aguardar criação do protocolo municipal de LT.","20240814","Consulta ginecologia CEAE"],
   ["745367","216", "8540","13","<b>Agendar na Atenção Primaria: </b><br>Agendado inicio do acompanhamento psicológico.","20240806","Avaliaçao psicologo e-multi"],
   ["745497","986", "66997","11","<b>Solicitação Indevida: </b><br>teste","20240726","Reabilitaçao física"],
@@ -1061,6 +1064,7 @@ const Solicitacoes_Excluidas = [
   ["746429","832", "31718","7","Não Se Enquadra nos Criterios","20240808","Avaliaçao fonoaudiologia e-multi"],
   ["746659","1306", "55886","8","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Qual seria o motivo do encaminhamento para o alto risco?","20240730","Consulta gestante alto risco"],
   ["746845","1046", "32091","10","<b>Solicitação Indevida: </b><br>transferido para fila \"\"avaliação cirurgica policlínica\"\".","20240805","Consulta cirurgiao geral"],
+  ["747053","1291", "45623","75","<b>Não Se Enquadra nos Criterios: </b><br>Não se enquadra nos critérios de Diabetes alto risco.","20240815","Consulta diabetes alto risco"],
   ["747139","1243", "35407","9","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor detalhar resultado do último PCCU com a data da realização.","20240730","Consulta ginecologia policlinica"],
   ["747228","1132", "21309","10","<b>Não Se Enquadra nos Criterios: </b><br>Paciente não se enquadra nos critérios do protocolo de atendimento nutricional, foi encaminhada para grupo de perda de peso.","20240813","Avaliaçao nutricionista e-multi"],
   ["747339","1259", "16521","8","<b>Solicitação Indevida: </b><br>sem justificativa","20240802","Ultrassonografia de abdomen total"],
@@ -1070,6 +1074,7 @@ const Solicitacoes_Excluidas = [
   ["748348","717", "12888","16","<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA FILA DE RETORNO.","20240807","Retorno fratura ortopedia"],
   ["748959","1016", "10558","13","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Ausência da descrição de tratamento medicamentoso e fisioterápico instituídos.","20240805","Consulta ortopedista"],
   ["749068","1016", "13219","13","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Ausência de descrição do tratamento medicamentoso e fisioterápico instituídos.","20240805","Consulta ortopedista"],
+  ["749702","1272", "29013","7","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>não é mais necessário, visto já ter sido realizado encaminhamento do dente","20240816","Consulta endodontia"],
   ["749708","1291", "14761","75","<b>Não Se Enquadra nos Criterios: </b><br>Paciente de baixo risco cardiovascular.","20240806","Consulta hipertenso alto risco"],
   ["749793","1260", "8796","81","<b>Não Se Enquadra nos Criterios: </b><br>Quadro de miomatose deve ser lançada na fila GINECOLOGIA POLICLÍNICA.","20240814","Consulta ginecologia CEAE"],
   ["750022","986", "66997","11","<b>Solicitação Indevida: </b><br>teste","20240802","Reabilitaçao física"],
@@ -1081,7 +1086,10 @@ const Solicitacoes_Excluidas = [
   ["751185","1016", "4175","2","<b>Não Se Enquadra nos Criterios: </b><br>Incontinência urinária não se enquadra nos critérios do CEAE. Favor lançar na fila GINECOLOGIA POLICLÍNICA.","20240814","Consulta ginecologia CEAE"],
   ["751207","1200", "22332","10","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor detalhar resultado do último PCCU com a data da realização.","20240813","Consulta ginecologia policlinica"],
   ["751377","1259", "27850","8","<b>Não Se Enquadra nos Criterios: </b><br>Encaminhar para o CER 2, caso não preencha critérios fazer seguimento com E-MULTI.","20240807","Consulta neurologia"],
+  ["751481","320", "33467","78","<b>Não Se Enquadra nos Criterios: </b><br>Não foram observados critérios dentro do protocolo para Diabetes alto risco.","20240815","Consulta diabetes alto risco"],
   ["751722","1132", "2015","10","<b>Não Se Enquadra nos Criterios: </b><br>Paciente encontra-se com HBA1C: 9,6%, devendo ser acompanhada no CEAE de acordo com o protocolo da endocrinologia CEAE item 1.","20240814","Avaliaçao nutricionista e-multi"],
+  ["752186","1317", "24420","3","<b>Não Se Enquadra nos Criterios: </b><br>PACIENTE 83 ANOS, PORTADOR DE HAS, DM INSULINO DEPENDENTE DESCOMPENSADO. <br>EXAMES LABORATORIAIS (22/07): HB:15,9 GL:11130 PLAQ:23500 CREAT:1,14  TFG:64 mL/min/1.73 m²<br>GLICOSE:220 UREIA:28  HbA1C :9,7%<br>NÃO SE ENQUADRA, PORTANTO, NOS CRITÉRIOS DE ENCAMINHAMENTO PARA NUTRIÇÃO EMULTI, SEGUNDO PROTOCOLO CLÍNICO","20240816","Avaliaçao nutricionista e-multi"],
+  ["752729","1291", "16277","75","<b>Não Se Enquadra nos Criterios: </b><br>Não foram identificados critérios dentro do protocolo de Diabetes alto risco.","20240815","Consulta diabetes alto risco"],
   ["752992","1317", "24212","3","<b>Não Se Enquadra nos Criterios: </b><br>ENCAMINHAR PARA AVALIAÇÃO CIRÚRGICA.","20240807","Pequena cirurgia policlinica"],
   ["753349","1272", "20703","7","<b>Não Se Enquadra nos Criterios: </b><br>Não se enquadra nos critérios conforme protocolo do serviço de Psicologia.","20240807","Avaliaçao psicologo e-multi"],
   ["753427","1259", "8410","8","Não Se Enquadra nos Criterios","20240809","Avaliaçao fonoaudiologia e-multi"],
@@ -1099,5 +1107,6 @@ const Solicitacoes_Excluidas = [
   ["756326","320", "18098","78","<b>Solicitação Indevida: </b><br>JA INSERIDO EM FILA DE PEQUENA CIRURGIA.","20240814","Avaliaçao cirurgica policlinica"],
   ["756963","1220", "18380","13","<b>Solicitação Indevida: </b><br>JA SOLICITADO PROCEDIMENTO CORRETO.","20240813","Ultrassonografia de aparelho urinÁrio"],
   ["757138","1267", "67520","8","<b>Não Se Enquadra nos Criterios: </b><br>Quadro de miomatose deve ser lançada na fila GINECOLOGIA POLICLÍNICA.","20240815","Consulta ginecologia CEAE"],
-  ["758293","1220", "38626","13","<b>Não Se Enquadra nos Criterios: </b><br>Quadro de miomatose deve ser lançada na fila GINECOLOGIA POLICLÍNICA.","20240815","Consulta ginecologia CEAE"]
+  ["758293","1220", "38626","13","<b>Não Se Enquadra nos Criterios: </b><br>Quadro de miomatose deve ser lançada na fila GINECOLOGIA POLICLÍNICA.","20240815","Consulta ginecologia CEAE"],
+  ["758565","1291", "8485","75","<b>Não Se Enquadra nos Criterios: </b><br>Paciente caracteriza-se como alto risco para Hipertensão mas não para diabetes.","20240815","Consulta diabetes alto risco"]
 ]

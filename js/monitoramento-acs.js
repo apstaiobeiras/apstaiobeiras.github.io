@@ -1456,3 +1456,4 @@ VisitasDomiciliares[2024][12] = [];
 Mapa[2024][12] = [];
 
 
+window.VisitasDomiciliares = VisitasDomiciliares;
