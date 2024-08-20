@@ -89,7 +89,6 @@ tr td:last-child {
     </table>
 
     <h3><br /></h3>
-    <script src="js/goto.js"></script>
     <script src="js/Profissionais-cadastrados.js"></script>
     <script>
       const Sections = {
@@ -108,7 +107,7 @@ tr td:last-child {
         "Listas e planilhas": [
           ["Lista de prontuários","Veja uma lista dos pacientes agrupados por família e micro-área","lista-prontuario"],
           ["Lista de crianças - Vitamina A de 100 mil UI","Planilha de monitoramento de crianças que receberam ou não a <i>Vitamina A de 100 mil UI</i>","planilhas?script=vitamina-a-100-mil"],
-          ["Lista de crianças - Vitamina A de 200 mil UI","Planilha de monitoramento de crianças que receberam ou não a <i>Vitamina A de 200 mil UI</i>","planilhas?script=vitamina-a-200-mil"],
+          ["Lista de crianças - Vitamina A de 200 mil UI","Planilha de monitoramento de crianças que receberam ou não a <i>Vitamina A de 200 mil UI</i>","planilhas?script=vitamina-A-200-mil"],
         ],
 
         "Solicitações": [
@@ -133,6 +132,9 @@ tr td:last-child {
     </script>
     <script>
 
+      function openPage(link) {
+        location.href = link
+      }
 
       let cbo = "";
       document.getElementById("cod").innerText = localStorage.cod_profissional;
@@ -171,7 +173,7 @@ tr td:last-child {
 
 
           document.getElementById("lista-sessoes").innerHTML+=`
-          <tr class="border tr" onclick="gotoPage('${pagina}.html?${query}');" name="${titulo}" id="${item[0]}">
+          <tr class="border tr" onclick="openPage('${pagina}.html?${query}');" name="${titulo}" id="${item[0]}">
             <td>
               <img src="assets/img/${item[2].split("?")[0]}.png" width="96" />
             </td>

@@ -1068,10 +1068,10 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>DENIZ CAROLINE PEREIRA MARTINS</td>
     <td style="text-align: center;">🔴</td>
     <td style="text-align: center;">🔴</td>
-  </tr><tr class="223 UNIAO 0-varicela 0-triplice 0">
+  </tr><tr class="223 UNIAO 0-varicela 0-triplice 1">
     <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/101379/?workMode=wmBrowse" target=_blank>70700</a></td>
     <td>Brayan Diniz Almeida</td>
-    <td>0 anos e 0 meses</td>
+    <td>1 ano e 0 meses</td>
     <td>20/08/2023</td>
     <td>ALICE DOS SANTOS NETA</td>
     <td style="text-align: center;">🔴</td>
@@ -4052,6 +4052,14 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>RONICLEIA DIAS ROCHA</td>
     <td style="text-align: center;">🔴</td>
     <td style="text-align: center;">🔴</td>
+  </tr><tr class="528 VIVER 0-varicela 0-triplice 0">
+    <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/nil/?workMode=wmBrowse" target=_blank>77222</a></td>
+    <td>Maria Eduarda Santos Neves</td>
+    <td>0 anos e 0 meses</td>
+    <td>15/08/2024</td>
+    <td>CLEIDE MAIRY TORRES DE SOUZA</td>
+    <td style="text-align: center;">🔴</td>
+    <td style="text-align: center;">🔴</td>
   </tr><tr class="1129 CAMINHO 0-varicela 0-triplice 0">
     <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/121809/?workMode=wmBrowse" target=_blank>73677</a></td>
     <td>Maria Eloisa Viana Bergamin</td>
@@ -5124,14 +5132,6 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>MAISA OLIVEIRA BARBOSA</td>
     <td style="text-align: center;">🟢</td>
     <td style="text-align: center;">🟢</td>
-  </tr><tr class="1184 MAIS-SAUDE 0-varicela 0-triplice 0">
-    <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/112223/?workMode=wmBrowse" target=_blank>71911</a></td>
-    <td>Perola Sophia Alves Costa</td>
-    <td>0 anos e 10 meses</td>
-    <td>31/10/2023</td>
-    <td>CINTIA MELGES DE OLIVEIRA COSTA</td>
-    <td style="text-align: center;">🔴</td>
-    <td style="text-align: center;">🔴</td>
   </tr><tr class="315 PROGRESSO 0-varicela 1-triplice 1">
     <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/84946/?workMode=wmBrowse" target=_blank>68409</a></td>
     <td>Perolla Leal Miranda Santos</td>

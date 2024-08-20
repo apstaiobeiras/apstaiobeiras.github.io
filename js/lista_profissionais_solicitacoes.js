@@ -74,6 +74,7 @@ const lista_profissionais_solicitacoes = `
 <option value="1216">MARIA LUIZA MARQUES BARBOSA</option>
 <option value="986">MARIANA FERREIRA ROCHA</option>
 <option value="1218">MARIANA GONçALVES DE QUADROS</option>
+<option value="1068">MARIANA LANZONI</option>
 <option value="1165">MARIETA LOPES DE OLIVEIRA NETA</option>
 <option value="1194">MARILIA FERNANDA PEREIRA MATOS</option>
 <option value="1277">MARINALVA MARTINS FERREIRA</option>
