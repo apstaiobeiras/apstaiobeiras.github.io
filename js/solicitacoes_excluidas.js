@@ -1,4 +1,4 @@
-document.getElementById('atualizacao').textContent = '22/08/2024';
+document.getElementById('atualizacao').textContent = '23/08/2024';
 const Solicitacoes_Excluidas = [
   ["149235","764", "17525","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
   ["152679","764", "25742","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
@@ -1158,5 +1158,6 @@ const Solicitacoes_Excluidas = [
   ["760266","1016", "71450","2","<b>Não Se Enquadra nos Criterios: </b><br>CRIANÇA NÃO APRESENTA CRITÉRIOS PARA ACOMPANHAM,ENTO COM ESPECIALISTA.<br>SEGUIR CALENDARIO DE PUERICULTURA PEDIATRICA.EM OUTROS CASOS, A CIANÇA SÓ DEVE SER ENCAMINHADA AO ESPECIALISTA CONFORME PROTOCOLO DE ACESSO.","20240820","Consulta pediatra policlinica"],
   ["760744","1216", "20108","9","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Conforme protocolo do serviço de Psicologia emulti , dificuldade de aprendizagem não se enquadra nos critérios para atendimento da Psicologia, em relação a ansiedade ,no encaminhamento  não consta quais são os sinais/sintomas, o tempo em que persistem e  os prejuízos funcionais na vida da pessoa.","20240820","Avaliaçao psicologo e-multi"],
   ["761392","320", "5354","78","<b>Não Se Enquadra nos Criterios: </b><br>PACIENTE ATENDDO PELA ORTOPEDIA SUS EM 08/06/2021 (DR. FRANCISCO). <br>O MESMO DEVE SER ENCAMINHADO A NIVEL DE PRIMEIRA CONSULTA, APRESENTANDO DETALHAMENTO CLÍNICO E CONDUTA PERANTE O QUADRO QUE O MESMO APRESENTA.GRATA.","20240820","Consulta ortopedista"],
+  ["761421","1259", "73309","8","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>falta detalhar queixa.","20240822","Ultrassonografia de abdomen total"],
   ["761748","1258", "1456","34","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever resultado com data de realização, o último resultado de PCCU realizado pela paciente para prosseguir com agendamento.Att.","20240822","Consulta ginecologia policlinica"]
 ]
