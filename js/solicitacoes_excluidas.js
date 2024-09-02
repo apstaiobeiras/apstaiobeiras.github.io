@@ -1,4 +1,4 @@
-document.getElementById('atualizacao').textContent = '30/08/2024';
+document.getElementById('atualizacao').textContent = '02/09/2024';
 const Solicitacoes_Excluidas = [
   ["149235","764", "17525","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
   ["152679","764", "25742","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
@@ -1121,6 +1121,7 @@ const Solicitacoes_Excluidas = [
   ["748959","1016", "10558","13","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Ausência da descrição de tratamento medicamentoso e fisioterápico instituídos.","20240805","Consulta ortopedista"],
   ["749068","1016", "13219","13","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Ausência de descrição do tratamento medicamentoso e fisioterápico instituídos.","20240805","Consulta ortopedista"],
   ["749073","1016", "13220","13","<b>Não Se Enquadra nos Criterios: </b><br>As seguintes situações são indicativas de encaminhamento para Endocrinologia:<br>• suspeita de hipotireoidismo central (TSH normal ou baixo e T4-livre ou T4 total diminuído);<br>• dificuldade de obter resposta terapêutica apesar de boa adesão ao tratamento em paciente que<br>necessita de doses de levotiroxina maiores que 2,5 mcg/kg/dia.NESTE CASO, MONITORAR SEMESTRALMENTE O TSH E T4L,  ALÉM DAS OUTRAS COMORBIDADES, SINAIS E SINTOMAS,","20240819","Consulta endocrinologia"],
+  ["749272","1016", "19759","13","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>complemente a descrição com dados clinicos e da propedeutica realizada. Tratamento, fisioterapia, etc...","20240830","Consulta ortopedista"],
   ["749302","1193", "47889","56","<b>Não Se Enquadra nos Criterios: </b><br>PACIENTE NÃO APRESENTA CRITÉRIOS DE ENCAMINHAMENTO PARA AVALIAÇÃO COM OUTRO PROFISSIONAL ORTOPEDISTA, UMA VEZ QUE O MESMO JÁ FOI AVALIADO POR ESPECIALISTA DA REDE E ABORDADO CONDUTA. RESSSALTA-SE QUE NA REDE SUS, NÃO SE JUSTIFICA ENCAMINHAMENTOS A UM NOVO ESPECISLISTA PARA \"\"SEGUNDA OPINIÃO\"\".","20240820","Consulta ortopedista"],
   ["749702","1272", "29013","7","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>não é mais necessário, visto já ter sido realizado encaminhamento do dente","20240816","Consulta endodontia"],
   ["749708","1291", "14761","75","<b>Não Se Enquadra nos Criterios: </b><br>Paciente de baixo risco cardiovascular.","20240806","Consulta hipertenso alto risco"],
@@ -1208,8 +1209,10 @@ const Solicitacoes_Excluidas = [
   ["765028","1328", "26645","78","<b>Solicitação Indevida: </b><br>SOLICITADO EXCLUSÃO. SOLICITAÇÃO INSERIDA EM NOME DE USUÁRIO INADEQUADO.","20240829","Pequena cirurgia policlinica"],
   ["765220","1132", "30893","10","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>A paciente é hipertensa?","20240827","Consulta hipertenso alto risco"],
   ["765767","1243", "48508","9","<b>Não Se Enquadra nos Criterios: </b><br>O quadro de psoríase não perfaz critério para acompanhamento psicológico individualizado, segundo protocolo do município. ","20240828","Avaliaçao psicologo e-multi"],
+  ["766289","354", "17856","9","<b>Solicitação Indevida: </b><br>Quadro de incontinência urinária deve ser lançada na fila de espera da GINECOLOGIA POLICLÍNICA.","20240830","Consulta ginecologia CEAE"],
   ["766372","1200", "537","10","<b>Não Se Enquadra nos Criterios: </b><br>Paciente não enquadra nos critérios para atendimento individual, dessa forma estarei encaminhando para o atendimento em grupo (grupo perda de peso).","20240829","Avaliaçao nutricionista e-multi"],
   ["766924","736", "24824","68","<b>Agendar na Atenção Primaria: </b><br>AVALAIR QUEIXA NA APS, INVESTIGAR E ACM ENCAMINHAR COM JUSTIFICATIVA ADEQUADA.","20240828","Consulta gastroenterologia"],
+  ["767078","986", "4561","11","Agendar na Atenção Primaria","20240830","Fisioterapia - paciente disturbio neuro"],
   ["767938","354", "34071","9","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>No encaminhamento não consta os sinais/sintomas da ansiedade e quais são os prejuízos funcionais na vida da pessoa, o tempo descrito é de 15 dias e não se enquadra nos critérios de tempo mínimo conforme protocolo do serviço. ","20240830","Avaliaçao psicologo e-multi"],
   ["768442","907", "51748","9","<b>Não Se Enquadra nos Criterios: </b><br>Conforme Protocolo do serviço de Psicologia , e a descrição do encaminhamento,  pacientes com hipótese diagnóstica de TEA, devem ser encaminhadas para atendimento no serviço especializado no CER II e/ou no CAPSI do município. ","20240830","Avaliaçao psicologo e-multi"]
 ]
