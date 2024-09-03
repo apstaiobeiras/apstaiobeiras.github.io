@@ -3404,6 +3404,14 @@ const tabelaTripliceVariceta = `<label>Mostrar apenas da equipe <select id="equi
     <td>LUZINETE APARECIDA OLIVEIRA MEIRELES</td>
     <td style="text-align: center;">🟢</td>
     <td style="text-align: center;">🟢</td>
+  </tr><tr class="550 MAIS-SAUDE 0-varicela 0-triplice 0">
+    <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/nil/?workMode=wmBrowse" target=_blank>75486</a></td>
+    <td>Leandro Teixeira Dos Santos</td>
+    <td>0 anos e 5 meses</td>
+    <td>29/04/2024</td>
+    <td>CLEIDIANE DOS SANTOS MEIRELES</td>
+    <td style="text-align: center;">🔴</td>
+    <td style="text-align: center;">🔴</td>
   </tr><tr class="1134 RENASCER 1-varicela 2-triplice 1">
     <td style="text-align: right;"><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/68403/?workMode=wmBrowse" target=_blank>64840</a></td>
     <td>Levi de Oliveira Ferreira</td>

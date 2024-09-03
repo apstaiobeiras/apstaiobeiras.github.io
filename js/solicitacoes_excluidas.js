@@ -1235,5 +1235,6 @@ const Solicitacoes_Excluidas = [
   ["769420","1259", "17701","8","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever as medicações em uso e posologia para prosseguir com agendamento.Att.","20240902","Consulta hipertenso alto risco"],
   ["769641","1243", "32415","9","Não Se Enquadra nos Criterios","20240902","Avaliaçao psicologo e-multi"],
   ["769672","1016", "1519","13","<b>Não Se Enquadra nos Criterios: </b><br>Favor encaminhar na fila Ginecologia Policlínica e descrever com data o último resultado de PCCU realizado pela paciente.Att.","20240902","Consulta ginecologia CEAE"],
-  ["769767","1260", "68468","81","<b>Não Se Enquadra nos Criterios: </b><br>Favor encaminhar na fila Ginecologia Policlínica.Att.","20240902","Consulta ginecologia CEAE"]
+  ["769767","1260", "68468","81","<b>Não Se Enquadra nos Criterios: </b><br>Favor encaminhar na fila Ginecologia Policlínica.Att.","20240902","Consulta ginecologia CEAE"],
+  ["770444","1192", "71500","16","<b>Solicitação Indevida: </b><br>INSERIDA EM NOME INCORRETO.","20240903","Consulta endocrinologia"]
 ]
