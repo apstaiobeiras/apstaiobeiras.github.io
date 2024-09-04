@@ -1,4 +1,4 @@
-document.getElementById('atualizacao').textContent = '03/09/2024';
+document.getElementById('atualizacao').textContent = '04/09/2024';
 const Solicitacoes_Excluidas = [
   ["149235","764", "17525","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
   ["152679","764", "25742","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
@@ -1046,6 +1046,7 @@ const Solicitacoes_Excluidas = [
   ["739614","1016", "4816","2","<b>Não Se Enquadra nos Criterios: </b><br>Favor encaminhar na fila da GINECOLOGIA POLICLÍNICA e descrever resultado do último PCCU com a data de realização.","20240724","Consulta ginecologia CEAE"],
   ["739622","907", "28167","9","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever resultado do último PCCU com data, realizado pela paciente para prosseguir com agendamento.Att.","20240718","Consulta ginecologia policlinica"],
   ["739705","1193", "11669","56","<b>Não Se Enquadra nos Criterios: </b><br>PARA IDOSO, O TRATAMENTO DO HIPOTIREOIDISMO SÓ É INDICADO QUANDO TSH> 10,0 E ESTANDO COM SINTOMAS CLÍNICOS. NESTE CASO, MONITORE TRIMESTRALMENTE COM TSH. ALEM DE MONITORAR O RCV.","20240819","Consulta endocrinologia"],
+  ["740446","474", "5600","18","<b>Solicitação Indevida: </b><br>Rever a solicitação.","20240903","Monitorizacao ambulatorial de pressao arterial (m.a.p.a)"],
   ["740621","1267", "30475","8","<b>Não Se Enquadra nos Criterios: </b><br>Favor encaminhar na fila de gestante alto risco. Att.","20240719","Consulta ginecologia policlinica"],
   ["740626","758", "22569","16","<b>Solicitação Indevida: </b><br>REINSERIDO COM DEFINIÇÃO DE ORTOPEDISTA.","20240820","Retorno consulta ortopedista"],
   ["740692","1221", "36282","4","<b>Não Se Enquadra nos Criterios: </b><br>Deve ser indicado avaliação cirúrgica.","20240807","Pequena cirurgia policlinica"],
@@ -1158,6 +1159,7 @@ const Solicitacoes_Excluidas = [
   ["752992","1317", "24212","3","<b>Não Se Enquadra nos Criterios: </b><br>ENCAMINHAR PARA AVALIAÇÃO CIRÚRGICA.","20240807","Pequena cirurgia policlinica"],
   ["752997","1259", "22169","8","<b>Solicitação Indevida: </b><br>CONFORME PACTUADO, PACIENTES QUE APRESENTEM EVIDENCIA DE FRATURA NÃO DEVEM SER INSERIDOS EM FILA AMBULATORIAL. A SOLICITAÇÃO DEVE SER FEITA MANUALMENTE E O PACIENTE DEVE SER REFERENCIADO A SECRETARIA DE SAÚDE PARA AGENDAMENTO DO ATENDIMENTO NO AMBULATÓRIO DE FRATURA, POR SE TRATAR DE QUADRO PRIORITARIO.PACIENTE JA AGENDADO EM AMBULATORIO DE FRATURA PELA REGULAÇÃO.","20240820","Consulta ortopedista"],
   ["753199","1194", "45516","6","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>AUSÊNCIA DE CONTEÚDO DESCRITIVO MÍNIMO. REVER DOSES DAS MEDICAÇÕES, PRINCIPALEMNTE GLICAZIDA. VIDE PROTOCOLO DE TRATAMENTO DO DM TIPO 2 DO TELESSAÚDE.","20240819","Consulta endocrinologia"],
+  ["753293","1016", "11724","13","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Deve fazer investigação para diagnóstico diferencial.","20240903","Consulta ortopedista"],
   ["753315","1239", "33030","3","<b>Não Se Enquadra nos Criterios: </b><br>MÃE ORIENTADA DA RETIRADA DO PACIENTE DA LISTA DE ESPERA.","20240902","Avaliaçao fonoaudiologia e-multi"],
   ["753349","1272", "20703","7","<b>Não Se Enquadra nos Criterios: </b><br>Não se enquadra nos critérios conforme protocolo do serviço de Psicologia.","20240807","Avaliaçao psicologo e-multi"],
   ["753427","1259", "8410","8","Não Se Enquadra nos Criterios","20240809","Avaliaçao fonoaudiologia e-multi"],
@@ -1170,6 +1172,8 @@ const Solicitacoes_Excluidas = [
   ["754140","884", "74443","3","<b>Não Se Enquadra nos Criterios: </b><br>PACIENTE É GESTANTE DE ALTO RISCO E JÁ FAZ ACOMPANHAMENTO NO CEAE.","20240809","Avaliaçao nutricionista e-multi"],
   ["754214","1258", "58098","34","<b>Não Se Enquadra nos Criterios: </b><br>Pediatria alto risco atende crianças com faixa etária até  11 anos 11 meses e 29 dias.Att.","20240826","Consulta pediatria alto risco"],
   ["754517","1216", "11079","9","<b>Não Se Enquadra nos Criterios: </b><br>Quadro de endometriose deve ser lançado na fila GINECOLOGIA POLICLÍNICA.","20240815","Consulta ginecologia CEAE"],
+  ["754687","1342", "31111","34","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Deve descrever os resultados dos exames realizados para a investigação. Além de tratamento iniciado.","20240903","Consulta ortopedista"],
+  ["754819","1016", "12188","2","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Descrever  a propedêutica realizada para diagnóstico diferencial ","20240903","Consulta ortopedista"],
   ["754879","1132", "2675","10","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data os últimos resultados de exames bioquímicos realizados pelo paciente para prosseguir com agendamento.Att.","20240809","Consulta hipertenso alto risco"],
   ["754934","986", "39442","11","<b>Solicitação Indevida: </b><br>K","20240809","Reabilitaçao física"],
   ["755041","829", "6798","7","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever os últimos resultados de exames bioquímicos com data realizados pelo paciente para prosseguir com agendamento.Att. ","20240809","Consulta hipertenso alto risco"],
@@ -1199,6 +1203,7 @@ const Solicitacoes_Excluidas = [
   ["759382","740", "52995","11","Agendar na Atenção Primaria","20240828","Acolhimento de fisioterapia"],
   ["759758","1342", "9385","3","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data os últimos exames bioquímicos realizados pelo paciente para prosseguir com agendamento.Att.","20240820","Consulta hipertenso alto risco"],
   ["759763","1259", "6273","8","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>A correção sugere plástica, nas pequenas cirurgias não realiza. Complemente os dados clínicos.","20240826","Pequena cirurgia policlinica"],
+  ["759766","1259", "36195","8","<b>Não Se Enquadra nos Criterios: </b><br>Paciente com diagnóstico clínico de TEA receberão seguimento do acompanhamento nutricional na APS que forem egressos do Centro Especializado em Reabilitação (CER) de acordo com item 10 do protocolo de encaminhamento para equipes multiprofissionais na APS - Nutrição ","20240903","Avaliaçao nutricionista e-multi"],
   ["760039","72", "45565","206","<b>Não Se Enquadra nos Criterios: </b><br>Paciente com diagnóstico de autismo com nível de suporte -I","20240828","Reabilitaçao intelectual"],
   ["760132","1101", "74483","34","<b>Solicitação Indevida: </b><br>Farei nova solicitação.","20240819","Tratamento endodôntico de dente permanente com três ou mais raízes"],
   ["760255","1016", "60757","2","<b>Não Se Enquadra nos Criterios: </b><br>AVALIAR CRITERIOS DE ACESSO A REALIBILITAÇÃO INTELECTUAL.","20240820","Consulta pediatra policlinica"],
@@ -1236,5 +1241,9 @@ const Solicitacoes_Excluidas = [
   ["769641","1243", "32415","9","Não Se Enquadra nos Criterios","20240902","Avaliaçao psicologo e-multi"],
   ["769672","1016", "1519","13","<b>Não Se Enquadra nos Criterios: </b><br>Favor encaminhar na fila Ginecologia Policlínica e descrever com data o último resultado de PCCU realizado pela paciente.Att.","20240902","Consulta ginecologia CEAE"],
   ["769767","1260", "68468","81","<b>Não Se Enquadra nos Criterios: </b><br>Favor encaminhar na fila Ginecologia Policlínica.Att.","20240902","Consulta ginecologia CEAE"],
-  ["770444","1192", "71500","16","<b>Solicitação Indevida: </b><br>INSERIDA EM NOME INCORRETO.","20240903","Consulta endocrinologia"]
+  ["770026","1342", "26472","3","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever último resultado de PCCU realizado pela paciente com data para prosseguir com agendamento.Att.","20240903","Consulta ginecologia policlinica"],
+  ["770444","1192", "71500","16","<b>Solicitação Indevida: </b><br>INSERIDA EM NOME INCORRETO.","20240903","Consulta endocrinologia"],
+  ["770524","1277", "51785","4","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor encaminhar na fila Ginecologia Policlínica e constar o último resultado de PCCU com data, realizado pela paciente.Att.","20240903","Consulta ginecologia CEAE"],
+  ["770791","1291", "2895","75","<b>Não Se Enquadra nos Criterios: </b><br>O atendimento é para o hipertenso alto risco, a classificação da paciente é risco baixo a moderado. Sugiro solicitar ECG, caso alterado, reencaminhar.Att.","20240903","Consulta hipertenso alto risco"],
+  ["770880","907", "15382","9","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever último resultado de PCCU realizado pela paciente com data para prosseguir com agendamento.Att.","20240903","Consulta ginecologia policlinica"]
 ]
