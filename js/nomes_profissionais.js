@@ -4,6 +4,7 @@ nomeProfissional['671'] = 'ADIMAR BANDEIRA DA SILVA ';
 nomeProfissional['320'] = 'ADRIANA RAYSSA TELES COLARES';
 nomeProfissional['1160'] = 'ALAN CARLOS FERREIRA CHAVES ';
 nomeProfissional['287'] = 'ALCY MENDES';
+nomeProfissional['1317'] = 'ALEXYA STEPHANY RIBEIRO CARDOSO';
 nomeProfissional['223'] = 'ALICE DOS SANTOS NETA';
 nomeProfissional['489'] = 'ALINE DE JESUS SILVA';
 nomeProfissional['1202'] = 'ALINE NAYARA RODRIGUES';
