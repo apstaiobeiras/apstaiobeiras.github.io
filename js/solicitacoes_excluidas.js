@@ -1,4 +1,4 @@
-document.getElementById('atualizacao').textContent = '09/09/2024';
+document.getElementById('atualizacao').textContent = '10/09/2024';
 const Solicitacoes_Excluidas = [
   ["149235","764", "17525","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
   ["152679","764", "25742","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
@@ -7,6 +7,7 @@ const Solicitacoes_Excluidas = [
   ["202396","909", "28712","3","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor reavaliar paciente, caso haja critério para investigação, reencaminhe.","20240611","Anuscopia / retoscopia"],
   ["205778","72", "18184","16","Não Se Enquadra nos Criterios","20240809","Avaliaçao fonoaudiologia e-multi"],
   ["214451","909", "29731","3","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor reavaliar paciente, caso haja critério para investigação, reencaminhe.","20240611","Anuscopia / retoscopia"],
+  ["239013","909", "47214","3","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>rever queixa e descrição clínica com maior detalhamento faz-se necessário.","20240909","Endoscopia com biopsia / pesquisa <i>H. Piloly</i>"],
   ["257763","849", "21283","56","Não Se Enquadra nos Criterios","20240408","Avaliaçao fisioterapeuta NASF APS - mirian"],
   ["257820","1106", "33252","3","Não Se Enquadra nos Criterios","20240408","Avaliaçao fisioterapeuta NASF APS - mirian"],
   ["257918","52", "26905","78","<b>Não Se Enquadra nos Criterios: </b><br>CONTATO TELEFÔNICO DIA 27/02/24 DENTE QUEBROU","20240227","Tratamento endodôntico de dente permanente com três ou mais raízes"],
@@ -1204,6 +1205,7 @@ const Solicitacoes_Excluidas = [
   ["756963","1220", "18380","13","<b>Solicitação Indevida: </b><br>JA SOLICITADO PROCEDIMENTO CORRETO.","20240813","Ultrassonografia de aparelho urinÁrio"],
   ["757138","1267", "67520","8","<b>Não Se Enquadra nos Criterios: </b><br>Quadro de miomatose deve ser lançada na fila GINECOLOGIA POLICLÍNICA.","20240815","Consulta ginecologia CEAE"],
   ["757172","1258", "46215","34","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Descrição clínica insuficiente, sugiro investigar sinais de alerta, na abordagem da queixa de forma global.","20240904","Consulta ortopedista"],
+  ["757238","1259", "11957","8","<b>Não Se Enquadra nos Criterios: </b><br>sem justificativa!","20240909","Ultrassonografia transvaginal"],
   ["757264","1259", "29442","8","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Descrição clínica insuficiente, sugiro investigar sinais de alerta, na abordagem da queixa de forma global em associação com fisioterapia. E seguir com propedêutica complementar para diagnostico diferencial. ","20240904","Consulta ortopedista"],
   ["757483","1193", "23378","56","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Descrição clínica insuficiente, sugiro investigar sinais de alerta, na abordagem da queixa de forma global em associação com fisioterapia. E seguir com propedêutica complementar para diagnostico diferencial. ","20240904","Consulta ortopedista"],
   ["757562","1132", "11590","10","<b>Não Se Enquadra nos Criterios: </b><br>Sugiro abordagem da queixa de forma global, com fisioterapia associada e MEV. Não foi descrito sinais de alarme, deve ser preccnizado otimizar tratamento para osteoartrose.","20240904","Consulta ortopedista"],
@@ -1246,6 +1248,7 @@ const Solicitacoes_Excluidas = [
   ["761421","1259", "73309","8","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>falta detalhar queixa.","20240822","Ultrassonografia de abdomen total"],
   ["761630","1272", "14063","7","<b>Não Se Enquadra nos Criterios: </b><br>Lançamento errado do dente a ser realizado o tratamento.","20240905","Tratamento endodôntico de dente permanente birradicular"],
   ["761748","1258", "1456","34","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever resultado com data de realização, o último resultado de PCCU realizado pela paciente para prosseguir com agendamento.Att.","20240822","Consulta ginecologia policlinica"],
+  ["761809","507", "18629","2","<b>Solicitação Indevida: </b><br>SOLICITAÇÕES PARA AVALIAÇÃO DE FRATURA NÃO PRECISAM SER INSERIDAS EM FILA DE ESPERA. REALIZAR SOLICITAÇÃO MANUAL E PEDIR AO PACIENTE PARA COMPARECER NA SMS PARA AGENDAMENTO. ENTRADO EM CONTATO COM PACIENTE E AGENDADO AVALIAÇÃO NO AMBULATORIO DE FRATURA","20240909","Consulta ortopedista"],
   ["762053","1260", "24656","81","<b>Não Se Enquadra nos Criterios: </b><br>CRIANÇA NÃO ATENDE CRITERIOS DE PEDIATRIA AMBULATORIAL/ALTO RISCO.VIDE CRITÉRIOS DE ENCAMINHAMENTO AO CER.","20240827","Consulta pediatra policlinica"],
   ["762314","1259", "7678","8","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>SUGERE HASHIMOTO, CASO TSH ESTEJA NORMAL COM ESSA DOSE DE PURAN, PODE FAZER SEGUIMENTO NA APS. VERIFIQUE A CONDIÇÃO CLÍNICA,  DISCUTA DIRETAMENTE COM ENDOCRINO PELO TELESSAÚDE TBM.","20240904","Consulta endocrinologia"],
   ["762873","1317", "13121","3","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>PACIENTE TEM INDICAÇÃO DE OTIMIZAR TERAPÊUTICA, DISCUTIR NA TELESSAUDE E AVALIAR PROTOCOLO DE TRATAMENTO PARA DM.","20240904","Consulta endocrinologia"],
@@ -1262,6 +1265,7 @@ const Solicitacoes_Excluidas = [
   ["764780","222", "370","33","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Qual a data do USO?","20240826","Consulta gestante alto risco"],
   ["765028","1328", "26645","78","<b>Solicitação Indevida: </b><br>SOLICITADO EXCLUSÃO. SOLICITAÇÃO INSERIDA EM NOME DE USUÁRIO INADEQUADO.","20240829","Pequena cirurgia policlinica"],
   ["765220","1132", "30893","10","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>A paciente é hipertensa?","20240827","Consulta hipertenso alto risco"],
+  ["765228","1219", "29017","33","<b>Solicitação Indevida: </b><br>PACIENTES QUE APRESENTEM EVIDÊNCIA DE FRATURA DEVEM SER ENCAMINHADOS MANUALMENTE PARA A SECRETARIA DE SAÚDE PARA AGENDAMENTO DE CONSULTA NO AMBULATORIO DE FRATURA, NÃO AGUARDAR EM FILA DE ESPERA. JA REALIZADO CONTATO COM USUARIO E AGENDAMENTO.","20240909","Consulta ortopedista"],
   ["765767","1243", "48508","9","<b>Não Se Enquadra nos Criterios: </b><br>O quadro de psoríase não perfaz critério para acompanhamento psicológico individualizado, segundo protocolo do município. ","20240828","Avaliaçao psicologo e-multi"],
   ["766186","1219", "32816","33","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>FAZER ESTRATIFICAÇÃO DE RCV, ENQUADRA NO SERVIÇO DE ALTO RISCO - CEAE?","20240904","Consulta endocrinologia"],
   ["766289","354", "17856","9","<b>Solicitação Indevida: </b><br>Quadro de incontinência urinária deve ser lançada na fila de espera da GINECOLOGIA POLICLÍNICA.","20240830","Consulta ginecologia CEAE"],
