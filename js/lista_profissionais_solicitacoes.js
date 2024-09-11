@@ -71,6 +71,7 @@ const lista_profissionais_solicitacoes = `
 <option value="1101">MARCIA CRISTINA SOUZA DE ALMEIDA</option>
 <option value="18">MARCIA MARTINS FREIRE MENDES</option>
 <option value="806">MARCIO ANDRE FERNANDES TEIXEIRA</option>
+<option value="1231">MARCOS LEANDRO BARBOSA</option>
 <option value="1220">MARIA BETANIA LESSA COELHO LAMOUNIER</option>
 <option value="1216">MARIA LUIZA MARQUES BARBOSA</option>
 <option value="986">MARIANA FERREIRA ROCHA</option>

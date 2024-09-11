@@ -176,14 +176,14 @@ const tabelaVitamina= `<label>Mostrar apenas da equipe
     <td>GEYSA MINELY SOUZA</td>
     <td style="text-align: center;">🔴</td>
   </tr>
-  <tr class="SIM VIVER 581">
+  <tr class="NÃO VIVER 581">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/109139/?workMode=wmBrowse" target=_blank>71548</a></td>
     <td>Analiz Jorge Lacerda</td>
     <td>11/10/2023</td>
     <td>VIVER</td>
     <td  style="text-align: center;">11 meses</td>
     <td>JESSICA ANA DE JESUS</td>
-    <td style="text-align: center;">🟢</td>
+    <td style="text-align: center;">🔴</td>
   </tr>
   <tr class="NÃO MAIS-SAUDE 1184">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/119970/?workMode=wmBrowse" target=_blank>72619</a></td>
@@ -320,14 +320,14 @@ const tabelaVitamina= `<label>Mostrar apenas da equipe
     <td>DAIANE ALVES</td>
     <td style="text-align: center;">🔴</td>
   </tr>
-  <tr class="SIM HARMONIA 540">
+  <tr class="NÃO HARMONIA 540">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/120055/?workMode=wmBrowse" target=_blank>72665</a></td>
     <td>Benicio Manoel Oliveira Dias</td>
     <td>07/12/2023</td>
     <td>HARMONIA</td>
     <td  style="text-align: center;">9 meses</td>
     <td>KAMILA MARIA PEREIRA</td>
-    <td style="text-align: center;">🟢</td>
+    <td style="text-align: center;">🔴</td>
   </tr>
   <tr class="SIM UNIAO 548">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/121169/?workMode=wmBrowse" target=_blank>73156</a></td>
@@ -374,14 +374,14 @@ const tabelaVitamina= `<label>Mostrar apenas da equipe
     <td>JESSICA ANA DE JESUS</td>
     <td style="text-align: center;">🔴</td>
   </tr>
-  <tr class="SIM HARMONIA 376">
+  <tr class="NÃO HARMONIA 376">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/120342/?workMode=wmBrowse" target=_blank>72786</a></td>
     <td>Bryan Santos Oliveira</td>
     <td>17/12/2023</td>
     <td>HARMONIA</td>
     <td  style="text-align: center;">9 meses</td>
     <td>WANESSA MOREIRA DE SOUZA</td>
-    <td style="text-align: center;">🟢</td>
+    <td style="text-align: center;">🔴</td>
   </tr>
   <tr class="NÃO PROGRESSO 1130">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/122503/?workMode=wmBrowse" target=_blank>74211</a></td>
@@ -527,14 +527,14 @@ const tabelaVitamina= `<label>Mostrar apenas da equipe
     <td>JEYSLANE MENDES DE OLIVEIRA</td>
     <td style="text-align: center;">🔴</td>
   </tr>
-  <tr class="SIM ESPETACULAR 1123">
+  <tr class="NÃO ESPETACULAR 1123">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/112114/?workMode=wmBrowse" target=_blank>71896</a></td>
     <td>Emanuel Dos Santos Costa</td>
     <td>02/11/2023</td>
     <td>ESPETACULAR</td>
     <td  style="text-align: center;">10 meses</td>
     <td>MIKAELY CRISTINA SOUZA</td>
-    <td style="text-align: center;">🟢</td>
+    <td style="text-align: center;">🔴</td>
   </tr>
   <tr class="NÃO PROGRESSO 254">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/115293/?workMode=wmBrowse" target=_blank>72198</a></td>
@@ -554,14 +554,14 @@ const tabelaVitamina= `<label>Mostrar apenas da equipe
     <td>NORMA TRANCOSO VIANA</td>
     <td style="text-align: center;">🔴</td>
   </tr>
-  <tr class="SIM PROGRESSO 599">
+  <tr class="NÃO PROGRESSO 599">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/121604/?workMode=wmBrowse" target=_blank>73500</a></td>
     <td>Estevao Rodrigues Greco</td>
     <td>27/01/2024</td>
     <td>PROGRESSO</td>
     <td  style="text-align: center;">8 meses</td>
     <td>FELIPE LOPES SANTOS</td>
-    <td style="text-align: center;">🟢</td>
+    <td style="text-align: center;">🔴</td>
   </tr>
   <tr class="SIM PROGRESSO 219">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/120180/?workMode=wmBrowse" target=_blank>72721</a></td>
@@ -887,14 +887,14 @@ const tabelaVitamina= `<label>Mostrar apenas da equipe
     <td>CLEIDE MAIRY TORRES DE SOUZA</td>
     <td style="text-align: center;">🔴</td>
   </tr>
-  <tr class="NÃO CAMINHO 1129">
+  <tr class="SIM CAMINHO 1129">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/114608/?workMode=wmBrowse" target=_blank>72123</a></td>
     <td>Jose Lopes Barbosa</td>
     <td>07/11/2023</td>
     <td>CAMINHO</td>
     <td  style="text-align: center;">10 meses</td>
     <td>DENIZ CAROLINE PEREIRA MARTINS</td>
-    <td style="text-align: center;">🔴</td>
+    <td style="text-align: center;">🟢</td>
   </tr>
   <tr class="NÃO ESPERANÇA 1120">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/nil/?workMode=wmBrowse" target=_blank>75693</a></td>
@@ -905,14 +905,14 @@ const tabelaVitamina= `<label>Mostrar apenas da equipe
     <td>RAYANNE CHAVES MOREIRA</td>
     <td style="text-align: center;">🔴</td>
   </tr>
-  <tr class="NÃO PROGRESSO 254">
+  <tr class="SIM PROGRESSO 254">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/115620/?workMode=wmBrowse" target=_blank>72236</a></td>
     <td>Jose Rafael Neres de Almeida</td>
     <td>15/11/2023</td>
     <td>PROGRESSO</td>
     <td  style="text-align: center;">10 meses</td>
     <td>IRANI MENDES ALVES OLIVEIRA</td>
-    <td style="text-align: center;">🔴</td>
+    <td style="text-align: center;">🟢</td>
   </tr>
   <tr class="NÃO VIDA-E-SAUDE 439">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/120536/?workMode=wmBrowse" target=_blank>72850</a></td>
@@ -995,14 +995,14 @@ const tabelaVitamina= `<label>Mostrar apenas da equipe
     <td>LEISIANE ALVES RIBEIRO</td>
     <td style="text-align: center;">🟢</td>
   </tr>
-  <tr class="SIM VIVER 441">
+  <tr class="NÃO VIVER 441">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/120544/?workMode=wmBrowse" target=_blank>72857</a></td>
     <td>Lavinia Alves Miranda</td>
     <td>23/12/2023</td>
     <td>VIVER</td>
     <td  style="text-align: center;">9 meses</td>
     <td>MAGDA ROSA DOS SANTOS</td>
-    <td style="text-align: center;">🟢</td>
+    <td style="text-align: center;">🔴</td>
   </tr>
   <tr class="NÃO VIDA 743">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/121557/?workMode=wmBrowse" target=_blank>73459</a></td>
@@ -1049,14 +1049,14 @@ const tabelaVitamina= `<label>Mostrar apenas da equipe
     <td>NAGILA MARIA DOS SANTOS</td>
     <td style="text-align: center;">🔴</td>
   </tr>
-  <tr class="SIM VIVER 581">
+  <tr class="NÃO VIVER 581">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/108832/?workMode=wmBrowse" target=_blank>71502</a></td>
     <td>Luan Farias Mendes</td>
     <td>09/10/2023</td>
     <td>VIVER</td>
     <td  style="text-align: center;">11 meses</td>
     <td>JESSICA ANA DE JESUS</td>
-    <td style="text-align: center;">🟢</td>
+    <td style="text-align: center;">🔴</td>
   </tr>
   <tr class="NÃO CAMINHO 374">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/123282/?workMode=wmBrowse" target=_blank>74783</a></td>
@@ -1112,14 +1112,14 @@ const tabelaVitamina= `<label>Mostrar apenas da equipe
     <td>KAMILA MARIA PEREIRA</td>
     <td style="text-align: center;">🔴</td>
   </tr>
-  <tr class="SIM ESPETACULAR 1234">
+  <tr class="NÃO ESPETACULAR 1234">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/108876/?workMode=wmBrowse" target=_blank>71513</a></td>
     <td>Maite Sofia Soares Santos</td>
     <td>07/10/2023</td>
     <td>ESPETACULAR</td>
     <td  style="text-align: center;">11 meses</td>
     <td>MIRIAN DIAS MOREIRA ALVES</td>
-    <td style="text-align: center;">🟢</td>
+    <td style="text-align: center;">🔴</td>
   </tr>
   <tr class="NÃO COMUNIDADES-RURAIS 492">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/122449/?workMode=wmBrowse" target=_blank>74172</a></td>
@@ -1130,14 +1130,14 @@ const tabelaVitamina= `<label>Mostrar apenas da equipe
     <td>JAAZIEL MOREIRA SANTOS</td>
     <td style="text-align: center;">🔴</td>
   </tr>
-  <tr class="NÃO VIDA 170">
+  <tr class="SIM VIDA 170">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/116657/?workMode=wmBrowse" target=_blank>72316</a></td>
     <td>Maria Alice Pereira Dos Santos</td>
     <td>20/11/2023</td>
     <td>VIDA</td>
     <td  style="text-align: center;">10 meses</td>
     <td>GISLENE FERREIRA BARBOSA</td>
-    <td style="text-align: center;">🔴</td>
+    <td style="text-align: center;">🟢</td>
   </tr>
   <tr class="NÃO MAIS-SAUDE 550">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/121178/?workMode=wmBrowse" target=_blank>73165</a></td>
@@ -1184,14 +1184,14 @@ const tabelaVitamina= `<label>Mostrar apenas da equipe
     <td>DENIZ CAROLINE PEREIRA MARTINS</td>
     <td style="text-align: center;">🔴</td>
   </tr>
-  <tr class="NÃO CAMINHO 1129">
+  <tr class="SIM CAMINHO 1129">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/121293/?workMode=wmBrowse" target=_blank>73227</a></td>
     <td>Maria Isis Souza Oliveira</td>
     <td>14/01/2024</td>
     <td>CAMINHO</td>
     <td  style="text-align: center;">8 meses</td>
     <td>DENIZ CAROLINE PEREIRA MARTINS</td>
-    <td style="text-align: center;">🔴</td>
+    <td style="text-align: center;">🟢</td>
   </tr>
   <tr class="NÃO ESPETACULAR 120">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/121172/?workMode=wmBrowse" target=_blank>73159</a></td>
@@ -1265,14 +1265,14 @@ const tabelaVitamina= `<label>Mostrar apenas da equipe
     <td>IVANILDE MARIA DO NASCIMENTO</td>
     <td style="text-align: center;">🔴</td>
   </tr>
-  <tr class="SIM HARMONIA 1125">
+  <tr class="NÃO HARMONIA 1125">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/120174/?workMode=wmBrowse" target=_blank>72715</a></td>
     <td>Maya Silveira Costa</td>
     <td>23/11/2023</td>
     <td>HARMONIA</td>
     <td  style="text-align: center;">10 meses</td>
     <td>JEYSLANE MENDES DE OLIVEIRA</td>
-    <td style="text-align: center;">🟢</td>
+    <td style="text-align: center;">🔴</td>
   </tr>
   <tr class="SIM UNIAO 301">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/112079/?workMode=wmBrowse" target=_blank>71893</a></td>
@@ -1391,14 +1391,14 @@ const tabelaVitamina= `<label>Mostrar apenas da equipe
     <td>JESSICA ANA DE JESUS</td>
     <td style="text-align: center;">🔴</td>
   </tr>
-  <tr class="SIM MAIS-SAUDE 513">
+  <tr class="NÃO MAIS-SAUDE 513">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/112748/?workMode=wmBrowse" target=_blank>71956</a></td>
     <td>Pedro Noah da Silva Gomes</td>
     <td>25/10/2023</td>
     <td>MAIS SAUDE</td>
     <td  style="text-align: center;">11 meses</td>
     <td>IRIS TANIA TEIXEIRA ALVES</td>
-    <td style="text-align: center;">🟢</td>
+    <td style="text-align: center;">🔴</td>
   </tr>
   <tr class="SIM MAIS-SAUDE 1184">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/112223/?workMode=wmBrowse" target=_blank>71911</a></td>
@@ -1517,14 +1517,14 @@ const tabelaVitamina= `<label>Mostrar apenas da equipe
     <td>ROSA RODRIGUES DE SOUZA</td>
     <td style="text-align: center;">🔴</td>
   </tr>
-  <tr class="SIM ESPETACULAR 120">
+  <tr class="NÃO ESPETACULAR 120">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/114160/?workMode=wmBrowse" target=_blank>72093</a></td>
     <td>Saullo Machado de Oliveira</td>
     <td>08/11/2023</td>
     <td>ESPETACULAR</td>
     <td  style="text-align: center;">10 meses</td>
     <td>SHEILA DARLEN MENDES SOUZA</td>
-    <td style="text-align: center;">🟢</td>
+    <td style="text-align: center;">🔴</td>
   </tr>
   <tr class="SIM LIBERDADE 456">
     <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/111058/?workMode=wmBrowse" target=_blank>71797</a></td>

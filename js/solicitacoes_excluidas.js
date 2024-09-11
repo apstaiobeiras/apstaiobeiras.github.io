@@ -1,4 +1,4 @@
-document.getElementById('atualizacao').textContent = '10/09/2024';
+document.getElementById('atualizacao').textContent = '11/09/2024';
 const Solicitacoes_Excluidas = [
   ["149235","764", "17525","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
   ["152679","764", "25742","18","<b>Solicitação Indevida: </b><br>GENTILEZA ENCAMINHAR A PACIENTE AO MASTOLOGISTA.","20240111","Ultrassonografia mamaria bilateral"],
@@ -143,6 +143,7 @@ const Solicitacoes_Excluidas = [
   ["627452","507", "27478","16","<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA FILA  \"\"COLONOSCOPIA COM BIOPSIA\"\".","20240405","Colonoscopia (coloscopia)"],
   ["627499","1137", "2091","9","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever medicamentos em uso, com dose e posologia.","20240105","Consulta diabetes alto risco"],
   ["627540","507", "46610","2","<b>Solicitação Indevida: </b><br>PACIENTE  APRESENTA CRITERIOS DE CEAE. REALIZADO TRANSFEREWNCIA PARA FILA \"\"CONSULTA PEDIATRIA ALTO RISCO\"\".","20240108","Consulta pediatra policlinica"],
+  ["627616","1224", "33431","11","Agendar na Atenção Primaria","20240910","Acolhimento de fisioterapia"],
   ["627795","1046", "34438","8","<b>Solicitação Indevida: </b><br>PACIENTE  APRESENTA CRITERIOS DE CEAE. REALIZADO TRANSFEREWNCIA PARA FILA \"\"CONSULTA PEDIATRIA ALTO RISCO\"\".","20240108","Consulta pediatra policlinica"],
   ["627867","1137", "35690","9","<b>Não Se Enquadra nos Criterios: </b><br>Realização de LT será avaliada no momento do parto pelo obstetra no HSA com formulário de planejamento familiar preenchido pela APS.","20240110","Consulta - obstétrica / puerpério"],
   ["627900","507", "33964","2","<b>Não Se Enquadra nos Criterios: </b><br>Favor reencaminhar na fila ginecologia policlínica. Att. ","20240105","Consulta ginecologia CEAE"],
@@ -215,6 +216,7 @@ const Solicitacoes_Excluidas = [
   ["637285","1069", "15502","6","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor anexar ou detalhar resultado de hemoglobina glicada com data ","20240123","Consulta diabetes alto risco"],
   ["637549","1137", "24080","9","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever último resultado de PCCU realizado pela paciente.Att.","20240130","Consulta ginecologia policlinica"],
   ["637691","1263", "9295","34","<b>Solicitação Indevida: </b><br>PACIENTE APRESENTA CRITÉRIOS DE SERVIÇO DE ALTO RISCO. REALIZADO TRANSFERENCIA PARA FILA \"\"CONSULTA DIABETES ALTO RISCO\"\".","20240123","Consulta endocrinologia"],
+  ["637740","216", "18171","13","<b>Agendar na Atenção Primaria: </b><br>Atendimento agendado 10/09/24.","20240910"," consulta psicologia infantojuvenil"],
   ["637911","1220", "11808","13","<b>Não Se Enquadra nos Criterios: </b><br>De acordo os guidelines internacionais, veja as evidências para cada situação<br><br>Presença de nódulo palpável durante exame físico: Clinicamente indicado<br>Tireoide grande ou bócio no exame físico	Clinicamente indicado<br>Nódulo de tireoide visto em outro teste de imagem: Clinicamente indicado<br>Rouquidão de início recente ou sintomas compressivos: Clinicamente indicado<br>Histórico de radiação na cabeça ou pescoço : Evidências clínicas não são claras<br>História familiar de câncer de tireoide: Evidências clínicas não são claras<br>Anticorpos tireoidianos positivos: Não indicado clinicamente<br>Função tireoidiana anormal nos exames: Não indicado clinicamentePedido do paciente: não indicado clinicamente","20240902","Ultrassonografia de tireoide"],
   ["637969","216", "8592","13","<b>Agendar na Atenção Primaria: </b><br>Agendado início do acompanhamento para 05/07/2024.","20240621","Avaliaçao psicologo e-multi"],
   ["638199","1046", "7746","8","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever último resultado de PCCU realizado pela paciente.Att.","20240130","Consulta ginecologia policlinica"],
@@ -1061,6 +1063,7 @@ const Solicitacoes_Excluidas = [
   ["740621","1267", "30475","8","<b>Não Se Enquadra nos Criterios: </b><br>Favor encaminhar na fila de gestante alto risco. Att.","20240719","Consulta ginecologia policlinica"],
   ["740626","758", "22569","16","<b>Solicitação Indevida: </b><br>REINSERIDO COM DEFINIÇÃO DE ORTOPEDISTA.","20240820","Retorno consulta ortopedista"],
   ["740692","1221", "36282","4","<b>Não Se Enquadra nos Criterios: </b><br>Deve ser indicado avaliação cirúrgica.","20240807","Pequena cirurgia policlinica"],
+  ["740865","1231", "39412","68","Solicitação Indevida","20240910","Consulta  urologia policlinica"],
   ["741076","1258", "25825","34","<b>Solicitação Indevida: </b><br>transferido para fila \"\"avaliação cirurgica policlínica\"\".","20240805","Consulta cirurgiao geral"],
   ["741121","1267", "5886","8","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data os último resultados de exames bioquímicos realizados pelo paciente para prosseguir com agendamento.Att.","20240724","Consulta hipertenso alto risco"],
   ["741180","1069", "20790","6","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data os último resultados de exames bioquímicos realizados pelo paciente para prosseguir com agendamento.Att.","20240724","Consulta hipertenso alto risco"],
@@ -1251,6 +1254,7 @@ const Solicitacoes_Excluidas = [
   ["761809","507", "18629","2","<b>Solicitação Indevida: </b><br>SOLICITAÇÕES PARA AVALIAÇÃO DE FRATURA NÃO PRECISAM SER INSERIDAS EM FILA DE ESPERA. REALIZAR SOLICITAÇÃO MANUAL E PEDIR AO PACIENTE PARA COMPARECER NA SMS PARA AGENDAMENTO. ENTRADO EM CONTATO COM PACIENTE E AGENDADO AVALIAÇÃO NO AMBULATORIO DE FRATURA","20240909","Consulta ortopedista"],
   ["762053","1260", "24656","81","<b>Não Se Enquadra nos Criterios: </b><br>CRIANÇA NÃO ATENDE CRITERIOS DE PEDIATRIA AMBULATORIAL/ALTO RISCO.VIDE CRITÉRIOS DE ENCAMINHAMENTO AO CER.","20240827","Consulta pediatra policlinica"],
   ["762314","1259", "7678","8","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>SUGERE HASHIMOTO, CASO TSH ESTEJA NORMAL COM ESSA DOSE DE PURAN, PODE FAZER SEGUIMENTO NA APS. VERIFIQUE A CONDIÇÃO CLÍNICA,  DISCUTA DIRETAMENTE COM ENDOCRINO PELO TELESSAÚDE TBM.","20240904","Consulta endocrinologia"],
+  ["762702","1259", "13407","8","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Conteúdo descritivo pobre e sem relato de investigação e tratamento instituídos.","20240910","Consulta ortopedista"],
   ["762873","1317", "13121","3","<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>PACIENTE TEM INDICAÇÃO DE OTIMIZAR TERAPÊUTICA, DISCUTIR NA TELESSAUDE E AVALIAR PROTOCOLO DE TRATAMENTO PARA DM.","20240904","Consulta endocrinologia"],
   ["762998","1133", "15478","2","<b>Não Se Enquadra nos Criterios: </b><br>.","20240904","Avaliaçao psicologo e-multi"],
   ["763096","1193", "22384","56","<b>Não Se Enquadra nos Criterios: </b><br>INVESTIGAR COM FUNÇÃO RENAL E USG, ALÉM DE URINA E UROCULTURA+ ANTIBIOGRAMA, PODE INICIAR TRATAMENTO PROFILÁTICO, ETC...CASO PERSISTA ENCAMINHAR PARA UROLOGIA, COM ESTE PASSO A PASSO FEITO E DESCRITO. ","20240823","Consulta clinico/geriatra"],
