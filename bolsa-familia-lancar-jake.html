@@ -86,10 +86,10 @@
     chaves.sort(function(a, b) {return lista_dos_acs[a][0].localeCompare(lista_dos_acs[b][0]);});
 
     let select = `<select id="cod">`;
-    select += `      <option value="0">Cadastros sem ACS vinculado no Vivver</option>`;
     for (let chave of [...chaves]) {
       select += `  <option value="${chave}:${lista_dos_acs[chave][0]}">${lista_dos_acs[chave][0]}</option>`;
     }
+    select += `    <option value="0:NIS não registrado no Vivver">NIS não registrado no Vivver</option>`;
     select += `</select>`;
 
     document.getElementById("container_cod").innerHTML=select;
