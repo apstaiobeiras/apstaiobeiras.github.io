@@ -68,7 +68,10 @@
         .oculto {
             display: none;
         }
-      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="no-print"><div class="navbar"><a>Bolsa Família</a></div><h3></h3><table id="busca"><tr><td>Acompanhar pelo NIS: </td><td><input id="nis"/></td><td><button onclick="acompanhar()">Carregar família</button></td></tr><tr><td>Acompanhar pelo CNS: </td><td><input id="cns"/></td><td><button onclick="procurar(5,'cns')">Procurar</button></td></tr><tr><td>Acompanhar pelo Cód ACS: </td><td id="container_cod"></td><td><button onclick="procurar(4,'cod')">Procurar</button></td></tr><tr><td>Acompanhar pela data de nascimento: </td><td><input id="dn" type="date"/></td><td><button onclick="procurar(4,'dn')">Procurar</button></td></tr></table></div><h3 class="no-print"></h3><div><table style="overflow: hidden"><tbody id="dados_familia"></tbody></table><br/></div><button class="oculto" id="cancelar" onclick="cancelar()">Cancelar acompanhamento</button> <button class="oculto" id="salvar" onclick="salvar()">Salvar acompanhamento</button></body><script src="js/listaNIS.js"></script><script src="js/nis2familia.js"></script><script src="js/digitados.js"></script><script src="js/lista-acs.js"></script><script>        document.body.classList.remove('container-lg');
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="no-print"><div class="navbar"><a>Bolsa Família</a></div><h3></h3><table id="busca"><tr><td>Acompanhar pelo NIS: </td><td><input id="nis"/></td><td><button onclick="acompanhar()">Carregar família</button></td></tr><tr><td>Acompanhar pelo CNS: </td><td><input id="cns"/></td><td><button onclick="procurar(5,'cns')">Procurar</button></td></tr><tr><td>Acompanhar pelo Cód ACS: </td><td id="container_cod"></td><td><button onclick="procurar(4,'cod')">Procurar</button></td></tr><tr><td>Acompanhar pela data de nascimento: </td><td><input id="dn" type="date"/></td><td><button onclick="procurar(4,'dn')">Procurar</button></td></tr></table></div><h3 class="no-print"></h3><div><table style="overflow: hidden"><tbody id="dados_familia"></tbody></table><br/></div><button class="oculto" id="cancelar" onclick="cancelar()">Cancelar acompanhamento</button> <button class="oculto" id="salvar" onclick="salvar()">Salvar acompanhamento</button></body>
+      
+      
+      <script src="js/listaNIS.js"></script><script src="js/nis2familia.js"></script><script src="js/digitados.js"></script><script src="js/lista-acs.js"></script><script>        document.body.classList.remove('container-lg');
 
 
 (function() {
@@ -157,66 +160,59 @@
         }
 
         function procurar(indice,id) {
-            let valor = document.getElementById(id).value;
+            let valor = parseInt(document.getElementById(id).value.split(":")[0]);
 
-            if (id == "dn") {
-                let dn = document.getElementById(id).value.split("-");
-                valor = dn[2]+"/"+dn[1]+"/"+dn[0];
+            let membros = [];
+
+            let i = 1;
+
+            document.getElementById("dados_familia").innerHTML = ``;
+
+            for (let cadastro of listaNIS) {
+              if (cadastro[4].includes(valor)) {
+                membros.push(`
+                  <tr>
+                  <td>${cadastro[0]}</td>
+                  <td>${cadastro[1]}</td>
+                  <td>${cadastro[2]}</td>
+                  <td>${cadastro[3]}</td>
+                  <td>_______kg e _______g</td>
+                  <td>_______cm</td>
+                  <td>_______/_______/_____________</td>
+                  <td>_______/_______/2024</td>
+                  </tr>
+                `);
+              }
             }
 
-            let membros = "";
-
-            if (id == "cod") {
-              valor = valor.split(":")[0];
-              listaNIS.forEach(function (item){
-                if (item[indice].includes(valor)) {
-                    let digitados = `
-                      <td><input class="${item[0]}" type="date" max="2024-12-01" max="2024-01-01" onchange="preencheDataFamilia();"></td>
-                      <td><input style="max-width: 64px"></td>
-                      <td><input style="max-width: 64px"></td>
-                    `;
-
-                    digitados = listaDigitados[item[1]] == false && digitados || "";
-
-                    membros += `
-                    <tr id=${item[1]}>
-                      <td>${item[0]}</td>
-                      <td>${item[1]}</td>
-                      <td>${item[2]}</td>
-                      <td>${item[3]}</td>
-                      ${digitados}
-                    <tr>
-                    `;
-
-                    document.getElementById("salvar").classList = "";
-                }
-              });
-            } else {
-              listaNIS.forEach(function (item){
-                if (item[indice].includes(valor)) {
-                    membros += `
-                    <tr>
-                      <td>${item[0]}</td>
-                      <td>${item[1]}</td>
-                      <td>${item[2]}</td>
-                      <td colspan=3><a href="#" onclick="acompanhar('${item[0]}'); return false;">Listar membros<br>dessa família</a></td>
-                    <tr>
-                    `;
-                }
-              });
+            for (let i=0;i<membros.length;i+=26) {
+              if (i!=0) {
+                document.getElementById("dados_familia").innerHTML += `
+                <tr style='border:0'><th colspan=8  style='border:0'> &nbsp;</th></tr>
+                `;
+              }
+              document.getElementById("dados_familia").innerHTML += `
+                <tr>
+                  <th colspan=8>${document.getElementById(id).value.split(":")[1]}</th>
+                </tr>
+                <tr>
+                  <th>ID Família</th>
+                  <th>NIS</th>
+                  <th>Nome</th>
+                  <th>Data de nascimento</th>
+                  <th>Peso</th>
+                  <th>Altura</th>
+                  <th>DUM (gestantes)</th>
+                  <th>Data Acompanhamento</th>
+                </tr>
+              `;
+              for (let j = 0;j<27;j++) {
+                if (membros[j+i])
+                document.getElementById("dados_familia").innerHTML += membros[j+i];
+              }
             }
 
-            document.getElementById("dados_familia").innerHTML = `
-              <tr>
-                <th>ID Família</th>
-                <th>NIS</th>
-                <th>Nome</th>
-                <th></th>
-              <tr>
-              ${membros}
-            `;
-
-            document.getElementById("cancelar").classList = "";
+            window.print();
         }
 
         function acompanhar(_familia) {
