@@ -68,7 +68,11 @@
         .oculto {
             display: none;
         }
-      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body"><div class="no-print"><div class="navbar"><a>Bolsa Família</a></div><h3></h3><table id="busca"><tr><td>Acompanhar pelo NIS: </td><td><input id="nis"/></td><td><button onclick="acompanhar()">Carregar família</button></td></tr><tr><td>Acompanhar pelo CNS: </td><td><input id="cns"/></td><td><button onclick="procurar(5,'cns')">Procurar</button></td></tr><tr><td>Acompanhar pelo Cód ACS: </td><td id="container_cod"></td><td><button onclick="procurar(4,'cod')">Procurar</button></td></tr><tr><td>Acompanhar pela data de nascimento: </td><td><input id="dn" type="date"/></td><td><button onclick="procurar(4,'dn')">Procurar</button></td></tr></table></div><h3 class="no-print"></h3><div><table style="overflow: hidden"><tbody id="dados_familia"></tbody></table><br/></div><button class="oculto" id="cancelar" onclick="cancelar()">Cancelar acompanhamento</button> <button class="oculto" id="salvar" onclick="salvar()">Salvar acompanhamento</button></body>
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head><body class="container-lg px-3 my-5 markdown-body">
+        <div class="no-print">
+          <div class="navbar"><a>Bolsa Família</a></div><h3></h3>
+          <table id="busca"><tr>
+            <tr><td>Acompanhar pelo Cód ACS: </td><td id="container_cod"></td><td><button onclick="procurar(4,'cod')">Procurar</button></td></tr></table></div><h3 class="no-print"></h3><div><table style="overflow: hidden"><tbody id="dados_familia"></tbody></table><br/></div><button class="oculto" id="cancelar" onclick="cancelar()">Cancelar acompanhamento</button> <button class="oculto" id="salvar" onclick="salvar()">Salvar acompanhamento</button></body>
       
       
       <script src="js/listaNIS.js"></script><script src="js/nis2familia.js"></script><script src="js/digitados.js"></script><script src="js/lista-acs.js"></script><script>        document.body.classList.remove('container-lg');
