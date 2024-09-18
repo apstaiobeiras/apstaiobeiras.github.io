@@ -113,12 +113,12 @@
             }, 0);
         }
 
-        function contaItensNumericos(array) {
+        function contaItensNumericos(array,ignorarZeros) {
             return array.reduce((soma, item) => {
                 // Tenta converter o item para número
                 const numero = parseFloat(item);
                 // Verifica se a conversão foi bem-sucedida (não é NaN)
-                if (!isNaN(numero)) {
+                if (!isNaN(numero) && numero != 0) {
                     return soma + 1;
                 }
                 return soma;
@@ -173,7 +173,7 @@
 
 
                 let atendimentosEfetivados = somaItensNumericos(atendimentos_do_profissional.total);
-                let diasAtendimento = contaItensNumericos(atendimentos_do_profissional.total);
+                let diasAtendimento = contaItensNumericos(atendimentos_do_profissional.total,true);
                 let capacidade = diasAtendimento*24;
                 let percentualAtentimentos = Math.floor(atendimentosEfetivados/capacidade*100);
 

@@ -57,8 +57,8 @@
             if ((new URLSearchParams(window.location.search)).get('path').indexOf("recepcao.html") == -1) {
                 profissional = document.getElementById("lista-profissional").value = parseInt((new URLSearchParams(window.location.search)).get('cod'), 36);
 
-                document.getElementById("feitas-por").style.display = "none";
-                document.getElementById("lista-profissional").style.display = "none";
+                //document.getElementById("feitas-por").style.display = "none";
+                //document.getElementById("lista-profissional").style.display = "none";
 
                 document.getElementById("codigo_profissional").innerHTML = parseInt((new URLSearchParams(window.location.search)).get('cod'), 36);
                 document.getElementById("profissional").innerHTML = nomeProfissional[parseInt((new URLSearchParams(window.location.search)).get('cod'), 36)];

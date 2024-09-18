@@ -77,11 +77,16 @@
         listaProfissionais['803381'] = ['n0','preceptoria.html','Preceptoria'];
 
         let equipes = [];
+        let equipesProfissional = [];
         const lista_profissionais = document.getElementById("lista_dos_profissionais");
 
         for(let _ in listaProfissionais) {
             let profissional = listaProfissionais[_];
             let equpes_profissional = profissional[2].split("/");
+
+            if (parseInt(profissional[0],36) == parseInt((new URLSearchParams(window.location.search)).get('cod'), 36)) {
+                equipesProfissional = equpes_profissional;
+            }
 
             equpes_profissional.forEach(function (equipe) {
                 if (!equipe.startsWith("EAP")) {
@@ -107,6 +112,9 @@
 
         for(let equipe in equipes) {
             //if (!equipe.startsWith("UAPS") && equipe != "Preceptoria") continue;
+            if ((new URLSearchParams(window.location.search)).get('path') != 'gestor.html/lista-profissionais.html') {
+                if (!equipesProfissional.includes(equipe)) continue;
+            }
 
             let lista_profissionais = equipes[equipe];
             lista_profissionais = Object.keys(lista_profissionais)
@@ -117,7 +125,7 @@
               return accumulator;
             }, {});
 
-            let table = "<table>";
+            let table = `<table name="${equipe}">`;
 
             for(let profissional in lista_profissionais) {
                 let acs = lista_profissionais[profissional];
@@ -138,7 +146,7 @@
                     break
                 }
             }
-
-            
         }
+
+
     </script></html>
