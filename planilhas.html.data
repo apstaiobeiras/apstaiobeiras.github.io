@@ -1,0 +1,122 @@
+<!DOCTYPE html><html lang="pt_BR"><head><meta charset="utf8"/><title>Gestor da APS</title><style>        /* Estilo da barra de navegação */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333; /* Cor de fundo da barra de navegação */
+            color: #fff; /* Cor do texto da barra de navegação */
+            padding: 10px 0;
+            z-index: 99999999;
+        }
+        
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+        }
+        
+        /* Adicione margem ao corpo para evitar que o conteúdo fique oculto sob a barra de navegação */
+        body {
+            margin-top: 60px; /* Ajuste conforme necessário com base na altura da sua barra de navegação */
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .neutro {
+            background: #DFE2E5;
+        }
+
+        .ruim {
+            background: #ea9999!important;
+        }
+
+        .razoavel {
+            background: #f7cca0!important;
+        }
+
+        .proximo {
+            background: #b6d7a8!important;
+        }
+
+        .atingiu {
+            background: #9fc5e8!important;
+        }
+
+        .tr:hover {
+            background: #DFE2E5!important;
+            cursor: pointer!important;
+        }
+
+        .tr:pressed {
+            background: #9FA1A3!important;
+        }
+
+        table {
+            width: 100%!important;
+        }
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head>
+      <body class="container-lg px-3 my-5 markdown-body">
+        <div class="navbar" style="display: flex;justify-content: space-between; padding: 0;">
+            <a href="profissional.html">Voltar</a>
+            <a>Planilha</a>
+            <a href="#" onclick="logout()"> Fazer logout</a>
+        </div>
+        <h3><br></h3>
+        <h4>Filtrado <span id="filtrado">{filtrado}</span> pacientes de <span id="total">{total}</span> ou <span id=percentil>{percentil}</span>%</h3></h4><h3> </h3>
+        <div id="planilha"></div>
+        
+        
+        </body><script src="js/goto.js"></script><script src="js/lista_profissionais.js"></script><script src="js/nomes_profissionais.js"></script><script src="assets/js/logout.js"></script><script>        let cod_profissional = null;
+        document.getElementById("titulo").innerText = (new URLSearchParams(window.location.search)).get('titulo');
+    </script><script>
+        const script = document.createElement("script");
+          script.src = "js/"+(new URLSearchParams(window.location.search)).get('script')+'.js';
+          script.onload = function() {
+            document.getElementById("profissional").value = 441;
+            filtrar();
+            document.getElementById("percentil").innerText = "100%";
+          };
+          document.head.appendChild(script);
+    </script><script>
+    function filtrar() {
+      let opcoes = "";
+      for (let filtro of document.getElementsByTagName("select")) {
+        if (opcoes == "") {
+          opcoes = filtro.value;
+          continue;
+        }      
+        opcoes+=" "+filtro.value;
+      }
+  
+      let filtro = opcoes.split(' ');
+      let i = 0;
+      let t = 0;
+      for (let linha of [...document.getElementsByTagName('tr')]) {
+          let mantem = true;
+          for (let classe of linha.classList) {
+              if (!filtro.includes(classe)) {
+                  mantem = false;
+                  break;
+              }
+          }
+  
+          i += mantem ? 1 : 0;
+
+          mantem = t == 0 ? true : mantem;
+          t += 1;
+          linha.style.display = mantem ? '' : 'none';
+          linha.setAttribute('name', mantem ? 'mantem' : 'oculta');
+      }
+
+      t = parseInt(document.getElementById("total").innerText);
+      document.getElementById("total").innerText = document.getElementById("total").innerText == "{total}"?i:document.getElementById("total").innerText;
+      document.getElementById("filtrado").innerText = i;
+      document.getElementById("percentil").innerText = (""+(i/t*100).toFixed(2)).replace(".00","");
+      
+    }
+    </script>
+ 
+    </script></html>

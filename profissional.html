@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="utf8" />
+    <title>Perfil do profissional</title>
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <style>
+      /* Estilo da barra de navegação */
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333; /* Cor de fundo da barra de navegação */
+        color: #fff; /* Cor do texto da barra de navegação */
+        padding: 10px 0;
+      }
+
+      .navbar a {
+        color: #fff;
+        text-decoration: none;
+        padding: 15px;
+      }
+
+      /* Adicione margem ao corpo para evitar que o conteúdo fique oculto sob a barra de navegação */
+      body {
+        margin-top: 60px; 
+      }
+
+      tr,table,td,th {
+        /*border: 1px solid #dfe2e5;*/
+        background-color: transparent !important;
+        border: 0 !important;
+      }
+
+      .header {
+        background-color: #f6f8fa !important;
+      }
+
+      .border {
+        border: 1px solid #dfe2e5 !important;
+      }
+
+      ::backdrop {
+        background-image: linear-gradient(45deg, rgb(0, 0, 0), rgb(0, 0, 0));
+        opacity: 0.75;
+      }
+
+      .tr:hover {
+        background: #dfe2e5 !important;
+        cursor: pointer !important;
+      }
+
+      .tr:pressed {
+        background: #9fa1a3 !important;
+      }
+
+      tbody {
+        width: 100%;
+      }
+
+
+      
+  /* CSS for image column */
+  tr img {
+    min-width: 96px; /* Ensure image does not exceed column width */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  /* CSS for text column */
+tr td:last-child {
+    width: 100%; /* Make text column stretch to fill remaining space */
+    padding-left: 10px; /* Add padding to separate image and text */
+  }
+    </style>
+    <meta content="lua-wpp" name="generator" />
+    <meta content="width=device-width,initial-scale=1.0" name="viewport" />
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script>
+      const supabaseUrl = 'https://lsnvjibgvbjxqctmnteg.supabase.co';
+      const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImxzbnZqaWJndmJqeHFjdG1udGVnIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTcyODkyMjg2MywiZXhwIjoyMDQ0NDk4ODYzfQ.gW6JvgYrpYRU2K332UPr03-haZA2vLM4SQduOkocI_k';
+      window.supabase = supabase.createClient(supabaseUrl, supabaseKey);
+    </script>
+  </head>
+  <body class="container-lg px-3 my-5 markdown-body">
+    <div class="navbar" style="display: flex;justify-content: space-between; padding: 0;">
+      <a><span id="cod"></span> - <span id="nome"></span></a>
+      <a href="#" onclick="logout()"> Fazer logout</a>
+    </div>
+
+    <h3><br /></h3>
+
+    <table>
+      <tbody id="lista-sessoes"></tbody >
+    </table>
+
+    <h3><br /></h3>
+    <script src="assets/js/logout.js"></script>
+    <script src="js/lista-profissionais-vivver.js"></script>
+    <script>
+      const Sections = {
+        "Páginas": [
+          ["Produção","Veja o consolidado da sua produção ao longo do ano","producao"],
+          ["Situação descritiva dos cadastros","Veja uma lista descritiva dos cadastros com problemas","situacao-cadastros"],
+          ["Produção diária","Acompanhe sua produção dia a dia ao longo do ano","producao-diaria"],
+          ["Tabela de indicadores e-SUS","Acompanhe semanalmente os indicadores e-SUS","indicadores-esus"],
+        ],
+
+        "Tabelas-mapa": [
+          ["Famílias visitadas","Mapa que mostra as famílias que receberam visitas dos ACS ao longo do ano","grafico-de-mapa?script=monitoramento-acs"],
+          ["Situação dos pacientes e-SUS","Mapa que mostra o acompanhamento dos pacientes com condicionalidades dos indicadores e-SUS","grafico-de-mapa?acompanhamento-esus"],
+        ],
+
+        "Listas e planilhas": [
+          ["Lista de prontuários","Veja uma lista dos pacientes agrupados por família e micro-área","lista-prontuario"],
+          ["Lista de crianças - Vitamina A de 100 mil UI","Planilha de monitoramento de crianças que receberam ou não a <i>Vitamina A de 100 mil UI</i>","planilhas?script=vitamina-a-100-mil"],
+          ["Lista de crianças - Vitamina A de 200 mil UI","Planilha de monitoramento de crianças que receberam ou não a <i>Vitamina A de 200 mil UI</i>","planilhas?script=vitamina-A-200-mil"],
+        ],
+
+        "Solicitações": [
+          ["Agendadas","Solicitações agendadas ativas","agendados"],
+          ["Devolvidas","Soluções com problemas que precisam ser analisados","solicitacoes"],
+        ],
+        "Links": [
+          ["Envio de documentos","Envie e/ou atualize sua documentação profissional","enviar-arquivo"],
+        ],
+        "Ferramentas de gestão": [
+          ["Editor de equipes ESF","Crie, edite e remova equipes tipo ESF","editor-equipes-esf"],
+          ["Gerenciar profissionais","Adicione e remova acesso de pofissional","editor-profissional"],
+        ],
+        "Profissionais de nível médio": [
+          ["Agente de Combate a Endemias","","lista-profissional-ace"],
+          ["Agente Comunitário de Saúde","","lista-profissional-acs"],
+          ["Recepcionista","","lista-profissional-recepcionista"],
+        ],
+        "Profissionais de nível superior": [
+          ["Cirurgião dentista","","lista-profissional-cirurgiao_dentista"],
+          ["Enfermeiro","","lista-profissional-enfermeiro"],
+          ["Farmacêutico","","lista-profissional-farmaceutico"],
+          ["Médico","","lista-profissional-medico"],
+        ],
+      }
+    </script>
+    <script>
+
+      function openPage(link) {
+        location.href = link
+      }
+
+      let cbo = "";
+
+      (
+        async () => {
+          let codProfissional = 0;
+          let recepcionista = false;
+          let trocarProfissional = false;
+          let naoACS = false;
+
+          if (localStorage.getItem('override:codProfissional')) {
+            document.getElementById("cod").innerText = localStorage.getItem('override:codProfissional');
+            codProfissional  = document.getElementById("cod").innerText;
+
+            for (let profissional of Profissionais) {
+              if (profissional[0] == localStorage.getItem('override:codProfissional')) {
+                document.getElementById("nome").innerText = profissional[1];
+                break;
+              }
+            }
+          } else {
+            const {data,error} = await window.supabase.from('dadosprofissionais').select("*").eq('cpf', localStorage.getItem("profissional"));
+            document.getElementById("cod").innerText = data[0].codprofissional;
+            document.getElementById("nome").innerText = data[0].nome;
+            codProfissional = data[0].codprofissional;
+          }
+
+          let { data: equipes, error } = await supabase.from('equipes').select('*');
+          for (let equipe of equipes) {
+            if (equipe.profissionais.split(",").includes(`recepcionista_saude_na_hora:${codProfissional}`)) {
+              recepcionista = true;
+              naoACS = true;
+              break
+            }
+            if (equipe.profissionais.split(",").includes(`recepcionista:${codProfissional}`)) {
+              recepcionista = true;
+              naoACS = true;
+              break
+            }
+            //----------------------------------------------------------------------------------------------------
+            if (equipe.profissionais.split(",").includes(`enfermeiro_saude_na_hora:${codProfissional}`)) {
+              trocarProfissional = true;
+              naoACS = true;
+              break
+            }
+            if (equipe.profissionais.split(",").includes(`enfermeiro:${codProfissional}`)) {
+              trocarProfissional = true;
+              naoACS = true;
+              break
+            }
+            //----------------------------------------------------------------------------------------------------
+            if (equipe.profissionais.split(",").includes(`medico_saude_na_hora:${codProfissional}`)) {
+              trocarProfissional = true;
+              naoACS = true;
+              break
+            }
+            if (equipe.profissionais.split(",").includes(`medico:${codProfissional}`)) {
+              trocarProfissional = true;
+              naoACS = true;
+              break
+            }
+            //----------------------------------------------------------------------------------------------------
+            if (equipe.profissionais.split(",").includes(`farmaceutico:${codProfissional}`)) {
+              trocarProfissional = true;
+              naoACS = true;
+              break
+            }
+            //----------------------------------------------------------------------------------------------------
+            if (equipe.profissionais.split(",").includes(`cirurgiao_dentista:${codProfissional}`)) {
+              trocarProfissional = true;
+              naoACS = true;
+              break
+            }
+          }
+
+
+          for (const [titulo, items] of Object.entries(Sections)) {
+            if (document.getElementById("lista-sessoes").innerHTML != "") {
+              document.getElementById("lista-sessoes").innerHTML+=`
+                <tr name="${titulo}">
+                  <th colspan="2" align="left"><br></th>
+                </tr>
+              `;
+            }
+
+            document.getElementById("lista-sessoes").innerHTML+=`
+              <tr class="border header" name="${titulo}">
+                <th colspan="2" align="left">${titulo}</th>
+              </tr>
+            `;
+
+            for (item of items) {
+              let pagina = item[2].split("?")[0];
+              let query = item[2].split("?")[1] || "q=undefined";
+
+              if (item[2].split("?")[0].startsWith("lista-profissional")) {
+                query = "q="+pagina.replace("lista-profissional-","");
+                pagina = "lista-profissional";
+              }
+
+              document.getElementById("lista-sessoes").innerHTML+=`
+                <tr class="border tr" onclick="openPage('${pagina}.html?${query}');" name="${titulo}" id="${item[0]}">
+                  <td>
+                    <img src="assets/img/${item[2].split("?")[0]}.png" width="96" />
+                  </td>
+                  <td style="" name="${titulo}">
+                    <b>${item[0]}</b><br/>${item[1]}
+                  </td>
+                </tr>
+              `;
+            }
+          }
+
+        document.getElementById("lista-sessoes").innerHTML = document.getElementById("lista-sessoes").innerHTML.replace(/<!--.*?-->/g, '')
+                                                                                                               .replace(/\s{2,}/g, ' ')
+                                                                                                               .replace(/(\r\n|\n|\r)/gm, '')
+                                                                                                               .replace(/>\s+</g, '><');
+
+        if (parseInt(codProfissional) < 0 ) {
+          return;
+        }
+
+        if (naoACS) {
+          for (let linha of [...document.getElementsByName("Tabelas-mapa")]) {
+            linha.remove();
+          }
+
+          document.getElementById("Lista de prontuários").remove();
+          document.getElementById("Situação descritiva dos cadastros").remove();
+          document.getElementById("Produção").remove();
+        }
+
+        for (let linha of [...document.getElementsByName("Ferramentas de gestão")]) {
+          linha.remove();
+        }
+
+        // recepcionista:
+        if (recepcionista) {
+          for (let linha of [...document.getElementsByName("Páginas")]) {
+            linha.remove();
+          }
+
+          for (let linha of [...document.getElementsByName("Tabelas-mapa")]) {
+            linha.remove();
+          }
+          for (let linha of [...document.getElementsByName("Listas e planilhas")]) {
+            linha.remove();
+          }
+          for (let linha of [...document.getElementsByName("Links")]) {
+            linha.remove();
+          }
+          for (let linha of [...document.getElementsByName("Profissionais de nível médio")]) {
+            linha.remove();
+          }
+
+          for (let linha of [...document.getElementsByName("Profissionais de nível superior")]) {
+            linha.remove();
+          }
+          return;
+        }
+
+        if (trocarProfissional) {
+          return;
+        }
+
+      // Demais
+
+        for (let linha of [...document.getElementsByName("Solicitações")]) {
+          linha.remove();
+        }
+        
+        for (let linha of [...document.getElementsByName("Profissionais de nível médio")]) {
+          linha.remove();
+        }
+
+        for (let linha of [...document.getElementsByName("Profissionais de nível superior")]) {
+          linha.remove();
+        }
+      }
+    )();
+/*
+      if (Sections["Profissionais de nível superior"][cbo]) {
+        for (let linha of [...document.getElementsByName("Profissionais de nível médio")]) {
+          linha.remove();
+        }
+      }
+
+      if (cbo != "Administrativo") {
+        for (let linha of [...document.getElementsByName("Profissionais de nível superior")]) {
+          linha.remove();
+        }
+      }
+*/
+    </script>
+  </body>
+</html>

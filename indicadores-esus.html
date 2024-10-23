@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="utf8" />
+    <title>Perfil do profissional</title>
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <style>
+      /* Estilo da barra de navegação */
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333; /* Cor de fundo da barra de navegação */
+        color: #fff; /* Cor do texto da barra de navegação */
+        padding: 10px 0;
+      }
+
+      .navbar a {
+        color: #fff;
+        text-decoration: none;
+        padding: 15px;
+      }
+
+      /* Adicione margem ao corpo para evitar que o conteúdo fique oculto sob a barra de navegação */
+      body {
+        margin-top: 60px; 
+      }
+
+      .header {
+        background-color: #f6f8fa !important;
+      }
+
+      .border {
+        border: 1px solid #dfe2e5 !important;
+      }
+      .no-border * {
+        border: 0px !important;
+      }
+
+      tr {
+        background-color: transparent !important;
+      }
+
+        .right {
+            text-align: right;
+        }
+
+        .neutro {
+            background: #DFE2E5;
+        }
+
+        .ruim {
+            background: #ea9999!important;
+        }
+
+        .razoavel {
+            background: #f7cca0!important;
+        }
+
+        .proximo {
+            background: #b6d7a8!important;
+        }
+
+        .atingiu {
+            background: #9fc5e8!important;
+        }
+    </style>
+    <meta content="lua-wpp" name="generator" />
+    <meta content="width=device-width,initial-scale=1.0" name="viewport" />
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script>
+      const supabaseUrl = 'https://jkuzbtjfcwomnnwlrfsq.supabase.co';
+      const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImprdXpidGpmY3dvbW5ud2xyZnNxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTMyODk3NDYsImV4cCI6MjAyODg2NTc0Nn0.JXaiNJk_i_aCylIyUMMg9R6wVn3Kikvzb3piAXer3Cc';
+      window.supabase = supabase.createClient(supabaseUrl, supabaseKey);
+    </script>
+  </head>
+  <body>
+    <div class="navbar" style="display: flex;justify-content: space-between; padding: 0;">
+      <a href="profissional.html"><span>Inicio</span></a>
+      <a>Indicadores e-SUS - <span id="nome"></span></a>
+      <a href="#" onclick="logout()"> Fazer logout</a>
+    </div>
+
+    <h3><br /></h3>
+
+    <div class="no-print" style="display: flex;justify-content: space-between; padding: 0;">
+      <div></div>
+      <div style="max-width: 1012px">
+        <h1>Informativo</h1>
+        <p>Nesse relatório estão listados os atendimentos realizados por dia, a aba consolidado segue as regras:</p>
+        <table >
+          <tr style="background-color: transparent !important;">
+            <td style="white-space: nowrap;">Legenda:</td>
+            <td>
+              <table>
+                <tr class="border">
+                  <td class="ruim"> </td>
+                  <td>Teve ao menos um atendimento</td>
+                </tr>
+                <tr class="border">
+                  <td class="razoavel"></td>
+                  <td>Não teve nenhuma atendimento</td>
+                </tr>
+                <tr class="border">
+                  <td class="proximo"></td>
+                  <td>Não teve nenhuma atendimento</td>
+                </tr>
+                <tr class="border">
+                  <td class="atingiu"></td>
+                  <td>Não teve nenhuma atendimento</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <div></div>
+        <br>
+      </div>
+      <h3><br /></h3>
+      <h3><br /></h3>
+      <hr>
+    </div>
+
+    <p><b>Atualizado em </b><span id="atualizacao-indicadores"></span></p>
+
+    <table>
+      <tbody id="indicadores">
+
+      </tbody>
+    </table>
+
+    <h3><br /></h3>
+
+    <script src="js/lista-profissionais-vivver.js"></script>
+    <script src="js/indicadores-esus.js"></script>
+    <script src="assets/js/logout.js"></script>
+    <script>
+      let codProfissional = 0;
+
+      if (localStorage.getItem('override:codProfissional')) {
+        for (let profissional of Profissionais) {
+          if (profissional[0] == localStorage.getItem('override:codProfissional')) {
+            document.getElementById("nome").innerText = profissional[1];
+            codProfissional = profissional[0];
+            break;
+          }
+        }
+      } else {
+        (async function (){
+          const {data,error} = await window.supabase.from('dadosprofissionais').select("*").eq('cpf', localStorage.getItem("profissional"));
+          document.getElementById("nome").innerText = data[0].nome;
+          codProfissional = data[0].codprofissional;
+        })();
+      }
+
+    </script>
+    <script>
+      document.getElementById("indicadores").innerHTML = indicadores_equipes;
+      document.getElementById("indicadores").innerHTML = `
+        <tr>
+          <th>Equipes</th>
+          <th colspan=2>Pré-natal</th>
+          <th colspan=2>Exames de<br>gestantes</th>
+          <th colspan=2>Pré-natal<br>odontológico</th>
+          <th colspan=2>Citopatológico</th>
+          <th colspan=2>Vacinas</th>
+          <th colspan=2>Hipertensos</th>
+          <th colspan=2>Diabéticos</th>
+        </tr>
+        ${document.getElementById("indicadores").innerHTML}
+      `;
+    </script>
+  </body>
+</html>
