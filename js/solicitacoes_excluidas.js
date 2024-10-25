@@ -1681,6 +1681,7 @@ const SolicitacoesExcluidas = [
   [798128,1328,19272,78,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>NECESSÁRIO DETALHAMENTO DE RISCO CARDIOVASCULAR DEVIDO QUADRO DE HAS.CASO A PACIENTE APRESENTA ALTO RISCO CARDIOVASCULAR, ENCAMINHAR A FILA \"CONSULTA HIPERTENSO ALTO RISCO\". EM CASO DE RISCO INTERMEDIARIO/BAIXO, INSERIR NOVAMENTE A SOLICITAÇÃO EM FILA DE ESPERA \"CONSULTA CARDIOLOGIA RENAN\".GRATA.",20241015,"CONSULTA CARDIOLOGIA DR RENAN"],
   [798316,0,77601,18,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Qual a IG?",20241015,"CONSULTA GESTANTE ALTO RISCO"],
   [798566,1016,16998,2,"<b>Não Se Enquadra nos Criterios: </b><br>Quadro de miomatose e adenomiose deve ser lançado na fila da GINECOLOGIA POLICLÍNICA.",20241022,"CONSULTA GINECOLOGIA CEAE"],
+  [799378,884,24115,3,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Encaminhamento mal descrito de forma que impossibilita fazer a regulação. DPOC e perda de peso não estão contemplados no protocolo de encaminhamento da nutrição. Entrei em contato com a enfermeira responsável solicitando um novo encaminhamento.",20241025,"AVALIAçaO NUTRICIONISTA E-MULTI"],
   [799395,1317,23605,3,"<b>Não Se Enquadra nos Criterios: </b><br>Não consta atendimento com o Dr. Alex na mastologia.BI-RADS 2 deve ser acompanhado somente na APS.",20241016,"CONSULTA MASTOLOGIA CEAE"],
   [799427,0,70822,18,"<b>Solicitação Indevida: </b><br>REFERENCIAR PARA A FILA DO DIABETES ALTO RISCO.",20241016,"CONSULTA ENDOCRINOLOGIA"],
   [799736,1259,30469,8,"<b>Solicitação Indevida: </b><br>PACIENTE NÃO AGUARDAVA  EXAME DDE ANUSCOPIA.O MESMO ESTAVA EM FILA DE ESPERA PARA COLONOSCOPIA.",20241016,"ANUSCOPIA / RETOSCOPIA"],
@@ -1690,10 +1691,12 @@ const SolicitacoesExcluidas = [
   [801017,1219,94,33,"<b>Não Se Enquadra nos Criterios: </b><br>EXAMES LABORATORIAIS (07/10/2024): CT 244 HDL 54 LDL 164 TG 125; GJ 217 HbA1C 9,2%Pacientes com HbA1C>9% devem ser referenciados ao CEAE conforme protocolo de encaminhamento.",20241021,"AVALIAçaO NUTRICIONISTA E-MULTI"],
   [801938,216,14236,13,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor informar IG.",20241021,"CONSULTA GESTANTE ALTO RISCO"],
   [801955,1317,26143,3,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>O paciente foi atendido por Lucas aqui no serviço hipertenso alto rico no ano de 2023, foi solicitado US  de rins e via urinária para retorno, favor verificar se o paciente realizou o exame para prosseguir com o agendamento. Qualquer dúvida, me coloco a disposição!Att.",20241022,"CONSULTA HIPERTENSO ALTO RISCO"],
+  [802798,1317,41031,3,"<b>Não Se Enquadra nos Criterios: </b><br>TRANSFERIDA PARA FILA DAS PEQUENAS CIRURGIAS.",20241025,"AVALIAçaO CIRURGICA POLICLINICA"],
   [803759,1194,29449,6,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data os últimos exames bioquímicos realizados pela paciente para prosseguir com agendamento.Att. ",20241022,"CONSULTA HIPERTENSO ALTO RISCO"],
   [803773,0,78608,18,"Solicitação Indevida",20241023,"RETORNO FRATURA ORTOPEDIA"],
   [803946,1281,7731,78,"<b>Não Se Enquadra nos Criterios: </b><br>TDAH NÃO É CRITÉRIO PARA INCLUSÃO NO CER-II. ",20241022,"REABILITAçaO INTELECTUAL"],
   [804338,0,53908,18,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor anexar os resultados de exames ou descrever com data de realização.Att.",20241022,"CONSULTA DIABETES ALTO RISCO"],
+  [805628,1317,31980,3,"<b>Não Se Enquadra nos Criterios: </b><br>Deficiência vitamínica isolada não se enquadra nos critérios da Nutrição conforme protocolo aprovado em 18/07/2024.",20241025,"AVALIAçaO NUTRICIONISTA E-MULTI"],
   [805754,907,20548,9,"<b>Não Se Enquadra nos Criterios: </b><br>Procedimento pode ser realizado na UBS.",20241024,"PEQUENA CIRURGIA POLICLINICA"],
 ];
 
