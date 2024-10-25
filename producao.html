@@ -47,11 +47,7 @@
     <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
     <link href="assets/css/style.css" rel="stylesheet"/>
     <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
-    <script>
-      const supabaseUrl = 'https://jkuzbtjfcwomnnwlrfsq.supabase.co';
-      const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImprdXpidGpmY3dvbW5ud2xyZnNxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTMyODk3NDYsImV4cCI6MjAyODg2NTc0Nn0.JXaiNJk_i_aCylIyUMMg9R6wVn3Kikvzb3piAXer3Cc';
-      window.supabase = supabase.createClient(supabaseUrl, supabaseKey);
-    </script>
+    <script  src="assets/js/config.js"></script>
   </head>
   <body>
 
@@ -100,8 +96,9 @@
               }
             } else {
               const {data,error} = await window.supabase.from('dadosprofissionais').select("*").eq('cpf', localStorage.getItem("profissional"));
-              document.getElementById("nome").innerText = data[0].nome;
-              codProfissional = data[0].codprofissional;
+            //document.getElementById("cod").innerText = data[0].codprofissional;
+            document.getElementById("nome").innerText = data[0].nome;
+            codProfissional = data[0].codprofissional;
             }
 
             let cabecalho = document.createElement("tr");
