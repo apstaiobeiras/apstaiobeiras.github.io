@@ -198,159 +198,299 @@
         }
     </script>
     <script>
-      let codProfissional = 0;
-
-      if (localStorage.getItem('override:codProfissional')) {
-        for (let profissional of Profissionais) {
-          if (profissional[0] == localStorage.getItem('override:codProfissional')) {
-            document.getElementById("nome").innerText = profissional[1];
-            codProfissional = profissional[0];
-            break;
-          }
-        }
-      } else {
-        (async function (){
-          const {data,error} = await window.supabase.from('dadosprofissionais').select("*").eq('cpf', localStorage.getItem("profissional"));
-          document.getElementById("nome").innerText = data[0].nome;
-          codProfissional = data[0].codprofissional;
-        })();
+let codProfissional = 0;
+(async function () {
+  if (localStorage.getItem("override:codProfissional")) {
+    for (let profissional of Profissionais) {
+      if (profissional[0] == localStorage.getItem("override:codProfissional")) {
+        document.getElementById("nome").innerText = profissional[1];
+        codProfissional = profissional[0];
+        break;
       }
+    }
+  } else {
+    const { data, error } = await window.supabase
+      .from("dadosprofissionais")
+      .select("*")
+      .eq("cpf", localStorage.getItem("profissional"));
+    document.getElementById("nome").innerText = data[0].nome;
+    codProfissional = data[0].codprofissional;
+  }
 
-      for (let mes in meses) {
-        if (!mes) continue;
+  for (let mes in meses) {
+    if (!mes) continue;
 
-        let atendimentos_do_mes = profissionalProducaoDiaria[2024][mes];
-        if (!atendimentos_do_mes) continue;
+    let atendimentos_do_mes = profissionalProducaoDiaria[2024][mes];
 
-        let atendimentos_do_profissional = atendimentos_do_mes[codProfissional];
-        if (!atendimentos_do_profissional) continue;
+    if (!atendimentos_do_mes) continue;
 
-        let atendimentos_do_profissional_manha  = [...atendimentos_do_profissional.manha || atendimentos_do_mes.vazio];
-        let atendimentos_do_profissional_tarde  = [...atendimentos_do_profissional.tarde || atendimentos_do_mes.vazio];
-        let atendimentos_do_profissional_noite  = [...atendimentos_do_profissional.noite || atendimentos_do_mes.vazio];
-        let atendimentos_do_profissional_almoco = [...atendimentos_do_profissional.almoco || atendimentos_do_mes.vazio];
-        let atendimentos_do_profissional_total  = [];
+    let atendimentos_do_profissional = atendimentos_do_mes[codProfissional];
+    if (!atendimentos_do_profissional) continue;
 
-        while (atendimentos_do_profissional_manha.length < 31) atendimentos_do_profissional_manha.push("");
-        while (atendimentos_do_profissional_tarde.length < 31) atendimentos_do_profissional_tarde.push("");
-        while (atendimentos_do_profissional_noite.length < 31) atendimentos_do_profissional_noite.push("");
-        while (atendimentos_do_profissional_almoco.length < 31) atendimentos_do_profissional_almoco.push("");
+    let atendimentos_do_profissional_manha = [
+      ...(atendimentos_do_profissional.manha || atendimentos_do_mes.vazio),
+    ];
+    let atendimentos_do_profissional_tarde = [
+      ...(atendimentos_do_profissional.tarde || atendimentos_do_mes.vazio),
+    ];
+    let atendimentos_do_profissional_noite = [
+      ...(atendimentos_do_profissional.noite || atendimentos_do_mes.vazio),
+    ];
+    let atendimentos_do_profissional_almoco = [
+      ...(atendimentos_do_profissional.almoco || atendimentos_do_mes.vazio),
+    ];
+    let atendimentos_do_profissional_total = [];
 
-        for(i=0;i<=30;i++) {
-          if (atendimentos_do_profissional_manha[i] == '---') {
-            atendimentos_do_profissional_total[i] = '---';
-            continue;
-          }
-          let t = 0;
-          t += parseInt(atendimentos_do_profissional_manha[i]) && parseInt(atendimentos_do_profissional_manha[i]) || 0;
-          t += parseInt(atendimentos_do_profissional_tarde[i]) && parseInt(atendimentos_do_profissional_tarde[i]) || 0;
-          t += parseInt(atendimentos_do_profissional_noite[i]) && parseInt(atendimentos_do_profissional_noite[i]) || 0;
-          t += parseInt(atendimentos_do_profissional_almoco[i]) && parseInt(atendimentos_do_profissional_almoco[i]) || 0;
-          atendimentos_do_profissional_total[i] = t;
-        }
+    while (atendimentos_do_profissional_manha.length < 31)
+      atendimentos_do_profissional_manha.push("");
+    while (atendimentos_do_profissional_tarde.length < 31)
+      atendimentos_do_profissional_tarde.push("");
+    while (atendimentos_do_profissional_noite.length < 31)
+      atendimentos_do_profissional_noite.push("");
+    while (atendimentos_do_profissional_almoco.length < 31)
+      atendimentos_do_profissional_almoco.push("");
 
-        while (atendimentos_do_profissional_total.length < 31) atendimentos_do_profissional_total.push("");
+    for (i = 0; i <= 30; i++) {
+      if (atendimentos_do_profissional_manha[i] == "---") {
+        atendimentos_do_profissional_total[i] = "---";
+        continue;
+      }
+      let t = 0;
+      t +=
+        (parseInt(atendimentos_do_profissional_manha[i]) &&
+          parseInt(atendimentos_do_profissional_manha[i])) ||
+        0;
+      t +=
+        (parseInt(atendimentos_do_profissional_tarde[i]) &&
+          parseInt(atendimentos_do_profissional_tarde[i])) ||
+        0;
+      t +=
+        (parseInt(atendimentos_do_profissional_noite[i]) &&
+          parseInt(atendimentos_do_profissional_noite[i])) ||
+        0;
+      t +=
+        (parseInt(atendimentos_do_profissional_almoco[i]) &&
+          parseInt(atendimentos_do_profissional_almoco[i])) ||
+        0;
+      atendimentos_do_profissional_total[i] = t;
+    }
 
-        atendimentos_do_profissional.total = atendimentos_do_profissional_total;
+    while (atendimentos_do_profissional_total.length < 31)
+      atendimentos_do_profissional_total.push("");
 
+    atendimentos_do_profissional.total = atendimentos_do_profissional_total;
 
-        atendimentos_do_profissional_manha.push(somaItensNumericos(atendimentos_do_profissional_manha) == 0
-                                                ?"0":somaItensNumericos(atendimentos_do_profissional_manha)
-                                               )
-        atendimentos_do_profissional_tarde.push(somaItensNumericos(atendimentos_do_profissional_tarde) == 0
-                                                ?"0":somaItensNumericos(atendimentos_do_profissional_tarde)
-                                               )
-        atendimentos_do_profissional_noite.push(somaItensNumericos(atendimentos_do_profissional_noite) == 0
-                                                ?"0":somaItensNumericos(atendimentos_do_profissional_noite)
-                                               )
-        atendimentos_do_profissional_almoco.push(-somaItensNumericos(atendimentos_do_profissional_almoco) == 0
-                                                ?"0":somaItensNumericos(atendimentos_do_profissional_almoco)
-                                               )
-        atendimentos_do_profissional_total.push(-somaItensNumericos(atendimentos_do_profissional_total) == 0
-                                                ?"0":somaItensNumericos(atendimentos_do_profissional_total)
-                                               )
+    atendimentos_do_profissional_manha.push(
+      somaItensNumericos(atendimentos_do_profissional_manha) == 0
+        ? "0"
+        : somaItensNumericos(atendimentos_do_profissional_manha),
+    );
+    atendimentos_do_profissional_tarde.push(
+      somaItensNumericos(atendimentos_do_profissional_tarde) == 0
+        ? "0"
+        : somaItensNumericos(atendimentos_do_profissional_tarde),
+    );
+    atendimentos_do_profissional_noite.push(
+      somaItensNumericos(atendimentos_do_profissional_noite) == 0
+        ? "0"
+        : somaItensNumericos(atendimentos_do_profissional_noite),
+    );
+    atendimentos_do_profissional_almoco.push(
+      -somaItensNumericos(atendimentos_do_profissional_almoco) == 0
+        ? "0"
+        : somaItensNumericos(atendimentos_do_profissional_almoco),
+    );
+    atendimentos_do_profissional_total.push(
+      -somaItensNumericos(atendimentos_do_profissional_total) == 0
+        ? "0"
+        : somaItensNumericos(atendimentos_do_profissional_total),
+    );
 
-        atendimentos_do_profissional_manha.push(tiraMedia(atendimentos_do_profissional_manha) == 0
-                                                ?"0":tiraMedia(atendimentos_do_profissional_manha)
-                                               )
-        atendimentos_do_profissional_tarde.push(tiraMedia(atendimentos_do_profissional_tarde) == 0
-                                                ?"0":tiraMedia(atendimentos_do_profissional_tarde)
-                                               )
-        atendimentos_do_profissional_noite.push(tiraMedia(atendimentos_do_profissional_noite) == 0
-                                                ?"0":tiraMedia(atendimentos_do_profissional_noite)
-                                               )
-        atendimentos_do_profissional_almoco.push(tiraMedia(atendimentos_do_profissional_almoco) == 0
-                                                ?"0":tiraMedia(atendimentos_do_profissional_almoco)
-                                               )
-        atendimentos_do_profissional_total.push(tiraMedia(atendimentos_do_profissional_total) == 0
-                                                ?"0":tiraMedia(atendimentos_do_profissional_total)
-                                               )
-    
-        let tabela = document.createElement("table");
-        let cabecalho = document.createElement("tr");
-        cabecalho.innerHTML = `<td colspan=34><b>${meses[mes]}</b></td>`;
-        cabecalho.className = "header";
+    atendimentos_do_profissional_manha.push(
+      tiraMedia(atendimentos_do_profissional_manha) == 0
+        ? "0"
+        : tiraMedia(atendimentos_do_profissional_manha),
+    );
+    atendimentos_do_profissional_tarde.push(
+      tiraMedia(atendimentos_do_profissional_tarde) == 0
+        ? "0"
+        : tiraMedia(atendimentos_do_profissional_tarde),
+    );
+    atendimentos_do_profissional_noite.push(
+      tiraMedia(atendimentos_do_profissional_noite) == 0
+        ? "0"
+        : tiraMedia(atendimentos_do_profissional_noite),
+    );
+    atendimentos_do_profissional_almoco.push(
+      tiraMedia(atendimentos_do_profissional_almoco) == 0
+        ? "0"
+        : tiraMedia(atendimentos_do_profissional_almoco),
+    );
+    atendimentos_do_profissional_total.push(
+      tiraMedia(atendimentos_do_profissional_total) == 0
+        ? "0"
+        : tiraMedia(atendimentos_do_profissional_total),
+    );
 
-        let linha_manha = document.createElement("tr");
-        linha_manha.className = "no-border";
-        linha_manha.innerHTML = `<td>${atendimentos_do_profissional_manha.join("</td><td>")}</td>`;
-        linha_manha.innerHTML = linha_manha.innerHTML.replaceAll("<td>",'<td style="background-color:#B2D9AB;">');
-        linha_manha.innerHTML = linha_manha.innerHTML.replaceAll('<td style="background-color:#B2D9AB;">---</td>',"<td>---</td>");
-        linha_manha.innerHTML = linha_manha.innerHTML.replaceAll('<td style="background-color:#B2D9AB;"></td>',"<td></td>");
-        linha_manha.innerHTML = linha_manha.innerHTML.replaceAll('<td style="background-color:#B2D9AB;">0</td>','<td style="background-color:#EB989A;">0</td>');
-        linha_manha.innerHTML = linha_manha.innerHTML.replaceAll('<td style="background-color:#B2D9AB;">-','<td style="text-align:center;">');
-        linha_manha.innerHTML = linha_manha.innerHTML.replaceAll('<td style="','<td style="text-align:center;');
-        linha_manha.innerHTML = (ACS[codProfissional]?"<td>Visitadas</td>":"<td>Manhã</td>")+linha_manha.innerHTML;
-    
-        let linha_almoco= document.createElement("tr");
-        linha_almoco.className = "no-border";
-        linha_almoco.innerHTML = `<td>${atendimentos_do_profissional_almoco.join("</td><td>")}</td>`;
-        linha_almoco.innerHTML = linha_almoco.innerHTML.replaceAll("<td>",'<td style="background-color:#B2D9AB;">');
-        linha_almoco.innerHTML = linha_almoco.innerHTML.replaceAll('<td style="background-color:#B2D9AB;">---</td>',"<td>---</td>");
-        linha_almoco.innerHTML = linha_almoco.innerHTML.replaceAll('<td style="background-color:#B2D9AB;"></td>',"<td></td>");
-        linha_almoco.innerHTML = linha_almoco.innerHTML.replaceAll('<td style="background-color:#B2D9AB;">0</td>','<td style="background-color:#EB989A;">0</td>');
-        linha_almoco.innerHTML = linha_almoco.innerHTML.replaceAll('<td style="background-color:#B2D9AB;">-','<td style="text-align:center;">');
-        linha_almoco.innerHTML = linha_almoco.innerHTML.replaceAll('<td style="','<td style="text-align:center;');
-        linha_almoco.innerHTML = "<td>Almoço</td>"+linha_almoco.innerHTML;
-        linha_almoco.style=  ACS[codProfissional]?"display: none;":"";
-    
+    let tabela = document.createElement("table");
+    let cabecalho = document.createElement("tr");
+    cabecalho.innerHTML = `<td colspan=34><b>${meses[mes]}</b></td>`;
+    cabecalho.className = "header";
 
-        let linha_tarde = document.createElement("tr");
-        linha_tarde.className = "no-border";
-        linha_tarde.innerHTML = `<td>${atendimentos_do_profissional_tarde.join("</td><td>")}</td>`;
-        linha_tarde.innerHTML = linha_tarde.innerHTML.replaceAll("<td>",'<td style="background-color:#B2D9AB;">');
-        linha_tarde.innerHTML = linha_tarde.innerHTML.replaceAll('<td style="background-color:#B2D9AB;">---</td>',"<td>---</td>");
-        linha_tarde.innerHTML = linha_tarde.innerHTML.replaceAll('<td style="background-color:#B2D9AB;"></td>',"<td></td>");
-        linha_tarde.innerHTML = linha_tarde.innerHTML.replaceAll('<td style="background-color:#B2D9AB;">0</td>','<td style="background-color:#EB989A;">0</td>');
-        linha_tarde.innerHTML = linha_tarde.innerHTML.replaceAll('<td style="background-color:#B2D9AB;">-','<td style="text-align:center;">');
-        linha_tarde.innerHTML = linha_tarde.innerHTML.replaceAll('<td style="','<td style="text-align:center;');
-        linha_tarde.innerHTML = (ACS[codProfissional]?"<td>Recusadas</td>":"<td>Tarde</td>")+linha_tarde.innerHTML;
+    let linha_manha = document.createElement("tr");
+    linha_manha.className = "no-border";
+    linha_manha.innerHTML = `<td>${atendimentos_do_profissional_manha.join("</td><td>")}</td>`;
+    linha_manha.innerHTML = linha_manha.innerHTML.replaceAll(
+      "<td>",
+      '<td style="background-color:#B2D9AB;">',
+    );
+    linha_manha.innerHTML = linha_manha.innerHTML.replaceAll(
+      '<td style="background-color:#B2D9AB;">---</td>',
+      "<td>---</td>",
+    );
+    linha_manha.innerHTML = linha_manha.innerHTML.replaceAll(
+      '<td style="background-color:#B2D9AB;"></td>',
+      "<td></td>",
+    );
+    linha_manha.innerHTML = linha_manha.innerHTML.replaceAll(
+      '<td style="background-color:#B2D9AB;">0</td>',
+      '<td style="background-color:#EB989A;">0</td>',
+    );
+    linha_manha.innerHTML = linha_manha.innerHTML.replaceAll(
+      '<td style="background-color:#B2D9AB;">-',
+      '<td style="text-align:center;">',
+    );
+    linha_manha.innerHTML = linha_manha.innerHTML.replaceAll(
+      '<td style="',
+      '<td style="text-align:center;',
+    );
+    linha_manha.innerHTML =
+      (ACS[codProfissional] ? "<td>Visitadas</td>" : "<td>Manhã</td>") +
+      linha_manha.innerHTML;
 
-        let linha_noite= document.createElement("tr");
-        linha_noite.className = "no-border";
-        linha_noite.innerHTML = `<td>${atendimentos_do_profissional_noite.join("</td><td>")}</td>`;
-        linha_noite.innerHTML = linha_noite.innerHTML.replaceAll("<td>",'<td style="background-color:#B2D9AB;">');
-        linha_noite.innerHTML = linha_noite.innerHTML.replaceAll('<td style="background-color:#B2D9AB;">---</td>',"<td>---</td>");
-        linha_noite.innerHTML = linha_noite.innerHTML.replaceAll('<td style="background-color:#B2D9AB;"></td>',"<td></td>");
-        linha_noite.innerHTML = linha_noite.innerHTML.replaceAll('<td style="background-color:#B2D9AB;">0</td>','<td style="background-color:#EB989A;">0</td>');
-        linha_noite.innerHTML = linha_noite.innerHTML.replaceAll('<td style="background-color:#B2D9AB;">-','<td style="text-align:center;">');
-        linha_noite.innerHTML = linha_noite.innerHTML.replaceAll('<td style="','<td style="text-align:center;');
-        linha_noite.innerHTML = (ACS[codProfissional]?"<td>Ausentes</td>":"<td>Noite</td>")+linha_noite.innerHTML;
+    let linha_almoco = document.createElement("tr");
+    linha_almoco.className = "no-border";
+    linha_almoco.innerHTML = `<td>${atendimentos_do_profissional_almoco.join("</td><td>")}</td>`;
+    linha_almoco.innerHTML = linha_almoco.innerHTML.replaceAll(
+      "<td>",
+      '<td style="background-color:#B2D9AB;">',
+    );
+    linha_almoco.innerHTML = linha_almoco.innerHTML.replaceAll(
+      '<td style="background-color:#B2D9AB;">---</td>',
+      "<td>---</td>",
+    );
+    linha_almoco.innerHTML = linha_almoco.innerHTML.replaceAll(
+      '<td style="background-color:#B2D9AB;"></td>',
+      "<td></td>",
+    );
+    linha_almoco.innerHTML = linha_almoco.innerHTML.replaceAll(
+      '<td style="background-color:#B2D9AB;">0</td>',
+      '<td style="background-color:#EB989A;">0</td>',
+    );
+    linha_almoco.innerHTML = linha_almoco.innerHTML.replaceAll(
+      '<td style="background-color:#B2D9AB;">-',
+      '<td style="text-align:center;">',
+    );
+    linha_almoco.innerHTML = linha_almoco.innerHTML.replaceAll(
+      '<td style="',
+      '<td style="text-align:center;',
+    );
+    linha_almoco.innerHTML = "<td>Almoço</td>" + linha_almoco.innerHTML;
+    linha_almoco.style = ACS[codProfissional] ? "display: none;" : "";
 
-        let linha_total = document.createElement("tr");
-        linha_total.className = "no-border";
-        linha_total.innerHTML = `<td>${atendimentos_do_profissional_total.join("</td><td>")}</td>`;
-        linha_total.innerHTML = linha_total.innerHTML.replaceAll("<td>",'<td style="background-color:#B2D9AB;">');
-        linha_total.innerHTML = linha_total.innerHTML.replaceAll('<td style="background-color:#B2D9AB;">---</td>',"<td>---</td>");
-        linha_total.innerHTML = linha_total.innerHTML.replaceAll('<td style="background-color:#B2D9AB;"></td>',"<td></td>");
-        linha_total.innerHTML = linha_total.innerHTML.replaceAll('<td style="background-color:#B2D9AB;">0</td>','<td style="background-color:#EB989A;">0</td>');
-        linha_total.innerHTML = linha_total.innerHTML.replaceAll('<td style="background-color:#B2D9AB;">-','<td style="text-align:center;">');
-        linha_total.innerHTML = linha_total.innerHTML.replaceAll('<td style="','<td style="text-align:center;');
-        linha_total.innerHTML = "<td>Total</td>"+linha_total.innerHTML;
+    let linha_tarde = document.createElement("tr");
+    linha_tarde.className = "no-border";
+    linha_tarde.innerHTML = `<td>${atendimentos_do_profissional_tarde.join("</td><td>")}</td>`;
+    linha_tarde.innerHTML = linha_tarde.innerHTML.replaceAll(
+      "<td>",
+      '<td style="background-color:#B2D9AB;">',
+    );
+    linha_tarde.innerHTML = linha_tarde.innerHTML.replaceAll(
+      '<td style="background-color:#B2D9AB;">---</td>',
+      "<td>---</td>",
+    );
+    linha_tarde.innerHTML = linha_tarde.innerHTML.replaceAll(
+      '<td style="background-color:#B2D9AB;"></td>',
+      "<td></td>",
+    );
+    linha_tarde.innerHTML = linha_tarde.innerHTML.replaceAll(
+      '<td style="background-color:#B2D9AB;">0</td>',
+      '<td style="background-color:#EB989A;">0</td>',
+    );
+    linha_tarde.innerHTML = linha_tarde.innerHTML.replaceAll(
+      '<td style="background-color:#B2D9AB;">-',
+      '<td style="text-align:center;">',
+    );
+    linha_tarde.innerHTML = linha_tarde.innerHTML.replaceAll(
+      '<td style="',
+      '<td style="text-align:center;',
+    );
+    linha_tarde.innerHTML =
+      (ACS[codProfissional] ? "<td>Recusadas</td>" : "<td>Tarde</td>") +
+      linha_tarde.innerHTML;
 
+    let linha_noite = document.createElement("tr");
+    linha_noite.className = "no-border";
+    linha_noite.innerHTML = `<td>${atendimentos_do_profissional_noite.join("</td><td>")}</td>`;
+    linha_noite.innerHTML = linha_noite.innerHTML.replaceAll(
+      "<td>",
+      '<td style="background-color:#B2D9AB;">',
+    );
+    linha_noite.innerHTML = linha_noite.innerHTML.replaceAll(
+      '<td style="background-color:#B2D9AB;">---</td>',
+      "<td>---</td>",
+    );
+    linha_noite.innerHTML = linha_noite.innerHTML.replaceAll(
+      '<td style="background-color:#B2D9AB;"></td>',
+      "<td></td>",
+    );
+    linha_noite.innerHTML = linha_noite.innerHTML.replaceAll(
+      '<td style="background-color:#B2D9AB;">0</td>',
+      '<td style="background-color:#EB989A;">0</td>',
+    );
+    linha_noite.innerHTML = linha_noite.innerHTML.replaceAll(
+      '<td style="background-color:#B2D9AB;">-',
+      '<td style="text-align:center;">',
+    );
+    linha_noite.innerHTML = linha_noite.innerHTML.replaceAll(
+      '<td style="',
+      '<td style="text-align:center;',
+    );
+    linha_noite.innerHTML =
+      (ACS[codProfissional] ? "<td>Ausentes</td>" : "<td>Noite</td>") +
+      linha_noite.innerHTML;
 
-        let dias = document.createElement("tr");
-        dias.innerHTML = `
+    let linha_total = document.createElement("tr");
+    linha_total.className = "no-border";
+    linha_total.innerHTML = `<td>${atendimentos_do_profissional_total.join("</td><td>")}</td>`;
+    linha_total.innerHTML = linha_total.innerHTML.replaceAll(
+      "<td>",
+      '<td style="background-color:#B2D9AB;">',
+    );
+    linha_total.innerHTML = linha_total.innerHTML.replaceAll(
+      '<td style="background-color:#B2D9AB;">---</td>',
+      "<td>---</td>",
+    );
+    linha_total.innerHTML = linha_total.innerHTML.replaceAll(
+      '<td style="background-color:#B2D9AB;"></td>',
+      "<td></td>",
+    );
+    linha_total.innerHTML = linha_total.innerHTML.replaceAll(
+      '<td style="background-color:#B2D9AB;">0</td>',
+      '<td style="background-color:#EB989A;">0</td>',
+    );
+    linha_total.innerHTML = linha_total.innerHTML.replaceAll(
+      '<td style="background-color:#B2D9AB;">-',
+      '<td style="text-align:center;">',
+    );
+    linha_total.innerHTML = linha_total.innerHTML.replaceAll(
+      '<td style="',
+      '<td style="text-align:center;',
+    );
+    linha_total.innerHTML = "<td>Total</td>" + linha_total.innerHTML;
+
+    let dias = document.createElement("tr");
+    dias.innerHTML = `
             <th></th>
             <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th>
             <th> 8</th><th> 9</th><th>10</th><th>11</th><th>12</th><th>13</th><th>14</th>
@@ -361,41 +501,47 @@
             <th>Média</th>
         `;
 
-        tabela = document.getElementById("tabelas");
-        tabela.appendChild(cabecalho);
-        tabela.appendChild(dias);
-        tabela.appendChild(linha_manha);
-        tabela.appendChild(linha_almoco);
-        tabela.appendChild(linha_tarde);
-        tabela.appendChild(linha_noite);
-        tabela.appendChild(linha_total);
-        tabela.innerHTML += `                  <tr style="border:0 !important; background-color: transparent">
+    tabela = document.getElementById("tabelas");
+    tabela.appendChild(cabecalho);
+    tabela.appendChild(dias);
+    tabela.appendChild(linha_manha);
+    tabela.appendChild(linha_almoco);
+    tabela.appendChild(linha_tarde);
+    tabela.appendChild(linha_noite);
+    tabela.appendChild(linha_total);
+    tabela.innerHTML += `                  <tr style="border:0 !important; background-color: transparent">
                     <td style="border:0 !important;">&nbsp;</td>
                     <td style="border:0 !important;"> </td>
                   </tr>`;
-     }
+  }
 
-     for (let mes in meses) {
-                if (!mes) continue;
-                let atendimentos_do_mes = profissionalProducaoDiaria[2024][mes];
-                if (!atendimentos_do_mes) continue;
+  for (let mes in meses) {
+    if (!mes) continue;
+    let atendimentos_do_mes = profissionalProducaoDiaria[2024][mes];
+    if (!atendimentos_do_mes) continue;
 
-                let atendimentos_do_profissional = atendimentos_do_mes[codProfissional];
-    
-                if (!atendimentos_do_profissional) continue;
+    let atendimentos_do_profissional = atendimentos_do_mes[codProfissional];
 
+    if (!atendimentos_do_profissional) continue;
 
-                let atendimentosEfetivados = atendimentos_do_profissional.total[atendimentos_do_profissional.total.length-2];
-                let diasAtendimento = contaItensNumericos(atendimentos_do_profissional.total,true);
-                let capacidade = diasAtendimento*21;
-                let percentualAtentimentos = Math.floor(((atendimentosEfetivados/capacidade) || 0)*100);
+    let atendimentosEfetivados =
+      atendimentos_do_profissional.total[
+        atendimentos_do_profissional.total.length - 2
+      ];
+    let diasAtendimento = contaItensNumericos(
+      atendimentos_do_profissional.total,
+      true,
+    );
+    let capacidade = diasAtendimento * 21;
+    let percentualAtentimentos = Math.floor(
+      (atendimentosEfetivados / capacidade || 0) * 100,
+    );
 
-    
-                let tabela = document.getElementById("consolidados");
-                let cabecalho = document.createElement("tr");
-                tabela.appendChild(cabecalho);
-                tabela.appendChild(cabecalho);
-                cabecalho.outerHTML = `
+    let tabela = document.getElementById("consolidados");
+    let cabecalho = document.createElement("tr");
+    tabela.appendChild(cabecalho);
+    tabela.appendChild(cabecalho);
+    cabecalho.outerHTML = `
                   <tr>
                     <td colspan=34 class="header"><b>${meses[mes]}</b></td>
                   </tr>
@@ -420,10 +566,10 @@
                     <td style="border:0 !important;"> </td>
                   </tr>
                 `;
+  }
+  document.getElementById("consolidados").style = "display: none;";
+})();
 
-
-            }
-            document.getElementById('consolidados').style = 'display: none;';
     </script>
   </body>
 </html>
