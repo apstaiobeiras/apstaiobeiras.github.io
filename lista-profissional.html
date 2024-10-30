@@ -188,6 +188,7 @@ tr td:last-child {
         }
 
         if (codProfissional <0) return;
+        if (codProfissional.startsWith("@")) return;
 
         for (let equipe of [...document.getElementsByTagName("tr")]) {
           if (equipesProfissional.includes(equipe.getAttribute('name'))) continue;

@@ -121,6 +121,7 @@ tr td:last-child {
           ["Envio de documentos","Envie e/ou atualize sua documentação profissional","enviar-arquivo"],
         ],
         "Ferramentas de gestão": [
+          ["Preceptoria","Gerenciar preceptores","editor-preceptoria"],
           ["Editor de equipes ESF","Crie, edite e remova equipes tipo ESF","editor-equipes-esf"],
           ["Gerenciar profissionais","Adicione e remova acesso de pofissional","editor-profissional"],
         ],
@@ -261,6 +262,25 @@ tr td:last-child {
                                                                                                                .replace(/>\s+</g, '><');
 
         if (parseInt(codProfissional) < 0 ) {
+          return;
+        }
+
+        if (codProfissional.startsWith("@")) {
+          for (let linha of [...document.getElementsByName("Páginas")]) {
+            linha.remove();
+          }
+          for (let linha of [...document.getElementsByName("Tabelas-mapa")]) {
+            linha.remove();
+          }
+          for (let linha of [...document.getElementsByName("Listas e planilhas")]) {
+            linha.remove();
+          }
+          for (let linha of [...document.getElementsByName("Solicitações")]) {
+            linha.remove();
+          }
+          for (let linha of [...document.getElementsByName("Ferramentas de gestão")]) {
+            linha.remove();
+          }
           return;
         }
 

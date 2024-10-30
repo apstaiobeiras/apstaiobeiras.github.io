@@ -55,6 +55,16 @@
           <td>CPF:</td>
           <td><input id="cpf"></td>
         </tr>
+        <tr>
+          <td>Nível de acesso:</td>
+          <td>
+            <select id="nivelacesso">
+              <option value="">Normal</option>
+              <option value="@">Preceptor</option>
+              <option value="-">Administrador</option>
+            </select>
+          </td>
+        </tr>
         <tr><td>&nbsp;</td></tr>
       </table>
       <p align="right">
@@ -64,7 +74,7 @@
             const { data, error } = await supabase.from('dadosprofissionais').insert([
                   { 
                     nome: document.getElementById('nome').value,
-                    codprofissional: document.getElementById('codprofissional').value, 
+                    codprofissional: `${document.getElementById('nivelacesso').value}${document.getElementById('codprofissional').value}`, 
                     cpf: `${parseInt(document.getElementById('cpf').value).toString(36)}@profissional.ext`,
                   },
             ]);
