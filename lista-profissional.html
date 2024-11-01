@@ -93,7 +93,6 @@ tr td:last-child {
 
     <h3><br /></h3>
 
-    <script src="js/lista-profissionais-vivver.js"></script>
     <script src="assets/js/logout.js"></script>
     <script>
       let codProfissional = 0;
@@ -104,6 +103,14 @@ tr td:last-child {
       let equipesProfissional = [];
 
       (async () => {
+        const Profissionais = [];
+        {
+          let { data: profissionais, x } = await supabase.from('dadosprofissionais').select('*');
+          let profissionaisOrdenados = profissionais.sort((a,b) => a.nome > b.nome ? 1 : -1);
+          for (let profissional of profissionaisOrdenados) {
+            Profissionais.push([profissional.codprofissional,profissional.nome]);
+          }
+        }
 
         if (localStorage.getItem('override:codProfissional')) {
           for (let profissional of Profissionais) {
