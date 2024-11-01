@@ -1,0 +1,157 @@
+<!DOCTYPE html><html lang="pt_BR"><head><meta charset="utf8"/><title>Gestor da APS</title><style>        /* Estilo da barra de navegação */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333; /* Cor de fundo da barra de navegação */
+            color: #fff; /* Cor do texto da barra de navegação */
+            padding: 10px 0;
+            z-index: 99999999;
+        }
+        
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+        }
+        
+        /* Adicione margem ao corpo para evitar que o conteúdo fique oculto sob a barra de navegação */
+        body {
+            margin-top: 60px; /* Ajuste conforme necessário com base na altura da sua barra de navegação */
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .neutro {
+            background: #DFE2E5;
+        }
+
+        .ruim {
+            background: #ea9999!important;
+        }
+
+        .razoavel {
+            background: #f7cca0!important;
+        }
+
+        .proximo {
+            background: #b6d7a8!important;
+        }
+
+        .atingiu {
+            background: #9fc5e8!important;
+        }
+
+        .tr:hover {
+            background: #DFE2E5!important;
+            cursor: pointer!important;
+        }
+
+        .tr:pressed {
+            background: #9FA1A3!important;
+        }
+
+        table {
+            width: 100%!important;
+        }
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head>
+      <body class="container-lg px-3 my-5 markdown-body">
+        <div class="navbar" style="display: flex;justify-content: space-between; padding: 0;">
+            <a href="profissional.html">Voltar</a>
+            <a>Planilha</a>
+            <a href="#" onclick="logout()"> Fazer logout</a>
+        </div>
+        <h3><br></h3>
+        <h4>Filtrado <span id="filtrado">{filtrado}</span> pacientes de <span id="total">{total}</span> ou <span id=percentil>{percentil}</span>%</h3></h4><h3> </h3>
+        <div id="planilha"></div>
+        
+        
+        </body><script src="assets/js/logout.js"></script>
+    <script>
+        const script = document.createElement("script");
+          script.src = "js/"+(new URLSearchParams(window.location.search)).get('script')+'.js';
+          script.onload = function() {
+
+            const filtros = [];
+
+for (let elemento of document.getElementsByTagName('span')) {
+    if (!elemento.closest('tr')) continue;
+    let parent = Array.from(elemento.closest('tr').children);
+    for (let i in parent) {
+        if (elemento.closest('td') == parent[i]) {
+            let table = document.getElementsByTagName('tbody')[0];
+            let valor = elemento.getAttribute("name");
+            let nome = elemento.innerText;
+            let filtro = table.children[0].children[i].innerText;
+
+            filtros[filtro] = filtros[filtro] || [];
+            
+            if (filtros[filtro][nome] == undefined) {
+                filtros[filtro][nome] = valor;
+                filtros[filtro].push(nome);
+            }
+        }
+    }
+}
+
+let elementosFiltros = "";
+
+for (const filtro of Object.keys(filtros)) {
+    filtros[filtro].sort();
+    elementosFiltros += `<label>
+      <b>${filtro}: </b>
+      <select class="fixed-width" onchange="filtrar();" id="${filtro}">
+        <option value="">Todos</option>
+    `;
+    for (let opcao of filtros[filtro]) {
+        elementosFiltros += `
+          <option value="${filtros[filtro][opcao]}">${opcao}</option>
+        `;
+    }
+    elementosFiltros += `</select></label><br><br>`;
+}
+
+planilha.innerHTML = `${elementosFiltros} ${planilha.innerHTML}`;
+          };
+          document.head.appendChild(script);
+    </script>
+    
+    <script>
+    function filtrar() {
+      for (let linha of [...document.getElementsByTagName("tr")]) {
+        linha.style.display = "";
+      }
+
+      let valor = event.target.value;
+
+      for (let select of [...document.getElementsByTagName("select")]) {
+        select.value = "";
+      }
+
+      event.target.value = valor;
+
+      if (event.target.value == "") return;
+
+      let primeira = true;
+      let chaves = [];
+      
+      for (let linha of [...document.getElementsByTagName("tr")]) {
+        if (primeira) {
+            primeira = false;
+            for (i in [...linha.getElementsByTagName("th")]) {
+                chaves[linha.getElementsByTagName("th")[i].innerText] = i;
+            }
+            continue;
+        }
+
+        if (linha.children[chaves[event.target.id]].children[0].getAttribute("name") != event.target.value) {
+            linha.style.display = "none";
+        }
+      }
+    }
+    </script>
+ 
+</html>
