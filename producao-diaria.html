@@ -146,7 +146,6 @@
     
     <h3><br /></h3>
     <script src="assets/js/logout.js"></script>
-    <script src="js/lista-profissionais-vivver.js"></script>
     <script src="js/producao-por-dia-profissionais.js"></script>
     <script src="js/monitoramento-acs.js"></script>
     <script>
@@ -201,11 +200,13 @@
 let codProfissional = 0;
 (async function () {
   if (localStorage.getItem("override:codProfissional")) {
-    for (let profissional of Profissionais) {
-      if (profissional[0] == localStorage.getItem("override:codProfissional")) {
-        document.getElementById("nome").innerText = profissional[1];
-        codProfissional = profissional[0];
-        break;
+    let { data: profissionais, x } = await supabase.from('dadosprofissionais').select('*');
+    let profissionaisOrdenados = profissionais.sort((a,b) => a.nome > b.nome ? 1 : -1);
+    for (let profissional of profissionaisOrdenados) {
+      if (profissional.codprofissional == localStorage.getItem("override:codProfissional")) {
+        document.getElementById("nome").innerText = profissional.nome;
+        codProfissional = profissional.codprofissional;
+        break
       }
     }
   } else {
