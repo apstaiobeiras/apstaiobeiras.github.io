@@ -497,6 +497,7 @@ const SolicitacoesExcluidas = [
   [664555,1264,51626,2,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever o resultado do último PCCU realizado pela paciente para prosseguir com agendamento.Att. ",20240408,"CONSULTA GINECOLOGIA POLICLINICA"],
   [664607,1258,11815,34,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Relatar exames para diagnóstico diferencial, bem como tratamentos indicados.",20240321,"CONSULTA NEUROLOGIA"],
   [664646,907,27772,78,"<b>Não Se Enquadra nos Criterios: </b><br>Quadro de miomatose deve ser lançado na fila da GINECOLOGIA POLICLÍNICA.",20240313,"CONSULTA GINECOLOGIA CEAE"],
+  [664781,807,59197,18,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>DETALHAR MELHOR PARA VERIFICAÇÃO SE DEMANDA DE AVALIAÇÃO OU PEQUENA.",20241106,"AVALIAçaO CIRúRGICA - PPI"],
   [665090,907,13168,78,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data último resultado de PCCU realizado pela paciente para prosseguir com agendamento.Att.",20240408,"CONSULTA GINECOLOGIA POLICLINICA"],
   [665320,1258,46213,34,"<b>Não Se Enquadra nos Criterios: </b><br>Quadro de adenomiose deve ser lançado na fila da GINECOLOGIA POLICLÍNICA.",20240313,"CONSULTA GINECOLOGIA CEAE"],
   [665398,1259,5154,8,"<b>Não Se Enquadra nos Criterios: </b><br>Avalie primeiramente o protocolo de encaminhamento para Endocrinologia. Paciente necessita de exames completos na descrição  e acompanhamento médico, ele avalia se está de acordo com os critérios solicitados.",20240320,"CONSULTA ENDOCRINOLOGIA"],
@@ -1709,6 +1710,7 @@ const SolicitacoesExcluidas = [
   [799395,1317,23605,3,"<b>Não Se Enquadra nos Criterios: </b><br>Não consta atendimento com o Dr. Alex na mastologia.BI-RADS 2 deve ser acompanhado somente na APS.",20241016,"CONSULTA MASTOLOGIA CEAE"],
   [799427,0,70822,18,"<b>Solicitação Indevida: </b><br>REFERENCIAR PARA A FILA DO DIABETES ALTO RISCO.",20241016,"CONSULTA ENDOCRINOLOGIA"],
   [799585,907,62915,9,"<b>Solicitação Indevida: </b><br>PACIENTE NÃO APRESENTA HISTORICO DE ACOMPANHAMENTO NO AMBULATORIO DE PEDIATRIA (DR. DAYANE. HISTÓRICO DE ACOMPANHAMENTO NO CEAE).",20241104,"CONSULTA PEDIATRA POLICLINICA"],
+  [799602,1193,20579,56,"<b>Não Se Enquadra nos Criterios: </b><br>Colonoscopia de 07-2024: ADENOMA DE BAIXO GRAU.A indicação é de seguimento anual com gastro e colonoscoia conforme protocolo.",20241106,"ENDOSCOPIA COM BIOPSIA / PESQUISA H. PILOLY"],
   [799617,907,49930,9,"<b>Agendar na Atenção Primaria: </b><br>Sugiro prosseguir na propedêutica, para diagnóstico.",20241101,"CONSULTA ORTOPEDISTA"],
   [799736,1259,30469,8,"<b>Solicitação Indevida: </b><br>PACIENTE NÃO AGUARDAVA  EXAME DDE ANUSCOPIA.O MESMO ESTAVA EM FILA DE ESPERA PARA COLONOSCOPIA.",20241016,"ANUSCOPIA / RETOSCOPIA"],
   [800266,986,9376,11,"<b>Não Se Enquadra nos Criterios: </b><br>Fora da área de atendimento da equipe",20241016,"AVALIAçaO DE ELEGIBILIDADE - MELHOR EM CASA"],
@@ -1766,12 +1768,18 @@ const SolicitacoesExcluidas = [
   [810415,1291,4124,75,"<b>Não Se Enquadra nos Criterios: </b><br>QUADRO CLÍNICO NÃO SE APRESENTA COMO CRITÉRIO DE ENCAMINHAMENTO AO AMBULATORIO DE ENDOCRINOLOGIA.VERIFICAR CRITÉRIOS DE CEAE.",20241101,"CONSULTA ENDOCRINOLOGIA"],
   [810522,1194,4703,6,"<b>Não Se Enquadra nos Criterios: </b><br>De acordo protocolo diabetes altor risco, a HG do paciente deve apresentar acima de 9%, o que não é o caso da mesma neste momento.Att.",20241104,"CONSULTA DIABETES ALTO RISCO"],
   [810615,1281,18744,78,"<b>Não Se Enquadra nos Criterios: </b><br>Quadros de ansiedade e inquietação não são critérios para o CER-II. Solicito inserir na lista de espera da psicologia e-multi.Quadros apenas de atraso de aprendizagem não se enquadra nos critérios do CER-ii.O protocolo de  acesso do paciente ao CER-II esclarece que apenas Pessoas com autismo Nível de suporte II e II e Pessoas com deficiência intelectual moderada a grave são público do CER-II",20241104,"REABILITAçaO INTELECTUAL"],
+  [811428,1291,16570,75,"<b>Não Se Enquadra nos Criterios: </b><br>Sugiro Investigar dor torácica com propedêutica de imagem. ",20241106,"CONSULTA CARDIOLOGIA DR RENAN"],
   [811440,507,27128,2,"Não Se Enquadra nos Criterios",20241105,"AVALIAçaO PSICOLOGO E-MULTI"],
   [811496,1328,38986,78,"<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA FILA DE PEQUENA CIRURGIA.",20241105,"AVALIAçaO CIRURGICA POLICLINICA"],
+  [811996,507,33793,2,"<b>Não Se Enquadra nos Criterios: </b><br>Ausência de ECG BASAL e sem descrição da ausculta cardíaca no exame clínico.",20241106,"CONSULTA CARDIOLOGIA DR RENAN"],
   [812134,1138,78448,56,"<b>Solicitação Indevida: </b><br>Paciente lançada na fila de espera errada. Favor lançar na fila GESTANTE ALTO RISCO.",20241105,"CONSULTA GINECOLOGIA CEAE"],
   [812306,1220,4474,13,"<b>Agendar na Atenção Primaria: </b><br>Paciente já está em acompanhamento e remarcou atendimento após uma falta.",20241105,"AVALIAçaO PSICOLOGO E-MULTI"],
+  [812548,1259,1587,8,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever a data de realização dos exames bioquímicos para prosseguir com agendamento.Att.",20241106,"CONSULTA HIPERTENSO ALTO RISCO"],
+  [812759,1221,72715,4,"<b>Não Se Enquadra nos Criterios: </b><br>De acordo protocolo, o lactente ou criança com obesidade deve apresentar uma comorbidade associada para que se enquadre nos critérios.Att.",20241106,"CONSULTA PEDIATRIA ALTO RISCO"],
   [812894,1221,10622,4,"<b>Não Se Enquadra nos Criterios: </b><br>Sangramento uterino anormal sem alterações no USTV e PCCU, deve ser encaminhada na fila GINECOLOGIA CEAE.",20241105,"CONSULTA GINECOLOGIA POLICLINICA"],
   [813098,1016,32372,2,"Não Se Enquadra nos Criterios",20241105,"AVALIAçaO PSICOLOGO E-MULTI"],
+  [813199,1366,35304,34,"<b>Não Se Enquadra nos Criterios: </b><br>Todo encaminhamento deve ter descrição clínica, para que a regulação seja feita com melhor critério.",20241106,"ULTRASSONOGRAFIA DE BOLSA ESCROTAL"],
+  [813442,1016,1561,2,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor informa a PA aferida no atendimento, pelo Heartz sem resultado da PA a paciente é classificada como RCV Moderado.Att.",20241106,"CONSULTA HIPERTENSO ALTO RISCO"],
 ];
 
 const Unidades = [
@@ -1926,5 +1934,6 @@ const Profissionais = [
   'FREDERICO LUCAS MENDES FILHO:1328',
   'TIFANNY BEATRIZ BRITO MENDES:1342',
   'DEBORA RIBEIRO DE LIRA:1350',
+  'OSéIAS DE OLIVEIRA SANTOS:1366',
   ':90707011'
 ];
