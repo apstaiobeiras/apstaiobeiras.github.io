@@ -1784,6 +1784,7 @@ const SolicitacoesExcluidas = [
   [813199,1366,35304,34,"<b>Não Se Enquadra nos Criterios: </b><br>Todo encaminhamento deve ter descrição clínica, para que a regulação seja feita com melhor critério.",20241106,"ULTRASSONOGRAFIA DE BOLSA ESCROTAL"],
   [813442,1016,1561,2,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor informa a PA aferida no atendimento, pelo Heartz sem resultado da PA a paciente é classificada como RCV Moderado.Att.",20241106,"CONSULTA HIPERTENSO ALTO RISCO"],
   [814568,507,10112,2,"<b>Não Se Enquadra nos Criterios: </b><br>Para se enquadrar no alto risco, a gestante tem que apresentar herpes genital.",20241108,"CONSULTA GESTANTE ALTO RISCO"],
+  [815042,1260,25443,81,"<b>Não Se Enquadra nos Criterios: </b><br>Quadro de miomatose deve ser lançado na fila da GINECOLOGIA POLICLÍNICA.",20241108,"CONSULTA GINECOLOGIA CEAE"],
 ];
 
 const Unidades = [
