@@ -1444,6 +1444,7 @@ const SolicitacoesExcluidas = [
   [769420,1259,17701,8,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever as medicações em uso e posologia para prosseguir com agendamento.Att.",20240902,"CONSULTA HIPERTENSO ALTO RISCO"],
   [769641,1243,32415,9,"Não Se Enquadra nos Criterios",20240902,"AVALIAçaO PSICOLOGO E-MULTI"],
   [769672,1016,1519,13,"<b>Não Se Enquadra nos Criterios: </b><br>Favor encaminhar na fila Ginecologia Policlínica e descrever com data o último resultado de PCCU realizado pela paciente.Att.",20240902,"CONSULTA GINECOLOGIA CEAE"],
+  [769680,764,69265,68,"<b>Solicitação Indevida: </b><br>INSERIDO EM NOME INCORRETO.",20241112,"ULTRASSONOGRAFIA TRANSVAGINAL"],
   [769750,1138,14131,56,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>A HG é de 9 % ou 10%?",20240923,"CONSULTA DIABETES ALTO RISCO"],
   [769755,1207,23137,18,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Deve haver uma investigação clínica mínima prévia ao encaminhamento;",20241023,"CONSULTA ORTOPEDISTA"],
   [769767,1260,68468,81,"<b>Não Se Enquadra nos Criterios: </b><br>Favor encaminhar na fila Ginecologia Policlínica.Att.",20240902,"CONSULTA GINECOLOGIA CEAE"],
@@ -1683,8 +1684,10 @@ const SolicitacoesExcluidas = [
   [793850,1046,16131,10,"<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA FILA 'AVALIAÇÃO CIRURGICA POLICLÍNICA\"",20241015,"CONSULTA CIRURGIAO GERAL"],
   [793989,1260,18419,81,"<b>Não Se Enquadra nos Criterios: </b><br>De acordo protocolo a Hg da paciente deve estar acima de 9%, os valores apresentados demonstram que a UBS tem conduzida o quadro de DM de forma adequada e eficiente, sem necessariamente ter suporte especializado neste momento.Att. ",20241104,"CONSULTA DIABETES ALTO RISCO"],
   [794167,775,12862,7,"<b>Não Se Enquadra nos Criterios: </b><br>Paciente obesa mas sem comorbidades associadas.",20241030,"AVALIAçaO NUTRICIONISTA E-MULTI"],
+  [794310,1046,15304,10,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Deve encaminhar com usg de joelho. Para haver um mínimo diagnóstico ortopedico investigado.",20241112,"CONSULTA ORTOPEDISTA"],
   [794612,1328,18558,78,"<b>Não Se Enquadra nos Criterios: </b><br>Quadro de leiomioma deve ser lançado na fila da GINECOLOGIA POLICLÍNICA.",20241022,"CONSULTA GINECOLOGIA CEAE"],
   [794636,1291,8233,75,"<b>Não Se Enquadra nos Criterios: </b><br>ENCAMINHAR PARA A ONCOLOGIA, POR TFD. POR TER MARGENS CIRÚRGICAS COMPROMETIDAS.",20241024,"PEQUENA CIRURGIA POLICLINICA"],
+  [794662,775,25467,7,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Deve haver aprofundamento da investigação na persistência da dor referida.",20241112,"CONSULTA ORTOPEDISTA"],
   [794728,1260,63298,81,"Não Se Enquadra nos Criterios",20241009,"AVALIAçaO NUTRICIONISTA E-MULTI"],
   [794909,1194,47321,6,"<b>Não Se Enquadra nos Criterios: </b><br>Paciente não estava em acompanhamento na mastologia.BI-RADS 2 não é critério para acompanhamento no CEAE.",20241016,"CONSULTA MASTOLOGIA CEAE"],
   [794910,507,10045,2,"Não Se Enquadra nos Criterios",20241016,"AVALIAçaO PSICOLOGO E-MULTI"],
@@ -1788,6 +1791,8 @@ const SolicitacoesExcluidas = [
   [813442,1016,1561,2,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor informa a PA aferida no atendimento, pelo Heartz sem resultado da PA a paciente é classificada como RCV Moderado.Att.",20241106,"CONSULTA HIPERTENSO ALTO RISCO"],
   [814568,507,10112,2,"<b>Não Se Enquadra nos Criterios: </b><br>Para se enquadrar no alto risco, a gestante tem que apresentar herpes genital.",20241108,"CONSULTA GESTANTE ALTO RISCO"],
   [815042,1260,25443,81,"<b>Não Se Enquadra nos Criterios: </b><br>Quadro de miomatose deve ser lançado na fila da GINECOLOGIA POLICLÍNICA.",20241108,"CONSULTA GINECOLOGIA CEAE"],
+  [816492,1016,5986,2,"<b>Não Se Enquadra nos Criterios: </b><br>Varizes pélvicas não se enquadram nos critérios da gestação alto risco.",20241112,"CONSULTA GESTANTE ALTO RISCO"],
+  [817480,1219,30449,33,"<b>Não Se Enquadra nos Criterios: </b><br>PACIENTE COM DISLIPIDEMIA LEVE. SEM OUTRAS COMORBIDADES ASSOCIADAS QUE JUSTIFIQUEM O ACOMPANHAMENTO NUTRICIONAL.EXAMES LABORATORIAIS (15/10/2024): CT 240 HDL 51 LDL 170 TG 89SEGUNDO OS CRITÉRIO DE ENCAMINHAMENTO PARA NUTRIÇÃO, DEVERÃO SER ENCAMINHADOS PACIENTES COM DISLIPIDEMIA COM COLESTEROL TOTAL E TRIGLICERÍDEOS >300MG/DL",20241112,"AVALIAçaO NUTRICIONISTA E-MULTI"],
 ];
 
 const Unidades = [
