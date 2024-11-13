@@ -61,7 +61,6 @@
         <br/>
     </body>
     <script src="js/solicitacoes_excluidas.js"></script>
-    <script src="js/lista_profissionais_solicitacoes.js"></script>
     <script src="assets/js/logout.js"></script>
     <script>
         let codProfissional = 0;
@@ -133,7 +132,24 @@
         document.getElementById("data_inicial").min=((new Date()).getFullYear()-1)+"-01-01";
         document.getElementById("data_inicial").max=((new Date()).getFullYear()+1)+"-12-31";
 
-        document.getElementById("lista-profissional").innerHTML = lista_profissionais_solicitacoes;
+        let profissionais = Profissionais.filter((profissional) => {
+            if (profissional.split(":")[1] == "0") return false;
+            if (profissional.split(":")[1] == "807") return false;
+            if (profissional.split(":")[1] == "770") return false;
+            if (profissional.split(":")[1] == "90707011") return false;
+            if (profissional.split(":")[1] == "1") return false;
+            return true;
+        }).sort((a,b) => {
+            return b.split(":")[0].normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim() > a.split(":")[0].normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim() ? -1 : 1;
+        });
+
+        let seletorProfissionais = "";
+        for (let profissional of profissionais) {
+            let cod = profissional.split(":")[1];
+            let nome = profissional.split(":")[0];
+            seletorProfissionais += `<option value="${cod}">${nome}</option>\n`
+        }
+        document.getElementById("lista-profissional").innerHTML = seletorProfissionais;
         document.getElementById("lista-profissional").value = codProfissional;
 
         filtra();
