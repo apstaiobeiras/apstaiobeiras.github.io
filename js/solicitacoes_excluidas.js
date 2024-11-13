@@ -1545,6 +1545,8 @@ const SolicitacoesExcluidas = [
   [778316,1219,32118,33,"<b>Não Se Enquadra nos Criterios: </b><br>Sugiro investigar doença gastrointestinal, com EDA-provável DRGE.",20240917,"CONSULTA CARDIOLOGIA DR RENAN"],
   [778333,832,13719,2,"<b>Agendar na Atenção Primaria: </b><br>Agendado inicio do acompanhamento para 03/10/2024.",20241002,"AVALIAçaO PSICOLOGO E-MULTI"],
   [778338,1133,13684,2,"<b>Agendar na Atenção Primaria: </b><br>Agendado inicio do acompanhamento para 10/10/2024.",20241009,"AVALIAçaO PSICOLOGO E-MULTI"],
+  [778394,1133,25375,2,"<b>Agendar na Atenção Primaria: </b><br>Agendado inicio do acompanhamento.",20241113,"AVALIAçaO PSICOLOGO E-MULTI"],
+  [778407,507,47679,2,"<b>Agendar na Atenção Primaria: </b><br>Agendado inicio do acompanhamento.",20241113,"AVALIAçaO PSICOLOGO E-MULTI"],
   [778495,1277,11759,4,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data, os últimos resultados de exames bioquímicos realizados pelo paciente, para prosseguir com agendamento.Att.",20240919,"CONSULTA HIPERTENSO ALTO RISCO"],
   [778561,216,9728,13,"<b>Agendar na Atenção Primaria: </b><br>Atendimento agendado para iniciar dia 27/09/24",20240927,"AVALIAçaO PSICOLOGO E-MULTI"],
   [778599,216,12089,13,"<b>Agendar na Atenção Primaria: </b><br>Agendado inicio do acompanhamento.",20241004,"AVALIAçaO PSICOLOGO E-MULTI"],
@@ -1684,6 +1686,7 @@ const SolicitacoesExcluidas = [
   [793850,1046,16131,10,"<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA FILA 'AVALIAÇÃO CIRURGICA POLICLÍNICA\"",20241015,"CONSULTA CIRURGIAO GERAL"],
   [793989,1260,18419,81,"<b>Não Se Enquadra nos Criterios: </b><br>De acordo protocolo a Hg da paciente deve estar acima de 9%, os valores apresentados demonstram que a UBS tem conduzida o quadro de DM de forma adequada e eficiente, sem necessariamente ter suporte especializado neste momento.Att. ",20241104,"CONSULTA DIABETES ALTO RISCO"],
   [794167,775,12862,7,"<b>Não Se Enquadra nos Criterios: </b><br>Paciente obesa mas sem comorbidades associadas.",20241030,"AVALIAçaO NUTRICIONISTA E-MULTI"],
+  [794291,1069,16974,6,"<b>Não Se Enquadra nos Criterios: </b><br>Encaminhamento sem preenchimento de informações mínimas (peso e altura e IMC) para regulagem na fila. Quando investiguei o caso, paciente está eutrófico de acordo com o IMC apesar das comorbidades, sendo assim não se encaixa nos critérios para atendimento nutricional",20241113,"AVALIAçaO NUTRICIONISTA E-MULTI"],
   [794310,1046,15304,10,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Deve encaminhar com usg de joelho. Para haver um mínimo diagnóstico ortopedico investigado.",20241112,"CONSULTA ORTOPEDISTA"],
   [794612,1328,18558,78,"<b>Não Se Enquadra nos Criterios: </b><br>Quadro de leiomioma deve ser lançado na fila da GINECOLOGIA POLICLÍNICA.",20241022,"CONSULTA GINECOLOGIA CEAE"],
   [794636,1291,8233,75,"<b>Não Se Enquadra nos Criterios: </b><br>ENCAMINHAR PARA A ONCOLOGIA, POR TFD. POR TER MARGENS CIRÚRGICAS COMPROMETIDAS.",20241024,"PEQUENA CIRURGIA POLICLINICA"],
@@ -1750,6 +1753,7 @@ const SolicitacoesExcluidas = [
   [805628,1317,31980,3,"<b>Não Se Enquadra nos Criterios: </b><br>Deficiência vitamínica isolada não se enquadra nos critérios da Nutrição conforme protocolo aprovado em 18/07/2024.",20241025,"AVALIAçaO NUTRICIONISTA E-MULTI"],
   [805709,1317,1831,3,"<b>Não Se Enquadra nos Criterios: </b><br>Somente mastalgia não é critério para o CEAE.",20241030,"CONSULTA - MASTOLOGISTA"],
   [805754,907,20548,9,"<b>Não Se Enquadra nos Criterios: </b><br>Procedimento pode ser realizado na UBS.",20241024,"PEQUENA CIRURGIA POLICLINICA"],
+  [806106,736,7564,18,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Complementar justificativa clínica.",20241113,"ULTRASSONOGRAFIA PELVICA (GINECOLOGICA)"],
   [806107,1138,19960,56,"<b>Não Se Enquadra nos Criterios: </b><br>Paciente tem condições de ser atendida na APS.",20241030,"AVALIAçaO DE ELEGIBILIDADE - MELHOR EM CASA"],
   [806115,1193,14844,56,"<b>Não Se Enquadra nos Criterios: </b><br>SEM ECG BASAL, SEM RELATO DE AJUSTE DE DOSE. PACIENTE ASSINTOMÁTICA.",20241031,"CONSULTA CARDIOLOGIA DR RENAN"],
   [806121,1306,34409,8,"<b>Não Se Enquadra nos Criterios: </b><br>Somente Sífilis terciária ou resistente ao tratamento com penicilina benzatina é que são encaminhadas para o alto risco.",20241030,"CONSULTA GESTANTE ALTO RISCO"],
@@ -1793,6 +1797,7 @@ const SolicitacoesExcluidas = [
   [815042,1260,25443,81,"<b>Não Se Enquadra nos Criterios: </b><br>Quadro de miomatose deve ser lançado na fila da GINECOLOGIA POLICLÍNICA.",20241108,"CONSULTA GINECOLOGIA CEAE"],
   [816492,1016,5986,2,"<b>Não Se Enquadra nos Criterios: </b><br>Varizes pélvicas não se enquadram nos critérios da gestação alto risco.",20241112,"CONSULTA GESTANTE ALTO RISCO"],
   [817480,1219,30449,33,"<b>Não Se Enquadra nos Criterios: </b><br>PACIENTE COM DISLIPIDEMIA LEVE. SEM OUTRAS COMORBIDADES ASSOCIADAS QUE JUSTIFIQUEM O ACOMPANHAMENTO NUTRICIONAL.EXAMES LABORATORIAIS (15/10/2024): CT 240 HDL 51 LDL 170 TG 89SEGUNDO OS CRITÉRIO DE ENCAMINHAMENTO PARA NUTRIÇÃO, DEVERÃO SER ENCAMINHADOS PACIENTES COM DISLIPIDEMIA COM COLESTEROL TOTAL E TRIGLICERÍDEOS >300MG/DL",20241112,"AVALIAçaO NUTRICIONISTA E-MULTI"],
+  [817974,1366,30866,3,"<b>Solicitação Indevida: </b><br>Sem justificativa.",20241113,"ULTRASSONOGRAFIA DE APARELHO URINÁRIO"],
 ];
 
 const Unidades = [

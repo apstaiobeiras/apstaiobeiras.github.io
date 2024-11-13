@@ -16,7 +16,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/121046">73046</a></td><td>Larrisa Sousa da Cruz</td><td><div style="white-space: nowrap;">1 ano e 10 mês </div></td><td><span name="COMUNIDADES RURAIS" >COMUNIDADES RURAIS</a></td><td><span name="1173" >DEUSDELIA PEREIRA DOS SANTOS</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/59806">58854</a></td><td>Thais Braga Alves</td><td><div style="white-space: nowrap;">1 ano e 11 mês </div></td><td><span name="HUMANIZAR" >HUMANIZAR</a></td><td><span name="484" >ELISENE DE JESUS SOUZA</a></td><td><span name="1º DOSE" style="white-space: nowrap;">1º DOSE</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/105020">71093</a></td><td>Laura Sousa Santos</td><td><div style="white-space: nowrap;">1 ano e 6 mês </div></td><td><span name="UNIAO" >UNIAO</a></td><td><span name="301" >CERLIOS MARQUES DOS SANTOS</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/80856">67694</a></td><td>Gabriela Mourao Palhares</td><td><div style="white-space: nowrap;">1 ano e 8 mês </div></td><td><span name="VIVER" >VIVER</a></td><td><span name="581" >JESSICA ANA DE JESUS</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
@@ -26,6 +26,9 @@ document.getElementById('planilha').innerHTML = `<table>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/121643">73538</a></td><td>Gael Sena Carvalho</td><td><div style="white-space: nowrap;">1 ano e 11 mês </div></td><td><span name="CAMINHO" >CAMINHO</a></td><td><span name="1129" >DENIZ CAROLINE PEREIRA MARTINS</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
+    </tr>
+      <tr>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/59806">58854</a></td><td>Thais Braga Alves</td><td><div style="white-space: nowrap;">1 ano e 11 mês </div></td><td><span name="HUMANIZAR" >HUMANIZAR</a></td><td><span name="484" >ELISENE DE JESUS SOUZA</a></td><td><span name="1º DOSE" style="white-space: nowrap;">1º DOSE</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/127763">78571</a></td><td>Anny Jasmine Santos Dias</td><td><div style="white-space: nowrap;">1 ano e 11 mês </div></td><td><span name="VIVER" >VIVER</a></td><td><span name="615" >MICAELY PEREIRA ALVES</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
