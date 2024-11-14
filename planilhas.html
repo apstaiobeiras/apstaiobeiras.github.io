@@ -74,52 +74,52 @@
         
         </body><script src="assets/js/logout.js"></script>
     <script>
-        const script = document.createElement("script");
-          script.src = "js/"+(new URLSearchParams(window.location.search)).get('script')+'.js';
-          script.onload = function() {
+    const script = document.createElement("script");
+    script.src =
+      "js/" + new URLSearchParams(window.location.search).get("script") + ".js";
+    script.onload = function () {
+      const filtros = [];
 
-            const filtros = [];
-
-for (let elemento of document.getElementsByTagName('span')) {
-    if (!elemento.closest('tr')) continue;
-    let parent = Array.from(elemento.closest('tr').children);
-    for (let i in parent) {
-        if (elemento.closest('td') == parent[i]) {
-            let table = document.getElementsByTagName('tbody')[0];
+      for (let elemento of document.getElementsByTagName("span")) {
+        if (!elemento.closest("tr")) continue;
+        let parent = Array.from(elemento.closest("tr").children);
+        for (let i in parent) {
+          if (elemento.closest("td") == parent[i]) {
+            let table = document.getElementsByTagName("tbody")[0];
             let valor = elemento.getAttribute("name");
             let nome = elemento.innerText;
             let filtro = table.children[0].children[i].innerText;
 
             filtros[filtro] = filtros[filtro] || [];
-            
+
             if (filtros[filtro][nome] == undefined) {
-                filtros[filtro][nome] = valor;
-                filtros[filtro].push(nome);
+              filtros[filtro][nome] = valor;
+              filtros[filtro].push(nome);
             }
+          }
         }
-    }
-}
+      }
 
-let elementosFiltros = "";
+      let elementosFiltros = "";
 
-for (const filtro of Object.keys(filtros)) {
-    filtros[filtro].sort();
-    elementosFiltros += `<label>
+      for (const filtro of Object.keys(filtros)) {
+        filtros[filtro].sort();
+        elementosFiltros += `<label>
       <b>${filtro}: </b>
       <select class="fixed-width" onchange="filtrar();" id="${filtro}">
         <option value="">Todos</option>
     `;
-    for (let opcao of filtros[filtro]) {
-        elementosFiltros += `
+        for (let opcao of filtros[filtro]) {
+          elementosFiltros += `
           <option value="${filtros[filtro][opcao]}">${opcao}</option>
         `;
-    }
-    elementosFiltros += `</select></label><br><br>`;
-}
+        }
+        elementosFiltros += `</select></label><br><br>`;
+      }
 
-planilha.innerHTML = `${elementosFiltros} ${planilha.innerHTML}`;
-          };
-          document.head.appendChild(script);
+      planilha.innerHTML = `${elementosFiltros} ${planilha.innerHTML}`;
+    };
+    document.head.appendChild(script);
     </script>
     
     <script>
@@ -128,15 +128,14 @@ planilha.innerHTML = `${elementosFiltros} ${planilha.innerHTML}`;
         linha.style.display = "";
       }
 
-      let valor = event.target.value;
+      const seletores = {};
 
       for (let select of [...document.getElementsByTagName("select")]) {
-        select.value = "";
+        if (select.value == "") continue;
+        seletores[select.id] = select.value;
       }
 
-      event.target.value = valor;
-
-      if (event.target.value == "") return;
+      if (Object.keys(seletores).length == 0) return;
 
       let primeira = true;
       let chaves = [];
@@ -150,41 +149,46 @@ planilha.innerHTML = `${elementosFiltros} ${planilha.innerHTML}`;
             continue;
         }
 
-        if (linha.children[chaves[event.target.id]].children[0].getAttribute("name") != event.target.value) {
-            linha.style.display = "none";
+        for (const [coluna, valor] of Object.entries(seletores)) {
+            if (linha.children[chaves[coluna]].children[0].getAttribute("name") != valor) {
+                linha.style.display = "none";
+            }
         }
       }
     }
 
     function baixarComoCSV() {
-    const table = document.getElementsByTagName('table')[0];
-    if (!table) return console.error("Table element not found");
+      const table = document.getElementsByTagName("table")[0];
+      if (!table) return console.error("Table element not found");
 
-    let csvContent = '\uFEFF';
-    
-    Array.from(table.rows).forEach(row => {
+      let csvContent = "\uFEFF";
+
+      Array.from(table.rows).forEach((row) => {
         // Skip rows with `display: none` style
-        if (row.style.display === 'none') return;
+        if (row.style.display === "none") return;
 
-        const rowData = Array.from(row.cells).map(cell => {
+        const rowData = Array.from(row.cells)
+          .map((cell) => {
             let cellText = cell.textContent.trim();
             // Escape any quotes in cell text and surround with quotes
             cellText = `"${cellText.replace(/"/g, '""')}"`;
             return cellText;
-        }).join(';');
+          })
+          .join(";");
 
-        csvContent += rowData + '\n';
-    });
+        csvContent += rowData + "\n";
+      });
 
-    // Create a Blob and trigger a download
-    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
-    const link = document.createElement('a');
-    link.href = URL.createObjectURL(blob);
-    link.download = (new URLSearchParams(window.location.search)).get('script')+".csv";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-}
+      // Create a Blob and trigger a download
+      const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download =
+        new URLSearchParams(window.location.search).get("script") + ".csv";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
     </script>
  
 </html>
