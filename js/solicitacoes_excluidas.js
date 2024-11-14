@@ -1782,6 +1782,7 @@ const SolicitacoesExcluidas = [
   [810415,1291,4124,75,"<b>Não Se Enquadra nos Criterios: </b><br>QUADRO CLÍNICO NÃO SE APRESENTA COMO CRITÉRIO DE ENCAMINHAMENTO AO AMBULATORIO DE ENDOCRINOLOGIA.VERIFICAR CRITÉRIOS DE CEAE.",20241101,"CONSULTA ENDOCRINOLOGIA"],
   [810522,1194,4703,6,"<b>Não Se Enquadra nos Criterios: </b><br>De acordo protocolo diabetes altor risco, a HG do paciente deve apresentar acima de 9%, o que não é o caso da mesma neste momento.Att.",20241104,"CONSULTA DIABETES ALTO RISCO"],
   [810615,1281,18744,78,"<b>Não Se Enquadra nos Criterios: </b><br>Quadros de ansiedade e inquietação não são critérios para o CER-II. Solicito inserir na lista de espera da psicologia e-multi.Quadros apenas de atraso de aprendizagem não se enquadra nos critérios do CER-ii.O protocolo de  acesso do paciente ao CER-II esclarece que apenas Pessoas com autismo Nível de suporte II e II e Pessoas com deficiência intelectual moderada a grave são público do CER-II",20241104,"REABILITAçaO INTELECTUAL"],
+  [810669,1016,56826,2,"<b>Solicitação Indevida: </b><br>SOLICITAR US OBSTETRICO.",20241114,"ULTRASSONOGRAFIA TRANSVAGINAL"],
   [811428,1291,16570,75,"<b>Não Se Enquadra nos Criterios: </b><br>Sugiro Investigar dor torácica com propedêutica de imagem. ",20241106,"CONSULTA CARDIOLOGIA DR RENAN"],
   [811440,507,27128,2,"Não Se Enquadra nos Criterios",20241105,"AVALIAçaO PSICOLOGO E-MULTI"],
   [811496,1328,38986,78,"<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA FILA DE PEQUENA CIRURGIA.",20241105,"AVALIAçaO CIRURGICA POLICLINICA"],
@@ -1805,8 +1806,13 @@ const SolicitacoesExcluidas = [
   [817085,1243,17077,9,"<b>Não Se Enquadra nos Criterios: </b><br>Paciente não enquadra no protocolo de atendimento da nutrição e-Multi. Se enqudra no Protocolo de encaminhamento para endocrinologia CEAE (HIPERDIA): De acordo com o item 1.: Diabetes Mellitus ● Paciente com DM tipo 1.",20241114,"AVALIAçaO NUTRICIONISTA E-MULTI"],
   [817417,907,13856,9,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data os últimos resultados de  exames laboratoriais realizados pela paciente.Att.",20241114,"CONSULTA HIPERTENSO ALTO RISCO"],
   [817480,1219,30449,33,"<b>Não Se Enquadra nos Criterios: </b><br>PACIENTE COM DISLIPIDEMIA LEVE. SEM OUTRAS COMORBIDADES ASSOCIADAS QUE JUSTIFIQUEM O ACOMPANHAMENTO NUTRICIONAL.EXAMES LABORATORIAIS (15/10/2024): CT 240 HDL 51 LDL 170 TG 89SEGUNDO OS CRITÉRIO DE ENCAMINHAMENTO PARA NUTRIÇÃO, DEVERÃO SER ENCAMINHADOS PACIENTES COM DISLIPIDEMIA COM COLESTEROL TOTAL E TRIGLICERÍDEOS >300MG/DL",20241112,"AVALIAçaO NUTRICIONISTA E-MULTI"],
+  [817773,370,22870,9,"<b>Solicitação Indevida: </b><br>Ausência de justificativa para o exame.",20241114,"ESPIROMETRIA OU PROVA DE FUNCAO PULMONAR COMPLETA COM BRONCODILATADOR"],
   [817843,216,13920,13,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data os resultados dos últimos exames bioquímicos realizados pela paciente.Att. ",20241114,"CONSULTA HIPERTENSO ALTO RISCO"],
   [817974,1366,30866,3,"<b>Solicitação Indevida: </b><br>Sem justificativa.",20241113,"ULTRASSONOGRAFIA DE APARELHO URINÁRIO"],
+  [818427,1199,22305,81,"<b>Não Se Enquadra nos Criterios: </b><br>Segundo protocolo municipal para DMG, somente DM prévia diagnosticada na gestação deve ser encaminhada ao alto risco.Primeiro passo é encaminhar para a nutricionista da e-multi. Se no período de duas semanas em acompanhamento com a nutricionista, não houver controle glicêmico, poderá encaminhar ao alto risco para avaliar terapia medicamentosa.",20241114,"CONSULTA GESTANTE ALTO RISCO"],
+  [818592,1132,65967,10,"<b>Não Se Enquadra nos Criterios: </b><br>Segundo protocolo municipal para DMG, somente DM prévia diagnosticada na gestação deve ser encaminhada ao alto risco.Primeiro passo é encaminhar para a nutricionista da e-multi. Se no período de duas semanas em acompanhamento com a nutricionista, não houver controle glicêmico, poderá encaminhar ao alto risco para avaliar terapia medicamentosa.NIC I não é critério para alto risco.",20241114,"CONSULTA GESTANTE ALTO RISCO"],
+  [818666,1220,26895,13,"<b>Não Se Enquadra nos Criterios: </b><br>Segundo protocolo municipal para DMG, somente DM prévia diagnosticada na gestação deve ser encaminhada ao alto risco.Primeiro passo é encaminhar para a nutricionista da e-multi. Se no período de duas semanas em acompanhamento com a nutricionista, não houver controle glicêmico, poderá encaminhar ao alto risco para avaliar terapia medicamentosa.Adenomiose e 2 abortos prévios não se enquadram nos critérios do alto risco.",20241114,"CONSULTA GESTANTE ALTO RISCO"],
+  [819032,1282,39467,6,"<b>Não Se Enquadra nos Criterios: </b><br>Segundo protocolo municipal para DMG, somente DM prévia diagnosticada na gestação deve ser encaminhada ao alto risco.Primeiro passo é encaminhar para a nutricionista da e-multi. Se no período de duas semanas em acompanhamento com a nutricionista, não houver controle glicêmico, poderá encaminhar ao alto risco para avaliar terapia medicamentosa.",20241114,"CONSULTA GESTANTE ALTO RISCO"],
 ];
 
 const Unidades = [
@@ -1855,6 +1861,7 @@ const Profissionais = [
   'ANDRESSA FERREIRA COSTA:353',
   'LYVIA SENA MENDES ESCOBAR:354',
   'GLEICIANE RAMOS BANDEIRA:362',
+  'JOAO PEDRO MARQUES MENDES CORREA:370',
   'RAFAEL BRITO:474',
   'LUANA PEREIRA ROCHA:507',
   'CAMILA DRIELLY CRUZ COSTA:667',
