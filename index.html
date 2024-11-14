@@ -126,7 +126,7 @@
           </tr>
           <tr class="no-border">
             <td><button onclick="document.getElementById('login').close();document.getElementById('changeFirstPassword').close();">Cancelar</button></td>
-            <td align="right"> <button onclick="event.preventDefault();signup();">Acessar</button></td>
+            <td align="right"> <button onclick="event.preventDefault();signup();">Cadastrar</button></td>
           </tr>
         </table>
         <p style="color: red;" id="erroPrimeiroAcesso"></p>
@@ -147,7 +147,6 @@
         </table>
       </dialog>
 
-      <script src="js/Profissionais-cadastrados.js"></script>
       <script src="assets/js/logout.js"></script>
       <script>
 
@@ -156,20 +155,8 @@ function applyCPFFormat(input) {
     let value = input.value.replace(/\D/g, '');
     let cpf = value;
     let cpfRegex = /^\d{3}\.\d{3}\.\d{3}-\d{2}$/;
-    // Apply CPF mask
-
 
     value = value.replace(/^(\d{3})(\d{3})(\d{3})(\d{2}).*/, '$1.$2.$3-$4');
-
-    if (cpfRegex.test(value)) {
-      let cod_cpf = parseInt((cpf).substr(3,6)).toString(36);
-      for (let cadastro of Profissionais){
-        if (cadastro[3] == cod_cpf) {
-          document.getElementById("nome").innerText=cadastro[1].split(" ")[0];
-          break
-        }
-      }
-    }
 
     // Update input value
     input.value = value;
@@ -178,6 +165,11 @@ function applyCPFFormat(input) {
 async function signup() {
   if (document.getElementById("novoCPF").value == "") {
     document.getElementById("erroPrimeiroAcesso").innerText = "CPF não pode estar em branco";
+    return;
+  }
+
+  if (document.getElementById("novaSenha").value.length < 6) {
+    document.getElementById("erroPrimeiroAcesso").innerText = "A senha precisa ter pelo menos 6 caracteres";
     return;
   }
 
@@ -191,12 +183,13 @@ async function signup() {
     return;
   }
 
-  let { data, error } = await window.supabase.auth.signUp({
-  email: `${parseInt(document.getElementById("novoCPF").value.replaceAll(".","").replaceAll("-","")).toString(36)}@profissional.ext`,
-  password: document.getElementById("novaSenha").value,
-})
+  let { data, error } = await supabase.auth.signUp({
+    email: `${parseInt(document.getElementById("novoCPF").value.replaceAll(".","").replaceAll("-","")).toString(36)}@profissional.ext`,
+    password: document.getElementById("novaSenha").value,
+  })
   if (!error) {
     document.getElementById('changeFirstPassword').close();
+
     return;
   }
 
@@ -239,6 +232,7 @@ async function login() {
 
   if (error) {
     document.getElementById('loginErro').showModal();
+    console.log(error)
     return;
   }
   localStorage.setItem("profissional", `${parseInt(document.getElementById("cpf").value.replaceAll(".","").replaceAll("-","")).toString(36)}@profissional.ext`);

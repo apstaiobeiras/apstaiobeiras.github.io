@@ -112,7 +112,7 @@
             <button onclick="
             (
               async () => {
-                const { data: { users }, error1 } = await supabase.auth.admin.listUsers()
+                const { data: { users }, error1 } = await supabase.auth.admin.listUsers({page: 1,perPage: 1000});
 
                 for (let user of users) {
                   if (user.email == window.cpf) {
@@ -153,7 +153,7 @@
             <button onclick="
             (
               async () => {
-                const { data: { users }, error1 } = await supabase.auth.admin.listUsers()
+                const { data: { users }, error1 } = await supabase.auth.admin.listUsers({page: 1,perPage: 1000});
 
                 for (let user of users) {
                   if (user.email == window.cpf) {
