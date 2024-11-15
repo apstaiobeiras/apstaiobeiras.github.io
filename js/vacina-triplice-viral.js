@@ -4,9 +4,6 @@ document.getElementById('planilha').innerHTML = `<table>
       <th>Prontuário</th><th>Nome da criança</th><th>Idade</th><th>Equipe</th><th>ACS</th><th>Dose</th>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/121201">73179</a></td><td>Joaquim Pereira Duraes</td><td><div style="white-space: nowrap;">1 ano e 11 mês </div></td><td><span name="ESPERANÇA" >ESPERANÇA</a></td><td><span name="968" >AMANDA MARIA SOARES SANTOS</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
-    </tr>
-      <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/108884">71521</a></td><td>Jade Ferreira Magalhaes</td><td><div style="white-space: nowrap;">1 ano e 1 mês </div></td><td><span name="MAIS SAUDE" >MAIS SAUDE</a></td><td><span name="550" >CLEIDIANE DOS SANTOS MEIRELES</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
     </tr>
       <tr>
@@ -38,9 +35,6 @@ document.getElementById('planilha').innerHTML = `<table>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/94689">69812</a></td><td>Henry Moreira Alves</td><td><div style="white-space: nowrap;">1 ano e 4 mês </div></td><td><span name="VIDA E SAUDE" >VIDA E SAUDE</a></td><td><span name="481" >MARTA PEREIRA DE OLIVEIRA</a></td><td><span name="1º DOSE" style="white-space: nowrap;">1º DOSE</a></td>
-    </tr>
-      <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/91283">69390</a></td><td>Livia Pereira Costa</td><td><div style="white-space: nowrap;">1 ano e 11 mês </div></td><td><span name="CAMINHO" >CAMINHO</a></td><td><span name="801" >ANGELICA PEREIRA DE OLIVEIRA</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/59493">58552</a></td><td>Liz Yanara Braga de Jesus</td><td><div style="white-space: nowrap;">1 ano e 11 mês </div></td><td><span name="HUMANIZAR" >HUMANIZAR</a></td><td><span name="317" >NORMA TRANCOSO VIANA</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
