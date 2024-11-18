@@ -31,13 +31,10 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/127763">78571</a></td><td>Anny Jasmine Santos Dias</td><td><div style="white-space: nowrap;">1 ano e 11 mês </div></td><td><span name="VIVER" >VIVER</a></td><td><span name="615" >MICAELY PEREIRA ALVES</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/59846">58894</a></td><td>Davi Ranulfo Lima Ribeiro</td><td><div style="white-space: nowrap;">1 ano e 10 mês </div></td><td><span name="VIDA E SAUDE" >VIDA E SAUDE</a></td><td><span name="525" >NAGILA MARIA DOS SANTOS</a></td><td><span name="1º DOSE" style="white-space: nowrap;">1º DOSE</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/59846">58894</a></td><td>Davi Ranulfo Lima Ribeiro</td><td><div style="white-space: nowrap;">1 ano e 11 mês </div></td><td><span name="VIDA E SAUDE" >VIDA E SAUDE</a></td><td><span name="525" >NAGILA MARIA DOS SANTOS</a></td><td><span name="1º DOSE" style="white-space: nowrap;">1º DOSE</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/94689">69812</a></td><td>Henry Moreira Alves</td><td><div style="white-space: nowrap;">1 ano e 4 mês </div></td><td><span name="VIDA E SAUDE" >VIDA E SAUDE</a></td><td><span name="481" >MARTA PEREIRA DE OLIVEIRA</a></td><td><span name="1º DOSE" style="white-space: nowrap;">1º DOSE</a></td>
-    </tr>
-      <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/59493">58552</a></td><td>Liz Yanara Braga de Jesus</td><td><div style="white-space: nowrap;">1 ano e 11 mês </div></td><td><span name="HUMANIZAR" >HUMANIZAR</a></td><td><span name="317" >NORMA TRANCOSO VIANA</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/63645">62505</a></td><td>Estevao Rodrigues Cardoso</td><td><div style="white-space: nowrap;">1 ano e 11 mês </div></td><td><span name="ESPERANÇA" >ESPERANÇA</a></td><td><span name="1120" >RAYANNE CHAVES MOREIRA</a></td><td><span name="1º DOSE" style="white-space: nowrap;">1º DOSE</a></td>
