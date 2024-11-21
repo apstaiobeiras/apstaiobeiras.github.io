@@ -382,6 +382,9 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/124360">75564</a></td><td>Eduardo Maranhão Batista</td><td><div style="white-space: nowrap;">6 meses</div></td><td><span name="HARMONIA">HARMONIA</a></td><td><span name="226">GEISSIANE MARQUES FERREIRA</a></td>
     </tr>
       <tr>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/122315">74054</a></td><td>Arthur Araujo Silva</td><td><div style="white-space: nowrap;">8 meses</div></td><td><span name="RENASCER">RENASCER</a></td><td><span name="1332">MARLENE MATOS OLIVEIRA SOARES</a></td>
+    </tr>
+      <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/121536">73446</a></td><td>Ana Liz Dos Santos</td><td><div style="white-space: nowrap;">9 meses</div></td><td><span name="UNIAO">UNIAO</a></td><td><span name="301">CERLIOS MARQUES DOS SANTOS</a></td>
     </tr>
       <tr>
