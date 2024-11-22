@@ -22,9 +22,6 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/71884">65783</a></td><td>Maju Santos Dourado de Oliveira</td><td><div style="white-space: nowrap;">1 ano e 11 mês </div></td><td><span name="PROGRESSO" >PROGRESSO</a></td><td><span name="599" >FELIPE LOPES SANTOS</a></td><td><span name="1º DOSE" style="white-space: nowrap;">1º DOSE</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/121643">73538</a></td><td>Gael Sena Carvalho</td><td><div style="white-space: nowrap;">1 ano e 11 mês </div></td><td><span name="CAMINHO" >CAMINHO</a></td><td><span name="1129" >DENIZ CAROLINE PEREIRA MARTINS</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
-    </tr>
-      <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/59806">58854</a></td><td>Thais Braga Alves</td><td><div style="white-space: nowrap;">1 ano e 11 mês </div></td><td><span name="HUMANIZAR" >HUMANIZAR</a></td><td><span name="484" >ELISENE DE JESUS SOUZA</a></td><td><span name="1º DOSE" style="white-space: nowrap;">1º DOSE</a></td>
     </tr>
       <tr>
