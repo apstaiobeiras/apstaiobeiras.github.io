@@ -63,6 +63,8 @@
     <script src="js/solicitacoes_excluidas.js"></script>
     <script src="assets/js/logout.js"></script>
     <script>
+        data_final.max = (new Date).getFullYear()+"-12-31";
+            
         let codProfissional = 0;
 
         if (localStorage.getItem('override:codProfissional')) {
