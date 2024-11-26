@@ -66,7 +66,7 @@
         </div>
         <h3><br></h3>
         <!--<h4>Filtrado <span id="filtrado">{filtrado}</span> pacientes de <span id="total">{total}</span> ou <span id=percentil>{percentil}</span>%</h3></h4>-->
-        <h4><a href="#" onclick="baixarComoCSV();">Baixar como CSV</a></h4>
+        <h4><img src="assets/img/csv.png" style="transform: translate(0%, 25%);"> <a href="#" onclick="baixarComoCSV();">Baixar como CSV</a> | Total: <span id="total">{total}</span> | Filtrado: <span id="filtrado">{filtrado}</span></h4>
 
         <h3> </h3>
         <div id="planilha"></div>
@@ -79,16 +79,16 @@
       "js/" + new URLSearchParams(window.location.search).get("script") + ".js";
     script.onload = function () {
       const filtros = [];
-
       for (let elemento of document.getElementsByTagName("span")) {
         if (!elemento.closest("tr")) continue;
         let parent = Array.from(elemento.closest("tr").children);
+
         for (let i in parent) {
           if (elemento.closest("td") == parent[i]) {
             let table = document.getElementsByTagName("tbody")[0];
             let valor = elemento.getAttribute("name");
             let nome = elemento.innerText;
-            let filtro = table.children[0].children[i].innerText;
+            let filtro = table.children[0].children[i].innerText+":"+elemento.classList.contains("data");
 
             filtros[filtro] = filtros[filtro] || [];
 
@@ -97,24 +97,50 @@
               filtros[filtro].push(nome);
             }
           }
+
         }
       }
+
+      total.innerText = document.getElementsByTagName("tr").length-1;
+      filtrado.innerText = total.innerText
 
       let elementosFiltros = "";
 
       for (const filtro of Object.keys(filtros)) {
         filtros[filtro].sort();
-        elementosFiltros += `<label>
-      <b>${filtro}: </b>
-      <select class="fixed-width" onchange="filtrar();" id="${filtro}">
-        <option value="">Todos</option>
-    `;
-        for (let opcao of filtros[filtro]) {
-          elementosFiltros += `
-          <option value="${filtros[filtro][opcao]}">${opcao}</option>
-        `;
+        if (filtro.split(":")[1] == "false") {
+          elementosFiltros += `<label>
+            <b>${filtro.split(":")[0]}: </b>
+              <select class="fixed-width" onchange="filtrar();" id="${filtro.split(":")[0]}">
+                <option value="">Todos</option>
+          `;
+          for (let opcao of filtros[filtro]) {
+            elementosFiltros += `
+              <option value="${filtros[filtro][opcao]}">${opcao}</option>
+            `;
+          }
+          elementosFiltros += `</select></label><br><br>`;
+          continue;
         }
-        elementosFiltros += `</select></label><br><br>`;
+        for (let i in filtros[filtro]) {
+          let opcao = filtros[filtro][i];
+          filtros[filtro][i] = (parseInt(opcao.split("/")[2]+opcao.split("/")[1]+opcao.split("/")[0]));
+        }
+        filtros[filtro].sort();
+        
+        let ultimaData = filtros[filtro].pop().toString();
+        let primeiraData  = filtros[filtro][0].toString();
+
+        primeiraData = (primeiraData.slice(0,4)+"-"+primeiraData.slice(4,6)+"-"+primeiraData.slice(6,9));
+        ultimaData   = (ultimaData.slice(0,4)+"-"+ultimaData.slice(4,6)+"-"+ultimaData.slice(6,9));
+
+        elementosFiltros += `<label>
+            <b>De: </b> 
+              <input type=date class="fixed-width" value="${primeiraData}" onchange="filtrar();" min="${primeiraData}" max="${ultimaData}" id="${filtro.split(":")[0]}" name="data"> 
+            <b>até</b> 
+              <input type=date class="fixed-width" value="${ultimaData}" onchange="filtrar();" min="${primeiraData}" max="${ultimaData}"  id="${filtro.split(":")[0]}2"> 
+            </label><br><br>
+          `;
       }
 
       planilha.innerHTML = `${elementosFiltros} ${planilha.innerHTML}`;
@@ -124,7 +150,11 @@
     
     <script>
     function filtrar() {
-      for (let linha of [...document.getElementsByTagName("tr")]) {
+      filtrado.innerText = total.innerText;
+
+      let tabela = document.getElementsByTagName("table")[0].cloneNode(true)
+
+      for (let linha of [...tabela.getElementsByTagName("tr")]) {
         linha.style.display = "";
       }
 
@@ -135,12 +165,22 @@
         seletores[select.id] = select.value;
       }
 
+      for (let de of [...document.getElementsByName("data")]) {
+        let ate = document.getElementById(de.id+"2")
+        if (de.value == de.min && ate.value == ate.max) continue;
+
+        let inicio = parseInt(de.value.replaceAll("-",""));
+        let final = parseInt(ate.value.replaceAll("-",""));
+
+        seletores[de.id] = [inicio,final];
+      }
+
       if (Object.keys(seletores).length == 0) return;
 
       let primeira = true;
       let chaves = [];
-      
-      for (let linha of [...document.getElementsByTagName("tr")]) {
+      let k = document.getElementsByTagName("tr").length-1;
+      for (let linha of [...tabela.getElementsByTagName("tr")]) {
         if (primeira) {
             primeira = false;
             for (i in [...linha.getElementsByTagName("th")]) {
@@ -150,11 +190,31 @@
         }
 
         for (const [coluna, valor] of Object.entries(seletores)) {
-            if (linha.children[chaves[coluna]].children[0].getAttribute("name") != valor) {
-                linha.style.display = "none";
+          if (typeof(valor) === "object") {
+            let celula = linha.children[chaves[coluna]].children[0].innerText;
+            let valorCelula = parseInt(celula.split("/")[2]+celula.split("/")[1]+celula.split("/")[0]);
+            if (valorCelula < valor[0]) {
+              linha.style.display = "none";
+              continue;
             }
+            if (valorCelula > valor[1]) {
+              linha.style.display = "none";
+              continue;
+            }
+            continue;
+          }
+
+          if (linha.children[chaves[coluna]].children[0].getAttribute("name") != valor) {
+            linha.style.display = "none";
+          }           
+        }
+        if (linha.style.display == "none") {
+          k = k-1;
         }
       }
+      filtrado.innerText = k;
+
+      document.getElementsByTagName("table")[0].replaceWith(tabela);
     }
 
     function baixarComoCSV() {
