@@ -4459,7 +4459,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/9304">9306</a></td><td>Cristiane Martins da Cruz</td><td><span name="04/04/2024" class="data">04/04/2024</a></td><td>LAGOA DOURADA, 38</td><td><span name="DARLENE MARIA PEREIRA" class="">DARLENE MARIA PEREIRA</a></td><td><span name="UAPS LAGOA GRANDE/ DOURADA" class="">UAPS LAGOA GRANDE/ DOURADA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/8778">8780</a></td><td>Aline Rodrigues Gonçalves</td><td><span name="05/04/2024" class="data">05/04/2024</a></td><td>-</td><td><span name="-" class="">-</a></td><td><span name="-" class="">-</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/8778">8780</a></td><td>Aline Rodrigues Gonçalves</td><td><span name="05/04/2024" class="data">05/04/2024</a></td><td>CARIJOS, 1593</td><td><span name="WANESSA MOREIRA DE SOUZA" class="">WANESSA MOREIRA DE SOUZA</a></td><td><span name="UAPS DONA NININHA" class="">UAPS DONA NININHA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/27942">27944</a></td><td>Ana Cristina Costa Miranda</td><td><span name="08/04/2024" class="data">08/04/2024</a></td><td>D, 76</td><td><span name="JUSSELY SOARES DE SOUZA" class="">JUSSELY SOARES DE SOUZA</a></td><td><span name="UAPS ENF. MARY TATIANE" class="">UAPS ENF. MARY TATIANE</a></td>
