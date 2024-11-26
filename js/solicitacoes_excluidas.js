@@ -1382,6 +1382,7 @@ const SolicitacoesExcluidas = [
   [761630,1272,14063,7,"<b>Não Se Enquadra nos Criterios: </b><br>Lançamento errado do dente a ser realizado o tratamento.",20240905,"TRATAMENTO ENDODôNTICO DE DENTE PERMANENTE BIRRADICULAR"],
   [761748,1258,1456,34,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever resultado com data de realização, o último resultado de PCCU realizado pela paciente para prosseguir com agendamento.Att.",20240822,"CONSULTA GINECOLOGIA POLICLINICA"],
   [761809,507,18629,2,"<b>Solicitação Indevida: </b><br>SOLICITAÇÕES PARA AVALIAÇÃO DE FRATURA NÃO PRECISAM SER INSERIDAS EM FILA DE ESPERA. REALIZAR SOLICITAÇÃO MANUAL E PEDIR AO PACIENTE PARA COMPARECER NA SMS PARA AGENDAMENTO. ENTRADO EM CONTATO COM PACIENTE E AGENDADO AVALIAÇÃO NO AMBULATORIO DE FRATURA",20240909,"CONSULTA ORTOPEDISTA"],
+  [761828,1342,13021,3,"<b>Solicitação Indevida: </b><br>TRANSFERIDOS PARA FILA DE EDA COM H.PYLORI. NAO APRESENTAM CRITÉRIOS PARA PRESENÇA DE ANESTESISTA.",20241126,"ENDOSCOPIA COM PRESENçA DE ANESTESISTA"],
   [762053,1260,24656,81,"<b>Não Se Enquadra nos Criterios: </b><br>CRIANÇA NÃO ATENDE CRITERIOS DE PEDIATRIA AMBULATORIAL/ALTO RISCO.VIDE CRITÉRIOS DE ENCAMINHAMENTO AO CER.",20240827,"CONSULTA PEDIATRA POLICLINICA"],
   [762158,1342,33788,34,"<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA FILA DE PRIMEIRA CONSULTA. ULTIMO ATENDIMENTO A MAIS DE UM ANO.",20241007,"RETORNO NEUROLOGIA DANDARA"],
   [762314,1259,7678,8,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>SUGERE HASHIMOTO, CASO TSH ESTEJA NORMAL COM ESSA DOSE DE PURAN, PODE FAZER SEGUIMENTO NA APS. VERIFIQUE A CONDIÇÃO CLÍNICA,  DISCUTA DIRETAMENTE COM ENDOCRINO PELO TELESSAÚDE TBM.",20240904,"CONSULTA ENDOCRINOLOGIA"],
@@ -1566,6 +1567,7 @@ const SolicitacoesExcluidas = [
   [779394,1193,21160,56,"<b>Agendar na Atenção Primaria: </b><br>Pelos sintomas relacionados com os resultado da B12, há deficiencia com indicação de reposição contínua. Deve haver descrição da funcionalidade e se houve perdas associadas a queixa de memória. Provável quadro de Demência Mista.",20240926,"CONSULTA CLINICO/GERIATRA"],
   [779581,907,41217,9,"<b>Não Se Enquadra nos Criterios: </b><br>Pacientes em estágio 3b da DRC com alterações de microalbuminúria, podem seguir os critérios de encaminhamento ao Serviço de Nefrologia em Salinas, para avaliação.",20241003,"CONSULTA NEFROLOGISTA"],
   [779657,222,47770,33,"<b>Solicitação Indevida: </b><br>Favor lançar na fila de espera GESTANTE ALTO RISCO.",20240923,"CONSULTA GINECOLOGIA CEAE"],
+  [779699,1342,25242,3,"<b>Solicitação Indevida: </b><br>TRANSFERIDOS PARA FILA DE EDA COM H.PYLORI. NAO APRESENTAM CRITÉRIOS PARA PRESENÇA DE ANESTESISTA.",20241126,"ENDOSCOPIA COM PRESENçA DE ANESTESISTA"],
   [780298,1317,13048,3,"<b>Não Se Enquadra nos Criterios: </b><br>transferido para fila de avaliação cirúrgica policlínica",20240917,"CONSULTA CIRURGIAO GERAL"],
   [780426,0,77292,18,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Qual a data do parto?",20240918,"CONSULTA - OBSTéTRICA / PUERPéRIO"],
   [780778,320,18980,78,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Quando os exames estiverem prontos, reencaminhar com os resultados descritos, por gentileza.Att.",20240919,"CONSULTA HIPERTENSO ALTO RISCO"],
@@ -1639,6 +1641,7 @@ const SolicitacoesExcluidas = [
   [787061,1016,18994,13,"<b>Agendar na Atenção Primaria: </b><br>Sugiro prosseguir com propedêutica e assistência fisioterápica associada.",20241101,"CONSULTA ORTOPEDISTA"],
   [787293,1259,10760,8,"Encaminhamento incompleto / Falta detalhar exames",20241004,"AVALIAçaO NUTRICIONISTA E-MULTI"],
   [787297,320,14465,78,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>descrever a queixa clínica, além do histórico.",20241009,"ULTRASSONOGRAFIA DE APARELHO URINÁRIO"],
+  [787333,1342,42610,3,"<b>Solicitação Indevida: </b><br>TRANSFERIDOS PARA FILA DE EDA COM H.PYLORI. NAO APRESENTAM CRITÉRIOS PARA PRESENÇA DE ANESTESISTA.",20241126,"ENDOSCOPIA COM PRESENçA DE ANESTESISTA"],
   [787633,736,7531,68,"<b>Agendar na Atenção Primaria: </b><br>Foi solicitado por Dra Daniela essa avaliação, porém sem justificativa.",20241002,"PEQUENA CIRURGIA POLICLINICA"],
   [787673,736,7749,68,"<b>Não Se Enquadra nos Criterios: </b><br>Justificar o controle.",20241021,"ULTRASSONOGRAFIA TRANSVAGINAL"],
   [787717,216,14434,13,"<b>Não Se Enquadra nos Criterios: </b><br>Quadro de miomatose deve ser lançado na fila da GINECOLOGIA POLICLÍNICA.",20240930,"CONSULTA GINECOLOGIA CEAE"],
@@ -1889,6 +1892,8 @@ const SolicitacoesExcluidas = [
   [823701,1306,75689,8,"<b>Não Se Enquadra nos Criterios: </b><br>O quadro clinico do lactente não se enquadra nos critérios de atendimento pediatria alto risco, sugiro verificar protocolo pediatria ambulatorial ou cirurgia geral.Att.",20241125,"CONSULTA PEDIATRIA ALTO RISCO"],
   [823777,1216,16943,9,"Não Se Enquadra nos Criterios",20241125,"CONSULTA ENDOCRINOLOGIA"],
   [823779,1216,16943,9,"<b>Não Se Enquadra nos Criterios: </b><br>O atendimento dele foi agendado na Policlínica.Att.",20241125,"CONSULTA DIABETES ALTO RISCO"],
+  [824861,1032,15952,11,"Solicitação Indevida",20241126,"ATENDIMENTO FISIOTERAPIA"],
+  [824865,1032,22860,11,"Solicitação Indevida",20241126,"ATENDIMENTO FISIOTERAPIA"],
 ];
 
 const Unidades = [
