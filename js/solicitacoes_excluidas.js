@@ -1766,7 +1766,9 @@ const SolicitacoesExcluidas = [
   [801954,1219,38148,33,"Não Se Enquadra nos Criterios",20241114,"AVALIAçaO FONOAUDIOLOGIA E-MULTI"],
   [801955,1317,26143,3,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>O paciente foi atendido por Lucas aqui no serviço hipertenso alto rico no ano de 2023, foi solicitado US  de rins e via urinária para retorno, favor verificar se o paciente realizou o exame para prosseguir com o agendamento. Qualquer dúvida, me coloco a disposição!Att.",20241022,"CONSULTA HIPERTENSO ALTO RISCO"],
   [802015,1016,56701,2,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Descrever propedêutica.",20241118,"CONSULTA ORTOPEDISTA"],
+  [802203,775,4884,7,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Fazer investigação laboratorial e de imagem para descartar  causas orgânicas tratáveis e ter um diagnóstico presumível para a avaliação da neurologia.",20241127,"CONSULTA NEUROLOGIA"],
   [802437,320,22963,78,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Descrever a propedêutica para diagnóstico diferencial.",20241118,"CONSULTA ORTOPEDISTA"],
+  [802680,775,12020,7,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Deve haver investigação laboratorial e de imagem para fazer diagnóstico diferencial de alterações orgânicas tratáveis além de iniciar terapêutica para transtorno do humor e comportamento. Há uma probabilidade alta de ser demência vascular - pelas comorbidades ou Demência mista : Vascular + Alzheimer. Passível de ser iniciado precocemente o tratamento e acompanhamento da assistência social e psicologia, devido contexto familiar.",20241127,"CONSULTA NEUROLOGIA"],
   [802763,717,8738,16,"<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA FILA DE RETORNO.",20241121,"CONSULTA ORTOPEDISTA"],
   [802775,1291,14040,75,"<b>Não Se Enquadra nos Criterios: </b><br>Paciente não enquadra nos critérios de atendimento nutricional  (apresenta IMC  adequado ou Eutrófico, Valor menor e mais próximo de P25, a saber  17,85 Kg/ m2).",20241030,"AVALIAçaO NUTRICIONISTA E-MULTI"],
   [802798,1317,41031,3,"<b>Não Se Enquadra nos Criterios: </b><br>TRANSFERIDA PARA FILA DAS PEQUENAS CIRURGIAS.",20241025,"AVALIAçaO CIRURGICA POLICLINICA"],
@@ -1792,6 +1794,7 @@ const SolicitacoesExcluidas = [
   [805628,1317,31980,3,"<b>Não Se Enquadra nos Criterios: </b><br>Deficiência vitamínica isolada não se enquadra nos critérios da Nutrição conforme protocolo aprovado em 18/07/2024.",20241025,"AVALIAçaO NUTRICIONISTA E-MULTI"],
   [805709,1317,1831,3,"<b>Não Se Enquadra nos Criterios: </b><br>Somente mastalgia não é critério para o CEAE.",20241030,"CONSULTA - MASTOLOGISTA"],
   [805754,907,20548,9,"<b>Não Se Enquadra nos Criterios: </b><br>Procedimento pode ser realizado na UBS.",20241024,"PEQUENA CIRURGIA POLICLINICA"],
+  [805912,1322,35516,75,"<b>Não Se Enquadra nos Criterios: </b><br>Paciente não se enquadra nos critérios para atendimento da nutrição e-Multi, enqurando nos critérios para acompanhamento pediátrico no CEAE, de acordo com o item 2 do protoloco pediatria CEAE.",20241127,"AVALIAçaO NUTRICIONISTA E-MULTI"],
   [806050,46,10958,16,"<b>Solicitação Indevida: </b><br>REINSERIDO COM DEFINIÇÃO DE ESPECIALISTA.",20241125,"RETORNO CONSULTA ORTOPEDISTA"],
   [806106,736,7564,18,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Complementar justificativa clínica.",20241113,"ULTRASSONOGRAFIA PELVICA (GINECOLOGICA)"],
   [806107,1138,19960,56,"<b>Não Se Enquadra nos Criterios: </b><br>Paciente tem condições de ser atendida na APS.",20241030,"AVALIAçaO DE ELEGIBILIDADE - MELHOR EM CASA"],
@@ -1913,6 +1916,8 @@ const SolicitacoesExcluidas = [
   [824960,1110,27718,34,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Qual a IG?",20241126,"CONSULTA GESTANTE ALTO RISCO"],
   [824983,1306,63765,8,"<b>Não Se Enquadra nos Criterios: </b><br>Somente Transtornos psiquiátricos graves se enquadram nos critérios.",20241126,"CONSULTA GESTANTE ALTO RISCO"],
   [825070,1221,10153,4,"<b>Não Se Enquadra nos Criterios: </b><br>Segundo protocolo municipal para DMG, somente DM prévia diagnosticada na gestação deve ser encaminhada ao alto risco.Primeiro passo é encaminhar para a nutricionista da e-multi. Se no período de duas semanas em acompanhamento com a nutricionista, não houver controle glicêmico, poderá encaminhar ao alto risco para avaliar terapia medicamentosa.",20241126,"CONSULTA GESTANTE ALTO RISCO"],
+  [825179,320,23123,78,"<b>Não Se Enquadra nos Criterios: </b><br>PODE REFERENCIAR PARA O CAPS INFANTIL .",20241127,"CONSULTA PEDIATRA POLICLINICA"],
+  [825245,320,51203,78,"<b>Não Se Enquadra nos Criterios: </b><br>NEUROLOGIA SÓ ATENDE MENOR DE 7 ANOS SE FOR EPILEPSIA.NESTE CASO, ENCAMINHE PARA A PEDIATRIA POLICLINICA.",20241127,"CONSULTA NEUROLOGIA"],
 ];
 
 const Unidades = [

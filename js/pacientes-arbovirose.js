@@ -841,7 +841,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/4845">4847</a></td><td>Diego de Oliveira Cruz</td><td><span name="18/03/2024" class="data">18/03/2024</a></td><td>SETE LAGOAS, 245</td><td><span name="CLECIVANIA RODRIGUES DE OLIVEIRA" class="">CLECIVANIA RODRIGUES DE OLIVEIRA</a></td><td><span name="UAPS MILTON MENDES DA SILVA" class="">UAPS MILTON MENDES DA SILVA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/107775">71375</a></td><td>Karoline de Almeida Alves</td><td><span name="21/03/2024" class="data">21/03/2024</a></td><td>OSWALDO ARGOLO, 272</td><td><span name="JOSSIVANIA D' ANGELIS COSTA" class="">JOSSIVANIA D' ANGELIS COSTA</a></td><td><span name="UAPS VER. JOSE SENA" class="">UAPS VER. JOSE SENA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/107775">71375</a></td><td>Karoline de Almeida Alves</td><td><span name="21/03/2024" class="data">21/03/2024</a></td><td>-</td><td><span name="-" class="">-</a></td><td><span name="-" class="">-</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/4517">4519</a></td><td>Edimilson Alves Ribeiro</td><td><span name="22/03/2024" class="data">22/03/2024</a></td><td>CORAÇAO DE JESUS, 154</td><td><span name="LEISIANE ALVES RIBEIRO" class="">LEISIANE ALVES RIBEIRO</a></td><td><span name="UAPS ENF. MARY TATIANE" class="">UAPS ENF. MARY TATIANE</a></td>
@@ -2107,7 +2107,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/43412">43812</a></td><td>Cleiton Pereira Barbosa</td><td><span name="04/03/2024" class="data">04/03/2024</a></td><td>CARAI, 115</td><td><span name="GISELE OLIVEIRA SANTOS" class="">GISELE OLIVEIRA SANTOS</a></td><td><span name="UAPS VER. MANOEL DOS SANTOS SILVA" class="">UAPS VER. MANOEL DOS SANTOS SILVA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/107775">71375</a></td><td>Karoline de Almeida Alves</td><td><span name="04/03/2024" class="data">04/03/2024</a></td><td>OSWALDO ARGOLO, 272</td><td><span name="JOSSIVANIA D' ANGELIS COSTA" class="">JOSSIVANIA D' ANGELIS COSTA</a></td><td><span name="UAPS VER. JOSE SENA" class="">UAPS VER. JOSE SENA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/107775">71375</a></td><td>Karoline de Almeida Alves</td><td><span name="04/03/2024" class="data">04/03/2024</a></td><td>-</td><td><span name="-" class="">-</a></td><td><span name="-" class="">-</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/6578">6580</a></td><td>Janina Ferreira Cotrim</td><td><span name="07/03/2024" class="data">07/03/2024</a></td><td>PORTEIRINHA, 546</td><td><span name="ELIANA MARIA SANTOS DE OLIVEIRA" class="">ELIANA MARIA SANTOS DE OLIVEIRA</a></td><td><span name="UAPS MILTON MENDES DA SILVA" class="">UAPS MILTON MENDES DA SILVA</a></td>
@@ -6998,6 +6998,9 @@ document.getElementById('planilha').innerHTML = `<table>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/14784">14786</a></td><td>Ana Luiza Rodrigues da Silva</td><td><span name="21/11/2024" class="data">21/11/2024</a></td><td>SANTA LUZIA, 1281</td><td><span name="ELAINE GONCALVES NUNES SANTOS" class="">ELAINE GONCALVES NUNES SANTOS</a></td><td><span name="UAPS ENF. MARY TATIANE" class="">UAPS ENF. MARY TATIANE</a></td>
+    </tr>
+      <tr>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/24403">24405</a></td><td>Julio Teixeira Santana</td><td><span name="27/11/2024" class="data">27/11/2024</a></td><td>TAIOBEIRAS - MIRANDOPOLIS, 113</td><td><span name="SHEILA DARLEN MENDES SOUZA" class="">SHEILA DARLEN MENDES SOUZA</a></td><td><span name="UAPS ANTONINO DE ALMEIDA" class="">UAPS ANTONINO DE ALMEIDA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/29102">29104</a></td><td>Talisson Meireles sá</td><td><span name="06/11/2024" class="data">06/11/2024</a></td><td>OURO PRETO, 1051</td><td><span name="MARTA PEREIRA DE OLIVEIRA" class="">MARTA PEREIRA DE OLIVEIRA</a></td><td><span name="UAPS MILTON MENDES DA SILVA" class="">UAPS MILTON MENDES DA SILVA</a></td>
