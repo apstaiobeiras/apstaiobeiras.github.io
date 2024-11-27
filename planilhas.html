@@ -175,7 +175,10 @@
         seletores[de.id] = [inicio,final];
       }
 
-      if (Object.keys(seletores).length == 0) return;
+      if (Object.keys(seletores).length == 0) {
+        document.getElementsByTagName("table")[0].replaceWith(tabela);
+        return;
+      }
 
       let primeira = true;
       let chaves = [];
