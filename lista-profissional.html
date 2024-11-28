@@ -94,6 +94,7 @@ tr td:last-child {
     <h3><br /></h3>
 
     <script src="assets/js/logout.js"></script>
+    <script src="js/lista-acs.js"></script>
     <script>
       let codProfissional = 0;
     </script>
@@ -151,15 +152,6 @@ tr td:last-child {
 
         equipes.sort();
 
-        if (cargo == "acs") {
-          for (let profissional of Profissionais) {
-            if (profissional[3].includes("Agente comunitário de saúde")) {
-              if (profissional[5] == undefined) continue;
-              equipes[profissional[4][0]].push(profissional)
-            }
-          }
-        }
-
         for (let profissional of Profissionais) {
           if (equipes["_"+profissional[0]] == undefined) continue;
           let equipesProfissional = equipes["_"+profissional[0]];
@@ -192,6 +184,10 @@ tr td:last-child {
               <th colspan="2" align="left"><br></th>
             </tr>
           `;
+        }
+
+        if (cargo == "acs") {
+          document.getElementById("lista-profissionais").innerHTML = listaACS;
         }
 
         if (codProfissional <0) return;
