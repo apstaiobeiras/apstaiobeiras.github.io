@@ -1251,6 +1251,7 @@ const SolicitacoesExcluidas = [
   [746659,1306,55886,8,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Qual seria o motivo do encaminhamento para o alto risco?",20240730,"CONSULTA GESTANTE ALTO RISCO"],
   [746665,216,46508,13,"<b>Agendar na Atenção Primaria: </b><br>Agendado inicio do acompanhamento psicológico.",20240830,"AVALIAçaO PSICOLOGO E-MULTI"],
   [746845,1046,32091,10,"<b>Solicitação Indevida: </b><br>transferido para fila \"avaliação cirurgica policlínica\".",20240805,"CONSULTA CIRURGIAO GERAL"],
+  [746868,1290,544,6,"<b>Solicitação Indevida: </b><br>Paciente informou que não tem necessidade do procedimento, solicitação indevida",20241202,"PROTESE TOTAL MANDIBULAR"],
   [747053,1291,45623,75,"<b>Não Se Enquadra nos Criterios: </b><br>Não se enquadra nos critérios de Diabetes alto risco.",20240815,"CONSULTA DIABETES ALTO RISCO"],
   [747139,1243,35407,9,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor detalhar resultado do último PCCU com a data da realização.",20240730,"CONSULTA GINECOLOGIA POLICLINICA"],
   [747228,1132,21309,10,"<b>Não Se Enquadra nos Criterios: </b><br>Paciente não se enquadra nos critérios do protocolo de atendimento nutricional, foi encaminhada para grupo de perda de peso.",20240813,"AVALIAçaO NUTRICIONISTA E-MULTI"],
@@ -1935,6 +1936,7 @@ const SolicitacoesExcluidas = [
   [824507,1291,44524,75,"<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA FILA \"AVALIAÇÃO CIRURGICA POLICLÍNICA\".",20241128,"CONSULTA CIRURGIAO GERAL"],
   [824544,1366,29296,34,"<b>Solicitação Indevida: </b><br>A SOLICITAÇÃO VINCULADA AO PROFISSIONAL CIRURGIÃO QUE EXECUTARA O PROCEDIMENTO.PEDIR O PACIENTE PARA PROCURAR A SECRETARIA COM A INDICAÇÃO CIRURGICA. CASO O PACIENTE NAO TENHA MAIS NENHUM DOCUMENTO REFERENTE A CIRURGIA, ENCAMINHA-LO NOVAMENTE PARA AVALIAÇÃO DO CIRURGIÃO.",20241128,"AVALIAçaO PRE ANESTESICA"],
   [824605,1193,71373,56,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Foi solicitado exame de imagem? Otimizado tratamento agudo?",20241126,"CONSULTA NEUROLOGIA"],
+  [824832,1317,28616,3,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Descrever exames cardiológicos de rotina: minimo um ECG. Avaliar qual medicação usa para a TAG, pelo risco de interação medicamentosa!",20241202,"CONSULTA CARDIOLOGIA DR RENAN"],
   [824861,1032,15952,11,"Solicitação Indevida",20241126,"ATENDIMENTO FISIOTERAPIA"],
   [824865,1032,22860,11,"Solicitação Indevida",20241126,"ATENDIMENTO FISIOTERAPIA"],
   [824917,1291,10228,75,"<b>Não Se Enquadra nos Criterios: </b><br>PACIENTE COM DM TIPO 2 DESCOPENSADA + DOENÇA DE CHAGAS SEM ECG BASE DESCRITO NO ENCAMINHAMENTO. DEVE REALIZAR AJUSTE TERAPÊUTICO DA INSULINA, DESCREVER QUE FOI FEITO, MANTER SEU SEGUIMENTO NA APS ATE COMPENSAR E ENCAMINHAR PARA CARDIOLOGIA ALTO RISCO E ENDOCRINOLOGIA.",20241126,"CONSULTA CARDIOLOGIA DR RENAN"],
@@ -1950,6 +1952,8 @@ const SolicitacoesExcluidas = [
   [826484,1207,26143,18,"<b>Não Se Enquadra nos Criterios: </b><br>SUGIRO ENCAMINHAR PARA O SERVIÇO DE NEFROLOGIA - SALINAS REVEJA O PROTOCOLO DE ENCAMINHAMENTO, POR GENTILEZA.",20241128,"CONSULTA NEFROLOGISTA"],
   [826535,1350,40017,34,"<b>Não Se Enquadra nos Criterios: </b><br>Apenas alterações na aprendizagem escolar não se encaixa no CER-II. Paciente precisa apresentar alterações intelectuais que comprometem as atividades de vida diária.",20241128,"REABILITAçaO INTELECTUAL"],
   [826624,320,9074,78,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>GESTAÇÃO CONFIRMADA??",20241128,"ULTRASSONOGRAFIA OBSTETRICA"],
+  [827503,1221,30812,4,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Prezado, gentileza informar PA verificada no atendimento.Att.",20241202,"CONSULTA HIPERTENSO ALTO RISCO"],
+  [827629,1350,28993,34,"<b>Não Se Enquadra nos Criterios: </b><br>Criança com baixo peso deve ser direcionada ao CEAE conforme protocolo clínico.",20241202,"AVALIAçaO NUTRICIONISTA E-MULTI"],
 ];
 
 const Unidades = [

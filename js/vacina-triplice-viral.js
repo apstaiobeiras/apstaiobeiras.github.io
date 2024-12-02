@@ -28,7 +28,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/63645">62505</a></td><td>Estevao Rodrigues Cardoso</td><td><div style="white-space: nowrap;">1 ano e 11 mês </div></td><td><span name="ESPERANÇA" >ESPERANÇA</a></td><td><span name="1120" >RAYANNE CHAVES MOREIRA</a></td><td><span name="1º DOSE" style="white-space: nowrap;">1º DOSE</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/94339">69738</a></td><td>Felipe Lucas Soares da Silva</td><td><div style="white-space: nowrap;">1 ano e 5 mês </div></td><td><span name="UNIAO" >UNIAO</a></td><td><span name="564" >MAISA OLIVEIRA BARBOSA</a></td><td><span name="1º DOSE" style="white-space: nowrap;">1º DOSE</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/94339">69738</a></td><td>Felipe Lucas Soares da Silva</td><td><div style="white-space: nowrap;">1 ano e 6 mês </div></td><td><span name="UNIAO" >UNIAO</a></td><td><span name="564" >MAISA OLIVEIRA BARBOSA</a></td><td><span name="1º DOSE" style="white-space: nowrap;">1º DOSE</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/59761">58814</a></td><td>Maria Valentina Almeida Rodrigues</td><td><div style="white-space: nowrap;">1 ano e 11 mês </div></td><td><span name="ESPERANÇA" >ESPERANÇA</a></td><td><span name="654" >LAURY MADALENA DA ROCHA</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
