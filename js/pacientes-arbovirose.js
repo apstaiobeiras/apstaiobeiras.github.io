@@ -2698,7 +2698,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/20785">20787</a></td><td>Eldy Silva de Sena</td><td><span name="08/04/2024" class="data">08/04/2024</a></td><td>BOCAIUVA, 93</td><td><span name="JOSELANE MENDES TEIXEIRA" class="">JOSELANE MENDES TEIXEIRA</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/60358">59383</a></td><td>Jose Antônio de Oliveira Neto</td><td><span name="11/04/2024" class="data">11/04/2024</a></td><td>SALINAS, 521</td><td><span name="JOSSIVANIA D' ANGELIS COSTA" class="">JOSSIVANIA D' ANGELIS COSTA</a></td><td><span name="UAPS VER. JOSE SENA" class="">UAPS VER. JOSE SENA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/60358">59383</a></td><td>Jose Antônio de Oliveira Neto</td><td><span name="11/04/2024" class="data">11/04/2024</a></td><td>-</td><td><span name="-" class="">-</a></td><td><span name="-" class="">-</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/33816">33360</a></td><td>Santos Jose Dos Santos</td><td><span name="11/04/2024" class="data">11/04/2024</a></td><td>BENFICA, 755</td><td><span name="SOLANGE FRANCISCA DE SOUZA" class="">SOLANGE FRANCISCA DE SOUZA</a></td><td><span name="UAPS JOAO DE DEUS SIMOES" class="">UAPS JOAO DE DEUS SIMOES</a></td>
@@ -5848,7 +5848,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/19989">19991</a></td><td>Felipe Novais Capuchinho</td><td><span name="07/05/2024" class="data">07/05/2024</a></td><td>SACRAMENTO, 440</td><td><span name="JESSICA ANA DE JESUS" class="">JESSICA ANA DE JESUS</a></td><td><span name="UAPS ED. FIS. DOUGLAS FREDERICO" class="">UAPS ED. FIS. DOUGLAS FREDERICO</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/7747">7749</a></td><td>Arlene Maria Dos Santos</td><td><span name="08/05/2024" class="data">08/05/2024</a></td><td>-</td><td><span name="-" class="">-</a></td><td><span name="-" class="">-</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/7747">7749</a></td><td>Arlene Maria Dos Santos</td><td><span name="08/05/2024" class="data">08/05/2024</a></td><td>SANTA LUZIA, 1225</td><td><span name="ELAINE GONCALVES NUNES SANTOS" class="">ELAINE GONCALVES NUNES SANTOS</a></td><td><span name="UAPS ENF. MARY TATIANE" class="">UAPS ENF. MARY TATIANE</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/56039">55537</a></td><td>Sara Cristina Souza de Araujo</td><td><span name="09/05/2024" class="data">09/05/2024</a></td><td>LAGOA SECA, 89</td><td><span name="ELISENE DE JESUS SOUZA" class="">ELISENE DE JESUS SOUZA</a></td><td><span name="UAPS LAGOA GRANDE/ DOURADA" class="">UAPS LAGOA GRANDE/ DOURADA</a></td>
@@ -7055,6 +7055,9 @@ document.getElementById('planilha').innerHTML = `<table>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/9754">9756</a></td><td>Railson José Ferreira</td><td><span name="02/12/2024" class="data">02/12/2024</a></td><td>FAZENDA MUTUKA, 53</td><td><span name="JANIA SANTOS ROCHA RUFINO NEVES" class="">JANIA SANTOS ROCHA RUFINO NEVES</a></td><td><span name="UAPS COMUNIDADES RURAIS" class="">UAPS COMUNIDADES RURAIS</a></td>
+    </tr>
+      <tr>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/23925">23927</a></td><td>Irene Rosa do Nascimento</td><td><span name="03/12/2024" class="data">03/12/2024</a></td><td>BELO HORIZONTE, 403</td><td><span name="MIKAELY CRISTINA SOUZA" class="">MIKAELY CRISTINA SOUZA</a></td><td><span name="UAPS ANTONINO DE ALMEIDA" class="">UAPS ANTONINO DE ALMEIDA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/126856">77765</a></td><td>Marcos Antonio Mandato</td><td><span name="02/12/2024" class="data">02/12/2024</a></td><td>CAETES, 485</td><td><span name="RAYANNE CHAVES MOREIRA" class="">RAYANNE CHAVES MOREIRA</a></td><td><span name="UAPS VER. JOSE SENA" class="">UAPS VER. JOSE SENA</a></td>

@@ -1782,6 +1782,7 @@ const SolicitacoesExcluidas = [
   [801093,507,5798,2,"<b>Não Se Enquadra nos Criterios: </b><br>Paciente assintomático de baixo risco pode ser manejado na UBS;",20241031,"CONSULTA CARDIOLOGIA DR RENAN"],
   [801330,320,23474,78,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>REGISTRAR INVESTIGAÇÃO PARA DIAGNÓSTICO DIFERENCIAL. SUGIRO AVALAIR EFEITOS COLATERAIS DOS MEDICAMENTOS ANTICONVULSIVANTES, DESCARTAR DEFICIÊNCIA DE B12 - FERROPENIA E ETC....",20241125,"CONSULTA NEUROLOGIA"],
   [801736,320,12418,78,"<b>Não Se Enquadra nos Criterios: </b><br>Paciente com sobrepeso",20241031,"AVALIAçaO NUTRICIONISTA E-MULTI"],
+  [801737,1259,56852,8,"Não Se Enquadra nos Criterios",20241203,"AVALIAçaO NUTRICIONISTA E-MULTI"],
   [801938,216,14236,13,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor informar IG.",20241021,"CONSULTA GESTANTE ALTO RISCO"],
   [801954,1219,38148,33,"Não Se Enquadra nos Criterios",20241114,"AVALIAçaO FONOAUDIOLOGIA E-MULTI"],
   [801955,1317,26143,3,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>O paciente foi atendido por Lucas aqui no serviço hipertenso alto rico no ano de 2023, foi solicitado US  de rins e via urinária para retorno, favor verificar se o paciente realizou o exame para prosseguir com o agendamento. Qualquer dúvida, me coloco a disposição!Att.",20241022,"CONSULTA HIPERTENSO ALTO RISCO"],
