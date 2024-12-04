@@ -1588,6 +1588,8 @@ const SolicitacoesExcluidas = [
   [779581,907,41217,9,"<b>Não Se Enquadra nos Criterios: </b><br>Pacientes em estágio 3b da DRC com alterações de microalbuminúria, podem seguir os critérios de encaminhamento ao Serviço de Nefrologia em Salinas, para avaliação.",20241003,"CONSULTA NEFROLOGISTA"],
   [779657,222,47770,33,"<b>Solicitação Indevida: </b><br>Favor lançar na fila de espera GESTANTE ALTO RISCO.",20240923,"CONSULTA GINECOLOGIA CEAE"],
   [779699,1342,25242,3,"<b>Solicitação Indevida: </b><br>TRANSFERIDOS PARA FILA DE EDA COM H.PYLORI. NAO APRESENTAM CRITÉRIOS PARA PRESENÇA DE ANESTESISTA.",20241126,"ENDOSCOPIA COM PRESENçA DE ANESTESISTA"],
+  [780056,1219,33363,33,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Quais exames diagnósticos foram realizados para diagnóstico diferencial?",20241204,"CONSULTA NEUROLOGIA"],
+  [780220,1342,35837,34,"<b>Falta Detalhar Exames: </b><br>Quadro agudo sugere exame tomográfico devido evolução clínica.",20241204,"CONSULTA NEUROLOGIA"],
   [780298,1317,13048,3,"<b>Não Se Enquadra nos Criterios: </b><br>transferido para fila de avaliação cirúrgica policlínica",20240917,"CONSULTA CIRURGIAO GERAL"],
   [780426,0,77292,18,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Qual a data do parto?",20240918,"CONSULTA - OBSTéTRICA / PUERPéRIO"],
   [780519,907,15541,9,"<b>Não Se Enquadra nos Criterios: </b><br>SEGUNDO PROTOCOLO DA NEFROLOGIA - SALINAS : Pacientes em estágio 3b da DRC com alterações de microalbuminúria, podem seguir os critérios de encaminhamento ao Serviço de Nefrologia em Salinas, para avaliação.",20241128,"CONSULTA NEFROLOGISTA"],
@@ -1937,6 +1939,7 @@ const SolicitacoesExcluidas = [
   [824507,1291,44524,75,"<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA FILA \"AVALIAÇÃO CIRURGICA POLICLÍNICA\".",20241128,"CONSULTA CIRURGIAO GERAL"],
   [824544,1366,29296,34,"<b>Solicitação Indevida: </b><br>A SOLICITAÇÃO VINCULADA AO PROFISSIONAL CIRURGIÃO QUE EXECUTARA O PROCEDIMENTO.PEDIR O PACIENTE PARA PROCURAR A SECRETARIA COM A INDICAÇÃO CIRURGICA. CASO O PACIENTE NAO TENHA MAIS NENHUM DOCUMENTO REFERENTE A CIRURGIA, ENCAMINHA-LO NOVAMENTE PARA AVALIAÇÃO DO CIRURGIÃO.",20241128,"AVALIAçaO PRE ANESTESICA"],
   [824605,1193,71373,56,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Foi solicitado exame de imagem? Otimizado tratamento agudo?",20241126,"CONSULTA NEUROLOGIA"],
+  [824811,1132,16226,10,"<b>Não Se Enquadra nos Criterios: </b><br>Paciente já encontra-se em acompanhamento da DMG no CEAE. ",20241204,"AVALIAçaO NUTRICIONISTA E-MULTI"],
   [824832,1317,28616,3,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Descrever exames cardiológicos de rotina: minimo um ECG. Avaliar qual medicação usa para a TAG, pelo risco de interação medicamentosa!",20241202,"CONSULTA CARDIOLOGIA DR RENAN"],
   [824861,1032,15952,11,"Solicitação Indevida",20241126,"ATENDIMENTO FISIOTERAPIA"],
   [824865,1032,22860,11,"Solicitação Indevida",20241126,"ATENDIMENTO FISIOTERAPIA"],
@@ -1955,6 +1958,7 @@ const SolicitacoesExcluidas = [
   [826624,320,9074,78,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>GESTAÇÃO CONFIRMADA??",20241128,"ULTRASSONOGRAFIA OBSTETRICA"],
   [827503,1221,30812,4,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Prezado, gentileza informar PA verificada no atendimento.Att.",20241202,"CONSULTA HIPERTENSO ALTO RISCO"],
   [827629,1350,28993,34,"<b>Não Se Enquadra nos Criterios: </b><br>Criança com baixo peso deve ser direcionada ao CEAE conforme protocolo clínico.",20241202,"AVALIAçaO NUTRICIONISTA E-MULTI"],
+  [830682,1220,6870,13,"<b>Não Se Enquadra nos Criterios: </b><br>ENCAMINHADO PARA NEFROLOGIA - SALINAS",20241204,"CONSULTA NEFROLOGISTA"],
 ];
 
 const Unidades = [
