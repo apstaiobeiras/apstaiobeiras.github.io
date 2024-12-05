@@ -109,6 +109,7 @@
   </div>
   <div class="no-print">
     <h3><br /></h3>
+    <span><b>Atualizado em: </b><span id="data_atualizacao"></span></span>
     <h1>Instrutivo</h1>
     <p>Os cadastros marcados com X inicam que há uma inconsistência no campo assinalado, cada campo possui um tipo de inconsistência, são eles:</p>
     <table>
@@ -179,6 +180,7 @@
     <script src="js/CadastrosChaves.js"></script>
     <script src="assets/js/logout.js"></script>
     <script>
+      data_atualizacao.innerText = atualizacao;
       const nil = undefined;
       let codProfissional = 0;
       let nomeProfissional = "";
