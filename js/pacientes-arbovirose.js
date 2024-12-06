@@ -7054,6 +7054,9 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/9167">9169</a></td><td>Alessandro Reis Oliveira</td><td><span name="05/12/2024" class="data">05/12/2024</a></td><td>AGUAS VERMELHAS, 251</td><td><span name="KEILA DOS SANTOS SOUSA" class="">KEILA DOS SANTOS SOUSA</a></td><td><span name="UAPS VER. JOSE SENA" class="">UAPS VER. JOSE SENA</a></td>
     </tr>
       <tr>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/24690">24692</a></td><td>Tereza Teixeira Santana</td><td><span name="06/12/2024" class="data">06/12/2024</a></td><td>EZEQUIEL BISPO, 442</td><td><span name="SHEILA DARLEN MENDES SOUZA" class="">SHEILA DARLEN MENDES SOUZA</a></td><td><span name="UAPS ANTONINO DE ALMEIDA" class="">UAPS ANTONINO DE ALMEIDA</a></td>
+    </tr>
+      <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/2953">2955</a></td><td>Maria Eduarda Mendes Souza</td><td><span name="04/12/2024" class="data">04/12/2024</a></td><td>GOIAS, 365</td><td><span name="DARCIELIA EURIDES DOS SANTOS" class="">DARCIELIA EURIDES DOS SANTOS</a></td><td><span name="UAPS VER. MANOEL DOS SANTOS SILVA" class="">UAPS VER. MANOEL DOS SANTOS SILVA</a></td>
     </tr>
       <tr>
