@@ -406,7 +406,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/39480">40250</a></td><td>Valeria Dos Santos Teixeira Andrade</td><td><span name="27/02/2024" class="data">27/02/2024</a></td><td>FAZENDA MARIANTE, 1</td><td><span name="ZENILDA FIRMO DE OLIVEIRA" class="">ZENILDA FIRMO DE OLIVEIRA</a></td><td><span name="UAPS ANTONINO DE ALMEIDA" class="">UAPS ANTONINO DE ALMEIDA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/62688">61573</a></td><td>Natalia Dos Santos</td><td><span name="27/02/2024" class="data">27/02/2024</a></td><td>CONTORNO, 1223</td><td><span name="KEILA DOS SANTOS SOUSA" class="">KEILA DOS SANTOS SOUSA</a></td><td><span name="UAPS VER. JOSE SENA" class="">UAPS VER. JOSE SENA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/62688">61573</a></td><td>Natalia Dos Santos</td><td><span name="27/02/2024" class="data">27/02/2024</a></td><td>-</td><td><span name="-" class="">-</a></td><td><span name="-" class="">-</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/28113">28115</a></td><td>Shirley Maria Ferreira</td><td><span name="28/02/2024" class="data">28/02/2024</a></td><td>IPANEMA, 275</td><td><span name="JUSSELY SOARES DE SOUZA" class="">JUSSELY SOARES DE SOUZA</a></td><td><span name="UAPS ENF. MARY TATIANE" class="">UAPS ENF. MARY TATIANE</a></td>
@@ -3613,7 +3613,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/736">738</a></td><td>Cicero Silva Soares</td><td><span name="12/04/2024" class="data">12/04/2024</a></td><td>MARANHAO, 26</td><td><span name="DAYANE SOARES MENDES SANTOS" class="">DAYANE SOARES MENDES SANTOS</a></td><td><span name="UAPS VER. MANOEL DOS SANTOS SILVA" class="">UAPS VER. MANOEL DOS SANTOS SILVA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/25228">25230</a></td><td>Thalia Thais Miranda de Souza</td><td><span name="15/04/2024" class="data">15/04/2024</a></td><td>TAIOBEIRAS - MIRANDOPOLIS, 354</td><td><span name="MIKAELY CRISTINA SOUZA" class="">MIKAELY CRISTINA SOUZA</a></td><td><span name="UAPS ANTONINO DE ALMEIDA" class="">UAPS ANTONINO DE ALMEIDA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/25228">25230</a></td><td>Thalia Thais Miranda de Souza</td><td><span name="15/04/2024" class="data">15/04/2024</a></td><td>-</td><td><span name="-" class="">-</a></td><td><span name="-" class="">-</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/4689">4691</a></td><td>Maria Shirley Cardoso Coutrin</td><td><span name="15/04/2024" class="data">15/04/2024</a></td><td>CEARA, 1703</td><td><span name="KAMILA MARIA PEREIRA" class="">KAMILA MARIA PEREIRA</a></td><td><span name="UAPS DONA NININHA" class="">UAPS DONA NININHA</a></td>
@@ -7052,6 +7052,9 @@ document.getElementById('planilha').innerHTML = `<table>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/9167">9169</a></td><td>Alessandro Reis Oliveira</td><td><span name="05/12/2024" class="data">05/12/2024</a></td><td>AGUAS VERMELHAS, 251</td><td><span name="KEILA DOS SANTOS SOUSA" class="">KEILA DOS SANTOS SOUSA</a></td><td><span name="UAPS VER. JOSE SENA" class="">UAPS VER. JOSE SENA</a></td>
+    </tr>
+      <tr>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/35430">35721</a></td><td>Gabriel de Oliveira Soares</td><td><span name="10/12/2024" class="data">10/12/2024</a></td><td>LAGOA DOURADA, 124</td><td><span name="DARLENE MARIA PEREIRA" class="">DARLENE MARIA PEREIRA</a></td><td><span name="UAPS LAGOA GRANDE/ DOURADA" class="">UAPS LAGOA GRANDE/ DOURADA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/24690">24692</a></td><td>Tereza Teixeira Santana</td><td><span name="06/12/2024" class="data">06/12/2024</a></td><td>EZEQUIEL BISPO, 442</td><td><span name="SHEILA DARLEN MENDES SOUZA" class="">SHEILA DARLEN MENDES SOUZA</a></td><td><span name="UAPS ANTONINO DE ALMEIDA" class="">UAPS ANTONINO DE ALMEIDA</a></td>
