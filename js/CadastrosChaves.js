@@ -1,4 +1,4 @@
-var atualizacao = '13/12/2024';const k = {
+var atualizacao = '16/12/2024';const k = {
   numprontuario: 0,
   id: 1,
   nome: 2,
@@ -10,7 +10,7 @@ var atualizacao = '13/12/2024';const k = {
   esf: 8,
   acs: 9,
   bairro: 10,
-  esf: 11,
+  uaps: 11,
   acs: 12,
   zona_rural: 13,
   idade: 14,
