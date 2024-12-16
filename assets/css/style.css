@@ -365,7 +365,7 @@ input[type=reset]:focus {
     border: 1px solid transparent;
 }
 
-input[type=radio]:focus {
+input[type=radio]:focus, input[type=checkbox]:focus {
     outline: 0;
     border: 2px solid #24292e;
 }
