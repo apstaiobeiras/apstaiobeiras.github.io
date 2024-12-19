@@ -2069,9 +2069,12 @@ const SolicitacoesExcluidas = [
   [835405,1260,47008,81,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Deve descartar síndrome dispéptica com EDA.",20241216,"CONSULTA OTORRINOLARINGOLOGIA"],
   [835500,216,18539,13,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor informar a data de realização dos exames bioquímicos.Att.",20241216,"CONSULTA DIABETES ALTO RISCO"],
   [835708,907,11764,9,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>DETALHAR RCV DA PACIENTE.SE ALTO RISCO, ENCAMINHAR AO CEAE, SE INTERMEDIÁRIO/BAIXO, REINSERIR DIRETAMNETE EM FILA \"CONSULTA CARDIOLOGIA RENAN\". GRATA.",20241217,"CONSULTA CARDIOLOGIA DR RENAN"],
+  [836505,1350,27652,34,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever os resultados dos exames bioquímicos já coletados (SIC) para prosseguir com agendamento.Att.",20241219,"CONSULTA HIPERTENSO ALTO RISCO"],
   [836705,1193,27978,56,"<b>Não Se Enquadra nos Criterios: </b><br>Quadro de adenomiose, SOP e desejo de gestação, deve ser lançado na fila da GINECOLOGIA POLICLÍNICA.",20241217,"CONSULTA GINECOLOGIA CEAE"],
   [836925,717,18653,16,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Detalhamento incompleto do quadro para regularLombalgia com dor moderada a grave, mobilidade reduzida?Condição clínica do paciente: se a dor aguda ou crônica, se há limitação de ADM, se há perda de força muscular",20241217,"ATENDIMENTO FISIOTERAPIA"],
   [836997,1193,22614,56,"Não Se Enquadra nos Criterios",20241217,"ULTRASSONOGRAFIA JOELHO"],
+  [837265,1366,31244,34,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever os últimos resultados de exames bioquímicos realizados pela paciente para prosseguir com agendamento.Att.",20241219,"CONSULTA HIPERTENSO ALTO RISCO"],
+  [838294,1317,24710,3,"<b>Não Se Enquadra nos Criterios: </b><br>Os dados apresentados no encaminhamento e calculado no HEARTS classifica a paciente como risco moderado, já que a HG dela é de 6% e não há diagnóstico prévio de diabetes. Me coloco a disposição para quaisquer dúvidas.Att.",20241219,"CONSULTA HIPERTENSO ALTO RISCO"],
 ];
 
 const Unidades = [
