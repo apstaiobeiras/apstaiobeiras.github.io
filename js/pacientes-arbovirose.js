@@ -4990,7 +4990,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/25530">25532</a></td><td>Maria Isabel Ferreira Almeida</td><td><span name="27/05/2024" class="data">27/05/2024</a></td><td>ELIZABETH PEREIRA DE SOUZA, 235</td><td><span name="MAISA OLIVEIRA BARBOSA" class="">MAISA OLIVEIRA BARBOSA</a></td><td><span name="UAPS DONA NININHA" class="">UAPS DONA NININHA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/80056">67520</a></td><td>Nubia Aparecida Marques da Silva</td><td><span name="28/05/2024" class="data">28/05/2024</a></td><td>CONTORNO, 4938</td><td><span name="IVANILDE MARIA DO NASCIMENTO" class="">IVANILDE MARIA DO NASCIMENTO</a></td><td><span name="UAPS ENF. MARY TATIANE" class="">UAPS ENF. MARY TATIANE</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/80056">67520</a></td><td>Nubia Aparecida Marques da Silva</td><td><span name="28/05/2024" class="data">28/05/2024</a></td><td>-</td><td><span name="-" class="">-</a></td><td><span name="-" class="">-</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/8585">8587</a></td><td>Isabel Ferreira Dos Santos</td><td><span name="28/05/2024" class="data">28/05/2024</a></td><td>D, 75</td><td><span name="JUSSELY SOARES DE SOUZA" class="">JUSSELY SOARES DE SOUZA</a></td><td><span name="UAPS ENF. MARY TATIANE" class="">UAPS ENF. MARY TATIANE</a></td>
@@ -7118,6 +7118,9 @@ document.getElementById('planilha').innerHTML = `<table>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/17747">17749</a></td><td>Jackson Felix Machado Pereira</td><td><span name="16/12/2024" class="data">16/12/2024</a></td><td>PERNAMBUCO, 786</td><td><span name="WANESSA MOREIRA DE SOUZA" class="">WANESSA MOREIRA DE SOUZA</a></td><td><span name="UAPS DONA NININHA" class="">UAPS DONA NININHA</a></td>
+    </tr>
+      <tr>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/27869">27871</a></td><td>Isabel Cristina Oliveira Silva</td><td><span name="26/12/2024" class="data">26/12/2024</a></td><td>OSWALDO ARGOLO, 92</td><td><span name="JOSSIVANIA D' ANGELIS COSTA" class="">JOSSIVANIA D' ANGELIS COSTA</a></td><td><span name="UAPS VER. JOSE SENA" class="">UAPS VER. JOSE SENA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/51204">51194</a></td><td>Gabriela Pereira da Silva</td><td><span name="04/12/2024" class="data">04/12/2024</a></td><td>CORAÇAO DE JESUS, 307</td><td><span name="JUSSELY SOARES DE SOUZA" class="">JUSSELY SOARES DE SOUZA</a></td><td><span name="UAPS ENF. MARY TATIANE" class="">UAPS ENF. MARY TATIANE</a></td>
