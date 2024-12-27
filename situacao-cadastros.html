@@ -176,7 +176,6 @@
     </table>
 
     <h3><br /></h3>
-    <script src="js/lista-profissionais-vivver.js"></script>
     <script src="js/CadastrosChaves.js"></script>
     <script src="assets/js/logout.js"></script>
     <script>
@@ -199,14 +198,10 @@
           script.src = "js/"+scriptName + '.js';  // Assuming the script is named according to the parameter value
           script.onload = async function() {
             if (localStorage.getItem('override:codProfissional')) {
-              for (let profissional of Profissionais) {
-                if (profissional[0] == localStorage.getItem('override:codProfissional')) {
-                  document.getElementById("nome").innerText = profissional[1];
-                  nomeProfissional = profissional[1];
-                  codProfissional = profissional[0];
-                  break;
-                }
-              }
+              const {data:profissional,error} = await supabase.from('dadosprofissionais').select("*").eq('codprofissional', localStorage.getItem('override:codProfissional'));
+              document.getElementById("nome").innerText = profissional[0].nome;
+              codProfissional = profissional[0].codprofissional;
+              nomeProfissional = profissional[0].nome;
             } else {
               const {data:profissional,error} = await supabase.from('dadosprofissionais').select("*").eq('cpf', localStorage.getItem("profissional"));
               document.getElementById("nome").innerText = profissional[0].nome;
