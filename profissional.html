@@ -92,7 +92,6 @@ tr td:last-child {
 
     <h3><br /></h3>
     <script src="assets/js/logout.js"></script>
-    <script src="js/lista-profissionais-vivver.js"></script>
     <script>
       const Sections = {
         "Páginas": [
@@ -164,15 +163,12 @@ tr td:last-child {
           let naoACS = false;
 
           if (localStorage.getItem('override:codProfissional')) {
-            document.getElementById("cod").innerText = localStorage.getItem('override:codProfissional');
-            codProfissional  = document.getElementById("cod").innerText;
-
-            for (let profissional of Profissionais) {
-              if (profissional[0] == localStorage.getItem('override:codProfissional')) {
-                document.getElementById("nome").innerText = profissional[1];
-                break;
-              }
-            }
+            const {data:profissional,error} = await supabase.from('dadosprofissionais').select("*").eq('codprofissional', localStorage.getItem('override:codProfissional'));
+            document.getElementById("nome").innerText = profissional[0].nome;
+            codProfissional = profissional[0].codprofissional;
+            nomeProfissional = profissional[0].nome;
+            document.getElementById("cod").innerText = codProfissional;
+            document.getElementById("nome").innerText = nomeProfissional;
           } else {
             const {data,error} = await window.supabase.from('dadosprofissionais').select("*").eq('cpf', localStorage.getItem("profissional"));
             document.getElementById("cod").innerText = data[0].codprofissional;
