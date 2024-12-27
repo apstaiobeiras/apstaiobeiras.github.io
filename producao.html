@@ -63,7 +63,6 @@
     </table>
     <script src="assets/js/logout.js"></script>
     <script src="js/monitoramento-acs.js"></script>
-    <script src="js/lista-profissionais-vivver.js"></script>
     <script>
         colorePercentual = (percentual,meta) => {
             if ((40*meta)/100 > percentual) {
@@ -87,18 +86,13 @@
             let codProfissional = 0;
 
             if (localStorage.getItem('override:codProfissional')) {
-              for (let profissional of Profissionais) {
-                if (profissional[0] == localStorage.getItem('override:codProfissional')) {
-                  document.getElementById("nome").innerText = profissional[1];
-                  codProfissional = profissional[0];
-                  break;
-                }
-              }
+              const {data,error} = await supabase.from('dadosprofissionais').select("*").eq('codprofissional', localStorage.getItem("override:codProfissional"));
+              document.getElementById("nome").innerText = data[0].nome;
+              codProfissional = data[0].codprofissional;
             } else {
               const {data,error} = await window.supabase.from('dadosprofissionais').select("*").eq('cpf', localStorage.getItem("profissional"));
-            //document.getElementById("cod").innerText = data[0].codprofissional;
-            document.getElementById("nome").innerText = data[0].nome;
-            codProfissional = data[0].codprofissional;
+              document.getElementById("nome").innerText = data[0].nome;
+              codProfissional = data[0].codprofissional;
             }
 
             let cabecalho = document.createElement("tr");
