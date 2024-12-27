@@ -3613,7 +3613,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/736">738</a></td><td>Cicero Silva Soares</td><td><span name="12/04/2024" class="data">12/04/2024</a></td><td>MARANHAO, 26</td><td><span name="DAYANE SOARES MENDES SANTOS" class="">DAYANE SOARES MENDES SANTOS</a></td><td><span name="UAPS VER. MANOEL DOS SANTOS SILVA" class="">UAPS VER. MANOEL DOS SANTOS SILVA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/25228">25230</a></td><td>Thalia Thais Miranda de Souza</td><td><span name="15/04/2024" class="data">15/04/2024</a></td><td>PIUNAS, 435</td><td><span name="MARTA BARBOSA DE OLIVEIRA" class="">MARTA BARBOSA DE OLIVEIRA</a></td><td><span name="UAPS DONA NININHA" class="">UAPS DONA NININHA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/25228">25230</a></td><td>Thalia Thais Miranda de Souza</td><td><span name="15/04/2024" class="data">15/04/2024</a></td><td>PIUNAS, 430</td><td><span name="MARTA BARBOSA DE OLIVEIRA" class="">MARTA BARBOSA DE OLIVEIRA</a></td><td><span name="UAPS DONA NININHA" class="">UAPS DONA NININHA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/4689">4691</a></td><td>Maria Shirley Cardoso Coutrin</td><td><span name="15/04/2024" class="data">15/04/2024</a></td><td>CEARA, 1703</td><td><span name="KAMILA MARIA PEREIRA" class="">KAMILA MARIA PEREIRA</a></td><td><span name="UAPS DONA NININHA" class="">UAPS DONA NININHA</a></td>
@@ -7064,6 +7064,9 @@ document.getElementById('planilha').innerHTML = `<table>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/55042">54709</a></td><td>Edmundo Ferreira da Silva</td><td><span name="19/12/2024" class="data">19/12/2024</a></td><td>-</td><td><span name="-" class="">-</a></td><td><span name="-" class="">-</a></td>
+    </tr>
+      <tr>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/17931">17933</a></td><td>Kamila Maria Pereira</td><td><span name="27/12/2024" class="data">27/12/2024</a></td><td>IPANEMA, 1295</td><td><span name="CERLIOS MARQUES DOS SANTOS" class="">CERLIOS MARQUES DOS SANTOS</a></td><td><span name="UAPS DONA NININHA" class="">UAPS DONA NININHA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/24690">24692</a></td><td>Tereza Teixeira Santana</td><td><span name="06/12/2024" class="data">06/12/2024</a></td><td>EZEQUIEL BISPO, 442</td><td><span name="SHEILA DARLEN MENDES SOUZA" class="">SHEILA DARLEN MENDES SOUZA</a></td><td><span name="UAPS ANTONINO DE ALMEIDA" class="">UAPS ANTONINO DE ALMEIDA</a></td>

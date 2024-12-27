@@ -2036,6 +2036,7 @@ const SolicitacoesExcluidas = [
   [830682,1220,6870,13,"<b>Não Se Enquadra nos Criterios: </b><br>ENCAMINHADO PARA NEFROLOGIA - SALINAS",20241204,"CONSULTA NEFROLOGISTA"],
   [830727,46,47870,16,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Detalhamento insuficiente para regular pacienteCondição clínica do paciente: se a dor aguda ou crônica, se há limitação de ADM, se há perda de força muscular.Lombalgia com dor moderada a grave, mobilidade reduzida e/ou radiculopatia?",20241217,"ATENDIMENTO FISIOTERAPIA"],
   [830979,1322,8164,75,"<b>Não Se Enquadra nos Criterios: </b><br>Gestante lançada na fila de espera errada mas mesmo assim, não se enquadra nos critérios da gestação de alto risco.",20241206,"CONSULTA GINECOLOGIA CEAE"],
+  [831022,1216,51540,9,"<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA \"AVALIAÇÃO CIRURGICA POLICLÍNICA\".",20241227,"CONSULTA CIRURGIAO GERAL"],
   [831572,907,34849,78,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>AUSENCIA DE RCV. SE ALTO RISCO, ENCAMINHAR AO CEAE, SE RISCO BAIXO/MODERADO, REINSERIR EM DILA \"CONSULTA CARDIOLOGIA RENAN\".",20241210,"CONSULTA CARDIOLOGIA DR RENAN"],
   [831599,507,22636,2,"<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA FILA DO DIABETES ALTO RISCO.",20241211,"CONSULTA ENDOCRINOLOGIA"],
   [831650,507,4809,2,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Descrever se houve acréscimo de medicamento e solicitação de outros exames, após avaliação destes, para que não haja duplicidade de solicitação. ",20241211,"CONSULTA CARDIOLOGIA DR RENAN"],
@@ -2065,6 +2066,7 @@ const SolicitacoesExcluidas = [
   [834391,1267,30309,8,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>DETALHAMENTO CLÍNICO INSUFICIENTE.Paciente restrito ao leito?Paciente apresenta restrição para locomoção? Por qual motivo?",20241216,"FISIOTERAPIA- ATENDIMENTO DOMICILIAR"],
   [834414,1366,1905,34,"<b>Não Se Enquadra nos Criterios: </b><br>QUADROS DE DIABETES MELITUS NÃO SE ENQUADRAM COMO CRITÉRIO DE ENDOCRINOLOGIA AMBULATORIAL.VERIFICAR CRITÉRIOS DE CEAE. CASO A  MESMA NÃO APRESENTE, O QUADRO DEVE SER CONDUZIDO PELA APS. A MÉDICA REGULADORA SE ENCONTRA A DISPOSIÇÃO PARA DISCUTIR CONDUTAS. GRATA.",20241211,"CONSULTA ENDOCRINOLOGIA"],
   [834460,1193,26268,56,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Foi solicitado retorno com exames bioquímicos em agosto/2024, favor verificar com paciente se foram realizados, caso não, sugiro que realize para agendamento do retorno. Me coloco a disposição para discussão do caso.Att.",20241211,"CONSULTA DIABETES ALTO RISCO"],
+  [834479,907,19021,9,"<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA \"AVALIAÇÃO CIRURGICA POLICLÍNICA\".",20241227,"CONSULTA CIRURGIAO GERAL"],
   [834568,262,31195,34,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever resultado do último PCCU com a data da realização.",20241226,"CONSULTA GINECOLOGIA POLICLINICA"],
   [834625,1366,32861,34,"<b>Não Se Enquadra nos Criterios: </b><br>Quadro de adenomiose deve ser lançado na fila da GINECOLOGIA POLICLÍNICA.",20241211,"CONSULTA GINECOLOGIA CEAE"],
   [834676,775,5436,7,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Descrever a investigação laboratorial e radiografia de tórax realizada para diagnóstico diferencial, bem como se houve algum ajuste de drogas. Atentar para o Hipertireoidismo.",20241211,"CONSULTA CARDIOLOGIA DR RENAN"],
@@ -2083,6 +2085,7 @@ const SolicitacoesExcluidas = [
   [836705,1193,27978,56,"<b>Não Se Enquadra nos Criterios: </b><br>Quadro de adenomiose, SOP e desejo de gestação, deve ser lançado na fila da GINECOLOGIA POLICLÍNICA.",20241217,"CONSULTA GINECOLOGIA CEAE"],
   [836925,717,18653,16,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Detalhamento incompleto do quadro para regularLombalgia com dor moderada a grave, mobilidade reduzida?Condição clínica do paciente: se a dor aguda ou crônica, se há limitação de ADM, se há perda de força muscular",20241217,"ATENDIMENTO FISIOTERAPIA"],
   [836997,1193,22614,56,"Não Se Enquadra nos Criterios",20241217,"ULTRASSONOGRAFIA JOELHO"],
+  [836999,907,26437,9,"<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA \"AVALIAÇÃO CIRURGICA POLICLÍNICA\".",20241227,"CONSULTA CIRURGIAO GERAL"],
   [837265,1366,31244,34,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever os últimos resultados de exames bioquímicos realizados pela paciente para prosseguir com agendamento.Att.",20241219,"CONSULTA HIPERTENSO ALTO RISCO"],
   [837701,1322,11169,75,"<b>Não Se Enquadra nos Criterios: </b><br>LT será avaliada no Hospital no momento do parto.",20241226,"CONSULTA GINECOLOGIA POLICLINICA"],
   [837735,829,8560,7,"<b>Não Se Enquadra nos Criterios: </b><br>Pacientes com Hipertensão de Alto Risco Cardiovascular devem receber acompanhamento no CEAE segundo protocolo de Regulação.",20241226,"AVALIAçaO NUTRICIONISTA E-MULTI"],
@@ -2092,8 +2095,10 @@ const SolicitacoesExcluidas = [
   [838382,764,10686,68,"<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA PEQUENA CIRURGIA.",20241226,"AVALIAçaO CIRURGICA POLICLINICA"],
   [838605,1267,6291,8,"<b>Não Se Enquadra nos Criterios: </b><br>DISCUTIDO CASO COM MÉDICA SOLICITANTE. PACIENTE ALTO RCV, SUGIRO ENCAMINHAR AO CEAE.",20241220,"CONSULTA CARDIOLOGIA DR NIKOLAS"],
   [838645,507,74696,2,"<b>Não Se Enquadra nos Criterios: </b><br>Avaliação de via de parto será somente para cesariana prévia ou feto pélvico.Sobre DMG, se a gestante está com glicemia controlada em acompanhamento pela nutricionista da e-multi, não há necessidade de encaminhar ao alto risco.",20241226,"CONSULTA GESTANTE ALTO RISCO"],
+  [838775,1132,15898,10,"<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA \"AVALIAÇÃO CIRURGICA POLICLÍNICA\".",20241227,"CONSULTA CIRURGIAO GERAL"],
   [838838,1052,52320,13,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data os últimos resultados bioquímicos realizados pelo paciente para prosseguir com agendamento.Att.",20241226,"CONSULTA HIPERTENSO ALTO RISCO"],
   [840338,1322,14763,75,"<b>Solicitação Indevida: </b><br>Favor encaminhar gestante com cesariana prévia na fila GESTANTE ALTO RISCO.",20241226,"CONSULTA GINECOLOGIA POLICLINICA"],
+  [840376,1194,52908,6,"<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA \"AVALIAÇÃO CIRURGICA POLICLÍNICA\".",20241227,"CONSULTA CIRURGIAO GERAL"],
 ];
 
 const Unidades = [
