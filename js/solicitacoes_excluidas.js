@@ -2098,6 +2098,7 @@ const SolicitacoesExcluidas = [
   [838775,1132,15898,10,"<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA \"AVALIAÇÃO CIRURGICA POLICLÍNICA\".",20241227,"CONSULTA CIRURGIAO GERAL"],
   [838838,1052,52320,13,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data os últimos resultados bioquímicos realizados pelo paciente para prosseguir com agendamento.Att.",20241226,"CONSULTA HIPERTENSO ALTO RISCO"],
   [840338,1322,14763,75,"<b>Solicitação Indevida: </b><br>Favor encaminhar gestante com cesariana prévia na fila GESTANTE ALTO RISCO.",20241226,"CONSULTA GINECOLOGIA POLICLINICA"],
+  [840370,985,8831,11,"<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA FILA DE RETONO.",20241227,"CONSULTA ORTOPEDISTA"],
   [840376,1194,52908,6,"<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA \"AVALIAÇÃO CIRURGICA POLICLÍNICA\".",20241227,"CONSULTA CIRURGIAO GERAL"],
 ];
 
