@@ -1988,6 +1988,7 @@ const SolicitacoesExcluidas = [
   [823779,1216,16943,9,"<b>Não Se Enquadra nos Criterios: </b><br>O atendimento dele foi agendado na Policlínica.Att.",20241125,"CONSULTA DIABETES ALTO RISCO"],
   [823943,1207,11557,18,"<b>Solicitação Indevida: </b><br>JÁ AGUARDA NAFILA DO SERVIÇO DE ALTO RISCO.",20241211,"CONSULTA ENDOCRINOLOGIA"],
   [823984,1016,62990,2,"<b>Agendar na Atenção Primaria: </b><br>Criança com critério para avaliação e intervenção psicológica. ",20241126,"CONSULTA NEUROLOGIA"],
+  [824026,1016,30745,2,"<b>Não Se Enquadra nos Criterios: </b><br>Deve haver descrição  dos exames que comprovam diagnóstico bem como dos  tratamentos realizados.",20241230,"CONSULTA ORTOPEDISTA"],
   [824102,1132,16266,10,"<b>Não Se Enquadra nos Criterios: </b><br>Quadro de endometriose deve ser lançado na fila da GINECOLOGIA POLICLÍNICA.",20241206,"CONSULTA GINECOLOGIA CEAE"],
   [824507,1291,44524,75,"<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA FILA \"AVALIAÇÃO CIRURGICA POLICLÍNICA\".",20241128,"CONSULTA CIRURGIAO GERAL"],
   [824544,1366,29296,34,"<b>Solicitação Indevida: </b><br>A SOLICITAÇÃO VINCULADA AO PROFISSIONAL CIRURGIÃO QUE EXECUTARA O PROCEDIMENTO.PEDIR O PACIENTE PARA PROCURAR A SECRETARIA COM A INDICAÇÃO CIRURGICA. CASO O PACIENTE NAO TENHA MAIS NENHUM DOCUMENTO REFERENTE A CIRURGIA, ENCAMINHA-LO NOVAMENTE PARA AVALIAÇÃO DO CIRURGIÃO.",20241128,"AVALIAçaO PRE ANESTESICA"],
@@ -2095,11 +2096,13 @@ const SolicitacoesExcluidas = [
   [838382,764,10686,68,"<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA PEQUENA CIRURGIA.",20241226,"AVALIAçaO CIRURGICA POLICLINICA"],
   [838605,1267,6291,8,"<b>Não Se Enquadra nos Criterios: </b><br>DISCUTIDO CASO COM MÉDICA SOLICITANTE. PACIENTE ALTO RCV, SUGIRO ENCAMINHAR AO CEAE.",20241220,"CONSULTA CARDIOLOGIA DR NIKOLAS"],
   [838645,507,74696,2,"<b>Não Se Enquadra nos Criterios: </b><br>Avaliação de via de parto será somente para cesariana prévia ou feto pélvico.Sobre DMG, se a gestante está com glicemia controlada em acompanhamento pela nutricionista da e-multi, não há necessidade de encaminhar ao alto risco.",20241226,"CONSULTA GESTANTE ALTO RISCO"],
+  [838652,1366,28645,3,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor informar  com data os últimos resultados de exames bioquímicos realizados pelo paciente.Att.",20241228,"CONSULTA HIPERTENSO ALTO RISCO"],
   [838775,1132,15898,10,"<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA \"AVALIAÇÃO CIRURGICA POLICLÍNICA\".",20241227,"CONSULTA CIRURGIAO GERAL"],
   [838838,1052,52320,13,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data os últimos resultados bioquímicos realizados pelo paciente para prosseguir com agendamento.Att.",20241226,"CONSULTA HIPERTENSO ALTO RISCO"],
   [840338,1322,14763,75,"<b>Solicitação Indevida: </b><br>Favor encaminhar gestante com cesariana prévia na fila GESTANTE ALTO RISCO.",20241226,"CONSULTA GINECOLOGIA POLICLINICA"],
   [840370,985,8831,11,"<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA FILA DE RETONO.",20241227,"CONSULTA ORTOPEDISTA"],
   [840376,1194,52908,6,"<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA \"AVALIAÇÃO CIRURGICA POLICLÍNICA\".",20241227,"CONSULTA CIRURGIAO GERAL"],
+  [840684,907,35649,9,"<b>Não Se Enquadra nos Criterios: </b><br>Descrever resultados dos exames que comprovam diagnóstico.",20241230,"CONSULTA ORTOPEDISTA"],
 ];
 
 const Unidades = [
