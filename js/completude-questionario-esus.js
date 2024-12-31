@@ -34190,4 +34190,4 @@ const completudeQuestionarioESUS = [
   [7414,7326,1332.25,'Emerson...','11/07/2024',1,53,39],
 ]
 
-var atualizacao = '30/12/2024';
+var atualizacao = '31/12/2024';

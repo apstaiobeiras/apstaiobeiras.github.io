@@ -22,7 +22,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/128759">79461</a></td><td>Henri Mattos Lima</td><td><div style="white-space: nowrap;">1 ano e 8 mês </div></td><td><span name="VIDA E SAUDE" >VIDA E SAUDE</a></td><td><span name="525" >NAGILA MARIA DOS SANTOS</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/94339">69738</a></td><td>Felipe Lucas Soares da Silva</td><td><div style="white-space: nowrap;">1 ano e 6 mês </div></td><td><span name="UNIAO" >UNIAO</a></td><td><span name="564" >MAISA OLIVEIRA BARBOSA</a></td><td><span name="1º DOSE" style="white-space: nowrap;">1º DOSE</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/94339">69738</a></td><td>Felipe Lucas Soares da Silva</td><td><div style="white-space: nowrap;">1 ano e 7 mês </div></td><td><span name="UNIAO" >UNIAO</a></td><td><span name="564" >MAISA OLIVEIRA BARBOSA</a></td><td><span name="1º DOSE" style="white-space: nowrap;">1º DOSE</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/107368">71326</a></td><td>Saulo Caroba Oliveira</td><td><div style="white-space: nowrap;">1 ano e 3 mês </div></td><td><span name="HARMONIA" >HARMONIA</a></td><td><span name="1125" >JEYSLANE MENDES DE OLIVEIRA</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
