@@ -57,7 +57,8 @@
         table {
             width: 100%!important;
         }
-      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/></head>
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/>
+      <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script></head>
       <body class="container-lg px-3 my-5 markdown-body">
         <div class="navbar" style="display: flex;justify-content: space-between; padding: 0;">
             <a href="profissional.html">Voltar</a>
@@ -66,11 +67,15 @@
         </div>
         <h3><br></h3>
         <!--<h4>Filtrado <span id="filtrado">{filtrado}</span> pacientes de <span id="total">{total}</span> ou <span id=percentil>{percentil}</span>%</h3></h4>-->
-        <h4><img src="assets/img/csv.png" style="transform: translate(0%, 25%);"> <a href="#" onclick="baixarComoCSV();">Baixar como CSV</a> | Total: <span id="total">{total}</span> | Filtrado: <span id="filtrado">{filtrado}</span></h4>
+        <h4>
+          <img src="assets/img/csv.png" style="transform: translate(0%, 25%);"> 
+          <a href="#" onclick="baixarComoCSV();">Baixar como CSV</a> | Total: <span id="total">{total}</span> | Filtrado: <span id="filtrado">{filtrado}</span>
+          <span id="mostrar_grafico" style="display: none;"> | <a href="#" onclick="mostrarGrafico();">Mostrar gráfico</a></span>
+        </h4>
 
         <h3> </h3>
         <div id="planilha"></div>
-        
+        <div id="graficoX"></div>
         
         </body><script src="assets/js/logout.js"></script>
     <script>
@@ -144,6 +149,10 @@
       }
 
       planilha.innerHTML = `${elementosFiltros} ${planilha.innerHTML}`;
+
+      if (grafico) {
+        mostrar_grafico.style.display = "";
+      }
     };
     document.head.appendChild(script);
     </script>
@@ -251,6 +260,12 @@
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
+    }
+
+    function mostrarGrafico () {
+      var chart = new ApexCharts(document.querySelector("#graficoX"), grafico);
+      planilha.remove()
+      chart.render();
     }
     </script>
  
