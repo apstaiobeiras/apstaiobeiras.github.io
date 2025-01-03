@@ -70,12 +70,15 @@
         <h4>
           <img src="assets/img/csv.png" style="transform: translate(0%, 25%);"> 
           <a href="#" onclick="baixarComoCSV();">Baixar como CSV</a> | Total: <span id="total">{total}</span> | Filtrado: <span id="filtrado">{filtrado}</span>
-          <span id="mostrar_grafico" style="display: none;"> | <a href="#" onclick="mostrarGrafico();">Mostrar gráfico</a></span>
+          <span id="mostrar_grafico" style="display: none;"> | 
+            <a href="#" onclick="mostrarGrafico();" id="mostrarGraficoX">Mostrar gráfico</a>
+            <a href="#" onclick="mostrarPlanilha();" id="mostrarPlanilhaX" style="display: none;">Mostrar Planilha</a>
+          </span>
         </h4>
 
         <h3> </h3>
         <div id="planilha"></div>
-        <div id="graficoX"></div>
+        <div id="graficos" style="display: none;"></div>
         
         </body><script src="assets/js/logout.js"></script>
     <script>
@@ -150,9 +153,6 @@
 
       planilha.innerHTML = `${elementosFiltros} ${planilha.innerHTML}`;
 
-      if (grafico) {
-        mostrar_grafico.style.display = "";
-      }
     };
     document.head.appendChild(script);
     </script>
@@ -263,9 +263,17 @@
     }
 
     function mostrarGrafico () {
-      var chart = new ApexCharts(document.querySelector("#graficoX"), grafico);
-      planilha.remove()
-      chart.render();
+      graficos.style.display = "";
+      planilha.style.display = "none";
+      mostrarGraficoX.style.display = "none";
+      mostrarPlanilhaX.style.display = "";
+    }
+
+    function mostrarPlanilha () {
+      graficos.style.display = "none";
+      planilha.style.display = "";
+      mostrarGraficoX.style.display = "";
+      mostrarPlanilhaX.style.display = "none";
     }
     </script>
  
