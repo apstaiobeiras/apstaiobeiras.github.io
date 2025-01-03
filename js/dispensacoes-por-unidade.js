@@ -2743,8 +2743,8 @@ dispensacoes[2025].geral = `<tr style="border: 0"><td colspan=5 style="border: 0
 </tr>
 <tr>
 <td>FARMÁCIA UAPS ANTONINO DE ALMEIDA</td>
-<td style="text-align:right;">67</td>
-<td style="text-align:right;">67</td>
+<td style="text-align:right;">69</td>
+<td style="text-align:right;">69</td>
 <td style="text-align:right;">100%</td>
 <td style="text-align:right;">6%</td>
 </tr>
@@ -2778,21 +2778,21 @@ dispensacoes[2025].geral = `<tr style="border: 0"><td colspan=5 style="border: 0
 </tr>
 <tr>
 <td>FARMÁCIA UAPS VER. JOSE SENA</td>
-<td style="text-align:right;">107</td>
-<td style="text-align:right;">80</td>
+<td style="text-align:right;">108</td>
+<td style="text-align:right;">81</td>
 <td style="text-align:right;">75%</td>
 <td style="text-align:right;">10%</td>
 </tr>
 <tr>
 <td>FARMÁCIA UAPS VER. MANOEL DOS SANTOS SILVA</td>
-<td style="text-align:right;">57</td>
-<td style="text-align:right;">54</td>
-<td style="text-align:right;">95%</td>
-<td style="text-align:right;">5%</td>
+<td style="text-align:right;">64</td>
+<td style="text-align:right;">60</td>
+<td style="text-align:right;">94%</td>
+<td style="text-align:right;">6%</td>
 </tr>
 <tr>
 <td>FARMÁCIA DE MINAS DE TAIOBEIRAS</td>
-<td style="text-align:right;">696</td>
+<td style="text-align:right;">699</td>
 <td style="text-align:center;  background-color: #dfe2e5;">-</td>
 <td style="text-align:center;  background-color: #dfe2e5;">-</td>
 <td style="text-align:right;">63%</td>
@@ -2820,7 +2820,7 @@ dispensacoes[2025].geral = `<tr style="border: 0"><td colspan=5 style="border: 0
 </tr>
 <tr>
 <td>Total</td>
-<td style="text-align:right;">1100</td>
+<td style="text-align:right;">1113</td>
 <td style="text-align:center; background-color: #dfe2e5;">-</td>
 <td style="text-align:center; background-color: #dfe2e5;">-</td>
 <td style="text-align:center; background-color: #dfe2e5;">-</td>

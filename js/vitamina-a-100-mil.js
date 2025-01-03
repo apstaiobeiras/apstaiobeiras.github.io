@@ -85,9 +85,6 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/124456">75648</a></td><td>Felipe Lima Fagundes</td><td><div style="white-space: nowrap;">7 meses</div></td><td><span name="ESPERANÇA">ESPERANÇA</a></td><td><span name="1149">LIVIA KAMILLY SOARES DOS SANTOS</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/125102">76180</a></td><td>Jose Pedro Santana Mendes</td><td><div style="white-space: nowrap;">6 meses</div></td><td><span name="CAMINHO">CAMINHO</a></td><td><span name="1129">DENIZ CAROLINE PEREIRA MARTINS</a></td>
-    </tr>
-      <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/124930">76026</a></td><td>Maria Clara Oliveira Coimbra de Castro</td><td><div style="white-space: nowrap;">6 meses</div></td><td><span name="ESPERANÇA">ESPERANÇA</a></td><td><span name="968">AMANDA MARIA SOARES SANTOS</a></td>
     </tr>
       <tr>
