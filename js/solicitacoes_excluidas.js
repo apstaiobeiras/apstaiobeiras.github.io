@@ -2104,7 +2104,10 @@ const SolicitacoesExcluidas = [
   [840376,1194,52908,6,"<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA \"AVALIAÇÃO CIRURGICA POLICLÍNICA\".",20241227,"CONSULTA CIRURGIAO GERAL"],
   [840684,907,35649,9,"<b>Não Se Enquadra nos Criterios: </b><br>Descrever resultados dos exames que comprovam diagnóstico.",20241230,"CONSULTA ORTOPEDISTA"],
   [839584,1221,30812,4,"<b>Não Se Enquadra nos Criterios: </b><br>Ao realizar RCV pelo HEARTS a paciente foi classificada como risco moderado, caso não consegui identificar algum dado que mude essa classificação, favor reencaminhar ou me sinalizar para rever novamente.Att.",20250102,"CONSULTA HIPERTENSO ALTO RISCO"],
+  [840802,1322,19734,75,"<b>Não Se Enquadra nos Criterios: </b><br>Gestantes que desejam LT serão avaliadas no momento do parto no Hospital.",20250103,"CONSULTA GINECOLOGIA CEAE"],
   [841567,1200,654,10,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Qual a IG?",20250102,"CONSULTA GESTANTE ALTO RISCO"],
+  [842228,320,28386,78,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Qual o motivo do encaminhamento?",20250103,"CONSULTA GINECOLOGIA POLICLINICA"],
+  [842584,1216,14413,9,"<b>Não Se Enquadra nos Criterios: </b><br>Aumento do volume uterino devido à nódulos deve ser lançado na fila da GINECOLOGIA POLICLÍNICA.",20250103,"CONSULTA GINECOLOGIA CEAE"],
 ];
 
 const Unidades = [
