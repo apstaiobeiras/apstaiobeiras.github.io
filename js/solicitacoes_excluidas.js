@@ -2108,6 +2108,7 @@ const SolicitacoesExcluidas = [
   [841567,1200,654,10,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Qual a IG?",20250102,"CONSULTA GESTANTE ALTO RISCO"],
   [842228,320,28386,78,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Qual o motivo do encaminhamento?",20250103,"CONSULTA GINECOLOGIA POLICLINICA"],
   [842584,1216,14413,9,"<b>Não Se Enquadra nos Criterios: </b><br>Aumento do volume uterino devido à nódulos deve ser lançado na fila da GINECOLOGIA POLICLÍNICA.",20250103,"CONSULTA GINECOLOGIA CEAE"],
+  [843847,1317,25705,3,"<b>Não Se Enquadra nos Criterios: </b><br>PACIENTE COM VALOR DE TRIGLICERÍDEOS EM TRIG 235,45 (INFERIOR A 300); SEM OUTRAS QUEIXAS OU JUSTIFICATIVAS QUE ATENDAM AO PROTOCOLO DA NUTRIÇÃO EMULTI.",20250106,"AVALIAçaO NUTRICIONISTA E-MULTI"],
 ];
 
 const Unidades = [
