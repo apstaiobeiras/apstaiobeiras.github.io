@@ -2103,12 +2103,17 @@ const SolicitacoesExcluidas = [
   [840370,985,8831,11,"<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA FILA DE RETONO.",20241227,"CONSULTA ORTOPEDISTA"],
   [840376,1194,52908,6,"<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA \"AVALIAÇÃO CIRURGICA POLICLÍNICA\".",20241227,"CONSULTA CIRURGIAO GERAL"],
   [840684,907,35649,9,"<b>Não Se Enquadra nos Criterios: </b><br>Descrever resultados dos exames que comprovam diagnóstico.",20241230,"CONSULTA ORTOPEDISTA"],
+  [807549,1220,22499,13,"<b>Não Se Enquadra nos Criterios: </b><br>PACIENTE ESTÁVEL, PODE INICIAR INVESTIGAÇÃO COM EXAMES DE IMAGEM NA APS, PARA POSTERIOR TENTATIVA DE DESMAME. ATENTAR PARA  EXAMES LABORATORIAIS E SUPLEMENTAÇÃO DE B12 DEVIDO USO CRONICO DE ANTICONVULSIVANTE.",20250107,"CONSULTA NEUROLOGIA"],
+  [814349,507,12831,2,"<b>Falta Detalhar Exames: </b><br>DESCREVER TC DE CRANIO, SE NÃO TEM DEVE SOLICITAR, UMA VEZ ESTÁVEL PODE SER MONITORADO ATÉ O RESULTADO NA APS.",20250107,"CONSULTA NEUROLOGIA"],
   [839584,1221,30812,4,"<b>Não Se Enquadra nos Criterios: </b><br>Ao realizar RCV pelo HEARTS a paciente foi classificada como risco moderado, caso não consegui identificar algum dado que mude essa classificação, favor reencaminhar ou me sinalizar para rever novamente.Att.",20250102,"CONSULTA HIPERTENSO ALTO RISCO"],
   [840802,1322,19734,75,"<b>Não Se Enquadra nos Criterios: </b><br>Gestantes que desejam LT serão avaliadas no momento do parto no Hospital.",20250103,"CONSULTA GINECOLOGIA CEAE"],
   [841567,1200,654,10,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Qual a IG?",20250102,"CONSULTA GESTANTE ALTO RISCO"],
   [842228,320,28386,78,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Qual o motivo do encaminhamento?",20250103,"CONSULTA GINECOLOGIA POLICLINICA"],
   [842584,1216,14413,9,"<b>Não Se Enquadra nos Criterios: </b><br>Aumento do volume uterino devido à nódulos deve ser lançado na fila da GINECOLOGIA POLICLÍNICA.",20250103,"CONSULTA GINECOLOGIA CEAE"],
+  [843292,1243,16454,9,"<b>Não Se Enquadra nos Criterios: </b><br>Cisto de Naboth não é critério para ginecologia CEAE.",20250107,"CONSULTA GINECOLOGIA CEAE"],
+  [843676,1328,6651,78,"<b>Não Se Enquadra nos Criterios: </b><br>Quadro de miomatose deve ser lançado na fila da GINECOLOGIA POLICLÍNICA.",20250107,"CONSULTA GINECOLOGIA CEAE"],
   [843847,1317,25705,3,"<b>Não Se Enquadra nos Criterios: </b><br>PACIENTE COM VALOR DE TRIGLICERÍDEOS EM TRIG 235,45 (INFERIOR A 300); SEM OUTRAS QUEIXAS OU JUSTIFICATIVAS QUE ATENDAM AO PROTOCOLO DA NUTRIÇÃO EMULTI.",20250106,"AVALIAçaO NUTRICIONISTA E-MULTI"],
+  [844684,1306,40586,8,"<b>Não Se Enquadra nos Criterios: </b><br>Segundo protocolo municipal para DMG, somente DM prévia diagnosticada na gestação deve ser encaminhada ao alto risco.Primeiro passo é encaminhar para a nutricionista da e-multi. Se no período de duas semanas em acompanhamento com a nutricionista, não houver controle glicêmico, poderá encaminhar ao alto risco para avaliar terapia medicamentosa.",20250107,"CONSULTA GESTANTE ALTO RISCO"],
 ];
 
 const Unidades = [
