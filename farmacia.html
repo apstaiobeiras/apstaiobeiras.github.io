@@ -166,6 +166,8 @@
           }
         }
 
+        listaMedicamentosUnidades.innerHTML = "";
+
         for (let unidade of Object.keys(unidades)) {
           if (!unidadesComMedicamento[unidade]) continue;
           listaMedicamentosUnidades.innerHTML += `<tr><td colspan=9><b>${unidade}</b></td></tr>`;
