@@ -2103,9 +2103,14 @@ const SolicitacoesExcluidas = [
   [840370,985,8831,11,"<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA FILA DE RETONO.",20241227,"CONSULTA ORTOPEDISTA"],
   [840376,1194,52908,6,"<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA \"AVALIAÇÃO CIRURGICA POLICLÍNICA\".",20241227,"CONSULTA CIRURGIAO GERAL"],
   [840684,907,35649,9,"<b>Não Se Enquadra nos Criterios: </b><br>Descrever resultados dos exames que comprovam diagnóstico.",20241230,"CONSULTA ORTOPEDISTA"],
+  [635915,1137,17940,9,"<b>Solicitação Indevida: </b><br>REAVALIAR QUADRO, E CAO SE ENQUADRE NOS CRITÉRIOS, ENCAMINHAR A GINECOLOGIA POLICLÍNICA.",20250108,"CONSULTA GINECOLOGISTA - PPI"],
   [807549,1220,22499,13,"<b>Não Se Enquadra nos Criterios: </b><br>PACIENTE ESTÁVEL, PODE INICIAR INVESTIGAÇÃO COM EXAMES DE IMAGEM NA APS, PARA POSTERIOR TENTATIVA DE DESMAME. ATENTAR PARA  EXAMES LABORATORIAIS E SUPLEMENTAÇÃO DE B12 DEVIDO USO CRONICO DE ANTICONVULSIVANTE.",20250107,"CONSULTA NEUROLOGIA"],
   [814349,507,12831,2,"<b>Falta Detalhar Exames: </b><br>DESCREVER TC DE CRANIO, SE NÃO TEM DEVE SOLICITAR, UMA VEZ ESTÁVEL PODE SER MONITORADO ATÉ O RESULTADO NA APS.",20250107,"CONSULTA NEUROLOGIA"],
+  [820672,1267,14247,8,"<b>Falta Detalhar Exames: </b><br>Descrever investigação de exames para diagnóstico diferencial de demencias reversíveis.Paciente funcionalmente ativa? Quais medicações em uso? Aplicar o IVCF 20. ",20250108,"CONSULTA NEUROLOGIA"],
+  [820695,1194,11393,6,"<b>Falta Detalhar Exames: </b><br>Aplicar o IVCF 20, descrever medicações em uso, investigar laboratorialmente causas de demências reversíveis e enviar para a Geriatria, com a descrição sugerida.",20250108,"CONSULTA NEUROLOGIA"],
+  [829687,1132,19121,10,"<b>Falta Detalhar Exames: </b><br>Descrever exames já realizados tanto de imagem, quando laboratorial.",20250108,"CONSULTA NEUROLOGIA"],
   [839584,1221,30812,4,"<b>Não Se Enquadra nos Criterios: </b><br>Ao realizar RCV pelo HEARTS a paciente foi classificada como risco moderado, caso não consegui identificar algum dado que mude essa classificação, favor reencaminhar ou me sinalizar para rever novamente.Att.",20250102,"CONSULTA HIPERTENSO ALTO RISCO"],
+  [840305,907,76131,9,"<b>Agendar na Atenção Primaria: </b><br>Pode ser realizado no CEO, ou o dentista da UBS.",20250108,"PEQUENA CIRURGIA POLICLINICA"],
   [840802,1322,19734,75,"<b>Não Se Enquadra nos Criterios: </b><br>Gestantes que desejam LT serão avaliadas no momento do parto no Hospital.",20250103,"CONSULTA GINECOLOGIA CEAE"],
   [841480,1221,28667,4,"<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA FILA \"AVALIAÇÃO CIRURGICA POLICLÍNICA\".",20250108,"CONSULTA CIRURGIAO GERAL"],
   [841567,1200,654,10,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Qual a IG?",20250102,"CONSULTA GESTANTE ALTO RISCO"],
@@ -2122,6 +2127,7 @@ const SolicitacoesExcluidas = [
   [845593,1366,27559,34,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>DETALHAR DUM/IG.",20250108,"ULTRASSONOGRAFIA OBSTETRICA"],
   [845633,1322,32023,75,"<b>Não Se Enquadra nos Criterios: </b><br>GESTANTE JÁ REALIZOU US DE TERCEIRO TRIMESTRE EM 27/12/24.",20250108,"ULTRASSONOGRAFIA OBSTETRICA"],
   [845734,320,37585,78,"<b>Solicitação Indevida: </b><br>QUADROS DE LUXAÇÃO/FRATURA NÃO DEVEM SER INSERIDOS EM FILA DE ESPERA DO AMBULATÓRIO DE ORTOPEDIA. O PACIENTE DEVE SER ENCAMINHADO MANUALMENTE E REFERENCIADO A SECRETARIA DE SAUDE PARA AGENDAMENTO DA AVALIAÇÃO NO AMBULATORIO DE FRATURA. JÁ REALIZADO CONTATO COM USUÁRIO.",20250108,"CONSULTA ORTOPEDISTA"],
+  [846017,1291,23732,75,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever resultados que indiquem 3 episódios ou mais de ITU.",20250108,"CONSULTA GESTANTE ALTO RISCO"],
 ];
 
 const Unidades = [
