@@ -20,7 +20,7 @@ medicamentos['Acido Acetilsalicilico 100mg Comp'] = [];
 medicamentos['Acido Acetilsalicilico 100mg Comp']['22'] = 2010;
 medicamentos['Acido Acetilsalicilico 100mg Comp']['92'] = 870;
 medicamentos['Acido Acetilsalicilico 100mg Comp']['93'] = 1140;
-medicamentos['Acido Acetilsalicilico 100mg Comp']['90'] = 340;
+medicamentos['Acido Acetilsalicilico 100mg Comp']['90'] = 250;
 medicamentos['Acido Acetilsalicilico 100mg Comp']['104'] = 1135;
 
 medicamentos['Acido Folico 0.2mg/ml Sol Oral'] = [];
@@ -366,9 +366,9 @@ medicamentos['Digoxina 0.25mg Comp']['22'] = 1685;
 
 medicamentos['Dipirona 500mg Comp'] = [];
 medicamentos['Dipirona 500mg Comp']['92'] = 50;
-medicamentos['Dipirona 500mg Comp']['93'] = 1040;
+medicamentos['Dipirona 500mg Comp']['93'] = 1030;
 medicamentos['Dipirona 500mg Comp']['90'] = 2076;
-medicamentos['Dipirona 500mg Comp']['104'] = 1298;
+medicamentos['Dipirona 500mg Comp']['104'] = 1218;
 
 medicamentos['Dipirona 500mg/ml Sol Oral'] = [];
 medicamentos['Dipirona 500mg/ml Sol Oral']['93'] = 20;
@@ -409,7 +409,7 @@ medicamentos['Fenitoina 100mg Comp']['104'] = 340;
 
 medicamentos['Fenobarbital 100mg Comp'] = [];
 medicamentos['Fenobarbital 100mg Comp']['92'] = 540;
-medicamentos['Fenobarbital 100mg Comp']['93'] = 550;
+medicamentos['Fenobarbital 100mg Comp']['93'] = 490;
 medicamentos['Fenobarbital 100mg Comp']['90'] = 370;
 medicamentos['Fenobarbital 100mg Comp']['104'] = 240;
 
@@ -846,7 +846,7 @@ medicamentos['Zinco 4mg/ml Sol Oral']['90'] = 6;
 medicamentos['Zinco 4mg/ml Sol Oral']['104'] = 4;
 
 
-dataAtualizacao.innerHTML = `09/01/2025`
+dataAtualizacao.innerHTML = `10/01/2025`
 
 const unidades = [];
 unidades['Farmacia de Minas'] = 22;
