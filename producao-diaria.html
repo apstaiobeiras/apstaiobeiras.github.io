@@ -116,7 +116,9 @@
           </tr>
         </table>
         <hr/>
-        <div><label><input type="checkbox" onclick="
+        <div>
+          Ano: <select id="ano" class="fixed-width"></select>
+          <label id="consolidado_bloco">&ensp;|&emsp;<input type="checkbox" onclick="
           if (event.target.checked) {
             document.getElementById('diario').style = 'display: none;';
             document.getElementById('consolidados').style = '';
@@ -124,7 +126,7 @@
           }
           document.getElementById('diario').style = '';
           document.getElementById('consolidados').style = 'display: none;';
-        ">&emsp;Consolidar</label></div>
+        " id="checkboxConsolidado">&emsp;Consolidar</label></div>
         <br>
       </div>
       <div></div>
@@ -198,7 +200,7 @@
     </script>
     <script>
 let codProfissional = 0;
-(async function () {
+async function listarAtendimentos () {
   if (localStorage.getItem("override:codProfissional")) {
     let { data: profissionais, x } = await supabase.from('dadosprofissionais').select('*');
     let profissionaisOrdenados = profissionais.sort((a,b) => a.nome > b.nome ? 1 : -1);
@@ -218,10 +220,24 @@ let codProfissional = 0;
     codProfissional = data[0].codprofissional;
   }
 
+  if (document.getElementById("ano").innerHTML=="") {
+    for (let ano of Object.keys(profissionalProducaoDiaria)) {
+      document.getElementById("ano").innerHTML += `<option value="${ano}">${ano}</option>`;
+    }
+    document.getElementById("ano").value = (new Date()).getFullYear();
+    document.getElementById("ano").setAttribute("onchange","listarAtendimentos ()");
+  }
+
+  tabelas.innerHTML = "";
+  consolidados.innerHTML = "";
+  document.getElementById('diario').style = '';
+  document.getElementById('consolidados').style = 'display: none;';
+  checkboxConsolidado.checked = false;
+
   for (let mes in meses) {
     if (!mes) continue;
 
-    let atendimentos_do_mes = profissionalProducaoDiaria[2024][mes];
+    let atendimentos_do_mes = profissionalProducaoDiaria[document.getElementById("ano").value][mes];
 
     if (!atendimentos_do_mes) continue;
 
@@ -518,12 +534,13 @@ let codProfissional = 0;
 
   for (let mes in meses) {
     if (!mes) continue;
-    let atendimentos_do_mes = profissionalProducaoDiaria[2024][mes];
+    let atendimentos_do_mes = profissionalProducaoDiaria[document.getElementById("ano").value][mes];
     if (!atendimentos_do_mes) continue;
 
     let atendimentos_do_profissional = atendimentos_do_mes[codProfissional];
 
     if (!atendimentos_do_profissional) continue;
+    if (!atendimentos_do_profissional.total) continue;
 
     let atendimentosEfetivados =
       atendimentos_do_profissional.total[
@@ -569,7 +586,9 @@ let codProfissional = 0;
                 `;
   }
   document.getElementById("consolidados").style = "display: none;";
-})();
+};
+
+listarAtendimentos()
 
     </script>
   </body>

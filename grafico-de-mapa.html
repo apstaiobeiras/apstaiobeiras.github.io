@@ -149,6 +149,8 @@
           nomeProfissional = profissional[0].nome;
         }
             loadMap(Mapa);
+            document.getElementById("ano").value = (new Date()).getFullYear()
+            drawMap((new Date()).getMonth()+1)
           };
           document.head.appendChild(script);
       }
@@ -158,10 +160,12 @@
     function loadMap(mapa) {
       let selectAno = document.createElement("select");
       selectAno.id = "ano"
-      selectAno.onchange = `document.getElementsByClassName("mes-selecionado")[0].click();`;
       for (let ano in mapa) {
         selectAno.innerHTML += `<option value="${ano}">${ano}</option>`;
       }
+
+      selectAno.setAttribute("onchange",`document.getElementsByClassName("mes-selecionado")[0].click();`);
+      selectAno.setAttribute("class",`fixed-width`);
 
       let header = document.createElement("tr");
       let escolheMes = document.createElement("tr");
