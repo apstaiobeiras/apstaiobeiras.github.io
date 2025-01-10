@@ -2110,7 +2110,10 @@ const SolicitacoesExcluidas = [
   [820672,1267,14247,8,"<b>Falta Detalhar Exames: </b><br>Descrever investigação de exames para diagnóstico diferencial de demencias reversíveis.Paciente funcionalmente ativa? Quais medicações em uso? Aplicar o IVCF 20. ",20250108,"CONSULTA NEUROLOGIA"],
   [820695,1194,11393,6,"<b>Falta Detalhar Exames: </b><br>Aplicar o IVCF 20, descrever medicações em uso, investigar laboratorialmente causas de demências reversíveis e enviar para a Geriatria, com a descrição sugerida.",20250108,"CONSULTA NEUROLOGIA"],
   [829687,1132,19121,10,"<b>Falta Detalhar Exames: </b><br>Descrever exames já realizados tanto de imagem, quando laboratorial.",20250108,"CONSULTA NEUROLOGIA"],
+  [836033,1194,21070,6,"<b>Falta Detalhar Exames: </b><br>Descrever resultados dos exames.",20250110,"CONSULTA ORTOPEDISTA"],
   [836055,1219,40945,33,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Sugiro investigar com EEG e TCC, para otimizar a consulta neurológica. Ajustar dose e manter o paciente ciente sobre o tratamento.",20250109,"CONSULTA NEUROLOGIA"],
+  [836124,1267,29295,8,"<b>Não Se Enquadra nos Criterios: </b><br>Inicialmente deve Indicar acompanhamento fisioterápico associado a terapia medicamentosa otimizada.",20250110,"CONSULTA ORTOPEDISTA"],
+  [836283,507,6868,2,"<b>Não Se Enquadra nos Criterios: </b><br>Não tem sintomas de limitação funcional, pode ser encaminhado para avaliação na fisioterapia.",20250110,"CONSULTA ORTOPEDISTA"],
   [836655,1267,7971,8,"<b>Não Se Enquadra nos Criterios: </b><br>Deve haver um relatório do serviço de psicologia para endossar ou não a possibilidade. Inicialmente, sugiro acompanhar, fazer mudança do estilo de vida e terapia.",20250109,"CONSULTA NEUROLOGIA"],
   [838056,1317,78642,3,"<b>Não Se Enquadra nos Criterios: </b><br>Sugiro encaminhar para o CAPS AD, além de otimizar tratamento profilático, inicialmente.",20250109,"CONSULTA NEUROLOGIA"],
   [839556,507,6975,2,"<b>Falta Detalhar Exames: </b><br>Qual investigação e terapêutica realizada?",20250109,"CONSULTA NEUROLOGIA"],
@@ -2140,6 +2143,7 @@ const SolicitacoesExcluidas = [
   [846017,1291,23732,75,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever resultados que indiquem 3 episódios ou mais de ITU.",20250108,"CONSULTA GESTANTE ALTO RISCO"],
   [846427,1176,79821,4,"<b>Solicitação Indevida: </b><br>.",20250110,"REMOçaO DE DENTE RETIDO (INCLUSO / IMPACTADO)"],
   [846702,1221,12231,4,"Agendar na Atenção Primaria",20250109,"FISIOTERAPIA- ATENDIMENTO DOMICILIAR"],
+  [846799,758,41034,16,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Não possui descritivo mínimo para regularHistórico do quadro clínico e da lesãoDor aguda ou crônica? Há limitação de ADM? Há perda de força muscular?Faz uso de dispositivo auxiliar?Comprometimento de AVD's?",20250110,"ATENDIMENTO FISIOTERAPIA"],
 ];
 
 const Unidades = [

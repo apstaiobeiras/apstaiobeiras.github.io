@@ -1609,7 +1609,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/43438">43835</a></td><td>Roberto Jose da Silva</td><td><span name="27/03/2024" class="data">27/03/2024</a></td><td>SERAFIM, 51</td><td><span name="CERLIOS MARQUES DOS SANTOS" class="">CERLIOS MARQUES DOS SANTOS</a></td><td><span name="UAPS DONA NININHA" class="">UAPS DONA NININHA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/52120">52076</a></td><td>MARIANA LANZONI</td><td><span name="05/03/2024" class="data">05/03/2024</a></td><td>AMAZONAS, 34</td><td><span name="AMANDA MARIA SOARES SANTOS" class="">AMANDA MARIA SOARES SANTOS</a></td><td><span name="UAPS VER. JOSE SENA" class="">UAPS VER. JOSE SENA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/52120">52076</a></td><td>MARIANA LANZONI</td><td><span name="05/03/2024" class="data">05/03/2024</a></td><td>-</td><td><span name="-" class="">-</a></td><td><span name="-" class="">-</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/6294">6296</a></td><td>Sueli Teixeira</td><td><span name="08/03/2024" class="data">08/03/2024</a></td><td>IPANEMA, 950</td><td><span name="IVANILDE MARIA DO NASCIMENTO" class="">IVANILDE MARIA DO NASCIMENTO</a></td><td><span name="UAPS ENF. MARY TATIANE" class="">UAPS ENF. MARY TATIANE</a></td>
@@ -4192,7 +4192,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/15563">15565</a></td><td>Geasi Pereira Dos Santos</td><td><span name="25/04/2024" class="data">25/04/2024</a></td><td>CORAÇAO DE JESUS, 210</td><td><span name="LEISIANE ALVES RIBEIRO" class="">LEISIANE ALVES RIBEIRO</a></td><td><span name="UAPS ENF. MARY TATIANE" class="">UAPS ENF. MARY TATIANE</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/19473">19475</a></td><td>Sabrina Monique Oliveira</td><td><span name="25/04/2024" class="data">25/04/2024</a></td><td>-</td><td><span name="-" class="">-</a></td><td><span name="-" class="">-</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/19473">19475</a></td><td>Sabrina Monique Oliveira</td><td><span name="25/04/2024" class="data">25/04/2024</a></td><td>CAMPO ALEGRE, 101</td><td><span name="DENIZ CAROLINE PEREIRA MARTINS" class="">DENIZ CAROLINE PEREIRA MARTINS</a></td><td><span name="UAPS VER. JOSE SENA" class="">UAPS VER. JOSE SENA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/27976">27978</a></td><td>Patriely da Silva Sousa</td><td><span name="01/04/2024" class="data">01/04/2024</a></td><td>CONTORNO, 911</td><td><span name="JOSSIVANIA D' ANGELIS COSTA" class="">JOSSIVANIA D' ANGELIS COSTA</a></td><td><span name="UAPS VER. JOSE SENA" class="">UAPS VER. JOSE SENA</a></td>
@@ -6880,7 +6880,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/32928">32930</a></td><td>Diego Batista Ferreira</td><td><span name="15/07/2024" class="data">15/07/2024</a></td><td>TIRADENTES, 705</td><td><span name="KEYTIANE DA SILVA" class="">KEYTIANE DA SILVA</a></td><td><span name="UAPS ANTONINO DE ALMEIDA" class="">UAPS ANTONINO DE ALMEIDA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/63457">62321</a></td><td>Eliseu Lopes da Rocha Barros</td><td><span name="19/07/2024" class="data">19/07/2024</a></td><td>-</td><td><span name="-" class="">-</a></td><td><span name="-" class="">-</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/63457">62321</a></td><td>Eliseu Lopes da Rocha Barros</td><td><span name="19/07/2024" class="data">19/07/2024</a></td><td>SÃO PEDRO, 24</td><td><span name="AMANDA MARIA SOARES SANTOS" class="">AMANDA MARIA SOARES SANTOS</a></td><td><span name="UAPS VER. JOSE SENA" class="">UAPS VER. JOSE SENA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/9044">9046</a></td><td>Ana Karoline Silva</td><td><span name="19/07/2024" class="data">19/07/2024</a></td><td>-</td><td><span name="-" class="">-</a></td><td><span name="-" class="">-</a></td>
