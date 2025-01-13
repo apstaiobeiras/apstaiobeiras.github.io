@@ -2104,11 +2104,13 @@ const SolicitacoesExcluidas = [
   [840376,1194,52908,6,"<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA \"AVALIAÇÃO CIRURGICA POLICLÍNICA\".",20241227,"CONSULTA CIRURGIAO GERAL"],
   [840684,907,35649,9,"<b>Não Se Enquadra nos Criterios: </b><br>Descrever resultados dos exames que comprovam diagnóstico.",20241230,"CONSULTA ORTOPEDISTA"],
   [635915,1137,17940,9,"<b>Solicitação Indevida: </b><br>REAVALIAR QUADRO, E CAO SE ENQUADRE NOS CRITÉRIOS, ENCAMINHAR A GINECOLOGIA POLICLÍNICA.",20250108,"CONSULTA GINECOLOGISTA - PPI"],
+  [801362,1216,33901,9,"<b>Solicitação Indevida: </b><br>ENCAMINHAR AO SERVIÇO DE ORTOPEDIA.",20250113,"PEQUENA CIRURGIA POLICLINICA"],
   [807549,1220,22499,13,"<b>Não Se Enquadra nos Criterios: </b><br>PACIENTE ESTÁVEL, PODE INICIAR INVESTIGAÇÃO COM EXAMES DE IMAGEM NA APS, PARA POSTERIOR TENTATIVA DE DESMAME. ATENTAR PARA  EXAMES LABORATORIAIS E SUPLEMENTAÇÃO DE B12 DEVIDO USO CRONICO DE ANTICONVULSIVANTE.",20250107,"CONSULTA NEUROLOGIA"],
   [814349,507,12831,2,"<b>Falta Detalhar Exames: </b><br>DESCREVER TC DE CRANIO, SE NÃO TEM DEVE SOLICITAR, UMA VEZ ESTÁVEL PODE SER MONITORADO ATÉ O RESULTADO NA APS.",20250107,"CONSULTA NEUROLOGIA"],
   [818534,775,6487,7,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Descrever medicação profilática e a utilizada nas crises, houve falha terapêutica?",20250109,"CONSULTA NEUROLOGIA"],
   [820672,1267,14247,8,"<b>Falta Detalhar Exames: </b><br>Descrever investigação de exames para diagnóstico diferencial de demencias reversíveis.Paciente funcionalmente ativa? Quais medicações em uso? Aplicar o IVCF 20. ",20250108,"CONSULTA NEUROLOGIA"],
   [820695,1194,11393,6,"<b>Falta Detalhar Exames: </b><br>Aplicar o IVCF 20, descrever medicações em uso, investigar laboratorialmente causas de demências reversíveis e enviar para a Geriatria, com a descrição sugerida.",20250108,"CONSULTA NEUROLOGIA"],
+  [823735,1221,12219,4,"<b>Solicitação Indevida: </b><br>ENCAMINHAR AO SERVIÇO DE GINECOLOGIA POLICLÍNICA.",20250113,"PEQUENA CIRURGIA POLICLINICA"],
   [829687,1132,19121,10,"<b>Falta Detalhar Exames: </b><br>Descrever exames já realizados tanto de imagem, quando laboratorial.",20250108,"CONSULTA NEUROLOGIA"],
   [836033,1194,21070,6,"<b>Falta Detalhar Exames: </b><br>Descrever resultados dos exames.",20250110,"CONSULTA ORTOPEDISTA"],
   [836055,1219,40945,33,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Sugiro investigar com EEG e TCC, para otimizar a consulta neurológica. Ajustar dose e manter o paciente ciente sobre o tratamento.",20250109,"CONSULTA NEUROLOGIA"],
@@ -2140,10 +2142,12 @@ const SolicitacoesExcluidas = [
   [845633,1322,32023,75,"<b>Não Se Enquadra nos Criterios: </b><br>GESTANTE JÁ REALIZOU US DE TERCEIRO TRIMESTRE EM 27/12/24.",20250108,"ULTRASSONOGRAFIA OBSTETRICA"],
   [845734,320,37585,78,"<b>Solicitação Indevida: </b><br>QUADROS DE LUXAÇÃO/FRATURA NÃO DEVEM SER INSERIDOS EM FILA DE ESPERA DO AMBULATÓRIO DE ORTOPEDIA. O PACIENTE DEVE SER ENCAMINHADO MANUALMENTE E REFERENCIADO A SECRETARIA DE SAUDE PARA AGENDAMENTO DA AVALIAÇÃO NO AMBULATORIO DE FRATURA. JÁ REALIZADO CONTATO COM USUÁRIO.",20250108,"CONSULTA ORTOPEDISTA"],
   [845833,1016,47888,2,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor reencaminhar com os resultados dos exames bioquímicos com data.Att.",20250109,"CONSULTA HIPERTENSO ALTO RISCO"],
+  [845936,1194,15497,6,"<b>Não Se Enquadra nos Criterios: </b><br>PACIETES ALTO RISCO CARDIOVASCULAR DEVEM SER ENCAMINHADOS AO CEAE, CONFORME CRITÉRIOS ESTABELECIDOS PELO PROTOCOLO DE ACESSO.",20250113,"CONSULTA CARDIOLOGIA DR RENAN"],
   [846017,1291,23732,75,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever resultados que indiquem 3 episódios ou mais de ITU.",20250108,"CONSULTA GESTANTE ALTO RISCO"],
   [846427,1176,79821,4,"<b>Solicitação Indevida: </b><br>.",20250110,"REMOçaO DE DENTE RETIDO (INCLUSO / IMPACTADO)"],
   [846702,1221,12231,4,"Agendar na Atenção Primaria",20250109,"FISIOTERAPIA- ATENDIMENTO DOMICILIAR"],
   [846799,758,41034,16,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Não possui descritivo mínimo para regularHistórico do quadro clínico e da lesãoDor aguda ou crônica? Há limitação de ADM? Há perda de força muscular?Faz uso de dispositivo auxiliar?Comprometimento de AVD's?",20250110,"ATENDIMENTO FISIOTERAPIA"],
+  [847144,907,8407,78,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>DETALHAR RCV POR SE TRATAR DE PACIENTE PORTADOR DE HAS.",20250113,"CONSULTA CARDIOLOGIA DR RENAN"],
 ];
 
 const Unidades = [
