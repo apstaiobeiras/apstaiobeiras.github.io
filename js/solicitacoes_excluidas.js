@@ -2104,7 +2104,9 @@ const SolicitacoesExcluidas = [
   [840376,1194,52908,6,"<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA \"AVALIAÇÃO CIRURGICA POLICLÍNICA\".",20241227,"CONSULTA CIRURGIAO GERAL"],
   [840684,907,35649,9,"<b>Não Se Enquadra nos Criterios: </b><br>Descrever resultados dos exames que comprovam diagnóstico.",20241230,"CONSULTA ORTOPEDISTA"],
   [635915,1137,17940,9,"<b>Solicitação Indevida: </b><br>REAVALIAR QUADRO, E CAO SE ENQUADRE NOS CRITÉRIOS, ENCAMINHAR A GINECOLOGIA POLICLÍNICA.",20250108,"CONSULTA GINECOLOGISTA - PPI"],
+  [783454,1259,40799,8,"<b>Solicitação Indevida: </b><br>DEMANTA ATENDIDA PELA CIRURGIA GERAL.REALIZADO TRANSGERENCIA DE FILAS.",20250114,"CONSULTA  UROLOGIA POLICLINICA"],
   [801362,1216,33901,9,"<b>Solicitação Indevida: </b><br>ENCAMINHAR AO SERVIÇO DE ORTOPEDIA.",20250113,"PEQUENA CIRURGIA POLICLINICA"],
+  [802416,1328,19272,78,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Essa idosa merece ser avaliada através do questionário IVCF 20, ferramenta que avalia o idoso e direciona aos cuidados necessários a depender da pontuação. se abaixo de 9 é um sinal de alerta. Considere avaliar seus idosos com esta ferramenta, irá facilitar suas condutas e endossar ou não o encaminhamento ao geriatra.",20250114,"CONSULTA CLINICO/GERIATRA"],
   [807549,1220,22499,13,"<b>Não Se Enquadra nos Criterios: </b><br>PACIENTE ESTÁVEL, PODE INICIAR INVESTIGAÇÃO COM EXAMES DE IMAGEM NA APS, PARA POSTERIOR TENTATIVA DE DESMAME. ATENTAR PARA  EXAMES LABORATORIAIS E SUPLEMENTAÇÃO DE B12 DEVIDO USO CRONICO DE ANTICONVULSIVANTE.",20250107,"CONSULTA NEUROLOGIA"],
   [814349,507,12831,2,"<b>Falta Detalhar Exames: </b><br>DESCREVER TC DE CRANIO, SE NÃO TEM DEVE SOLICITAR, UMA VEZ ESTÁVEL PODE SER MONITORADO ATÉ O RESULTADO NA APS.",20250107,"CONSULTA NEUROLOGIA"],
   [818534,775,6487,7,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Descrever medicação profilática e a utilizada nas crises, houve falha terapêutica?",20250109,"CONSULTA NEUROLOGIA"],
@@ -2148,6 +2150,12 @@ const SolicitacoesExcluidas = [
   [846702,1221,12231,4,"Agendar na Atenção Primaria",20250109,"FISIOTERAPIA- ATENDIMENTO DOMICILIAR"],
   [846799,758,41034,16,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Não possui descritivo mínimo para regularHistórico do quadro clínico e da lesãoDor aguda ou crônica? Há limitação de ADM? Há perda de força muscular?Faz uso de dispositivo auxiliar?Comprometimento de AVD's?",20250110,"ATENDIMENTO FISIOTERAPIA"],
   [847144,907,8407,78,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>DETALHAR RCV POR SE TRATAR DE PACIENTE PORTADOR DE HAS.",20250113,"CONSULTA CARDIOLOGIA DR RENAN"],
+  [847395,1221,23788,4,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Detalhamento clínico incompleto:Paciente restrito ao leito?Paciente apresenta restrição para locomoção?Paciente que apresentar locomoção mínima(deslocamento em cadeira de rodas), nãoapresenta critério de atendimento domiciliar.",20250114,"FISIOTERAPIA- ATENDIMENTO DOMICILIAR"],
+  [847825,829,11676,7,"<b>Não Se Enquadra nos Criterios: </b><br>Paciente de Alto Risco (DRC estágio 3b e HAS de alto risco cardiovascular) deverá receber acompanhamento no CEAE.",20250114,"AVALIAçaO NUTRICIONISTA E-MULTI"],
+  [848283,25,10307,9,"<b>Não Se Enquadra nos Criterios: </b><br>Transferido para fila das pequenas cirurgias",20250114,"AVALIAçaO CIRURGICA POLICLINICA"],
+  [848487,1221,73330,4,"<b>Não Se Enquadra nos Criterios: </b><br>O quadro clinico do lactente não se enquadra nos critérios de atendimento pediatria alto risco.Att.",20250114,"CONSULTA PEDIATRIA ALTO RISCO"],
+  [848597,1133,14225,2,"<b>Não Se Enquadra nos Criterios: </b><br>Paciente com Obesidade Grau II, sem outras comorbidades associadas, não é critério para atendimento individual conforme protocolo da Nutrição eMulti.",20250114,"AVALIAçaO NUTRICIONISTA E-MULTI"],
+  [848819,1259,9680,8,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Não possui descritivo mínimo para regularHistórico do quadro clínico e da lesão.dor aguda ou crônica? há limitação de ADM?há perda de força muscular?comprometimento funcional?",20250114,"ATENDIMENTO FISIOTERAPIA"],
 ];
 
 const Unidades = [
@@ -2182,6 +2190,7 @@ const Profissionais = [
   'PROFISSIONAL NÃO INFORMADO:0',
   ':1',
   'MARCIA MARTINS FREIRE MENDES:18',
+  'JUNEO SOARES DA SILVA REIS:25',
   'FRANCISCO PEREIRA DONATO NETO:46',
   'ALESSANDRA APARECIDA PIRES PINTO:52',
   'GISELE MARQUES RIBEIRO:72',
