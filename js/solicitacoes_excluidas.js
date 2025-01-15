@@ -2114,6 +2114,7 @@ const SolicitacoesExcluidas = [
   [820695,1194,11393,6,"<b>Falta Detalhar Exames: </b><br>Aplicar o IVCF 20, descrever medicações em uso, investigar laboratorialmente causas de demências reversíveis e enviar para a Geriatria, com a descrição sugerida.",20250108,"CONSULTA NEUROLOGIA"],
   [823735,1221,12219,4,"<b>Solicitação Indevida: </b><br>ENCAMINHAR AO SERVIÇO DE GINECOLOGIA POLICLÍNICA.",20250113,"PEQUENA CIRURGIA POLICLINICA"],
   [829687,1132,19121,10,"<b>Falta Detalhar Exames: </b><br>Descrever exames já realizados tanto de imagem, quando laboratorial.",20250108,"CONSULTA NEUROLOGIA"],
+  [833183,1221,10207,4,"<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA FILA DE PRIMEIRA CONSULTA.",20250115,"RETORNO NEUROLOGIA DANDARA"],
   [836033,1194,21070,6,"<b>Falta Detalhar Exames: </b><br>Descrever resultados dos exames.",20250110,"CONSULTA ORTOPEDISTA"],
   [836055,1219,40945,33,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Sugiro investigar com EEG e TCC, para otimizar a consulta neurológica. Ajustar dose e manter o paciente ciente sobre o tratamento.",20250109,"CONSULTA NEUROLOGIA"],
   [836124,1267,29295,8,"<b>Não Se Enquadra nos Criterios: </b><br>Inicialmente deve Indicar acompanhamento fisioterápico associado a terapia medicamentosa otimizada.",20250110,"CONSULTA ORTOPEDISTA"],
@@ -2147,15 +2148,19 @@ const SolicitacoesExcluidas = [
   [845936,1194,15497,6,"<b>Não Se Enquadra nos Criterios: </b><br>PACIETES ALTO RISCO CARDIOVASCULAR DEVEM SER ENCAMINHADOS AO CEAE, CONFORME CRITÉRIOS ESTABELECIDOS PELO PROTOCOLO DE ACESSO.",20250113,"CONSULTA CARDIOLOGIA DR RENAN"],
   [846017,1291,23732,75,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever resultados que indiquem 3 episódios ou mais de ITU.",20250108,"CONSULTA GESTANTE ALTO RISCO"],
   [846427,1176,79821,4,"<b>Solicitação Indevida: </b><br>.",20250110,"REMOçaO DE DENTE RETIDO (INCLUSO / IMPACTADO)"],
+  [846528,1317,79882,3,"<b>Não Se Enquadra nos Criterios: </b><br>Regulado e transferido para fila de EDA+LIGADURA DE VARIZES",20250115,"ENDOSCOPIA COM BIOPSIA / PESQUISA H. PILOLY"],
   [846702,1221,12231,4,"Agendar na Atenção Primaria",20250109,"FISIOTERAPIA- ATENDIMENTO DOMICILIAR"],
   [846799,758,41034,16,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Não possui descritivo mínimo para regularHistórico do quadro clínico e da lesãoDor aguda ou crônica? Há limitação de ADM? Há perda de força muscular?Faz uso de dispositivo auxiliar?Comprometimento de AVD's?",20250110,"ATENDIMENTO FISIOTERAPIA"],
   [847144,907,8407,78,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>DETALHAR RCV POR SE TRATAR DE PACIENTE PORTADOR DE HAS.",20250113,"CONSULTA CARDIOLOGIA DR RENAN"],
   [847395,1221,23788,4,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Detalhamento clínico incompleto:Paciente restrito ao leito?Paciente apresenta restrição para locomoção?Paciente que apresentar locomoção mínima(deslocamento em cadeira de rodas), nãoapresenta critério de atendimento domiciliar.",20250114,"FISIOTERAPIA- ATENDIMENTO DOMICILIAR"],
   [847825,829,11676,7,"<b>Não Se Enquadra nos Criterios: </b><br>Paciente de Alto Risco (DRC estágio 3b e HAS de alto risco cardiovascular) deverá receber acompanhamento no CEAE.",20250114,"AVALIAçaO NUTRICIONISTA E-MULTI"],
   [848283,25,10307,9,"<b>Não Se Enquadra nos Criterios: </b><br>Transferido para fila das pequenas cirurgias",20250114,"AVALIAçaO CIRURGICA POLICLINICA"],
+  [848345,320,18019,78,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Os sangramentos foram recentes?Para considerar alto risco, a gestante deve apresentar 3 episódios de ITU.",20250115,"CONSULTA GESTANTE ALTO RISCO"],
   [848487,1221,73330,4,"<b>Não Se Enquadra nos Criterios: </b><br>O quadro clinico do lactente não se enquadra nos critérios de atendimento pediatria alto risco.Att.",20250114,"CONSULTA PEDIATRIA ALTO RISCO"],
   [848597,1133,14225,2,"<b>Não Se Enquadra nos Criterios: </b><br>Paciente com Obesidade Grau II, sem outras comorbidades associadas, não é critério para atendimento individual conforme protocolo da Nutrição eMulti.",20250114,"AVALIAçaO NUTRICIONISTA E-MULTI"],
   [848819,1259,9680,8,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Não possui descritivo mínimo para regularHistórico do quadro clínico e da lesão.dor aguda ou crônica? há limitação de ADM?há perda de força muscular?comprometimento funcional?",20250114,"ATENDIMENTO FISIOTERAPIA"],
+  [849794,1143,67002,17,"<b>Não Se Enquadra nos Criterios: </b><br>NÃO É PÚBLICO PARA ESSE SETOR",20250115,"ATENDIMENTO FISIOTERAPIA"],
+  [850553,1193,27952,56,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Detalhamento insuficiente para regular o caso:Qual a condição clínica do paciente? se há limitações de ADM, se há perda de força muscular;Faz uso de órtese ou prótese?Qual o Grau de independência/dependência para Atividades de Vida Diária (AVD)?",20250115,"ATENDIMENTO FISIOTERAPIA"],
 ];
 
 const Unidades = [
