@@ -1765,7 +1765,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/24809">24811</a></td><td>Adelita Maria de Jesus</td><td><span name="19/03/2024" class="data">19/03/2024</a></td><td>RIO GRANDE DO SUL, 142</td><td><span name="JOSSIVANIA D' ANGELIS COSTA" class="">JOSSIVANIA D' ANGELIS COSTA</a></td><td><span name="UAPS VER. JOSE SENA" class="">UAPS VER. JOSE SENA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/122835">74480</a></td><td>Gleidson Santos de Jesus</td><td><span name="20/03/2024" class="data">20/03/2024</a></td><td>-</td><td><span name="-" class="">-</a></td><td><span name="-" class="">-</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/122835">74480</a></td><td>Gleidson Santos de Jesus</td><td><span name="20/03/2024" class="data">20/03/2024</a></td><td>OLIMPIO SANTANA, 40</td><td><span name="DENIZ CAROLINE PEREIRA MARTINS" class="">DENIZ CAROLINE PEREIRA MARTINS</a></td><td><span name="UAPS VER. JOSE SENA" class="">UAPS VER. JOSE SENA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/55771">55344</a></td><td>Rita de Cassia Moreira Dias</td><td><span name="21/03/2024" class="data">21/03/2024</a></td><td>UNAI, 1651</td><td><span name="MARTA BARBOSA DE OLIVEIRA" class="">MARTA BARBOSA DE OLIVEIRA</a></td><td><span name="UAPS DONA NININHA" class="">UAPS DONA NININHA</a></td>
@@ -5710,7 +5710,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/56384">55838</a></td><td>Jussara de Almeida Santos</td><td><span name="21/05/2024" class="data">21/05/2024</a></td><td>SAO GONCALO, 232</td><td><span name="DAIANE ALVES" class="">DAIANE ALVES</a></td><td><span name="UAPS VER. MANOEL DOS SANTOS SILVA" class="">UAPS VER. MANOEL DOS SANTOS SILVA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/18463">18465</a></td><td>Marcia Monica Mendes Marinho</td><td><span name="21/05/2024" class="data">21/05/2024</a></td><td>BAMBUI, 1492</td><td><span name="CERLIOS MARQUES DOS SANTOS" class="">CERLIOS MARQUES DOS SANTOS</a></td><td><span name="UAPS DONA NININHA" class="">UAPS DONA NININHA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/18463">18465</a></td><td>Marcia Monica Mendes Marinho</td><td><span name="21/05/2024" class="data">21/05/2024</a></td><td>-</td><td><span name="-" class="">-</a></td><td><span name="-" class="">-</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/3161">3163</a></td><td>Noeme Pereira Marques</td><td><span name="21/05/2024" class="data">21/05/2024</a></td><td>SAO VICENTE DE PAULA, 233</td><td><span name="LUZINETE APARECIDA OLIVEIRA MEIRELES" class="">LUZINETE APARECIDA OLIVEIRA MEIRELES</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
