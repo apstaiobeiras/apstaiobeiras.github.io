@@ -2168,6 +2168,7 @@ const SolicitacoesExcluidas = [
   [849794,1143,67002,17,"<b>Não Se Enquadra nos Criterios: </b><br>NÃO É PÚBLICO PARA ESSE SETOR",20250115,"ATENDIMENTO FISIOTERAPIA"],
   [850553,1193,27952,56,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Detalhamento insuficiente para regular o caso:Qual a condição clínica do paciente? se há limitações de ADM, se há perda de força muscular;Faz uso de órtese ou prótese?Qual o Grau de independência/dependência para Atividades de Vida Diária (AVD)?",20250115,"ATENDIMENTO FISIOTERAPIA"],
   [850728,1350,29063,34,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor informar a PA da paciente aferida no atendimento, na ausência deste dado, ao realizar o cálculo pelo HEARTZ, ela foi classificada como RCV Moderado.Att.",20250116,"CONSULTA HIPERTENSO ALTO RISCO"],
+  [851713,775,27305,7,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Detalhamento insuficiente, especificar quais são as limitação funcionais. Grau de independência/dependência para Atividades de Vida Diária (AVD) -  É público para este serviço o paciente que Requer assistência para até duas atividades. Se houver dependência (parcial ou total) para 3 ou mais AVDs, sugiro encaminhar a RCPD.",20250117,"ATENDIMENTO FISIOTERAPIA"],
 ];
 
 const Unidades = [

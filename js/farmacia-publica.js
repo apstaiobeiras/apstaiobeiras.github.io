@@ -68,7 +68,7 @@ medicamentos['Amiodarona 200mg Comp']['93'] = 240;
 medicamentos['Amitriptilina 25mg Comp'] = [];
 medicamentos['Amitriptilina 25mg Comp']['92'] = 170;
 medicamentos['Amitriptilina 25mg Comp']['93'] = 450;
-medicamentos['Amitriptilina 25mg Comp']['90'] = 270;
+medicamentos['Amitriptilina 25mg Comp']['90'] = 150;
 medicamentos['Amitriptilina 25mg Comp']['104'] = 898;
 
 medicamentos['Amitriptilina 75 Mg Comp'] = [];
@@ -365,7 +365,7 @@ medicamentos['Digoxina 0.25mg Comp']['22'] = 1685;
 medicamentos['Dipirona 500mg Comp'] = [];
 medicamentos['Dipirona 500mg Comp']['92'] = 50;
 medicamentos['Dipirona 500mg Comp']['93'] = 910;
-medicamentos['Dipirona 500mg Comp']['90'] = 1846;
+medicamentos['Dipirona 500mg Comp']['90'] = 1826;
 medicamentos['Dipirona 500mg Comp']['104'] = 898;
 
 medicamentos['Dipirona 500mg/ml Sol Oral'] = [];
@@ -449,7 +449,7 @@ medicamentos['Gliclazida 60mg Comp']['22'] = 1290;
 medicamentos['Gliclazida 60mg Comp']['92'] = 630;
 medicamentos['Gliclazida 60mg Comp']['93'] = 30;
 medicamentos['Gliclazida 60mg Comp']['90'] = 210;
-medicamentos['Gliclazida 60mg Comp']['104'] = 270;
+medicamentos['Gliclazida 60mg Comp']['104'] = 210;
 
 medicamentos['Guaco 35mg/ml Xarope'] = [];
 medicamentos['Guaco 35mg/ml Xarope']['22'] = 12;
@@ -578,7 +578,7 @@ medicamentos['Medroxiprogesterona 150mg/ml Susp Inj'] = [];
 medicamentos['Medroxiprogesterona 150mg/ml Susp Inj']['22'] = 25;
 medicamentos['Medroxiprogesterona 150mg/ml Susp Inj']['92'] = 7;
 medicamentos['Medroxiprogesterona 150mg/ml Susp Inj']['93'] = 13;
-medicamentos['Medroxiprogesterona 150mg/ml Susp Inj']['90'] = 11;
+medicamentos['Medroxiprogesterona 150mg/ml Susp Inj']['90'] = 10;
 medicamentos['Medroxiprogesterona 150mg/ml Susp Inj']['104'] = 11;
 
 medicamentos['Metildopa 250mg Comp'] = [];
@@ -636,7 +636,7 @@ medicamentos['Miconazol 20mg/g Crem Derm']['90'] = 6;
 medicamentos['Miconazol 20mg/g Crem Vagi'] = [];
 medicamentos['Miconazol 20mg/g Crem Vagi']['22'] = 26;
 medicamentos['Miconazol 20mg/g Crem Vagi']['93'] = 9;
-medicamentos['Miconazol 20mg/g Crem Vagi']['90'] = 9;
+medicamentos['Miconazol 20mg/g Crem Vagi']['90'] = 8;
 medicamentos['Miconazol 20mg/g Crem Vagi']['104'] = 5;
 
 medicamentos['Miconazol 20mg/ml Locao'] = [];
@@ -658,7 +658,7 @@ medicamentos['Noretisterona + Estradiol 50mg/ml + 5 Mg/ml Sol Inj']['22'] = 21;
 medicamentos['Noretisterona + Estradiol 50mg/ml + 5 Mg/ml Sol Inj']['92'] = 18;
 medicamentos['Noretisterona + Estradiol 50mg/ml + 5 Mg/ml Sol Inj']['93'] = 11;
 medicamentos['Noretisterona + Estradiol 50mg/ml + 5 Mg/ml Sol Inj']['90'] = 14;
-medicamentos['Noretisterona + Estradiol 50mg/ml + 5 Mg/ml Sol Inj']['104'] = 14;
+medicamentos['Noretisterona + Estradiol 50mg/ml + 5 Mg/ml Sol Inj']['104'] = 13;
 
 medicamentos['Noretisterona 0.35mg Comp'] = [];
 medicamentos['Noretisterona 0.35mg Comp']['22'] = 1575;
@@ -744,7 +744,7 @@ medicamentos['Prednisona 20mg Comp'] = [];
 medicamentos['Prednisona 20mg Comp']['22'] = 214;
 medicamentos['Prednisona 20mg Comp']['92'] = 40;
 medicamentos['Prednisona 20mg Comp']['93'] = 30;
-medicamentos['Prednisona 20mg Comp']['90'] = 77;
+medicamentos['Prednisona 20mg Comp']['90'] = 67;
 medicamentos['Prednisona 20mg Comp']['104'] = 327;
 
 medicamentos['Prednisona 5mg Comp'] = [];
