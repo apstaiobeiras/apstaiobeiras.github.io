@@ -6826,7 +6826,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/119394">72553</a></td><td>Tatiane Santana da Silva</td><td><span name="17/07/2024" class="data">17/07/2024</a></td><td>COMUNIDADE LAGOA GRANDE, 111</td><td><span name="ALINE DE JESUS SILVA" class="">ALINE DE JESUS SILVA</a></td><td><span name="UAPS LAGOA GRANDE/ DOURADA" class="">UAPS LAGOA GRANDE/ DOURADA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/26491">26493</a></td><td>Leandro Alves Batista</td><td><span name="31/07/2024" class="data">31/07/2024</a></td><td>DOM PEDRO I, 210</td><td><span name="MIRIAN DIAS MOREIRA ALVES" class="">MIRIAN DIAS MOREIRA ALVES</a></td><td><span name="UAPS ANTONINO DE ALMEIDA" class="">UAPS ANTONINO DE ALMEIDA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/26491">26493</a></td><td>Leandro Alves Batista</td><td><span name="31/07/2024" class="data">31/07/2024</a></td><td>-</td><td><span name="-" class="">-</a></td><td><span name="-" class="">-</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/1417">1419</a></td><td>Claudineia Monteiro Bras</td><td><span name="01/07/2024" class="data">01/07/2024</a></td><td>POMPEU, 42</td><td><span name="DAIANE ALVES" class="">DAIANE ALVES</a></td><td><span name="UAPS VER. MANOEL DOS SANTOS SILVA" class="">UAPS VER. MANOEL DOS SANTOS SILVA</a></td>
@@ -7177,6 +7177,9 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/126721">77633</a></td><td>Lais Emanuelly Oliveira  Gomes</td><td><span name="13/01/2025" class="data">13/01/2025</a></td><td>CAETES, 225</td><td><span name="RAYANNE CHAVES MOREIRA" class="">RAYANNE CHAVES MOREIRA</a></td><td><span name="UAPS VER. JOSE SENA" class="">UAPS VER. JOSE SENA</a></td>
     </tr>
       <tr>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/1835">1837</a></td><td>Breno Firmo de Oliveira</td><td><span name="17/01/2025" class="data">17/01/2025</a></td><td>DIAMANTINA, 175</td><td><span name="GEYSA MINELY SOUZA" class="">GEYSA MINELY SOUZA</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
+    </tr>
+      <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/98434">70358</a></td><td>Marcos Dos Santos</td><td><span name="13/01/2025" class="data">13/01/2025</a></td><td>CONTORNO, 4006</td><td><span name="CERLIOS MARQUES DOS SANTOS" class="">CERLIOS MARQUES DOS SANTOS</a></td><td><span name="UAPS DONA NININHA" class="">UAPS DONA NININHA</a></td>
     </tr>
       <tr>
@@ -7272,7 +7275,7 @@ graficos.innerHTML += '<div id="grafico-2025"></div>';
   await (new ApexCharts(document.querySelector("#grafico-2025"), {
     series: [{
       name: "Casos",
-      data: [1,4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+      data: [1,4,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
     }],
     chart: {
       height: 350,

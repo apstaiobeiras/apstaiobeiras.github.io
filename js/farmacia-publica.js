@@ -19,7 +19,7 @@ medicamentos['Aciclovir 50mg/g Crem Derm']['104'] = 4;
 medicamentos['Acido Acetilsalicilico 100mg Comp'] = [];
 medicamentos['Acido Acetilsalicilico 100mg Comp']['22'] = 2010;
 medicamentos['Acido Acetilsalicilico 100mg Comp']['92'] = 870;
-medicamentos['Acido Acetilsalicilico 100mg Comp']['93'] = 960;
+medicamentos['Acido Acetilsalicilico 100mg Comp']['93'] = 840;
 medicamentos['Acido Acetilsalicilico 100mg Comp']['90'] = 190;
 medicamentos['Acido Acetilsalicilico 100mg Comp']['104'] = 1015;
 
@@ -281,7 +281,7 @@ medicamentos['Cloreto de Sodio 0.9% 500ml Sol. Inj.']['104'] = 8;
 
 medicamentos['Clorexidina 0.12% Sol Bucal'] = [];
 medicamentos['Clorexidina 0.12% Sol Bucal']['22'] = 12;
-medicamentos['Clorexidina 0.12% Sol Bucal']['93'] = 7;
+medicamentos['Clorexidina 0.12% Sol Bucal']['93'] = 6;
 medicamentos['Clorexidina 0.12% Sol Bucal']['90'] = 10;
 medicamentos['Clorexidina 0.12% Sol Bucal']['104'] = 12;
 
@@ -391,7 +391,7 @@ medicamentos['Doxazosina 4mg Comp']['22'] = 1140;
 medicamentos['Doxazosina 4mg Comp']['92'] = 420;
 medicamentos['Doxazosina 4mg Comp']['93'] = 120;
 medicamentos['Doxazosina 4mg Comp']['90'] = 360;
-medicamentos['Doxazosina 4mg Comp']['104'] = 270;
+medicamentos['Doxazosina 4mg Comp']['104'] = 210;
 
 medicamentos['Enalapril 5mg Comp'] = [];
 medicamentos['Enalapril 5mg Comp']['22'] = 1960;
@@ -420,7 +420,7 @@ medicamentos['Finasterida 5mg Comp'] = [];
 medicamentos['Finasterida 5mg Comp']['22'] = 1020;
 medicamentos['Finasterida 5mg Comp']['93'] = 60;
 medicamentos['Finasterida 5mg Comp']['90'] = 180;
-medicamentos['Finasterida 5mg Comp']['104'] = 210;
+medicamentos['Finasterida 5mg Comp']['104'] = 150;
 
 medicamentos['Fluconazol 150 Mg Caps'] = [];
 medicamentos['Fluconazol 150 Mg Caps']['22'] = 88;
@@ -432,8 +432,8 @@ medicamentos['Fluconazol 150 Mg Caps']['104'] = 14;
 medicamentos['Fluoxetina 20mg Caps'] = [];
 medicamentos['Fluoxetina 20mg Caps']['22'] = 2310;
 medicamentos['Fluoxetina 20mg Caps']['93'] = 528;
-medicamentos['Fluoxetina 20mg Caps']['90'] = 640;
-medicamentos['Fluoxetina 20mg Caps']['104'] = 548;
+medicamentos['Fluoxetina 20mg Caps']['90'] = 580;
+medicamentos['Fluoxetina 20mg Caps']['104'] = 488;
 
 medicamentos['Furosemida 10mg/ml Sol Inj'] = [];
 medicamentos['Furosemida 10mg/ml Sol Inj']['93'] = 2;
@@ -561,7 +561,7 @@ medicamentos['Levotiroxina 50 Mcg Comp'] = [];
 medicamentos['Levotiroxina 50 Mcg Comp']['92'] = 440;
 medicamentos['Levotiroxina 50 Mcg Comp']['93'] = 200;
 medicamentos['Levotiroxina 50 Mcg Comp']['90'] = 250;
-medicamentos['Levotiroxina 50 Mcg Comp']['104'] = 74;
+medicamentos['Levotiroxina 50 Mcg Comp']['104'] = 24;
 
 medicamentos['Loratadina 10mg Comp'] = [];
 medicamentos['Loratadina 10mg Comp']['22'] = 3726;
@@ -578,7 +578,7 @@ medicamentos['Medroxiprogesterona 150mg/ml Susp Inj'] = [];
 medicamentos['Medroxiprogesterona 150mg/ml Susp Inj']['22'] = 25;
 medicamentos['Medroxiprogesterona 150mg/ml Susp Inj']['92'] = 7;
 medicamentos['Medroxiprogesterona 150mg/ml Susp Inj']['93'] = 13;
-medicamentos['Medroxiprogesterona 150mg/ml Susp Inj']['90'] = 10;
+medicamentos['Medroxiprogesterona 150mg/ml Susp Inj']['90'] = 8;
 medicamentos['Medroxiprogesterona 150mg/ml Susp Inj']['104'] = 11;
 
 medicamentos['Metildopa 250mg Comp'] = [];
@@ -619,7 +619,7 @@ medicamentos['Metronidazol 250mg Comp'] = [];
 medicamentos['Metronidazol 250mg Comp']['22'] = 323;
 medicamentos['Metronidazol 250mg Comp']['92'] = 60;
 medicamentos['Metronidazol 250mg Comp']['93'] = 81;
-medicamentos['Metronidazol 250mg Comp']['90'] = 143;
+medicamentos['Metronidazol 250mg Comp']['90'] = 115;
 medicamentos['Metronidazol 250mg Comp']['104'] = 164;
 
 medicamentos['Metronidazol 400mg Comp'] = [];
@@ -651,14 +651,14 @@ medicamentos['Nitrofurantoina 100mg Caps'] = [];
 medicamentos['Nitrofurantoina 100mg Caps']['22'] = 1012;
 medicamentos['Nitrofurantoina 100mg Caps']['93'] = 432;
 medicamentos['Nitrofurantoina 100mg Caps']['90'] = 196;
-medicamentos['Nitrofurantoina 100mg Caps']['104'] = 336;
+medicamentos['Nitrofurantoina 100mg Caps']['104'] = 308;
 
 medicamentos['Noretisterona + Estradiol 50mg/ml + 5 Mg/ml Sol Inj'] = [];
 medicamentos['Noretisterona + Estradiol 50mg/ml + 5 Mg/ml Sol Inj']['22'] = 21;
 medicamentos['Noretisterona + Estradiol 50mg/ml + 5 Mg/ml Sol Inj']['92'] = 18;
 medicamentos['Noretisterona + Estradiol 50mg/ml + 5 Mg/ml Sol Inj']['93'] = 11;
 medicamentos['Noretisterona + Estradiol 50mg/ml + 5 Mg/ml Sol Inj']['90'] = 14;
-medicamentos['Noretisterona + Estradiol 50mg/ml + 5 Mg/ml Sol Inj']['104'] = 13;
+medicamentos['Noretisterona + Estradiol 50mg/ml + 5 Mg/ml Sol Inj']['104'] = 12;
 
 medicamentos['Noretisterona 0.35mg Comp'] = [];
 medicamentos['Noretisterona 0.35mg Comp']['22'] = 1575;
