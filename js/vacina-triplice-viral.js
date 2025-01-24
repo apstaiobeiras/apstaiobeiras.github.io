@@ -70,7 +70,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/124896">75996</a></td><td>Rafael Mendes Costa</td><td><div style="white-space: nowrap;">1 ano e 2 mês </div></td><td><span name="ESPERANÇA" >ESPERANÇA</a></td><td><span name="1149" >LIVIA KAMILLY SOARES DOS SANTOS</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/73415">66132</a></td><td>Melinda Rorigues Rocha</td><td><div style="white-space: nowrap;">1 ano e 6 mês </div></td><td><span name="MAIS SAUDE" >MAIS SAUDE</a></td><td><span name="550" >CLEIDIANE DOS SANTOS MEIRELES</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/73415">66132</a></td><td>Melinda Rorigues Rocha</td><td><div style="white-space: nowrap;">1 ano e 7 mês </div></td><td><span name="MAIS SAUDE" >MAIS SAUDE</a></td><td><span name="550" >CLEIDIANE DOS SANTOS MEIRELES</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/63606">62466</a></td><td>Matheus Felix Moroni</td><td><div style="white-space: nowrap;">1 ano e 8 mês </div></td><td><span name="VIDA E SAUDE" >VIDA E SAUDE</a></td><td><span name="525" >NAGILA MARIA DOS SANTOS</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>

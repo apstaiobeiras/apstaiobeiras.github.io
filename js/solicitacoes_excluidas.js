@@ -2183,8 +2183,10 @@ const SolicitacoesExcluidas = [
   [850553,1193,27952,56,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Detalhamento insuficiente para regular o caso:Qual a condição clínica do paciente? se há limitações de ADM, se há perda de força muscular;Faz uso de órtese ou prótese?Qual o Grau de independência/dependência para Atividades de Vida Diária (AVD)?",20250115,"ATENDIMENTO FISIOTERAPIA"],
   [850728,1350,29063,34,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor informar a PA da paciente aferida no atendimento, na ausência deste dado, ao realizar o cálculo pelo HEARTZ, ela foi classificada como RCV Moderado.Att.",20250116,"CONSULTA HIPERTENSO ALTO RISCO"],
   [851282,1046,16090,10,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>AUSENCIA DE RCV. SE ALTO RISCO, DESTINAR A PACIENTE AO CEAE.SE RISCO NTERMEDIATIO/BAIXO, REINSERIR EM FILA COM TAL DETALHAMENTO. GRATA.",20250121,"CONSULTA CARDIOLOGIA DR RENAN"],
+  [851356,1220,18376,13,"<b>Agendar na Atenção Primaria: </b><br>PACIENTE ENCAMINHADO PARA FILA DE ESPERA DA FISIOTERAPIA",20250124,"FISIOTERAPIA- ATENDIMENTO DOMICILIAR"],
   [851713,775,27305,7,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Detalhamento insuficiente, especificar quais são as limitação funcionais. Grau de independência/dependência para Atividades de Vida Diária (AVD) -  É público para este serviço o paciente que Requer assistência para até duas atividades. Se houver dependência (parcial ou total) para 3 ou mais AVDs, sugiro encaminhar a RCPD.",20250117,"ATENDIMENTO FISIOTERAPIA"],
   [853018,46,7086,16,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Detalhamento insuficiente para regular o caso.Lombalgia com dor leve, moderada ou grave? mobilidade reduzida e/ou radiculopatia?Qual a Condição clínica do paciente: se a dor aguda ou crônica, se há limitação de ADM, se há perda de força muscular;",20250123,"ATENDIMENTO FISIOTERAPIA"],
+  [855414,896,53729,18,"<b>Solicitação Indevida: </b><br>Lançada na fila de esperada. Favor lançar na fila GINECOLOGIA PPI.Teste.",20250124,"CONSULTA GESTANTE ALTO RISCO"],
 ];
 
 const Unidades = [
@@ -2261,6 +2263,7 @@ const Profissionais = [
   'DANILO DIEGO FREITAS SILVEIRA:880',
   'RENATA MATOS E MATOS:884',
   'ROSIANE VIEIRA DE SA:894',
+  'FELIPE NUNES COELHO LAGES:896',
   'MARKUS THULIO ALVES GUIMARAES:907',
   'IANN FERNANDO GOUVEA JABBUR:909',
   'FERNANDA DE MOURA MESQUITA:985',
