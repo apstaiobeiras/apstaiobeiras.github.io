@@ -2750,9 +2750,9 @@ dispensacoes[2025].geral = `<tr style="border: 0"><td colspan=5 style="border: 0
 </tr>
 <tr>
 <td>FARMÁCIA UAPS DONA NININHA</td>
-<td style="text-align:right;">654</td>
-<td style="text-align:right;">546</td>
-<td style="text-align:right;">83%</td>
+<td style="text-align:right;">670</td>
+<td style="text-align:right;">562</td>
+<td style="text-align:right;">84%</td>
 <td style="text-align:right;">6%</td>
 </tr>
 <tr>
@@ -2764,22 +2764,22 @@ dispensacoes[2025].geral = `<tr style="border: 0"><td colspan=5 style="border: 0
 </tr>
 <tr>
 <td>FARMÁCIA UAPS LAGOA DOURADA</td>
-<td style="text-align:right;">327</td>
+<td style="text-align:right;">328</td>
 <td style="text-align:right;">299</td>
 <td style="text-align:right;">91%</td>
 <td style="text-align:right;">3%</td>
 </tr>
 <tr>
 <td>FARMÁCIA UAPS LAGOA GRANDE </td>
-<td style="text-align:right;">10</td>
-<td style="text-align:right;">10</td>
+<td style="text-align:right;">11</td>
+<td style="text-align:right;">11</td>
 <td style="text-align:right;">100%</td>
 <td style="text-align:right;">0%</td>
 </tr>
 <tr>
 <td>FARMÁCIA UAPS MILTON MENDES DA SILVA</td>
-<td style="text-align:right;">619</td>
-<td style="text-align:right;">558</td>
+<td style="text-align:right;">620</td>
+<td style="text-align:right;">559</td>
 <td style="text-align:right;">90%</td>
 <td style="text-align:right;">6%</td>
 </tr>
@@ -2792,17 +2792,17 @@ dispensacoes[2025].geral = `<tr style="border: 0"><td colspan=5 style="border: 0
 </tr>
 <tr>
 <td>FARMÁCIA UAPS VER. MANOEL DOS SANTOS SILVA</td>
-<td style="text-align:right;">916</td>
-<td style="text-align:right;">804</td>
+<td style="text-align:right;">928</td>
+<td style="text-align:right;">816</td>
 <td style="text-align:right;">88%</td>
 <td style="text-align:right;">9%</td>
 </tr>
 <tr>
 <td>FARMÁCIA DE MINAS DE TAIOBEIRAS</td>
-<td style="text-align:right;">6432</td>
+<td style="text-align:right;">6556</td>
 <td style="text-align:center;  background-color: #dfe2e5;">-</td>
 <td style="text-align:center;  background-color: #dfe2e5;">-</td>
-<td style="text-align:right;">61%</td>
+<td style="text-align:right;">62%</td>
 </tr>
 <tr>
 <td>UAPS AGEU ALMEIDA</td>
@@ -2841,7 +2841,7 @@ dispensacoes[2025].geral = `<tr style="border: 0"><td colspan=5 style="border: 0
 </tr>
 <tr>
 <td>Total</td>
-<td style="text-align:right;">10497</td>
+<td style="text-align:right;">10654</td>
 <td style="text-align:center; background-color: #dfe2e5;">-</td>
 <td style="text-align:center; background-color: #dfe2e5;">-</td>
 <td style="text-align:center; background-color: #dfe2e5;">-</td>
@@ -3512,38 +3512,38 @@ dispensacoes[2025].farmaciaminas = `<tr style="border: 0"><td colspan=5 style="b
 </tr>
 <tr>
 <td>UAPS ANTONINO DE ALMEIDA</td>
-<td style="text-align:right;">239</td>
+<td style="text-align:right;">254</td>
 <td style="text-align:right;">4%</td>
 </tr>
 <tr>
 <td>UAPS DONA NININHA</td>
-<td style="text-align:right;">664</td>
+<td style="text-align:right;">666</td>
 <td style="text-align:right;">10%</td>
 </tr>
 <tr>
 <td>UAPS ENF. MARY TATIANE ANTUNES LOPES</td>
-<td style="text-align:right;">1581</td>
-<td style="text-align:right;">25%</td>
+<td style="text-align:right;">1601</td>
+<td style="text-align:right;">24%</td>
 </tr>
 <tr>
 <td>UAPS LAGOA GRANDE/DOURADA</td>
-<td style="text-align:right;">482</td>
-<td style="text-align:right;">7%</td>
+<td style="text-align:right;">498</td>
+<td style="text-align:right;">8%</td>
 </tr>
 <tr>
 <td>UAPS MILTON MENDES DA SILVA</td>
-<td style="text-align:right;">253</td>
+<td style="text-align:right;">254</td>
 <td style="text-align:right;">4%</td>
 </tr>
 <tr>
 <td>UAPS VER. JOSE SENA</td>
-<td style="text-align:right;">443</td>
+<td style="text-align:right;">456</td>
 <td style="text-align:right;">7%</td>
 </tr>
 <tr>
 <td>UAPS VER. MANOEL DOS SANTOS SILVA</td>
-<td style="text-align:right;">737</td>
-<td style="text-align:right;">11%</td>
+<td style="text-align:right;">754</td>
+<td style="text-align:right;">12%</td>
 </tr>
 <tr style="border: 0"><td colspan=5 style="border: 0"><br><b><big>Fevereiro</big></b><br>&nbsp;</td></tr>
 <tr>

@@ -85,9 +85,6 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/94433">69751</a></td><td>Cristal Salles de Souza</td><td><div style="white-space: nowrap;">1 ano e 6 mês </div></td><td><span name="ESPERANÇA" >ESPERANÇA</a></td><td><span name="654" >LAURY MADALENA DA ROCHA</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/60631">59615</a></td><td>Yan de Oliveira Lima</td><td><div style="white-space: nowrap;">1 ano e 11 mês </div></td><td><span name="LIBERDADE" >LIBERDADE</a></td><td><span name="456" >DAIANE ALVES</a></td><td><span name="1º DOSE" style="white-space: nowrap;">1º DOSE</a></td>
-    </tr>
-      <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/62878">61755</a></td><td>Isis Mendes Rodrigues</td><td><div style="white-space: nowrap;">1 ano e 8 mês </div></td><td><span name="MAIS SAUDE" >MAIS SAUDE</a></td><td><span name="550" >CLEIDIANE DOS SANTOS MEIRELES</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
     </tr>
       <tr>

@@ -50,7 +50,7 @@ medicamentos['Alendronato 70mg Comp'] = [];
 medicamentos['Alendronato 70mg Comp']['22'] = 76;
 medicamentos['Alendronato 70mg Comp']['92'] = 52;
 medicamentos['Alendronato 70mg Comp']['93'] = 12;
-medicamentos['Alendronato 70mg Comp']['90'] = 36;
+medicamentos['Alendronato 70mg Comp']['90'] = 28;
 medicamentos['Alendronato 70mg Comp']['104'] = 16;
 
 medicamentos['Alopurinol 100mg Comp'] = [];
@@ -194,7 +194,7 @@ medicamentos['Carbonato de Litio 300mg Comp']['90'] = 420;
 medicamentos['Cefalexina 500mg Comp'] = [];
 medicamentos['Cefalexina 500mg Comp']['22'] = 2055;
 medicamentos['Cefalexina 500mg Comp']['92'] = 10;
-medicamentos['Cefalexina 500mg Comp']['93'] = 150;
+medicamentos['Cefalexina 500mg Comp']['93'] = 118;
 medicamentos['Cefalexina 500mg Comp']['90'] = 158;
 medicamentos['Cefalexina 500mg Comp']['104'] = 360;
 
@@ -427,7 +427,7 @@ medicamentos['Fluconazol 150 Mg Caps']['104'] = 12;
 medicamentos['Fluoxetina 20mg Caps'] = [];
 medicamentos['Fluoxetina 20mg Caps']['22'] = 2310;
 medicamentos['Fluoxetina 20mg Caps']['93'] = 388;
-medicamentos['Fluoxetina 20mg Caps']['90'] = 254;
+medicamentos['Fluoxetina 20mg Caps']['90'] = 226;
 medicamentos['Fluoxetina 20mg Caps']['104'] = 428;
 
 medicamentos['Furosemida 10mg/ml Sol Inj'] = [];
@@ -548,7 +548,7 @@ medicamentos['Levotiroxina 100mcg Comp']['104'] = 69;
 
 medicamentos['Levotiroxina 25mcg Comp'] = [];
 medicamentos['Levotiroxina 25mcg Comp']['92'] = 50;
-medicamentos['Levotiroxina 25mcg Comp']['93'] = 130;
+medicamentos['Levotiroxina 25mcg Comp']['93'] = 105;
 medicamentos['Levotiroxina 25mcg Comp']['90'] = 250;
 medicamentos['Levotiroxina 25mcg Comp']['104'] = 80;
 
@@ -584,7 +584,7 @@ medicamentos['Metoclopramida 10mg Comp'] = [];
 medicamentos['Metoclopramida 10mg Comp']['22'] = 445;
 medicamentos['Metoclopramida 10mg Comp']['92'] = 100;
 medicamentos['Metoclopramida 10mg Comp']['93'] = 64;
-medicamentos['Metoclopramida 10mg Comp']['90'] = 90;
+medicamentos['Metoclopramida 10mg Comp']['90'] = 70;
 medicamentos['Metoclopramida 10mg Comp']['104'] = 52;
 
 medicamentos['Metoclopramida 4mg/ml Sol Oral'] = [];
@@ -649,7 +649,7 @@ medicamentos['Noretisterona + Estradiol 50mg/ml + 5 Mg/ml Sol Inj'] = [];
 medicamentos['Noretisterona + Estradiol 50mg/ml + 5 Mg/ml Sol Inj']['22'] = 21;
 medicamentos['Noretisterona + Estradiol 50mg/ml + 5 Mg/ml Sol Inj']['92'] = 18;
 medicamentos['Noretisterona + Estradiol 50mg/ml + 5 Mg/ml Sol Inj']['93'] = 6;
-medicamentos['Noretisterona + Estradiol 50mg/ml + 5 Mg/ml Sol Inj']['90'] = 8;
+medicamentos['Noretisterona + Estradiol 50mg/ml + 5 Mg/ml Sol Inj']['90'] = 7;
 medicamentos['Noretisterona + Estradiol 50mg/ml + 5 Mg/ml Sol Inj']['104'] = 7;
 
 medicamentos['Noretisterona 0.35mg Comp'] = [];
@@ -703,7 +703,7 @@ medicamentos['Paracetamol 500mg Comp'] = [];
 medicamentos['Paracetamol 500mg Comp']['22'] = 124;
 medicamentos['Paracetamol 500mg Comp']['92'] = 30;
 medicamentos['Paracetamol 500mg Comp']['93'] = 750;
-medicamentos['Paracetamol 500mg Comp']['90'] = 420;
+medicamentos['Paracetamol 500mg Comp']['90'] = 400;
 medicamentos['Paracetamol 500mg Comp']['104'] = 230;
 
 medicamentos['Paroxetina 15 Mg Comprimido Revestido'] = [];
@@ -763,7 +763,7 @@ medicamentos['Rifampicina + Clofazimina + Dapsona (300+300)+50+100 Mg']['22'] = 
 medicamentos['Sais Para Reidratacao Oral'] = [];
 medicamentos['Sais Para Reidratacao Oral']['22'] = 51;
 medicamentos['Sais Para Reidratacao Oral']['93'] = 16;
-medicamentos['Sais Para Reidratacao Oral']['90'] = 15;
+medicamentos['Sais Para Reidratacao Oral']['90'] = 10;
 medicamentos['Sais Para Reidratacao Oral']['104'] = 16;
 
 medicamentos['Salbutamol 100mcg/dose Spray'] = [];
@@ -785,7 +785,7 @@ medicamentos['Sulfametoxazol 40mg/ml + Trimetoprima 8mg/ml Susp Oral']['22'] = 1
 medicamentos['Sulfato Ferroso 125mg/ml Sol Oral'] = [];
 medicamentos['Sulfato Ferroso 125mg/ml Sol Oral']['22'] = 37;
 medicamentos['Sulfato Ferroso 125mg/ml Sol Oral']['93'] = 7;
-medicamentos['Sulfato Ferroso 125mg/ml Sol Oral']['90'] = 6;
+medicamentos['Sulfato Ferroso 125mg/ml Sol Oral']['90'] = 4;
 medicamentos['Sulfato Ferroso 125mg/ml Sol Oral']['104'] = 12;
 
 medicamentos['Sulfato Ferroso 25mg/ml Xarope'] = [];
@@ -835,7 +835,7 @@ medicamentos['Zinco 4mg/ml Sol Oral']['90'] = 5;
 medicamentos['Zinco 4mg/ml Sol Oral']['104'] = 2;
 
 
-dataAtualizacao.innerHTML = `29/01/2025`
+dataAtualizacao.innerHTML = `30/01/2025`
 
 const unidades = [];
 unidades['Farmacia de Minas'] = 22;
