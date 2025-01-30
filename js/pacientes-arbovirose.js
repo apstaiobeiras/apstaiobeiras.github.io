@@ -6031,7 +6031,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/14861">14863</a></td><td>Sandra Cassia do Nascimento</td><td><span name="08/05/2024" class="data">08/05/2024</a></td><td>LAGOA SECA, 40</td><td><span name="ELISENE DE JESUS SOUZA" class="">ELISENE DE JESUS SOUZA</a></td><td><span name="UAPS LAGOA GRANDE/ DOURADA" class="">UAPS LAGOA GRANDE/ DOURADA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/18915">18917</a></td><td>Rosimara Santos Rocha</td><td><span name="08/05/2024" class="data">08/05/2024</a></td><td>PARACATU, 1568</td><td><span name="MARTA BARBOSA DE OLIVEIRA" class="">MARTA BARBOSA DE OLIVEIRA</a></td><td><span name="UAPS DONA NININHA" class="">UAPS DONA NININHA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/18915">18917</a></td><td>Rosimara Santos Rocha</td><td><span name="08/05/2024" class="data">08/05/2024</a></td><td>PARACATU, 1570</td><td><span name="MARTA BARBOSA DE OLIVEIRA" class="">MARTA BARBOSA DE OLIVEIRA</a></td><td><span name="UAPS DONA NININHA" class="">UAPS DONA NININHA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/29790">29792</a></td><td>Janete Maria de Jesus</td><td><span name="09/05/2024" class="data">09/05/2024</a></td><td>LAGOA SECA, 20</td><td><span name="ELISENE DE JESUS SOUZA" class="">ELISENE DE JESUS SOUZA</a></td><td><span name="UAPS LAGOA GRANDE/ DOURADA" class="">UAPS LAGOA GRANDE/ DOURADA</a></td>
@@ -7227,6 +7227,9 @@ document.getElementById('planilha').innerHTML = `<table>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/46998">47165</a></td><td>Roseny Alves De Sousa</td><td><span name="28/01/2025" class="data">28/01/2025</a></td><td>SANTA LUZIA, 1273</td><td><span name="ELAINE GONCALVES NUNES SANTOS" class="">ELAINE GONCALVES NUNES SANTOS</a></td><td><span name="UAPS ENF. MARY TATIANE" class="">UAPS ENF. MARY TATIANE</a></td>
     </tr>
+      <tr>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/5782">5784</a></td><td>Geovanna Pereira Mendes</td><td><span name="30/01/2025" class="data">30/01/2025</a></td><td>PERNAMBUCO, 508</td><td><span name="WANESSA MOREIRA DE SOUZA" class="">WANESSA MOREIRA DE SOUZA</a></td><td><span name="UAPS DONA NININHA" class="">UAPS DONA NININHA</a></td>
+    </tr>
     </tbody>
 </table>`
 
@@ -7317,7 +7320,7 @@ graficos.innerHTML += '<div id="grafico-2025"></div>';
   await (new ApexCharts(document.querySelector("#grafico-2025"), {
     series: [{
       name: "Casos",
-      data: [1,4,5,5,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+      data: [1,4,5,5,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
     }],
     chart: {
       height: 350,
