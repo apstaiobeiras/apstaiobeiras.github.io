@@ -2104,6 +2104,7 @@ const SolicitacoesExcluidas = [
   [840376,1194,52908,6,"<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA \"AVALIAÇÃO CIRURGICA POLICLÍNICA\".",20241227,"CONSULTA CIRURGIAO GERAL"],
   [840684,907,35649,9,"<b>Não Se Enquadra nos Criterios: </b><br>Descrever resultados dos exames que comprovam diagnóstico.",20241230,"CONSULTA ORTOPEDISTA"],
   [635915,1137,17940,9,"<b>Solicitação Indevida: </b><br>REAVALIAR QUADRO, E CAO SE ENQUADRE NOS CRITÉRIOS, ENCAMINHAR A GINECOLOGIA POLICLÍNICA.",20250108,"CONSULTA GINECOLOGISTA - PPI"],
+  [741640,1272,50982,7,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>........",20250204,"REMOçaO DE DENTE RETIDO (INCLUSO / IMPACTADO)"],
   [754794,1328,62623,78,"<b>Falta Detalhar Exames: </b><br>Descrever o resultado do ECG basal.",20250121,"TESTE DE ESFORCO / TESTE ERGOMETRICO"],
   [759504,72,52445,206,"<b>Não Se Enquadra nos Criterios: </b><br>encaminhada para lista de psicologia E-MULTI",20250116,"REABILITAçaO INTELECTUAL"],
   [776440,1277,6595,4,"Não Se Enquadra nos Criterios",20250203,"AVALIAçaO- ESCOLA DO PARTO"],
@@ -2222,6 +2223,7 @@ const SolicitacoesExcluidas = [
   [853018,46,7086,16,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Detalhamento insuficiente para regular o caso.Lombalgia com dor leve, moderada ou grave? mobilidade reduzida e/ou radiculopatia?Qual a Condição clínica do paciente: se a dor aguda ou crônica, se há limitação de ADM, se há perda de força muscular;",20250123,"ATENDIMENTO FISIOTERAPIA"],
   [853039,884,24447,3,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor verificar se o paciente realizou o mapa glicêmico solicitado pelo especialista para o retorno com os exames bioquímicos. Citar caso pronto quando reencaminhar.Att.",20250125,"CONSULTA DIABETES ALTO RISCO"],
   [853041,1193,27170,56,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>PACIENTE PORTADORA DE HAS?SE SIM, ESTRATIFICAR RISC CARDIOVASCULAR, E ENCAMINHAR CONFORME CRITÉRIOS. (SE PACIENTE ALTO RISCO, MESMO QUE ACOMPANHADA ANTERIORMENTE POR DR. RENAN, ENCAMINHAR AO CEAE DEVIDO CRITÉRIOS).GRATA.",20250127,"CONSULTA CARDIOLOGIA DR RENAN"],
+  [853164,1221,51901,4,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Descrever resultados de exames laboratoriais realizados para investigação da queixa. Muito relevante acrescentar na descrição a conduta medicamentosa prescrita por você, para que a Neurologia prossiga com melhor agilidade e resolutividade.",20250204,"CONSULTA NEUROLOGIA"],
   [853612,1317,32044,3,"<b>Não Se Enquadra nos Criterios: </b><br>Paciente com dislipidemia, sem outras demandas clínicas que justifiquem o atendimento nutricional, com valor de Colesterol Total inferior ao exigido no Protocolo da Nutrição EMULTI (<300mg/dL).",20250127,"AVALIAçaO NUTRICIONISTA E-MULTI"],
   [853661,507,69632,2,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor encaminhar com último resultado de US de mamas.",20250129,"CONSULTA MASTOLOGIA CEAE"],
   [853812,1193,36593,56,"<b>Não Se Enquadra nos Criterios: </b><br>Paciente recebeu alta do controle de lesão vulvar. Devido ao quadro de amenorreia, deve ser encaminhada na fila da GINECOLOGIA POLICLÍNICA.",20250128,"CONSULTA GINECOLOGIA CEAE"],
@@ -2264,6 +2266,13 @@ const SolicitacoesExcluidas = [
   [859668,1132,19985,10,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Qual a data de realização da MMG que identificou o BI-RADS 0?",20250131,"CONSULTA MASTOLOGIA CEAE"],
   [859724,320,26044,78,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever resultado do último PCCU com a data da realização.",20250131,"CONSULTA GINECOLOGIA POLICLINICA"],
   [860532,907,20034,9,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever com data os resultados dos últimos exames bioquímicos realizados pelo paciente.Att.",20250203,"CONSULTA HIPERTENSO ALTO RISCO"],
+  [860796,1221,77518,4,"<b>Não Se Enquadra nos Criterios: </b><br>Favor verificar a fila.Att.",20250204,"CONSULTA PEDIATRIA ALTO RISCO"],
+  [860996,1110,28428,34,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor informar a PA aferida no momento do atendimento, de acordo o HEARTS com a ausência desse dado o RCV dele é Moderado e não Alto.Att.",20250204,"CONSULTA HIPERTENSO ALTO RISCO"],
+  [861109,1220,32643,13,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Detalhamento clínico incompleto:Paciente restrito ao leito?Paciente apresenta restrição para locomoção?Por qual motivo?Paciente que apresentar locomoção mínima(deslocamento em cadeira de rodas), nãoapresenta critério de atendimento domiciliar. ",20250204,"FISIOTERAPIA- ATENDIMENTO DOMICILIAR"],
+  [861587,1267,18602,8,"<b>Não Se Enquadra nos Criterios: </b><br>Favor encaminhar na fila Ginecologia Policlínica.Att.",20250204,"CONSULTA GINECOLOGIA CEAE"],
+  [861632,1219,29517,33,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Descrever comorbidades, uso de medicamentos, últimos exames laboratoriais e encaminhamentos realizados: fisioterapia, CEAE Alto risco - A fim de otimizar a investigação e conduta da neurologia!",20250204,"CONSULTA NEUROLOGIA"],
+  [861680,884,17227,3,"<b>Não Se Enquadra nos Criterios: </b><br>Favor encaminhar na fila Ginecologia Policlínica. Att.",20250204,"CONSULTA GINECOLOGIA CEAE"],
+  [862246,986,15904,11,"<b>Solicitação Indevida: </b><br>.",20250204,"ATENDIMENTO FISIOTERAPIA"],
 ];
 
 const Unidades = [
