@@ -238,10 +238,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/124621">75794</a></td><td>Noah Cristopher Brito Ribeiro</td><td><div style="white-space: nowrap;">8 meses</div></td><td><span name="UNIAO">UNIAO</a></td><td><span name="301">CERLIOS MARQUES DOS SANTOS</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/125351">76397</a></td><td>Anna Lizz Xavier da Mota</td><td><div style="white-space: nowrap;">6 meses</div></td><td><span name="UNIAO">UNIAO</a></td><td><span name="301">CERLIOS MARQUES DOS SANTOS</a></td>
-    </tr>
-      <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/121809">73677</a></td><td>Maria Eloisa Viana Bergamin</td><td><div style="white-space: nowrap;">11 meses</div></td><td><span name="CAMINHO">CAMINHO</a></td><td><span name="1129">DENIZ CAROLINE PEREIRA MARTINS</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/125351">76397</a></td><td>Anna Lizz Xavier da Mota</td><td><div style="white-space: nowrap;">7 meses</div></td><td><span name="UNIAO">UNIAO</a></td><td><span name="301">CERLIOS MARQUES DOS SANTOS</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/124253">75495</a></td><td>Maria Laura Gonçalves Malaquias</td><td><div style="white-space: nowrap;">8 meses</div></td><td><span name="LIBERDADE">LIBERDADE</a></td><td><span name="1135">LUANA RODRIGUES DE OLIVEIRA</a></td>
@@ -436,7 +433,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/122408">74134</a></td><td>Sarah Vitória Almeida Rocha</td><td><div style="white-space: nowrap;">11 meses</div></td><td><span name="COMUNIDADES RURAIS">COMUNIDADES RURAIS</a></td><td><span name="452">ROSA RODRIGUES DE SOUZA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/122594">74260</a></td><td>Augusto Froes  Yamada </td><td><div style="white-space: nowrap;">10 meses</div></td><td><span name="PROGRESSO">PROGRESSO</a></td><td><span name="315">DAYANE SOARES MENDES SANTOS</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/122594">74260</a></td><td>Augusto Froes  Yamada </td><td><div style="white-space: nowrap;">11 meses</div></td><td><span name="PROGRESSO">PROGRESSO</a></td><td><span name="315">DAYANE SOARES MENDES SANTOS</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/125492">76527</a></td><td>Ayla Freitas de Souza</td><td><div style="white-space: nowrap;">6 meses</div></td><td><span name="ACOLHER">ACOLHER</a></td><td><span name="168">THAIS ROSA DE ALMEIDA SILVA</a></td>
