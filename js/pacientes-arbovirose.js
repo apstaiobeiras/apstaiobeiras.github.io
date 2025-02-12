@@ -2008,7 +2008,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/24828">24830</a></td><td>Vitor Emanuel Rodrigues Santos</td><td><span name="26/03/2024" class="data">26/03/2024</a></td><td>ALCIDES APOSTOLO DE OLIVEIRA, 421</td><td><span name="NAGILA MARIA DOS SANTOS" class="">NAGILA MARIA DOS SANTOS</a></td><td><span name="UAPS MILTON MENDES DA SILVA" class="">UAPS MILTON MENDES DA SILVA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/34195">33869</a></td><td>Ana Costa Santos</td><td><span name="01/03/2024" class="data">01/03/2024</a></td><td>-</td><td><span name="-" class="">-</a></td><td><span name="-" class="">-</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/34195">33869</a></td><td>Ana Costa Santos</td><td><span name="01/03/2024" class="data">01/03/2024</a></td><td>COMUNIDADE LAGOA GRANDE, 119</td><td><span name="KELY CRISTINA RODRIGUES ARAúJO" class="">KELY CRISTINA RODRIGUES ARAúJO</a></td><td><span name="UAPS LAGOA GRANDE/ DOURADA" class="">UAPS LAGOA GRANDE/ DOURADA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/12394">12396</a></td><td>Verlania Mendes de Oliveira</td><td><span name="04/03/2024" class="data">04/03/2024</a></td><td>FAZENDA MUTUKA, 52</td><td><span name="JANIA SANTOS ROCHA RUFINO NEVES" class="">JANIA SANTOS ROCHA RUFINO NEVES</a></td><td><span name="UAPS COMUNIDADES RURAIS" class="">UAPS COMUNIDADES RURAIS</a></td>
@@ -4606,7 +4606,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/39599">40369</a></td><td>Marlice Pereira Mera</td><td><span name="05/04/2024" class="data">05/04/2024</a></td><td>TEOFILO OTONI, 723</td><td><span name="RAYANNE CHAVES MOREIRA" class="">RAYANNE CHAVES MOREIRA</a></td><td><span name="UAPS VER. JOSE SENA" class="">UAPS VER. JOSE SENA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/19999">20001</a></td><td>Zirva Lopes Gomes</td><td><span name="05/04/2024" class="data">05/04/2024</a></td><td>-</td><td><span name="-" class="">-</a></td><td><span name="-" class="">-</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/19999">20001</a></td><td>Zirva Lopes Gomes</td><td><span name="05/04/2024" class="data">05/04/2024</a></td><td>CARLOS CHAGAS, 335</td><td><span name="LIVIA KAMILLY SOARES DOS SANTOS" class="">LIVIA KAMILLY SOARES DOS SANTOS</a></td><td><span name="UAPS VER. JOSE SENA" class="">UAPS VER. JOSE SENA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/12646">12648</a></td><td>Perola Diana Pereira de Souza</td><td><span name="08/04/2024" class="data">08/04/2024</a></td><td>CONTORNO, 4083</td><td><span name="MARLANE DA SILVA SANTOS" class="">MARLANE DA SILVA SANTOS</a></td><td><span name="UAPS DONA NININHA" class="">UAPS DONA NININHA</a></td>
