@@ -20,7 +20,7 @@ medicamentos['Acido Acetilsalicilico 100mg Comp'] = [];
 medicamentos['Acido Acetilsalicilico 100mg Comp']['22'] = 2010;
 medicamentos['Acido Acetilsalicilico 100mg Comp']['92'] = 870;
 medicamentos['Acido Acetilsalicilico 100mg Comp']['93'] = 1360;
-medicamentos['Acido Acetilsalicilico 100mg Comp']['90'] = 820;
+medicamentos['Acido Acetilsalicilico 100mg Comp']['90'] = 760;
 medicamentos['Acido Acetilsalicilico 100mg Comp']['104'] = 1150;
 
 medicamentos['Acido Folico 0.2mg/ml Sol Oral'] = [];
@@ -366,7 +366,7 @@ medicamentos['Dipirona 500mg Comp'] = [];
 medicamentos['Dipirona 500mg Comp']['92'] = 50;
 medicamentos['Dipirona 500mg Comp']['93'] = 830;
 medicamentos['Dipirona 500mg Comp']['90'] = 1490;
-medicamentos['Dipirona 500mg Comp']['104'] = 1052;
+medicamentos['Dipirona 500mg Comp']['104'] = 1042;
 
 medicamentos['Dipirona 500mg/ml Sol Oral'] = [];
 medicamentos['Dipirona 500mg/ml Sol Oral']['93'] = 15;
@@ -429,9 +429,9 @@ medicamentos['Fluconazol 150 Mg Caps']['104'] = 29;
 
 medicamentos['Fluoxetina 20mg Caps'] = [];
 medicamentos['Fluoxetina 20mg Caps']['22'] = 2310;
-medicamentos['Fluoxetina 20mg Caps']['93'] = 570;
+medicamentos['Fluoxetina 20mg Caps']['93'] = 430;
 medicamentos['Fluoxetina 20mg Caps']['90'] = 182;
-medicamentos['Fluoxetina 20mg Caps']['104'] = 1492;
+medicamentos['Fluoxetina 20mg Caps']['104'] = 1432;
 
 medicamentos['Furosemida 10mg/ml Sol Inj'] = [];
 medicamentos['Furosemida 10mg/ml Sol Inj']['93'] = 2;
@@ -446,7 +446,7 @@ medicamentos['Gliclazida 60mg Comp'] = [];
 medicamentos['Gliclazida 60mg Comp']['22'] = 1290;
 medicamentos['Gliclazida 60mg Comp']['92'] = 630;
 medicamentos['Gliclazida 60mg Comp']['93'] = 360;
-medicamentos['Gliclazida 60mg Comp']['90'] = 300;
+medicamentos['Gliclazida 60mg Comp']['90'] = 240;
 medicamentos['Gliclazida 60mg Comp']['104'] = 390;
 
 medicamentos['Guaco 35mg/ml Xarope'] = [];
@@ -548,7 +548,7 @@ medicamentos['Levotiroxina 100mcg Comp'] = [];
 medicamentos['Levotiroxina 100mcg Comp']['22'] = 300;
 medicamentos['Levotiroxina 100mcg Comp']['92'] = 220;
 medicamentos['Levotiroxina 100mcg Comp']['93'] = 250;
-medicamentos['Levotiroxina 100mcg Comp']['90'] = 250;
+medicamentos['Levotiroxina 100mcg Comp']['90'] = 200;
 medicamentos['Levotiroxina 100mcg Comp']['104'] = 300;
 
 medicamentos['Levotiroxina 25mcg Comp'] = [];
@@ -659,7 +659,7 @@ medicamentos['Noretisterona + Estradiol 50mg/ml + 5 Mg/ml Sol Inj']['22'] = 21;
 medicamentos['Noretisterona + Estradiol 50mg/ml + 5 Mg/ml Sol Inj']['92'] = 18;
 medicamentos['Noretisterona + Estradiol 50mg/ml + 5 Mg/ml Sol Inj']['93'] = 20;
 medicamentos['Noretisterona + Estradiol 50mg/ml + 5 Mg/ml Sol Inj']['90'] = 21;
-medicamentos['Noretisterona + Estradiol 50mg/ml + 5 Mg/ml Sol Inj']['104'] = 21;
+medicamentos['Noretisterona + Estradiol 50mg/ml + 5 Mg/ml Sol Inj']['104'] = 20;
 
 medicamentos['Noretisterona 0.35mg Comp'] = [];
 medicamentos['Noretisterona 0.35mg Comp']['22'] = 1575;
@@ -677,7 +677,7 @@ medicamentos['Nortriptilina 25mg Caps']['22'] = 2150;
 medicamentos['Nortriptilina 25mg Caps']['92'] = 960;
 medicamentos['Nortriptilina 25mg Caps']['93'] = 140;
 medicamentos['Nortriptilina 25mg Caps']['90'] = 380;
-medicamentos['Nortriptilina 25mg Caps']['104'] = 280;
+medicamentos['Nortriptilina 25mg Caps']['104'] = 220;
 
 medicamentos['Nortriptilina 50mg Caps'] = [];
 medicamentos['Nortriptilina 50mg Caps']['22'] = 190;
@@ -688,7 +688,7 @@ medicamentos['Nortriptilina 50mg Caps']['104'] = 300;
 medicamentos['Omeprazol 20mg Caps'] = [];
 medicamentos['Omeprazol 20mg Caps']['92'] = 621;
 medicamentos['Omeprazol 20mg Caps']['93'] = 280;
-medicamentos['Omeprazol 20mg Caps']['90'] = 406;
+medicamentos['Omeprazol 20mg Caps']['90'] = 350;
 medicamentos['Omeprazol 20mg Caps']['104'] = 952;
 
 medicamentos['Ondansetrona 4mg Comp'] = [];
@@ -713,7 +713,7 @@ medicamentos['Paracetamol 200mg/ml Sol Oral']['104'] = 11;
 medicamentos['Paracetamol 500mg Comp'] = [];
 medicamentos['Paracetamol 500mg Comp']['22'] = 124;
 medicamentos['Paracetamol 500mg Comp']['92'] = 30;
-medicamentos['Paracetamol 500mg Comp']['93'] = 750;
+medicamentos['Paracetamol 500mg Comp']['93'] = 730;
 medicamentos['Paracetamol 500mg Comp']['90'] = 170;
 medicamentos['Paracetamol 500mg Comp']['104'] = 292;
 
