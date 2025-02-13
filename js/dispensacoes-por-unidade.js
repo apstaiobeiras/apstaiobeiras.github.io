@@ -2856,16 +2856,16 @@ dispensacoes[2025].geral = `<tr style="border: 0"><td colspan=5 style="border: 0
 </tr>
 <tr>
 <td>FARMÁCIA UAPS ANTONINO DE ALMEIDA</td>
-<td style="text-align:right;">323</td>
-<td style="text-align:right;">320</td>
+<td style="text-align:right;">355</td>
+<td style="text-align:right;">351</td>
 <td style="text-align:right;">99%</td>
 <td style="text-align:right;">8%</td>
 </tr>
 <tr>
 <td>FARMÁCIA UAPS DONA NININHA</td>
-<td style="text-align:right;">276</td>
-<td style="text-align:right;">228</td>
-<td style="text-align:right;">83%</td>
+<td style="text-align:right;">318</td>
+<td style="text-align:right;">261</td>
+<td style="text-align:right;">82%</td>
 <td style="text-align:right;">7%</td>
 </tr>
 <tr>
@@ -2877,44 +2877,44 @@ dispensacoes[2025].geral = `<tr style="border: 0"><td colspan=5 style="border: 0
 </tr>
 <tr>
 <td>FARMÁCIA UAPS LAGOA GRANDE </td>
-<td style="text-align:right;">1</td>
-<td style="text-align:right;">1</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:right;">2</td>
 <td style="text-align:right;">100%</td>
 <td style="text-align:right;">0%</td>
 </tr>
 <tr>
 <td>FARMÁCIA UAPS MILTON MENDES DA SILVA</td>
-<td style="text-align:right;">179</td>
-<td style="text-align:right;">166</td>
+<td style="text-align:right;">221</td>
+<td style="text-align:right;">205</td>
 <td style="text-align:right;">93%</td>
-<td style="text-align:right;">4%</td>
+<td style="text-align:right;">5%</td>
 </tr>
 <tr>
 <td>FARMÁCIA UAPS VER. JOSE SENA</td>
-<td style="text-align:right;">225</td>
-<td style="text-align:right;">201</td>
+<td style="text-align:right;">250</td>
+<td style="text-align:right;">223</td>
 <td style="text-align:right;">89%</td>
 <td style="text-align:right;">5%</td>
 </tr>
 <tr>
 <td>FARMÁCIA UAPS VER. MANOEL DOS SANTOS SILVA</td>
-<td style="text-align:right;">349</td>
-<td style="text-align:right;">310</td>
-<td style="text-align:right;">89%</td>
-<td style="text-align:right;">8%</td>
+<td style="text-align:right;">404</td>
+<td style="text-align:right;">363</td>
+<td style="text-align:right;">90%</td>
+<td style="text-align:right;">9%</td>
 </tr>
 <tr>
 <td>FARMÁCIA DE MINAS DE TAIOBEIRAS</td>
-<td style="text-align:right;">2692</td>
+<td style="text-align:right;">2938</td>
 <td style="text-align:center;  background-color: #dfe2e5;">-</td>
 <td style="text-align:center;  background-color: #dfe2e5;">-</td>
-<td style="text-align:right;">64%</td>
+<td style="text-align:right;">63%</td>
 </tr>
 <tr>
 <td>UAPS AGEU ALMEIDA</td>
-<td style="text-align:right;">37</td>
-<td style="text-align:right;">25</td>
-<td style="text-align:right;">68%</td>
+<td style="text-align:right;">43</td>
+<td style="text-align:right;">31</td>
+<td style="text-align:right;">72%</td>
 <td style="text-align:right;">1%</td>
 </tr>
 <tr>
@@ -2947,7 +2947,7 @@ dispensacoes[2025].geral = `<tr style="border: 0"><td colspan=5 style="border: 0
 </tr>
 <tr>
 <td>Total</td>
-<td style="text-align:right;">4227</td>
+<td style="text-align:right;">4682</td>
 <td style="text-align:center; background-color: #dfe2e5;">-</td>
 <td style="text-align:center; background-color: #dfe2e5;">-</td>
 <td style="text-align:center; background-color: #dfe2e5;">-</td>
@@ -3644,32 +3644,32 @@ dispensacoes[2025].farmaciaminas = `<tr style="border: 0"><td colspan=5 style="b
 </tr>
 <tr>
 <td>UAPS ANTONINO DE ALMEIDA</td>
-<td style="text-align:right;">103</td>
+<td style="text-align:right;">111</td>
 <td style="text-align:right;">4%</td>
 </tr>
 <tr>
 <td>UAPS DONA NININHA</td>
-<td style="text-align:right;">201</td>
-<td style="text-align:right;">7%</td>
-</tr>
-<tr>
-<td>UAPS LAGOA GRANDE/DOURADA</td>
-<td style="text-align:right;">219</td>
+<td style="text-align:right;">221</td>
 <td style="text-align:right;">8%</td>
 </tr>
 <tr>
+<td>UAPS LAGOA GRANDE/DOURADA</td>
+<td style="text-align:right;">251</td>
+<td style="text-align:right;">9%</td>
+</tr>
+<tr>
 <td>UAPS MILTON MENDES DA SILVA</td>
-<td style="text-align:right;">108</td>
+<td style="text-align:right;">110</td>
 <td style="text-align:right;">4%</td>
 </tr>
 <tr>
 <td>UAPS VER. JOSE SENA</td>
-<td style="text-align:right;">232</td>
+<td style="text-align:right;">255</td>
 <td style="text-align:right;">9%</td>
 </tr>
 <tr>
 <td>UAPS VER. MANOEL DOS SANTOS SILVA</td>
-<td style="text-align:right;">272</td>
+<td style="text-align:right;">295</td>
 <td style="text-align:right;">10%</td>
 </tr>
 <tr style="border: 0"><td colspan=5 style="border: 0"><br><b><big>Março</big></b><br>&nbsp;</td></tr>
