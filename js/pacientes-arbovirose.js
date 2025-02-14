@@ -5677,7 +5677,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/14408">14410</a></td><td>Luiz Otavio Alves Costa</td><td><span name="14/05/2024" class="data">14/05/2024</a></td><td>BENFICA, 1331</td><td><span name="GEISSIANE MARQUES FERREIRA" class="">GEISSIANE MARQUES FERREIRA</a></td><td><span name="UAPS DONA NININHA" class="">UAPS DONA NININHA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/52147">52103</a></td><td>Reginalda Katsya Dos Santos</td><td><span name="14/05/2024" class="data">14/05/2024</a></td><td>-</td><td><span name="-" class="">-</a></td><td><span name="-" class="">-</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/52147">52103</a></td><td>Reginalda Katsya Dos Santos</td><td><span name="14/05/2024" class="data">14/05/2024</a></td><td>FAZENDA MUTUKA, 65</td><td><span name="JANIA SANTOS ROCHA RUFINO NEVES" class="">JANIA SANTOS ROCHA RUFINO NEVES</a></td><td><span name="UAPS COMUNIDADES RURAIS" class="">UAPS COMUNIDADES RURAIS</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/124238">75481</a></td><td>Ivanete Lucas do Nascimento</td><td><span name="15/05/2024" class="data">15/05/2024</a></td><td>-</td><td><span name="-" class="">-</a></td><td><span name="-" class="">-</a></td>
@@ -5947,7 +5947,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/59437">58496</a></td><td>Geovanna Taina Lucas Amorim</td><td><span name="24/05/2024" class="data">24/05/2024</a></td><td>AMAZONAS, 1005</td><td><span name="ILCA ANTUNIS DA SILVA" class="">ILCA ANTUNIS DA SILVA</a></td><td><span name="UAPS JOAO DE DEUS SIMOES" class="">UAPS JOAO DE DEUS SIMOES</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/52147">52103</a></td><td>Reginalda Katsya Dos Santos</td><td><span name="24/05/2024" class="data">24/05/2024</a></td><td>-</td><td><span name="-" class="">-</a></td><td><span name="-" class="">-</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/52147">52103</a></td><td>Reginalda Katsya Dos Santos</td><td><span name="24/05/2024" class="data">24/05/2024</a></td><td>FAZENDA MUTUKA, 65</td><td><span name="JANIA SANTOS ROCHA RUFINO NEVES" class="">JANIA SANTOS ROCHA RUFINO NEVES</a></td><td><span name="UAPS COMUNIDADES RURAIS" class="">UAPS COMUNIDADES RURAIS</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/5103">5105</a></td><td>Darmone Rodrigues Martins</td><td><span name="27/05/2024" class="data">27/05/2024</a></td><td>LAMBARI, 425</td><td><span name="WANESSA MOREIRA DE SOUZA" class="">WANESSA MOREIRA DE SOUZA</a></td><td><span name="UAPS DONA NININHA" class="">UAPS DONA NININHA</a></td>
@@ -7285,6 +7285,9 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/22251">22253</a></td><td>Edilene Oliveira Celestino</td><td><span name="13/02/2025" class="data">13/02/2025</a></td><td>PIUNAS, 360</td><td><span name="ALICE DOS SANTOS NETA" class="">ALICE DOS SANTOS NETA</a></td><td><span name="UAPS DONA NININHA" class="">UAPS DONA NININHA</a></td>
     </tr>
       <tr>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/34331">33988</a></td><td>Joao Paulo Costa Martins</td><td><span name="14/02/2025" class="data">14/02/2025</a></td><td>IPANEMA, 1687</td><td><span name="GEISIANE CARVALHO" class="">GEISIANE CARVALHO</a></td><td><span name="UAPS DONA NININHA" class="">UAPS DONA NININHA</a></td>
+    </tr>
+      <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/28553">28555</a></td><td>Ruth Gonçalves Gouvea</td><td><span name="04/02/2025" class="data">04/02/2025</a></td><td>PEDRA AZUL, 559</td><td><span name="LAURY MADALENA DA ROCHA" class="">LAURY MADALENA DA ROCHA</a></td><td><span name="UAPS VER. JOSE SENA" class="">UAPS VER. JOSE SENA</a></td>
     </tr>
     </tbody>
@@ -7377,7 +7380,7 @@ graficos.innerHTML += '<div id="grafico-2025"></div>';
   await (new ApexCharts(document.querySelector("#grafico-2025"), {
     series: [{
       name: "Casos",
-      data: [1,4,5,5,10,13,6,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+      data: [1,4,5,5,10,13,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
     }],
     chart: {
       height: 350,
