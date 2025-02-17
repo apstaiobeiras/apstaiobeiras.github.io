@@ -5935,7 +5935,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/3487">3489</a></td><td>Datson Fernando Silva Pereira</td><td><span name="21/05/2024" class="data">21/05/2024</a></td><td>PIRAPORA, 607</td><td><span name="IVANI MENDES DE DEUS CHAGAS" class="">IVANI MENDES DE DEUS CHAGAS</a></td><td><span name="UAPS JOAO DE DEUS SIMOES" class="">UAPS JOAO DE DEUS SIMOES</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/30584">30586</a></td><td>Rafaeny Amanda Reis Mendes</td><td><span name="23/05/2024" class="data">23/05/2024</a></td><td>CEARA, 915</td><td><span name="GISLENE FERREIRA BARBOSA" class="">GISLENE FERREIRA BARBOSA</a></td><td><span name="UAPS JOAO DE DEUS SIMOES" class="">UAPS JOAO DE DEUS SIMOES</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/30584">30586</a></td><td>Rafaeny Amanda Reis Mendes</td><td><span name="23/05/2024" class="data">23/05/2024</a></td><td>CEARA, 870</td><td><span name="ILCA ANTUNIS DA SILVA" class="">ILCA ANTUNIS DA SILVA</a></td><td><span name="UAPS JOAO DE DEUS SIMOES" class="">UAPS JOAO DE DEUS SIMOES</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/8426">8428</a></td><td>Bruno Dos Santos Silva</td><td><span name="23/05/2024" class="data">23/05/2024</a></td><td>SANTA CATARINA, 270</td><td><span name="DAIANE ALVES" class="">DAIANE ALVES</a></td><td><span name="UAPS VER. MANOEL DOS SANTOS SILVA" class="">UAPS VER. MANOEL DOS SANTOS SILVA</a></td>
@@ -7009,7 +7009,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/20191">20193</a></td><td>Tatiane Santos Soares</td><td><span name="12/11/2024" class="data">12/11/2024</a></td><td>NANUQUE, 51</td><td><span name="ILCA ANTUNIS DA SILVA" class="">ILCA ANTUNIS DA SILVA</a></td><td><span name="UAPS JOAO DE DEUS SIMOES" class="">UAPS JOAO DE DEUS SIMOES</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/36236">36783</a></td><td>Hugo Gabriel Chagas Oliveira</td><td><span name="21/11/2024" class="data">21/11/2024</a></td><td>COMUNIDADE LAGOA GRANDE, 22</td><td><span name="KELY CRISTINA RODRIGUES ARAúJO" class="">KELY CRISTINA RODRIGUES ARAúJO</a></td><td><span name="UAPS LAGOA GRANDE/ DOURADA" class="">UAPS LAGOA GRANDE/ DOURADA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/36236">36783</a></td><td>Hugo Gabriel Chagas Oliveira</td><td><span name="21/11/2024" class="data">21/11/2024</a></td><td>COMUNIDADE LAGOA GRANDE, 16</td><td><span name="KELY CRISTINA RODRIGUES ARAúJO" class="">KELY CRISTINA RODRIGUES ARAúJO</a></td><td><span name="UAPS LAGOA GRANDE/ DOURADA" class="">UAPS LAGOA GRANDE/ DOURADA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/31537">31539</a></td><td>Diogo Mendes de Souza</td><td><span name="26/11/2024" class="data">26/11/2024</a></td><td>OLIMPIO SANTANA, 145</td><td><span name="DENIZ CAROLINE PEREIRA MARTINS" class="">DENIZ CAROLINE PEREIRA MARTINS</a></td><td><span name="UAPS VER. JOSE SENA" class="">UAPS VER. JOSE SENA</a></td>
@@ -7288,6 +7288,9 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/34331">33988</a></td><td>Joao Paulo Costa Martins</td><td><span name="14/02/2025" class="data">14/02/2025</a></td><td>IPANEMA, 1687</td><td><span name="GEISIANE CARVALHO" class="">GEISIANE CARVALHO</a></td><td><span name="UAPS DONA NININHA" class="">UAPS DONA NININHA</a></td>
     </tr>
       <tr>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/4100">4102</a></td><td>Jefferson Rodrigues Do Carmo</td><td><span name="17/02/2025" class="data">17/02/2025</a></td><td>PEDRA AZUL, 1200</td><td><span name="MAGDA ROSA DOS SANTOS" class="">MAGDA ROSA DOS SANTOS</a></td><td><span name="UAPS ED. FIS. DOUGLAS FREDERICO" class="">UAPS ED. FIS. DOUGLAS FREDERICO</a></td>
+    </tr>
+      <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/28553">28555</a></td><td>Ruth Gonçalves Gouvea</td><td><span name="04/02/2025" class="data">04/02/2025</a></td><td>PEDRA AZUL, 559</td><td><span name="LAURY MADALENA DA ROCHA" class="">LAURY MADALENA DA ROCHA</a></td><td><span name="UAPS VER. JOSE SENA" class="">UAPS VER. JOSE SENA</a></td>
     </tr>
     </tbody>
@@ -7380,7 +7383,7 @@ graficos.innerHTML += '<div id="grafico-2025"></div>';
   await (new ApexCharts(document.querySelector("#grafico-2025"), {
     series: [{
       name: "Casos",
-      data: [1,4,5,5,10,13,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+      data: [1,4,5,5,10,13,7,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
     }],
     chart: {
       height: 350,
