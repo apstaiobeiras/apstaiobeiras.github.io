@@ -21,12 +21,12 @@ medicamentos['Acido Acetilsalicilico 100mg Comp']['22'] = 2010;
 medicamentos['Acido Acetilsalicilico 100mg Comp']['92'] = 870;
 medicamentos['Acido Acetilsalicilico 100mg Comp']['93'] = 1240;
 medicamentos['Acido Acetilsalicilico 100mg Comp']['90'] = 640;
-medicamentos['Acido Acetilsalicilico 100mg Comp']['104'] = 970;
+medicamentos['Acido Acetilsalicilico 100mg Comp']['104'] = 910;
 
 medicamentos['Acido Folico 0.2mg/ml Sol Oral'] = [];
 medicamentos['Acido Folico 0.2mg/ml Sol Oral']['93'] = 29;
-medicamentos['Acido Folico 0.2mg/ml Sol Oral']['90'] = 22;
-medicamentos['Acido Folico 0.2mg/ml Sol Oral']['104'] = 23;
+medicamentos['Acido Folico 0.2mg/ml Sol Oral']['90'] = 16;
+medicamentos['Acido Folico 0.2mg/ml Sol Oral']['104'] = 16;
 
 medicamentos['Acido Folico 5mg Comp'] = [];
 medicamentos['Acido Folico 5mg Comp']['22'] = 1095;
@@ -69,7 +69,7 @@ medicamentos['Amitriptilina 25mg Comp'] = [];
 medicamentos['Amitriptilina 25mg Comp']['92'] = 170;
 medicamentos['Amitriptilina 25mg Comp']['93'] = 530;
 medicamentos['Amitriptilina 25mg Comp']['90'] = 645;
-medicamentos['Amitriptilina 25mg Comp']['104'] = 2298;
+medicamentos['Amitriptilina 25mg Comp']['104'] = 2208;
 
 medicamentos['Amitriptilina 75 Mg Comp'] = [];
 medicamentos['Amitriptilina 75 Mg Comp']['22'] = 180;
@@ -90,7 +90,7 @@ medicamentos['Amoxicilina 500mg Caps']['22'] = 7;
 medicamentos['Amoxicilina 500mg Caps']['92'] = 21;
 medicamentos['Amoxicilina 500mg Caps']['93'] = 259;
 medicamentos['Amoxicilina 500mg Caps']['90'] = 700;
-medicamentos['Amoxicilina 500mg Caps']['104'] = 527;
+medicamentos['Amoxicilina 500mg Caps']['104'] = 429;
 
 medicamentos['Azitromicina 200mg/5ml Po Para Susp Oral'] = [];
 medicamentos['Azitromicina 200mg/5ml Po Para Susp Oral']['92'] = 5;
@@ -146,7 +146,7 @@ medicamentos['Budesonida 32mcg Susp Aq Nasal']['22'] = 11;
 medicamentos['Budesonida 32mcg Susp Aq Nasal']['92'] = 4;
 medicamentos['Budesonida 32mcg Susp Aq Nasal']['93'] = 3;
 medicamentos['Budesonida 32mcg Susp Aq Nasal']['90'] = 20.3;
-medicamentos['Budesonida 32mcg Susp Aq Nasal']['104'] = 14;
+medicamentos['Budesonida 32mcg Susp Aq Nasal']['104'] = 12;
 
 medicamentos['Budesonida 50mcg Susp Aq Nasal'] = [];
 medicamentos['Budesonida 50mcg Susp Aq Nasal']['22'] = 7;
@@ -165,7 +165,7 @@ medicamentos['Carbamazepina 200mg Comp']['22'] = 840;
 medicamentos['Carbamazepina 200mg Comp']['92'] = 145;
 medicamentos['Carbamazepina 200mg Comp']['93'] = 760;
 medicamentos['Carbamazepina 200mg Comp']['90'] = 720;
-medicamentos['Carbamazepina 200mg Comp']['104'] = 1140;
+medicamentos['Carbamazepina 200mg Comp']['104'] = 1020;
 
 medicamentos['Carbamazepina 20mg/ml Susp Oral'] = [];
 medicamentos['Carbamazepina 20mg/ml Susp Oral']['22'] = 26;
@@ -201,7 +201,7 @@ medicamentos['Cefalexina 500mg Comp']['22'] = 2055;
 medicamentos['Cefalexina 500mg Comp']['92'] = 10;
 medicamentos['Cefalexina 500mg Comp']['93'] = 58;
 medicamentos['Cefalexina 500mg Comp']['90'] = 572;
-medicamentos['Cefalexina 500mg Comp']['104'] = 180;
+medicamentos['Cefalexina 500mg Comp']['104'] = 124;
 
 medicamentos['Cefalexina 50mg/ml Po Para Susp Oral'] = [];
 medicamentos['Cefalexina 50mg/ml Po Para Susp Oral']['22'] = 15;
@@ -237,7 +237,7 @@ medicamentos['Claritromicina 500mg Comp']['22'] = 420;
 medicamentos['Claritromicina 500mg Comp']['92'] = 100;
 medicamentos['Claritromicina 500mg Comp']['93'] = 40;
 medicamentos['Claritromicina 500mg Comp']['90'] = 62;
-medicamentos['Claritromicina 500mg Comp']['104'] = 70;
+medicamentos['Claritromicina 500mg Comp']['104'] = 42;
 
 medicamentos['Clindamicina 300mg Caps'] = [];
 medicamentos['Clindamicina 300mg Caps']['22'] = 214;
@@ -255,7 +255,7 @@ medicamentos['Clomipramina 25mg Comprimido']['90'] = 400;
 
 medicamentos['Clonazepam 2.5mg/ml Sol Oral'] = [];
 medicamentos['Clonazepam 2.5mg/ml Sol Oral']['22'] = 159;
-medicamentos['Clonazepam 2.5mg/ml Sol Oral']['93'] = 13;
+medicamentos['Clonazepam 2.5mg/ml Sol Oral']['93'] = 12;
 medicamentos['Clonazepam 2.5mg/ml Sol Oral']['90'] = 15;
 medicamentos['Clonazepam 2.5mg/ml Sol Oral']['104'] = 17;
 
@@ -266,23 +266,24 @@ medicamentos['Cloreto de Sodio 0.9% 100ml Sol. Inj.'] = [];
 medicamentos['Cloreto de Sodio 0.9% 100ml Sol. Inj.']['92'] = 16;
 medicamentos['Cloreto de Sodio 0.9% 100ml Sol. Inj.']['93'] = 5;
 medicamentos['Cloreto de Sodio 0.9% 100ml Sol. Inj.']['90'] = 17;
-medicamentos['Cloreto de Sodio 0.9% 100ml Sol. Inj.']['104'] = 22;
+medicamentos['Cloreto de Sodio 0.9% 100ml Sol. Inj.']['104'] = 21;
 
 medicamentos['Cloreto de Sodio 0.9% 250ml Sol. Inj.'] = [];
 medicamentos['Cloreto de Sodio 0.9% 250ml Sol. Inj.']['92'] = 26;
 medicamentos['Cloreto de Sodio 0.9% 250ml Sol. Inj.']['93'] = 13;
 medicamentos['Cloreto de Sodio 0.9% 250ml Sol. Inj.']['90'] = 8;
-medicamentos['Cloreto de Sodio 0.9% 250ml Sol. Inj.']['104'] = 17;
+medicamentos['Cloreto de Sodio 0.9% 250ml Sol. Inj.']['104'] = 16;
 
 medicamentos['Cloreto de Sodio 0.9% 500ml Sol. Inj.'] = [];
 medicamentos['Cloreto de Sodio 0.9% 500ml Sol. Inj.']['92'] = 1;
 medicamentos['Cloreto de Sodio 0.9% 500ml Sol. Inj.']['93'] = 2;
 medicamentos['Cloreto de Sodio 0.9% 500ml Sol. Inj.']['90'] = 9;
-medicamentos['Cloreto de Sodio 0.9% 500ml Sol. Inj.']['104'] = 20;
+medicamentos['Cloreto de Sodio 0.9% 500ml Sol. Inj.']['104'] = 19;
 
 medicamentos['Clorexidina 0.12% Sol Bucal'] = [];
 medicamentos['Clorexidina 0.12% Sol Bucal']['22'] = 12;
-medicamentos['Clorexidina 0.12% Sol Bucal']['93'] = 14;
+medicamentos['Clorexidina 0.12% Sol Bucal']['93'] = 13;
+medicamentos['Clorexidina 0.12% Sol Bucal']['90'] = 7;
 medicamentos['Clorexidina 0.12% Sol Bucal']['104'] = 17;
 
 medicamentos['Cloridrato de Propafenona 300mg'] = [];
@@ -348,7 +349,7 @@ medicamentos['Diazepam 10mg Comp']['22'] = 1530;
 medicamentos['Diazepam 10mg Comp']['92'] = 80;
 medicamentos['Diazepam 10mg Comp']['93'] = 410;
 medicamentos['Diazepam 10mg Comp']['90'] = 260;
-medicamentos['Diazepam 10mg Comp']['104'] = 1010;
+medicamentos['Diazepam 10mg Comp']['104'] = 950;
 
 medicamentos['Diazepam 5 Mg/ml SoluÇÃo InjetÁvel'] = [];
 medicamentos['Diazepam 5 Mg/ml SoluÇÃo InjetÁvel']['22'] = 100;
@@ -363,9 +364,9 @@ medicamentos['Digoxina 0.25mg Comp']['22'] = 1685;
 
 medicamentos['Dipirona 500mg Comp'] = [];
 medicamentos['Dipirona 500mg Comp']['92'] = 50;
-medicamentos['Dipirona 500mg Comp']['93'] = 770;
-medicamentos['Dipirona 500mg Comp']['90'] = 1270;
-medicamentos['Dipirona 500mg Comp']['104'] = 912;
+medicamentos['Dipirona 500mg Comp']['93'] = 760;
+medicamentos['Dipirona 500mg Comp']['90'] = 1260;
+medicamentos['Dipirona 500mg Comp']['104'] = 842;
 
 medicamentos['Dipirona 500mg/ml Sol Oral'] = [];
 medicamentos['Dipirona 500mg/ml Sol Oral']['93'] = 15;
@@ -429,8 +430,8 @@ medicamentos['Fluconazol 150 Mg Caps']['104'] = 28;
 medicamentos['Fluoxetina 20mg Caps'] = [];
 medicamentos['Fluoxetina 20mg Caps']['22'] = 2310;
 medicamentos['Fluoxetina 20mg Caps']['93'] = 372;
-medicamentos['Fluoxetina 20mg Caps']['90'] = 96;
-medicamentos['Fluoxetina 20mg Caps']['104'] = 1132;
+medicamentos['Fluoxetina 20mg Caps']['90'] = 936;
+medicamentos['Fluoxetina 20mg Caps']['104'] = 1012;
 
 medicamentos['Furosemida 10mg/ml Sol Inj'] = [];
 medicamentos['Furosemida 10mg/ml Sol Inj']['93'] = 2;
@@ -492,7 +493,7 @@ medicamentos['Hidroxido de Aluminio 61.5 Mg/ml Susp']['22'] = 8;
 medicamentos['Ibuprofeno 50mg/ml Susp Oral'] = [];
 medicamentos['Ibuprofeno 50mg/ml Susp Oral']['92'] = 6;
 medicamentos['Ibuprofeno 50mg/ml Susp Oral']['93'] = 9;
-medicamentos['Ibuprofeno 50mg/ml Susp Oral']['90'] = 16;
+medicamentos['Ibuprofeno 50mg/ml Susp Oral']['90'] = 15;
 medicamentos['Ibuprofeno 50mg/ml Susp Oral']['104'] = 14;
 
 medicamentos['Ibuprofeno 600mg Comp'] = [];
@@ -536,7 +537,7 @@ medicamentos['Levodopa + Benserazida 200mg + 50mg Comp']['104'] = 300;
 medicamentos['Levonorgestrel + Etinilestradiol 0.15mg + 0.03mg Dragea'] = [];
 medicamentos['Levonorgestrel + Etinilestradiol 0.15mg + 0.03mg Dragea']['22'] = 399;
 medicamentos['Levonorgestrel + Etinilestradiol 0.15mg + 0.03mg Dragea']['92'] = 441;
-medicamentos['Levonorgestrel + Etinilestradiol 0.15mg + 0.03mg Dragea']['93'] = 356;
+medicamentos['Levonorgestrel + Etinilestradiol 0.15mg + 0.03mg Dragea']['93'] = 314;
 medicamentos['Levonorgestrel + Etinilestradiol 0.15mg + 0.03mg Dragea']['90'] = 168;
 medicamentos['Levonorgestrel + Etinilestradiol 0.15mg + 0.03mg Dragea']['104'] = 336;
 
@@ -559,7 +560,7 @@ medicamentos['Levotiroxina 25mcg Comp']['104'] = 170;
 medicamentos['Levotiroxina 50 Mcg Comp'] = [];
 medicamentos['Levotiroxina 50 Mcg Comp']['92'] = 440;
 medicamentos['Levotiroxina 50 Mcg Comp']['93'] = 500;
-medicamentos['Levotiroxina 50 Mcg Comp']['90'] = 200;
+medicamentos['Levotiroxina 50 Mcg Comp']['90'] = 140;
 medicamentos['Levotiroxina 50 Mcg Comp']['104'] = 250;
 
 medicamentos['Loratadina 10mg Comp'] = [];
@@ -576,8 +577,8 @@ medicamentos['Loratadina 1mg/ml Xarope']['104'] = 5;
 medicamentos['Medroxiprogesterona 150mg/ml Susp Inj'] = [];
 medicamentos['Medroxiprogesterona 150mg/ml Susp Inj']['22'] = 25;
 medicamentos['Medroxiprogesterona 150mg/ml Susp Inj']['92'] = 7;
-medicamentos['Medroxiprogesterona 150mg/ml Susp Inj']['93'] = 9;
-medicamentos['Medroxiprogesterona 150mg/ml Susp Inj']['90'] = 21;
+medicamentos['Medroxiprogesterona 150mg/ml Susp Inj']['93'] = 8;
+medicamentos['Medroxiprogesterona 150mg/ml Susp Inj']['90'] = 18;
 medicamentos['Medroxiprogesterona 150mg/ml Susp Inj']['104'] = 13;
 
 medicamentos['Metildopa 250mg Comp'] = [];
@@ -591,7 +592,7 @@ medicamentos['Metoclopramida 10mg Comp']['22'] = 445;
 medicamentos['Metoclopramida 10mg Comp']['92'] = 100;
 medicamentos['Metoclopramida 10mg Comp']['93'] = 64;
 medicamentos['Metoclopramida 10mg Comp']['90'] = 416;
-medicamentos['Metoclopramida 10mg Comp']['104'] = 143;
+medicamentos['Metoclopramida 10mg Comp']['104'] = 117;
 
 medicamentos['Metoclopramida 4mg/ml Sol Oral'] = [];
 medicamentos['Metoclopramida 4mg/ml Sol Oral']['22'] = 13;
@@ -618,7 +619,7 @@ medicamentos['Metronidazol 250mg Comp'] = [];
 medicamentos['Metronidazol 250mg Comp']['22'] = 323;
 medicamentos['Metronidazol 250mg Comp']['92'] = 60;
 medicamentos['Metronidazol 250mg Comp']['93'] = 73;
-medicamentos['Metronidazol 250mg Comp']['90'] = 3;
+medicamentos['Metronidazol 250mg Comp']['90'] = 343;
 medicamentos['Metronidazol 250mg Comp']['104'] = 264;
 
 medicamentos['Metronidazol 400mg Comp'] = [];
@@ -651,14 +652,14 @@ medicamentos['Nitrofurantoina 100mg Caps'] = [];
 medicamentos['Nitrofurantoina 100mg Caps']['22'] = 1012;
 medicamentos['Nitrofurantoina 100mg Caps']['93'] = 348;
 medicamentos['Nitrofurantoina 100mg Caps']['90'] = 420;
-medicamentos['Nitrofurantoina 100mg Caps']['104'] = 224;
+medicamentos['Nitrofurantoina 100mg Caps']['104'] = 196;
 
 medicamentos['Noretisterona + Estradiol 50mg/ml + 5 Mg/ml Sol Inj'] = [];
 medicamentos['Noretisterona + Estradiol 50mg/ml + 5 Mg/ml Sol Inj']['22'] = 21;
 medicamentos['Noretisterona + Estradiol 50mg/ml + 5 Mg/ml Sol Inj']['92'] = 18;
 medicamentos['Noretisterona + Estradiol 50mg/ml + 5 Mg/ml Sol Inj']['93'] = 13;
-medicamentos['Noretisterona + Estradiol 50mg/ml + 5 Mg/ml Sol Inj']['90'] = 18;
-medicamentos['Noretisterona + Estradiol 50mg/ml + 5 Mg/ml Sol Inj']['104'] = 17;
+medicamentos['Noretisterona + Estradiol 50mg/ml + 5 Mg/ml Sol Inj']['90'] = 17;
+medicamentos['Noretisterona + Estradiol 50mg/ml + 5 Mg/ml Sol Inj']['104'] = 16;
 
 medicamentos['Noretisterona 0.35mg Comp'] = [];
 medicamentos['Noretisterona 0.35mg Comp']['22'] = 1575;
@@ -687,20 +688,20 @@ medicamentos['Nortriptilina 50mg Caps']['104'] = 300;
 medicamentos['Omeprazol 20mg Caps'] = [];
 medicamentos['Omeprazol 20mg Caps']['92'] = 621;
 medicamentos['Omeprazol 20mg Caps']['93'] = 280;
-medicamentos['Omeprazol 20mg Caps']['90'] = 182;
-medicamentos['Omeprazol 20mg Caps']['104'] = 804;
+medicamentos['Omeprazol 20mg Caps']['90'] = 126;
+medicamentos['Omeprazol 20mg Caps']['104'] = 732;
 
 medicamentos['Ondansetrona 4mg Comp'] = [];
 medicamentos['Ondansetrona 4mg Comp']['22'] = 620;
 medicamentos['Ondansetrona 4mg Comp']['92'] = 235;
 medicamentos['Ondansetrona 4mg Comp']['93'] = 65;
 medicamentos['Ondansetrona 4mg Comp']['90'] = 170;
-medicamentos['Ondansetrona 4mg Comp']['104'] = 196;
+medicamentos['Ondansetrona 4mg Comp']['104'] = 187;
 
 medicamentos['Ondansetrona 8mg Comp'] = [];
 medicamentos['Ondansetrona 8mg Comp']['93'] = 100;
 medicamentos['Ondansetrona 8mg Comp']['90'] = 125;
-medicamentos['Ondansetrona 8mg Comp']['104'] = 236;
+medicamentos['Ondansetrona 8mg Comp']['104'] = 226;
 
 medicamentos['Paracetamol 200mg/ml Sol Oral'] = [];
 medicamentos['Paracetamol 200mg/ml Sol Oral']['22'] = 111;
@@ -712,9 +713,9 @@ medicamentos['Paracetamol 200mg/ml Sol Oral']['104'] = 11;
 medicamentos['Paracetamol 500mg Comp'] = [];
 medicamentos['Paracetamol 500mg Comp']['22'] = 124;
 medicamentos['Paracetamol 500mg Comp']['92'] = 30;
-medicamentos['Paracetamol 500mg Comp']['93'] = 730;
+medicamentos['Paracetamol 500mg Comp']['93'] = 710;
 medicamentos['Paracetamol 500mg Comp']['90'] = 150;
-medicamentos['Paracetamol 500mg Comp']['104'] = 256;
+medicamentos['Paracetamol 500mg Comp']['104'] = 236;
 
 medicamentos['Paroxetina 15 Mg Comprimido Revestido'] = [];
 medicamentos['Paroxetina 15 Mg Comprimido Revestido']['22'] = 40;
@@ -722,13 +723,13 @@ medicamentos['Paroxetina 15 Mg Comprimido Revestido']['22'] = 40;
 medicamentos['Permetrina 10mg/ml Locao'] = [];
 medicamentos['Permetrina 10mg/ml Locao']['22'] = 35;
 medicamentos['Permetrina 10mg/ml Locao']['92'] = 7;
-medicamentos['Permetrina 10mg/ml Locao']['93'] = 3;
+medicamentos['Permetrina 10mg/ml Locao']['93'] = 1;
 medicamentos['Permetrina 10mg/ml Locao']['90'] = 15;
 
 medicamentos['Permetrina 50mg/ml Locao'] = [];
 medicamentos['Permetrina 50mg/ml Locao']['22'] = 23;
 medicamentos['Permetrina 50mg/ml Locao']['92'] = 3;
-medicamentos['Permetrina 50mg/ml Locao']['93'] = 3;
+medicamentos['Permetrina 50mg/ml Locao']['93'] = 1;
 medicamentos['Permetrina 50mg/ml Locao']['90'] = 16;
 medicamentos['Permetrina 50mg/ml Locao']['104'] = 5;
 
@@ -740,14 +741,14 @@ medicamentos['Prednisolona 3mg/ml Susp Oral'] = [];
 medicamentos['Prednisolona 3mg/ml Susp Oral']['22'] = 27;
 medicamentos['Prednisolona 3mg/ml Susp Oral']['92'] = 15;
 medicamentos['Prednisolona 3mg/ml Susp Oral']['93'] = 17;
-medicamentos['Prednisolona 3mg/ml Susp Oral']['90'] = 9;
+medicamentos['Prednisolona 3mg/ml Susp Oral']['90'] = 8;
 
 medicamentos['Prednisona 20mg Comp'] = [];
 medicamentos['Prednisona 20mg Comp']['22'] = 214;
 medicamentos['Prednisona 20mg Comp']['92'] = 40;
 medicamentos['Prednisona 20mg Comp']['93'] = 90;
-medicamentos['Prednisona 20mg Comp']['90'] = 60;
-medicamentos['Prednisona 20mg Comp']['104'] = 54;
+medicamentos['Prednisona 20mg Comp']['90'] = 55;
+medicamentos['Prednisona 20mg Comp']['104'] = 49;
 
 medicamentos['Prednisona 5mg Comp'] = [];
 medicamentos['Prednisona 5mg Comp']['22'] = 692;
@@ -774,11 +775,11 @@ medicamentos['Sais Para Reidratacao Oral'] = [];
 medicamentos['Sais Para Reidratacao Oral']['22'] = 51;
 medicamentos['Sais Para Reidratacao Oral']['93'] = 60;
 medicamentos['Sais Para Reidratacao Oral']['90'] = 20;
-medicamentos['Sais Para Reidratacao Oral']['104'] = 37;
+medicamentos['Sais Para Reidratacao Oral']['104'] = 32;
 
 medicamentos['Salbutamol 100mcg/dose Spray'] = [];
 medicamentos['Salbutamol 100mcg/dose Spray']['93'] = 9;
-medicamentos['Salbutamol 100mcg/dose Spray']['90'] = 13;
+medicamentos['Salbutamol 100mcg/dose Spray']['90'] = 22;
 medicamentos['Salbutamol 100mcg/dose Spray']['104'] = 10;
 
 medicamentos['Sulfadiazina de Prata 10mg/g Creme Derm'] = [];
@@ -804,8 +805,8 @@ medicamentos['Sulfato Ferroso 25mg/ml Xarope']['90'] = 8;
 medicamentos['Sulfato Ferroso 40mg Comp'] = [];
 medicamentos['Sulfato Ferroso 40mg Comp']['22'] = 2195;
 medicamentos['Sulfato Ferroso 40mg Comp']['93'] = 450;
-medicamentos['Sulfato Ferroso 40mg Comp']['90'] = 1305;
-medicamentos['Sulfato Ferroso 40mg Comp']['104'] = 1970;
+medicamentos['Sulfato Ferroso 40mg Comp']['90'] = 1255;
+medicamentos['Sulfato Ferroso 40mg Comp']['104'] = 1870;
 
 medicamentos['Tiamina 300mg Comp'] = [];
 medicamentos['Tiamina 300mg Comp']['22'] = 1320;
@@ -846,7 +847,7 @@ medicamentos['Zinco 4mg/ml Sol Oral']['90'] = 4;
 medicamentos['Zinco 4mg/ml Sol Oral']['104'] = 5;
 
 
-dataAtualizacao.innerHTML = `17/02/2025`
+dataAtualizacao.innerHTML = `18/02/2025`
 
 const unidades = [];
 unidades['Farmacia de Minas'] = 22;

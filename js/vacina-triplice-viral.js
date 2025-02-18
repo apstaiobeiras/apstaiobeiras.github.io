@@ -79,6 +79,9 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/120109">72686</a></td><td>Cissa Ravena Oliveira Matos</td><td><div style="white-space: nowrap;">1 ano e 11 mês </div></td><td><span name="HUMANIZAR" >HUMANIZAR</a></td><td><span name="802" >DARLENE MARIA PEREIRA</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
     </tr>
       <tr>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/128727">79431</a></td><td>Davy Roberto Davanço</td><td><div style="white-space: nowrap;">1 ano e 1 mês </div></td><td><span name="CAMINHO" >CAMINHO</a></td><td><span name="374" >GREICIELE DO CARMO DE JESUS</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
+    </tr>
+      <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/94433">69751</a></td><td>Cristal Salles de Souza</td><td><div style="white-space: nowrap;">1 ano e 6 mês </div></td><td><span name="ESPERANÇA" >ESPERANÇA</a></td><td><span name="654" >LAURY MADALENA DA ROCHA</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
     </tr>
       <tr>
