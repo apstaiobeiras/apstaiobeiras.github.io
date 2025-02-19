@@ -58,7 +58,7 @@
 
     <div class="no-print" style="display: flex;justify-content: space-between; padding: 0;">
       <div></div>
-      <div style="max-width: 1012px">
+      <div style="max-width: 1012px"  id="informativo">
         <h1>Informativo</h1>
         <p>Nesse relatório estão listados os atendimentos realizados por dia, a aba consolidado segue as regras:</p>
         <table class="table">
@@ -199,6 +199,14 @@
         }
     </script>
     <script>
+
+function sortObjectKeys(obj) {
+    return Object.keys(obj).sort().reduce((result, key) => {
+        result[key] = obj[key];
+        return result;
+    }, {});
+}
+
 let codProfissional = 0;
 async function listarAtendimentos () {
   if (localStorage.getItem("override:codProfissional")) {
@@ -233,6 +241,121 @@ async function listarAtendimentos () {
   document.getElementById('diario').style = '';
   document.getElementById('consolidados').style = 'display: none;';
   checkboxConsolidado.checked = false;
+
+  if (ACE[codProfissional]) {
+    informativo.innerHTML = `
+      <h1>Informativo</h1>
+      <p>Nesse relatório estão listados as vistorias realizadas por dias:</p>
+    `;
+    let legenda = `
+    <table>
+      <tr style="background-color: transparent !important;">
+        <td class="border" style="white-space: nowrap;">Legenda da visão diária</td>
+        <td class="border">
+          <table>
+    `;
+    for (const [significado, cor] of Object.entries(sortObjectKeys(aceCores))) {
+      legenda += `
+            <tr class="border">
+              <td style="background-color:${cor} !important;"> </td>
+              <td>${significado}</td>
+            </tr>
+      `;
+    }
+    legenda += `
+          </table>
+        </td>
+      </tr>
+    </table>
+    <br><br>
+    `;
+    informativo.innerHTML += legenda;
+    tabelas.innerHTML =  `<tr>
+      <td><b>Mês</b</td>
+      <td><b>1</b</td>
+      <td><b>2</b</td>
+      <td><b>3</b</td>
+      <td><b>4</b</td>
+      <td><b>5</b</td>
+      <td><b>6</b</td>
+      <td><b>7</b</td>
+      <td><b>8</b</td>
+      <td><b>9</b</td>
+      <td><b>10</b</td>
+      <td><b>11</b</td>
+      <td><b>12</b</td>
+      <td><b>13</b</td>
+      <td><b>14</b</td>
+      <td><b>15</b</td>
+      <td><b>16</b</td>
+      <td><b>17</b</td>
+      <td><b>18</b</td>
+      <td><b>19</b</td>
+      <td><b>20</b</td>
+      <td><b>21</b</td>
+      <td><b>22</b</td>
+      <td><b>23</b</td>
+      <td><b>24</b</td>
+      <td><b>25</b</td>
+      <td><b>26</b</td>
+      <td><b>27</b</td>
+      <td><b>28</b</td>
+      <td><b>29</b</td>
+      <td><b>30</b</td>
+      <td><b>31</b</td>
+      <td><b>Total</b</td>
+      <td><b>Média</b</td>
+    </tr>\n`;
+    let totalAnual = 0;
+    let diasUteisAnual = 0;
+    for (const [numeroMes,nomeMes] of Object.entries(meses)) {
+      let vistorias = `<tr>\n  <td><b>${nomeMes}</b></td>\n`;
+      let total = 0;
+      let diasUteis = 0;
+      for (let vistoria of profissionalProducaoDiaria[2024][numeroMes][codProfissional]) {
+        if (vistoria == 0) {
+          vistorias += `  <td style="background-color:#F3CDCC;">${vistoria}</td>\n`;
+          diasUteis += 1;
+          continue;
+        }
+        if (vistoria == Math.abs(Math.floor(vistoria))) {
+          vistorias += `  <td style="background-color:#B8E1CE;">${vistoria}</td>\n`;
+          total += vistoria;
+          diasUteis += 1;
+          continue;
+        }
+        if (vistoria == "---") {
+          vistorias += `  <td style="background-color:#F6F8FA;">${vistoria}</td>\n`;
+          continue;
+        }
+        if (vistoria == Math.floor(vistoria)) {
+          console.log(aceCoresCodigo[vistoria*-1]);
+          vistorias += `  <td style="background-color:${aceCores[aceCoresCodigo[vistoria*-1]]};"></td>\n`;
+          continue;
+        }
+        let vistoriaHibrida = vistoria.toString().split(".")
+        console.log(vistoriaHibrida)
+        vistorias += `  <td style="background-color:${aceCores[aceCoresCodigo[vistoriaHibrida[0]*-1]]};">${vistoriaHibrida[1]}</td>\n`;
+        total += parseInt(vistoriaHibrida[1]);
+        diasUteis += 1;
+      }
+      vistorias += `  <td>${total}</td>\n`;
+      vistorias += `  <td>${Math.ceil(total/diasUteis)}</td>\n`;
+      vistorias += `</tr>`;
+
+      totalAnual += total;
+      diasUteisAnual += diasUteis;
+      tabelas.innerHTML += vistorias;
+    }
+    tabelas.innerHTML += `<tr>
+      <td><b>Total Anual</b></td>
+      <td colspan=31 style="background-color:#F6F8FA;"></td>
+      <td><b>${totalAnual}</b></td>
+      <td><b>${Math.ceil(totalAnual/diasUteisAnual)}</b></td>  
+    </tr>`;
+
+    return;
+  }
 
   for (let mes in meses) {
     if (!mes) continue;
