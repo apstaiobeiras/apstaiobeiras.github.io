@@ -205,6 +205,30 @@
               td.children[0].value = event.target.value;
             "  style="width: 70%;" id="auxiliar_saude_bucal_2"><option value="">-</option></select></td>
         </tr>
+        <tr>
+          <td>Agente de Combate a Endemias 1:</td>
+          <td>
+            <input type="number" class="fixed-width" style="max-width:25%" onchange="
+              let td = event.target.closest('td');
+              td.children[1].value = event.target.value;
+            ">
+            <select class="fixed-width" onchange="
+              let td = event.target.closest('td');
+              td.children[0].value = event.target.value;
+            "  style="width: 70%;" id="ace_1"><option value="">-</option></select></td>
+        </tr>
+        <tr>
+          <td>Agente de Combate a Endemias2:</td>
+          <td>
+            <input type="number" class="fixed-width" style="max-width:25%" onchange="
+              let td = event.target.closest('td');
+              td.children[1].value = event.target.value;
+            ">
+            <select class="fixed-width" onchange="
+              let td = event.target.closest('td');
+              td.children[0].value = event.target.value;
+            "  style="width: 70%;" id="ace_2"><option value="">-</option></select></td>
+        </tr>
         <tr><td>&nbsp;</td></tr>
       </table>
       <p align="right">
@@ -332,6 +356,14 @@
       `;
 
       async function editar(data) {
+        for (let elemento of elemento.querySelectorAll("input")) {
+          elemento.value = "";
+        }
+
+        for (let elemento of elemento.querySelectorAll("select")) {
+          elemento.value = "-";
+        }
+
         for (let profissional of data.replaceAll(" ","").split(",")) {
           let tipo = profissional.split(":")[0];
           let codigo = profissional.split(":")[1];
@@ -341,6 +373,7 @@
           document.getElementById(tipo).value = codigo;
           document.getElementById(tipo).dispatchEvent(new Event("change"));
         }
+
 
         document.getElementById('nome_equipe_vivver').disabled = true;
 
