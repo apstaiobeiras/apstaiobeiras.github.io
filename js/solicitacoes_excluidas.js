@@ -2355,6 +2355,7 @@ const SolicitacoesExcluidas = [
   [870994,1220,15321,13,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Houve alguma intervenção clínica ou investigação com exames para diagnóstico diferencial? ",20250218,"CONSULTA OTORRINOLARINGOLOGIA"],
   [871013,1221,47011,4,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Detalhamento insuficiente.Qual a Condição clínica do paciente: se a dor aguda ou crônica, se há limitação de ADM, se há perda de força muscular;Apresenta lombalgia com dor leve, moderada ou grave? Apresenta mobilidade reduzida e/ou radiculopatia?",20250218,"ATENDIMENTO FISIOTERAPIA"],
   [871384,1221,50340,4,"<b>Não Se Enquadra nos Criterios: </b><br>Não é público deste serviço.",20250218,"ATENDIMENTO FISIOTERAPIA"],
+  [871675,1115,35258,34,"<b>Solicitação Indevida: </b><br>.",20250219,"CONSULTA ESTOMATOLOGIA"],
 ];
 
 const Unidades = [
