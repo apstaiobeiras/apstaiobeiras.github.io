@@ -218,7 +218,7 @@
             "  style="width: 70%;" id="ace_1"><option value="">-</option></select></td>
         </tr>
         <tr>
-          <td>Agente de Combate a Endemias2:</td>
+          <td>Agente de Combate a Endemias 2:</td>
           <td>
             <input type="number" class="fixed-width" style="max-width:25%" onchange="
               let td = event.target.closest('td');
@@ -356,11 +356,11 @@
       `;
 
       async function editar(data) {
-        for (let elemento of elemento.querySelectorAll("input")) {
+        for (let elemento of equipe.querySelectorAll("input")) {
           elemento.value = "";
         }
 
-        for (let elemento of elemento.querySelectorAll("select")) {
+        for (let elemento of equipe.querySelectorAll("select")) {
           elemento.value = "-";
         }
 
