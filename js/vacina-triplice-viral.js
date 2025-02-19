@@ -61,6 +61,9 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/126016">77010</a></td><td>Gabriel Leal Bacelar de Aguiar</td><td><div style="white-space: nowrap;">1 ano e 10 mês </div></td><td><span name="ESPERANÇA" >ESPERANÇA</a></td><td><span name="968" >AMANDA MARIA SOARES SANTOS</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
     </tr>
       <tr>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/64384">63232</a></td><td>Miguel Gonçalves Santos</td><td><div style="white-space: nowrap;">1 ano e 7 mês </div></td><td><span name="VIDA" >VIDA</a></td><td><span name="170" >GISLENE FERREIRA BARBOSA</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
+    </tr>
+      <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/128521">79271</a></td><td>Maria Heloisa Pereira Dos Santos</td><td><div style="white-space: nowrap;">1 ano e 7 mês </div></td><td><span name="HUMANIZAR" >HUMANIZAR</a></td><td><span name="317" >NORMA TRANCOSO VIANA</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
     </tr>
       <tr>
