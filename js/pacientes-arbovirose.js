@@ -742,7 +742,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/32857">32859</a></td><td>Ana Cecilia Rodrigues Souza</td><td><span name="14/03/2024" class="data">14/03/2024</a></td><td>LAGOA DOURADA, 49</td><td><span name="DARLENE MARIA PEREIRA" class="">DARLENE MARIA PEREIRA</a></td><td><span name="UAPS LAGOA GRANDE/ DOURADA" class="">UAPS LAGOA GRANDE/ DOURADA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/24379">24381</a></td><td>Leliana Maria de Jesus</td><td><span name="14/03/2024" class="data">14/03/2024</a></td><td>BENFICA, 874</td><td><span name="ILCA ANTUNIS DA SILVA" class="">ILCA ANTUNIS DA SILVA</a></td><td><span name="UAPS JOAO DE DEUS SIMOES" class="">UAPS JOAO DE DEUS SIMOES</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/24379">24381</a></td><td>Leliana Maria de Jesus</td><td><span name="14/03/2024" class="data">14/03/2024</a></td><td>-</td><td><span name="-" class="">-</a></td><td><span name="-" class="">-</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/1664">1666</a></td><td>Evelin Cristine Costa de Jesus</td><td><span name="19/03/2024" class="data">19/03/2024</a></td><td>SANTOS DUMONT, 187</td><td><span name="JOSELANE MENDES TEIXEIRA" class="">JOSELANE MENDES TEIXEIRA</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
