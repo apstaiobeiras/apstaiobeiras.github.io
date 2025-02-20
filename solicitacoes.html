@@ -62,27 +62,6 @@
     </body>
     <script src="js/solicitacoes_excluidas.js"></script>
     <script src="assets/js/logout.js"></script>
-    <script>
-        data_final.max = (new Date).getFullYear()+"-12-31";
-            
-        let codProfissional = 0;
-
-        if (localStorage.getItem('override:codProfissional')) {
-            for (let profissional of Profissionais) {
-                if (profissional[0] == localStorage.getItem('override:codProfissional')) {
-                    document.getElementById("nome").innerText = profissional[1];
-                    codProfissional = profissional[0];
-                    break;
-                }
-            }
-        } else {
-            (async function (){
-                const {data,error} = await window.supabase.from('dadosprofissionais').select("*").eq('cpf', localStorage.getItem("profissional"));
-                document.getElementById("nome").innerText = data[0].nome;
-                codProfissional = data[0].codprofissional;
-            })();
-        }
-    </script>
       <script>
 
         filtra = () => {
@@ -151,8 +130,25 @@
             let nome = profissional.split(":")[0];
             seletorProfissionais += `<option value="${cod}">${nome}</option>\n`
         }
-        document.getElementById("lista-profissional").innerHTML = seletorProfissionais;
-        document.getElementById("lista-profissional").value = codProfissional;
 
-        filtra();
+        data_final.max = (new Date).getFullYear()+"-12-31";
+
+        (async () => {
+            let codProfissional = 0;
+            if (localStorage.getItem('override:codProfissional')) {
+                const {data,error} = await supabase.from('dadosprofissionais').select("*").eq('codprofissional', localStorage.getItem("override:codProfissional"));
+                document.getElementById("nome").innerText = data[0].nome;
+                codProfissional = data[0].codprofissional;
+            } else {
+                const {data,error} = await window.supabase.from('dadosprofissionais').select("*").eq('cpf', localStorage.getItem("profissional"));
+                document.getElementById("nome").innerText = data[0].nome;
+                codProfissional = data[0].codprofissional;
+            }
+
+            document.getElementById("lista-profissional").innerHTML = seletorProfissionais;
+            document.getElementById("lista-profissional").value = codProfissional;
+
+            filtra();
+        })();
+
     </script></html>
