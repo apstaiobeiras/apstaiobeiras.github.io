@@ -117,6 +117,10 @@
           ["Completude do questionário e-sus","Lista os cadastros indicando o nível de completude do qustionário e-SUS","questionario_e-sus"],
         ],
 
+        "Bases de dados": [
+          ["Listagem de Pacientes","Obtenha uma listagem nominal de pacientes, filtrados por ACS, ESF e Idade","relatorio-51"],
+        ],
+
         "Solicitações": [
           ["Agendadas","Solicitações agendadas ativas","agendados"],
           ["Devolvidas","Soluções com problemas que precisam ser analisados","solicitacoes"],
@@ -162,11 +166,11 @@
             document.getElementById("nome").innerText = profissional[0].nome;
             codProfissional = profissional[0].codprofissional;
             nomeProfissional = profissional[0].nome;
-            document.getElementById("cod").innerText = codProfissional;
+            document.getElementById("cod").innerText = `🪪 ${codProfissional.replace("-","").replace("@","").replace("+","")}`;
             document.getElementById("nome").innerText = nomeProfissional;
           } else {
             const {data,error} = await window.supabase.from('dadosprofissionais').select("*").eq('cpf', localStorage.getItem("profissional"));
-            document.getElementById("cod").innerText = data[0].codprofissional.replace("-","").replace("@","");
+            document.getElementById("cod").innerText = data[0].codprofissional.replace("-","").replace("@","").replace("+","");
             document.getElementById("nome").innerText = data[0].nome;
             codProfissional = data[0].codprofissional;
           }
