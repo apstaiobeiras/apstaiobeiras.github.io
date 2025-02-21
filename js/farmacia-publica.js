@@ -88,7 +88,7 @@ medicamentos['Amoxicilina 250mg/5ml Po Para Susp Oral']['104'] = 23;
 medicamentos['Amoxicilina 500mg Caps'] = [];
 medicamentos['Amoxicilina 500mg Caps']['22'] = 7;
 medicamentos['Amoxicilina 500mg Caps']['92'] = 21;
-medicamentos['Amoxicilina 500mg Caps']['93'] = 227;
+medicamentos['Amoxicilina 500mg Caps']['93'] = 206;
 medicamentos['Amoxicilina 500mg Caps']['90'] = 679;
 medicamentos['Amoxicilina 500mg Caps']['104'] = 429;
 
@@ -97,7 +97,7 @@ medicamentos['Azitromicina 500mg Comp']['22'] = 179;
 medicamentos['Azitromicina 500mg Comp']['92'] = 150;
 medicamentos['Azitromicina 500mg Comp']['93'] = 15;
 medicamentos['Azitromicina 500mg Comp']['90'] = 45;
-medicamentos['Azitromicina 500mg Comp']['104'] = 7;
+medicamentos['Azitromicina 500mg Comp']['104'] = 2;
 
 medicamentos['Beclometasona 200mcg Spray'] = [];
 medicamentos['Beclometasona 200mcg Spray']['22'] = 22;
@@ -267,7 +267,7 @@ medicamentos['Cloreto de Sodio 0.9% 250ml Sol. Inj.'] = [];
 medicamentos['Cloreto de Sodio 0.9% 250ml Sol. Inj.']['92'] = 26;
 medicamentos['Cloreto de Sodio 0.9% 250ml Sol. Inj.']['93'] = 13;
 medicamentos['Cloreto de Sodio 0.9% 250ml Sol. Inj.']['90'] = 7;
-medicamentos['Cloreto de Sodio 0.9% 250ml Sol. Inj.']['104'] = 16;
+medicamentos['Cloreto de Sodio 0.9% 250ml Sol. Inj.']['104'] = 15;
 
 medicamentos['Cloreto de Sodio 0.9% 500ml Sol. Inj.'] = [];
 medicamentos['Cloreto de Sodio 0.9% 500ml Sol. Inj.']['92'] = 1;
@@ -359,7 +359,7 @@ medicamentos['Digoxina 0.25mg Comp']['22'] = 1685;
 medicamentos['Dipirona 500mg Comp'] = [];
 medicamentos['Dipirona 500mg Comp']['93'] = 740;
 medicamentos['Dipirona 500mg Comp']['90'] = 1170;
-medicamentos['Dipirona 500mg Comp']['104'] = 772;
+medicamentos['Dipirona 500mg Comp']['104'] = 756;
 
 medicamentos['Dipirona 500mg/ml Sol Oral'] = [];
 medicamentos['Dipirona 500mg/ml Sol Oral']['93'] = 15;
@@ -398,7 +398,7 @@ medicamentos['Fenitoina 100mg Comp']['104'] = 340;
 
 medicamentos['Fenobarbital 100mg Comp'] = [];
 medicamentos['Fenobarbital 100mg Comp']['92'] = 540;
-medicamentos['Fenobarbital 100mg Comp']['93'] = 680;
+medicamentos['Fenobarbital 100mg Comp']['93'] = 620;
 medicamentos['Fenobarbital 100mg Comp']['90'] = 360;
 medicamentos['Fenobarbital 100mg Comp']['104'] = 30;
 
@@ -439,7 +439,7 @@ medicamentos['Gliclazida 60mg Comp']['22'] = 1290;
 medicamentos['Gliclazida 60mg Comp']['92'] = 630;
 medicamentos['Gliclazida 60mg Comp']['93'] = 360;
 medicamentos['Gliclazida 60mg Comp']['90'] = 180;
-medicamentos['Gliclazida 60mg Comp']['104'] = 315;
+medicamentos['Gliclazida 60mg Comp']['104'] = 195;
 
 medicamentos['Guaco 35mg/ml Xarope'] = [];
 medicamentos['Guaco 35mg/ml Xarope']['22'] = 12;
@@ -544,13 +544,13 @@ medicamentos['Levotiroxina 100mcg Comp']['104'] = 300;
 
 medicamentos['Levotiroxina 25mcg Comp'] = [];
 medicamentos['Levotiroxina 25mcg Comp']['92'] = 50;
-medicamentos['Levotiroxina 25mcg Comp']['93'] = 605;
+medicamentos['Levotiroxina 25mcg Comp']['93'] = 555;
 medicamentos['Levotiroxina 25mcg Comp']['90'] = 250;
 medicamentos['Levotiroxina 25mcg Comp']['104'] = 170;
 
 medicamentos['Levotiroxina 50 Mcg Comp'] = [];
 medicamentos['Levotiroxina 50 Mcg Comp']['92'] = 150;
-medicamentos['Levotiroxina 50 Mcg Comp']['93'] = 500;
+medicamentos['Levotiroxina 50 Mcg Comp']['93'] = 400;
 medicamentos['Levotiroxina 50 Mcg Comp']['90'] = 90;
 medicamentos['Levotiroxina 50 Mcg Comp']['104'] = 250;
 
@@ -561,13 +561,13 @@ medicamentos['Loratadina 10mg Comp']['93'] = 55;
 medicamentos['Loratadina 1mg/ml Xarope'] = [];
 medicamentos['Loratadina 1mg/ml Xarope']['22'] = 13;
 medicamentos['Loratadina 1mg/ml Xarope']['93'] = 3;
-medicamentos['Loratadina 1mg/ml Xarope']['90'] = 5;
+medicamentos['Loratadina 1mg/ml Xarope']['90'] = 4;
 medicamentos['Loratadina 1mg/ml Xarope']['104'] = 3;
 
 medicamentos['Medroxiprogesterona 150mg/ml Susp Inj'] = [];
 medicamentos['Medroxiprogesterona 150mg/ml Susp Inj']['22'] = 25;
 medicamentos['Medroxiprogesterona 150mg/ml Susp Inj']['92'] = 7;
-medicamentos['Medroxiprogesterona 150mg/ml Susp Inj']['93'] = 7;
+medicamentos['Medroxiprogesterona 150mg/ml Susp Inj']['93'] = 5;
 medicamentos['Medroxiprogesterona 150mg/ml Susp Inj']['90'] = 18;
 medicamentos['Medroxiprogesterona 150mg/ml Susp Inj']['104'] = 13;
 
@@ -639,15 +639,15 @@ medicamentos['Nistatina 100.000ui/ml Susp Oral']['90'] = 4;
 medicamentos['Nitrofurantoina 100mg Caps'] = [];
 medicamentos['Nitrofurantoina 100mg Caps']['22'] = 1012;
 medicamentos['Nitrofurantoina 100mg Caps']['93'] = 348;
-medicamentos['Nitrofurantoina 100mg Caps']['90'] = 364;
+medicamentos['Nitrofurantoina 100mg Caps']['90'] = 336;
 medicamentos['Nitrofurantoina 100mg Caps']['104'] = 196;
 
 medicamentos['Noretisterona + Estradiol 50mg/ml + 5 Mg/ml Sol Inj'] = [];
 medicamentos['Noretisterona + Estradiol 50mg/ml + 5 Mg/ml Sol Inj']['22'] = 21;
 medicamentos['Noretisterona + Estradiol 50mg/ml + 5 Mg/ml Sol Inj']['92'] = 2;
-medicamentos['Noretisterona + Estradiol 50mg/ml + 5 Mg/ml Sol Inj']['93'] = 13;
+medicamentos['Noretisterona + Estradiol 50mg/ml + 5 Mg/ml Sol Inj']['93'] = 11;
 medicamentos['Noretisterona + Estradiol 50mg/ml + 5 Mg/ml Sol Inj']['90'] = 15;
-medicamentos['Noretisterona + Estradiol 50mg/ml + 5 Mg/ml Sol Inj']['104'] = 16;
+medicamentos['Noretisterona + Estradiol 50mg/ml + 5 Mg/ml Sol Inj']['104'] = 15;
 
 medicamentos['Noretisterona 0.35mg Comp'] = [];
 medicamentos['Noretisterona 0.35mg Comp']['22'] = 1575;
@@ -675,9 +675,9 @@ medicamentos['Nortriptilina 50mg Caps']['104'] = 240;
 
 medicamentos['Omeprazol 20mg Caps'] = [];
 medicamentos['Omeprazol 20mg Caps']['92'] = 70;
-medicamentos['Omeprazol 20mg Caps']['93'] = 280;
+medicamentos['Omeprazol 20mg Caps']['93'] = 224;
 medicamentos['Omeprazol 20mg Caps']['90'] = 96;
-medicamentos['Omeprazol 20mg Caps']['104'] = 672;
+medicamentos['Omeprazol 20mg Caps']['104'] = 728;
 
 medicamentos['Ondansetrona 4mg Comp'] = [];
 medicamentos['Ondansetrona 4mg Comp']['22'] = 620;
@@ -834,7 +834,7 @@ medicamentos['Zinco 4mg/ml Sol Oral']['90'] = 4;
 medicamentos['Zinco 4mg/ml Sol Oral']['104'] = 5;
 
 
-dataAtualizacao.innerHTML = `20/02/2025`
+dataAtualizacao.innerHTML = `21/02/2025`
 
 const unidades = [];
 unidades['Farmacia de Minas'] = 22;
