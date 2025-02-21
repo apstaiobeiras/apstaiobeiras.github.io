@@ -216,6 +216,15 @@
     <br><br>
     <table>
       <tbody>
+        <tr class="border tr" onclick="todos">
+          <td style="text-align:right; border:0 !important;">
+            <b>&emsp;&emsp;#</b>
+          </td>
+          <td>
+            <b>Todos os relatórios</b><br>
+            Abre todos os relatórios de uma vez em ordem, note que na primeira vez será necessário dar autorização para abrir "popups"
+          </td>
+        </tr>
         <tr class="border tr" onclick="preNatal">
           <td style="text-align:right; border:0 !important;">
             <b>&emsp;&emsp;1</b>
@@ -501,6 +510,16 @@
           `https://www.taiobeiras-mg.vivver.com/esu/indicadores/diabeticos_com_solicitacao_exame/pesquisar.html${_ano}${_periodo}${_acs}${_esf}${_uaps}&busca_ativa=S`,
           '_blank')
         .focus();
+      }
+
+      function todos(cod) {
+        preNatal(cod);
+        examesGestantes(cod);
+        preNatalOdonto(cod);
+        citopatologico(cod);
+        vacinas(cod);
+        hipertensos(cod);
+        diabeticos(cod);
       }
 
       ano.innerHTML  = `<option value="${new Date().getFullYear() -1}">${new Date().getFullYear() -1}</option>`
