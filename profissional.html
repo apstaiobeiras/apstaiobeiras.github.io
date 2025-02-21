@@ -279,6 +279,19 @@
               return;
             }
 
+            // Psicologos
+            if (profissionais.includes(`psicologo:${codProfissional},`)) {
+              for (let grupo of ["Farmácia","Tabelas-mapa","Profissionais de nível superior","Ferramentas de gestão"]) {
+                for (let linha of [...document.getElementsByName(grupo)]) {
+                  linha.remove();
+                }
+                for (let grupo of ["Produção","Situação descritiva dos cadastros","Completude do questionário e-sus","Lista de prontuários","Agendadas"]) {
+                  document.getElementById(grupo)?.remove();
+                }
+              }
+              return;
+            }
+
             // Médicos
             if (profissionais.includes(`medico_saude_na_hora:${codProfissional}`) || profissionais.includes(`medico:${codProfissional}`)) {
               for (let grupo of ["Farmácia","Tabelas-mapa","Profissionais de nível médio","Profissionais de nível superior","Ferramentas de gestão"]) {
