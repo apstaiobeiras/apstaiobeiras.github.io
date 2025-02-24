@@ -3,8 +3,7 @@ const urlsToCache = [
   '/',
   '/farmacia.html',
   '/assets/css/style.css',
-  'icon-192x192.png',
-  'icon-512x512.png'
+  '/assets/img/farmacia-monitoramento-consolidado.png'
 ];
 
 self.addEventListener('install', (event) => {
