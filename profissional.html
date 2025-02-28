@@ -200,7 +200,7 @@
               }
 
               document.getElementById("lista-sessoes").innerHTML+=`
-                <tr class="border tr" onclick="openPage('${pagina}.html?${query}');" name="${titulo}" id="${item[0]}">
+                <tr class="border tr profissional" onclick="openPage('${pagina}.html?${query}');" name="${titulo}" id="${item[0]}">
                   <td>
                     <img src="assets/img/${item[2].split("?")[0]}.png" width="96" />
                   </td>
@@ -273,12 +273,20 @@
 
             // Enfermeiros
             if (profissionais.includes(`enfermeiro_saude_na_hora:${codProfissional}`) || profissionais.includes(`enfermeiro:${codProfissional}`)) {
-              for (let grupo of ["Farmácia","Tabelas-mapa","Profissionais de nível superior","Ferramentas de gestão"]) {
+              for (let grupo of ["Farmácia","Tabelas-mapa","Ferramentas de gestão"]) {
                 for (let linha of [...document.getElementsByName(grupo)]) {
                   linha.remove();
                 }
                 for (let grupo of ["Produção","Situação descritiva dos cadastros","Completude do questionário e-sus","Lista de prontuários","Agendadas"]) {
                   document.getElementById(grupo)?.remove();
+                }
+
+                for (let grupo of document.getElementsByName("Profissionais de nível superior")) {
+                  if (grupo.tagName != "TR") continue;
+                  if (!grupo.classList.contains("profissional")) continue;
+                  if (grupo.id == "Médico") continue;
+
+                  grupo.style.display = "none";
                 }
               }
               return;
@@ -286,12 +294,20 @@
 
             // Psicologos
             if (profissionais.includes(`psicologo:${codProfissional}`)) {
-              for (let grupo of ["Farmácia","Tabelas-mapa","Profissionais de nível superior","Ferramentas de gestão"]) {
+              for (let grupo of ["Farmácia","Tabelas-mapa","Ferramentas de gestão"]) {
                 for (let linha of [...document.getElementsByName(grupo)]) {
                   linha.remove();
                 }
                 for (let grupo of ["Produção","Situação descritiva dos cadastros","Completude do questionário e-sus","Lista de prontuários","Agendadas"]) {
                   document.getElementById(grupo)?.remove();
+                }
+
+                for (let grupo of document.getElementsByName("Profissionais de nível superior")) {
+                  if (grupo.tagName != "TR") continue;
+                  if (!grupo.classList.contains("profissional")) continue;
+                  if (grupo.id == "Médico") continue;
+
+                  grupo.style.display = "none";
                 }
               }
               return;
@@ -312,24 +328,40 @@
             
             // Farmacêuticos
             if (profissionais.includes(`farmaceutico:${codProfissional}`)) {
-              for (let grupo of ["Tabelas-mapa","Profissionais de nível superior","Ferramentas de gestão"]) {
+              for (let grupo of ["Tabelas-mapa","Ferramentas de gestão"]) {
                 for (let linha of [...document.getElementsByName(grupo)]) {
                   linha.remove();
                 }
                 for (let grupo of ["Produção","Situação descritiva dos cadastros","Completude do questionário e-sus","Lista de prontuários","Agendadas"]) {
                   document.getElementById(grupo)?.remove();
+                }
+
+                for (let grupo of document.getElementsByName("Profissionais de nível superior")) {
+                  if (grupo.tagName != "TR") continue;
+                  if (!grupo.classList.contains("profissional")) continue;
+                  if (grupo.id == "Médico") continue;
+
+                  grupo.style.display = "none";
                 }
               }
               return;
             }
 
+            // Odontólogos
             if (profissionais.includes(`cirurgiao_dentista:${codProfissional}`)) {
-              for (let grupo of ["Farmácia","Tabelas-mapa","Profissionais de nível superior","Ferramentas de gestão","Solicitações","Listas e planilhas"]) {
+              for (let grupo of ["Farmácia","Tabelas-mapa","Ferramentas de gestão","Solicitações","Listas e planilhas"]) {
                 for (let linha of [...document.getElementsByName(grupo)]) {
                   linha.remove();
                 }
                 for (let grupo of ["Produção","Situação descritiva dos cadastros","Completude do questionário e-sus","Lista de prontuários","Agendadas"]) {
                   document.getElementById(grupo)?.remove();
+                }
+                for (let grupo of document.getElementsByName("Profissionais de nível superior")) {
+                  if (grupo.tagName != "TR") continue;
+                  if (!grupo.classList.contains("profissional")) continue;
+                  if (grupo.id == "Médico") continue;
+
+                  grupo.style.display = "none";
                 }
               }
               return;
