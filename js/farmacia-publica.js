@@ -840,7 +840,7 @@ medicamentos['Zinco 4mg/ml Sol Oral']['90'] = 8;
 medicamentos['Zinco 4mg/ml Sol Oral']['104'] = 5;
 
 
-dataAtualizacao.innerHTML = `03/03/2025`
+dataAtualizacao.innerHTML = `04/03/2025`
 
 const unidades = [];
 unidades['Farmacia de Minas'] = 22;
