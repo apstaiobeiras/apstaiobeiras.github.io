@@ -102,7 +102,7 @@
 
         "Tabelas-mapa": [
           ["Famílias visitadas","Mapa que mostra as famílias que receberam visitas dos ACS ao longo do ano","grafico-de-mapa?script=monitoramento-acs"],
-          ["Situação dos pacientes e-SUS","Mapa que mostra o acompanhamento dos pacientes com condicionalidades dos indicadores e-SUS","grafico-de-mapa?acompanhamento-esus"],
+          //["Situação dos pacientes e-SUS","Mapa que mostra o acompanhamento dos pacientes com condicionalidades dos indicadores e-SUS","grafico-de-mapa?acompanhamento-esus"],
         ],
 
         "Listas e planilhas": [
@@ -368,7 +368,7 @@
             }
           }
 
-          for (let grupo of ["Farmácia","Solicitações","Tabelas-mapa","Links","Ferramentas de gestão","Profissionais de nível médio","Profissionais de nível superior"]) {
+          for (let grupo of ["Farmácia","Solicitações","Links","Ferramentas de gestão","Profissionais de nível médio","Profissionais de nível superior"]) {
             for (let linha of [...document.getElementsByName(grupo)]) {
               linha.remove();
             }
