@@ -2961,8 +2961,64 @@ dispensacoes[2025].geral = `<tr style="border: 0"><td colspan=5 style="border: 0
 <th style="background-color: #F6F8FA;">Percentual em relação ao total (%)</th>
 </tr>
 <tr>
-<td>Total</td>
+<td>FARMÁCIA UAPS ANTONINO DE ALMEIDA</td>
+<td style="text-align:right;">34</td>
+<td style="text-align:right;">33</td>
+<td style="text-align:right;">97%</td>
+<td style="text-align:right;">5%</td>
+</tr>
+<tr>
+<td>FARMÁCIA UAPS DONA NININHA</td>
+<td style="text-align:right;">39</td>
+<td style="text-align:right;">38</td>
+<td style="text-align:right;">97%</td>
+<td style="text-align:right;">6%</td>
+</tr>
+<tr>
+<td>FARMÁCIA UAPS LAGOA DOURADA</td>
+<td style="text-align:right;">41</td>
+<td style="text-align:right;">39</td>
+<td style="text-align:right;">95%</td>
+<td style="text-align:right;">6%</td>
+</tr>
+<tr>
+<td>FARMÁCIA UAPS MILTON MENDES DA SILVA</td>
+<td style="text-align:right;">48</td>
+<td style="text-align:right;">40</td>
+<td style="text-align:right;">83%</td>
+<td style="text-align:right;">7%</td>
+</tr>
+<tr>
+<td>FARMÁCIA UAPS VER. JOSE SENA</td>
+<td style="text-align:right;">57</td>
+<td style="text-align:right;">57</td>
+<td style="text-align:right;">100%</td>
+<td style="text-align:right;">8%</td>
+</tr>
+<tr>
+<td>FARMÁCIA DE MINAS DE TAIOBEIRAS</td>
+<td style="text-align:right;">445</td>
+<td style="text-align:center;  background-color: #dfe2e5;">-</td>
+<td style="text-align:center;  background-color: #dfe2e5;">-</td>
+<td style="text-align:right;">65%</td>
+</tr>
+<tr>
+<td>UAPS AGEU ALMEIDA</td>
+<td style="text-align:right;">8</td>
+<td style="text-align:right;">7</td>
+<td style="text-align:right;">87%</td>
+<td style="text-align:right;">1%</td>
+</tr>
+<tr>
+<td>UAPS COMUNIDADES RURAIS</td>
+<td style="text-align:right;">1</td>
 <td style="text-align:right;">0</td>
+<td style="text-align:right;">0%</td>
+<td style="text-align:right;">0%</td>
+</tr>
+<tr>
+<td>Total</td>
+<td style="text-align:right;">683</td>
 <td style="text-align:center; background-color: #dfe2e5;">-</td>
 <td style="text-align:center; background-color: #dfe2e5;">-</td>
 <td style="text-align:center; background-color: #dfe2e5;">-</td>
@@ -3677,6 +3733,31 @@ dispensacoes[2025].farmaciaminas = `<tr style="border: 0"><td colspan=5 style="b
 <th style="background-color: #F6F8FA;">Nome da unidade</th>
 <th style="background-color: #F6F8FA;">Medicamentos dispensados</th>
 <th style="background-color: #F6F8FA;">Percentual em relação<br>ao total de dispensações (%)</th>
+</tr>
+<tr>
+<td>UAPS ANTONINO DE ALMEIDA</td>
+<td style="text-align:right;">4</td>
+<td style="text-align:right;">1%</td>
+</tr>
+<tr>
+<td>UAPS DONA NININHA</td>
+<td style="text-align:right;">41</td>
+<td style="text-align:right;">9%</td>
+</tr>
+<tr>
+<td>UAPS LAGOA GRANDE/DOURADA</td>
+<td style="text-align:right;">24</td>
+<td style="text-align:right;">5%</td>
+</tr>
+<tr>
+<td>UAPS MILTON MENDES DA SILVA</td>
+<td style="text-align:right;">22</td>
+<td style="text-align:right;">5%</td>
+</tr>
+<tr>
+<td>UAPS VER. JOSE SENA</td>
+<td style="text-align:right;">42</td>
+<td style="text-align:right;">9%</td>
 </tr>
 <tr style="border: 0"><td colspan=5 style="border: 0"><br><b><big>Abril</big></b><br>&nbsp;</td></tr>
 <tr>

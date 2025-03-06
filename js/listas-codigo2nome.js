@@ -162,8 +162,6 @@ const acs = {
   374: "Greiciele do Carmo de Jesus",
   "Ilca Antunis da Silva": 743,
   743: "Ilca Antunis da Silva",
-  "Irani Mendes Alves Oliveira": 254,
-  254: "Irani Mendes Alves Oliveira",
   "Iris Tania Teixeira Alves": 513,
   513: "Iris Tania Teixeira Alves",
   "Ivani Mendes de Deus Chagas": 621,

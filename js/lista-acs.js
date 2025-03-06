@@ -431,13 +431,6 @@ const listaACS = `
                             <td style="text-align:right;"><b>219</b></td>
                             <td>GISELE OLIVEIRA SANTOS</td>
                         </tr>
-                                                <tr class="border tr" name="PROGRESSO" onclick="
-                            localStorage.setItem('override:codProfissional','254');
-                            window.location.href = 'profissional.html';
-                        ">
-                            <td style="text-align:right;"><b>254</b></td>
-                            <td>IRANI MENDES ALVES OLIVEIRA</td>
-                        </tr>
                         <tr name="PROGRESSO"><th colspan="2" align="left"><br></th></tr>
 <tr class="border header" name="RENASCER"><td colspan="2"><b>RENASCER</b></td></tr>
                         <tr class="border tr" name="RENASCER" onclick="
