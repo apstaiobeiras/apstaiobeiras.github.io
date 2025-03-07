@@ -5239,7 +5239,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/31541">31543</a></td><td>Keven Luan Santos da Silva</td><td><span name="02/05/2024" class="data">02/05/2024</a></td><td>CONTORNO, 5040</td><td><span name="JUSSELY SOARES DE SOUZA" class="">JUSSELY SOARES DE SOUZA</a></td><td><span name="UAPS ENF. MARY TATIANE" class="">UAPS ENF. MARY TATIANE</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/20225">20227</a></td><td>Marcela Roberta da Silva</td><td><span name="02/05/2024" class="data">02/05/2024</a></td><td>PETROPOLIS, 110</td><td><span name="LUCIENE FERNANDES COSTA" class="">LUCIENE FERNANDES COSTA</a></td><td><span name="UAPS MILTON MENDES DA SILVA" class="">UAPS MILTON MENDES DA SILVA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/20225">20227</a></td><td>Marcela Roberta da Silva</td><td><span name="02/05/2024" class="data">02/05/2024</a></td><td>-</td><td><span name="-" class="">-</a></td><td><span name="-" class="">-</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/16468">16470</a></td><td>Manoel Camilo de Souza</td><td><span name="02/05/2024" class="data">02/05/2024</a></td><td>SANTA CATARINA, 219</td><td><span name="DAIANE ALVES" class="">DAIANE ALVES</a></td><td><span name="UAPS VER. MANOEL DOS SANTOS SILVA" class="">UAPS VER. MANOEL DOS SANTOS SILVA</a></td>

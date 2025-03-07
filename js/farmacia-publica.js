@@ -92,7 +92,7 @@ medicamentos['Amoxicilina 250mg/5ml Po Para Susp Oral']['104'] = 21;
 medicamentos['Amoxicilina 500mg Caps'] = [];
 medicamentos['Amoxicilina 500mg Caps']['22'] = 7;
 medicamentos['Amoxicilina 500mg Caps']['92'] = 21;
-medicamentos['Amoxicilina 500mg Caps']['93'] = 185;
+medicamentos['Amoxicilina 500mg Caps']['93'] = 164;
 medicamentos['Amoxicilina 500mg Caps']['90'] = 580;
 medicamentos['Amoxicilina 500mg Caps']['104'] = 324;
 
@@ -364,7 +364,7 @@ medicamentos['Digoxina 0.25mg Comp'] = [];
 medicamentos['Digoxina 0.25mg Comp']['22'] = 1685;
 
 medicamentos['Dipirona 500mg Comp'] = [];
-medicamentos['Dipirona 500mg Comp']['93'] = 540;
+medicamentos['Dipirona 500mg Comp']['93'] = 520;
 medicamentos['Dipirona 500mg Comp']['90'] = 2210;
 medicamentos['Dipirona 500mg Comp']['104'] = 250;
 
@@ -698,7 +698,7 @@ medicamentos['Ondansetrona 4mg Comp']['104'] = 180;
 
 medicamentos['Ondansetrona 8mg Comp'] = [];
 medicamentos['Ondansetrona 8mg Comp']['93'] = 50;
-medicamentos['Ondansetrona 8mg Comp']['90'] = 205;
+medicamentos['Ondansetrona 8mg Comp']['90'] = 195;
 medicamentos['Ondansetrona 8mg Comp']['104'] = 201;
 
 medicamentos['Paracetamol 200mg/ml Sol Oral'] = [];
@@ -768,7 +768,7 @@ medicamentos['Rifampicina + Clofazimina + Dapsona (300+300)+50+100 Mg']['22'] = 
 medicamentos['Sais Para Reidratacao Oral'] = [];
 medicamentos['Sais Para Reidratacao Oral']['22'] = 51;
 medicamentos['Sais Para Reidratacao Oral']['93'] = 39;
-medicamentos['Sais Para Reidratacao Oral']['90'] = 71;
+medicamentos['Sais Para Reidratacao Oral']['90'] = 68;
 medicamentos['Sais Para Reidratacao Oral']['104'] = 9;
 
 medicamentos['Salbutamol 100mcg/dose Spray'] = [];
@@ -800,7 +800,7 @@ medicamentos['Sulfato Ferroso 40mg Comp'] = [];
 medicamentos['Sulfato Ferroso 40mg Comp']['22'] = 2195;
 medicamentos['Sulfato Ferroso 40mg Comp']['93'] = 100;
 medicamentos['Sulfato Ferroso 40mg Comp']['90'] = 1155;
-medicamentos['Sulfato Ferroso 40mg Comp']['104'] = 1415;
+medicamentos['Sulfato Ferroso 40mg Comp']['104'] = 1385;
 
 medicamentos['Tiamina 300mg Comp'] = [];
 medicamentos['Tiamina 300mg Comp']['22'] = 1320;
@@ -840,7 +840,7 @@ medicamentos['Zinco 4mg/ml Sol Oral']['90'] = 8;
 medicamentos['Zinco 4mg/ml Sol Oral']['104'] = 5;
 
 
-dataAtualizacao.innerHTML = `06/03/2025`
+dataAtualizacao.innerHTML = `07/03/2025`
 
 const unidades = [];
 unidades['Farmacia de Minas'] = 22;
