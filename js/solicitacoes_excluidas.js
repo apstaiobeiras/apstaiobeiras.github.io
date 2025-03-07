@@ -2401,9 +2401,12 @@ const SolicitacoesExcluidas = [
   [873598,1110,28398,34,"<b>Não Se Enquadra nos Criterios: </b><br>TRANSFERIDO PARA GINECOLOGIA CEAE.",20250224,"CONSULTA GINECOLOGIA POLICLINICA"],
   [874540,1267,33665,8,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Detalhamento insuficiente:Lombalgia crônica agudizada com dor leve, moderada ou grave? Apresenta mobilidade reduzida e/ou radiculopatia?Qual a Condição clínica do paciente: há limitação de ADM?",20250225,"ATENDIMENTO FISIOTERAPIA"],
   [874699,320,37770,78,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Detalhamento insuficiente para regular.Grau de independência/dependência para Atividades de Vida Diária (AVD). Favor referenciar para o CER/RCPD se o paciente requer assistência para três ou mais atividades. Ou inserir novamente nessa fila caso o paciente requer assistência para até duas atividades.",20250225,"ATENDIMENTO FISIOTERAPIA"],
+  [875124,1259,42281,8,"Não Se Enquadra nos Criterios",20250307,"CONSULTA HIPERTENSO ALTO RISCO"],
   [875582,1069,20833,6,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Detalhamento insuficiente para regular:Faz uso de órtese ou prótese?Grau de independência/dependência para Atividades de Vida Diária (AVD). Sugiro encaminhar para o CER/RCPD se a paciente Requer assistência para três ou mais atividades.",20250225,"ATENDIMENTO FISIOTERAPIA"],
   [876108,1282,15497,6,"<b>Não Se Enquadra nos Criterios: </b><br>De acordo protocolo mastologia CEAE, BIRADS 2 não se enquadra no critérios de atendimento. Não encontrei no sistema nenhum registro de atendimento da paciente em data anterior que solicitasse retorno em 6 meses.Att.",20250227,"CONSULTA - MASTOLOGISTA"],
   [876768,1194,80707,6,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Iniciou tratamento?Att.",20250227,"CONSULTA - OBSTéTRICA / PUERPéRIO"],
+  [878025,1284,13469,78,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor informar a data de realização dos exames químicos. Att.",20250307,"CONSULTA HIPERTENSO ALTO RISCO"],
+  [878452,1133,65991,2,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever os exames bioquímicos realizados pelo paciente com data. O paciente é hipertenso e cardiopata? Att.",20250307,"CONSULTA HIPERTENSO ALTO RISCO"],
 ];
 
 const Unidades = [
