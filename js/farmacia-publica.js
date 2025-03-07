@@ -67,7 +67,7 @@ medicamentos['Amiodarona 200mg Comp']['90'] = 140;
 
 medicamentos['Amitriptilina 25mg Comp'] = [];
 medicamentos['Amitriptilina 25mg Comp']['92'] = 20;
-medicamentos['Amitriptilina 25mg Comp']['93'] = 460;
+medicamentos['Amitriptilina 25mg Comp']['93'] = 400;
 medicamentos['Amitriptilina 25mg Comp']['90'] = 460;
 medicamentos['Amitriptilina 25mg Comp']['104'] = 1610;
 
@@ -185,7 +185,7 @@ medicamentos['Carbonato Calcio + Colecalciferol 600mg + 400ui Comp']['22'] = 525
 
 medicamentos['Carbonato de Calcio + Colecal. 500mg + 400ui Comp'] = [];
 medicamentos['Carbonato de Calcio + Colecal. 500mg + 400ui Comp']['22'] = 640;
-medicamentos['Carbonato de Calcio + Colecal. 500mg + 400ui Comp']['93'] = 240;
+medicamentos['Carbonato de Calcio + Colecal. 500mg + 400ui Comp']['93'] = 180;
 
 medicamentos['Carbonato de Calcio+ Colecal 500mg + 200ui Comp'] = [];
 medicamentos['Carbonato de Calcio+ Colecal 500mg + 200ui Comp']['93'] = 180;
@@ -366,7 +366,7 @@ medicamentos['Digoxina 0.25mg Comp']['22'] = 1685;
 medicamentos['Dipirona 500mg Comp'] = [];
 medicamentos['Dipirona 500mg Comp']['93'] = 520;
 medicamentos['Dipirona 500mg Comp']['90'] = 2210;
-medicamentos['Dipirona 500mg Comp']['104'] = 250;
+medicamentos['Dipirona 500mg Comp']['104'] = 230;
 
 medicamentos['Dipirona 500mg/ml Sol Oral'] = [];
 medicamentos['Dipirona 500mg/ml Sol Oral']['93'] = 14;
@@ -743,7 +743,7 @@ medicamentos['Prednisona 20mg Comp']['22'] = 214;
 medicamentos['Prednisona 20mg Comp']['92'] = 6;
 medicamentos['Prednisona 20mg Comp']['93'] = 90;
 medicamentos['Prednisona 20mg Comp']['90'] = 220;
-medicamentos['Prednisona 20mg Comp']['104'] = 14;
+medicamentos['Prednisona 20mg Comp']['104'] = 9;
 
 medicamentos['Prednisona 5mg Comp'] = [];
 medicamentos['Prednisona 5mg Comp']['22'] = 692;
@@ -774,7 +774,7 @@ medicamentos['Sais Para Reidratacao Oral']['104'] = 9;
 medicamentos['Salbutamol 100mcg/dose Spray'] = [];
 medicamentos['Salbutamol 100mcg/dose Spray']['93'] = 8;
 medicamentos['Salbutamol 100mcg/dose Spray']['90'] = 22;
-medicamentos['Salbutamol 100mcg/dose Spray']['104'] = 9;
+medicamentos['Salbutamol 100mcg/dose Spray']['104'] = 8;
 
 medicamentos['Sulfadiazina de Prata 10mg/g Creme Derm'] = [];
 medicamentos['Sulfadiazina de Prata 10mg/g Creme Derm']['90'] = 3;
