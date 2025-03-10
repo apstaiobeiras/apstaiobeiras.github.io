@@ -19,9 +19,6 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/125237">76288</a></td><td>Liz Rodrigues Freitas</td><td><div style="white-space: nowrap;">8 meses</div></td><td><span name="ACOLHER">ACOLHER</a></td><td><span name="168">THAIS ROSA DE ALMEIDA SILVA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/125094">76172</a></td><td>Paulo Souza Donato</td><td><div style="white-space: nowrap;">11 meses</div></td><td><span name="VIDA E SAUDE">VIDA E SAUDE</a></td><td><span name="481">MARTA PEREIRA DE OLIVEIRA</a></td>
-    </tr>
-      <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/123128">74675</a></td><td>Elisa Santos Cruz</td><td><div style="white-space: nowrap;">11 meses</div></td><td><span name="MAIS SAUDE">MAIS SAUDE</a></td><td><span name="513">IRIS TANIA TEIXEIRA ALVES</a></td>
     </tr>
       <tr>
@@ -61,10 +58,13 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/126867">77773</a></td><td>Benjamim Nunis Ferreira</td><td><div style="white-space: nowrap;">6 meses</div></td><td><span name="LIBERDADE">LIBERDADE</a></td><td><span name="8">CELMA DOS SANTOS</a></td>
     </tr>
       <tr>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/127065">77953</a></td><td>Lorenzo Gonçalves de Aguilar</td><td><div style="white-space: nowrap;">6 meses</div></td><td><span name="HUMANIZAR">HUMANIZAR</a></td><td><span name="317">NORMA TRANCOSO VIANA</a></td>
+    </tr>
+      <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/125949">76945</a></td><td>José Leite Fonseca</td><td><div style="white-space: nowrap;">7 meses</div></td><td><span name="VIVER">VIVER</a></td><td><span name="581">JESSICA ANA DE JESUS</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/126128">77107</a></td><td>Pedro Correa Albuquerque</td><td><div style="white-space: nowrap;">6 meses</div></td><td><span name="UNIAO">UNIAO</a></td><td><span name="564">MAISA OLIVEIRA BARBOSA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/126128">77107</a></td><td>Pedro Correa Albuquerque</td><td><div style="white-space: nowrap;">7 meses</div></td><td><span name="UNIAO">UNIAO</a></td><td><span name="564">MAISA OLIVEIRA BARBOSA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/128861">79553</a></td><td>Lorenzo Araujo de Souza</td><td><div style="white-space: nowrap;">6 meses</div></td><td><span name="MAIS SAUDE">MAIS SAUDE</a></td><td><span name="550">CLEIDIANE DOS SANTOS MEIRELES</a></td>
@@ -103,9 +103,6 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/125552">76580</a></td><td>Jade Oliveira Santos</td><td><div style="white-space: nowrap;">7 meses</div></td><td><span name="PROGRESSO">PROGRESSO</a></td><td><span name="1130">ANELISA MARIA DO NASCIMENTO</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/128409">79162</a></td><td>Maria Cloe Dos Santos Russo</td><td><div style="white-space: nowrap;">11 meses</div></td><td><span name="LIBERDADE">LIBERDADE</a></td><td><span name="446">DARCIELIA EURIDES DOS SANTOS</a></td>
-    </tr>
-      <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/124975">76067</a></td><td>Isis Fernandes de Oliveira</td><td><div style="white-space: nowrap;">8 meses</div></td><td><span name="HARMONIA">HARMONIA</a></td><td><span name="271">MARLANE DA SILVA SANTOS</a></td>
     </tr>
       <tr>
@@ -124,7 +121,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/124801">75925</a></td><td>Anthony Soares Dos Santos</td><td><div style="white-space: nowrap;">9 meses</div></td><td><span name="HARMONIA">HARMONIA</a></td><td><span name="1125">JEYSLANE MENDES DE OLIVEIRA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/123618">75003</a></td><td>Laura Heloísa Botelho Chaves</td><td><div style="white-space: nowrap;">10 meses</div></td><td><span name="VIDA">VIDA</a></td><td><span name="31">KATIANA FERREIRA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/123618">75003</a></td><td>Laura Heloísa Botelho Chaves</td><td><div style="white-space: nowrap;">11 meses</div></td><td><span name="VIDA">VIDA</a></td><td><span name="31">KATIANA FERREIRA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/127124">78006</a></td><td>Anthony Jose da Cruz Santos </td><td><div style="white-space: nowrap;">6 meses</div></td><td><span name="MAIS SAUDE">MAIS SAUDE</a></td><td><span name="550">CLEIDIANE DOS SANTOS MEIRELES</a></td>
@@ -151,13 +148,13 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/123107">74656</a></td><td>Jose Felipe Mendes Silva</td><td><div style="white-space: nowrap;">11 meses</div></td><td><span name="VIVER">VIVER</a></td><td><span name="528">CLEIDE MAIRY TORRES DE SOUZA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/122679">74340</a></td><td>Geovana Martins Dos Santos</td><td><div style="white-space: nowrap;">11 meses</div></td><td><span name="ESPERANÇA">ESPERANÇA</a></td><td><span name="1149">LIVIA KAMILLY SOARES DOS SANTOS</a></td>
-    </tr>
-      <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/124389">75589</a></td><td>Isis Rodrigues Leal</td><td><div style="white-space: nowrap;">9 meses</div></td><td><span name="VIVER">VIVER</a></td><td><span name="581">JESSICA ANA DE JESUS</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/124362">75566</a></td><td>Maite Silva Oliveira</td><td><div style="white-space: nowrap;">10 meses</div></td><td><span name="VIDA">VIDA</a></td><td><span name="621">IVANI MENDES DE DEUS CHAGAS</a></td>
+    </tr>
+      <tr>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/126873">77778</a></td><td>Bernardo Ribeiro Dias</td><td><div style="white-space: nowrap;">6 meses</div></td><td><span name="VIDA E SAUDE">VIDA E SAUDE</a></td><td><span name="389">LUCIENE FERNANDES COSTA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/123441">74898</a></td><td>Pedro Antonio de Jesus Santos</td><td><div style="white-space: nowrap;">10 meses</div></td><td><span name="MAIS SAUDE">MAIS SAUDE</a></td><td><span name="1184">CINTIA MELGES DE OLIVEIRA COSTA</a></td>
@@ -169,16 +166,16 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/123984">75305</a></td><td>Maria Júlia Santos Ferreira</td><td><div style="white-space: nowrap;">10 meses</div></td><td><span name="PROGRESSO">PROGRESSO</a></td><td><span name="1130">ANELISA MARIA DO NASCIMENTO</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/124937">76033</a></td><td>Maria Alice Jardim de Jesus</td><td><div style="white-space: nowrap;">8 meses</div></td><td><span name="VIVER">VIVER</a></td><td><span name="493">ELIANE PEREIRA FREITAS</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/124937">76033</a></td><td>Maria Alice Jardim de Jesus</td><td><div style="white-space: nowrap;">9 meses</div></td><td><span name="VIVER">VIVER</a></td><td><span name="493">ELIANE PEREIRA FREITAS</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/125454">76492</a></td><td>Maria Cecilia Martins Ribeiro</td><td><div style="white-space: nowrap;">7 meses</div></td><td><span name="UNIAO">UNIAO</a></td><td><span name="564">MAISA OLIVEIRA BARBOSA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/125454">76492</a></td><td>Maria Cecilia Martins Ribeiro</td><td><div style="white-space: nowrap;">8 meses</div></td><td><span name="UNIAO">UNIAO</a></td><td><span name="564">MAISA OLIVEIRA BARBOSA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/126200">77171</a></td><td>Eloá Almeida Morais</td><td><div style="white-space: nowrap;">7 meses</div></td><td><span name="VIDA">VIDA</a></td><td><span name="31">KATIANA FERREIRA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/125434">76475</a></td><td>Enzo Gabriel Viana Santos</td><td><div style="white-space: nowrap;">7 meses</div></td><td><span name="ACOLHER">ACOLHER</a></td><td><span name="515">IVANILDE MARIA DO NASCIMENTO</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/125434">76475</a></td><td>Enzo Gabriel Viana Santos</td><td><div style="white-space: nowrap;">8 meses</div></td><td><span name="ACOLHER">ACOLHER</a></td><td><span name="515">IVANILDE MARIA DO NASCIMENTO</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/123815">75192</a></td><td>Jade Emanuelly de Oliveira Motta</td><td><div style="white-space: nowrap;">10 meses</div></td><td><span name="VIDA">VIDA</a></td><td><span name="743">ILCA ANTUNIS DA SILVA</a></td>
@@ -214,7 +211,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/126263">77222</a></td><td>Maria Eduarda Santos Neves</td><td><div style="white-space: nowrap;">6 meses</div></td><td><span name="VIVER">VIVER</a></td><td><span name="528">CLEIDE MAIRY TORRES DE SOUZA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/124237">75480</a></td><td>Ravi Teixeira Rodrigues Dos Santos</td><td><div style="white-space: nowrap;">9 meses</div></td><td><span name="LIBERDADE">LIBERDADE</a></td><td><span name="209">SONIA BISPO DE ALMEIDA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/124237">75480</a></td><td>Ravi Teixeira Rodrigues Dos Santos</td><td><div style="white-space: nowrap;">10 meses</div></td><td><span name="LIBERDADE">LIBERDADE</a></td><td><span name="209">SONIA BISPO DE ALMEIDA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/125973">76967</a></td><td>Heitor Ferreira Santana</td><td><div style="white-space: nowrap;">7 meses</div></td><td><span name="PROGRESSO">PROGRESSO</a></td><td><span name="219">GISELE OLIVEIRA SANTOS</a></td>
@@ -244,7 +241,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/125638">76658</a></td><td>Estêvão Barros Oliveira</td><td><div style="white-space: nowrap;">7 meses</div></td><td><span name="VIVER">VIVER</a></td><td><span name="441">MAGDA ROSA DOS SANTOS</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/125587">76609</a></td><td>Nathanael Braga de Oliveira</td><td><div style="white-space: nowrap;">7 meses</div></td><td><span name="UNIAO">UNIAO</a></td><td><span name="447">MARTA BARBOSA DE OLIVEIRA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/125587">76609</a></td><td>Nathanael Braga de Oliveira</td><td><div style="white-space: nowrap;">8 meses</div></td><td><span name="UNIAO">UNIAO</a></td><td><span name="447">MARTA BARBOSA DE OLIVEIRA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/126405">77357</a></td><td>Jose Pedro Santana Neto</td><td><div style="white-space: nowrap;">6 meses</div></td><td><span name="VIDA">VIDA</a></td><td><span name="170">GISLENE FERREIRA BARBOSA</a></td>
@@ -265,16 +262,16 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/125351">76397</a></td><td>Anna Lizz Xavier da Mota</td><td><div style="white-space: nowrap;">8 meses</div></td><td><span name="UNIAO">UNIAO</a></td><td><span name="301">CERLIOS MARQUES DOS SANTOS</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/124253">75495</a></td><td>Maria Laura Gonçalves Malaquias</td><td><div style="white-space: nowrap;">9 meses</div></td><td><span name="LIBERDADE">LIBERDADE</a></td><td><span name="1135">LUANA RODRIGUES DE OLIVEIRA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/126892">77794</a></td><td>Lorrayne Gomes Bandeira</td><td><div style="white-space: nowrap;">6 meses</div></td><td><span name="RENASCER">RENASCER</a></td><td><span name="196">JOSELANE MENDES TEIXEIRA</a></td>
+    </tr>
+      <tr>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/124253">75495</a></td><td>Maria Laura Gonçalves Malaquias</td><td><div style="white-space: nowrap;">10 meses</div></td><td><span name="LIBERDADE">LIBERDADE</a></td><td><span name="1135">LUANA RODRIGUES DE OLIVEIRA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/123163">74708</a></td><td>Aylla Vitoria Fereira Mendes</td><td><div style="white-space: nowrap;">11 meses</div></td><td><span name="ACOLHER">ACOLHER</a></td><td><span name="515">IVANILDE MARIA DO NASCIMENTO</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/124464">75656</a></td><td>Heitor Santana de Almeida</td><td><div style="white-space: nowrap;">9 meses</div></td><td><span name="UNIAO">UNIAO</a></td><td><span name="564">MAISA OLIVEIRA BARBOSA</a></td>
-    </tr>
-      <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/123352">74846</a></td><td>Thalles Henrique Moreira</td><td><div style="white-space: nowrap;">11 meses</div></td><td><span name="ESPETACULAR">ESPETACULAR</a></td><td><span name="1234">MIRIAN DIAS MOREIRA ALVES</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/125913">76911</a></td><td>Heitor Ferreira Nascimento</td><td><div style="white-space: nowrap;">7 meses</div></td><td><span name="RENASCER">RENASCER</a></td><td><span name="78">GEYSA MINELY SOUZA</a></td>
@@ -331,7 +328,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/126718">77631</a></td><td>Francisco Rocha Cunha</td><td><div style="white-space: nowrap;">8 meses</div></td><td><span name="RENASCER">RENASCER</a></td><td><span name="1332">MARLENE MATOS OLIVEIRA SOARES</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/126176">77147</a></td><td>Gael Sousa Silva</td><td><div style="white-space: nowrap;">6 meses</div></td><td><span name="RENASCER">RENASCER</a></td><td><span name="196">JOSELANE MENDES TEIXEIRA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/126176">77147</a></td><td>Gael Sousa Silva</td><td><div style="white-space: nowrap;">7 meses</div></td><td><span name="RENASCER">RENASCER</a></td><td><span name="196">JOSELANE MENDES TEIXEIRA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/123089">74642</a></td><td>Miguel Ferreira Silva</td><td><div style="white-space: nowrap;">11 meses</div></td><td><span name="LIBERDADE">LIBERDADE</a></td><td><span name="8">CELMA DOS SANTOS</a></td>
@@ -373,6 +370,9 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/126506">77449</a></td><td>Maria Julia Campos Santos</td><td><div style="white-space: nowrap;">6 meses</div></td><td><span name="VIDA E SAUDE">VIDA E SAUDE</a></td><td><span name="207">ELIANA MARIA SANTOS DE OLIVEIRA</a></td>
     </tr>
       <tr>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/126872">77777</a></td><td>Kaleb Marques Albuquerque</td><td><div style="white-space: nowrap;">6 meses</div></td><td><span name="ESPERANÇA">ESPERANÇA</a></td><td><span name="654">LAURY MADALENA DA ROCHA</a></td>
+    </tr>
+      <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/123052">74637</a></td><td>Noah da Silva Santos</td><td><div style="white-space: nowrap;">11 meses</div></td><td><span name="UNIAO">UNIAO</a></td><td><span name="223">ALICE DOS SANTOS NETA</a></td>
     </tr>
       <tr>
@@ -397,7 +397,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/126381">77334</a></td><td>Marcos Henrique Araujo Dos Santos</td><td><div style="white-space: nowrap;">6 meses</div></td><td><span name="HARMONIA">HARMONIA</a></td><td><span name="271">MARLANE DA SILVA SANTOS</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/127761">78569</a></td><td>Jose Benicio Fonseca Dos Santos</td><td><div style="white-space: nowrap;">6 meses</div></td><td><span name="CAMINHO">CAMINHO</a></td><td><span name="1129">DENIZ CAROLINE PEREIRA MARTINS</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/127761">78569</a></td><td>Jose Benicio Fonseca Dos Santos</td><td><div style="white-space: nowrap;">7 meses</div></td><td><span name="CAMINHO">CAMINHO</a></td><td><span name="1129">DENIZ CAROLINE PEREIRA MARTINS</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/124667">75832</a></td><td>Lavinia Rodrigues Sousa</td><td><div style="white-space: nowrap;">9 meses</div></td><td><span name="ACOLHER">ACOLHER</a></td><td><span name="214">ALMERINDA DE OLIVEIRA SANTOS</a></td>
@@ -440,6 +440,12 @@ document.getElementById('planilha').innerHTML = `<table>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/123088">74641</a></td><td>Maria Julia Souza</td><td><div style="white-space: nowrap;">11 meses</div></td><td><span name="ESPETACULAR">ESPETACULAR</a></td><td><span name="1123">MIKAELY CRISTINA SOUZA</a></td>
+    </tr>
+      <tr>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/128409">79162</a></td><td>Maria Cloe Dos Santos Russo</td><td><div style="white-space: nowrap;">11 meses</div></td><td><span name="LIBERDADE">LIBERDADE</a></td><td><span name="446">DARCIELIA EURIDES DOS SANTOS</a></td>
+    </tr>
+      <tr>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/126660">77587</a></td><td>Isaac Gomes de Castro</td><td><div style="white-space: nowrap;">6 meses</div></td><td><span name="CAMINHO">CAMINHO</a></td><td><span name="374">GREICIELE DO CARMO DE JESUS</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/122755">74411</a></td><td>Maria Rocha Costa Santana</td><td><div style="white-space: nowrap;">11 meses</div></td><td><span name="VIDA">VIDA</a></td><td><span name="404">SOLANGE FRANCISCA DE SOUZA</a></td>
@@ -487,13 +493,13 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/124250">75492</a></td><td>José Vinicius Oliveira Rocha</td><td><div style="white-space: nowrap;">10 meses</div></td><td><span name="HUMANIZAR">HUMANIZAR</a></td><td><span name="317">NORMA TRANCOSO VIANA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/124360">75564</a></td><td>Eduardo Maranhão Batista</td><td><div style="white-space: nowrap;">9 meses</div></td><td><span name="HARMONIA">HARMONIA</a></td><td><span name="226">GEISSIANE MARQUES FERREIRA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/124360">75564</a></td><td>Eduardo Maranhão Batista</td><td><div style="white-space: nowrap;">10 meses</div></td><td><span name="HARMONIA">HARMONIA</a></td><td><span name="226">GEISSIANE MARQUES FERREIRA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/126645">77573</a></td><td>Pedro Vinicius Alves Mendes</td><td><div style="white-space: nowrap;">6 meses</div></td><td><span name="VIVER">VIVER</a></td><td><span name="615">MICAELY PEREIRA ALVES</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/124939">76035</a></td><td>Nicolas Rafael Rodrigues de Almeida</td><td><div style="white-space: nowrap;">8 meses</div></td><td><span name="COMUNIDADES RURAIS">COMUNIDADES RURAIS</a></td><td><span name="1321">JANIA SANTOS ROCHA RUFINO NEVES</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/124939">76035</a></td><td>Nicolas Rafael Rodrigues de Almeida</td><td><div style="white-space: nowrap;">9 meses</div></td><td><span name="COMUNIDADES RURAIS">COMUNIDADES RURAIS</a></td><td><span name="1321">JANIA SANTOS ROCHA RUFINO NEVES</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/123053">74638</a></td><td>Laura Ferreira Rocha</td><td><div style="white-space: nowrap;">11 meses</div></td><td><span name="UNIAO">UNIAO</a></td><td><span name="447">MARTA BARBOSA DE OLIVEIRA</a></td>
@@ -509,9 +515,6 @@ document.getElementById('planilha').innerHTML = `<table>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/125491">76526</a></td><td>Brayan Miguel Souza Ribeiro</td><td><div style="white-space: nowrap;">7 meses</div></td><td><span name="VIVER">VIVER</a></td><td><span name="581">JESSICA ANA DE JESUS</a></td>
-    </tr>
-      <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/122624">74286</a></td><td>Davi Luiz Freitas Santos</td><td><div style="white-space: nowrap;">11 meses</div></td><td><span name="MAIS SAUDE">MAIS SAUDE</a></td><td><span name="550">CLEIDIANE DOS SANTOS MEIRELES</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/124452">75644</a></td><td>Kaleb Emanuel Silva Chagas</td><td><div style="white-space: nowrap;">9 meses</div></td><td><span name="HUMANIZAR">HUMANIZAR</a></td><td><span name="317">NORMA TRANCOSO VIANA</a></td>
@@ -535,7 +538,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/126304">77261</a></td><td>Bernardo Gael Meireles Sarmento</td><td><div style="white-space: nowrap;">11 meses</div></td><td><span name="VIDA E SAUDE">VIDA E SAUDE</a></td><td><span name="207">ELIANA MARIA SANTOS DE OLIVEIRA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/125437">76478</a></td><td>Henry Rodrigues Silva</td><td><div style="white-space: nowrap;">7 meses</div></td><td><span name="RENASCER">RENASCER</a></td><td><span name="67">LUZINETE APARECIDA OLIVEIRA MEIRELES</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/125437">76478</a></td><td>Henry Rodrigues Silva</td><td><div style="white-space: nowrap;">8 meses</div></td><td><span name="RENASCER">RENASCER</a></td><td><span name="67">LUZINETE APARECIDA OLIVEIRA MEIRELES</a></td>
     </tr>
     </tbody>
 </table>`

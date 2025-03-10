@@ -2112,6 +2112,7 @@ const SolicitacoesExcluidas = [
   [776440,1277,6595,4,"Não Se Enquadra nos Criterios",20250203,"AVALIAçaO- ESCOLA DO PARTO"],
   [776467,1132,16644,10,"Não Se Enquadra nos Criterios",20250203,"CONSULTA CARDIOLOGIA DR NIKOLAS"],
   [783454,1259,40799,8,"<b>Solicitação Indevida: </b><br>DEMANTA ATENDIDA PELA CIRURGIA GERAL.REALIZADO TRANSGERENCIA DE FILAS.",20250114,"CONSULTA  UROLOGIA POLICLINICA"],
+  [785814,770,17954,61,"Não Se Enquadra nos Criterios",20250310,"AVALIAçaO FONOAUDIOLOGIA E-MULTI"],
   [788845,1016,12444,2,"<b>Falta Detalhar Exames: </b><br>solicite o usg para complementar a investigação ",20250130,"CONSULTA  UROLOGIA POLICLINICA"],
   [791984,1291,12306,75,"<b>Agendar na Atenção Primaria: </b><br>Acompanhar quadro de dermatite e tratar. Solicitar colonoscopia pela queixa e idade>45 anos.",20250227,"CONSULTA GASTROENTEROLOGIA"],
   [792915,1219,26104,33,"<b>Falta Detalhar Exames: </b><br>solicitar us para complementar a investigação",20250130,"CONSULTA  UROLOGIA POLICLINICA"],
@@ -2404,9 +2405,16 @@ const SolicitacoesExcluidas = [
   [875124,1259,42281,8,"Não Se Enquadra nos Criterios",20250307,"CONSULTA HIPERTENSO ALTO RISCO"],
   [875582,1069,20833,6,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Detalhamento insuficiente para regular:Faz uso de órtese ou prótese?Grau de independência/dependência para Atividades de Vida Diária (AVD). Sugiro encaminhar para o CER/RCPD se a paciente Requer assistência para três ou mais atividades.",20250225,"ATENDIMENTO FISIOTERAPIA"],
   [876108,1282,15497,6,"<b>Não Se Enquadra nos Criterios: </b><br>De acordo protocolo mastologia CEAE, BIRADS 2 não se enquadra no critérios de atendimento. Não encontrei no sistema nenhum registro de atendimento da paciente em data anterior que solicitasse retorno em 6 meses.Att.",20250227,"CONSULTA - MASTOLOGISTA"],
+  [876172,1199,20843,81,"<b>Não Se Enquadra nos Criterios: </b><br>De acordo protocolo, se enquadra nos critérios:  Paciente diabético com baixa acuidade VISUAL REPENTINA; a HG do paciente também não se enquadra nos critérios de acordo protocolo. A retinopatia foi confirmada? Caso não, sugiro solicitar uma retinografia.Att.",20250310,"CONSULTA DIABETES ALTO RISCO"],
   [876768,1194,80707,6,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Iniciou tratamento?Att.",20250227,"CONSULTA - OBSTéTRICA / PUERPéRIO"],
+  [877845,1259,10446,8,"<b>Solicitação Indevida: </b><br>Retornos para mostrar exames são inseridos diretamente em SMS. Transferido para fila de primeira consulta: último atendimento a mais de seis meses",20250310,"RETORNO CONSULTA DR RENAN"],
   [878025,1284,13469,78,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor informar a data de realização dos exames químicos. Att.",20250307,"CONSULTA HIPERTENSO ALTO RISCO"],
+  [878367,1016,9624,2,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Ausência de RCV. Se alto risco, encaminhar ao CEAE.",20250309,"CONSULTA CARDIOLOGIA DR RENAN"],
+  [878411,46,8712,16,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Detalhamento insuficiente:Lombalgia com intensidade de dor leve, moderada ou grave? Apresenta mobilidade reduzida e/ou radiculopatia?Qual a Condição clínica do paciente: se a dor aguda ou crônica, se há limitação de ADM, se há perda de força muscular;",20250310,"ATENDIMENTO FISIOTERAPIA"],
   [878452,1133,65991,2,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever os exames bioquímicos realizados pelo paciente com data. O paciente é hipertenso e cardiopata? Att.",20250307,"CONSULTA HIPERTENSO ALTO RISCO"],
+  [879617,717,5022,16,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Detalhamento insuficiente:Cervicalgia com dor leve, moderada ou grave? Apresenta mobilidade reduzida e/ou radiculopatia?Qual a Condição clínica do paciente: se a dor aguda ou crônica, se há limitação de ADM, se há perda de força muscular;",20250310,"ATENDIMENTO FISIOTERAPIA"],
+  [880118,1194,3765,6,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>AUSÊNCIA DE RCV. SE ALTO RISCO, encaminhar ao CEAE.",20250309,"CONSULTA CARDIOLOGIA DR RENAN"],
+  [880255,1110,29889,34,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor informar os últimos resultados de exames bioquímicos realizados pelo paciente com data, para prosseguir com agendamento.Att.",20250310,"CONSULTA HIPERTENSO ALTO RISCO"],
 ];
 
 const Unidades = [
