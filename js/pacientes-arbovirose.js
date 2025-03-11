@@ -4714,7 +4714,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/22282">22284</a></td><td>Maria Eduarda Oliveira</td><td><span name="12/04/2024" class="data">12/04/2024</a></td><td>PARAIBA, 391</td><td><span name="CELMA DOS SANTOS" class="">CELMA DOS SANTOS</a></td><td><span name="UAPS VER. MANOEL DOS SANTOS SILVA" class="">UAPS VER. MANOEL DOS SANTOS SILVA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/4572">4574</a></td><td>Anna Flavia Souza Nogueira</td><td><span name="16/04/2024" class="data">16/04/2024</a></td><td>-</td><td><span name="-" class="">-</a></td><td><span name="-" class="">-</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/4572">4574</a></td><td>Anna Flavia Souza Nogueira</td><td><span name="16/04/2024" class="data">16/04/2024</a></td><td>BELO HORIZONTE, 769</td><td><span name="GISLENE FERREIRA BARBOSA" class="">GISLENE FERREIRA BARBOSA</a></td><td><span name="UAPS JOAO DE DEUS SIMOES" class="">UAPS JOAO DE DEUS SIMOES</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/13531">13533</a></td><td>Emanuelly Santos Nogueira</td><td><span name="18/04/2024" class="data">18/04/2024</a></td><td>BOCAIUVA, 163</td><td><span name="JOSELANE MENDES TEIXEIRA" class="">JOSELANE MENDES TEIXEIRA</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
@@ -5131,7 +5131,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/22985">22987</a></td><td>Patrick Silva Ferreira</td><td><span name="14/05/2024" class="data">14/05/2024</a></td><td>ESPINOSA, 44</td><td><span name="RONICLEIA DIAS ROCHA" class="">RONICLEIA DIAS ROCHA</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/10157">10159</a></td><td>Alessandra de Jesus Barbosa</td><td><span name="15/05/2024" class="data">15/05/2024</a></td><td>ESPINOSA, 129</td><td><span name="RONICLEIA DIAS ROCHA" class="">RONICLEIA DIAS ROCHA</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/10157">10159</a></td><td>Alessandra de Jesus Barbosa</td><td><span name="15/05/2024" class="data">15/05/2024</a></td><td>ESPINOSA, 70</td><td><span name="RONICLEIA DIAS ROCHA" class="">RONICLEIA DIAS ROCHA</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/28889">28891</a></td><td>Keilane Soares Pereira</td><td><span name="15/05/2024" class="data">15/05/2024</a></td><td>COMUNIDADE LAGOA GRANDE, 78</td><td><span name="KELY CRISTINA RODRIGUES ARAúJO" class="">KELY CRISTINA RODRIGUES ARAúJO</a></td><td><span name="UAPS LAGOA GRANDE/ DOURADA" class="">UAPS LAGOA GRANDE/ DOURADA</a></td>
