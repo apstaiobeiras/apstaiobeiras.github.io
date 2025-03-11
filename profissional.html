@@ -238,6 +238,20 @@
             return;
           }
 
+          // Coordenadores da Atenção especializada
+          if (codProfissional.startsWith("$")) {
+            for (let grupo of ["Páginas","Farmácia","Tabelas-mapa","Listas e planilhas","Links",
+                               "Ferramentas de gestão","Profissionais de nível médio","Profissionais de nível superior"]) {
+              for (let linha of [...document.getElementsByName(grupo)]) {
+                linha.remove();
+              }
+              for (let grupo of ["Produção","Situação descritiva dos cadastros","Produção diária","Completude do questionário e-sus","Agendadas"]) {
+                  document.getElementById(grupo)?.remove();
+              }
+            }
+            return;
+          }
+
           let { data: equipes, error } = await supabase.from('equipes').select('*');
           for (let equipe of equipes) {
             let profissionais = equipe.profissionais.split(",");
