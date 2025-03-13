@@ -2414,9 +2414,11 @@ const SolicitacoesExcluidas = [
   [875124,1259,42281,8,"Não Se Enquadra nos Criterios",20250307,"CONSULTA HIPERTENSO ALTO RISCO"],
   [875574,1219,37690,33,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>PACIENTE PRECISA SER INVESTIGADO LABORATORIALMENTE, PARA FAZER D DIFERENCIAL ALÉM DE REPETIR O TSH. ",20250312,"CONSULTA ENDOCRINOLOGIA"],
   [875582,1069,20833,6,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Detalhamento insuficiente para regular:Faz uso de órtese ou prótese?Grau de independência/dependência para Atividades de Vida Diária (AVD). Sugiro encaminhar para o CER/RCPD se a paciente Requer assistência para três ou mais atividades.",20250225,"ATENDIMENTO FISIOTERAPIA"],
+  [875697,1260,22547,81,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Fez diagnóstico diferencial? Tratou ITU? Descrição clinica pouco detalhada.",20250313,"ULTRASSONOGRAFIA DE PROSTATA POR VIA ABDOMINAL"],
   [876108,1282,15497,6,"<b>Não Se Enquadra nos Criterios: </b><br>De acordo protocolo mastologia CEAE, BIRADS 2 não se enquadra no critérios de atendimento. Não encontrei no sistema nenhum registro de atendimento da paciente em data anterior que solicitasse retorno em 6 meses.Att.",20250227,"CONSULTA - MASTOLOGISTA"],
   [876172,1199,20843,81,"<b>Não Se Enquadra nos Criterios: </b><br>De acordo protocolo, se enquadra nos critérios:  Paciente diabético com baixa acuidade VISUAL REPENTINA; a HG do paciente também não se enquadra nos critérios de acordo protocolo. A retinopatia foi confirmada? Caso não, sugiro solicitar uma retinografia.Att.",20250310,"CONSULTA DIABETES ALTO RISCO"],
   [876267,907,14498,9,"<b>Não Se Enquadra nos Criterios: </b><br>Paciente não se enquadra nos critérios para atendimento nutricional da e-Multi, devido HBA1C 15, sendo público para o alto risco como já foi encaminhado pelo profissional de acordo com descrição de encaminhamento.",20250312,"AVALIAçaO NUTRICIONISTA E-MULTI"],
+  [876657,1194,67587,6,"Não Se Enquadra nos Criterios",20250313,"CONSULTA - OBSTéTRICA / PUERPéRIO"],
   [876768,1194,80707,6,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Iniciou tratamento?Att.",20250227,"CONSULTA - OBSTéTRICA / PUERPéRIO"],
   [877845,1259,10446,8,"<b>Solicitação Indevida: </b><br>Retornos para mostrar exames são inseridos diretamente em SMS. Transferido para fila de primeira consulta: último atendimento a mais de seis meses",20250310,"RETORNO CONSULTA DR RENAN"],
   [878025,1284,13469,78,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor informar a data de realização dos exames químicos. Att.",20250307,"CONSULTA HIPERTENSO ALTO RISCO"],
@@ -2429,6 +2431,7 @@ const SolicitacoesExcluidas = [
   [880255,1110,29889,34,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor informar os últimos resultados de exames bioquímicos realizados pelo paciente com data, para prosseguir com agendamento.Att.",20250310,"CONSULTA HIPERTENSO ALTO RISCO"],
   [881794,1194,5408,6,"<b>Não Se Enquadra nos Criterios: </b><br>Não é público para atendimento na Clínica Municipal de Fisioterapia.",20250311,"ATENDIMENTO FISIOTERAPIA"],
   [882142,884,24714,3,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor informar a data de realização dos exames bioquímicos.Att.",20250312,"CONSULTA DIABETES ALTO RISCO"],
+  [882338,1194,4539,6,"Não Se Enquadra nos Criterios",20250313,"CONSULTA - OBSTéTRICA / PUERPéRIO"],
 ];
 
 const Unidades = [

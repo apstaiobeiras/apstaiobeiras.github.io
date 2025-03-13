@@ -46,9 +46,6 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/124861">75968</a></td><td>Isis Emanuelly Ferreira Rodrigues</td><td><div style="white-space: nowrap;">9 meses</div></td><td><span name="HUMANIZAR">HUMANIZAR</a></td><td><span name="489">ALINE DE JESUS SILVA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/125479">76514</a></td><td>Matheus Duraes Dos Santos</td><td><div style="white-space: nowrap;">8 meses</div></td><td><span name="VIVER">VIVER</a></td><td><span name="581">JESSICA ANA DE JESUS</a></td>
-    </tr>
-      <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/123633">75017</a></td><td>Anthony Sousa Resende</td><td><div style="white-space: nowrap;">10 meses</div></td><td><span name="CAMINHO">CAMINHO</a></td><td><span name="1128">JOSSIVANIA D' ANGELIS COSTA</a></td>
     </tr>
       <tr>
@@ -323,9 +320,6 @@ document.getElementById('planilha').innerHTML = `<table>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/125717">76730</a></td><td>Henry Rocha Mendes</td><td><div style="white-space: nowrap;">7 meses</div></td><td><span name="VIDA E SAUDE">VIDA E SAUDE</a></td><td><span name="481">MARTA PEREIRA DE OLIVEIRA</a></td>
-    </tr>
-      <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/123047">74632</a></td><td>Eloá Souza Santos</td><td><div style="white-space: nowrap;">11 meses</div></td><td><span name="VIVER">VIVER</a></td><td><span name="581">JESSICA ANA DE JESUS</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/126718">77631</a></td><td>Francisco Rocha Cunha</td><td><div style="white-space: nowrap;">8 meses</div></td><td><span name="RENASCER">RENASCER</a></td><td><span name="1332">MARLENE MATOS OLIVEIRA SOARES</a></td>

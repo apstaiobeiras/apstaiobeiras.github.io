@@ -5065,7 +5065,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/28080">28082</a></td><td>Fernanda da Silva Correia</td><td><span name="07/05/2024" class="data">07/05/2024</a></td><td>SAO JOAO, 1264</td><td><span name="ALMERINDA DE OLIVEIRA SANTOS" class="">ALMERINDA DE OLIVEIRA SANTOS</a></td><td><span name="UAPS ENF. MARY TATIANE" class="">UAPS ENF. MARY TATIANE</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/80493">67627</a></td><td>Yasmim Brandão Cardoso</td><td><span name="08/05/2024" class="data">08/05/2024</a></td><td>BELO HORIZONTE, 410</td><td><span name="MIKAELY CRISTINA SOUZA" class="">MIKAELY CRISTINA SOUZA</a></td><td><span name="UAPS ANTONINO DE ALMEIDA" class="">UAPS ANTONINO DE ALMEIDA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/80493">67627</a></td><td>Yasmim Brandão Cardoso</td><td><span name="08/05/2024" class="data">08/05/2024</a></td><td>-</td><td><span name="-" class="">-</a></td><td><span name="-" class="">-</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/7018">7020</a></td><td>Sarah Alves Chaves</td><td><span name="08/05/2024" class="data">08/05/2024</a></td><td>PERNAMBUCO, 502</td><td><span name="WANESSA MOREIRA DE SOUZA" class="">WANESSA MOREIRA DE SOUZA</a></td><td><span name="UAPS DONA NININHA" class="">UAPS DONA NININHA</a></td>
@@ -7366,6 +7366,9 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/7518">7520</a></td><td>Neusa Gomes Dos Santos</td><td><span name="13/03/2025" class="data">13/03/2025</a></td><td>BARCELONA, 560</td><td><span name="ALMERINDA DE OLIVEIRA SANTOS" class="">ALMERINDA DE OLIVEIRA SANTOS</a></td><td><span name="UAPS ENF. MARY TATIANE" class="">UAPS ENF. MARY TATIANE</a></td>
     </tr>
       <tr>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/17706">17708</a></td><td>Victor Gabriel Mendes Rocha</td><td><span name="13/03/2025" class="data">13/03/2025</a></td><td>SANTO ANTONIO, 925</td><td><span name="ELIANE PEREIRA FREITAS" class="">ELIANE PEREIRA FREITAS</a></td><td><span name="UAPS ED. FIS. DOUGLAS FREDERICO" class="">UAPS ED. FIS. DOUGLAS FREDERICO</a></td>
+    </tr>
+      <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/34666">34476</a></td><td>Otavio Sena de Oliveira</td><td><span name="10/03/2025" class="data">10/03/2025</a></td><td>PARATY, 75</td><td><span name="JESSICA ANA DE JESUS" class="">JESSICA ANA DE JESUS</a></td><td><span name="UAPS ED. FIS. DOUGLAS FREDERICO" class="">UAPS ED. FIS. DOUGLAS FREDERICO</a></td>
     </tr>
     </tbody>
@@ -7458,7 +7461,7 @@ graficos.innerHTML += '<div id="grafico-2025"></div>';
   await (new ApexCharts(document.querySelector("#grafico-2025"), {
     series: [{
       name: "Casos",
-      data: [1,4,5,5,10,13,7,8,12,3,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+      data: [1,4,5,5,10,13,7,8,12,3,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
     }],
     chart: {
       height: 350,
