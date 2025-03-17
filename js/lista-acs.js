@@ -31,13 +31,6 @@ const listaACS = `
                         <tr name="ACOLHER"><th colspan="2" align="left"><br></th></tr>
 <tr class="border header" name="CAMINHO"><td colspan="2"><b>CAMINHO</b></td></tr>
                         <tr class="border tr" name="CAMINHO" onclick="
-                            localStorage.setItem('override:codProfissional','801');
-                            window.location.href = 'profissional.html';
-                        ">
-                            <td style="text-align:right;"><b>801</b></td>
-                            <td>ANGELICA PEREIRA DE OLIVEIRA</td>
-                        </tr>
-                                                <tr class="border tr" name="CAMINHO" onclick="
                             localStorage.setItem('override:codProfissional','1129');
                             window.location.href = 'profissional.html';
                         ">
@@ -249,6 +242,13 @@ const listaACS = `
                         <tr name="ESPETACULAR"><th colspan="2" align="left"><br></th></tr>
 <tr class="border header" name="HARMONIA"><td colspan="2"><b>HARMONIA</b></td></tr>
                         <tr class="border tr" name="HARMONIA" onclick="
+                            localStorage.setItem('override:codProfissional','801');
+                            window.location.href = 'profissional.html';
+                        ">
+                            <td style="text-align:right;"><b>801</b></td>
+                            <td>ANGELICA PEREIRA DE OLIVEIRA</td>
+                        </tr>
+                                                <tr class="border tr" name="HARMONIA" onclick="
                             localStorage.setItem('override:codProfissional','226');
                             window.location.href = 'profissional.html';
                         ">
@@ -261,13 +261,6 @@ const listaACS = `
                         ">
                             <td style="text-align:right;"><b>1125</b></td>
                             <td>JEYSLANE MENDES DE OLIVEIRA</td>
-                        </tr>
-                                                <tr class="border tr" name="HARMONIA" onclick="
-                            localStorage.setItem('override:codProfissional','540');
-                            window.location.href = 'profissional.html';
-                        ">
-                            <td style="text-align:right;"><b>540</b></td>
-                            <td>KAMILA MARIA PEREIRA</td>
                         </tr>
                                                 <tr class="border tr" name="HARMONIA" onclick="
                             localStorage.setItem('override:codProfissional','271');
@@ -506,11 +499,11 @@ const listaACS = `
                             <td>GEISIANE CARVALHO</td>
                         </tr>
                                                 <tr class="border tr" name="UNIAO" onclick="
-                            localStorage.setItem('override:codProfissional','564');
+                            localStorage.setItem('override:codProfissional','540');
                             window.location.href = 'profissional.html';
                         ">
-                            <td style="text-align:right;"><b>564</b></td>
-                            <td>MAISA OLIVEIRA BARBOSA</td>
+                            <td style="text-align:right;"><b>540</b></td>
+                            <td>KAMILA MARIA PEREIRA</td>
                         </tr>
                                                 <tr class="border tr" name="UNIAO" onclick="
                             localStorage.setItem('override:codProfissional','447');

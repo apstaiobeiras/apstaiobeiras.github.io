@@ -214,8 +214,6 @@ const acs = {
   67: "Luzinete Aparecida Oliveira Meireles",
   "Magda Rosa dos Santos": 441,
   441: "Magda Rosa dos Santos",
-  "Maisa Oliveira Barbosa": 564,
-  564: "Maisa Oliveira Barbosa",
   "Marlane da Silva Santos": 271,
   271: "Marlane da Silva Santos",
   "Marlene Matos Oliveira Soares": 1332,

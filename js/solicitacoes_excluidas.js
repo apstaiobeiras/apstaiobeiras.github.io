@@ -2432,6 +2432,9 @@ const SolicitacoesExcluidas = [
   [881794,1194,5408,6,"<b>Não Se Enquadra nos Criterios: </b><br>Não é público para atendimento na Clínica Municipal de Fisioterapia.",20250311,"ATENDIMENTO FISIOTERAPIA"],
   [882142,884,24714,3,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor informar a data de realização dos exames bioquímicos.Att.",20250312,"CONSULTA DIABETES ALTO RISCO"],
   [882338,1194,4539,6,"Não Se Enquadra nos Criterios",20250313,"CONSULTA - OBSTéTRICA / PUERPéRIO"],
+  [884256,1325,16045,10,"<b>Não Se Enquadra nos Criterios: </b><br>PACIENTE EM SEGUIMENTO COM CARDIOLOGIA ALTO RISCO, SEM CRITÉRIOS DE MANUTENÇÃO DO ACOMPANHAMENTO NO AMBULATORIO DE DR. NIKOLAS. JÁ ORIENTADO AO MESMO O SEGUIMENTO DO SEU QUADRO NA CARDIOLOGIA ALTO RISCO.",20250317,"CONSULTA CARDIOLOGIA DR NIKOLAS"],
+  [884611,1342,33220,3,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Detalhamento insuficiente: Faz uso de órtese ou prótese?Grau de independência/dependência para Atividades de Vida Diária (AVD)? Se Requer assistência para até duas atividades: especificar no encaminhamento e reenchaminhar para a Clínica. Se Requer assistência para três ou mais atividades: sugiro referenciar para a RCPD/CER.",20250317,"ATENDIMENTO FISIOTERAPIA"],
+  [885505,1317,17227,3,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor informar a data de realização dos exames bioquímicos.Att.",20250317,"CONSULTA HIPERTENSO ALTO RISCO"],
 ];
 
 const Unidades = [
