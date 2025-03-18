@@ -2434,7 +2434,11 @@ const SolicitacoesExcluidas = [
   [882338,1194,4539,6,"Não Se Enquadra nos Criterios",20250313,"CONSULTA - OBSTéTRICA / PUERPéRIO"],
   [884256,1325,16045,10,"<b>Não Se Enquadra nos Criterios: </b><br>PACIENTE EM SEGUIMENTO COM CARDIOLOGIA ALTO RISCO, SEM CRITÉRIOS DE MANUTENÇÃO DO ACOMPANHAMENTO NO AMBULATORIO DE DR. NIKOLAS. JÁ ORIENTADO AO MESMO O SEGUIMENTO DO SEU QUADRO NA CARDIOLOGIA ALTO RISCO.",20250317,"CONSULTA CARDIOLOGIA DR NIKOLAS"],
   [884611,1342,33220,3,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Detalhamento insuficiente: Faz uso de órtese ou prótese?Grau de independência/dependência para Atividades de Vida Diária (AVD)? Se Requer assistência para até duas atividades: especificar no encaminhamento e reenchaminhar para a Clínica. Se Requer assistência para três ou mais atividades: sugiro referenciar para a RCPD/CER.",20250317,"ATENDIMENTO FISIOTERAPIA"],
+  [884795,1069,27915,6,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Detalhamento insuficiente:Dor lombar dor leve, moderada ou grave? Apresenta mobilidade reduzida e/ou radiculopatia?Qual a Condição clínica do paciente: se a dor aguda ou crônica, se há limitação de ADM, se há perda de força muscular;Favor especificar qual o déficit funcional. Há limitação de AVD's? Grau de independência/dependência para Atividades de Vida Diária (AVD)?",20250318,"ATENDIMENTO FISIOTERAPIA"],
+  [885039,1016,70694,2,"<b>Falta Detalhar Exames: </b><br>ENCAMINHAMENTO NÃO CONTEMPLA O CONTEÚDO DESCRITIVO MÍNIMO QUE A SOLICITAÇÃO DEVE CONTER PARA REGULAÇÃO.",20250318,"AVALIAçaO NUTRICIONISTA E-MULTI"],
   [885505,1317,17227,3,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor informar a data de realização dos exames bioquímicos.Att.",20250317,"CONSULTA HIPERTENSO ALTO RISCO"],
+  [886058,1221,27860,4,"<b>Agendar na Atenção Primaria: </b><br>VISITA SERÁ REALIZADA NOVAMENTE 19/03 ÁS 15:00 HS",20250318,"FISIOTERAPIA- ATENDIMENTO DOMICILIAR"],
+  [886773,1231,13743,68,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Detalhamento insuficiente para regular: Qual a alteração uroginecológica apresentada?/ Diagnóstico médico;Histórico do quadro clínico;Terapias realizadas previamente (cirurgias, medicamentos).",20250318,"FISIOTERAPIA PELVICA"],
 ];
 
 const Unidades = [
