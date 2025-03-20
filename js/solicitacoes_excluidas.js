@@ -2103,7 +2103,11 @@ const SolicitacoesExcluidas = [
   [840370,985,8831,11,"<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA FILA DE RETONO.",20241227,"CONSULTA ORTOPEDISTA"],
   [840376,1194,52908,6,"<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA \"AVALIAÇÃO CIRURGICA POLICLÍNICA\".",20241227,"CONSULTA CIRURGIAO GERAL"],
   [840684,907,35649,9,"<b>Não Se Enquadra nos Criterios: </b><br>Descrever resultados dos exames que comprovam diagnóstico.",20241230,"CONSULTA ORTOPEDISTA"],
+  [250243,821,18043,6,"<b>Agendar na Atenção Primaria: </b><br>Solicitações realizadas há 2 anos, rever indicações de consulta e reinserir se o paciente não tiver sido avaliado neste período por um oftalmologista na rede particular.",20250320,"CONSULTA OFTALMOLOGIA"],
   [318526,1056,8876,7,"<b>Solicitação Indevida: </b><br>correção da solicitação.",20250206,"CONSULTA CIRURGIAO DENTISTA"],
+  [360393,1150,7597,34,"<b>Agendar na Atenção Primaria: </b><br>Solicitações realizadas há 2 anos, rever indicações de consulta e reinserir se o paciente não tiver sido avaliado neste período por um oftalmologista na rede particular.",20250320,"CONSULTA OFTALMOLOGIA"],
+  [468471,775,15543,7,"<b>Agendar na Atenção Primaria: </b><br>Solicitações realizadas há 2 anos, rever indicações de consulta e reinserir se o paciente não tiver sido avaliado neste período por um oftalmologista na rede particular.",20250320,"CONSULTA OFTALMOLOGIA"],
+  [621541,1259,45446,13,"<b>Agendar na Atenção Primaria: </b><br>Solicitações realizadas há 2 anos, rever indicações de consulta e reinserir se o paciente não tiver sido avaliado neste período por um oftalmologista na rede particular.",20250320,"CONSULTA OFTALMOLOGIA"],
   [635915,1137,17940,9,"<b>Solicitação Indevida: </b><br>REAVALIAR QUADRO, E CAO SE ENQUADRE NOS CRITÉRIOS, ENCAMINHAR A GINECOLOGIA POLICLÍNICA.",20250108,"CONSULTA GINECOLOGISTA - PPI"],
   [723339,1046,69256,10,"Não Se Enquadra nos Criterios",20250319,"CONSULTA CARDIOLOGIA DR RENAN"],
   [741640,1272,50982,7,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>........",20250204,"REMOçaO DE DENTE RETIDO (INCLUSO / IMPACTADO)"],
@@ -2450,6 +2454,7 @@ const SolicitacoesExcluidas = [
   [886058,1221,27860,4,"<b>Agendar na Atenção Primaria: </b><br>VISITA SERÁ REALIZADA NOVAMENTE 19/03 ÁS 15:00 HS",20250318,"FISIOTERAPIA- ATENDIMENTO DOMICILIAR"],
   [886215,1193,21146,56,"Não Se Enquadra nos Criterios",20250319,"CONSULTA GINECOLOGIA CEAE"],
   [886773,1231,13743,68,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Detalhamento insuficiente para regular: Qual a alteração uroginecológica apresentada?/ Diagnóstico médico;Histórico do quadro clínico;Terapias realizadas previamente (cirurgias, medicamentos).",20250318,"FISIOTERAPIA PELVICA"],
+  [887267,1267,33569,8,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor reencaminhar com os resultados dos exames bioquímicos com data de realização.Att.",20250320,"CONSULTA HIPERTENSO ALTO RISCO"],
 ];
 
 const Unidades = [
@@ -2520,6 +2525,7 @@ const Profissionais = [
   'MARCIO ANDRE FERNANDES TEIXEIRA:806',
   'PROFISSIONAL NÃO INFORMADO:807',
   'JAMYLLE MOREIRA FERNANDES:811',
+  'REINALDO ALVES SANTANA:821',
   'LUCIANY DIAS LIMA:829',
   'ISABELLA LOPES SANTOS:832',
   'ISAC EVANGELISTA FERREIRA:833',
