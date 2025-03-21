@@ -1447,7 +1447,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/4517">4519</a></td><td>Edimilson Alves Ribeiro</td><td><span name="14/03/2024" class="data">14/03/2024</a></td><td>CORAÇAO DE JESUS, 154</td><td><span name="LEISIANE ALVES RIBEIRO" class="">LEISIANE ALVES RIBEIRO</a></td><td><span name="UAPS ENF. MARY TATIANE" class="">UAPS ENF. MARY TATIANE</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/8590">8592</a></td><td>Suely Alves Ferreira</td><td><span name="18/03/2024" class="data">18/03/2024</a></td><td>-</td><td><span name="-" class="">-</a></td><td><span name="-" class="">-</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/8590">8592</a></td><td>Suely Alves Ferreira</td><td><span name="18/03/2024" class="data">18/03/2024</a></td><td>CEARA, 495</td><td><span name="KATIANA FERREIRA" class="">KATIANA FERREIRA</a></td><td><span name="UAPS JOAO DE DEUS SIMOES" class="">UAPS JOAO DE DEUS SIMOES</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/5748">5750</a></td><td>Yan Jefferson Souza Gomes</td><td><span name="19/03/2024" class="data">19/03/2024</a></td><td>CONTORNO, 5240</td><td><span name="JUSSELY SOARES DE SOUZA" class="">JUSSELY SOARES DE SOUZA</a></td><td><span name="UAPS ENF. MARY TATIANE" class="">UAPS ENF. MARY TATIANE</a></td>
