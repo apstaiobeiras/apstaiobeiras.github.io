@@ -2110,6 +2110,7 @@ const SolicitacoesExcluidas = [
   [621541,1259,45446,13,"<b>Agendar na Atenção Primaria: </b><br>Solicitações realizadas há 2 anos, rever indicações de consulta e reinserir se o paciente não tiver sido avaliado neste período por um oftalmologista na rede particular.",20250320,"CONSULTA OFTALMOLOGIA"],
   [635915,1137,17940,9,"<b>Solicitação Indevida: </b><br>REAVALIAR QUADRO, E CAO SE ENQUADRE NOS CRITÉRIOS, ENCAMINHAR A GINECOLOGIA POLICLÍNICA.",20250108,"CONSULTA GINECOLOGISTA - PPI"],
   [723339,1046,69256,10,"Não Se Enquadra nos Criterios",20250319,"CONSULTA CARDIOLOGIA DR RENAN"],
+  [724358,1221,5249,4,"<b>Não Se Enquadra nos Criterios: </b><br>PACIENTE SEM CRITÉRIOS DE ACESSO A CARDIOLOGIA AMBULATORIAL.",20250321,"RETORNO CONSULTA DR RENAN"],
   [741640,1272,50982,7,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>........",20250204,"REMOçaO DE DENTE RETIDO (INCLUSO / IMPACTADO)"],
   [749266,1016,19759,13,"Não Se Enquadra nos Criterios",20250214,"AVALIAçaO CIRURGICA POLICLINICA"],
   [754794,1328,62623,78,"<b>Falta Detalhar Exames: </b><br>Descrever o resultado do ECG basal.",20250121,"TESTE DE ESFORCO / TESTE ERGOMETRICO"],
@@ -2159,6 +2160,7 @@ const SolicitacoesExcluidas = [
   [825786,1260,1116,81,"<b>Falta Detalhar Exames: </b><br>Descrever resultado do ECG BASAL.",20250121,"TESTE DE ESFORCO / TESTE ERGOMETRICO"],
   [825838,1132,70549,10,"<b>Solicitação Indevida: </b><br>PROCEDIMENTO INDISPONÍVEL (AUSENCIA DE PRESTADOR SUS).",20250122,"ULTRASSONOGRAFIA INGUINAL"],
   [826371,1291,7884,75,"<b>Não Se Enquadra nos Criterios: </b><br>Tratar H Pylori, após 30 dias repetir EDA, acompanhar clinicamente, Encaminhar em caso de falha terapêutica.",20250227,"CONSULTA GASTROENTEROLOGIA"],
+  [827623,1197,19945,10,"<b>Solicitação Indevida: </b><br>Esta Paciente nao faz parte para atendimento no CEO de Taiobeiras, seu CEO de referencia é outro município.",20250321,"TRATAMENTO ENDODôNTICO DE DENTE PERMANENTE UNIRRADICULAR"],
   [829687,1132,19121,10,"<b>Falta Detalhar Exames: </b><br>Descrever exames já realizados tanto de imagem, quando laboratorial.",20250108,"CONSULTA NEUROLOGIA"],
   [830274,320,36190,78,"<b>Solicitação Indevida: </b><br>DEMANDA DE FRATURA DEVE SER AGENDADA EM FRATURA.",20250206,"CONSULTA ORTOPEDISTA"],
   [830849,1016,20797,2,"<b>Não Se Enquadra nos Criterios: </b><br>Ao calcular: TAXA DE FILTRAÇÃO GLOMERULAR: 22,0 Necessário encaminhar para NEFROLOGIA SALINAS ",20250116,"CONSULTA NEFROLOGISTA"],
@@ -2455,6 +2457,7 @@ const SolicitacoesExcluidas = [
   [886215,1193,21146,56,"Não Se Enquadra nos Criterios",20250319,"CONSULTA GINECOLOGIA CEAE"],
   [886773,1231,13743,68,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Detalhamento insuficiente para regular: Qual a alteração uroginecológica apresentada?/ Diagnóstico médico;Histórico do quadro clínico;Terapias realizadas previamente (cirurgias, medicamentos).",20250318,"FISIOTERAPIA PELVICA"],
   [887267,1267,33569,8,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor reencaminhar com os resultados dos exames bioquímicos com data de realização.Att.",20250320,"CONSULTA HIPERTENSO ALTO RISCO"],
+  [888408,1400,12451,2,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>AUSÊNCIA DE ESTRATIFICAÇÃO DE RISCO CARDIOVASCULAR. SE PACIENTE ALTO RISCO, ENCAMINHAR AO CEAE. SE RISCO MODERADO/BAIXO, REINSERIR EM FILA \"CONSULTA CARDIOLOGIA RENAN.\" GRATA.",20250321,"CONSULTA CARDIOLOGIA DR RENAN"],
 ];
 
 const Unidades = [

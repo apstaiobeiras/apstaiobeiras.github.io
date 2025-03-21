@@ -34,7 +34,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/123054">74639</a></td><td>Derick Antony Zarri Ferreira Dos Santos</td><td><div style="white-space: nowrap;">1 ano e 5 mês </div></td><td><span name="HUMANIZAR" >HUMANIZAR</a></td><td><span name="317" >NORMA TRANCOSO VIANA</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/125753">76763</a></td><td>Mateus Leal Bacelar de Aguiar</td><td><div style="white-space: nowrap;">1 ano e 1 mês </div></td><td><span name="ESPERANÇA" >ESPERANÇA</a></td><td><span name="968" >AMANDA MARIA SOARES SANTOS</a></td><td><span name="1º DOSE" style="white-space: nowrap;">1º DOSE</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/125753">76763</a></td><td>Mateus Leal Bacelar de Aguiar</td><td><div style="white-space: nowrap;">1 ano e 2 mês </div></td><td><span name="ESPERANÇA" >ESPERANÇA</a></td><td><span name="968" >AMANDA MARIA SOARES SANTOS</a></td><td><span name="1º DOSE" style="white-space: nowrap;">1º DOSE</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/124966">76059</a></td><td>Laura Costa Viana</td><td><div style="white-space: nowrap;">1 ano e 0 mês </div></td><td><span name="HARMONIA" >HARMONIA</a></td><td><span name="226" >GEISSIANE MARQUES FERREIRA</a></td><td><span name="1º DOSE" style="white-space: nowrap;">1º DOSE</a></td>
