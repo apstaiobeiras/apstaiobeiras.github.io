@@ -2176,6 +2176,7 @@ const SolicitacoesExcluidas = [
   [836655,1267,7971,8,"<b>Não Se Enquadra nos Criterios: </b><br>Deve haver um relatório do serviço de psicologia para endossar ou não a possibilidade. Inicialmente, sugiro acompanhar, fazer mudança do estilo de vida e terapia.",20250109,"CONSULTA NEUROLOGIA"],
   [836919,758,33631,16,"<b>Solicitação Indevida: </b><br>REINSERIDO COM DEFINIÇÃO DE ORTOPEDISTA.",20250206,"CONSULTA ORTOPEDISTA"],
   [838056,1317,78642,3,"<b>Não Se Enquadra nos Criterios: </b><br>Sugiro encaminhar para o CAPS AD, além de otimizar tratamento profilático, inicialmente.",20250109,"CONSULTA NEUROLOGIA"],
+  [838299,1016,1614,213,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>É NECESSÁRIO RELATAR SE OS RESULTADOS DOS EXAMES DO PACIENTE ESTÃO PRONTOS E A DATA EM QUE FORAM REALIZADOS. GRATA!",20250326,"RETORNO NEUROLOGIA DANDARA"],
   [838616,1350,29213,34,"<b>Não Se Enquadra nos Criterios: </b><br>O paciente tem critério para NEFROLOGIA - SALINAS : ESTAGIO 3B - PROTEINÚRIA ELEVADA",20250116,"CONSULTA NEFROLOGISTA"],
   [839556,507,6975,2,"<b>Falta Detalhar Exames: </b><br>Qual investigação e terapêutica realizada?",20250109,"CONSULTA NEUROLOGIA"],
   [839560,1366,243,34,"<b>Não Se Enquadra nos Criterios: </b><br>Qual propedêutica realizada para o diagnóstico diferencial?",20250109,"CONSULTA NEUROLOGIA"],
@@ -2324,6 +2325,7 @@ const SolicitacoesExcluidas = [
   [858544,1291,11677,75,"<b>Não Se Enquadra nos Criterios: </b><br>Quadro de cisto anexial e sintomas de climatério deve ser lançado na fila da GINECOLOGIA POLICLÍNICA.",20250131,"CONSULTA GINECOLOGIA CEAE"],
   [858552,1306,43415,8,"Não Se Enquadra nos Criterios",20250312,"AVALIAçaO NUTRICIONISTA E-MULTI"],
   [858562,1243,12376,9,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Qual a data de realização da MMG?",20250131,"CONSULTA - MASTOLOGISTA"],
+  [858584,1219,33579,33,"<b>Solicitação Indevida: </b><br>PACIENTE INSERIDO NA FILA DE PRIMEIRA CONSULTA.",20250326,"RETORNO NEUROLOGIA DANDARA"],
   [858591,1317,78801,3,"<b>Não Se Enquadra nos Criterios: </b><br>PACIENTE COM HBA1C > 9%. DEVE SER REFERENCIADA AO ALTO RISCO.DATA DOS EXAMES: 21/01/2025HM: 4.59 HB: 13.6 HT: 39.8 LEU: 8800 EOSINOFILOS : 2.0 BASOFILOS: 1.0 PLAQ: 29.6000 TRIG: 497.79 FAL: 58.17 TGO: 14.83 TGP: 11.58 UREIA: 14.76 GLICEMIA: 247.00 CT: 330.97 HDL: 39.66 LDL: 191.75VLDL: 99.56 CREATININA: 0.58 K: 4.6 HBA1C 9,3TFG:104 mL/min/1.73 m²",20250131,"AVALIAçaO NUTRICIONISTA E-MULTI"],
   [858754,1291,8728,75,"<b>Não Se Enquadra nos Criterios: </b><br>Estratificar RCV, iniciar Purant4 25mcg - meta TSH 2,5. Monitorar trimestralmente, além de seguimento com nutricionista devido Obesidade. Se não houver sucesso do tratamento em 3 meses, reencaminhar.",20250311,"CONSULTA ENDOCRINOLOGIA"],
   [858836,1366,33926,34,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever resultado do último PCCU com a data da realização.",20250131,"CONSULTA GINECOLOGIA POLICLINICA"],
@@ -2392,6 +2394,7 @@ const SolicitacoesExcluidas = [
   [868740,1193,20918,56,"<b>Não Se Enquadra nos Criterios: </b><br>Investigue outras causas de dor torácica. Fez RX?",20250311,"ECOCARDIOGRAMA COM DOOPLER"],
   [868797,907,7613,78,"<b>Não Se Enquadra nos Criterios: </b><br>Pcaiente com HBA1C 14%, não se enquadra para receber acompanhamento nutricional da e-Multi na APS, deve ser encaminhada para o CEAE (Alto risco) como já foi realizado (pela descrição do encaminhamento).",20250221,"AVALIAçaO NUTRICIONISTA E-MULTI"],
   [869459,1328,11101,78,"<b>Não Se Enquadra nos Criterios: </b><br>Repetir exame laborat. para confirmar, caso mantenha e paciente esteja sintomático, inicie tratamento. Sugiro revisao em manejo de Hipotireoidismo Subclínico e T. de Hashimoto. À  disposição.",20250312,"CONSULTA ENDOCRINOLOGIA"],
+  [869465,1194,34542,6,"<b>Não Se Enquadra nos Criterios: </b><br>PACIENTE EM QUESTÃO NÃO APRESENTA HISTÓRICO DE ATENDIMENTO COM SERVIÇO DE NEUROLOGIA AMBULATORIAL, NÃO SE ENQUADRANDO NOS CRITÉRIOS DE RETORNO. VERIFICAR SE A INDICAÇÃO DO MEDICAMENTO NÃO FOI REALIZADA EM REDE PARTICULAR OU OUTRO SERVIÇO SUS (CER). SE NECESSÁRIO, ENCAMINHAR COMO PRIMEIRA CONSULTA, PORÉM COM DETALHAMENTO CLÍNICO DO QUADRO DA MESMA. GRATA!",20250326,"RETORNO NEUROLOGIA DANDARA"],
   [869642,1366,25358,3,"<b>Solicitação Indevida: </b><br>PACIENTE REINSERIDO NA FILA COM DETERMINAÇÃO DE PROFISSIONA ORTOPEDISTA.",20250324,"CONSULTA ORTOPEDISTA"],
   [869713,46,10994,16,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Detalhamento insuficiente.Lombalgia com dor leve, moderada ou grave? Mobilidade reduzida e/ou radiculopatia?Qual a condição clínica do paciente: se a dor aguda ou crônica, se há limitação de ADM, se há perda de força muscular.",20250217,"ATENDIMENTO FISIOTERAPIA"],
   [869778,1193,31687,56,"Não Se Enquadra nos Criterios",20250221,"AVALIAçaO FONOAUDIOLOGIA E-MULTI"],
@@ -2491,11 +2494,13 @@ const SolicitacoesExcluidas = [
   [889861,474,24714,18,"Solicitação Indevida",20250321,"ECOCARDIOGRAMA COM DOOPLER"],
   [889862,474,30052,18,"Solicitação Indevida",20250321,"ECOCARDIOGRAMA COM DOOPLER"],
   [889996,1400,29443,2,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor verificar com a paciente de realizou os exames solicitados para o retorno. CD:     RETORNO EM MAIO  COM EXAMESAtt.",20250324,"CONSULTA DIABETES ALTO RISCO"],
+  [890152,1231,17275,16,"Encaminhamento incompleto / Falta detalhar exames",20250326,"ULTRASSONOGRAFIA DE PROSTATA POR VIA ABDOMINAL"],
   [890202,320,33603,78,"Não Se Enquadra nos Criterios",20250324,"CONSULTA GINECOLOGIA CEAE"],
   [890674,1366,21566,34,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>POR SE TRATAR DE PACIENTE HIPERTENSO, FAZ SE NECESSÁRIO DETALHAR RISCO CARDIOVASCULAR. SE RISCO MODERADO/BAIXO, ENCAMINHAR A CARDIOLOGIA MABULATORIAL CONFORME CRITÉRIOS CLÍNICOS DETALHADOS EM PROTOCOLO. VALE RESSALTAR QUE ENCAMINHAMENTOS A CARDIOLOGAI AMBULATORIAL NÃO DEVE SER INSERIDOS EM FILA DE ESPERA, E SIM MANUALMENTE. DETACA-SE AINDA QUE SE SOLICITAÇÃO A PEDIDO, JUSTIFICAR MELHOR QUE SE TRATA DE TAL DEMANDA CONFORME ALINHAMENTO. GRATA.",20250325,"CONSULTA CARDIOLOGIA DR NIKOLAS"],
   [890807,987,20357,11,"<b>Não Se Enquadra nos Criterios: </b><br>PACIENTE ESTÁ SENDO ACOMPANHADO PELA EQUIPE DO MELHOR EM CASA",20250325,"FISIOTERAPIA- ATENDIMENTO DOMICILIAR"],
   [891171,586,39442,80,"<b>Solicitação Indevida: </b><br>Suspeita de paciente lançado na fila apenas para fins de teste de sistema.",20250325,"AVALIAçaO PSICOLOGO E-MULTI"],
   [891197,775,15650,7,"<b>Solicitação Indevida: </b><br>PACIENTE INSERIDO NA FILA DE PRIEMIRA CONSULTA COM DEFINIÇÃO DE PROFISSIONAL.",20250325,"RETORNO CONSULTA ORTOPEDISTA"],
+  [892911,1193,25316,56,"<b>Não Se Enquadra nos Criterios: </b><br>Ginecomastia não se enquadra nos critérios de atendimento mastologia CEAE.Att.",20250326,"CONSULTA MASTOLOGIA CEAE"],
 ];
 
 const Unidades = [
