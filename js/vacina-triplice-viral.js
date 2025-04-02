@@ -7,7 +7,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/120989">73005</a></td><td>Esther Cardoso de Souza</td><td><div style="white-space: nowrap;">1 ano e 6 mês </div></td><td><span name="ESPETACULAR" >ESPETACULAR</a></td><td><span name="346" >ELIETE MARIA DE OLIVEIRA GOMES</a></td><td><span name="1º DOSE" style="white-space: nowrap;">1º DOSE</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/128601">79344</a></td><td>Antony Dias Dourado</td><td><div style="white-space: nowrap;">1 ano e 2 mês </div></td><td><span name="ACOLHER" >ACOLHER</a></td><td><span name="168" >THAIS ROSA DE ALMEIDA SILVA</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/128601">79344</a></td><td>Antony Dias Dourado</td><td><div style="white-space: nowrap;">1 ano e 3 mês </div></td><td><span name="ACOLHER" >ACOLHER</a></td><td><span name="168" >THAIS ROSA DE ALMEIDA SILVA</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/130873">81323</a></td><td>Joao Miguel Magalhaes de Oliveira</td><td><div style="white-space: nowrap;">1 ano e 6 mês </div></td><td><span name="HARMONIA" >HARMONIA</a></td><td><span name="226" >GEISSIANE MARQUES FERREIRA</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
@@ -34,7 +34,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/80714">67655</a></td><td>Isis Mendes Barros</td><td><div style="white-space: nowrap;">1 ano e 9 mês </div></td><td><span name="HARMONIA" >HARMONIA</a></td><td><span name="271" >MARLANE DA SILVA SANTOS</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/123054">74639</a></td><td>Derick Antony Zarri Ferreira Dos Santos</td><td><div style="white-space: nowrap;">1 ano e 5 mês </div></td><td><span name="HUMANIZAR" >HUMANIZAR</a></td><td><span name="317" >NORMA TRANCOSO VIANA</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/123054">74639</a></td><td>Derick Antony Zarri Ferreira Dos Santos</td><td><div style="white-space: nowrap;">1 ano e 6 mês </div></td><td><span name="HUMANIZAR" >HUMANIZAR</a></td><td><span name="317" >NORMA TRANCOSO VIANA</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/126016">77010</a></td><td>Gabriel Leal Bacelar de Aguiar</td><td><div style="white-space: nowrap;">1 ano e 11 mês </div></td><td><span name="ESPERANÇA" >ESPERANÇA</a></td><td><span name="968" >AMANDA MARIA SOARES SANTOS</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
@@ -56,6 +56,9 @@ document.getElementById('planilha').innerHTML = `<table>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/65343">63734</a></td><td>Alice Santos Monteiro</td><td><div style="white-space: nowrap;">1 ano e 7 mês </div></td><td><span name="VIDA" >VIDA</a></td><td><span name="743" >ILCA ANTUNIS DA SILVA</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
+    </tr>
+      <tr>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/128409">79162</a></td><td>Maria Cloe Dos Santos Russo</td><td><div style="white-space: nowrap;">1 ano e 0 mês </div></td><td><span name="LIBERDADE" >LIBERDADE</a></td><td><span name="446" >DARCIELIA EURIDES DOS SANTOS</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/129158">79822</a></td><td>Livia Souza Ribeiro</td><td><div style="white-space: nowrap;">1 ano e 7 mês </div></td><td><span name="UNIAO" >UNIAO</a></td><td><span name="540" >KAMILA MARIA PEREIRA</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
