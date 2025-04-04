@@ -58,6 +58,13 @@ const listaACS = `
                             <td style="text-align:right;"><b>1127</b></td>
                             <td>KEILA DOS SANTOS SOUSA</td>
                         </tr>
+                                                <tr class="border tr" name="CAMINHO" onclick="
+                            localStorage.setItem('override:codProfissional','798');
+                            window.location.href = 'profissional.html';
+                        ">
+                            <td style="text-align:right;"><b>798</b></td>
+                            <td>MAGMA ALVES BOTELHO</td>
+                        </tr>
                         <tr name="CAMINHO"><th colspan="2" align="left"><br></th></tr>
 <tr class="border header" name="COMUNIDADES RURAIS"><td colspan="2"><b>COMUNIDADES RURAIS</b></td></tr>
                         <tr class="border tr" name="COMUNIDADES RURAIS" onclick="

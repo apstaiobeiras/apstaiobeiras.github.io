@@ -2323,6 +2323,7 @@ const SolicitacoesExcluidas = [
   [857181,1243,14656,9,"<b>Não Se Enquadra nos Criterios: </b><br>Quadro de endometriose deve ser lançado na fila da GINECOLOGIA POLICLÍNICA.",20250128,"CONSULTA GINECOLOGIA CEAE"],
   [857261,1193,79858,56,"<b>Não Se Enquadra nos Criterios: </b><br>De acordo protocolo, o refluxo se enquadra nos critérios de atendimento quando há  repercussão nutricional, o lactente perdeu peso? Sugiro reforçar com a mãe os cuidados que ela pode realizar para o refluxo. •	Mantenha o bebê mais ereto durante as mamadas (cerca de 45°).•	Após a mamada, segurá-lo na posição vertical por pelo menos 20 a 30 minutos.•	Se estiver amamentando, ofereça o peito em intervalos menores, evitando que o bebê engula muito ar.•	Se usa mamadeira, escolha um bico com fluxo adequado para evitar ingestão rápida de leite.•	Ajudar o bebê a arrotar durante se apresentar sinais e após a mamada, pois o ar acumulado no estômago pode piorar o refluxo.•	Não balançar ou deite o bebê imediatamente após as mamadas.•	Evite pressionar a barriguinha com roupas apertadas ou fraldas muito ajustadas.•	Pode-se inclinar levemente o berço (elevação do colchão entre 30º e 45º).Att.",20250129,"CONSULTA PEDIATRIA ALTO RISCO"],
   [857385,1220,18376,13,"Agendar na Atenção Primaria",20250130,"FISIOTERAPIA- ATENDIMENTO DOMICILIAR"],
+  [858197,1220,35462,13,"<b>Não Se Enquadra nos Criterios: </b><br>Sugiro discutir caso no telessaúde. Sem critérios clínicos para colonoscopia, pela descrição.",20250404,"COLONOSCOPIA COM BIOPSIA"],
   [858327,507,10116,2,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor descrever resultado do último PCCU com a data da realização.",20250129,"CONSULTA GINECOLOGIA POLICLINICA"],
   [858383,1366,34389,3,"<b>Solicitação Indevida: </b><br>FILA DESTINADA A MICRORREGIÃO. QUADROS AGUDOS DE FRATURA DEVEM SER ENCAMINHADOS MANUALMENTE A SECRETARIA DE SAUDE. O QUADRO EM QUESTAO NAO SE TRATA DE FRATURA AGUDA, DEVENSO SER ENCAMINHADO A FILA DE ORTOPEDIA.",20250203,"RETORNO FRATURA ORTOPEDIA"],
   [858544,1291,11677,75,"<b>Não Se Enquadra nos Criterios: </b><br>Quadro de cisto anexial e sintomas de climatério deve ser lançado na fila da GINECOLOGIA POLICLÍNICA.",20250131,"CONSULTA GINECOLOGIA CEAE"],
@@ -2528,7 +2529,9 @@ const SolicitacoesExcluidas = [
   [891171,586,39442,80,"<b>Solicitação Indevida: </b><br>Suspeita de paciente lançado na fila apenas para fins de teste de sistema.",20250325,"AVALIAçaO PSICOLOGO E-MULTI"],
   [891197,775,15650,7,"<b>Solicitação Indevida: </b><br>PACIENTE INSERIDO NA FILA DE PRIEMIRA CONSULTA COM DEFINIÇÃO DE PROFISSIONAL.",20250325,"RETORNO CONSULTA ORTOPEDISTA"],
   [891649,1260,16534,81,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>É NECESSÁRIO INFORMAR O RISCO CARDIOVASCULAR DA PACIENTE DE ACORDO COM A CALCULADORA (HEARTS). VERIFICAR SE A MESMA SE ENQUADRA NOS CRITÉRIOS DE ENCAMINHAMENTO DE CARDIOLOGIA CEAE.",20250331,"CONSULTA CARDIOLOGIA DR RENAN"],
+  [891970,1411,8548,75,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>É NECESSÁRIO DETALHAR MAIS O QUADRO CLÍNICO DA PACIENTE. A MESMA POSSUI RESULTADOS DE EXAMES? AVALIAR CRITÉRIOS DA POLICLÍNICA CEAE. OS CASOS DE LESÕES DO COLO DO ÚTERO DEVEM SER REFERENCIADOS PARA GINECOLOGIA CEAE.",20250404,"CONSULTA GINECOLOGIA POLICLINICA"],
   [892111,1220,45922,13,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Detalhamento insuficiente.:Qual a condição clínica da paciente: se há limitação de ADM, se há perda de força muscular;",20250331,"ATENDIMENTO FISIOTERAPIA"],
+  [892505,1291,44274,75,"<b>Não Se Enquadra nos Criterios: </b><br>FAIXA ETÁRIA NÃO ATENDIDA PELA NEUROLOGIA. SUGIRO QUE AVALIE CRITÉRIOS DE ACESSO AO CER, PELA DEMANDA CLÍNICA SOLICITADA.",20250404,"CONSULTA NEUROLOGIA"],
   [892665,1407,16337,81,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>É NECESSÁRIO DESCREVER IDADE GESTACIONAL DA PACIENTE E DADOS RELEVANTES DA HISTÓRIA CLÍNICA.",20250328,"ULTRASSONOGRAFIA OBSTETRICA"],
   [892911,1193,25316,56,"<b>Não Se Enquadra nos Criterios: </b><br>Ginecomastia não se enquadra nos critérios de atendimento mastologia CEAE.Att.",20250326,"CONSULTA MASTOLOGIA CEAE"],
   [892969,1216,31264,9,"<b>Agendar na Atenção Primaria: </b><br>Sugiro complementar a investigação com a US pélvica ou Transvaginal.",20250328,"CONSULTA GINECOLOGIA POLICLINICA"],
@@ -2542,6 +2545,7 @@ const SolicitacoesExcluidas = [
   [895724,1192,23193,16,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor informar data e resultados do exames solicitados para o retorno. De acordo prontuário do paciente, foi solicitado retorno para Junho, caso tenha alguma queixa atual que seja necessário adiantar o retorno, favor informar. Att.",20250331,"CONSULTA DIABETES ALTO RISCO"],
   [895744,907,81630,9,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Pacientes acamados ou com restrição de locomoção?Paciente restrito ao leito?Paciente apresenta restrição para locomoção? Por qual motivo?",20250402,"FISIOTERAPIA- ATENDIMENTO DOMICILIAR"],
   [895844,1317,24714,3,"<b>Não Se Enquadra nos Criterios: </b><br>De acordo protocolo: Diabético com HbA1c> 9%, o nódulo na tireoide também não é critério para atendimento diabetes alto risco. Sugiro verificar protocolo de endocrinologia. Att.",20250331,"CONSULTA DIABETES ALTO RISCO"],
+  [895863,1221,10214,4,"<b>Solicitação Indevida: </b><br>PACIENTE INSERIDO NA FILA DE RETORNO COM DEFINIÇÃO DE PROFISSIONAL.",20250404,"RETORNO CONSULTA ORTOPEDISTA"],
   [897736,1216,35144,9,"<b>Não Se Enquadra nos Criterios: </b><br>Critério: Paciente adulto obeso (IMC igual ou superiora 30 kg/m2, com comorbidades de difícil controle).",20250403,"AVALIAçaO NUTRICIONISTA E-MULTI"],
   [898009,1194,21290,6,"<b>Solicitação Indevida: </b><br>DIANTE DO QUADRO CLÍNICO DO PACIENTE, É NECESSÁRIO ENCAMINHAR  PARA A ONCOLOGIA (VIA TFD). ",20250403,"CONSULTA  UROLOGIA POLICLINICA"],
 ];
@@ -2718,5 +2722,6 @@ const Profissionais = [
   'ARIELE ALVES DE OLIVEIRA:1400',
   'NATHALI PIETRA LOYOLA MURTA :1406',
   'MILLENA ALMEIDA DE SOUSA:1407',
+  'MONIQUE RODRIGUES LOPES:1411',
   ':90707011'
 ];
