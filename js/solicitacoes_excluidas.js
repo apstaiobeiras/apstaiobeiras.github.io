@@ -2380,6 +2380,7 @@ const SolicitacoesExcluidas = [
   [865860,1220,34338,13,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Detalhamento insuficiente para regular o paciente:Faz uso de órtese ou prótese?Grau de independência/dependência para Atividades de Vida Diária (AVD) – Quadro 1; Sugiro encaminhar para o CER/RCPD se o paciente Requer assistência para três ou mais atividades.",20250211,"ATENDIMENTO FISIOTERAPIA"],
   [866169,1259,12509,8,"<b>Não Se Enquadra nos Criterios: </b><br>Trocar por Usg AP Urinário.",20250220,"ULTRASSONOGRAFIA DE BOLSA ESCROTAL"],
   [866364,775,52034,7,"<b>Não Se Enquadra nos Criterios: </b><br>Avaliar histórico clínico, exames ja realizados e aplicar protocolo de reumatologia.",20250331,"CONSULTA ORTOPEDISTA"],
+  [866536,1366,64795,34,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Realizar Ultrassom de ombro para diagnostico diferencial, solicite avaliação fisiorterápica, otimize analgesia.",20250407,"CONSULTA ORTOPEDISTA"],
   [866605,1069,20000,6,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Descrever resultado dos exames laboratoriais da triagem cognitiva e condutas realizadas, além do exame de imagem, para otimizar a avaliação do especialista, caso realmente seja necessário.",20250306,"CONSULTA NEUROLOGIA"],
   [866828,1194,20572,6,"<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA FILA DE PEQUENAS CIRURGIAS.",20250218,"CONSULTA CIRURGIAO GERAL"],
   [866878,1194,3666,6,"<b>Não Se Enquadra nos Criterios: </b><br>BIRADS 2 não se enquadra nos critérios de atendimento mastologia ceae.Att.",20250217,"CONSULTA MASTOLOGIA CEAE"],
@@ -2396,6 +2397,7 @@ const SolicitacoesExcluidas = [
   [868376,1317,26232,3,"<b>Não Se Enquadra nos Criterios: </b><br>Paciente com esteatose leve não se enquadra nos critérios da Nutrição eMulti. Questionei a médica sobre exames laboratoriais para regular com relação à dislipidemia, mas não consta (a mesma não levou em consulta). Por este motivo, excluo da fila.",20250217,"AVALIAçaO NUTRICIONISTA E-MULTI"],
   [868389,1291,31849,75,"<b>Agendar na Atenção Primaria: </b><br>SUGIRO REITERAR PARA A PACIENTE A NECESSIDADE DE TRATAMENTO CORRETO, A ADESÃO É NECESSÁRIA. O GASTRO FARIA O QUE VC PODE PRESCREVER NA APS.",20250227,"CONSULTA GASTROENTEROLOGIA"],
   [868398,1291,31849,75,"<b>Não Se Enquadra nos Criterios: </b><br>De acordo o HEARTS o RCV da paciente, mesmo informando tabagismo, é RCV MODERADO, o que não se enquadra nos critérios de atendimento hipertenso alto risco, caso tenha informações adicionais, favor informar e reencaminhar.Att.",20250217,"CONSULTA HIPERTENSO ALTO RISCO"],
+  [868634,1192,9639,18,"<b>Agendar na Atenção Primaria: </b><br>Avaliação pelo médico da APS.",20250407,"CONSULTA ORTOPEDISTA"],
   [868646,1221,24483,4,"<b>Solicitação Indevida: </b><br>INSERIDO NA FILA DE PRIMEIRA CONSULTA DIRECIONADA AO PROFISIONAL FRANCISCO.",20250324,"RETORNO CONSULTA ORTOPEDISTA"],
   [868740,1193,20918,56,"<b>Não Se Enquadra nos Criterios: </b><br>Investigue outras causas de dor torácica. Fez RX?",20250311,"ECOCARDIOGRAMA COM DOOPLER"],
   [868797,907,7613,78,"<b>Não Se Enquadra nos Criterios: </b><br>Pcaiente com HBA1C 14%, não se enquadra para receber acompanhamento nutricional da e-Multi na APS, deve ser encaminhada para o CEAE (Alto risco) como já foi realizado (pela descrição do encaminhamento).",20250221,"AVALIAçaO NUTRICIONISTA E-MULTI"],
@@ -2517,6 +2519,7 @@ const SolicitacoesExcluidas = [
   [889860,474,30089,18,"Solicitação Indevida",20250321,"ECOCARDIOGRAMA COM DOOPLER"],
   [889861,474,24714,18,"Solicitação Indevida",20250321,"ECOCARDIOGRAMA COM DOOPLER"],
   [889862,474,30052,18,"Solicitação Indevida",20250321,"ECOCARDIOGRAMA COM DOOPLER"],
+  [889934,1260,20898,81,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Sugiro otimização de drogas analgésicas, realização de RX para intervenção da fisioterapia.pensar em realização de exame tomográfico.",20250407,"CONSULTA ORTOPEDISTA"],
   [889996,1400,29443,2,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor verificar com a paciente de realizou os exames solicitados para o retorno. CD:     RETORNO EM MAIO  COM EXAMESAtt.",20250324,"CONSULTA DIABETES ALTO RISCO"],
   [890152,1231,17275,16,"Encaminhamento incompleto / Falta detalhar exames",20250326,"ULTRASSONOGRAFIA DE PROSTATA POR VIA ABDOMINAL"],
   [890202,320,33603,78,"Não Se Enquadra nos Criterios",20250324,"CONSULTA GINECOLOGIA CEAE"],
@@ -2548,6 +2551,10 @@ const SolicitacoesExcluidas = [
   [895863,1221,10214,4,"<b>Solicitação Indevida: </b><br>PACIENTE INSERIDO NA FILA DE RETORNO COM DEFINIÇÃO DE PROFISSIONAL.",20250404,"RETORNO CONSULTA ORTOPEDISTA"],
   [897736,1216,35144,9,"<b>Não Se Enquadra nos Criterios: </b><br>Critério: Paciente adulto obeso (IMC igual ou superiora 30 kg/m2, com comorbidades de difícil controle).",20250403,"AVALIAçaO NUTRICIONISTA E-MULTI"],
   [898009,1194,21290,6,"<b>Solicitação Indevida: </b><br>DIANTE DO QUADRO CLÍNICO DO PACIENTE, É NECESSÁRIO ENCAMINHAR  PARA A ONCOLOGIA (VIA TFD). ",20250403,"CONSULTA  UROLOGIA POLICLINICA"],
+  [898441,1193,21836,56,"<b>Não Se Enquadra nos Criterios: </b><br>Sugiro solicitar mamografia com justificativa devido idade da paciente.Att.",20250407,"CONSULTA MASTOLOGIA CEAE"],
+  [900229,1328,22134,78,"<b>Solicitação Indevida: </b><br>CANCELAMENTO DO ENCAMINHAMENTO SOLICITADO PELO PROFISSIONAL.",20250407,"CONSULTA GINECOLOGIA POLICLINICA"],
+  [900832,1403,20100,10,"<b>Solicitação Indevida: </b><br>ERRO NA SOLICITAÇÃO",20250407,"TRATAMENTO ENDODôNTICO DE DENTE PERMANENTE COM TRêS OU MAIS RAíZES"],
+  [901075,1221,22045,4,"<b>Solicitação Indevida: </b><br>Solicitado exclusão da fila da clínica por profissional da unidade de saúde, pois iriam encaminhar para a fila da RCPD física.",20250407,"ATENDIMENTO FISIOTERAPIA"],
 ];
 
 const Unidades = [
@@ -2720,6 +2727,7 @@ const Profissionais = [
   'DEBORA RIBEIRO DE LIRA:1350',
   'OSéIAS DE OLIVEIRA SANTOS:1366',
   'ARIELE ALVES DE OLIVEIRA:1400',
+  'ALAYNE PRISCILLA ALBUQUERQUE:1403',
   'NATHALI PIETRA LOYOLA MURTA :1406',
   'MILLENA ALMEIDA DE SOUSA:1407',
   'MONIQUE RODRIGUES LOPES:1411',
