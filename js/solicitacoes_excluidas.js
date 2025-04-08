@@ -2407,6 +2407,7 @@ const SolicitacoesExcluidas = [
   [869713,46,10994,16,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Detalhamento insuficiente.Lombalgia com dor leve, moderada ou grave? Mobilidade reduzida e/ou radiculopatia?Qual a condição clínica do paciente: se a dor aguda ou crônica, se há limitação de ADM, se há perda de força muscular.",20250217,"ATENDIMENTO FISIOTERAPIA"],
   [869778,1193,31687,56,"Não Se Enquadra nos Criterios",20250221,"AVALIAçaO FONOAUDIOLOGIA E-MULTI"],
   [869840,1366,10358,34,"<b>Não Se Enquadra nos Criterios: </b><br>Gestante de Alto Risco, foi encaminhada para o CEAE (dessa forma, a acompanhamento da DMG será realizado no mesmo setor).",20250217,"AVALIAçaO NUTRICIONISTA E-MULTI"],
+  [870115,1366,48256,34,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Como o quadro é crônico, o paciente deve ter exames em mãos, mínimo um radiológico e ultrassonográfico. ",20250408,"CONSULTA ORTOPEDISTA"],
   [870326,1193,27798,56,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Deve fazer investigação com exames de imagem:RX, TC ....ETC",20250319,"CONSULTA ORTOPEDISTA"],
   [870361,1328,20469,78,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Detalhamento insuficiente:Lombalgia com dor leve, moderada ou grave? Apresenta mobilidade reduzida e/ou radiculopatia?Qual a Condição clínica do paciente: se a dor aguda ou crônica, se há limitação de ADM, se há perda de força muscular;Qual a alteração uroginecológica/pélvica? Qual Diagnóstico médico; Histórico do quadro clínico;Terapias realizadas previamente (cirurgias, medicamentos).",20250218,"FISIOTERAPIA PELVICA"],
   [870402,1267,10536,8,"<b>Agendar na Atenção Primaria: </b><br>Investigar deficiência de B12 e tratar - tratamento crônico. Tratar as alterações descritas na biópsia. O gastro deve avaliar em caso de complicações ou falência terapêutica.",20250227,"CONSULTA GASTROENTEROLOGIA"],
@@ -2444,6 +2445,7 @@ const SolicitacoesExcluidas = [
   [875124,1259,42281,8,"Não Se Enquadra nos Criterios",20250307,"CONSULTA HIPERTENSO ALTO RISCO"],
   [875150,1216,32588,9,"<b>Solicitação Indevida: </b><br>REINSERIDO COM DEFINIÇÃO DE PROFISSIONAL.",20250324,"RETORNO CONSULTA ORTOPEDISTA"],
   [875247,1220,11778,13,"<b>Não Se Enquadra nos Criterios: </b><br>Atrofia da mucosa vaginal, deve ser tratada, pois é causa frequente de disúria em idosas. Uso de lubrificantes vaginais, Cramberry foi testado?... Pode ser avaliada pela ginecologia em associação às intervenções.",20250319,"CONSULTA  UROLOGIA POLICLINICA"],
+  [875542,794,22253,16,"<b>Agendar na Atenção Primaria: </b><br>Descrever quadro clínico e abordagem terapêutica utilizada.",20250408,"CONSULTA ORTOPEDISTA"],
   [875574,1219,37690,33,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>PACIENTE PRECISA SER INVESTIGADO LABORATORIALMENTE, PARA FAZER D DIFERENCIAL ALÉM DE REPETIR O TSH. ",20250312,"CONSULTA ENDOCRINOLOGIA"],
   [875582,1069,20833,6,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Detalhamento insuficiente para regular:Faz uso de órtese ou prótese?Grau de independência/dependência para Atividades de Vida Diária (AVD). Sugiro encaminhar para o CER/RCPD se a paciente Requer assistência para três ou mais atividades.",20250225,"ATENDIMENTO FISIOTERAPIA"],
   [875697,1260,22547,81,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Fez diagnóstico diferencial? Tratou ITU? Descrição clinica pouco detalhada.",20250313,"ULTRASSONOGRAFIA DE PROSTATA POR VIA ABDOMINAL"],
@@ -2452,6 +2454,7 @@ const SolicitacoesExcluidas = [
   [876267,907,14498,9,"<b>Não Se Enquadra nos Criterios: </b><br>Paciente não se enquadra nos critérios para atendimento nutricional da e-Multi, devido HBA1C 15, sendo público para o alto risco como já foi encaminhado pelo profissional de acordo com descrição de encaminhamento.",20250312,"AVALIAçaO NUTRICIONISTA E-MULTI"],
   [876657,1194,67587,6,"Não Se Enquadra nos Criterios",20250313,"CONSULTA - OBSTéTRICA / PUERPéRIO"],
   [876768,1194,80707,6,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Iniciou tratamento?Att.",20250227,"CONSULTA - OBSTéTRICA / PUERPéRIO"],
+  [876858,320,38189,78,"<b>Falta Detalhar Exames: </b><br>Descrever a terapêutica instituída, se está em tratamento com a fisioterapia.",20250408,"CONSULTA ORTOPEDISTA"],
   [877694,775,3465,7,"<b>Solicitação Indevida: </b><br>PACIENTE INSERIDO NA FILA DE ENDOCRINOLOGISTA ALTO RISCO CEAE. JÁ REALIZA ACOMPANHAMENTO.",20250331,"CONSULTA ENDOCRINOLOGIA"],
   [877845,1259,10446,8,"<b>Solicitação Indevida: </b><br>Retornos para mostrar exames são inseridos diretamente em SMS. Transferido para fila de primeira consulta: último atendimento a mais de seis meses",20250310,"RETORNO CONSULTA DR RENAN"],
   [878025,1284,13469,78,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Favor informar a data de realização dos exames químicos. Att.",20250307,"CONSULTA HIPERTENSO ALTO RISCO"],
@@ -2549,12 +2552,14 @@ const SolicitacoesExcluidas = [
   [895744,907,81630,9,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Pacientes acamados ou com restrição de locomoção?Paciente restrito ao leito?Paciente apresenta restrição para locomoção? Por qual motivo?",20250402,"FISIOTERAPIA- ATENDIMENTO DOMICILIAR"],
   [895844,1317,24714,3,"<b>Não Se Enquadra nos Criterios: </b><br>De acordo protocolo: Diabético com HbA1c> 9%, o nódulo na tireoide também não é critério para atendimento diabetes alto risco. Sugiro verificar protocolo de endocrinologia. Att.",20250331,"CONSULTA DIABETES ALTO RISCO"],
   [895863,1221,10214,4,"<b>Solicitação Indevida: </b><br>PACIENTE INSERIDO NA FILA DE RETORNO COM DEFINIÇÃO DE PROFISSIONAL.",20250404,"RETORNO CONSULTA ORTOPEDISTA"],
+  [897508,1400,8271,2,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>É NECESSÁRIO CALCULAR O RISCO CARDIOVASCULAR (CALCULADOR HEARTS). É PACIENTE DIABÉTICA? POSSUI RESULTADOS DE EXAMES?",20250408,"CONSULTA CARDIOLOGIA DR RENAN"],
   [897736,1216,35144,9,"<b>Não Se Enquadra nos Criterios: </b><br>Critério: Paciente adulto obeso (IMC igual ou superiora 30 kg/m2, com comorbidades de difícil controle).",20250403,"AVALIAçaO NUTRICIONISTA E-MULTI"],
   [898009,1194,21290,6,"<b>Solicitação Indevida: </b><br>DIANTE DO QUADRO CLÍNICO DO PACIENTE, É NECESSÁRIO ENCAMINHAR  PARA A ONCOLOGIA (VIA TFD). ",20250403,"CONSULTA  UROLOGIA POLICLINICA"],
   [898441,1193,21836,56,"<b>Não Se Enquadra nos Criterios: </b><br>Sugiro solicitar mamografia com justificativa devido idade da paciente.Att.",20250407,"CONSULTA MASTOLOGIA CEAE"],
   [900229,1328,22134,78,"<b>Solicitação Indevida: </b><br>CANCELAMENTO DO ENCAMINHAMENTO SOLICITADO PELO PROFISSIONAL.",20250407,"CONSULTA GINECOLOGIA POLICLINICA"],
   [900832,1403,20100,10,"<b>Solicitação Indevida: </b><br>ERRO NA SOLICITAÇÃO",20250407,"TRATAMENTO ENDODôNTICO DE DENTE PERMANENTE COM TRêS OU MAIS RAíZES"],
   [901075,1221,22045,4,"<b>Solicitação Indevida: </b><br>Solicitado exclusão da fila da clínica por profissional da unidade de saúde, pois iriam encaminhar para a fila da RCPD física.",20250407,"ATENDIMENTO FISIOTERAPIA"],
+  [901747,320,24791,78,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Gentileza informar com data os últimos resultados de exames bioquímicos realizados pelo paciente.Att.",20250408,"CONSULTA HIPERTENSO ALTO RISCO"],
 ];
 
 const Unidades = [
