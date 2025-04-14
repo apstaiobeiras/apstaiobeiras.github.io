@@ -7450,6 +7450,9 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/9246">9248</a></td><td>Antonio Moreira Santos</td><td><span name="11/04/2025" class="data">11/04/2025</a></td><td>BUENOS AIRES, 713</td><td><span name="LUCIENE FERNANDES COSTA" class="">LUCIENE FERNANDES COSTA</a></td><td><span name="UAPS MILTON MENDES DA SILVA" class="">UAPS MILTON MENDES DA SILVA</a></td>
     </tr>
       <tr>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/26433">26435</a></td><td>Wellington Moreira Marques Trancoso</td><td><span name="14/04/2025" class="data">14/04/2025</a></td><td>BUENOS AIRES, 713</td><td><span name="LUCIENE FERNANDES COSTA" class="">LUCIENE FERNANDES COSTA</a></td><td><span name="UAPS MILTON MENDES DA SILVA" class="">UAPS MILTON MENDES DA SILVA</a></td>
+    </tr>
+      <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/30811">30813</a></td><td>Izael Dos Santos Oliveira</td><td><span name="02/04/2025" class="data">02/04/2025</a></td><td>TEOFILO OTONI, 232</td><td><span name="KEILA DOS SANTOS SOUSA" class="">KEILA DOS SANTOS SOUSA</a></td><td><span name="UAPS VER. JOSE SENA" class="">UAPS VER. JOSE SENA</a></td>
     </tr>
       <tr>
@@ -7480,6 +7483,12 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/49837">49856</a></td><td>Jose Joao de Araujo</td><td><span name="09/04/2025" class="data">09/04/2025</a></td><td>PETROPOLIS, 127</td><td><span name="ELIANA MARIA SANTOS DE OLIVEIRA" class="">ELIANA MARIA SANTOS DE OLIVEIRA</a></td><td><span name="UAPS MILTON MENDES DA SILVA" class="">UAPS MILTON MENDES DA SILVA</a></td>
     </tr>
       <tr>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/127679">78498</a></td><td>Diogo Santiago Neres</td><td><span name="14/04/2025" class="data">14/04/2025</a></td><td>SAO VICENTE DE PAULA, 383</td><td><span name="LUZINETE APARECIDA OLIVEIRA MEIRELES" class="">LUZINETE APARECIDA OLIVEIRA MEIRELES</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
+    </tr>
+      <tr>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/8826">8828</a></td><td>Lucas Henrique do Carmo</td><td><span name="14/04/2025" class="data">14/04/2025</a></td><td>SETE LAGOAS, 334</td><td><span name="NAGILA MARIA DOS SANTOS" class="">NAGILA MARIA DOS SANTOS</a></td><td><span name="UAPS MILTON MENDES DA SILVA" class="">UAPS MILTON MENDES DA SILVA</a></td>
+    </tr>
+      <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/26433">26435</a></td><td>Wellington Moreira Marques Trancoso</td><td><span name="07/04/2025" class="data">07/04/2025</a></td><td>BUENOS AIRES, 713</td><td><span name="LUCIENE FERNANDES COSTA" class="">LUCIENE FERNANDES COSTA</a></td><td><span name="UAPS MILTON MENDES DA SILVA" class="">UAPS MILTON MENDES DA SILVA</a></td>
     </tr>
       <tr>
@@ -7492,7 +7501,13 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/36698">37359</a></td><td>Kamilly Vitoria Soares Silva</td><td><span name="09/04/2025" class="data">09/04/2025</a></td><td>COMUNIDADE LAGOA GRANDE, 62</td><td><span name="NORMA TRANCOSO VIANA" class="">NORMA TRANCOSO VIANA</a></td><td><span name="UAPS LAGOA GRANDE/ DOURADA" class="">UAPS LAGOA GRANDE/ DOURADA</a></td>
     </tr>
       <tr>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/13131">13133</a></td><td>Enzo Lucas Dos Santos</td><td><span name="14/04/2025" class="data">14/04/2025</a></td><td>OURO PRETO, 1020</td><td><span name="MARTA PEREIRA DE OLIVEIRA" class="">MARTA PEREIRA DE OLIVEIRA</a></td><td><span name="UAPS MILTON MENDES DA SILVA" class="">UAPS MILTON MENDES DA SILVA</a></td>
+    </tr>
+      <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/11917">11919</a></td><td>Anderson Teixeira de Almeida</td><td><span name="01/04/2025" class="data">01/04/2025</a></td><td>IPANEMA, 836</td><td><span name="IVANILDE MARIA DO NASCIMENTO" class="">IVANILDE MARIA DO NASCIMENTO</a></td><td><span name="UAPS ENF. MARY TATIANE" class="">UAPS ENF. MARY TATIANE</a></td>
+    </tr>
+      <tr>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/25262">25264</a></td><td>Ademir Teago da Rocha</td><td><span name="14/04/2025" class="data">14/04/2025</a></td><td>LAGOA DOURADA, 133</td><td><span name="JULIANA FERREIRA DA SILVA" class="">JULIANA FERREIRA DA SILVA</a></td><td><span name="UAPS LAGOA GRANDE/ DOURADA" class="">UAPS LAGOA GRANDE/ DOURADA</a></td>
     </tr>
     </tbody>
 </table>`
@@ -7584,7 +7599,7 @@ graficos.innerHTML += '<div id="grafico-2025"></div>';
   await (new ApexCharts(document.querySelector("#grafico-2025"), {
     series: [{
       name: "Casos",
-      data: [1,4,5,5,10,13,7,8,12,3,6,10,5,13,11,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+      data: [1,4,5,5,10,13,7,8,12,3,6,10,5,13,11,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
     }],
     chart: {
       height: 350,
