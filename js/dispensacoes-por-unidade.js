@@ -3082,23 +3082,23 @@ dispensacoes[2025].geral = `<tr style="border: 0"><td colspan=5 style="border: 0
 </tr>
 <tr>
 <td>FARMÁCIA UAPS ANTONINO DE ALMEIDA</td>
-<td style="text-align:right;">383</td>
-<td style="text-align:right;">381</td>
-<td style="text-align:right;">99%</td>
-<td style="text-align:right;">7%</td>
+<td style="text-align:right;">410</td>
+<td style="text-align:right;">408</td>
+<td style="text-align:right;">100%</td>
+<td style="text-align:right;">6%</td>
 </tr>
 <tr>
 <td>FARMÁCIA UAPS DONA NININHA</td>
-<td style="text-align:right;">322</td>
-<td style="text-align:right;">289</td>
-<td style="text-align:right;">90%</td>
+<td style="text-align:right;">392</td>
+<td style="text-align:right;">337</td>
+<td style="text-align:right;">86%</td>
 <td style="text-align:right;">6%</td>
 </tr>
 <tr>
 <td>FARMÁCIA UAPS ENF. MARY TATIANE ANTUNES LOPES</td>
-<td style="text-align:right;">320</td>
-<td style="text-align:right;">299</td>
-<td style="text-align:right;">93%</td>
+<td style="text-align:right;">382</td>
+<td style="text-align:right;">359</td>
+<td style="text-align:right;">94%</td>
 <td style="text-align:right;">6%</td>
 </tr>
 <tr>
@@ -3117,37 +3117,37 @@ dispensacoes[2025].geral = `<tr style="border: 0"><td colspan=5 style="border: 0
 </tr>
 <tr>
 <td>FARMÁCIA UAPS MILTON MENDES DA SILVA</td>
-<td style="text-align:right;">283</td>
-<td style="text-align:right;">247</td>
+<td style="text-align:right;">309</td>
+<td style="text-align:right;">269</td>
 <td style="text-align:right;">87%</td>
 <td style="text-align:right;">5%</td>
 </tr>
 <tr>
 <td>FARMÁCIA UAPS VER. JOSE SENA</td>
-<td style="text-align:right;">363</td>
-<td style="text-align:right;">323</td>
+<td style="text-align:right;">418</td>
+<td style="text-align:right;">373</td>
 <td style="text-align:right;">89%</td>
 <td style="text-align:right;">6%</td>
 </tr>
 <tr>
 <td>FARMÁCIA UAPS VER. MANOEL DOS SANTOS SILVA</td>
-<td style="text-align:right;">542</td>
-<td style="text-align:right;">496</td>
+<td style="text-align:right;">602</td>
+<td style="text-align:right;">551</td>
 <td style="text-align:right;">92%</td>
 <td style="text-align:right;">9%</td>
 </tr>
 <tr>
 <td>FARMÁCIA DE MINAS DE TAIOBEIRAS</td>
-<td style="text-align:right;">3303</td>
+<td style="text-align:right;">3672</td>
 <td style="text-align:center;  background-color: #dfe2e5;">-</td>
 <td style="text-align:center;  background-color: #dfe2e5;">-</td>
 <td style="text-align:right;">57%</td>
 </tr>
 <tr>
 <td>UAPS AGEU ALMEIDA</td>
-<td style="text-align:right;">81</td>
-<td style="text-align:right;">67</td>
-<td style="text-align:right;">83%</td>
+<td style="text-align:right;">83</td>
+<td style="text-align:right;">68</td>
+<td style="text-align:right;">82%</td>
 <td style="text-align:right;">1%</td>
 </tr>
 <tr>
@@ -3159,21 +3159,21 @@ dispensacoes[2025].geral = `<tr style="border: 0"><td colspan=5 style="border: 0
 </tr>
 <tr>
 <td>UAPS ED. FIS. DOUGLAS FREDERICO MIRANDA BATISTA</td>
-<td style="text-align:right;">15</td>
-<td style="text-align:right;">13</td>
-<td style="text-align:right;">87%</td>
+<td style="text-align:right;">21</td>
+<td style="text-align:right;">17</td>
+<td style="text-align:right;">81%</td>
 <td style="text-align:right;">0%</td>
 </tr>
 <tr>
 <td>UAPS JOAO DE DEUS SIMOES</td>
-<td style="text-align:right;">14</td>
-<td style="text-align:right;">14</td>
+<td style="text-align:right;">15</td>
+<td style="text-align:right;">15</td>
 <td style="text-align:right;">100%</td>
 <td style="text-align:right;">0%</td>
 </tr>
 <tr>
 <td>Total</td>
-<td style="text-align:right;">5802</td>
+<td style="text-align:right;">6488</td>
 <td style="text-align:center; background-color: #dfe2e5;">-</td>
 <td style="text-align:center; background-color: #dfe2e5;">-</td>
 <td style="text-align:center; background-color: #dfe2e5;">-</td>
@@ -3917,37 +3917,37 @@ dispensacoes[2025].farmaciaminas = `<tr style="border: 0"><td colspan=5 style="b
 </tr>
 <tr>
 <td>UAPS ANTONINO DE ALMEIDA</td>
-<td style="text-align:right;">96</td>
+<td style="text-align:right;">105</td>
 <td style="text-align:right;">3%</td>
 </tr>
 <tr>
 <td>UAPS DONA NININHA</td>
-<td style="text-align:right;">331</td>
+<td style="text-align:right;">376</td>
 <td style="text-align:right;">10%</td>
 </tr>
 <tr>
 <td>UAPS ENF. MARY TATIANE ANTUNES LOPES</td>
-<td style="text-align:right;">533</td>
+<td style="text-align:right;">597</td>
 <td style="text-align:right;">16%</td>
 </tr>
 <tr>
 <td>UAPS LAGOA GRANDE/DOURADA</td>
-<td style="text-align:right;">348</td>
-<td style="text-align:right;">11%</td>
+<td style="text-align:right;">383</td>
+<td style="text-align:right;">10%</td>
 </tr>
 <tr>
 <td>UAPS MILTON MENDES DA SILVA</td>
-<td style="text-align:right;">94</td>
+<td style="text-align:right;">117</td>
 <td style="text-align:right;">3%</td>
 </tr>
 <tr>
 <td>UAPS VER. JOSE SENA</td>
-<td style="text-align:right;">232</td>
+<td style="text-align:right;">275</td>
 <td style="text-align:right;">7%</td>
 </tr>
 <tr>
 <td>UAPS VER. MANOEL DOS SANTOS SILVA</td>
-<td style="text-align:right;">391</td>
+<td style="text-align:right;">433</td>
 <td style="text-align:right;">12%</td>
 </tr>
 <tr style="border: 0"><td colspan=5 style="border: 0"><br><b><big>Maio</big></b><br>&nbsp;</td></tr>

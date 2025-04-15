@@ -2563,6 +2563,7 @@ const SolicitacoesExcluidas = [
   [898009,1194,21290,6,"<b>Solicitação Indevida: </b><br>DIANTE DO QUADRO CLÍNICO DO PACIENTE, É NECESSÁRIO ENCAMINHAR  PARA A ONCOLOGIA (VIA TFD). ",20250403,"CONSULTA  UROLOGIA POLICLINICA"],
   [898101,1400,15707,2,"<b>Não Se Enquadra nos Criterios: </b><br>não se enquadra nos critérios do protocolo da psicologia e-multii",20250414,"AVALIAçaO PSICOLOGO E-MULTI"],
   [898441,1193,21836,56,"<b>Não Se Enquadra nos Criterios: </b><br>Sugiro solicitar mamografia com justificativa devido idade da paciente.Att.",20250407,"CONSULTA MASTOLOGIA CEAE"],
+  [899745,1194,29921,6,"<b>Falta Detalhar Exames: </b><br>Paciente recebeu alta recentemente do tratamento em clínica, apresentando boa funcionalidade. Qual o quadro clínico atual que justifique realizar novo tratamento?",20250415,"ATENDIMENTO FISIOTERAPIA"],
   [899924,1259,25327,8,"<b>Solicitação Indevida: </b><br>PACIENTE TRANSFERIDA PARA FILA DE GINECOLOGIA CEAE.",20250414,"CONSULTA GINECOLOGIA POLICLINICA"],
   [900219,1260,19791,81,"<b>Solicitação Indevida: </b><br>PACIENTE TRANSFERIDA PARA FILA DE GINECOLOGIA CEAE.",20250414,"CONSULTA GINECOLOGIA POLICLINICA"],
   [900229,1328,22134,78,"<b>Solicitação Indevida: </b><br>CANCELAMENTO DO ENCAMINHAMENTO SOLICITADO PELO PROFISSIONAL.",20250407,"CONSULTA GINECOLOGIA POLICLINICA"],
@@ -2574,10 +2575,12 @@ const SolicitacoesExcluidas = [
   [901944,1342,25340,3,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Detalhar histórico do paciente: ( comprometimento respiratório, motor, neurológico, limitação de ADM, perda de força muscular, dispneia, paresia ou plegias, etc);Paciente restrito ao leito? Paciente apresenta restrição para locomoção? Por qual motivo?Atendimentos de Mirandópolis ainda são realizados os encaminhamentos direto à fisioterapeuta que realiza os na UAPS Antonino de Almeida. Profissional já se encontra ciente deste encaminhamento.",20250411,"FISIOTERAPIA- ATENDIMENTO DOMICILIAR"],
   [902494,1328,33467,78,"<b>Não Se Enquadra nos Criterios: </b><br>De acordo com o protocolo, o Diabetes Mellitus tipo 2 se enquadra nos critérios de atendimento quando apresenta complicações crônicas avançadas e já houve a tentativa de manejo na atenção primária. Isso inclui a modificação do plano terapêutico, acompanhamento nutricional, mudanças no estilo de vida e orientação por educador físico. Caso, mesmo após essas intervenções, os níveis glicêmicos e a hemoglobina glicada permaneçam elevados, o encaminhamento será indicado.Ao encaminhar o paciente, é essencial informar quais medidas foram adotadas e descrever a adesão dele às condutas propostas.Att.",20250409,"CONSULTA DIABETES ALTO RISCO"],
   [902521,1194,30472,6,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>NÃO CONSTA NO HISTÓRICO DE ATENDIMENTO QUE A PACIENTE ESTEVE EM ACOMPANHAMENTO COM CARDIOLOGISTA. É NECESSÁRIO CALCULAR O RISCO CARDIOVASCULAR DA PACIENTE. CASO O RISCO SEJA ALTO, ENCAMINHAR PARA CARDIOLOGIA ALTO RISCO CEAE. GRATA.",20250411,"CONSULTA CARDIOLOGIA DR RENAN"],
+  [903183,1291,33933,75,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Parcialmente dependente para quais AVD's?Se Requer assistência para até duas atividades é considerada : Dependente, porém de baixa complexidade. Reabilitação realizada na Clínica Municipal de Fisioterapia, favor reinserir com sistema com a informação que falta. Se Requer assistência para três ou mais atividades : Dependente, referência para Reabilitação Física na RCPCD / CER.",20250415,"ATENDIMENTO FISIOTERAPIA"],
   [903231,775,9770,7,"<b>Solicitação Indevida: </b><br> É NECESSÁRIO CALCULAR O RISCO CARDIOVASCULAR DO PACIENTE.PELA DESCRIÇÃO DO CASO, O MESMO SE ENQUADRA NOS CRITÉRIOS DE ACESSO AO CARDIOLOGISTA ALTO RISCO CEAE. GRATA.",20250411,"CONSULTA CARDIOLOGIA DR RENAN"],
   [903627,1193,27876,56,"Não Se Enquadra nos Criterios",20250414,"CONSULTA MASTOLOGIA CEAE"],
   [904246,1281,81393,78,"<b>Não Se Enquadra nos Criterios: </b><br>De acordo protocolo: Prematuridade (≤ 36 semanas de IG no nascimento e/ou peso ao nascer ≤ 2300g).Att.",20250414,"CONSULTA PEDIATRIA ALTO RISCO"],
   [904791,1193,16540,56,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Fazer reinserção na fila com resultados da avaliação laboratorial após alta. Descrever o RCV, para só então encaminhar ao cardiologista, para facilitar a conduta do cardiologista.",20250411,"CONSULTA CARDIOLOGIA DR RENAN"],
+  [905602,1404,2396,10,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Gentileza descrever com data os últimos exames bioquímicos realizados pelo paciente.Att.",20250415,"CONSULTA HIPERTENSO ALTO RISCO"],
 ];
 
 const Unidades = [
@@ -2751,6 +2754,7 @@ const Profissionais = [
   'OSéIAS DE OLIVEIRA SANTOS:1366',
   'ARIELE ALVES DE OLIVEIRA:1400',
   'ALAYNE PRISCILLA ALBUQUERQUE:1403',
+  'VITORIA VITERBULO LOPES DO AMARAL:1404',
   'NATHALI PIETRA LOYOLA MURTA :1406',
   'MILLENA ALMEIDA DE SOUSA:1407',
   'MONIQUE RODRIGUES LOPES:1411',
