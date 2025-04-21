@@ -10,13 +10,13 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/128601">79344</a></td><td>Antony Dias Dourado</td><td><div style="white-space: nowrap;">1 ano e 3 mês </div></td><td><span name="ACOLHER" >ACOLHER</a></td><td><span name="168" >THAIS ROSA DE ALMEIDA SILVA</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/130873">81323</a></td><td>Joao Miguel Magalhaes de Oliveira</td><td><div style="white-space: nowrap;">1 ano e 6 mês </div></td><td><span name="HARMONIA" >HARMONIA</a></td><td><span name="226" >GEISSIANE MARQUES FERREIRA</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/130873">81323</a></td><td>Joao Miguel Magalhaes de Oliveira</td><td><div style="white-space: nowrap;">1 ano e 7 mês </div></td><td><span name="HARMONIA" >HARMONIA</a></td><td><span name="226" >GEISSIANE MARQUES FERREIRA</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/66519">64220</a></td><td>Atena Volponi de Morais</td><td><div style="white-space: nowrap;">1 ano e 7 mês </div></td><td><span name="VIVER" >VIVER</a></td><td><span name="581" >JESSICA ANA DE JESUS</a></td><td><span name="1º DOSE" style="white-space: nowrap;">1º DOSE</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/129959">80490</a></td><td>Rhana Caroline Morais de Oliveira</td><td><div style="white-space: nowrap;">1 ano e 3 mês </div></td><td><span name="VIDA E SAUDE" >VIDA E SAUDE</a></td><td><span name="525" >NAGILA MARIA DOS SANTOS</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/129959">80490</a></td><td>Rhana Caroline Morais de Oliveira</td><td><div style="white-space: nowrap;">1 ano e 4 mês </div></td><td><span name="VIDA E SAUDE" >VIDA E SAUDE</a></td><td><span name="525" >NAGILA MARIA DOS SANTOS</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/63607">62467</a></td><td>Pedro Felix Moroni</td><td><div style="white-space: nowrap;">1 ano e 11 mês </div></td><td><span name="VIDA E SAUDE" >VIDA E SAUDE</a></td><td><span name="525" >NAGILA MARIA DOS SANTOS</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
@@ -37,7 +37,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/123054">74639</a></td><td>Derick Antony Zarri Ferreira Dos Santos</td><td><div style="white-space: nowrap;">1 ano e 6 mês </div></td><td><span name="HUMANIZAR" >HUMANIZAR</a></td><td><span name="317" >NORMA TRANCOSO VIANA</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/125753">76763</a></td><td>Mateus Leal Bacelar de Aguiar</td><td><div style="white-space: nowrap;">1 ano e 2 mês </div></td><td><span name="ESPERANÇA" >ESPERANÇA</a></td><td><span name="968" >AMANDA MARIA SOARES SANTOS</a></td><td><span name="1º DOSE" style="white-space: nowrap;">1º DOSE</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/125753">76763</a></td><td>Mateus Leal Bacelar de Aguiar</td><td><div style="white-space: nowrap;">1 ano e 3 mês </div></td><td><span name="ESPERANÇA" >ESPERANÇA</a></td><td><span name="968" >AMANDA MARIA SOARES SANTOS</a></td><td><span name="1º DOSE" style="white-space: nowrap;">1º DOSE</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/131582">81969</a></td><td>Anthony Svoboda Mendes</td><td><div style="white-space: nowrap;">1 ano e 7 mês </div></td><td><span name="HUMANIZAR" >HUMANIZAR</a></td><td><span name="802" >DARLENE MARIA PEREIRA</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
