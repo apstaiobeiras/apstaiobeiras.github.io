@@ -2584,6 +2584,11 @@ const SolicitacoesExcluidas = [
   [904246,1281,81393,78,"<b>Não Se Enquadra nos Criterios: </b><br>De acordo protocolo: Prematuridade (≤ 36 semanas de IG no nascimento e/ou peso ao nascer ≤ 2300g).Att.",20250414,"CONSULTA PEDIATRIA ALTO RISCO"],
   [904791,1193,16540,56,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Fazer reinserção na fila com resultados da avaliação laboratorial após alta. Descrever o RCV, para só então encaminhar ao cardiologista, para facilitar a conduta do cardiologista.",20250411,"CONSULTA CARDIOLOGIA DR RENAN"],
   [905602,1404,2396,10,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Gentileza descrever com data os últimos exames bioquímicos realizados pelo paciente.Att.",20250415,"CONSULTA HIPERTENSO ALTO RISCO"],
+  [907159,717,73885,16,"<b>Solicitação Indevida: </b><br>CASO DISCUTICO COM MÉDICA REGULADORA",20250422,"AVALIAçaO CIRURGICA POLICLINICA"],
+  [907643,46,2170,16,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Lombalgia/cervicalgia com dor leve, moderada ou grave? Apresenta mobilidade reduzida e/ou radiculopatia?Qual a Condição clínica do paciente: se a dor aguda ou crônica, se há limitação de ADM, se há perda de força muscular;",20250422,"ATENDIMENTO FISIOTERAPIA"],
+  [908409,1259,5317,8,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Gentileza descrever a data de realização dos exames bioquímicos.Att.",20250422,"CONSULTA HIPERTENSO ALTO RISCO"],
+  [908442,1069,65129,6,"<b>Solicitação Indevida: </b><br>CASO DISCUTICO COM MÉDICA REGULADORA",20250422,"AVALIAçaO CIRURGICA POLICLINICA"],
+  [908827,1366,11945,34,"<b>Não Se Enquadra nos Criterios: </b><br>Mastalgia não se enquadra nos critérios para encaminhamento à mastologia via CEAE. Sugiro solicitar mamografia, com devida justificativa baseada na faixa etária da paciente. Após avaliação do exame, reencaminhar se estiver dentro dos critérios de atendimento.Att.",20250422,"CONSULTA - MASTOLOGISTA"],
 ];
 
 const Unidades = [

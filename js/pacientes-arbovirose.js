@@ -3574,7 +3574,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/29948">29950</a></td><td>Wilson da Silva Pereira</td><td><span name="01/04/2024" class="data">01/04/2024</a></td><td>SALINAS, 255</td><td><span name="JOSSIVANIA D' ANGELIS COSTA" class="">JOSSIVANIA D' ANGELIS COSTA</a></td><td><span name="UAPS VER. JOSE SENA" class="">UAPS VER. JOSE SENA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/8584">8586</a></td><td>Maria Rosa Ferreira</td><td><span name="02/04/2024" class="data">02/04/2024</a></td><td>JURAMENTO, 47</td><td><span name="JOSSIVANIA D' ANGELIS COSTA" class="">JOSSIVANIA D' ANGELIS COSTA</a></td><td><span name="UAPS VER. JOSE SENA" class="">UAPS VER. JOSE SENA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/8584">8586</a></td><td>Maria Rosa Ferreira</td><td><span name="02/04/2024" class="data">02/04/2024</a></td><td>-</td><td><span name="-" class="">-</a></td><td><span name="-" class="">-</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/15680">15682</a></td><td>Zulmira Ramos de Oliveira</td><td><span name="02/04/2024" class="data">02/04/2024</a></td><td>BOM JARDIM, 1359</td><td><span name="GISLENE FERREIRA BARBOSA" class="">GISLENE FERREIRA BARBOSA</a></td><td><span name="UAPS JOAO DE DEUS SIMOES" class="">UAPS JOAO DE DEUS SIMOES</a></td>
@@ -6685,7 +6685,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/29773">29775</a></td><td>Maria Teixeira Andrade</td><td><span name="04/06/2024" class="data">04/06/2024</a></td><td>SANTA RITA DE CASSIA, 1325</td><td><span name="JUSSELY SOARES DE SOUZA" class="">JUSSELY SOARES DE SOUZA</a></td><td><span name="UAPS ENF. MARY TATIANE" class="">UAPS ENF. MARY TATIANE</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/8882">8884</a></td><td>Sandra De Jesus Santos</td><td><span name="05/06/2024" class="data">05/06/2024</a></td><td>CURRAL DE DENTRO, 55</td><td><span name="LUCIENE FERNANDES COSTA" class="">LUCIENE FERNANDES COSTA</a></td><td><span name="UAPS MILTON MENDES DA SILVA" class="">UAPS MILTON MENDES DA SILVA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/8882">8884</a></td><td>Sandra De Jesus Santos</td><td><span name="05/06/2024" class="data">05/06/2024</a></td><td>CURRAL DE DENTRO, 85</td><td><span name="LUCIENE FERNANDES COSTA" class="">LUCIENE FERNANDES COSTA</a></td><td><span name="UAPS MILTON MENDES DA SILVA" class="">UAPS MILTON MENDES DA SILVA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/1086">1088</a></td><td>Seldimar Soares</td><td><span name="05/06/2024" class="data">05/06/2024</a></td><td>GOIAS, 700</td><td><span name="DAIANE ALVES" class="">DAIANE ALVES</a></td><td><span name="UAPS VER. MANOEL DOS SANTOS SILVA" class="">UAPS VER. MANOEL DOS SANTOS SILVA</a></td>
@@ -7518,6 +7518,9 @@ document.getElementById('planilha').innerHTML = `<table>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/20853">20855</a></td><td>Lucineia Alves Dos Santos</td><td><span name="16/04/2025" class="data">16/04/2025</a></td><td>PARACATU, 661</td><td><span name="JEYSLANE MENDES DE OLIVEIRA" class="">JEYSLANE MENDES DE OLIVEIRA</a></td><td><span name="UAPS DONA NININHA" class="">UAPS DONA NININHA</a></td>
     </tr>
+      <tr>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/42138">42662</a></td><td>Wilson Pereira Lima</td><td><span name="22/04/2025" class="data">22/04/2025</a></td><td>ANDRE PETRONI, 78</td><td><span name="MAISA OLIVEIRA BARBOSA" class="">MAISA OLIVEIRA BARBOSA</a></td><td><span name="UAPS ED. FIS. DOUGLAS FREDERICO" class="">UAPS ED. FIS. DOUGLAS FREDERICO</a></td>
+    </tr>
     </tbody>
 </table>`
 
@@ -7608,7 +7611,7 @@ graficos.innerHTML += '<div id="grafico-2025"></div>';
   await (new ApexCharts(document.querySelector("#grafico-2025"), {
     series: [{
       name: "Casos",
-      data: [1,4,5,5,10,13,7,8,12,3,6,10,5,13,11,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+      data: [1,4,5,5,10,13,7,8,12,3,6,10,5,13,11,8,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
     }],
     chart: {
       height: 350,
