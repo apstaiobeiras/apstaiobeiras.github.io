@@ -70,7 +70,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/128521">79271</a></td><td>Maria Heloisa Pereira Dos Santos</td><td><div style="white-space: nowrap;">1 ano e 9 mês </div></td><td><span name="HUMANIZAR" >HUMANIZAR</a></td><td><span name="317" >NORMA TRANCOSO VIANA</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/63460">62324</a></td><td>Pyetro Pedroso da Silva</td><td><div style="white-space: nowrap;">1 ano e 10 mês </div></td><td><span name="PROGRESSO" >PROGRESSO</a></td><td><span name="315" >DAYANE SOARES MENDES SANTOS</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/63460">62324</a></td><td>Pyetro Pedroso da Silva</td><td><div style="white-space: nowrap;">1 ano e 11 mês </div></td><td><span name="PROGRESSO" >PROGRESSO</a></td><td><span name="315" >DAYANE SOARES MENDES SANTOS</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/124896">75996</a></td><td>Rafael Mendes Costa</td><td><div style="white-space: nowrap;">1 ano e 5 mês </div></td><td><span name="ESPERANÇA" >ESPERANÇA</a></td><td><span name="1149" >LIVIA KAMILLY SOARES DOS SANTOS</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>

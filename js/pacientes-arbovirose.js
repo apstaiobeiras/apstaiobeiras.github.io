@@ -1207,7 +1207,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/7129">7131</a></td><td>Rosinei Maria Ferreira Santana</td><td><span name="05/03/2024" class="data">05/03/2024</a></td><td>BENFICA, 895</td><td><span name="ILCA ANTUNIS DA SILVA" class="">ILCA ANTUNIS DA SILVA</a></td><td><span name="UAPS JOAO DE DEUS SIMOES" class="">UAPS JOAO DE DEUS SIMOES</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/20817">20819</a></td><td>Lucilene Silva Nardin</td><td><span name="05/03/2024" class="data">05/03/2024</a></td><td>AGUAS VERMELHAS, 131</td><td><span name="KEILA DOS SANTOS SOUSA" class="">KEILA DOS SANTOS SOUSA</a></td><td><span name="UAPS VER. JOSE SENA" class="">UAPS VER. JOSE SENA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/20817">20819</a></td><td>Lucilene Silva Nardin</td><td><span name="05/03/2024" class="data">05/03/2024</a></td><td>TUPIS, 131</td><td><span name="KEILA DOS SANTOS SOUSA" class="">KEILA DOS SANTOS SOUSA</a></td><td><span name="UAPS VER. JOSE SENA" class="">UAPS VER. JOSE SENA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/9620">9622</a></td><td>Edina Batista Dos Santos</td><td><span name="06/03/2024" class="data">06/03/2024</a></td><td>BENFICA, 871</td><td><span name="ILCA ANTUNIS DA SILVA" class="">ILCA ANTUNIS DA SILVA</a></td><td><span name="UAPS JOAO DE DEUS SIMOES" class="">UAPS JOAO DE DEUS SIMOES</a></td>
@@ -1597,7 +1597,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/15892">15894</a></td><td>Nalcy Maria de Sena</td><td><span name="25/03/2024" class="data">25/03/2024</a></td><td>SAO GONCALO, 30</td><td><span name="LUANA RODRIGUES DE OLIVEIRA" class="">LUANA RODRIGUES DE OLIVEIRA</a></td><td><span name="UAPS VER. MANOEL DOS SANTOS SILVA" class="">UAPS VER. MANOEL DOS SANTOS SILVA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/48180">48249</a></td><td>Perola Barbosa Moreira</td><td><span name="25/03/2024" class="data">25/03/2024</a></td><td>GUAICURUS, 467</td><td><span name="LAURY MADALENA DA ROCHA" class="">LAURY MADALENA DA ROCHA</a></td><td><span name="UAPS VER. JOSE SENA" class="">UAPS VER. JOSE SENA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/48180">48249</a></td><td>Perola Barbosa Moreira</td><td><span name="25/03/2024" class="data">25/03/2024</a></td><td>-</td><td><span name="-" class="">-</a></td><td><span name="-" class="">-</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/5913">5915</a></td><td>Valdiana Neres da Fonseca</td><td><span name="26/03/2024" class="data">26/03/2024</a></td><td>RIO BRANCO, 1211</td><td><span name="CINTIA MELGES DE OLIVEIRA COSTA" class="">CINTIA MELGES DE OLIVEIRA COSTA</a></td><td><span name="UAPS ENF. MARY TATIANE" class="">UAPS ENF. MARY TATIANE</a></td>
@@ -4894,7 +4894,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/67954">64713</a></td><td>Daniela Francisca de Souza</td><td><span name="09/05/2024" class="data">09/05/2024</a></td><td>BAMBUI, 437</td><td><span name="ALMERINDA DE OLIVEIRA SANTOS" class="">ALMERINDA DE OLIVEIRA SANTOS</a></td><td><span name="UAPS ENF. MARY TATIANE" class="">UAPS ENF. MARY TATIANE</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/26077">26079</a></td><td>Gabriel de sa Mendes</td><td><span name="10/05/2024" class="data">10/05/2024</a></td><td>PERNAMBUCO, 805</td><td><span name="WANESSA MOREIRA DE SOUZA" class="">WANESSA MOREIRA DE SOUZA</a></td><td><span name="UAPS DONA NININHA" class="">UAPS DONA NININHA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/26077">26079</a></td><td>Gabriel de sa Mendes</td><td><span name="10/05/2024" class="data">10/05/2024</a></td><td>-</td><td><span name="-" class="">-</a></td><td><span name="-" class="">-</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/46162">46340</a></td><td>Katiana Andrade Sena</td><td><span name="10/05/2024" class="data">10/05/2024</a></td><td>COMUNIDADE RIACHO DE AREIA, 1</td><td><span name="KATIANA ANDRADE SENA" class="">KATIANA ANDRADE SENA</a></td><td><span name="UAPS COMUNIDADES RURAIS" class="">UAPS COMUNIDADES RURAIS</a></td>
