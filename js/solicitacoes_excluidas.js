@@ -2613,6 +2613,10 @@ const SolicitacoesExcluidas = [
   [909284,1322,23611,3,"<b>Solicitação Indevida: </b><br>NÃO HÁ PROTOCOLO INSTITUÍDO NO MUNICÍPIO PARA INSERÇÃO DO DIU NO MOMENTO DO PARTO.",20250424,"CONSULTA GINECOLOGIA POLICLINICA"],
   [909334,1259,7725,8,"<b>Solicitação Indevida: </b><br>DEVIDO QUADRO CLÍNICO DESCRITO. PACIENTE INSERIDA NA FILA DE GINECOLOGIA CEAE.",20250424,"CONSULTA GINECOLOGIA POLICLINICA"],
   [911180,1400,3681,2,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Gentileza descrever a data de realização dos exames.Att.",20250424,"CONSULTA DIABETES ALTO RISCO"],
+  [911482,907,52138,9,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Gentileza informar resultado de exame de glicemia ou outros com data realizados pela gestante.Att.",20250428,"CONSULTA GESTANTE ALTO RISCO"],
+  [911520,1221,24483,4,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Gentileza informar a PA aferida no momento do atendimento, com os dados informados no encaminhamento, o RCV do paciente foi mensurado como moderado e não alto.Att.",20250428,"CONSULTA HIPERTENSO ALTO RISCO"],
+  [912245,1317,58954,3,"<b>Não Se Enquadra nos Criterios: </b><br>PACIENTE COM HAS E DISLIPIDEMIA LEVE (VALORES ABAIXO DO PROTOCOLO DA NUTRIÇÃO), SEM OUTRAS DEMANDAS CLÍNICAS QUE JUSTIFIQUEM O ENCAMINHAMENTO.CASO DISCUTIDO COM A MÉDICA  ALEXYA.EXAMES LABORATORIAIS 29/03/25:TRIG:125,16 ACIDO URICO:5,80 CREAT:0,86 UREIA:22,94 GLICEMIA:97,0 COL TOTAL;228,30 HDL:32,91 LDL:170,36EAS: FLORA NORMAL EPF: NEGATIVO HBA1C:5,3NA:138 K :4,2",20250428,"AVALIAçaO NUTRICIONISTA E-MULTI"],
+  [912336,1350,33024,34,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>É NECESSÁRIO CALCULAR O RISCO CARDIOVASCULAR DO PACIENTE SEGUNDO A CALCULADORA HEARTS. CASO SEJA ALTO RISCO, ENCAMINHAR PARA HIPERTENSO ALTO RISCO CEAE.",20250428,"CONSULTA CARDIOLOGIA DR RENAN"],
 ];
 
 const Unidades = [
