@@ -240,6 +240,7 @@ medicamentos['Ceftriaxona 1g Sol Inj']['22'] = 110;
 medicamentos['Ceftriaxona 1g Sol Inj']['92'] = 35;
 medicamentos['Ceftriaxona 1g Sol Inj']['93'] = 5;
 medicamentos['Ceftriaxona 1g Sol Inj']['90'] = 5;
+medicamentos['Ceftriaxona 1g Sol Inj']['104'] = 10;
 
 medicamentos['Ceftriaxona 500mg'] = [];
 medicamentos['Ceftriaxona 500mg']['22'] = 49;
@@ -891,7 +892,7 @@ medicamentos['Zinco 4mg/ml Sol Oral']['90'] = 8;
 medicamentos['Zinco 4mg/ml Sol Oral']['104'] = 5;
 
 
-dataAtualizacao.innerHTML = `28/04/2025`
+dataAtualizacao.innerHTML = `29/04/2025`
 
 const unidades = [];
 unidades['Farmacia de Minas'] = 22;
