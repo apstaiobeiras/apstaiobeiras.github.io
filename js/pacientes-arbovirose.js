@@ -4558,7 +4558,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/2463">2465</a></td><td>Maria Lucia Saroa</td><td><span name="09/04/2024" class="data">09/04/2024</a></td><td>ALAGOAS, 336</td><td><span name="FELIPE LOPES SANTOS" class="">FELIPE LOPES SANTOS</a></td><td><span name="UAPS VER. MANOEL DOS SANTOS SILVA" class="">UAPS VER. MANOEL DOS SANTOS SILVA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/7773">7775</a></td><td>Adson Douglas Gomes Batista</td><td><span name="10/04/2024" class="data">10/04/2024</a></td><td>IPIRANGA, 28</td><td><span name="ELAINE GONCALVES NUNES SANTOS" class="">ELAINE GONCALVES NUNES SANTOS</a></td><td><span name="UAPS ENF. MARY TATIANE" class="">UAPS ENF. MARY TATIANE</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/7773">7775</a></td><td>Adson Douglas Gomes Batista</td><td><span name="10/04/2024" class="data">10/04/2024</a></td><td>-</td><td><span name="-" class="">-</a></td><td><span name="-" class="">-</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/23404">23406</a></td><td>Evandro Alves de Oliveira</td><td><span name="10/04/2024" class="data">10/04/2024</a></td><td>CAXAMBU, 346</td><td><span name="CELMA DOS SANTOS" class="">CELMA DOS SANTOS</a></td><td><span name="UAPS VER. MANOEL DOS SANTOS SILVA" class="">UAPS VER. MANOEL DOS SANTOS SILVA</a></td>
@@ -4603,7 +4603,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/22780">22782</a></td><td>Priscila Xavier Macedo</td><td><span name="03/04/2024" class="data">03/04/2024</a></td><td>BUENOS AIRES, 245</td><td><span name="LUCIENE FERNANDES COSTA" class="">LUCIENE FERNANDES COSTA</a></td><td><span name="UAPS MILTON MENDES DA SILVA" class="">UAPS MILTON MENDES DA SILVA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/39599">40369</a></td><td>Marlice Pereira Mera</td><td><span name="05/04/2024" class="data">05/04/2024</a></td><td>-</td><td><span name="-" class="">-</a></td><td><span name="-" class="">-</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/39599">40369</a></td><td>Marlice Pereira Mera</td><td><span name="05/04/2024" class="data">05/04/2024</a></td><td>IPANEMA, 204</td><td><span name="CLEIDIANE DOS SANTOS MEIRELES" class="">CLEIDIANE DOS SANTOS MEIRELES</a></td><td><span name="UAPS ENF. MARY TATIANE" class="">UAPS ENF. MARY TATIANE</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/19999">20001</a></td><td>Zirva Lopes Gomes</td><td><span name="05/04/2024" class="data">05/04/2024</a></td><td>CARLOS CHAGAS, 335</td><td><span name="LIVIA KAMILLY SOARES DOS SANTOS" class="">LIVIA KAMILLY SOARES DOS SANTOS</a></td><td><span name="UAPS VER. JOSE SENA" class="">UAPS VER. JOSE SENA</a></td>
@@ -7579,6 +7579,9 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/28950">28952</a></td><td>Maria de Fatima Oliveira</td><td><span name="06/05/2025" class="data">06/05/2025</a></td><td>-</td><td><span name="-" class="">-</a></td><td><span name="-" class="">-</a></td>
     </tr>
       <tr>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/47794">47900</a></td><td>Karen Anny Ferreira Dos Santos</td><td><span name="08/05/2025" class="data">08/05/2025</a></td><td>DAS AMORAS, 45</td><td><span name="JESSICA ANA DE JESUS" class="">JESSICA ANA DE JESUS</a></td><td><span name="UAPS ED. FIS. DOUGLAS FREDERICO" class="">UAPS ED. FIS. DOUGLAS FREDERICO</a></td>
+    </tr>
+      <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/7347">7349</a></td><td>Joelcy Carlos da Silveira</td><td><span name="05/05/2025" class="data">05/05/2025</a></td><td>CORAÇAO DE JESUS, 374</td><td><span name="KATIANA FERREIRA" class="">KATIANA FERREIRA</a></td><td><span name="UAPS JOAO DE DEUS SIMOES" class="">UAPS JOAO DE DEUS SIMOES</a></td>
     </tr>
       <tr>
@@ -7683,7 +7686,7 @@ graficos.innerHTML += '<div id="grafico-2025"></div>';
   await (new ApexCharts(document.querySelector("#grafico-2025"), {
     series: [{
       name: "Casos",
-      data: [1,4,5,5,10,13,7,8,12,3,6,10,5,13,11,8,5,11,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+      data: [1,4,5,5,10,13,7,8,12,3,6,10,5,13,11,8,5,11,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
     }],
     chart: {
       height: 350,

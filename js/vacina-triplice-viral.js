@@ -79,6 +79,9 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/73415">66132</a></td><td>Melinda Rorigues Rocha</td><td><div style="white-space: nowrap;">1 ano e 10 mês </div></td><td><span name="MAIS SAUDE" >MAIS SAUDE</a></td><td><span name="550" >CLEIDIANE DOS SANTOS MEIRELES</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
     </tr>
       <tr>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/94480">69764</a></td><td>Davi Santos Almeida</td><td><div style="white-space: nowrap;">1 ano e 5 mês </div></td><td><span name="UNIAO" >UNIAO</a></td><td><span name="548" >GEISIANE CARVALHO</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
+    </tr>
+      <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/64389">63237</a></td><td>Alef Noah Ferreira Mendes</td><td><div style="white-space: nowrap;">1 ano e 10 mês </div></td><td><span name="ESPERANÇA" >ESPERANÇA</a></td><td><span name="654" >LAURY MADALENA DA ROCHA</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
     </tr>
       <tr>
@@ -89,9 +92,6 @@ document.getElementById('planilha').innerHTML = `<table>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/128727">79431</a></td><td>Davy Roberto Davanço</td><td><div style="white-space: nowrap;">1 ano e 4 mês </div></td><td><span name="CAMINHO" >CAMINHO</a></td><td><span name="374" >GREICIELE DO CARMO DE JESUS</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
-    </tr>
-      <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/72362">65907</a></td><td>Henrique Souza Donato</td><td><div style="white-space: nowrap;">1 ano e 11 mês </div></td><td><span name="VIDA E SAUDE" >VIDA E SAUDE</a></td><td><span name="481" >MARTA PEREIRA DE OLIVEIRA</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/130538">81008</a></td><td>Elis Jaime Simoes</td><td><div style="white-space: nowrap;">1 ano e 10 mês </div></td><td><span name="VIDA E SAUDE" >VIDA E SAUDE</a></td><td><span name="481" >MARTA PEREIRA DE OLIVEIRA</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
