@@ -2605,6 +2605,7 @@ const SolicitacoesExcluidas = [
   [904246,1281,81393,78,"<b>Não Se Enquadra nos Criterios: </b><br>De acordo protocolo: Prematuridade (≤ 36 semanas de IG no nascimento e/ou peso ao nascer ≤ 2300g).Att.",20250414,"CONSULTA PEDIATRIA ALTO RISCO"],
   [904503,1421,28177,75,"Solicitação Indevida",20250424,"TRATAMENTO ENDODôNTICO DE DENTE PERMANENTE BIRRADICULAR"],
   [904791,1193,16540,56,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Fazer reinserção na fila com resultados da avaliação laboratorial após alta. Descrever o RCV, para só então encaminhar ao cardiologista, para facilitar a conduta do cardiologista.",20250411,"CONSULTA CARDIOLOGIA DR RENAN"],
+  [904826,1418,50625,10,"<b>Solicitação Indevida: </b><br>A SOLICITAÇÃO DEVERIA TER SIDO REALIZADA EM FILA DE USG OBSTÉTRICA. TRANSFIRO PACIENTE PARA FILA DE USG OBSTÉTRICA COM AGENDAMENTO DE PROCEDIMENTO DEVIDO IG.",20250513,"ULTRASSONOGRAFIA TRANSVAGINAL"],
   [904937,1421,7337,75,"Solicitação Indevida",20250430,"CONSULTA PORTADOR DE NECESSIDADES ESPECIAIS"],
   [905159,1259,12153,8,"<b>Não Se Enquadra nos Criterios: </b><br>Encaminhar ao serviço de oncologia.",20250423,"ULTRASSONOGRAFIA DE APARELHO URINÁRIO"],
   [905602,1404,2396,10,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Gentileza descrever com data os últimos exames bioquímicos realizados pelo paciente.Att.",20250415,"CONSULTA HIPERTENSO ALTO RISCO"],
@@ -2637,6 +2638,7 @@ const SolicitacoesExcluidas = [
   [912245,1317,58954,3,"<b>Não Se Enquadra nos Criterios: </b><br>PACIENTE COM HAS E DISLIPIDEMIA LEVE (VALORES ABAIXO DO PROTOCOLO DA NUTRIÇÃO), SEM OUTRAS DEMANDAS CLÍNICAS QUE JUSTIFIQUEM O ENCAMINHAMENTO.CASO DISCUTIDO COM A MÉDICA  ALEXYA.EXAMES LABORATORIAIS 29/03/25:TRIG:125,16 ACIDO URICO:5,80 CREAT:0,86 UREIA:22,94 GLICEMIA:97,0 COL TOTAL;228,30 HDL:32,91 LDL:170,36EAS: FLORA NORMAL EPF: NEGATIVO HBA1C:5,3NA:138 K :4,2",20250428,"AVALIAçaO NUTRICIONISTA E-MULTI"],
   [912336,1350,33024,34,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>É NECESSÁRIO CALCULAR O RISCO CARDIOVASCULAR DO PACIENTE SEGUNDO A CALCULADORA HEARTS. CASO SEJA ALTO RISCO, ENCAMINHAR PARA HIPERTENSO ALTO RISCO CEAE.",20250428,"CONSULTA CARDIOLOGIA DR RENAN"],
   [912626,1366,13135,3,"<b>Não Se Enquadra nos Criterios: </b><br>De acordo protocolo: Diabético com HbA1c> 9%, a paciente apresenta HG de 8%.Att.",20250429,"CONSULTA DIABETES ALTO RISCO"],
+  [912853,1404,33428,10,"<b>Solicitação Indevida: </b><br>NÃO CONSTA REGISTRO DO ORTOPEDISTA SOLICITANDO RETORNO. É NECESSÁRIO AVALIAR QUUDRO CLÍNICO ATUAL DO PACIENTE, SE NESSÁRIO, ENCAMINHAR PARA FILA DE PRIMEIRA CONSULTA ORTOPEDIA.",20250513,"RETORNO CONSULTA ORTOPEDISTA"],
   [913102,1260,19791,81,"<b>Solicitação Indevida: </b><br>DE ACORDO COM A DESCRIÇÃO DA JUSTIFICATIVA, PACIENTE POSSUI CRITÉRIOS PARA GINECOLOGIA CEAE. TRANSFERIDO PARA FILA GINECOLOGIA CEAE.",20250429,"CONSULTA GINECOLOGIA POLICLINICA"],
   [913106,1400,11094,2,"<b>Solicitação Indevida: </b><br>DE ACORDO COM A DESCRIÇÃO DA JUSTIFICATIVA, PACIENTE POSSUI CRITÉRIOS PARA GINECOLOGIA CEAE. TRANSFERIDO PARA FILA GINECOLOGIA CEAE.",20250429,"CONSULTA GINECOLOGIA POLICLINICA"],
   [913127,1267,80091,8,"<b>Solicitação Indevida: </b><br>DE ACORDO COM A DESCRIÇÃO DA JUSTIFICATIVA, PACIENTE POSSUI CRITÉRIOS PARA GINECOLOGIA CEAE. TRANSFERIDO PARA FILA GINECOLOGIA CEAE.",20250429,"CONSULTA GINECOLOGIA POLICLINICA"],
@@ -2655,8 +2657,10 @@ const SolicitacoesExcluidas = [
   [917116,1260,19791,81,"<b>Solicitação Indevida: </b><br>TRANSFERIDA PARA FILA GINECOLOGIA CEAE.",20250508,"CONSULTA GINECOLOGIA POLICLINICA"],
   [918569,1297,3409,7,"<b>Não Se Enquadra nos Criterios: </b><br>De acordo protocolo: Diabético com HbA1c> 9%.Att.",20250509,"CONSULTA DIABETES ALTO RISCO"],
   [918920,1216,22895,9,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Gentileza informar a data dos exames descritos, foi informado da HG, preciso da data dos descritos acima destes.Att.",20250512,"CONSULTA HIPERTENSO ALTO RISCO"],
+  [919095,46,12844,16,"<b>Solicitação Indevida: </b><br>PACIENTE TRANSFERIDA PARA FILA DE PRIMEIRA CONSULTA.",20250513,"RETORNO CONSULTA ORTOPEDISTA"],
   [919120,122,11567,206,"<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA FILA DE PEQUENA CIRURGIA.",20250508,"CONSULTA CIRURGIAO GERAL"],
   [920177,1322,26237,3,"<b>Não Se Enquadra nos Criterios: </b><br>De acordo protocolo gestante alto risco, o quadro clínico descrito não se enquadra nos critérios de atendimento. Cesariana prévia apenas aquelas realizadas com incisão longitudinal, se for o caso, o médico deve avaliar e justificar (Obs: essas incisões já não acontecem há muitos anos, pela idade da gestante é muito pouco provável ser o caso dela), uma cesariana anterior não implica que a mulher apresente indicação de uma nova cessaria na gestação atual. A laqueadura tubária, deve ser realizado planejamento familiar pela unidade de saúde referência e assinar o termo de consentimento 60 dias antes do parto, ela pode apresentar no dia na maternidade e conversar com o obstetra que irá acompanhar ela no parto, caso seja de consentimento entre médico e paciente o profissional pode realizar a laqueadura durante ou no pós parto imediato. Dúvidas, me coloco a disposição para demais esclarecimentos, caso dúvidas, posso encaminhar o protocolo do estado para averiguação dos critérios. Caso ela tenha cesáreas prévias com incisão longitudinal, reencaminhar e descrever.Att.",20250508,"CONSULTA GESTANTE ALTO RISCO"],
+  [922086,1216,17447,9,"Não Se Enquadra nos Criterios",20250513,"CONSULTA MASTOLOGIA CEAE"],
 ];
 
 const Unidades = [
@@ -2834,6 +2838,7 @@ const Profissionais = [
   'NATHALI PIETRA LOYOLA MURTA :1406',
   'MILLENA ALMEIDA DE SOUSA:1407',
   'MONIQUE RODRIGUES LOPES:1411',
+  'VICTORIA LIERY RIBEIRO ALVES:1418',
   'MARIA LUIZA LENOIR RABELO:1420',
   'DAIANA TEIXEIRA MARTINS:1421',
   ':90707011'

@@ -43,7 +43,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/131582">81969</a></td><td>Anthony Svoboda Mendes</td><td><div style="white-space: nowrap;">1 ano e 8 mês </div></td><td><span name="HUMANIZAR" >HUMANIZAR</a></td><td><span name="802" >DARLENE MARIA PEREIRA</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/124966">76059</a></td><td>Laura Costa Viana</td><td><div style="white-space: nowrap;">1 ano e 1 mês </div></td><td><span name="HARMONIA" >HARMONIA</a></td><td><span name="226" >GEISSIANE MARQUES FERREIRA</a></td><td><span name="1º DOSE" style="white-space: nowrap;">1º DOSE</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/124966">76059</a></td><td>Laura Costa Viana</td><td><div style="white-space: nowrap;">1 ano e 2 mês </div></td><td><span name="HARMONIA" >HARMONIA</a></td><td><span name="226" >GEISSIANE MARQUES FERREIRA</a></td><td><span name="1º DOSE" style="white-space: nowrap;">1º DOSE</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/128318">79075</a></td><td>Felipe Santos Silveira</td><td><div style="white-space: nowrap;">1 ano e 7 mês </div></td><td><span name="VIVER" >VIVER</a></td><td><span name="493" >ELIANE PEREIRA FREITAS</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
