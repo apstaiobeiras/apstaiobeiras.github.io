@@ -425,6 +425,13 @@ const listaACS = `
                             <td>FELIPE LOPES SANTOS</td>
                         </tr>
                                                 <tr class="border tr" name="PROGRESSO" onclick="
+                            localStorage.setItem('override:codProfissional','78');
+                            window.location.href = 'profissional.html';
+                        ">
+                            <td style="text-align:right;"><b>78</b></td>
+                            <td>GEYSA MINELY SOUZA</td>
+                        </tr>
+                                                <tr class="border tr" name="PROGRESSO" onclick="
                             localStorage.setItem('override:codProfissional','219');
                             window.location.href = 'profissional.html';
                         ">
@@ -441,18 +448,18 @@ const listaACS = `
                             <td>ALLICY SANTOS LEAO</td>
                         </tr>
                                                 <tr class="border tr" name="RENASCER" onclick="
-                            localStorage.setItem('override:codProfissional','78');
-                            window.location.href = 'profissional.html';
-                        ">
-                            <td style="text-align:right;"><b>78</b></td>
-                            <td>GEYSA MINELY SOUZA</td>
-                        </tr>
-                                                <tr class="border tr" name="RENASCER" onclick="
                             localStorage.setItem('override:codProfissional','196');
                             window.location.href = 'profissional.html';
                         ">
                             <td style="text-align:right;"><b>196</b></td>
                             <td>JOSELANE MENDES TEIXEIRA</td>
+                        </tr>
+                                                <tr class="border tr" name="RENASCER" onclick="
+                            localStorage.setItem('override:codProfissional','198');
+                            window.location.href = 'profissional.html';
+                        ">
+                            <td style="text-align:right;"><b>198</b></td>
+                            <td>KARINE GONCALVES SANTOS</td>
                         </tr>
                                                 <tr class="border tr" name="RENASCER" onclick="
                             localStorage.setItem('override:codProfissional','67');

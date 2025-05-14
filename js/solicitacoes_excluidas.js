@@ -2114,6 +2114,7 @@ const SolicitacoesExcluidas = [
   [723339,1046,69256,10,"Não Se Enquadra nos Criterios",20250319,"CONSULTA CARDIOLOGIA DR RENAN"],
   [724358,1221,5249,4,"<b>Não Se Enquadra nos Criterios: </b><br>PACIENTE SEM CRITÉRIOS DE ACESSO A CARDIOLOGIA AMBULATORIAL.",20250321,"RETORNO CONSULTA DR RENAN"],
   [741640,1272,50982,7,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>........",20250204,"REMOçaO DE DENTE RETIDO (INCLUSO / IMPACTADO)"],
+  [746593,832,33032,7,"<b>Não Se Enquadra nos Criterios: </b><br>PACIENTE JA ESTA EM ATENDIMENTO NO CER",20250514,"AVALIAçaO FONOAUDIOLOGIA E-MULTI"],
   [749266,1016,19759,13,"Não Se Enquadra nos Criterios",20250214,"AVALIAçaO CIRURGICA POLICLINICA"],
   [754794,1328,62623,78,"<b>Falta Detalhar Exames: </b><br>Descrever o resultado do ECG basal.",20250121,"TESTE DE ESFORCO / TESTE ERGOMETRICO"],
   [759504,72,52445,206,"<b>Não Se Enquadra nos Criterios: </b><br>encaminhada para lista de psicologia E-MULTI",20250116,"REABILITAçaO INTELECTUAL"],
@@ -2659,8 +2660,12 @@ const SolicitacoesExcluidas = [
   [918920,1216,22895,9,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Gentileza informar a data dos exames descritos, foi informado da HG, preciso da data dos descritos acima destes.Att.",20250512,"CONSULTA HIPERTENSO ALTO RISCO"],
   [919095,46,12844,16,"<b>Solicitação Indevida: </b><br>PACIENTE TRANSFERIDA PARA FILA DE PRIMEIRA CONSULTA.",20250513,"RETORNO CONSULTA ORTOPEDISTA"],
   [919120,122,11567,206,"<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA FILA DE PEQUENA CIRURGIA.",20250508,"CONSULTA CIRURGIAO GERAL"],
+  [919888,1417,2871,10,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Gentileza descrever com data os últimos resultados de exames bioquímicos realizados pela paciente.Att.",20250514,"CONSULTA HIPERTENSO ALTO RISCO"],
   [920177,1322,26237,3,"<b>Não Se Enquadra nos Criterios: </b><br>De acordo protocolo gestante alto risco, o quadro clínico descrito não se enquadra nos critérios de atendimento. Cesariana prévia apenas aquelas realizadas com incisão longitudinal, se for o caso, o médico deve avaliar e justificar (Obs: essas incisões já não acontecem há muitos anos, pela idade da gestante é muito pouco provável ser o caso dela), uma cesariana anterior não implica que a mulher apresente indicação de uma nova cessaria na gestação atual. A laqueadura tubária, deve ser realizado planejamento familiar pela unidade de saúde referência e assinar o termo de consentimento 60 dias antes do parto, ela pode apresentar no dia na maternidade e conversar com o obstetra que irá acompanhar ela no parto, caso seja de consentimento entre médico e paciente o profissional pode realizar a laqueadura durante ou no pós parto imediato. Dúvidas, me coloco a disposição para demais esclarecimentos, caso dúvidas, posso encaminhar o protocolo do estado para averiguação dos critérios. Caso ela tenha cesáreas prévias com incisão longitudinal, reencaminhar e descrever.Att.",20250508,"CONSULTA GESTANTE ALTO RISCO"],
   [922086,1216,17447,9,"Não Se Enquadra nos Criterios",20250513,"CONSULTA MASTOLOGIA CEAE"],
+  [922909,1404,864,10,"<b>Solicitação Indevida: </b><br>TRANSFERIDO PARA FILA DE PEQUENA CIRURGIA.",20250514,"AVALIAçaO CIRURGICA POLICLINICA"],
+  [922952,907,15273,9,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Gentileza descrever com data os últimos resultados de exames bioquímicos realizados pela paciente.Att.",20250514,"CONSULTA HIPERTENSO ALTO RISCO"],
+  [923395,1417,2423,10,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Gentileza descrever com data os últimos resultados de exames bioquímicos realizados pela paciente, medicações em uso e posologia (dados solicitados descritos no protocolo hipertenso alto risco).Att.",20250514,"CONSULTA HIPERTENSO ALTO RISCO"],
 ];
 
 const Unidades = [
@@ -2838,6 +2843,7 @@ const Profissionais = [
   'NATHALI PIETRA LOYOLA MURTA :1406',
   'MILLENA ALMEIDA DE SOUSA:1407',
   'MONIQUE RODRIGUES LOPES:1411',
+  'LORRANE MENDES DE OLIVEIRA:1417',
   'VICTORIA LIERY RIBEIRO ALVES:1418',
   'MARIA LUIZA LENOIR RABELO:1420',
   'DAIANA TEIXEIRA MARTINS:1421',

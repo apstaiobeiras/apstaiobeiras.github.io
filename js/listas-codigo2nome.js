@@ -190,6 +190,8 @@ const acs = {
   499: "Jussely Soares de Souza",
   "Kamila Maria Pereira": 540,
   540: "Kamila Maria Pereira",
+  "Karine Goncalves Santos": 198,
+  198: "Karine Goncalves Santos",
   "Katiana Andrade Sena": 1124,
   1124: "Katiana Andrade Sena",
   "Katiana Ferreira": 31,

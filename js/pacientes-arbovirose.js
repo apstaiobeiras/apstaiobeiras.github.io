@@ -22,7 +22,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/35359">35568</a></td><td>Rosiney Barbosa Melo</td><td><span name="10/01/2024" class="data">10/01/2024</a></td><td>ESPIRITO SANTO, 480</td><td><span name="LUANA RODRIGUES DE OLIVEIRA" class="">LUANA RODRIGUES DE OLIVEIRA</a></td><td><span name="UAPS VER. MANOEL DOS SANTOS SILVA" class="">UAPS VER. MANOEL DOS SANTOS SILVA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/15790">15792</a></td><td>Selmara Cruz de Oliveira</td><td><span name="02/01/2024" class="data">02/01/2024</a></td><td>FRANCISCO SA, 82</td><td><span name="GEYSA MINELY SOUZA" class="">GEYSA MINELY SOUZA</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/15790">15792</a></td><td>Selmara Cruz de Oliveira</td><td><span name="02/01/2024" class="data">02/01/2024</a></td><td>FRANCISCO SA, 82</td><td><span name="KARINE GONCALVES SANTOS" class="">KARINE GONCALVES SANTOS</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/16954">16956</a></td><td>Adelia Inacia Cardoso</td><td><span name="19/01/2024" class="data">19/01/2024</a></td><td>OURO PRETO, 630</td><td><span name="NAGILA MARIA DOS SANTOS" class="">NAGILA MARIA DOS SANTOS</a></td><td><span name="UAPS MILTON MENDES DA SILVA" class="">UAPS MILTON MENDES DA SILVA</a></td>
@@ -787,7 +787,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/29998">30000</a></td><td>Minelvina Maria Celio</td><td><span name="07/03/2024" class="data">07/03/2024</a></td><td>XANDU, 399</td><td><span name="DENIZ CAROLINE PEREIRA MARTINS" class="">DENIZ CAROLINE PEREIRA MARTINS</a></td><td><span name="UAPS VER. JOSE SENA" class="">UAPS VER. JOSE SENA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/17674">17676</a></td><td>Maria Delcione Mendes e Sarmento</td><td><span name="07/03/2024" class="data">07/03/2024</a></td><td>DA MATRIZ, 40</td><td><span name="GEYSA MINELY SOUZA" class="">GEYSA MINELY SOUZA</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/17674">17676</a></td><td>Maria Delcione Mendes e Sarmento</td><td><span name="07/03/2024" class="data">07/03/2024</a></td><td>DA MATRIZ, 40</td><td><span name="KARINE GONCALVES SANTOS" class="">KARINE GONCALVES SANTOS</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/25245">25247</a></td><td>Eva Cezaria da Costa</td><td><span name="12/03/2024" class="data">12/03/2024</a></td><td>JOSE BONIFACIO, 38</td><td><span name="SHEILA DARLEN MENDES SOUZA" class="">SHEILA DARLEN MENDES SOUZA</a></td><td><span name="UAPS ANTONINO DE ALMEIDA" class="">UAPS ANTONINO DE ALMEIDA</a></td>
@@ -829,7 +829,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/16800">16802</a></td><td>Reginaldo Pereira Dos Santos</td><td><span name="06/03/2024" class="data">06/03/2024</a></td><td>-</td><td><span name="-" class="">-</a></td><td><span name="-" class="">-</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/18905">18907</a></td><td>João Pedro Moreira Saraiva</td><td><span name="06/03/2024" class="data">06/03/2024</a></td><td>DIAMANTINA, 120</td><td><span name="GEYSA MINELY SOUZA" class="">GEYSA MINELY SOUZA</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/18905">18907</a></td><td>João Pedro Moreira Saraiva</td><td><span name="06/03/2024" class="data">06/03/2024</a></td><td>DIAMANTINA, 120</td><td><span name="KARINE GONCALVES SANTOS" class="">KARINE GONCALVES SANTOS</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/80322">67585</a></td><td>Rebeca Oliveira Braga</td><td><span name="12/03/2024" class="data">12/03/2024</a></td><td>UBERABA, 1167</td><td><span name="IRIS TANIA TEIXEIRA ALVES" class="">IRIS TANIA TEIXEIRA ALVES</a></td><td><span name="UAPS ENF. MARY TATIANE" class="">UAPS ENF. MARY TATIANE</a></td>
@@ -919,7 +919,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/1129">1131</a></td><td>Gildete Santos Cardoso</td><td><span name="25/03/2024" class="data">25/03/2024</a></td><td>SAO LOURENCO, 39</td><td><span name="DAIANE ALVES" class="">DAIANE ALVES</a></td><td><span name="UAPS VER. MANOEL DOS SANTOS SILVA" class="">UAPS VER. MANOEL DOS SANTOS SILVA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/17674">17676</a></td><td>Maria Delcione Mendes e Sarmento</td><td><span name="25/03/2024" class="data">25/03/2024</a></td><td>DA MATRIZ, 40</td><td><span name="GEYSA MINELY SOUZA" class="">GEYSA MINELY SOUZA</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/17674">17676</a></td><td>Maria Delcione Mendes e Sarmento</td><td><span name="25/03/2024" class="data">25/03/2024</a></td><td>DA MATRIZ, 40</td><td><span name="KARINE GONCALVES SANTOS" class="">KARINE GONCALVES SANTOS</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/122942">74571</a></td><td>Victor  Ferraz de Sousa</td><td><span name="26/03/2024" class="data">26/03/2024</a></td><td>SÃO PEDRO, 1421</td><td><span name="ELIANE PEREIRA FREITAS" class="">ELIANE PEREIRA FREITAS</a></td><td><span name="UAPS ED. FIS. DOUGLAS FREDERICO" class="">UAPS ED. FIS. DOUGLAS FREDERICO</a></td>
@@ -964,7 +964,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/5759">5761</a></td><td>Pedro Enrique Teixeira Silva</td><td><span name="04/03/2024" class="data">04/03/2024</a></td><td>BAMBUI, 645</td><td><span name="ALMERINDA DE OLIVEIRA SANTOS" class="">ALMERINDA DE OLIVEIRA SANTOS</a></td><td><span name="UAPS ENF. MARY TATIANE" class="">UAPS ENF. MARY TATIANE</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/18905">18907</a></td><td>João Pedro Moreira Saraiva</td><td><span name="08/03/2024" class="data">08/03/2024</a></td><td>DIAMANTINA, 120</td><td><span name="GEYSA MINELY SOUZA" class="">GEYSA MINELY SOUZA</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/18905">18907</a></td><td>João Pedro Moreira Saraiva</td><td><span name="08/03/2024" class="data">08/03/2024</a></td><td>DIAMANTINA, 120</td><td><span name="KARINE GONCALVES SANTOS" class="">KARINE GONCALVES SANTOS</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/21099">21101</a></td><td>Zilda Pereira da Silva</td><td><span name="14/03/2024" class="data">14/03/2024</a></td><td>LAGOA DOURADA, 123</td><td><span name="DARLENE MARIA PEREIRA" class="">DARLENE MARIA PEREIRA</a></td><td><span name="UAPS LAGOA GRANDE/ DOURADA" class="">UAPS LAGOA GRANDE/ DOURADA</a></td>
@@ -2308,7 +2308,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/17184">17186</a></td><td>Jhenifer de Jesus Mendes</td><td><span name="23/04/2024" class="data">23/04/2024</a></td><td>CAXAMBU, 341</td><td><span name="CELMA DOS SANTOS" class="">CELMA DOS SANTOS</a></td><td><span name="UAPS VER. MANOEL DOS SANTOS SILVA" class="">UAPS VER. MANOEL DOS SANTOS SILVA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/1835">1837</a></td><td>Breno Firmo de Oliveira</td><td><span name="23/04/2024" class="data">23/04/2024</a></td><td>DIAMANTINA, 175</td><td><span name="GEYSA MINELY SOUZA" class="">GEYSA MINELY SOUZA</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/1835">1837</a></td><td>Breno Firmo de Oliveira</td><td><span name="23/04/2024" class="data">23/04/2024</a></td><td>DIAMANTINA, 175</td><td><span name="KARINE GONCALVES SANTOS" class="">KARINE GONCALVES SANTOS</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/26909">26911</a></td><td>Sebastiao Francelino Pereira</td><td><span name="23/04/2024" class="data">23/04/2024</a></td><td>COMUNIDADE LAGOA GRANDE, 44</td><td><span name="ALINE DE JESUS SILVA" class="">ALINE DE JESUS SILVA</a></td><td><span name="UAPS LAGOA GRANDE/ DOURADA" class="">UAPS LAGOA GRANDE/ DOURADA</a></td>
@@ -2317,7 +2317,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/23512">23514</a></td><td>Gaspar Pereira Dos Santos</td><td><span name="24/04/2024" class="data">24/04/2024</a></td><td>-</td><td><span name="-" class="">-</a></td><td><span name="-" class="">-</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/18949">18951</a></td><td>Maria Rilza de Oliveira</td><td><span name="24/04/2024" class="data">24/04/2024</a></td><td>BOM JARDIM, 711</td><td><span name="GEYSA MINELY SOUZA" class="">GEYSA MINELY SOUZA</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/18949">18951</a></td><td>Maria Rilza de Oliveira</td><td><span name="24/04/2024" class="data">24/04/2024</a></td><td>BOM JARDIM, 711</td><td><span name="KARINE GONCALVES SANTOS" class="">KARINE GONCALVES SANTOS</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/13962">13964</a></td><td>Tiago Dos Santos Cardoso</td><td><span name="01/04/2024" class="data">01/04/2024</a></td><td>BELO HORIZONTE, 873</td><td><span name="GISLENE FERREIRA BARBOSA" class="">GISLENE FERREIRA BARBOSA</a></td><td><span name="UAPS JOAO DE DEUS SIMOES" class="">UAPS JOAO DE DEUS SIMOES</a></td>
@@ -2650,7 +2650,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/16671">16673</a></td><td>Yasmin Cardoso da Rocha</td><td><span name="15/04/2024" class="data">15/04/2024</a></td><td>SANTA CATARINA, 239</td><td><span name="DAIANE ALVES" class="">DAIANE ALVES</a></td><td><span name="UAPS VER. MANOEL DOS SANTOS SILVA" class="">UAPS VER. MANOEL DOS SANTOS SILVA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/1835">1837</a></td><td>Breno Firmo de Oliveira</td><td><span name="15/04/2024" class="data">15/04/2024</a></td><td>DIAMANTINA, 175</td><td><span name="GEYSA MINELY SOUZA" class="">GEYSA MINELY SOUZA</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/1835">1837</a></td><td>Breno Firmo de Oliveira</td><td><span name="15/04/2024" class="data">15/04/2024</a></td><td>DIAMANTINA, 175</td><td><span name="KARINE GONCALVES SANTOS" class="">KARINE GONCALVES SANTOS</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/20643">20645</a></td><td>Raquel Gomes de Araujo</td><td><span name="17/04/2024" class="data">17/04/2024</a></td><td>TAMOIOS, 314</td><td><span name="LAURY MADALENA DA ROCHA" class="">LAURY MADALENA DA ROCHA</a></td><td><span name="UAPS VER. JOSE SENA" class="">UAPS VER. JOSE SENA</a></td>
@@ -3712,7 +3712,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/34715">34537</a></td><td>Ana Cecilia Rodrigues Martins</td><td><span name="19/04/2024" class="data">19/04/2024</a></td><td>GUARANIS, 154</td><td><span name="LAURY MADALENA DA ROCHA" class="">LAURY MADALENA DA ROCHA</a></td><td><span name="UAPS VER. JOSE SENA" class="">UAPS VER. JOSE SENA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/5729">5731</a></td><td>Joseane Maria Pereira</td><td><span name="22/04/2024" class="data">22/04/2024</a></td><td>DIAMANTINA, 350</td><td><span name="GEYSA MINELY SOUZA" class="">GEYSA MINELY SOUZA</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/5729">5731</a></td><td>Joseane Maria Pereira</td><td><span name="22/04/2024" class="data">22/04/2024</a></td><td>DIAMANTINA, 350</td><td><span name="KARINE GONCALVES SANTOS" class="">KARINE GONCALVES SANTOS</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/20013">20015</a></td><td>Rosimary Dias De Oliveira</td><td><span name="24/04/2024" class="data">24/04/2024</a></td><td>MEDINA, 12</td><td><span name="ILCA ANTUNIS DA SILVA" class="">ILCA ANTUNIS DA SILVA</a></td><td><span name="UAPS JOAO DE DEUS SIMOES" class="">UAPS JOAO DE DEUS SIMOES</a></td>
@@ -3808,7 +3808,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/24809">24811</a></td><td>Adelita Maria de Jesus</td><td><span name="02/04/2024" class="data">02/04/2024</a></td><td>RIO GRANDE DO SUL, 142</td><td><span name="JOSSIVANIA D' ANGELIS COSTA" class="">JOSSIVANIA D' ANGELIS COSTA</a></td><td><span name="UAPS VER. JOSE SENA" class="">UAPS VER. JOSE SENA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/54942">54616</a></td><td>Laura Dos Santos Pena</td><td><span name="04/04/2024" class="data">04/04/2024</a></td><td>LAURINDA ANGELICA, 137</td><td><span name="GEYSA MINELY SOUZA" class="">GEYSA MINELY SOUZA</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/54942">54616</a></td><td>Laura Dos Santos Pena</td><td><span name="04/04/2024" class="data">04/04/2024</a></td><td>LAURINDA ANGELICA, 137</td><td><span name="KARINE GONCALVES SANTOS" class="">KARINE GONCALVES SANTOS</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/5702">5704</a></td><td>Lenice Costa da Silva</td><td><span name="04/04/2024" class="data">04/04/2024</a></td><td>IPANEMA, 1239</td><td><span name="CERLIOS MARQUES DOS SANTOS" class="">CERLIOS MARQUES DOS SANTOS</a></td><td><span name="UAPS DONA NININHA" class="">UAPS DONA NININHA</a></td>
@@ -3985,7 +3985,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/8948">8950</a></td><td>Ronildo Pereira da Rocha</td><td><span name="10/04/2024" class="data">10/04/2024</a></td><td>BOM JARDIM, 1819</td><td><span name="THAIS ROSA DE ALMEIDA SILVA" class="">THAIS ROSA DE ALMEIDA SILVA</a></td><td><span name="UAPS ENF. MARY TATIANE" class="">UAPS ENF. MARY TATIANE</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/18694">18696</a></td><td>Dejanira Maria Da Costa</td><td><span name="12/04/2024" class="data">12/04/2024</a></td><td>DA MATRIZ, 345</td><td><span name="GEYSA MINELY SOUZA" class="">GEYSA MINELY SOUZA</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/18694">18696</a></td><td>Dejanira Maria Da Costa</td><td><span name="12/04/2024" class="data">12/04/2024</a></td><td>DA MATRIZ, 345</td><td><span name="KARINE GONCALVES SANTOS" class="">KARINE GONCALVES SANTOS</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/5931">5933</a></td><td>Auridia de Oliveira Sousa</td><td><span name="12/04/2024" class="data">12/04/2024</a></td><td>CONTORNO, 5693</td><td><span name="CLEIDIANE DOS SANTOS MEIRELES" class="">CLEIDIANE DOS SANTOS MEIRELES</a></td><td><span name="UAPS ENF. MARY TATIANE" class="">UAPS ENF. MARY TATIANE</a></td>
@@ -4096,7 +4096,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/33289">33291</a></td><td>Luiz Felipe Araujo</td><td><span name="15/04/2024" class="data">15/04/2024</a></td><td>RIO DE JANEIRO, 405</td><td><span name="NAGILA MARIA DOS SANTOS" class="">NAGILA MARIA DOS SANTOS</a></td><td><span name="UAPS MILTON MENDES DA SILVA" class="">UAPS MILTON MENDES DA SILVA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/19648">19650</a></td><td>Mazílio Inacío de Sena</td><td><span name="15/04/2024" class="data">15/04/2024</a></td><td>DIAMANTINA, 87</td><td><span name="GEYSA MINELY SOUZA" class="">GEYSA MINELY SOUZA</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/19648">19650</a></td><td>Mazílio Inacío de Sena</td><td><span name="15/04/2024" class="data">15/04/2024</a></td><td>DIAMANTINA, 87</td><td><span name="KARINE GONCALVES SANTOS" class="">KARINE GONCALVES SANTOS</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/6502">6504</a></td><td>Isná Pereira da Silva</td><td><span name="18/04/2024" class="data">18/04/2024</a></td><td>NOSSA SENHORA DE FATIMA, 1115</td><td><span name="MARTA PEREIRA DE OLIVEIRA" class="">MARTA PEREIRA DE OLIVEIRA</a></td><td><span name="UAPS MILTON MENDES DA SILVA" class="">UAPS MILTON MENDES DA SILVA</a></td>
@@ -4498,7 +4498,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/30696">30698</a></td><td>Lindaura Batista Dos Santos</td><td><span name="12/04/2024" class="data">12/04/2024</a></td><td>CARIJOS, 1725</td><td><span name="CERLIOS MARQUES DOS SANTOS" class="">CERLIOS MARQUES DOS SANTOS</a></td><td><span name="UAPS DONA NININHA" class="">UAPS DONA NININHA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/1835">1837</a></td><td>Breno Firmo de Oliveira</td><td><span name="15/04/2024" class="data">15/04/2024</a></td><td>DIAMANTINA, 175</td><td><span name="GEYSA MINELY SOUZA" class="">GEYSA MINELY SOUZA</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/1835">1837</a></td><td>Breno Firmo de Oliveira</td><td><span name="15/04/2024" class="data">15/04/2024</a></td><td>DIAMANTINA, 175</td><td><span name="KARINE GONCALVES SANTOS" class="">KARINE GONCALVES SANTOS</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/5601">5603</a></td><td>Henrique Alves Viana</td><td><span name="16/04/2024" class="data">16/04/2024</a></td><td>BAMBUI, 451</td><td><span name="ALMERINDA DE OLIVEIRA SANTOS" class="">ALMERINDA DE OLIVEIRA SANTOS</a></td><td><span name="UAPS ENF. MARY TATIANE" class="">UAPS ENF. MARY TATIANE</a></td>
@@ -4582,7 +4582,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/99854">70523</a></td><td>Mateus Lima Dos Santos</td><td><span name="24/04/2024" class="data">24/04/2024</a></td><td>-</td><td><span name="-" class="">-</a></td><td><span name="-" class="">-</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/7196">7198</a></td><td>Ana Luisa Mendes Oliveira</td><td><span name="25/04/2024" class="data">25/04/2024</a></td><td>DIAMANTINA, 274</td><td><span name="GEYSA MINELY SOUZA" class="">GEYSA MINELY SOUZA</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/7196">7198</a></td><td>Ana Luisa Mendes Oliveira</td><td><span name="25/04/2024" class="data">25/04/2024</a></td><td>DIAMANTINA, 274</td><td><span name="KARINE GONCALVES SANTOS" class="">KARINE GONCALVES SANTOS</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/3037">3039</a></td><td>Ananias Ramos Mendes</td><td><span name="25/04/2024" class="data">25/04/2024</a></td><td>-</td><td><span name="-" class="">-</a></td><td><span name="-" class="">-</a></td>
@@ -4621,7 +4621,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/29513">29515</a></td><td>Ademar da Silva Mendes</td><td><span name="09/04/2024" class="data">09/04/2024</a></td><td>-</td><td><span name="-" class="">-</a></td><td><span name="-" class="">-</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/54942">54616</a></td><td>Laura Dos Santos Pena</td><td><span name="09/04/2024" class="data">09/04/2024</a></td><td>LAURINDA ANGELICA, 137</td><td><span name="GEYSA MINELY SOUZA" class="">GEYSA MINELY SOUZA</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/54942">54616</a></td><td>Laura Dos Santos Pena</td><td><span name="09/04/2024" class="data">09/04/2024</a></td><td>LAURINDA ANGELICA, 137</td><td><span name="KARINE GONCALVES SANTOS" class="">KARINE GONCALVES SANTOS</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/111890">71866</a></td><td>Silvia Cruz</td><td><span name="10/04/2024" class="data">10/04/2024</a></td><td>TURMALINA, 330</td><td><span name="DARCIELIA EURIDES DOS SANTOS" class="">DARCIELIA EURIDES DOS SANTOS</a></td><td><span name="UAPS VER. MANOEL DOS SANTOS SILVA" class="">UAPS VER. MANOEL DOS SANTOS SILVA</a></td>
@@ -4792,7 +4792,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/42695">43165</a></td><td>Jamylle Moreira Fernandes</td><td><span name="11/04/2024" class="data">11/04/2024</a></td><td>CANAPOLIS, 179</td><td><span name="MARLANE DA SILVA SANTOS" class="">MARLANE DA SILVA SANTOS</a></td><td><span name="UAPS DONA NININHA" class="">UAPS DONA NININHA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/18694">18696</a></td><td>Dejanira Maria Da Costa</td><td><span name="11/04/2024" class="data">11/04/2024</a></td><td>DA MATRIZ, 345</td><td><span name="GEYSA MINELY SOUZA" class="">GEYSA MINELY SOUZA</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/18694">18696</a></td><td>Dejanira Maria Da Costa</td><td><span name="11/04/2024" class="data">11/04/2024</a></td><td>DA MATRIZ, 345</td><td><span name="KARINE GONCALVES SANTOS" class="">KARINE GONCALVES SANTOS</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/26801">26803</a></td><td>Lara Sophia Eurides Silva</td><td><span name="11/04/2024" class="data">11/04/2024</a></td><td>BAMBUI, 660</td><td><span name="ALMERINDA DE OLIVEIRA SANTOS" class="">ALMERINDA DE OLIVEIRA SANTOS</a></td><td><span name="UAPS ENF. MARY TATIANE" class="">UAPS ENF. MARY TATIANE</a></td>
@@ -5224,7 +5224,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/20097">20099</a></td><td>Edineia Delmira Dias Santos</td><td><span name="28/05/2024" class="data">28/05/2024</a></td><td>IPANEMA, 480</td><td><span name="JUSSELY SOARES DE SOUZA" class="">JUSSELY SOARES DE SOUZA</a></td><td><span name="UAPS ENF. MARY TATIANE" class="">UAPS ENF. MARY TATIANE</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/37567">38509</a></td><td>Zelia Gonçalves de Almeida</td><td><span name="28/05/2024" class="data">28/05/2024</a></td><td>JANUARIO MARTINS, 41</td><td><span name="GEYSA MINELY SOUZA" class="">GEYSA MINELY SOUZA</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/37567">38509</a></td><td>Zelia Gonçalves de Almeida</td><td><span name="28/05/2024" class="data">28/05/2024</a></td><td>JANUARIO MARTINS, 41</td><td><span name="KARINE GONCALVES SANTOS" class="">KARINE GONCALVES SANTOS</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/5370">5372</a></td><td>Sandra Saroa Sena</td><td><span name="29/05/2024" class="data">29/05/2024</a></td><td>SAO FRANCISCO, 63</td><td><span name="KATIANA FERREIRA" class="">KATIANA FERREIRA</a></td><td><span name="UAPS JOAO DE DEUS SIMOES" class="">UAPS JOAO DE DEUS SIMOES</a></td>
@@ -5593,7 +5593,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/11693">11695</a></td><td>Alefi Ferreira de Souza</td><td><span name="28/05/2024" class="data">28/05/2024</a></td><td>SAO FRANCISCO, 113</td><td><span name="KATIANA FERREIRA" class="">KATIANA FERREIRA</a></td><td><span name="UAPS JOAO DE DEUS SIMOES" class="">UAPS JOAO DE DEUS SIMOES</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/21200">21202</a></td><td>Laura Beatriz Fereira Medeiros</td><td><span name="29/05/2024" class="data">29/05/2024</a></td><td>SAO VICENTE DE PAULA, 326</td><td><span name="GEYSA MINELY SOUZA" class="">GEYSA MINELY SOUZA</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/21200">21202</a></td><td>Laura Beatriz Fereira Medeiros</td><td><span name="29/05/2024" class="data">29/05/2024</a></td><td>SAO VICENTE DE PAULA, 326</td><td><span name="KARINE GONCALVES SANTOS" class="">KARINE GONCALVES SANTOS</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/32949">32951</a></td><td>Emerson Rodrigues Dos Santos</td><td><span name="02/05/2024" class="data">02/05/2024</a></td><td>SAO ROMAO, 1072</td><td><span name="LEISIANE ALVES RIBEIRO" class="">LEISIANE ALVES RIBEIRO</a></td><td><span name="UAPS ENF. MARY TATIANE" class="">UAPS ENF. MARY TATIANE</a></td>
@@ -6511,7 +6511,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/60210">59237</a></td><td>Davi Oliveira Santos</td><td><span name="04/06/2024" class="data">04/06/2024</a></td><td>FAZENDA COVAO, 1</td><td><span name="OZANIA ALVES MOREIRA" class="">OZANIA ALVES MOREIRA</a></td><td><span name="UAPS ANTONINO DE ALMEIDA" class="">UAPS ANTONINO DE ALMEIDA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/21709">21711</a></td><td>Guiomar Moreira da Rocha</td><td><span name="04/06/2024" class="data">04/06/2024</a></td><td>SAO VICENTE DE PAULA, 332</td><td><span name="GEYSA MINELY SOUZA" class="">GEYSA MINELY SOUZA</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/21709">21711</a></td><td>Guiomar Moreira da Rocha</td><td><span name="04/06/2024" class="data">04/06/2024</a></td><td>SAO VICENTE DE PAULA, 332</td><td><span name="KARINE GONCALVES SANTOS" class="">KARINE GONCALVES SANTOS</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/16217">16219</a></td><td>Cleusa Maria Viana</td><td><span name="04/06/2024" class="data">04/06/2024</a></td><td>SAO GONCALO, 360</td><td><span name="CELMA DOS SANTOS" class="">CELMA DOS SANTOS</a></td><td><span name="UAPS VER. MANOEL DOS SANTOS SILVA" class="">UAPS VER. MANOEL DOS SANTOS SILVA</a></td>
@@ -6811,7 +6811,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/12486">12488</a></td><td>Karine Resende da Costa</td><td><span name="10/07/2024" class="data">10/07/2024</a></td><td>MONTEZUMA, 244</td><td><span name="MAGDA ROSA DOS SANTOS" class="">MAGDA ROSA DOS SANTOS</a></td><td><span name="UAPS ED. FIS. DOUGLAS FREDERICO" class="">UAPS ED. FIS. DOUGLAS FREDERICO</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/3725">3727</a></td><td>Joao Pedro Goncalves Almeida</td><td><span name="15/07/2024" class="data">15/07/2024</a></td><td>DIAMANTINA, 277</td><td><span name="GEYSA MINELY SOUZA" class="">GEYSA MINELY SOUZA</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/3725">3727</a></td><td>Joao Pedro Goncalves Almeida</td><td><span name="15/07/2024" class="data">15/07/2024</a></td><td>DIAMANTINA, 277</td><td><span name="KARINE GONCALVES SANTOS" class="">KARINE GONCALVES SANTOS</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/16720">16722</a></td><td>Sergio Pereira da Cruz</td><td><span name="09/07/2024" class="data">09/07/2024</a></td><td>CEARA, 286</td><td><span name="LEISIANE ALVES RIBEIRO" class="">LEISIANE ALVES RIBEIRO</a></td><td><span name="UAPS ENF. MARY TATIANE" class="">UAPS ENF. MARY TATIANE</a></td>
@@ -6904,7 +6904,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/29165">29167</a></td><td>Adrielly Mendes Dos Santos</td><td><span name="27/08/2024" class="data">27/08/2024</a></td><td>PORTEIRINHA, 677</td><td><span name="ELIANA MARIA SANTOS DE OLIVEIRA" class="">ELIANA MARIA SANTOS DE OLIVEIRA</a></td><td><span name="UAPS MILTON MENDES DA SILVA" class="">UAPS MILTON MENDES DA SILVA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/21226">21228</a></td><td>Leonardo de Oliveira Santos</td><td><span name="16/08/2024" class="data">16/08/2024</a></td><td>SAO JOAO, 240</td><td><span name="GEYSA MINELY SOUZA" class="">GEYSA MINELY SOUZA</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/21226">21228</a></td><td>Leonardo de Oliveira Santos</td><td><span name="16/08/2024" class="data">16/08/2024</a></td><td>SAO JOAO, 240</td><td><span name="KARINE GONCALVES SANTOS" class="">KARINE GONCALVES SANTOS</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/2628">2630</a></td><td>Larissa Braga Santos Oliveira</td><td><span name="16/08/2024" class="data">16/08/2024</a></td><td>ALAGOAS, 122</td><td><span name="FELIPE LOPES SANTOS" class="">FELIPE LOPES SANTOS</a></td><td><span name="UAPS VER. MANOEL DOS SANTOS SILVA" class="">UAPS VER. MANOEL DOS SANTOS SILVA</a></td>
@@ -7216,7 +7216,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/126721">77633</a></td><td>Lais Emanuelly Oliveira  Gomes</td><td><span name="13/01/2025" class="data">13/01/2025</a></td><td>-</td><td><span name="-" class="">-</a></td><td><span name="-" class="">-</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/1835">1837</a></td><td>Breno Firmo de Oliveira</td><td><span name="17/01/2025" class="data">17/01/2025</a></td><td>DIAMANTINA, 175</td><td><span name="GEYSA MINELY SOUZA" class="">GEYSA MINELY SOUZA</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/1835">1837</a></td><td>Breno Firmo de Oliveira</td><td><span name="17/01/2025" class="data">17/01/2025</a></td><td>DIAMANTINA, 175</td><td><span name="KARINE GONCALVES SANTOS" class="">KARINE GONCALVES SANTOS</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/98434">70358</a></td><td>Marcos Dos Santos</td><td><span name="13/01/2025" class="data">13/01/2025</a></td><td>CONTORNO, 4006</td><td><span name="CERLIOS MARQUES DOS SANTOS" class="">CERLIOS MARQUES DOS SANTOS</a></td><td><span name="UAPS DONA NININHA" class="">UAPS DONA NININHA</a></td>
@@ -7255,7 +7255,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/29002">29004</a></td><td>Igor Lucas Pereira Gomes</td><td><span name="03/02/2025" class="data">03/02/2025</a></td><td>SANTA RITA DE CASSIA, 1517</td><td><span name="JUSSELY SOARES DE SOUZA" class="">JUSSELY SOARES DE SOUZA</a></td><td><span name="UAPS ENF. MARY TATIANE" class="">UAPS ENF. MARY TATIANE</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/53103">53031</a></td><td>Bruna de Sousa Oliveira</td><td><span name="06/02/2025" class="data">06/02/2025</a></td><td>SAO JOAO, 240</td><td><span name="GEYSA MINELY SOUZA" class="">GEYSA MINELY SOUZA</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/53103">53031</a></td><td>Bruna de Sousa Oliveira</td><td><span name="06/02/2025" class="data">06/02/2025</a></td><td>SAO JOAO, 240</td><td><span name="KARINE GONCALVES SANTOS" class="">KARINE GONCALVES SANTOS</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/21956">21958</a></td><td>Carlos Daniel Barbosa Costa</td><td><span name="13/02/2025" class="data">13/02/2025</a></td><td>RIO DE JANEIRO, 135</td><td><span name="NAGILA MARIA DOS SANTOS" class="">NAGILA MARIA DOS SANTOS</a></td><td><span name="UAPS MILTON MENDES DA SILVA" class="">UAPS MILTON MENDES DA SILVA</a></td>
@@ -7429,7 +7429,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/32063">32065</a></td><td>Lucas Dutra Torres</td><td><span name="31/03/2025" class="data">31/03/2025</a></td><td>RIO PARDO, 604</td><td><span name="GREICIELE DO CARMO DE JESUS" class="">GREICIELE DO CARMO DE JESUS</a></td><td><span name="UAPS VER. JOSE SENA" class="">UAPS VER. JOSE SENA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/5729">5731</a></td><td>Joseane Maria Pereira</td><td><span name="24/03/2025" class="data">24/03/2025</a></td><td>DIAMANTINA, 350</td><td><span name="GEYSA MINELY SOUZA" class="">GEYSA MINELY SOUZA</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/5729">5731</a></td><td>Joseane Maria Pereira</td><td><span name="24/03/2025" class="data">24/03/2025</a></td><td>DIAMANTINA, 350</td><td><span name="KARINE GONCALVES SANTOS" class="">KARINE GONCALVES SANTOS</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/12826">12828</a></td><td>Vitoria Luiza Sena Sales</td><td><span name="02/04/2025" class="data">02/04/2025</a></td><td>CURITIBA, 279</td><td><span name="MAGDA ROSA DOS SANTOS" class="">MAGDA ROSA DOS SANTOS</a></td><td><span name="UAPS ED. FIS. DOUGLAS FREDERICO" class="">UAPS ED. FIS. DOUGLAS FREDERICO</a></td>
@@ -7612,6 +7612,12 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/40036">40734</a></td><td>Theo Felipe Rodrigues Oliveira</td><td><span name="13/05/2025" class="data">13/05/2025</a></td><td>LAMBARI, 206</td><td><span name="ANGELICA PEREIRA DE OLIVEIRA" class="">ANGELICA PEREIRA DE OLIVEIRA</a></td><td><span name="UAPS DONA NININHA" class="">UAPS DONA NININHA</a></td>
     </tr>
       <tr>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/36940">37690</a></td><td>Leonardo Rodrigues Barbosa</td><td><span name="14/05/2025" class="data">14/05/2025</a></td><td>COMUNIDADE RIACHO DE AREIA, 29</td><td><span name="KATIANA ANDRADE SENA" class="">KATIANA ANDRADE SENA</a></td><td><span name="UAPS COMUNIDADES RURAIS" class="">UAPS COMUNIDADES RURAIS</a></td>
+    </tr>
+      <tr>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/129822">80379</a></td><td>Yasmin Santos Silveira</td><td><span name="14/05/2025" class="data">14/05/2025</a></td><td>SANTO ANTONIO, 1022</td><td><span name="ELIANE PEREIRA FREITAS" class="">ELIANE PEREIRA FREITAS</a></td><td><span name="UAPS ED. FIS. DOUGLAS FREDERICO" class="">UAPS ED. FIS. DOUGLAS FREDERICO</a></td>
+    </tr>
+      <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/131830">82162</a></td><td>Miguel Dos Santos da Cruz </td><td><span name="07/05/2025" class="data">07/05/2025</a></td><td>CURITIBA, 65</td><td><span name="ELIANA MARIA SANTOS DE OLIVEIRA" class="">ELIANA MARIA SANTOS DE OLIVEIRA</a></td><td><span name="UAPS MILTON MENDES DA SILVA" class="">UAPS MILTON MENDES DA SILVA</a></td>
     </tr>
       <tr>
@@ -7722,7 +7728,7 @@ graficos.innerHTML += '<div id="grafico-2025"></div>';
   await (new ApexCharts(document.querySelector("#grafico-2025"), {
     series: [{
       name: "Casos",
-      data: [1,4,5,5,10,13,7,8,12,3,6,10,5,13,11,8,5,11,15,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+      data: [1,4,5,5,10,13,7,8,12,3,6,10,5,13,11,8,5,11,15,9,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
     }],
     chart: {
       height: 350,
