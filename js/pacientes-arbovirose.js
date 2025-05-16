@@ -3238,7 +3238,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/13856">13858</a></td><td>Gecymario Batista</td><td><span name="09/04/2024" class="data">09/04/2024</a></td><td>BOCAIUVA, 305</td><td><span name="JOSELANE MENDES TEIXEIRA" class="">JOSELANE MENDES TEIXEIRA</a></td><td><span name="UAPS AGEU ALMEIDA" class="">UAPS AGEU ALMEIDA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/30953">30955</a></td><td>Maria Helena Dos Santos</td><td><span name="09/04/2024" class="data">09/04/2024</a></td><td>-</td><td><span name="-" class="">-</a></td><td><span name="-" class="">-</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/30953">30955</a></td><td>Maria Helena Dos Santos</td><td><span name="09/04/2024" class="data">09/04/2024</a></td><td>LANDIM, 42</td><td><span name="ANANIVA ALVES DOS SANTOS" class="">ANANIVA ALVES DOS SANTOS</a></td><td><span name="UAPS COMUNIDADES RURAIS" class="">UAPS COMUNIDADES RURAIS</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/20615">20617</a></td><td>Silvania Teixeira</td><td><span name="10/04/2024" class="data">10/04/2024</a></td><td>TAMOIOS, 445</td><td><span name="LAURY MADALENA DA ROCHA" class="">LAURY MADALENA DA ROCHA</a></td><td><span name="UAPS VER. JOSE SENA" class="">UAPS VER. JOSE SENA</a></td>
