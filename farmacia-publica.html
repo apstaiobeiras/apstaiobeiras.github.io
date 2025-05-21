@@ -2,7 +2,7 @@
 <html lang="pt_BR">
   <head>
     <meta charset="utf8" />
-    <title>Perfil do profissional</title>
+    <title>Farmácia de Taiobeiras</title>
     <style>
 
       body {
@@ -97,6 +97,14 @@
         min-width: 96px;
         height: auto;
       }
+
+      * {
+        user-select: none;
+      }
+
+      @page {
+        margin: 0;
+      }
     </style>
     <meta content="lua-wpp" name="generator" />
     <meta content="width=device-width,initial-scale=1.0" name="viewport" />
@@ -105,35 +113,44 @@
   <body class="container-lg px-3 my-5 markdown-body">
 
     <div class="navbar" style="display: flex;justify-content: space-between; padding: 0; z-index: 10000;">
-      <a href="#""></a>
-      <a>Farmácia</a>
+      <a href="#"></a>
+      <a>Farmácia Fácil - Estoque atualizado em <span id="dataAtualizacao"></span></a>
       <a href="#" > </a>
     </div>
     
     <h3><br /></h3>
 
+
     <div id="montarReceituario">
-      Essa ferramenta visa facilitar o acesso a medicamentos disponibilizados pela rede pública:
+      Encontre seu medicamento gratuito seguindo 3 passos simples
       <br><br>
       <ol>
-        <li>Escolha o medicamento e toque/clique em "Adicionar"</li>
+        <li>Adicione os medicamentos no receituário</li>
         <li>Quando terminar, toque/clique em "Pesquisa" e a ferramenta irá dizer onde você pode encontrar os medicamentos</li>
+        <li>Compareça no endereço informado para retirada com a receita e algum documento de identificação</li>
       </ol>
       <br><br>
       <form>
+        Para adicionar os medicamentos ao receituário:<br><br>
         <fieldset>
-          Escolha o medicamento: <br><br>
-          <select id="listaMedicamentosDisponiveis" class="fixed-width" style="width: 70%;"></select>
-          <button type="reset" onclick="adicionaMedicamento()">Adicionar</button>
+          1. Escolha o medicamento aqui: <br><br>
+          <input type="text" list="listaMedicamentosDisponiveis" id="medicamento" onchange="medicamentoAtual = medicamento.value;"></select>
+          <datalist id="listaMedicamentosDisponiveis"></datalist><br><br>
+          2. Toque/clique
+          <button type="reset" onclick="adicionaMedicamento()">nesse botão</button> para adicionar
         </fieldset>
       </form>
+      <message id="receituarioMensagem" style="background-color: #b6d7a8; padding: 9pt;border-radius: 6pt;border: 1px solid green; display: none;color: darkgreen;"></message>
+      <br>
+      <br>
       <fieldset>
         <legend>Receituario</legend>
         <table>
           <tbody id="receituario"></tbody >
         </table>
         <div style="text-align: right;">
-          <button onclick="pesquisarUnidades()">Pesquisar unidades</button>
+          <br>
+          <button onclick="pesquisarUnidades()">Quando terminar, clique aqui</button>
         </div>
       </fieldset>
     </div>
@@ -150,6 +167,7 @@
     <h3><br /></h3>
     <script src="js/farmacia-publica.js"></script>
     <script>
+      let medicamentoAtual = "";
       let seletorMedicamentos = `<option value="">Escolha aqui</option>\n`;
       for (let medicamento of Object.keys(medicamentos)) {
         seletorMedicamentos += `<option value="${medicamento}">${medicamento}</option>\n`;
@@ -159,10 +177,16 @@
       let i = 1;
 
       function adicionaMedicamento() {
+        if (medicamento.value.replaceAll(" ","")=="") return;
+        receituarioMensagem.style.display = "block";
+        receituarioMensagem.innerHTML = `<b>${medicamentoAtual}</b> adicionado!`
+        if (document.getElementsByName(medicamentoAtual)[0]) {
+          return;
+        }
         receituario.innerHTML += `
-        <tr class="border" id="med-${i}">
-          <td class="medicamento">${listaMedicamentosDisponiveis.value}</td>
-          <td><button onclick="document.getElementById('med-${i}').remove();">Remover</button></td>
+        <tr class="border" id="med-${i}" name="${medicamentoAtual}">
+          <td class="medicamento">${medicamentoAtual}</td>
+          <td><button onclick="document.getElementById('med-${i}').remove();receituarioMensagem.style.display = 'none';">Remover</button></td>
         </tr>`;
 
         i = i+1;
@@ -182,14 +206,12 @@
           listaMedicamentosUnidades.innerHTML += `<tr><td><b>${unidade}</b></td></tr>`;
           listaMedicamentosUnidades.innerHTML += `
             <tr>
-              <td></td>
               <td class="border"><b>Medicamento</b></td>
               <td class="border" style="text-align:right;"><b>Em estoque</b></td>
             </tr>`;
           for (let medicamento of Object.keys(unidadesComMedicamento[unidade])) {
             listaMedicamentosUnidades.innerHTML += `
             <tr>
-              <td></td>
               <td class="border">${medicamento}</td>
               <td class="border" style="text-align:right;">${unidadesComMedicamento[unidade][medicamento]}</td>
             </tr>`;
