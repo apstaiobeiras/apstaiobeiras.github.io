@@ -203,7 +203,48 @@
 
         for (let unidade of Object.keys(unidades)) {
           if (!unidadesComMedicamento[unidade]) continue;
-          listaMedicamentosUnidades.innerHTML += `<tr><td><b>${unidade}</b></td></tr>`;
+          if (unidade.includes("de Minas")) {
+            listaMedicamentosUnidades.innerHTML += `<tr class="header border">
+              <td colspan=2>
+                <b>${unidade}</b><br>Avenida São João, nº 59, Centro.
+              </td>
+            </tr>`;
+          } else if (unidade.includes("Mary")) {
+            listaMedicamentosUnidades.innerHTML += `<tr class="header border">
+              <td colspan=2>
+                <b>${unidade}</b><br>Rua Santa Rita de Cássia, 1555, Bom Jardim.
+              </td>
+            </tr>`;
+          } else if (unidade.includes("Milton")) {
+            listaMedicamentosUnidades.innerHTML += `<tr class="header border">
+              <td colspan=2>
+                <b>${unidade}</b><br>Avenida JK, 150, Santos Cruzeiro.
+              </td>
+            </tr>`;
+          } else if (unidade.includes("Dona")) {
+            listaMedicamentosUnidades.innerHTML += `<tr class="header border">
+              <td colspan=2>
+                <b>${unidade}</b><br>Rua Guaicurus, 1625, Sagrada Família.
+              </td>
+            </tr>`;
+          } else if (unidade.includes("Sena")) {
+            listaMedicamentosUnidades.innerHTML += `<tr class="header border">
+              <td colspan=2>
+                <b>${unidade}</b><br>Rua Bom Fim, 136, Centro.
+              </td>
+            </tr>`;
+          } else if (unidade.includes("Manoel")) {
+            listaMedicamentosUnidades.innerHTML += `<tr class="header border">
+              <td colspan=2>
+                <b>${unidade}</b><br>Rua paraíba, 170, Planalto.
+              </td>
+            </tr>`;
+          }
+
+
+          
+
+          console.log(unidade)
           listaMedicamentosUnidades.innerHTML += `
             <tr>
               <td class="border"><b>Medicamento</b></td>
