@@ -189,29 +189,29 @@ tr td:last-child {
 
         if (cargo == "acs") {
           document.getElementById("lista-profissionais").innerHTML = listaACS;
-        }
 
-        if (codProfissional <0) {
-          for (let header of [...document.getElementsByClassName("header")]) {
-            header.children[0].colSpan = 3;
-            header.children[0].style = "text-align:center;"
-            header.outerHTML += `
-            <tr name="x" class="border header">
-              <th class="border">Cod. Profissional</th>
-              <th class="border">Nome do profissional</th>
-              <th class="border">Qtd. Famílias</th>
-            </tr>
-            `;
-          }
+          if (codProfissional <0) {
+            for (let header of [...document.getElementsByClassName("header")]) {
+              header.children[0].colSpan = 3;
+              header.children[0].style = "text-align:center;"
+              header.outerHTML += `
+              <tr name="x" class="border header">
+                <th class="border">Cod. Profissional</th>
+                <th class="border">Nome do profissional</th>
+                <th class="border">Qtd. Famílias</th>
+              </tr>
+              `;
+            }
 
-          for (let linha of [...document.getElementsByClassName("tr")]) {
-            linha.children[1].classList.add("border")
-            linha.children[1].style= "width: 100%"
-            linha.children[1].outerHTML += `<td class="border" style="text-align:right;width:96px;">
-              ${Mapa[(new Date).getFullYear()][(new Date).getMonth()+1][parseInt(linha.children[0].innerText)].length}
-            </td>`;
+            for (let linha of [...document.getElementsByClassName("tr")]) {
+              linha.children[1].classList.add("border")
+              linha.children[1].style= "width: 100%"
+              linha.children[1].outerHTML += `<td class="border" style="text-align:right;width:96px;">
+                ${Mapa[(new Date).getFullYear()][(new Date).getMonth()+1][parseInt(linha.children[0].innerText)].length}
+              </td>`;
+            }
+            return;
           }
-          return;
         }
         if (codProfissional.startsWith("@")) return;
 
