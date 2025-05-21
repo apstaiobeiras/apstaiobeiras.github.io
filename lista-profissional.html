@@ -195,7 +195,7 @@ tr td:last-child {
               header.children[0].colSpan = 3;
               header.children[0].style = "text-align:center;"
               header.outerHTML += `
-              <tr name="x" class="border header">
+              <tr name="${header.getAttribute("name")}" class="border header">
                 <th class="border">Cod. Profissional</th>
                 <th class="border">Nome do profissional</th>
                 <th class="border">Qtd. Famílias</th>
@@ -210,10 +210,10 @@ tr td:last-child {
                 ${Mapa[(new Date).getFullYear()][(new Date).getMonth()+1][parseInt(linha.children[0].innerText)].length}
               </td>`;
             }
-            return;
           }
         }
         if (codProfissional.startsWith("@")) return;
+        if (codProfissional <0) return;
 
         for (let equipe of [...document.getElementsByTagName("tr")]) {
           if (equipesProfissional.includes(equipe.getAttribute('name'))) continue;
