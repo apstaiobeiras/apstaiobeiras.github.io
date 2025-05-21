@@ -2,6 +2,9 @@
 <html lang="pt_BR">
   <head>
     <meta charset="utf8" />
+    <link rel="manifest" href="/manifest-farmacia.json" />
+    <meta name="theme-color" content="#333333" />
+    <meta name="description" content="Ferramenta para facilitar o acesso aos medicamentos da rede pública." />
     <title>Farmácia de Taiobeiras</title>
     <style>
 
@@ -114,11 +117,15 @@
 
     <div class="navbar" style="display: flex;justify-content: space-between; padding: 0; z-index: 10000;">
       <a href="#"></a>
-      <a>Farmácia Fácil - Estoque atualizado em <span id="dataAtualizacao"></span></a>
+      <a>Farmácia Fácil</a>
       <a href="#" > </a>
     </div>
     
-    <h3><br /></h3>
+    <h3>&nbsp;</h3>
+    Estoque atualizado em <span id="dataAtualizacao"></span>
+    <hr>
+
+    
 
 
     <div id="montarReceituario">
@@ -134,8 +141,8 @@
         Para adicionar os medicamentos ao receituário:<br><br>
         <fieldset>
           1. Escolha o medicamento aqui: <br><br>
-          <input type="text" list="listaMedicamentosDisponiveis" id="medicamento" onchange="medicamentoAtual = medicamento.value;"></select>
-          <datalist id="listaMedicamentosDisponiveis"></datalist><br><br>
+          <select id="listaMedicamentosDisponiveis" onchange="medicamentoAtual = listaMedicamentosDisponiveis.value;"></select>
+          <br><br>
           2. Toque/clique
           <button type="reset" onclick="adicionaMedicamento()">nesse botão</button> para adicionar
         </fieldset>
@@ -143,7 +150,7 @@
       <message id="receituarioMensagem" style="background-color: #b6d7a8; padding: 9pt;border-radius: 6pt;border: 1px solid green; display: none;color: darkgreen;"></message>
       <br>
       <br>
-      <fieldset>
+      <fieldset id="receituarioField" style="display: none;">
         <legend>Receituario</legend>
         <table>
           <tbody id="receituario"></tbody >
@@ -176,8 +183,17 @@
 
       let i = 1;
 
+      function removerMedicamento(id) {
+        document.getElementById(id).remove();
+        receituarioMensagem.style.display = 'none';
+
+        if (receituario.children[0] == undefined) {
+          receituarioField.style.display = "none";
+        }
+      }
+
       function adicionaMedicamento() {
-        if (medicamento.value.replaceAll(" ","")=="") return;
+        if (listaMedicamentosDisponiveis.value.replaceAll(" ","")=="") return;
         receituarioMensagem.style.display = "block";
         receituarioMensagem.innerHTML = `<b>${medicamentoAtual}</b> adicionado!`
         if (document.getElementsByName(medicamentoAtual)[0]) {
@@ -185,9 +201,11 @@
         }
         receituario.innerHTML += `
         <tr class="border" id="med-${i}" name="${medicamentoAtual}">
-          <td class="medicamento">${medicamentoAtual}</td>
-          <td><button onclick="document.getElementById('med-${i}').remove();receituarioMensagem.style.display = 'none';">Remover</button></td>
+          <td class="medicamento" style="width:100%;">${medicamentoAtual}</td>
+          <td><button onclick="removerMedicamento('med-${i}')">Remover</button></td>
         </tr>`;
+
+        receituarioField.style.display = "block";
 
         i = i+1;
       }
@@ -241,10 +259,6 @@
             </tr>`;
           }
 
-
-          
-
-          console.log(unidade)
           listaMedicamentosUnidades.innerHTML += `
             <tr>
               <td class="border"><b>Medicamento</b></td>
@@ -262,6 +276,8 @@
 
         resultadoBusca.style.display = "";
         montarReceituario.style.display = "none";
+
+
       }
     </script>
     </script>
