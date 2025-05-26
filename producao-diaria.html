@@ -242,6 +242,8 @@ async function listarAtendimentos () {
   document.getElementById('consolidados').style = 'display: none;';
   checkboxConsolidado.checked = false;
 
+  ACE = ACE || [];
+
   if (ACE[codProfissional]) {
     informativo.innerHTML = `
       <h1>Informativo</h1>
