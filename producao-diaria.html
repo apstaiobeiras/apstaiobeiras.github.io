@@ -242,7 +242,7 @@ async function listarAtendimentos () {
   document.getElementById('consolidados').style = 'display: none;';
   checkboxConsolidado.checked = false;
 
-  ACE = ACE || [];
+  var ACE = [];
 
   if (ACE[codProfissional]) {
     informativo.innerHTML = `
