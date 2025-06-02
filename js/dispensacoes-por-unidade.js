@@ -3300,8 +3300,15 @@ dispensacoes[2025].geral = `<tr style="border: 0"><td colspan=5 style="border: 0
 <th style="background-color: #F6F8FA;">Percentual em relação ao total (%)</th>
 </tr>
 <tr>
+<td>FARMÁCIA DE MINAS DE TAIOBEIRAS</td>
+<td style="text-align:right;">2</td>
+<td style="text-align:center;  background-color: #dfe2e5;">-</td>
+<td style="text-align:center;  background-color: #dfe2e5;">-</td>
+<td style="text-align:right;">100%</td>
+</tr>
+<tr>
 <td>Total</td>
-<td style="text-align:right;">0</td>
+<td style="text-align:right;">2</td>
 <td style="text-align:center; background-color: #dfe2e5;">-</td>
 <td style="text-align:center; background-color: #dfe2e5;">-</td>
 <td style="text-align:center; background-color: #dfe2e5;">-</td>

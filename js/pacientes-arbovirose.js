@@ -6061,7 +6061,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/28889">28891</a></td><td>Keilane Soares Pereira</td><td><span name="10/05/2024" class="data">10/05/2024</a></td><td>COMUNIDADE LAGOA GRANDE, 78</td><td><span name="KELY CRISTINA RODRIGUES ARAúJO" class="">KELY CRISTINA RODRIGUES ARAúJO</a></td><td><span name="UAPS LAGOA GRANDE/ DOURADA" class="">UAPS LAGOA GRANDE/ DOURADA</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/26758">26760</a></td><td>Renata Rodrigues de Jesus</td><td><span name="10/05/2024" class="data">10/05/2024</a></td><td>UBERABA, 321</td><td><span name="SONIA BISPO DE ALMEIDA" class="">SONIA BISPO DE ALMEIDA</a></td><td><span name="UAPS VER. MANOEL DOS SANTOS SILVA" class="">UAPS VER. MANOEL DOS SANTOS SILVA</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/26758">26760</a></td><td>Renata Rodrigues de Jesus</td><td><span name="10/05/2024" class="data">10/05/2024</a></td><td>-</td><td><span name="-" class="">-</a></td><td><span name="-" class="">-</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/12152">12154</a></td><td>Helder Alves de Amorim</td><td><span name="13/05/2024" class="data">13/05/2024</a></td><td>EMIDIO GERMANO DA CRUZ (IOIO CURTO), 70</td><td><span name="CINTIA MELGES DE OLIVEIRA COSTA" class="">CINTIA MELGES DE OLIVEIRA COSTA</a></td><td><span name="UAPS ENF. MARY TATIANE" class="">UAPS ENF. MARY TATIANE</a></td>

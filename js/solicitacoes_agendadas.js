@@ -1,4 +1,6 @@
 const Solicitacoes_Agendadas = [
+  [935109,'RENASCER;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/19493?workMode=wmBrowse&oldWorkMode=wmSearchResult">19495</a>',"Geni","06/06/2025","07:10","Avaliação do <b>Nutricionista</b>",'<span style="white-space: nowrap;">(38)99146-4083</span>',20250606,'PSF (EMULTI)'],
+
   [933819,'VIDA;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/11435?workMode=wmBrowse&oldWorkMode=wmSearchResult">11437</a>',"Silvana","03/06/2025","13:00","<b>Médico ginecologista e obstetra</b> (Consulta gestante)",'<span style="white-space: nowrap;">(38)99111-1066</span>',20250603,'CENTRO ESTADUAL DE ATENCAO ESPEC DR SILVIO AMERICANO MENDES'],
 
   [933616,'RENASCER;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/17445?workMode=wmBrowse&oldWorkMode=wmSearchResult">17447</a>',"Mariadna","02/06/2025","09:00","<b>Médico mastologista</b> (Consulta mastologia)",'<span style="white-space: nowrap;">(38)99202-9092</span>',20250602,'CENTRO ESTADUAL DE ATENCAO ESPEC DR SILVIO AMERICANO MENDES'],
@@ -6,8 +8,6 @@ const Solicitacoes_Agendadas = [
   [933270,'HUMANIZAR;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/30020?workMode=wmBrowse&oldWorkMode=wmSearchResult">30022</a>',"Elisângela","01/07/2025","07:50","Avaliação do <b>Psicólogo clínico</b>",'<span style="white-space: nowrap;">(38)99933-6958</span>',20250701,'PSF (EMULTI)'],
 
   [933141,'HARMONIA;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/12774?workMode=wmBrowse&oldWorkMode=wmSearchResult">12776</a>',"Clemencia","02/06/2025","09:00","<b>Médico mastologista</b> (Consulta mastologia)",'<span style="white-space: nowrap;">(39)99192-5368</span>',20250602,'CENTRO ESTADUAL DE ATENCAO ESPEC DR SILVIO AMERICANO MENDES'],
-
-  [932986,'CAMINHO;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/26108?workMode=wmBrowse&oldWorkMode=wmSearchResult">26110</a>',"Diene","02/06/2025","09:00","<b>Médico mastologista</b> (Consulta mastologia)",'<span style="white-space: nowrap;">(38)99203-8879</span>',20250602,'CENTRO ESTADUAL DE ATENCAO ESPEC DR SILVIO AMERICANO MENDES'],
 
   [932777,'LIBERDADE;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/62953?workMode=wmBrowse&oldWorkMode=wmSearchResult">61830</a>',"Talita","04/06/2025","13:01","<b>Médico ginecologista e obstetra</b> (Consulta gestante)",'<span style="white-space: nowrap;">(38)99124-0225</span>',20250604,'CENTRO ESTADUAL DE ATENCAO ESPEC DR SILVIO AMERICANO MENDES'],
 
@@ -18,10 +18,6 @@ const Solicitacoes_Agendadas = [
   [932159,'HUMANIZAR;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/29829?workMode=wmBrowse&oldWorkMode=wmSearchResult">29831</a>',"Lucio","23/06/2025","13:00","<b>Médico endocrinologista e metabologista</b> (Consulta Diabetes)",'<span style="white-space: nowrap;">(38)99179-4616</span>',20250623,'CENTRO ESTADUAL DE ATENCAO ESPEC DR SILVIO AMERICANO MENDES'],
 
   [932018,'VIDA;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/14266?workMode=wmBrowse&oldWorkMode=wmSearchResult">14268</a>',"Maria","17/06/2025","14:00","<b>Médico endocrinologista e metabologista</b> (Consulta Diabetes)",'<span style="white-space: nowrap;">(38)99253-5596</span>/<span style="white-space: nowrap;">(38)99253-5596</span>/<span style="white-space: nowrap;">(38)9271-8341</span>',20250617,'CENTRO ESTADUAL DE ATENCAO ESPEC DR SILVIO AMERICANO MENDES'],
-
-  [931526,'RENASCER;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/52183?workMode=wmBrowse&oldWorkMode=wmSearchResult">52138</a>',"Andressa","28/05/2025","07:00","<b>Médico ginecologista e obstetra</b> (Consulta gestante)",'<span style="white-space: nowrap;">(38)99135-2771</span>',20250528,'CENTRO ESTADUAL DE ATENCAO ESPEC DR SILVIO AMERICANO MENDES'],
-
-  [930889,'UNIAO;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/27770?workMode=wmBrowse&oldWorkMode=wmSearchResult">27772</a>',"Almerinda","02/06/2025","07:00","<b>Médico ginecologista e obstetra</b> (Consulta ginecologia)",'<span style="white-space: nowrap;">(38)99214-7547</span>',20250602,'POLICLINICA MUNICIPAL VIVA VIDA'],
 
   [930855,'MAIS SAUDE;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/25325?workMode=wmBrowse&oldWorkMode=wmSearchResult">25327</a>',"Elisvania","02/06/2025","07:00","<b>Médico ginecologista e obstetra</b> (Consulta ginecologia)",'<span style="white-space: nowrap;">(38)99125-5920</span>',20250602,'POLICLINICA MUNICIPAL VIVA VIDA'],
 
@@ -59,6 +55,8 @@ const Solicitacoes_Agendadas = [
 
   [928080,'ACOLHER;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/31747?workMode=wmBrowse&oldWorkMode=wmSearchResult">31749</a>',"Angelino","17/06/2025","13:00","<b>Médico cardiologista</b> (Consulta Hipertenso)",'<span style="white-space: nowrap;">(38)99246-1349</span>',20250617,'CENTRO ESTADUAL DE ATENCAO ESPEC DR SILVIO AMERICANO MENDES'],
 
+  [928063,'COMUNIDADES RURAIS;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/23934?workMode=wmBrowse&oldWorkMode=wmSearchResult">23936</a>',"Regina","04/07/2025","08:40","Avaliação do <b>Psicólogo clínico</b>",'<span style="white-space: nowrap;">(38)99182-3211</span>/<span style="white-space: nowrap;">(38)99117-2623</span>',20250704,'PSF (EMULTI)'],
+
   [927390,'CAMINHO;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/21361?workMode=wmBrowse&oldWorkMode=wmSearchResult">21363</a>',"Davi","06/06/2025","13:10","Avaliação do <b>Psicólogo clínico</b>",'<span style="white-space: nowrap;">(38)99178-2807</span>',20250606,'PSF'],
 
   [927236,'HARMONIA;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/58659?workMode=wmBrowse&oldWorkMode=wmSearchResult">57782</a>',"Joelma","02/06/2025","13:00","<b>Médico em radiologia e diagnóstico por imagem</b> (ultrassom obstétrico)",'<span style="white-space: nowrap;">(11)99795-8504</span>',20250602,'POLICLINICA MUNICIPAL VIVA VIDA'],
@@ -74,6 +72,8 @@ const Solicitacoes_Agendadas = [
   [926281,'HUMANIZAR;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/29278?workMode=wmBrowse&oldWorkMode=wmSearchResult">29280</a>',"Izabel","17/06/2025","13:00","<b>Médico cardiologista</b> (Consulta Hipertenso)",'<span style="white-space: nowrap;">(38)99142-4657</span>',20250617,'CENTRO ESTADUAL DE ATENCAO ESPEC DR SILVIO AMERICANO MENDES'],
 
   [926279,'ACOLHER;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/14699?workMode=wmBrowse&oldWorkMode=wmSearchResult">14701</a>',"Marlene","05/06/2025","13:00","<b>Médico endocrinologista e metabologista</b> (Consulta Diabetes)",'<span style="white-space: nowrap;">(38)9113-8819</span>',20250605,'CENTRO ESTADUAL DE ATENCAO ESPEC DR SILVIO AMERICANO MENDES'],
+
+  [926227,'HUMANIZAR;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/42420?workMode=wmBrowse&oldWorkMode=wmSearchResult">42899</a>',"Deivid","04/07/2025","14:20","Avaliação do <b>Psicólogo clínico</b>",'<span style="white-space: nowrap;">(38)99124-5507</span>',20250704,'PSF (EMULTI)'],
 
   [926122,'VIVER;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/43119?workMode=wmBrowse&oldWorkMode=wmSearchResult">43521</a>',"Deliza","17/06/2025","07:00","<b>Médico cardiologista</b> (Consulta Hipertenso)",'<span style="white-space: nowrap;">(38)99189-1725</span>/<span style="white-space: nowrap;">(38)99148-9936</span>',20250617,'CENTRO ESTADUAL DE ATENCAO ESPEC DR SILVIO AMERICANO MENDES'],
 
@@ -103,21 +103,13 @@ const Solicitacoes_Agendadas = [
 
   [925296,'CAMINHO;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/69159?workMode=wmBrowse&oldWorkMode=wmSearchResult">65043</a>',"Ana","12/06/2025","07:30","Avaliação do <b>Nutricionista</b>",'<span style="white-space: nowrap;">(38)9815-2866</span>',20250612,'PSF (EMULTI)'],
 
-  [925193,'LIBERDADE;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/19731?workMode=wmBrowse&oldWorkMode=wmSearchResult">19733</a>',"Danila","30/05/2025","13:30","<b>Médico em radiologia e diagnóstico por imagem</b> (ultrassom obstétrico)",'<span style="white-space: nowrap;">(38)99828-4907</span>',20250530,'HOSPITAL / VIVA VIDA'],
-
   [924764,'VIDA E SAUDE;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/6473?workMode=wmBrowse&oldWorkMode=wmSearchResult">6475</a>',"Arthulino","16/06/2025","13:30","<b>Médico cardiologista</b> (Consulta Hipertenso)",'<span style="white-space: nowrap;">(38)99175-8987</span>',20250616,'CENTRO ESTADUAL DE ATENCAO ESPEC DR SILVIO AMERICANO MENDES'],
-
-  [924662,'LIBERDADE;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/50620?workMode=wmBrowse&oldWorkMode=wmSearchResult">50625</a>',"Angela","29/05/2025","07:10","Avaliação do <b>Nutricionista</b>",'<span style="white-space: nowrap;">(38)99128-6844</span>',20250529,'PSF (EMULTI)'],
 
   [924604,'MAIS SAUDE;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/25104?workMode=wmBrowse&oldWorkMode=wmSearchResult">25106</a>',"Isaura","16/06/2025","13:30","<b>Médico cardiologista</b> (Consulta Hipertenso)",'<span style="white-space: nowrap;">(38)99134-0553</span>/<span style="white-space: nowrap;">(38)99118-2380</span>',20250616,'CENTRO ESTADUAL DE ATENCAO ESPEC DR SILVIO AMERICANO MENDES'],
 
   [924203,'CAMINHO;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/21829?workMode=wmBrowse&oldWorkMode=wmSearchResult">21831</a>',"Evandro","11/06/2025","08:00","Avaliação do <b>Nutricionista</b>",'<span style="white-space: nowrap;">(38)99899-7422</span>',20250611,'PSF (EMULTI)'],
 
   [923232,'UNIAO;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/52441?workMode=wmBrowse&oldWorkMode=wmSearchResult">52390</a>',"Maria","13/06/2025","08:00","Avaliação do <b>Nutricionista</b>",'<span style="white-space: nowrap;">(38)99121-3581</span>/<span style="white-space: nowrap;">(38)98807-1567</span>/<span style="white-space: nowrap;">(38)99121-3581</span>',20250613,'PSF (EMULTI)'],
-
-  [923208,'CAMINHO;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/82511?workMode=wmBrowse&oldWorkMode=wmSearchResult">67996</a>',"Nathalia","30/05/2025","13:30","<b>Médico em radiologia e diagnóstico por imagem</b> (ultrassom obstétrico)",'<span style="white-space: nowrap;">(38)9932-5229</span>',20250530,'HOSPITAL / VIVA VIDA'],
-
-  [923155,'ESPETACULAR;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/31016?workMode=wmBrowse&oldWorkMode=wmSearchResult">31018</a>',"Jessika","30/05/2025","13:30","<b>Médico em radiologia e diagnóstico por imagem</b> (ultrassom obstétrico)",'<span style="white-space: nowrap;">(38)99852-4888</span>',20250530,'HOSPITAL / VIVA VIDA'],
 
   [923043,'CAMINHO;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/23008?workMode=wmBrowse&oldWorkMode=wmSearchResult">23010</a>',"Katiane","10/06/2025","14:00","Avaliação do <b>Nutricionista</b>",'<span style="white-space: nowrap;">(38)99126-4590</span>',20250610,'PSF (EMULTI)'],
 
@@ -131,10 +123,6 @@ const Solicitacoes_Agendadas = [
 
   [922352,'HUMANIZAR;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/10801?workMode=wmBrowse&oldWorkMode=wmSearchResult">10803</a>',"Fátima","12/06/2025","15:30","Avaliação do <b>Nutricionista</b>",'<span style="white-space: nowrap;">(38)99751-0636</span>',20250612,'PSF (EMULTI)'],
 
-  [922290,'HUMANIZAR;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/10801?workMode=wmBrowse&oldWorkMode=wmSearchResult">10803</a>',"Fátima","30/05/2025","13:30","<b>Médico em radiologia e diagnóstico por imagem</b> (ultrassom obstétrico)",'<span style="white-space: nowrap;">(38)99751-0636</span>',20250530,'HOSPITAL / VIVA VIDA'],
-
-  [922197,'UNIAO;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/37125?workMode=wmBrowse&oldWorkMode=wmSearchResult">37910</a>',"Karine","30/05/2025","13:30","<b>Médico em radiologia e diagnóstico por imagem</b> (ultrassom obstétrico)",'<span style="white-space: nowrap;">(38)99973-5607</span>',20250530,'HOSPITAL / VIVA VIDA'],
-
   [922133,'nil;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/130529?workMode=wmBrowse&oldWorkMode=wmSearchResult">80999</a>',"Maria","16/06/2025","09:00","<b>Médico cardiologista</b> (Consulta Hipertenso)",'<span style="white-space: nowrap;">(38)99997-1892</span>',20250616,'CENTRO ESTADUAL DE ATENCAO ESPEC DR SILVIO AMERICANO MENDES'],
 
   [922089,'ESPETACULAR;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/26275?workMode=wmBrowse&oldWorkMode=wmSearchResult">26277</a>',"Valdomiro","27/06/2025","09:30","Avaliação do <b>Nutricionista</b>",'<span style="white-space: nowrap;">(38)9970-4361</span>',20250627,'PSF (EMULTI)'],
@@ -142,8 +130,6 @@ const Solicitacoes_Agendadas = [
   [921766,'HARMONIA;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/32170?workMode=wmBrowse&oldWorkMode=wmSearchResult">32172</a>',"Raquel","04/06/2025","09:00","<b>Médico ginecologista e obstetra</b> (Consulta ginecologia)",'<span style="white-space: nowrap;">(38)99170-9411</span>/<span style="white-space: nowrap;">(38)99181-1061</span>',20250604,'POLICLINICA MUNICIPAL VIVA VIDA'],
 
   [921402,'ESPETACULAR;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/13133?workMode=wmBrowse&oldWorkMode=wmSearchResult">13135</a>',"Corina","27/06/2025","09:00","Avaliação do <b>Nutricionista</b>",'<span style="white-space: nowrap;">(38)99912-5998</span>',20250627,'PSF (EMULTI)'],
-
-  [921358,'UNIAO;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/1778?workMode=wmBrowse&oldWorkMode=wmSearchResult">1780</a>',"Ana","30/05/2025","13:30","<b>Médico em radiologia e diagnóstico por imagem</b> (ultrassom obstétrico)",'<span style="white-space: nowrap;">(38)99161-1440</span>',20250530,'HOSPITAL / VIVA VIDA'],
 
   [921170,'VIDA E SAUDE;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/3197?workMode=wmBrowse&oldWorkMode=wmSearchResult">3199</a>',"Geraldo","03/06/2025","15:30","Avaliação do <b>Nutricionista</b>",'<span style="white-space: nowrap;">(38)99180-7101</span>',20250603,'PSF (EMULTI)'],
 
@@ -158,8 +144,6 @@ const Solicitacoes_Agendadas = [
   [920647,'CAMINHO;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/63360?workMode=wmBrowse&oldWorkMode=wmSearchResult">62224</a>',"Marcia","04/06/2025","15:40","Avaliação do <b>Psicólogo clínico</b>",'<span style="white-space: nowrap;">(38)99115-6314</span>',20250604,'PSF'],
 
   [920622,'RENASCER;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/19715?workMode=wmBrowse&oldWorkMode=wmSearchResult">19717</a>',"Benildo","05/06/2025","13:00","<b>Médico cardiologista</b> (Consulta Hipertenso)",'<span style="white-space: nowrap;">(38)99168-6647</span>',20250605,'CENTRO ESTADUAL DE ATENCAO ESPEC DR SILVIO AMERICANO MENDES'],
-
-  [920580,'VIDA;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/34568?workMode=wmBrowse&oldWorkMode=wmSearchResult">34322</a>',"Maria","30/05/2025","14:00","<b>Médico ginecologista e obstetra</b> (Consulta ginecologia)",'<span style="white-space: nowrap;">(38)99269-6100</span>',20250530,'HOSPITAL SANTO ANTONIO'],
 
   [920312,'VIDA E SAUDE;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/51415?workMode=wmBrowse&oldWorkMode=wmSearchResult">51395</a>',"Lucileide","02/06/2025","13:00","<b>Médico em radiologia e diagnóstico por imagem</b> (ultrassom obstétrico)",'<span style="white-space: nowrap;">(38)99876-1488</span>',20250602,'POLICLINICA MUNICIPAL VIVA VIDA'],
 
@@ -178,8 +162,6 @@ const Solicitacoes_Agendadas = [
   [918495,'VIDA;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/32455?workMode=wmBrowse&oldWorkMode=wmSearchResult">32457</a>',"Cristina","02/06/2025","11:00","<b>Médico ginecologista e obstetra</b> (Consulta ginecologia)",'<span style="white-space: nowrap;">(38)99113-2621</span>',20250602,'POLICLINICA MUNICIPAL VIVA VIDA'],
 
   [918354,'ESPETACULAR;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/32035?workMode=wmBrowse&oldWorkMode=wmSearchResult">32037</a>',"Clemencia","05/06/2025","13:00","<b>Médico cardiologista</b> (Consulta Hipertenso)",'<span style="white-space: nowrap;">(38)99892-8729</span>',20250605,'CENTRO ESTADUAL DE ATENCAO ESPEC DR SILVIO AMERICANO MENDES'],
-
-  [918255,'RENASCER;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/29555?workMode=wmBrowse&oldWorkMode=wmSearchResult">29557</a>',"Donaria","29/05/2025","13:00","<b>Médico cardiologista</b> (Consulta Hipertenso)",'<span style="white-space: nowrap;">(38)99105-7590</span>',20250529,'CENTRO ESTADUAL DE ATENCAO ESPEC DR SILVIO AMERICANO MENDES'],
 
   [918127,'CAMINHO;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/19904?workMode=wmBrowse&oldWorkMode=wmSearchResult">19906</a>',"Maria","17/06/2025","13:30","Avaliação do <b>Nutricionista</b>",'<span style="white-space: nowrap;">(38)98804-2668</span>',20250617,'PSF (EMULTI)'],
 
@@ -209,8 +191,6 @@ const Solicitacoes_Agendadas = [
 
   [916161,'CAMINHO;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/30088?workMode=wmBrowse&oldWorkMode=wmSearchResult">30090</a>',"Joyce","02/06/2025","11:00","<b>Médico ginecologista e obstetra</b> (Consulta ginecologia)",'<span style="white-space: nowrap;">(38)99258-5531</span>',20250602,'POLICLINICA MUNICIPAL VIVA VIDA'],
 
-  [916108,'nil;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/85772?workMode=wmBrowse&oldWorkMode=wmSearchResult">68565</a>',"Karinny","30/05/2025","07:00","<b>Médico ginecologista e obstetra</b> (Consulta ginecologia)",'<span style="white-space: nowrap;">(38)98866-1696</span>',20250530,'POLICLINICA MUNICIPAL VIVA VIDA'],
-
   [914982,'HUMANIZAR;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/29756?workMode=wmBrowse&oldWorkMode=wmSearchResult">29758</a>',"Maria","10/07/2025","14:30","Avaliação do <b>Nutricionista</b>",'<span style="white-space: nowrap;">(38)99103-1159</span>',20250710,'PSF (EMULTI)'],
 
   [914086,'HUMANIZAR;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/44115?workMode=wmBrowse&oldWorkMode=wmSearchResult">44498</a>',"Carlecio","10/07/2025","14:00","Avaliação do <b>Nutricionista</b>",'<span style="white-space: nowrap;">(11)96066-5206</span>',20250710,'PSF (EMULTI)'],
@@ -218,8 +198,6 @@ const Solicitacoes_Agendadas = [
   [913959,'HUMANIZAR;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/123542?workMode=wmBrowse&oldWorkMode=wmSearchResult">74960</a>',"Leticia","03/07/2025","15:00","Avaliação do <b>Nutricionista</b>",'<span style="white-space: nowrap;">(38)99150-3001</span>',20250703,'PSF (EMULTI)'],
 
   [913865,'CAMINHO;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/22235?workMode=wmBrowse&oldWorkMode=wmSearchResult">22237</a>',"Deozilda","03/06/2025","07:10","Avaliação do <b>Psicólogo clínico</b>",'<span style="white-space: nowrap;">(38)99128-9827</span>',20250603,'PSF'],
-
-  [913515,'ACOLHER;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/5618?workMode=wmBrowse&oldWorkMode=wmSearchResult">5620</a>',"Arlinda","30/05/2025","07:00","<b>Médico ginecologista e obstetra</b> (Consulta ginecologia)",'<span style="white-space: nowrap;">(38)99214-9098</span>',20250530,'POLICLINICA MUNICIPAL VIVA VIDA'],
 
   [913345,'HARMONIA;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/10278?workMode=wmBrowse&oldWorkMode=wmSearchResult">10280</a>',"Anilva","02/06/2025","11:00","<b>Médico ginecologista e obstetra</b> (Consulta ginecologia)",'<span style="white-space: nowrap;">(38)98831-0154</span>',20250602,'POLICLINICA MUNICIPAL VIVA VIDA'],
 
@@ -244,12 +222,6 @@ const Solicitacoes_Agendadas = [
   [907924,'VIVER;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/13547?workMode=wmBrowse&oldWorkMode=wmSearchResult">13549</a>',"Angela","02/06/2025","16:00","Avaliação do <b>Nutricionista</b>",'<span style="white-space: nowrap;">(38)99892-8416</span>',20250602,'PSF (EMULTI)'],
 
   [907382,'CAMINHO;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/115550?workMode=wmBrowse&oldWorkMode=wmSearchResult">72230</a>',"Debora","02/06/2025","15:40","Avaliação do <b>Psicólogo clínico</b>",'<span style="white-space: nowrap;">(77)98843-9050</span>',20250602,'PSF'],
-
-  [907250,'CAMINHO;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/29581?workMode=wmBrowse&oldWorkMode=wmSearchResult">29583</a>',"Taislaine","30/05/2025","14:50","Avaliação do <b>Psicólogo clínico</b>",'<span style="white-space: nowrap;">(38)99144-2468</span>/<span style="white-space: nowrap;">(38)99124-4207</span>',20250530,'PSF'],
-
-  [905722,'CAMINHO;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/2521?workMode=wmBrowse&oldWorkMode=wmSearchResult">2523</a>',"Kelly","30/05/2025","08:00","<b>Médico ginecologista e obstetra</b> (Consulta ginecologia)",'<span style="white-space: nowrap;">(38)99108-2837</span>',20250530,'POLICLINICA MUNICIPAL VIVA VIDA'],
-
-  [905712,'LIBERDADE;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/50113?workMode=wmBrowse&oldWorkMode=wmSearchResult">50130</a>',"Marinez","30/05/2025","08:00","<b>Médico ginecologista e obstetra</b> (Consulta ginecologia)",'<span style="white-space: nowrap;">(38)99154-5757</span>',20250530,'POLICLINICA MUNICIPAL VIVA VIDA'],
 
   [905196,'CAMINHO;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/20213?workMode=wmBrowse&oldWorkMode=wmSearchResult">20215</a>',"Selma","02/06/2025","14:00","Avaliação do <b>Psicólogo clínico</b>",'<span style="white-space: nowrap;">(38)99853-8069</span>',20250602,'PSF'],
 
@@ -296,8 +268,6 @@ const Solicitacoes_Agendadas = [
   [877922,'VIVER;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/16688?workMode=wmBrowse&oldWorkMode=wmSearchResult">16690</a>',"Maria","02/06/2025","15:00","Avaliação do <b>Nutricionista</b>",'<span style="white-space: nowrap;">(38)9120-1432</span>',20250602,'PSF (EMULTI)'],
 
   [875099,'CAMINHO;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/122190?workMode=wmBrowse&oldWorkMode=wmSearchResult">73995</a>',"Sarah","06/06/2025","15:40","Avaliação do <b>Psicólogo clínico</b>",'<span style="white-space: nowrap;">(38)9923-8154</span>',20250606,'PSF'],
-
-  [872308,'ACOLHER;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/5950?workMode=wmBrowse&oldWorkMode=wmSearchResult">5952</a>',"Maria","28/05/2025","13:00","Avaliação do <b>Nutricionista</b>",'<span style="white-space: nowrap;">(38)99879-8386</span>',20250528,'PSF (EMULTI)'],
 
   [871944,'CAMINHO;<a target="_blank" href="https://www.taiobeiras-mg.vivver.com/amb/paciente/20187?workMode=wmBrowse&oldWorkMode=wmSearchResult">20189</a>',"Kethleen","04/06/2025","13:10","Avaliação do <b>Psicólogo clínico</b>",'<span style="white-space: nowrap;">(38)99222-5446</span>',20250604,'PSF'],
 
