@@ -2114,6 +2114,7 @@ const SolicitacoesExcluidas = [
   [723339,1046,69256,10,"Não Se Enquadra nos Criterios",20250319,"CONSULTA CARDIOLOGIA DR RENAN "],
   [724358,1221,5249,4,"<b>Não Se Enquadra nos Criterios: </b><br>PACIENTE SEM CRITÉRIOS DE ACESSO A CARDIOLOGIA AMBULATORIAL.",20250321,"RETORNO CONSULTA DR RENAN"],
   [741640,1272,50982,7,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>........",20250204,"REMOçaO DE DENTE RETIDO (INCLUSO / IMPACTADO)"],
+  [744273,249,30631,34,"<b>Não Se Enquadra nos Criterios: </b><br>Prótese com indicação de ajuste, tempo de confecção de 1 ano.",20250602,"PROTESE TOTAL MANDIBULAR"],
   [746593,832,33032,7,"<b>Não Se Enquadra nos Criterios: </b><br>PACIENTE JA ESTA EM ATENDIMENTO NO CER",20250514,"AVALIAçaO FONOAUDIOLOGIA E-MULTI"],
   [749266,1016,19759,13,"Não Se Enquadra nos Criterios",20250214,"AVALIAçaO CIRURGICA POLICLINICA"],
   [754794,1328,62623,78,"<b>Falta Detalhar Exames: </b><br>Descrever o resultado do ECG basal.",20250121,"TESTE DE ESFORCO / TESTE ERGOMETRICO"],
@@ -2614,6 +2615,7 @@ const SolicitacoesExcluidas = [
   [904503,1421,28177,75,"Solicitação Indevida",20250424,"TRATAMENTO ENDODôNTICO DE DENTE PERMANENTE BIRRADICULAR"],
   [904675,1400,59194,2,"Não Se Enquadra nos Criterios",20250516,"PEQUENA CIRURGIA POLICLINICA"],
   [904791,1193,16540,56,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Fazer reinserção na fila com resultados da avaliação laboratorial após alta. Descrever o RCV, para só então encaminhar ao cardiologista, para facilitar a conduta do cardiologista.",20250411,"CONSULTA CARDIOLOGIA DR RENAN "],
+  [904796,1297,62417,7,"<b>Não Se Enquadra nos Criterios: </b><br>PACIENTE ENCAMINHADA PARA A FISIOTERAPIA PÉLVICA NA CLINICA DE FISIOTERAPIA TENDO EM VISTA QUE O ENCAMINHAMENTO ESTÁ DIRECIONADO AO ATENDIMENTO DE FISIOTERAPIA INDIVIDUAL DEVIDO QUADRO DE DOR LOMBOPÉLVICA.",20250602,"AVALIAçaO- ESCOLA DO PARTO"],
   [904826,1418,50625,10,"<b>Solicitação Indevida: </b><br>A SOLICITAÇÃO DEVERIA TER SIDO REALIZADA EM FILA DE USG OBSTÉTRICA. TRANSFIRO PACIENTE PARA FILA DE USG OBSTÉTRICA COM AGENDAMENTO DE PROCEDIMENTO DEVIDO IG.",20250513,"ULTRASSONOGRAFIA TRANSVAGINAL"],
   [904937,1421,7337,75,"Solicitação Indevida",20250430,"CONSULTA PORTADOR DE NECESSIDADES ESPECIAIS"],
   [905159,1259,12153,8,"<b>Não Se Enquadra nos Criterios: </b><br>Encaminhar ao serviço de oncologia.",20250423,"ULTRASSONOGRAFIA DE APARELHO URINÁRIO"],
@@ -2726,6 +2728,9 @@ const SolicitacoesExcluidas = [
   [933826,1016,21059,2,"<b>Não Se Enquadra nos Criterios: </b><br>A ferramenta que utilizamos para classificar o risco cardiovascular (RCV) do paciente é o aplicativo HEARTS, que solicita os níveis de colesterol total (CT) e não de LDL isoladamente. Mesmo com um CT de 291 mg/dL, o aplicativo classificou o paciente como risco baixo, o que não se enquadra nos critérios para atendimento como hipertenso de alto risco. Me coloco a disposição para discussão do caso.Att.",20250529,"CONSULTA HIPERTENSO ALTO RISCO"],
   [933869,1404,27481,10,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Histórico do quadro clínico;Faz uso de órtese ou prótese?Grau de independência/dependência para Atividades de Vida Diária (AVD)? - Verificar quadro 1 do protocolo de acesso e reencaminhar com as descrições necessárias se for público para este serviço. Grata.",20250529,"ATENDIMENTO FISIOTERAPIA"],
   [934169,758,46993,16,"<b>Encaminhamento incompleto / Falta detalhar exames: </b><br>Histórico do quadro clínico e da lesão (como ocorreu a lesão, qual tempo transcorrido desde a ocorrência da lesão), segmentos/articulações comprometidos (as);Condição clínica do paciente: se a dor aguda ou crônica, se há limitação de ADM, se há perda de força muscular;Faz uso de órtese ou prótese?Terapias realizadas previamente (cirurgias, medicamentos, imobilização e tempo da mesma);Grau de independência/dependência para Atividades de Vida Diária (AVD) – Quadro 1;",20250529,"ATENDIMENTO FISIOTERAPIA"],
+  [934688,1193,10258,56,"Não Se Enquadra nos Criterios",20250602,"AVALIAçaO FONOAUDIOLOGIA E-MULTI"],
+  [935770,1281,21473,78,"<b>Não Se Enquadra nos Criterios: </b><br>De acordo protocolo: Doenças infecciosas: sífilis terciária OU resistente ao tratamentocom penicilina benzatina OU com achados ecográficos suspeitos de sífilis congênita; toxoplasmose; rubéola; citomegalovírus; herpes simples; tuberculose; hanseníase; hepatites; condiloma acuminado - verruga viral no canal vaginal OU colo uterino OU lesões extensas/ numerosas localizadas em região genital OU perianal; diagnóstico de HIV/Aids. NIC 1 não se enquadra nos critérios do protocolo para gestante de alto risco. Caso, em algum momento da gestação, surjam alterações que se enquadrem nesse protocolo, a paciente deverá ser reencaminhada para avaliação.Att.",20250602,"CONSULTA GESTANTE ALTO RISCO"],
+  [935956,1409,8960,8,"<b>Não Se Enquadra nos Criterios: </b><br>Conforme o protocolo: dependência ou uso abusivo de drogas lícitas ou ilícitas. No encaminhamento, consta que a paciente não apresenta dependência. No entanto, caso o uso de substâncias venha a impactar a gestação em algum momento, orienta-se novo encaminhamento. Sugere-se, ainda, encaminhamento ao serviço de psicologia para suporte e acompanhamento.Att.",20250602,"CONSULTA GESTANTE ALTO RISCO"],
 ];
 
 const Unidades = [
@@ -2902,6 +2907,7 @@ const Profissionais = [
   'VITORIA VITERBULO LOPES DO AMARAL:1404',
   'NATHALI PIETRA LOYOLA MURTA :1406',
   'MILLENA ALMEIDA DE SOUSA:1407',
+  'THAIS BARBOSA:1409',
   'MONIQUE RODRIGUES LOPES:1411',
   'LORRANE MENDES DE OLIVEIRA:1417',
   'VICTORIA LIERY RIBEIRO ALVES:1418',
