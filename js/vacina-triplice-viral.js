@@ -49,7 +49,7 @@ document.getElementById('planilha').innerHTML = `<table>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/128318">79075</a></td><td>Felipe Santos Silveira</td><td><div style="white-space: nowrap;">1 ano e 7 mês </div></td><td><span name="VIVER" >VIVER</a></td><td><span name="493" >ELIANE PEREIRA FREITAS</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
     </tr>
       <tr>
-      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/123048">74633</a></td><td>Apolo Soares Cardoso de Aquino</td><td><div style="white-space: nowrap;">1 ano e 10 mês </div></td><td><span name="CAMINHO" >CAMINHO</a></td><td><span name="798" >MAGMA ALVES BOTELHO</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
+      <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/123048">74633</a></td><td>Apolo Soares Cardoso de Aquino</td><td><div style="white-space: nowrap;">1 ano e 11 mês </div></td><td><span name="CAMINHO" >CAMINHO</a></td><td><span name="798" >MAGMA ALVES BOTELHO</a></td><td><span name="Não vacinada" style="white-space: nowrap;">Não vacinada</a></td>
     </tr>
       <tr>
       <td><a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/127957">78750</a></td><td>Esther Vitoria Alves Dos Santos</td><td><div style="white-space: nowrap;">1 ano e 4 mês </div></td><td><span name="VIDA E SAUDE" >VIDA E SAUDE</a></td><td><span name="207" >ELIANA MARIA SANTOS DE OLIVEIRA</a></td><td><span name="1º DOSE" style="white-space: nowrap;">1º DOSE</a></td>
