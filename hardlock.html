@@ -4,7 +4,6 @@
     <meta charset="utf8" />
     <title>Perfil do profissional</title>
     <style>
-
       body {
         cursor: default !important;
       }
@@ -26,10 +25,8 @@
       }
 
       body {
-        margin-top: 60px; 
+        margin-top: 60px;
       }
-
-
 
       .header {
         background-color: #f6f8fa !important;
@@ -58,7 +55,7 @@
       }
 
       .mes-selecionado {
-        background: #dfe2e5  !important;
+        background: #dfe2e5 !important;
       }
 
       .mes:hover {
@@ -77,19 +74,19 @@
       .V {
         background: #b6d7a8 !important;
       }
-      
+
       .A {
         background: #9fc5e8 !important;
       }
-      
+
       .R {
         background: #f7cca0 !important;
       }
-      
+
       .N {
         background: #ea9999 !important;
       }
-      
+
       tr img {
         min-width: 96px;
         height: auto;
@@ -99,68 +96,91 @@
     <meta content="width=device-width,initial-scale=1.0" name="viewport" />
     <link href="assets/css/style.css" rel="stylesheet" />
     <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
-    <script  src="assets/js/config.js"></script>
+    <script src="assets/js/config.js"></script>
   </head>
   <body class="container-lg px-3 my-5 markdown-body">
-    <div class="navbar" style="display: flex;justify-content: space-between; padding: 0;">
+    <div
+      class="navbar"
+      style="display: flex; justify-content: space-between; padding: 0"
+    >
       <a href="profissional.html"><span>Inicio</span></a>
-      <a>Mapa de atendimento - <span id="nome"></span></a>
+      <a>Informe sobre o hardlock da plataforma</a>
       <a href="#" onclick="logout()"> Fazer logout</a>
-  </div>
-  <div>
-    <h1><br></h1>
-<h1> Descontinuação parcial de relatórios</h1>
+    </div>
+    <div>
+      <h1><br /></h1>
+      <h1>Descontinuação parcial de relatórios</h1>
 
-Devido a limitações de atribuição no organograma da secretaria da saúde, eu estou limitado a fornecer relatórios que não necessitem de procesamento/cruzamento de dados e que estejam 
-disponiveis por <a href="https://pt.wikipedia.org/wiki/Vis%C3%A3o_(banco_de_dados)">visão</a> no sistema de informação usado, também não posso emitir mesmo com acesso limitado relatórios
-que violem a <a href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm">LGPD</a> devido o cargo atual não ter respaldo nem proteção jurídica para tal, outra limitação
-imposta se refere a ferramentas interativas (como preencher um formulário e gerar a resposta) e validações que dependem de cálculos automatizados, como por definição tai os seguintes 
-relatórios exigem <a href="https://en.wikipedia.org/wiki/Dynamic_web_page">processamento dinâmico <sup>Em inglês</sup></a>, informado sobre as limitações não podem mais estar disponíveis
-no portal:
+      Devido a limitações de atribuição no organograma da secretaria da saúde,
+      eu estou limitado a fornecer relatórios que não necessitem de
+      procesamento/cruzamento de dados e que estejam disponiveis por
+      <a href="https://pt.wikipedia.org/wiki/Vis%C3%A3o_(banco_de_dados)"
+        >visão</a
+      >
+      no sistema de informação usado, também não posso emitir mesmo com acesso
+      limitado relatórios que violem a
+      <a
+        href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"
+        >LGPD</a
+      >
+      devido o cargo atual não ter respaldo nem proteção jurídica para tal,
+      outra limitação imposta se refere a ferramentas interativas (como
+      preencher um formulário e gerar a resposta) e validações que dependem de
+      cálculos automatizados, como por definição tai os seguintes relatórios
+      exigem
+      <a href="https://en.wikipedia.org/wiki/Dynamic_web_page"
+        >processamento dinâmico <sup>Em inglês</sup></a
+      >, informado sobre as limitações não podem mais estar disponíveis no
+      portal:
 
-<ul>
-  <li>Censo</li>
-  <li>Completude do questionário e-su</li>
-  <li>Lista de Casos de Arboviroses e Doenças Relacionadas</li>
-  <li>Lista de crianças - Vitamina A de 100 mil UI</li>
-  <li>Lista de crianças - Tríplice viral</li>
-  <li>Famílias visitadas</li>
-  <li>Situação descritiva dos cadastros</li>
-  <li>Tabela de indicadores e-SUS</li>
-  <li>Listagem de Pacientes</li>
-  <li>Solicitações Devolvidas</li>
-  <li>Uso da Farmácia de Minas</li>
-</ul>
+      <ul>
+        <li>Censo</li>
+        <li>Completude do questionário e-su</li>
+        <li>Lista de Casos de Arboviroses e Doenças Relacionadas</li>
+        <li>Lista de crianças - Vitamina A de 100 mil UI</li>
+        <li>Lista de crianças - Tríplice viral</li>
+        <li>Famílias visitadas</li>
+        <li>Situação descritiva dos cadastros</li>
+        <li>Tabela de indicadores e-SUS</li>
+        <li>Listagem de Pacientes</li>
+        <li>Solicitações Devolvidas</li>
+        <li>Uso da Farmácia de Minas</li>
+      </ul>
 
-Os recursos também foram afetados:
+      <br />
+      Os recursos também foram afetados:
 
-<ul>
-  <li>Envio de documentos</li>
-  <li>Consolidar do relatório Produção Diária</li>
-  <li>Validação de NIS, CPF e CNS do relatório "Situação descretiva dos cadastros"</li>
-</ul>
+      <ul>
+        <li>Envio de documentos</li>
+        <li>Consolidar do relatório Produção Diária</li>
+        <li>
+          Validação de NIS, CPF e CNS do relatório "Situação descretiva dos
+          cadastros"
+        </li>
+      </ul>
+      <br />
 
+      Além disso os recursos em desenvolvimento foram interrompidos pelo mesmo
+      motivo supracitado:
 
-Além disso os recursos em desenvolvimento foram interrompidos pelo mesmo motivo supracitado:
+      <ul>
+        <li>Postagem com comentários</li>
+        <li>Checklists</li>
+        <li>Controle de estoque</li>
+        <li>Agenda de equipe</li>
+        <li>Banco de horas</li>
+        <li>Aplicativo da Farmácia de Minas</li>
+        <li>Aplicativo de lançamento de vistorias da vigilância sanitária</li>
+        <li>Sistema de notificações</li>
+      </ul>
 
-<ul>
-  <li>Postagem com comentários</li>
-  <li>Checklists</li>
-  <li>Controle de estoque</li>
-  <li>Agenda de equipe</li>
-  <li>Banco de horas</li>
-  <li>Aplicativo da Farmácia de Minas</li>
-  <li>Aplicativo de lançamento de vistorias da vigilância sanitária</li>
-  <li>Sistema de notificações</li>
-</ul>
-
-<blockquote>
-<b>Nota:</b> Os relatórios continuam sendo gerados porém não podem ser publicados, agradeço a compreensão e tenha um bom trabalho (:
-</blockquote>
-  </div>
+      <blockquote>
+        <b>Nota:</b> Os relatórios continuam sendo gerados porém não podem ser
+        publicados, agradeço a compreensão e tenha um bom trabalho (:
+      </blockquote>
+    </div>
 
     <h3><br /></h3>
-
 
     <h3><br /></h3>
     <script src="assets/js/logout.js"></script>
