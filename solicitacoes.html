@@ -88,13 +88,16 @@
                 const no_solicitacao = document.createElement("td");
                 //const prontuario = document.createElement("td");
                 const procedimento = document.createElement("td");
+                const motivo = document.createElement("td");
                 const observacao = document.createElement("td");
 
                 no_solicitacao.innerHTML = `${solicitacao[0]}`;
                 //prontuario.innerHTML = `${solicitacao[2]}`;
                 //observacao.innerHTML = `${solicitacao[4]}`;
-                observacao.innerHTML = `${solicitacao[4].split("<br>")[0]}`;
-                observacao.innerHTML = `${solicitacao[4].split("<br>")[1]}`;
+                motivo.innerHTML = `${solicitacao[4].split("<br>")[0].replace("<b>","").replace(": </b>","")}`;
+                motivo.classList = "left";
+
+                observacao.innerHTML = `${solicitacao[4].split("<br>")[1] || ""}`;
                 observacao.classList = "left";
 
                 procedimento.innerHTML = `${solicitacao[6]}`;
@@ -103,6 +106,7 @@
                 linha.appendChild(no_solicitacao);
                 //linha.appendChild(prontuario);
                 linha.appendChild(procedimento);
+                linha.appendChild(motivo);
                 linha.appendChild(observacao);
     
                 document.getElementById("solicitacoes").appendChild(linha);
