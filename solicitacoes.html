@@ -93,8 +93,8 @@
                 no_solicitacao.innerHTML = `${solicitacao[0]}`;
                 //prontuario.innerHTML = `${solicitacao[2]}`;
                 //observacao.innerHTML = `${solicitacao[4]}`;
-                observacao.innerHTML = `${solicitacao[4].split("</b>")[0].replace("<b>","")}`;
-                observacao.innerHTML = `${solicitacao[4].split("</b>")[1]}`;
+                observacao.innerHTML = `${solicitacao[4].split("<br>")[0]}`;
+                observacao.innerHTML = `${solicitacao[4].split("<br>")[1]}`;
                 observacao.classList = "left";
 
                 procedimento.innerHTML = `${solicitacao[6]}`;
