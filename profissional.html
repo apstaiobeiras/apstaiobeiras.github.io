@@ -168,6 +168,7 @@
             nomeProfissional = profissional[0].nome;
             document.getElementById("cod").innerText = `🪪 ${codProfissional.replace("-","").replace("@","").replace("+","")}`;
             document.getElementById("nome").innerText = nomeProfissional;
+            localStorage.setItem("codProfissional",codProfissional);
           } else {
             const {data,error} = await window.supabase.from('dadosprofissionais').select("*").eq('cpf', localStorage.getItem("profissional"));
             document.getElementById("cod").innerText = data[0].codprofissional.replace("-","").replace("@","").replace("+","");
