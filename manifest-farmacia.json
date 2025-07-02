@@ -1,0 +1,17 @@
+{
+    "name": "Farmacia de Taiobeiras",
+    "short_name": "Farmacia Taiobeiras",
+    "description": "Ferramenta para facilitar o acesso aos medicamentos da rede pública.",
+    "start_url": "/farmacia-publica.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#333333",
+    "icons": [
+      {
+        "src": "/assets/img/farmacia-monitoramento-consolidado.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+}
+  

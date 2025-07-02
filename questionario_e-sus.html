@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="utf8" />
+    <title>Completude do questionário e-SUS</title>
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <style>
+      /* Estilo da barra de navegação */
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333; /* Cor de fundo da barra de navegação */
+        color: #fff; /* Cor do texto da barra de navegação */
+        padding: 10px 0;
+      }
+
+      .navbar a {
+        color: #fff;
+        text-decoration: none;
+        padding: 15px;
+      }
+
+      /* Adicione margem ao corpo para evitar que o conteúdo fique oculto sob a barra de navegação */
+      body {
+        margin-top: 60px; 
+      }
+
+      .header {
+        background-color: #f6f8fa !important;
+      }
+
+      .border {
+        border: 1px solid #dfe2e5 !important;
+      }
+      .no-border * {
+        border: 0px !important;
+      }
+
+      tr {
+        background-color: transparent !important;
+      }
+
+        .right {
+            text-align: right;
+        }
+
+        .neutro {
+            background: #DFE2E5;
+        }
+
+        .ruim {
+            background: #ea9999!important;
+        }
+
+        .razoavel {
+            background: #f7cca0!important;
+        }
+
+        .proximo {
+            background: #b6d7a8!important;
+        }
+
+        .atingiu {
+            background: #9fc5e8!important;
+        }
+    </style>
+    <meta content="lua-wpp" name="generator" />
+    <meta content="width=device-width,initial-scale=1.0" name="viewport" />
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script  src="assets/js/config.js"></script>
+  </head>
+  <body>
+    <div class="navbar" style="display: flex;justify-content: space-between; padding: 0;">
+      <a href="profissional.html"><span>Inicio</span></a>
+      <a>Completude do questionário e-SUS - <span id="nome"></span></a>
+      <a href="#" onclick="logout()"> Fazer logout</a>
+    </div>
+
+    <h3><br /></h3>
+
+    <h1>Informativo</h1>
+    <p>Esse relatório verifica o percentual dos campos que estão preenchidos no questionário e-SUS</p>
+
+
+    <p><b>Atualizado em </b><span id="atualizacao_questionario"></span></p>
+
+    <table>
+      <tbody id="tabelaCadastros">
+
+      </tbody>
+    </table>
+
+    <h3><br /></h3>
+
+    <script src="js/completude-questionario-esus.js"></script>
+    <script src="assets/js/logout.js"></script>
+    <script>
+      let codProfissional = 0;
+      (async function (){
+        if (localStorage.getItem('override:codProfissional')) {
+          const {data,error} = await supabase.from('dadosprofissionais').select("*").eq('codprofissional', localStorage.getItem("override:codProfissional"));
+          document.getElementById("nome").innerText = data[0].nome;
+          codProfissional = data[0].codprofissional;
+        } else {
+          const {data,error} = await window.supabase.from('dadosprofissionais').select("*").eq('cpf', localStorage.getItem("profissional"));
+          document.getElementById("nome").innerText = data[0].nome;
+          codProfissional = data[0].codprofissional;
+        }
+
+        atualizacao_questionario.innerText = atualizacao;
+
+        let cadastros = `
+        <tr>
+          <td colspan=2>
+            <b>Prontuário</b>
+          </td>
+          <td>
+            <b>Nome do paciente</b>
+          </td>
+          <td>
+            <b>Data da última<br>atualização</b>
+          </td>
+          <td>
+            <b>Cadastro foi<br>alterado?</b>
+          </td>
+          <td colspan=2>
+            <b>Completude do cadastro</b>
+          </td>
+        </tr>
+        `;
+        let familias = [];
+        for (let cadastro of completudeQuestionarioESUS) {
+          if (cadastro[2] != codProfissional) continue;
+
+          familias[cadastro[3]] = familias[cadastro[3]] || `
+            <tr>
+              <td colspan=7>
+                <b>Família:</b>  ${cadastro[3]}
+              </td>
+            </tr>
+          `;
+
+          familias[cadastro[3]] += `
+            <tr>
+              <td style="text-align:right;" colspan=2>
+                <a href="https://www.taiobeiras-mg.vivver.com/esu/questionario_paciente/${cadastro[0]}?oldWorkMode=wmBrowse&workMode=wmEdit"  target="_blank">${cadastro[1]}</a>
+              </td>
+              <td>
+                ${cadastro[4]}
+              </td>
+              <td style="text-align:right;">
+                ${cadastro[5]}
+              </td>
+              <td>
+                ${cadastro[6] == 1?"Sim":"Não"}
+              </td>
+              <td>
+                <div style="max-width:100px;min-width:100px; height:32px; background-color:#ea9999;">
+                   <div style="max-width:${Math.floor(cadastro[8]/cadastro[7]*100)}px;min-width:${Math.floor(cadastro[8]/cadastro[7]*100)}px; height:32px; background-color:#b6d7a8;"></div>
+                </div>
+              </td>
+              <td style="text-align:right;">
+                ${Math.floor(cadastro[8]/cadastro[7]*100)}%
+              </td>
+            </tr>
+          `;
+
+          ultimaFamilia = cadastro[3];
+        }
+
+        let listaFamilias = Object.keys(familias).sort((a,b) => {
+          return parseInt(a) > parseInt(b) ? 1 : -1;
+        })
+        for (let codFamilia of listaFamilias) {
+          cadastros += familias[codFamilia];
+        }
+
+        tabelaCadastros.innerHTML = cadastros
+      })();
+
+    </script>
+  </body>
+</html>
