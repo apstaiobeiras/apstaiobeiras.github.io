@@ -68,8 +68,8 @@
             const data_inicial = parseInt(document.getElementById('data_inicial').value.replaceAll('-',''));
             const data_final = parseInt(document.getElementById('data_final').value.replaceAll('-',''));
 
-            //document.getElementById("solicitacoes").innerHTML = "<tr><th>Nº Solititação</th><th>Prontuário</th><th>Procedimento</th><th class='left'>Motivo/Observação</th></tr>";
-            document.getElementById("solicitacoes").innerHTML = "<tr><th>Nº Solititação</th><th>Procedimento</th><th class='left'>Motivo</th><th class='left'>Observação</th></tr>";
+            document.getElementById("solicitacoes").innerHTML = "<tr><th>Nº Solititação</th><th>Prontuário</th><th>Procedimento</th><th class='left'>Motivo/Observação</th></tr>";
+            //document.getElementById("solicitacoes").innerHTML = "<tr><th>Nº Solititação</th><th>Procedimento</th><th class='left'>Motivo</th><th class='left'>Observação</th></tr>";
     
             let profissional = document.getElementById("lista-profissional").value;
             document.getElementById("total").textContent = 0;
@@ -88,14 +88,14 @@
                 const no_solicitacao = document.createElement("td");
                 const prontuario = document.createElement("td");
                 const procedimento = document.createElement("td");
-                const motivo = document.createElement("td");
+                //const motivo = document.createElement("td");
                 const observacao = document.createElement("td");
 
                 no_solicitacao.innerHTML = `${solicitacao[0]}`;
                 prontuario.innerHTML = `${solicitacao[2]}`;
                 observacao.innerHTML = `${solicitacao[4]}`;
-                motivo.innerHTML = `${solicitacao[4].split("<br>")[0].replace("<b>","").replace(": </b>","")}`;
-                motivo.classList = "left";
+                //motivo.innerHTML = `${solicitacao[4].split("<br>")[0].replace("<b>","").replace(": </b>","")}`;
+                //motivo.classList = "left";
 
                 //observacao.innerHTML = `${solicitacao[4].split("<br>")[1] || ""}`;
                 observacao.classList = "left";
