@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="utf8" />
+    <title>Perfil do profissional</title>
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <style>
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+      }
+
+      .navbar a {
+        color: #fff;
+        text-decoration: none;
+        padding: 15px;
+      }
+
+      body {
+        margin-top: 60px; 
+      }
+
+      tr,table,td,th {
+        /*border: 1px solid #dfe2e5;*/
+        background-color: transparent !important;
+        border: 0 !important;
+      }
+
+      .header {
+        background-color: #f6f8fa !important;
+      }
+
+      .border {
+        border: 1px solid #dfe2e5 !important;
+      }
+
+      ::backdrop {
+        background-image: linear-gradient(45deg, rgb(0, 0, 0), rgb(0, 0, 0));
+        opacity: 0.75;
+      }
+
+      .tr:hover {
+        background: #dfe2e5 !important;
+        cursor: pointer !important;
+      }
+
+      .tr:pressed {
+        background: #9fa1a3 !important;
+      }
+
+      tbody {
+        width: 100%;
+      }
+
+      tr img {
+        min-width: 96px;
+        height: auto;
+      }
+
+      tr td:last-child {
+        width: 100%;
+        padding-left: 10px;
+      }
+    </style>
+    <meta content="lua-wpp" name="generator" />
+    <meta content="width=device-width,initial-scale=1.0" name="viewport" />
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script  src="assets/js/config.js"></script>
+  </head>
+  <body class="container-lg px-3 my-5 markdown-body">
+    <div class="navbar" style="display: flex;justify-content: space-between; padding: 0;">
+      <a><span id="cod"></span> - <span id="nome"></span></a>
+      <a href="#" onclick="logout()"> Fazer logout</a>
+    </div>
+
+    <h3><br /></h3>
+
+    <span style="display:block;margin-top: 9px;padding: 9px;border: 2px solid #176b2c;background-color: rgb(242 255 243);color: #176b2c;">
+      Uma versão melhorada do portal está em desenvolvimento, agradeço pela compreensão
+    </span>
+
+    <h3><br /></h3>
+
+    <table>
+      <tbody id="lista-sessoes"></tbody >
+    </table>
+
+    <h3><br /></h3>
+    <script src="assets/js/logout.js"></script>
+    <script>
+      const Sections = {
+        "Páginas": [
+          ["Produção","Veja o consolidado da sua produção ao longo do ano","producao"],
+          ["Produção (beta)","Veja o consolidado da sua produção ao longo do ano","producao-ace"],
+          ["Situação descritiva dos cadastros","Veja uma lista descritiva dos cadastros com problemas","situacao-cadastros"],
+          ["Produção diária","Acompanhe sua produção dia a dia ao longo do ano","producao-diaria"],
+          //["Tabela de indicadores e-SUS","Acompanhe semanalmente os indicadores e-SUS","hardlock"],//"indicadores-esus"],
+        ],
+
+        /*"Farmácia": [
+          ["Dispensação de medicamentos","Total de medicamentos dispensados por cada unidade por mês","hardlock"],//,"farmacia-monitoramento-consolidado?campo=geral"],
+          ["Uso da Farmácia de Minas","Percentual de dispensação que cada unidade com famárica corresponde as dispensações da Farmácia de Minas","hardlock"],//"farmacia-monitoramento-consolidado?campo=farmaciaminas"],
+        ],
+
+        "Tabelas-mapa": [
+          ["Famílias visitadas","Mapa que mostra as famílias que receberam visitas dos ACS ao longo do ano","hardlock"],//"grafico-de-mapa?script=monitoramento-acs"],
+          //["Situação dos pacientes e-SUS","Mapa que mostra o acompanhamento dos pacientes com condicionalidades dos indicadores e-SUS","grafico-de-mapa?acompanhamento-esus"],
+        ],
+
+        "Listas e planilhas": [
+          ["Lista de prontuários","Veja uma lista dos pacientes agrupados por família e micro-área","lista-prontuario"],
+          ["Lista de Casos de Arboviroses e Doenças Relacionadas","Veja uma lista que receberam o diagnóstico de arbovirose e doenças relacionadas","hardlock"],//"planilhas?script=pacientes-arbovirose"],
+          ["Lista de crianças - Vitamina A de 100 mil UI","Planilha de monitoramento de crianças que não receberam a <i>Vitamina A de 100 mil UI</i>","hardlock"],//"planilhas?script=vitamina-a-100-mil"],
+          ["Lista de crianças - Tríplice viral","Planilha de monitoramento de crianças que não receberam 3 doses da <i>Tríplice viral</i>","hardlock"],//"planilhas?script=vacina-triplice-viral"],
+        ],
+
+        "Relatórios": [
+          ["Censo","Obtenha um quantitativo de pacientes baseado em critérios","hardlock"],//"censo"],
+          ["Completude do questionário e-sus","Lista os cadastros indicando o nível de completude do qustionário e-SUS","hardlock"],//"questionario_e-sus"],
+        ],
+
+        "Bases de dados": [
+          ["Listagem de Pacientes","Obtenha uma listagem nominal de pacientes, filtrados por ACS, ESF e Idade","hardlock"],//"relatorio-51"],
+        ],*/
+
+        "Solicitações": [
+          ["Agendadas","Solicitações agendadas ativas","agendados"],
+          ["Devolvidas","Soluções com problemas que precisam ser analisados","solicitacoes"],
+        ],
+        "Links": [
+          ["Envio de documentos","Envie e/ou atualize sua documentação profissional","hardlock"],//"enviar-arquivo"],
+        ],
+        "Ferramentas de gestão": [
+          ["Editor de equipes ESF","Crie, edite e remova equipes tipo ESF","editor-equipes-esf"],
+          ["Gerenciar profissionais","Adicione e remova acesso de pofissional","editor-profissional"],
+        ],
+        "Profissionais de nível médio": [
+          ["Agente de Combate a Endemias","","lista-profissional-ace"],
+          ["Agente Comunitário de Saúde","","lista-profissional-acs"],
+          ["Recepcionista","","lista-profissional-recepcionista"],
+        ],
+        "Profissionais de nível superior": [
+          ["Cirurgião dentista","","lista-profissional-cirurgiao_dentista"],
+          ["Enfermeiro","","lista-profissional-enfermeiro"],
+          ["Farmacêutico","","lista-profissional-farmaceutico"],
+          ["Médico","","lista-profissional-medico"],
+          ["Psicólogo","","lista-profissional-psicologo"],
+        ],
+      }
+    </script>
+    <script>
+
+      function openPage(link) {
+        location.href = link
+      }
+
+      let cbo = "";
+
+      (
+        async () => {
+          let codProfissional = 0;
+          let recepcionista = false;
+          let trocarProfissional = false;
+          let naoACS = false;
+
+          if (localStorage.getItem('override:codProfissional')) {
+            const {data:profissional,error} = await supabase.from('dadosprofissionais').select("*").eq('codprofissional', localStorage.getItem('override:codProfissional'));
+            document.getElementById("nome").innerText = profissional[0].nome;
+            codProfissional = profissional[0].codprofissional;
+            nomeProfissional = profissional[0].nome;
+            document.getElementById("cod").innerText = `🪪 ${codProfissional.replace("-","").replace("@","").replace("+","")}`;
+            document.getElementById("nome").innerText = nomeProfissional;
+            localStorage.setItem("codProfissional",codProfissional);
+          } else {
+            const {data,error} = await window.supabase.from('dadosprofissionais').select("*").eq('cpf', localStorage.getItem("profissional"));
+            document.getElementById("cod").innerText = data[0].codprofissional.replace("-","").replace("@","").replace("+","");
+            document.getElementById("nome").innerText = data[0].nome;
+            codProfissional = data[0].codprofissional;
+          }
+
+          for (const [titulo, items] of Object.entries(Sections)) {
+            if (document.getElementById("lista-sessoes").innerHTML != "") {
+              document.getElementById("lista-sessoes").innerHTML+=`
+                <tr name="${titulo}">
+                  <th colspan="2" align="left"><br></th>
+                </tr>
+              `;
+            }
+
+            document.getElementById("lista-sessoes").innerHTML+=`
+              <tr class="border header" name="${titulo}">
+                <th colspan="2" align="left">${titulo}</th>
+              </tr>
+            `;
+
+            for (item of items) {
+              let pagina = item[2].split("?")[0];
+              let query = item[2].split("?")[1] || "q=undefined";
+
+              if (item[2].split("?")[0].startsWith("lista-profissional")) {
+                query = "q="+pagina.replace("lista-profissional-","");
+                pagina = "lista-profissional";
+              }
+
+              document.getElementById("lista-sessoes").innerHTML+=`
+                <tr class="border tr profissional" onclick="openPage('${pagina}.html?${query}');" name="${titulo}" id="${item[0]}">
+                  <td>
+                    <img src="assets/img/${item[2].split("?")[0]}.png" width="96" />
+                  </td>
+                  <td style="" name="${titulo}">
+                    <b>${item[0]}</b><br/>${item[1]}
+                  </td>
+                </tr>
+              `;
+            }
+          }
+
+          // Gestão da APS
+          if (parseInt(codProfissional) < 0 ) {
+            for (let grupo of ["Tabelas-mapa","Listas e planilhas","Links"]) {
+              for (let linha of [...document.getElementsByName(grupo)]) {
+                linha.remove();
+              }
+            }
+            for (let grupo of ["Produção","Situação descritiva dos cadastros","Produção diária","Completude do questionário e-sus"]) {
+              document.getElementById(grupo)?.remove();
+            }
+            return;
+          }
+
+          // Preceptores
+          if (codProfissional.startsWith("@")) {
+            for (let grupo of ["Tabelas-mapa","Listas e planilhas","Solicitações","Ferramentas de gestão","Farmácia"]) {
+              for (let linha of [...document.getElementsByName(grupo)]) {
+                linha.remove();
+              }
+            }
+            for (let grupo of ["Produção","Situação descritiva dos cadastros","Produção diária","Completude do questionário e-sus"]) {
+              document.getElementById(grupo)?.remove();
+            }
+            return;
+          }
+
+          // Coordenadores da Atenção especializada
+          if (codProfissional.startsWith("$")) {
+            for (let grupo of ["Páginas","Farmácia","Tabelas-mapa","Listas e planilhas","Links",
+                               "Ferramentas de gestão","Profissionais de nível médio","Profissionais de nível superior"]) {
+              for (let linha of [...document.getElementsByName(grupo)]) {
+                linha.remove();
+              }
+              for (let grupo of ["Produção","Situação descritiva dos cadastros","Produção diária","Completude do questionário e-sus","Agendadas"]) {
+                  document.getElementById(grupo)?.remove();
+              }
+            }
+            return;
+          }
+
+          let { data: equipes, error } = await supabase.from('equipes').select('*');
+          for (let equipe of equipes) {
+            let profissionais = equipe.profissionais.split(",");
+
+            // ACE
+            if (profissionais.includes(`ace_1:${codProfissional}`) || profissionais.includes(`ace_2:${codProfissional}`)) {
+              for (let grupo of ["Farmácia","Solicitações","Tabelas-mapa","Listas e planilhas","Links",
+                                 "Ferramentas de gestão","Profissionais de nível médio","Profissionais de nível superior"]) {
+                for (let linha of [...document.getElementsByName(grupo)]) {
+                  linha.remove();
+                }
+                for (let grupo of ["Produção","Situação descritiva dos cadastros","Completude do questionário e-sus",
+                                   "Tabela de indicadores e-SUS"]) {
+                  document.getElementById(grupo)?.remove();
+                }
+              }
+              return;
+            }
+
+            // Recepcionistas
+            if (profissionais.includes(`recepcionista_saude_na_hora:${codProfissional}`) || profissionais.includes(`recepcionista:${codProfissional}`)) {
+              for (let grupo of ["Páginas","Farmácia","Tabelas-mapa","Listas e planilhas","Links",
+                                 "Ferramentas de gestão","Profissionais de nível médio","Profissionais de nível superior"]) {
+                for (let linha of [...document.getElementsByName(grupo)]) {
+                  linha.remove();
+                }
+                for (let grupo of ["Produção","Situação descritiva dos cadastros","Produção diária","Completude do questionário e-sus"]) {
+                  document.getElementById(grupo)?.remove();
+                }
+              }
+              return;
+            }
+
+            // Enfermeiros
+            if (profissionais.includes(`enfermeiro_saude_na_hora:${codProfissional}`) || profissionais.includes(`enfermeiro:${codProfissional}`)) {
+              for (let grupo of ["Farmácia","Tabelas-mapa","Ferramentas de gestão"]) {
+                for (let linha of [...document.getElementsByName(grupo)]) {
+                  linha.remove();
+                }
+                for (let grupo of ["Produção","Situação descritiva dos cadastros","Completude do questionário e-sus","Lista de prontuários","Agendadas"]) {
+                  document.getElementById(grupo)?.remove();
+                }
+
+                for (let grupo of document.getElementsByName("Profissionais de nível superior")) {
+                  if (grupo.tagName != "TR") continue;
+                  if (!grupo.classList.contains("profissional")) continue;
+                  if (grupo.id == "Médico") continue;
+
+                  grupo.style.display = "none";
+                }
+              }
+              return;
+            }
+
+            // Psicologos
+            if (profissionais.includes(`psicologo:${codProfissional}`)) {
+              for (let grupo of ["Farmácia","Tabelas-mapa","Ferramentas de gestão"]) {
+                for (let linha of [...document.getElementsByName(grupo)]) {
+                  linha.remove();
+                }
+                for (let grupo of ["Produção","Situação descritiva dos cadastros","Completude do questionário e-sus","Lista de prontuários","Agendadas"]) {
+                  document.getElementById(grupo)?.remove();
+                }
+
+                for (let grupo of document.getElementsByName("Profissionais de nível superior")) {
+                  if (grupo.tagName != "TR") continue;
+                  if (!grupo.classList.contains("profissional")) continue;
+                  if (grupo.id == "Médico") continue;
+
+                  grupo.style.display = "none";
+                }
+              }
+              return;
+            }
+
+            // Médicos
+            if (profissionais.includes(`medico_saude_na_hora:${codProfissional}`) || profissionais.includes(`medico:${codProfissional}`)) {
+              for (let grupo of ["Farmácia","Tabelas-mapa","Profissionais de nível médio","Profissionais de nível superior","Ferramentas de gestão"]) {
+                for (let linha of [...document.getElementsByName(grupo)]) {
+                  linha.remove();
+                }
+                for (let grupo of ["Produção","Situação descritiva dos cadastros","Completude do questionário e-sus","Lista de prontuários","Agendadas"]) {
+                  document.getElementById(grupo)?.remove();
+                }
+              }
+              return;
+            }
+            
+            // Farmacêuticos
+            if (profissionais.includes(`farmaceutico:${codProfissional}`)) {
+              for (let grupo of ["Tabelas-mapa","Ferramentas de gestão"]) {
+                for (let linha of [...document.getElementsByName(grupo)]) {
+                  linha.remove();
+                }
+                for (let grupo of ["Produção","Situação descritiva dos cadastros","Completude do questionário e-sus","Lista de prontuários","Agendadas"]) {
+                  document.getElementById(grupo)?.remove();
+                }
+
+                for (let grupo of document.getElementsByName("Profissionais de nível superior")) {
+                  if (grupo.tagName != "TR") continue;
+                  if (!grupo.classList.contains("profissional")) continue;
+                  if (grupo.id == "Médico") continue;
+
+                  grupo.style.display = "none";
+                }
+              }
+              return;
+            }
+
+            // Odontólogos
+            if (profissionais.includes(`cirurgiao_dentista:${codProfissional}`)) {
+              for (let grupo of ["Farmácia","Tabelas-mapa","Ferramentas de gestão","Solicitações","Listas e planilhas"]) {
+                for (let linha of [...document.getElementsByName(grupo)]) {
+                  linha.remove();
+                }
+                for (let grupo of ["Produção","Situação descritiva dos cadastros","Completude do questionário e-sus","Lista de prontuários","Agendadas"]) {
+                  document.getElementById(grupo)?.remove();
+                }
+                for (let grupo of document.getElementsByName("Profissionais de nível superior")) {
+                  if (grupo.tagName != "TR") continue;
+                  if (!grupo.classList.contains("profissional")) continue;
+                  if (grupo.id == "Médico") continue;
+
+                  grupo.style.display = "none";
+                }
+              }
+              return;
+            }
+          }
+
+          for (let grupo of ["Farmácia","Solicitações","Links","Ferramentas de gestão","Profissionais de nível médio","Profissionais de nível superior"]) {
+            for (let linha of [...document.getElementsByName(grupo)]) {
+              linha.remove();
+            }
+            for (let grupo of ["Lista de Casos de Arboviroses e Doenças Relacionadas","Lista de prontuários"]) {
+              document.getElementById(grupo)?.remove();
+            }
+          }
+
+          
+      }
+    )();
+    </script>
+  </body>
+</html>

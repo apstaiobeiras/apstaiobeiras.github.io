@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="utf8" />
+    <title>Perfil do profissional</title>
+    <style>
+      /* Estilo da barra de navegação */
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333; /* Cor de fundo da barra de navegação */
+        color: #fff; /* Cor do texto da barra de navegação */
+        padding: 10px 0;
+      }
+
+      .navbar a {
+        color: #fff;
+        text-decoration: none;
+        padding: 15px;
+      }
+
+      /* Adicione margem ao corpo para evitar que o conteúdo fique oculto sob a barra de navegação */
+      body {
+        margin-top: 60px; 
+      }
+
+      tr,table,td,th {
+        /*border: 1px solid #dfe2e5;*/
+        background-color: transparent !important;
+        border: 0 !important;
+      }
+
+      .header {
+        background-color: #f6f8fa !important;
+      }
+
+      .border {
+        border: 1px solid #dfe2e5 !important;
+      }
+
+      ::backdrop {
+        background-image: linear-gradient(45deg, rgb(0, 0, 0), rgb(0, 0, 0));
+        opacity: 0.75;
+      }
+
+      .tr:hover {
+        background: #dfe2e5 !important;
+        cursor: pointer !important;
+      }
+
+      .tr:pressed {
+        background: #9fa1a3 !important;
+      }
+
+      .tbody {
+        width: 100%;
+      }
+
+
+      
+  /* CSS for image column */
+  tr img {
+    min-width: 96px; /* Ensure image does not exceed column width */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  /* CSS for text column */
+tr td:last-child {
+    width: 100%; /* Make text column stretch to fill remaining space */
+    padding-left: 10px; /* Add padding to separate image and text */
+  }
+    </style>
+    <meta content="lua-wpp" name="generator" />
+    <meta content="width=device-width,initial-scale=1.0" name="viewport" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script  src="assets/js/config.js"></script>
+  </head>
+  <body class="container-lg px-3 my-5 markdown-body">
+    <div class="navbar" style="display: flex;justify-content: space-between; padding: 0;">
+      <a href="profissional.html"><span>Inicio</span></a>
+      <a>Lista dos profissionais - <span id="nome"></span></a>
+      <a href="#" onclick="logout()"> Fazer logout</a>
+    </div>
+
+    <h3><br /></h3>
+
+    <table>
+      <tbody id="lista-profissionais"></tbody >
+    </table>
+
+    <h3><br /></h3>
+
+    <script src="assets/js/logout.js"></script>
+    <script src="js/lista-acs.js"></script>
+    <script src="js/monitoramento-acs.js"></script>
+    <script>
+      let codProfissional = 0;
+    </script>
+    <script>
+      let cargo = (new URLSearchParams(window.location.search)).get("q");
+      let equipes = [];
+      let equipesProfissional = [];
+
+      (async () => {
+        const Profissionais = [];
+        {
+          let { data: profissionais, x } = await supabase.from('dadosprofissionais').select('*');
+          let profissionaisOrdenados = profissionais.sort((a,b) => a.nome > b.nome ? 1 : -1);
+          for (let profissional of profissionaisOrdenados) {
+            Profissionais.push([profissional.codprofissional,profissional.nome]);
+          }
+        }
+
+        if (localStorage.getItem('override:codProfissional')) {
+          for (let profissional of Profissionais) {
+            if (profissional[0] == localStorage.getItem('override:codProfissional')) {
+              document.getElementById("nome").innerText = profissional[1];
+              codProfissional = profissional[0];
+              break;
+            }
+          }
+        } else {
+          const {data:profissional,error} = await supabase.from('dadosprofissionais').select("*").eq('cpf', localStorage.getItem("profissional"));
+          document.getElementById("nome").innerText = profissional[0].nome;
+          codProfissional = profissional[0].codprofissional;
+        }
+
+        let { data, error } = await supabase.from('equipes').select('*');
+
+        for (let equipe of data) {
+          let profissionais = equipe.profissionais.split(",");
+          equipes.push(equipe.nome);
+          equipes[equipe.nome] = [];
+
+          for (let profissional of profissionais) {
+            if (profissional.split(":")[1] == codProfissional) {
+              equipesProfissional.push(equipe.nome);
+            }
+  
+            if (profissional.startsWith(cargo)) {
+              if (profissional.split(":")[1]) {
+                if (equipes["_"+profissional.split(":")[1]] == undefined) {
+                  equipes["_"+profissional.split(":")[1]] = [];
+                }
+                equipes["_"+profissional.split(":")[1]].push(equipe.nome);
+              }
+            }
+          }
+        }
+
+        equipes.sort();
+
+        for (let profissional of Profissionais) {
+          if (equipes["_"+profissional[0]] == undefined) continue;
+          let equipesProfissional = equipes["_"+profissional[0]];
+          for (let equipe of equipesProfissional) {
+            equipes[equipe].push(profissional);
+          }
+        }
+
+        for (let equipe of equipes) {
+          let profissionais = equipes[equipe];
+          document.getElementById("lista-profissionais").innerHTML += `
+            <tr class="border header" name="${equipe}">
+              <td colspan=2><b>${equipe}</b></td>
+            </tr>
+          `;
+
+          for (let profissional of profissionais) {
+            document.getElementById("lista-profissionais").innerHTML += `
+              <tr class="border tr" name="${equipe}" onclick="
+                localStorage.setItem('override:codProfissional','${profissional[0]}');
+                window.location.href = 'profissional.html';
+              ">
+                <td style="text-align:right;"><b>${profissional[0]}</b></td>
+                <td>${profissional[1]}</td>
+              </tr>
+            `;
+          }
+          document.getElementById("lista-profissionais").innerHTML += `
+            <tr name="${equipe}">
+              <th colspan="2" align="left"><br></th>
+            </tr>
+          `;
+        }
+
+        if (cargo == "acs") {
+          document.getElementById("lista-profissionais").innerHTML = listaACS;
+
+          if (codProfissional <0) {
+            for (let header of [...document.getElementsByClassName("header")]) {
+              header.children[0].colSpan = 3;
+              header.children[0].style = "text-align:center;"
+              header.outerHTML += `
+              <tr name="${header.getAttribute("name")}" class="border header">
+                <th class="border">Cod. Profissional</th>
+                <th class="border">Nome do profissional</th>
+                <th class="border">Qtd. Famílias</th>
+              </tr>
+              `;
+            }
+
+            for (let linha of [...document.getElementsByClassName("tr")]) {
+              linha.children[1].classList.add("border")
+              linha.children[1].style= "width: 100%"
+              linha.children[1].outerHTML += `<td class="border" style="text-align:right;width:96px;">
+                ${Mapa[(new Date).getFullYear()][(new Date).getMonth()+1][parseInt(linha.children[0].innerText)].length}
+              </td>`;
+            }
+          }
+        }
+        if (codProfissional.startsWith("@")) return;
+        if (codProfissional <0) return;
+
+        for (let equipe of [...document.getElementsByTagName("tr")]) {
+          if (equipesProfissional.includes(equipe.getAttribute('name'))) continue;
+          equipe.remove();
+        }
+      })();
+
+
+    </script>
+  </body>
+</html>

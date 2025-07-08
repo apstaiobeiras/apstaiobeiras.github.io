@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="utf8" />
+    <title>Listagem de pacientes</title>
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <style>
+      /* Estilo da barra de navegação */
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333; /* Cor de fundo da barra de navegação */
+        color: #fff; /* Cor do texto da barra de navegação */
+        padding: 10px 0;
+        z-index: 1;
+      }
+
+      .navbar a {
+        color: #fff;
+        text-decoration: none;
+        padding: 15px;
+      }
+
+      /* Adicione margem ao corpo para evitar que o conteúdo fique oculto sob a barra de navegação */
+      body {
+        margin-top: 60px; 
+      }
+
+      .header {
+        background-color: #f6f8fa !important;
+      }
+
+      .border {
+        border: 1px solid #dfe2e5 !important;
+      }
+      .no-border * {
+        border: 0px !important;
+      }
+
+      tr {
+        background-color: transparent !important;
+      }
+
+        .right {
+            text-align: right;
+        }
+
+        .neutro {
+            background: #DFE2E5;
+        }
+
+        .ruim {
+            background: #ea9999!important;
+        }
+
+        .razoavel {
+            background: #f7cca0!important;
+        }
+
+        .proximo {
+            background: #b6d7a8!important;
+        }
+
+        .atingiu {
+            background: #9fc5e8!important;
+        }
+    </style>
+    <meta content="lua-wpp" name="generator" />
+    <meta content="width=device-width,initial-scale=1.0" name="viewport" />
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script  src="assets/js/config.js"></script>
+  </head>
+  <body>
+    <div class="navbar" style="display: flex;justify-content: space-between; padding: 0;">
+      <a href="profissional.html"><span>Inicio</span></a>
+      <a>Listagem de pacientes</a>
+      <a href="#" onclick="logout()"> Fazer logout</a>
+    </div>
+
+    <h3><br /></h3>
+
+    <div class="no-print" style="display: flex;justify-content: space-between; padding: 0;">
+      <div></div>
+      <div style="max-width: 1012px">
+        <h1>Informativo</h1>
+        <p>
+          Nessa Ferramenta é possível obter listas de pacientes vinculados a ESFs.
+          <small><br><b>Nota: </b> Esse recurso depende de disponibilidade da visão 51 do Vivver</small>
+        </p>
+        
+
+        <fieldset>
+          <legend style="font-size: 14px;">Do paciente:</legend>
+          <label>Com idade de&ensp;<input type="number" style="max-width: 72px;" id="idade_min"></label>
+          <label>até&ensp;<input type="number" style="max-width: 72px;" id="idade_max">&ensp;anos</label><br><br>
+          <label>Do sexo:&ensp;
+            <select class="fixed-width"  id="sexo">
+              <option value="-">Ambos</option>
+              <option value="Masculino">Masculino</option>
+              <option value="Feminino">Feminino</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend style="font-size: 14px;">Da vinculação:</legend>
+          <label>Agente de Saúde:&ensp;
+            <select class="fixed-width"  id="acs">
+              <option value="-">Todos</option>
+            </select>
+          </label>
+          <br><br>
+          <label>Equipe:&ensp;
+            <select class="fixed-width" id="esf">
+              <option value="-">Todas</option>
+            </select>
+          </label>
+          <br><br>
+          <label>Bairro:&ensp;
+            <select class="fixed-width" id="bairro">
+              <option value="-">Todos</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <button onclick="gerarRelatorio()">Baixar</button> | <button onclick="
+           sexo.value='-';
+           bairro.value='-';
+           esf.value='-';
+           acs.value='-';
+           idade_min.value='';
+           idade_max.value='';
+        ">Limpar</button>
+        <div></div>
+        <br>
+      </div>
+      <h3><br /></h3>
+      <h3><br /></h3>
+      <hr>
+    </div>
+
+    <h3><br /></h3>
+
+    <script src="assets/js/logout.js"></script>
+    <script src="js/lista-acs.js"></script>
+    <script src="js/lista-esfs.js"></script>
+    <script src="js/lista-bairros.js"></script>
+    <script>
+      for (let nome of (Object.keys(ESFs))) {
+        if (isNaN(parseInt(nome)) == false) continue;
+        esf.innerHTML += `<option value="${nome}">${nome}</option>`;
+      }
+
+      for (let nome of Bairros) {
+        bairro.innerHTML += `<option value="${nome}">${nome}</option>`;
+      }
+
+      let acsLista = [];
+      for (let linha of listaACS.split("\n")) {
+        if (linha.trim().startsWith("<td>")) {
+          let nome = linha.split(">")[1].replace("</td","").replace("\r","");
+          acsLista.push(nome);
+        }
+      }
+      acsLista.sort();
+
+      for (let nome of acsLista) {
+        acs.innerHTML += `<option value="${nome}">${nome}</option>`;
+      }
+
+      function gerarRelatorio() {
+        let _min = encodeURI(idade_min.value);
+        let _max = encodeURI(idade_max.value);
+        let _acs = acs.value == "-" ? "" : encodeURI(acs.value);
+        let _esf = esf.value == "-" ? "" : encodeURI(esf.value);
+        let _bairro = bairro.value == "-" ? "" : encodeURI(bairro.value);
+        let _sexo = sexo.value == "-" ? "" : encodeURI(sexo.value);
+        open(
+          `https://www.taiobeiras-mg.vivver.com/bit/relatorio/621/download.xls
+            ?utf8=%E2%9C%93
+            &_method=patch
+            &relatorio%5Bfiltro%5D%5B1740160041593%5D%5B_destroy%5D=1
+            &relatorio%5Bfiltro%5D%5B1740160041593%5D%5Blogico%5D=e
+            &relatorio%5Bfiltro%5D%5B1740160041593%5D%5Bnome%5D=codigo_municipio_cadastro
+            &relatorio%5Bfiltro%5D%5B1740160041593%5D%5Boperador%5D=%3D
+            &relatorio%5Bfiltro%5D%5B1740160041593%5D%5Bvalor%5D=
+            &relatorio%5Bfiltro%5D%5B1740160027875%5D%5B_destroy%5D=false
+            &relatorio%5Bfiltro%5D%5B1740160027875%5D%5Blogico%5D=e
+            &relatorio%5Bfiltro%5D%5B1740160027875%5D%5Bnome%5D=idade_paciente
+            &relatorio%5Bfiltro%5D%5B1740160027875%5D%5Boperador%5D=%3C%3D
+            &relatorio%5Bfiltro%5D%5B1740160027875%5D%5Bvalor%5D=${_max}
+            &relatorio%5Bfiltro%5D%5B1740159998034%5D%5B_destroy%5D=false
+            &relatorio%5Bfiltro%5D%5B1740159998034%5D%5Blogico%5D=e
+            &relatorio%5Bfiltro%5D%5B1740159998034%5D%5Bnome%5D=idade_paciente
+            &relatorio%5Bfiltro%5D%5B1740159998034%5D%5Boperador%5D=%3E%3D
+            &relatorio%5Bfiltro%5D%5B1740159998034%5D%5Bvalor%5D=${_min}
+            &relatorio%5Bfiltro%5D%5B1740145878280%5D%5B_destroy%5D=false
+            &relatorio%5Bfiltro%5D%5B1740145878280%5D%5Blogico%5D=e
+            &relatorio%5Bfiltro%5D%5B1740145878280%5D%5Bnome%5D=nome_profissional_micro_area
+            &relatorio%5Bfiltro%5D%5B1740145878280%5D%5Boperador%5D=%3D
+            &relatorio%5Bfiltro%5D%5B1740145878280%5D%5Bvalor%5D=${_acs}
+            &relatorio%5Bfiltro%5D%5B1740145864742%5D%5B_destroy%5D=false
+            &relatorio%5Bfiltro%5D%5B1740145864742%5D%5Blogico%5D=e
+            &relatorio%5Bfiltro%5D%5B1740145864742%5D%5Bnome%5D=nome_area
+            &relatorio%5Bfiltro%5D%5B1740145864742%5D%5Boperador%5D=%3D
+            &relatorio%5Bfiltro%5D%5B1740145864742%5D%5Bvalor%5D=${_esf}
+            &relatorio%5Bfiltro%5D%5B1740145864742%5D%5B_destroy%5D=false
+            &relatorio%5Bfiltro%5D%5B1740145864742%5D%5Blogico%5D=e
+            &relatorio%5Bfiltro%5D%5B1740145864742%5D%5Bnome%5D=nome_bairro_paciente
+            &relatorio%5Bfiltro%5D%5B1740145864742%5D%5Boperador%5D=%3D
+            &relatorio%5Bfiltro%5D%5B1740145864742%5D%5Bvalor%5D=${_bairro}
+            &relatorio%5Bfiltro%5D%5B1740145864742%5D%5B_destroy%5D=false
+            &relatorio%5Bfiltro%5D%5B1740145864742%5D%5Blogico%5D=e
+            &relatorio%5Bfiltro%5D%5B1740145864742%5D%5Bnome%5D=sexo_paciente
+            &relatorio%5Bfiltro%5D%5B1740145864742%5D%5Boperador%5D=%3D
+            &relatorio%5Bfiltro%5D%5B1740145864742%5D%5Bvalor%5D=${_sexo}
+            &relatorio%5Bfiltro%5D%5B0%5D%5B_destroy%5D=false
+            &relatorio%5Bfiltro%5D%5B0%5D%5Blogico%5D=e
+            &relatorio%5Bfiltro%5D%5B0%5D%5Bnome%5D=unidade_referencia_paciente
+            &relatorio%5Bfiltro%5D%5B0%5D%5Boperador%5D=(.*)
+            &relatorio%5Bfiltro%5D%5B0%5D%5Bvalor%5D=UAPS
+            &relatorio%5Bfiltro%5D%5B1%5D%5B_destroy%5D=false
+            &relatorio%5Bfiltro%5D%5B1%5D%5Blogico%5D=e
+            &relatorio%5Bfiltro%5D%5B1%5D%5Bnome%5D=codigo_municipio_cadastro
+            &relatorio%5Bfiltro%5D%5B1%5D%5Boperador%5D=%3D
+            &relatorio%5Bfiltro%5D%5B1%5D%5Bvalor%5D=3168002
+            &relatorio%5Bfiltro%5D%5B2%5D%5B_destroy%5D=false
+            &relatorio%5Bfiltro%5D%5B2%5D%5Blogico%5D=e
+            &relatorio%5Bfiltro%5D%5B2%5D%5Bnome%5D=situacao_paciente
+            &relatorio%5Bfiltro%5D%5B2%5D%5Boperador%5D=%3D
+            &relatorio%5Bfiltro%5D%5B2%5D%5Bvalor%5D=A`.replaceAll(" ","").replaceAll("\n",""),
+          '_blank')
+        .focus();
+      }
+    </script>
+  </body>
+</html>
