@@ -185,7 +185,7 @@
         if (!isNaN(numero) && numero != 0) {
             return soma + 1;
         }
-        return soma-2;
+        return soma;
             }, 0);
         }
 
@@ -674,7 +674,7 @@ async function listarAtendimentos () {
     let diasAtendimento = contaItensNumericos(
       atendimentos_do_profissional.total,
       true,
-    );
+    )-2;
     let capacidade = diasAtendimento * 21;
     let percentualAtentimentos = Math.floor(
       (atendimentosEfetivados / capacidade || 0) * 100,
