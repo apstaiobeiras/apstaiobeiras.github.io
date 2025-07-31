@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="utf8" />
+    <title>Perfil do profissional</title>
+    <style>
+      body {
+        cursor: default !important;
+      }
+      /* Estilo da barra de navegação */
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333; /* Cor de fundo da barra de navegação */
+        color: #fff; /* Cor do texto da barra de navegação */
+        padding: 10px 0;
+      }
+
+      .navbar a {
+        color: #fff;
+        text-decoration: none;
+        padding: 15px;
+      }
+
+      body {
+        margin-top: 60px;
+      }
+
+      .header {
+        background-color: #f6f8fa !important;
+      }
+
+      .border {
+        border: 1px solid #dfe2e5 !important;
+      }
+
+      ::backdrop {
+        background-image: linear-gradient(45deg, rgb(0, 0, 0), rgb(0, 0, 0));
+        opacity: 0.75;
+      }
+
+      .tr:hover {
+        background: #dfe2e5 !important;
+        cursor: pointer !important;
+      }
+
+      .tr:pressed {
+        background: #9fa1a3 !important;
+      }
+
+      tbody {
+        width: 100%;
+      }
+
+      .mes-selecionado {
+        background: #dfe2e5 !important;
+      }
+
+      .mes:hover {
+        background: #dfe2e5 !important;
+        cursor: pointer !important;
+      }
+
+      select {
+        cursor: pointer !important;
+      }
+
+      .X {
+        background: #e9ecef !important;
+      }
+
+      .V {
+        background: #b6d7a8 !important;
+      }
+
+      .A {
+        background: #9fc5e8 !important;
+      }
+
+      .R {
+        background: #f7cca0 !important;
+      }
+
+      .N {
+        background: #ea9999 !important;
+      }
+
+      tr img {
+        min-width: 96px;
+        height: auto;
+      }
+    </style>
+    <meta content="lua-wpp" name="generator" />
+    <meta content="width=device-width,initial-scale=1.0" name="viewport" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script src="assets/js/config.js"></script>
+  </head>
+  <body class="container-lg px-3 my-5 markdown-body">
+    <div
+      class="navbar"
+      style="display: flex; justify-content: space-between; padding: 0"
+    >
+      <a href="profissional.html"><span>Inicio</span></a>
+      <a>Informe sobre o hardlock da plataforma</a>
+      <a href="#" onclick="logout()"> Fazer logout</a>
+    </div>
+    <div>
+      <h1><br /></h1>
+      <h1>Descontinuação parcial de relatórios</h1>
+
+      Devido a limitações de atribuição no organograma da secretaria da saúde,
+      eu estou limitado a fornecer relatórios que não necessitem de
+      procesamento/cruzamento de dados e que estejam disponiveis por
+      <a href="https://pt.wikipedia.org/wiki/Vis%C3%A3o_(banco_de_dados)"
+        >visão</a
+      >
+      no sistema de informação usado, também não posso emitir mesmo com acesso
+      limitado relatórios que violem a
+      <a
+        href="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"
+        >LGPD</a
+      >
+      devido o meu cargo atual (Supervisor I) não ter respaldo jurídico (nível de confiança formal),
+      outra limitação imposta pelo cargo se refere a ferramentas interativas (a ação de  preencher 
+      um formulário e gerar  um relatório como resposta) e validações que dependem de
+      cálculos automatizados, como por definição os seguintes
+      exigem
+      <a href="https://en.wikipedia.org/wiki/Dynamic_web_page"
+        >processamento dinâmico <sup>Em inglês</sup></a
+      > e meu cargo atual se limita a relatórios sem processamento, fico impossibilitado de fornecer ferramentas assim,
+      informado sobre as limitações, não podem mais estar disponíveis no portal:
+
+      <ul>
+        <li>Censo</li>
+        <li>Completude do questionário e-su</li>
+        <li>Lista de Casos de Arboviroses e Doenças Relacionadas</li>
+        <li>Lista de crianças - Vitamina A de 100 mil UI</li>
+        <li>Lista de crianças - Tríplice viral</li>
+        <li>Famílias visitadas</li>
+        <li>Tabela de indicadores e-SUS</li>
+        <li>Listagem de Pacientes</li>
+        <li>Solicitações Devolvidas</li>
+        <li>Uso da Farmácia de Minas</li>
+      </ul>
+
+      <br />
+      Os recursos também foram afetados:
+
+      <ul>
+        <li>Envio de documentos</li>
+        <li>Consolidar do relatório Produção Diária</li>
+        <li>
+          Validação de Nome do paciente,  Nome do Pai,  Nome da Mãe, NIS, CPF e CNS do relatório "Situação descritiva dos
+          cadastros"
+        </li>
+      </ul>
+      <br />
+
+      Além disso os recursos em desenvolvimento foram interrompidos pelo mesmo
+      motivo supracitado:
+
+      <ul>
+        <li>Postagem com comentários</li>
+        <li>Checklists</li>
+        <li>Controle de estoque</li>
+        <li>Agenda de equipe</li>
+        <li>Banco de horas</li>
+        <li>Aplicativo da Farmácia de Minas</li>
+        <li>Aplicativo de lançamento de vistorias da vigilância sanitária</li>
+        <li>Sistema de notificações</li>
+      </ul>
+      
+      <h1><br /></h1>
+      <h1><br /></h1>
+      Até que a situação seja resolvida ficam observadas as seguintes observações:
+      <blockquote>
+        <b>Observação 1:</b> Os relatórios continuam sendo gerados porém não podem ser
+        publicados<br>
+        <b>Observação 2:</b> os relatórios ainda podem ser obitos se solicitado de forma presencial mediante assinatura de termo<br>
+        <b>Observação 3:</b> 
+        Relatórios que envolvem o questionário e-SUS, devem ser solicitados ao Núcleo de Tecnologia de Informação no prédio da Prefeitura Municipal de 
+        Taiobeiras<br>
+        <b>Observação 4:</b> 
+        O Núcleo de Tecnologia de Informação é uma equipe a parte que pode impor suas prórias restrições e limitações, podendo inclusive negar o acesso
+        a informação embora tenham nível de confiança formal para tal<br>
+      </blockquote>
+    </div>
+
+    <h3><br /></h3>
+
+    <h3><br /></h3>
+    <script src="assets/js/logout.js"></script>
+  </body>
+</html>
