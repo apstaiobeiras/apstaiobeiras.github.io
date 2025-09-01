@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="utf8"/>
+    <title>Perfil do profissional</title>
+    <style>        /* Estilo da barra de navegação */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333; /* Cor de fundo da barra de navegação */
+            color: #fff; /* Cor do texto da barra de navegação */
+            padding: 10px 0;
+            cursor: pointer!important;
+        }
+        
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+        }
+        
+        /* Adicione margem ao corpo para evitar que o conteúdo fique oculto sob a barra de navegação */
+        body {
+            margin-top: 60px; /* Ajuste conforme necessário com base na altura da sua barra de navegação */
+        }
+
+        td,th { 
+            text-align: right;
+            cursor: default;
+        }
+
+        .left { 
+            text-align: left;
+        }
+
+        .mes {
+            background-color: #DFE2E5;
+        }
+
+        .mes:hover {
+            background-color: transparent;
+        }
+    </style>
+    <meta content="lua-wpp" name="generator"/>
+    <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+    <link href="assets/css/style.css" rel="stylesheet"/>
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script  src="assets/js/config.js"></script>
+  </head>
+  <body>
+
+    <div class="navbar" style="display: flex;justify-content: space-between; padding: 0;">
+      <a href="profissional.html"><span>Inicio</span></a>
+      <a>Mapa de atendimento - <span id="nome"></span></a>
+      <a href="#" onclick="logout()"> Fazer logout</a>
+    </div>
+    <h3><br /></h3>
+    <table>
+      <tbody id="consolidado_visitas">
+      </tbody>
+    </table>
+    <script src="assets/js/logout.js"></script>
+    <script src="js/monitoramento-acs.js"></script>
+    <script>
+        colorePercentual = (percentual,meta) => {
+            if ((40*meta)/100 > percentual) {
+                return "#F6CCCC";
+            }
+    
+            if ((69*meta)/100 > percentual) {
+                return "#F7CCA0";
+            }
+    
+            if (100 > percentual) {
+                return "#B4E2CE";
+            }
+    
+            return "#9FC1E3";
+        }
+    </script>
+    <script>
+    async function producao (ano_selecionado) {
+      let codProfissional = 0;
+      consolidado_visitas.innerHTML = "";
+
+      if (localStorage.getItem('override:codProfissional')) {
+        const {data,error} = await supabase.from('dadosprofissionais').select("*").eq('codprofissional', localStorage.getItem("override:codProfissional"));
+        document.getElementById("nome").innerText = data[0].nome;
+        codProfissional = data[0].codprofissional;
+      } else {
+        const {data,error} = await window.supabase.from('dadosprofissionais').select("*").eq('cpf', localStorage.getItem("profissional"));
+        document.getElementById("nome").innerText = data[0].nome;
+        codProfissional = data[0].codprofissional;
+      }
+
+      let cabecalho = document.createElement("tr");
+      let familias = document.createElement("tr");
+      let pacientes = document.createElement("tr");
+      let mediaPacientes = document.createElement("tr");
+      let visitasTotal = document.createElement("tr");
+      let visitasGeorreferenciadas = document.createElement("tr");
+      let visitasPorFamilia = document.createElement("tr");
+      let resgateAusencia = document.createElement("tr");
+      let visitaAusente = document.createElement("tr");
+      let visitasAusentes = document.createElement("tr");
+
+      cabecalho.innerHTML = `
+            <th><select id=ano onchange="producao(document.getElementById('ano').value)" class=></select></th>
+            <th>Jan</th>
+            <th>Fev</th>
+            <th>Mar</th>
+            <th>Abr</th>
+            <th>Mai</th>
+            <th>Jun</th>
+            <th>Jul</th>
+            <th>Ago</th>
+            <th>Set</th>
+            <th>Out</th>
+            <th>Nov</th>
+            <th>Dez</th>
+      `
+
+      familias.innerHTML += `<td class="left"><b>Total de famílias</b></td>`;
+      pacientes.innerHTML += `<td class="left"><b>Total de pacientes</b></td>`;
+      visitasTotal.innerHTML += `<td class="left"><b>Total de visitas</b></td>`;
+      visitasGeorreferenciadas.innerHTML += `<td class="left"><b>Georreferenciamento</b></td>`;
+      visitasPorFamilia.innerHTML += `<td class="left"><b>Cobertura de área</b></td>`;
+      resgateAusencia.innerHTML += `<td class="left"><b>Resgate de ausências</b></td>`;
+      visitasAusentes.innerHTML += `<td class="left"><b>Visitas ausentes</b></td>`;
+
+      document.getElementById("consolidado_visitas").append(cabecalho);
+      document.getElementById("consolidado_visitas").append(familias);
+      document.getElementById("consolidado_visitas").append(pacientes);
+      document.getElementById("consolidado_visitas").append(visitasTotal);
+      document.getElementById("consolidado_visitas").append(visitasGeorreferenciadas);
+      document.getElementById("consolidado_visitas").append(visitasPorFamilia);
+      document.getElementById("consolidado_visitas").append(visitasAusentes);
+      document.getElementById("consolidado_visitas").append(resgateAusencia);
+
+      for (let mes in (VisitasDomiciliares[ano_selecionado])) {
+        if (mes) {
+          let producaoMes = (VisitasDomiciliares[ano_selecionado])[mes][codProfissional];
+          producaoMes = producaoMes || [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+                
+          let _familias = producaoMes[ArrayIndexes['familias']];
+          let _pacientes = producaoMes[ArrayIndexes['pacientes']];
+          let _visitasTotal = producaoMes[ArrayIndexes['visitasTotal']];
+          let _visitasGeorreferenciadas = producaoMes[ArrayIndexes['visitasGeorreferenciadas']];
+          let _visitasPorFamilia = producaoMes[ArrayIndexes['visitasPorFamilia']];
+          let _resgateAusencia = producaoMes[ArrayIndexes['resgateAusencia']];
+          let _visitasAusentes = producaoMes[ArrayIndexes['visitasAusentes']];
+
+          _visitasGeorreferenciadas = Math.floor(_visitasGeorreferenciadas/_visitasTotal*100);
+          _visitasPorFamilia = Math.ceil(_visitasPorFamilia/_familias*100);
+          _visitasAusentes = Math.ceil(_visitasAusentes/_familias*100);
+
+          if (isNaN(_visitasGeorreferenciadas)) _visitasGeorreferenciadas = 0;
+          if (isNaN(_visitasPorFamilia)) _visitasPorFamilia = 0;
+          if (isNaN(_visitasAusentes)) _visitasAusentes = 0;
+
+          familias.innerHTML += `<td>${_familias}</td>`;
+          pacientes.innerHTML += `<td>${_pacientes}</td>`;
+          visitasTotal.innerHTML += `<td>${_visitasTotal}</td>`;
+          visitasGeorreferenciadas.innerHTML += `<td style="background-color: ${colorePercentual(_visitasGeorreferenciadas,100)};">${_visitasGeorreferenciadas}%</td>`;
+          visitasPorFamilia.innerHTML += `<td style="background-color: ${colorePercentual(_visitasPorFamilia,100)};">${_visitasPorFamilia}%</td>`;
+          resgateAusencia.innerHTML += `<td >${_resgateAusencia}</td>`;
+          visitasAusentes.innerHTML += `<td>${_visitasAusentes}%</td>`;
+        }
+      }
+
+      for (let ano of Object.keys(VisitasDomiciliares)) {
+        document.getElementById("ano").innerHTML += `<option id="${ano}">${ano}</option>`;
+      }
+      
+      document.getElementById("ano").value = ano_selecionado;
+    }
+
+    producao ((new Date()).getFullYear());
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,533 @@
+<!doctype html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="utf8" />
+    <title>Perfil do profissional</title>
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <style>
+      /* Estilo da barra de navegação */
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333; /* Cor de fundo da barra de navegação */
+        color: #fff; /* Cor do texto da barra de navegação */
+        padding: 10px 0;
+      }
+
+      .navbar a {
+        color: #fff;
+        text-decoration: none;
+        padding: 15px;
+      }
+
+      /* Adicione margem ao corpo para evitar que o conteúdo fique oculto sob a barra de navegação */
+      body {
+        margin-top: 60px; 
+      }
+
+      .header {
+        background-color: #f6f8fa !important;
+      }
+
+      .border {
+        border: 1px solid #dfe2e5 !important;
+      }
+      .no-border * {
+        border: 0px !important;
+      }
+
+      tr {
+        background-color: transparent !important;
+      }
+
+      .tr:hover {
+        background: #dfe2e5 !important;
+        cursor: pointer !important;
+      }
+
+      .tr:pressed {
+        background: #9fa1a3 !important;
+      }
+
+        .right {
+            text-align: right;
+        }
+
+        .neutro {
+            background: #DFE2E5;
+        }
+
+        .ruim {
+            background: #ea9999!important;
+        }
+
+        .razoavel {
+            background: #f7cca0!important;
+        }
+
+        .proximo {
+            background: #b6d7a8!important;
+        }
+
+        .atingiu {
+            background: #9fc5e8!important;
+        }
+    </style>
+    <meta content="lua-wpp" name="generator" />
+    <meta content="width=device-width,initial-scale=1.0" name="viewport" />
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script  src="assets/js/config.js"></script>
+  </head>
+  <body>
+    <div class="navbar" style="display: flex;justify-content: space-between; padding: 0;">
+      <a href="profissional.html"><span>Inicio</span></a>
+      <a>Indicadores e-SUS - <span id="nome"></span></a>
+      <a href="#" onclick="logout()"> Fazer logout</a>
+    </div>
+
+    <h3><br /></h3>
+
+    <div class="no-print" style="display: flex;justify-content: space-between; padding: 0;">
+      <div></div>
+      <div style="max-width: 1012px">
+        <h1>Informativo</h1>
+        <p>Nesse relatório estão listados os atendimentos realizados por dia, a aba consolidado segue as regras:</p>
+        <table >
+          <tr style="background-color: transparent !important;">
+            <td style="white-space: nowrap;">Metas do município:</td>
+            <td>
+              <table>
+                <tr class="border">
+                  <td><b>Pré natal:</b></td>
+                  <td>75%</td>
+                  <td><b>Exames de gestantes:</b></td>
+                  <td>95%</td>
+                </tr>
+                <tr class="border">
+
+                  <td><b>Pré-natal odontológico:</b></td>
+                  <td>95%</td>
+                  <td><b>Citopatológico:</b></td>
+                  <td>50%</td>
+                </tr>
+                <tr class="border">
+                  <td><b>Vacinas:</b></td>
+                  <td>95%</td>
+                  <td><b>Hipertensos:</b></td>
+                  <td>57%</td>
+                </tr>
+                <tr class="border">
+                  <td><b>Diabéticos:</b></td>
+                  <td>57%</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr style="background-color: transparent !important;">
+            <td style="white-space: nowrap;">Legenda:</td>
+            <td>
+              <table>
+                <tr class="border">
+                  <td class="ruim"> </td>
+                  <td><b>Ruim</b>, atenção necessária, talvez a equipe não consiga cumprir a meta</td>
+                </tr>
+                <tr class="border">
+                  <td class="razoavel"></td>
+                  <td><b>Razoável</b>, atenção necessária, com esforço a equipe pode conseguir cumprir a meta</td>
+                </tr>
+                <tr class="border">
+                  <td class="proximo"></td>
+                  <td><b>Próximo</b>, a equipe está próxima de conseguir cumprir a meta</td>
+                </tr>
+                <tr class="border">
+                  <td class="atingiu"></td>
+                  <td><b>Atingiu</b>, a equipe conseguiu cumprir a meta!</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr id="notaACS" style="display: none;">
+            <td colspan="2">
+              Caro <b>ACS</b>, para obter o seu percentual individualizado e uma listagem por paciente atualizado em tempo real,
+              utilize o menu ao final da página
+            </td>
+          </tr>
+          <tr id="notaCoordenadorGestor" style="display: none;">
+            <td colspan="2">
+              Caro <b>Coordenador/Gestor</b>, para obter o seu percentual geral da equipe e uma listagem por paciente atualizado em tempo real,
+              utilize o menu ao final da página
+            </td>
+          </tr>
+        </table>
+        <div></div>
+        <br>
+      </div>
+      <h3><br /></h3>
+      <h3><br /></h3>
+      <hr>
+    </div>
+
+    <p><b>Atualizado em </b><span id="atualizacao-indicadores"></span></p>
+
+    <table>
+      <tbody id="indicadores">
+
+      </tbody>
+    </table>
+
+    <div id="avisoACS" >
+      <h3><hr /></h3>
+      <p>
+        <small>
+          <br>
+          <b>Observações:</b>
+          <ol>
+            <li>
+              Esse recurso funciona apenas em computadores, notebooks e tablets e está sujeito a disponibilidade do sistema Vivver
+            </li>
+            <li>
+              A meta exibida no Vivver se refere a meta do município, considere apenas a meta do município localizada na parte superior dessa página
+            </li>
+          </ol>
+          <br>
+        </small>
+      </p>
+    </div>
+
+    <label>
+      Ano: <select id="ano" class="fixed-width"></select>
+    </label>
+    &emsp;|&emsp;
+    <label>
+      Periodo: 
+      <select id="quadrimestre" class="fixed-width">
+        <option value="1">Janeiro a Abril</option>
+        <option value="2">Maio a Agosto</option>
+        <option value="3">Setembro a Dezembro</option>
+      </select>
+    </label>
+    <label id="labelEquipe">
+      &emsp;|&emsp;
+      Equipe: 
+      <select id="equipe" class="fixed-width"></select>
+    </label>
+    <br><br>
+    <table>
+      <tbody>
+        <tr class="border tr" onclick="todos">
+          <td style="text-align:right; border:0 !important;">
+            <b>&emsp;&emsp;#</b>
+          </td>
+          <td>
+            <b>Todos os relatórios</b><br>
+            Abre todos os relatórios de uma vez em ordem, note que na primeira vez será necessário dar autorização para abrir "popups"
+          </td>
+        </tr>
+        <tr class="border tr" onclick="preNatal">
+          <td style="text-align:right; border:0 !important;">
+            <b>&emsp;&emsp;1</b>
+          </td>
+          <td>
+            <b>Pré-natal</b><br>
+            Proporção de gestantes com pelo menos 6 consultas pré-natal (PN) realizadas, sendo a primeira realizada até a 12ª semana de gestação.
+          </td>
+        </tr>
+        <tr class="border tr" onclick="examesGestantes">
+          <td style="text-align:right; border:0 !important;">
+            <b>2</b>
+          </td>
+          <td>
+            <b>Exames de gestantes</b><br>
+            Proporção de gestantes com realização de exames para sífilis e HIV
+          </td>
+        </tr>
+        <tr class="border tr" onclick="preNatalOdonto">
+          <td style="text-align:right; border:0 !important;">
+            <b>3</b>
+          </td>
+          <td>
+            <b>Pré-natal odontológico</b><br>
+            Proporção de gestantes com atendimento odontológico realizado
+          </td>
+        </tr>
+        <tr class="border tr" onclick="citopatologico">
+          <td style="text-align:right; border:0 !important;">
+            <b>4</b>
+          </td>
+          <td>
+            <b>Citopatológico</b><br>
+            Número de mulheres na faixa etária de 25 a 64 anos com procedimento citopatológico realizado nos últimos três anos
+          </td>
+        </tr>
+        <tr class="border tr" onclick="vacinas">
+          <td style="text-align:right; border:0 !important;">
+            <b>5</b>
+          </td>
+          <td>
+            <b>Vacinas</b><br>
+            Proporção de crianças de 1 (um) ano de idade vacinadas na APS contra Difteria, Tétano, Coqueluche, Hepatite B, infecções 
+            causadas por Haemophilus Influenzae tipo b e Poliomielite Inativada.
+          </td>
+        </tr>
+        <tr class="border tr" onclick="hipertensos">
+          <td style="text-align:right; border:0 !important;">
+            <b>6</b>
+          </td>
+          <td>
+            <b>Hipertensos</b><br>
+            Percentual de pessoas hipertensas com PA aferida em cada semestre.
+          </td>
+        </tr>
+        <tr class="border tr" onclick="diabeticos">
+          <td style="text-align:right; border:0 !important;">
+            <b>7</b>
+          </td>
+          <td>
+            <b>Diabéticos</b><br>
+            Proporção de pessoas diagnosticadas com diabetes com realização de exame de hemoglobina glicada.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <script src="js/indicadores-esus.js"></script>
+    <script src="assets/js/logout.js"></script>
+    <script src="js/lista-acs.js"></script>
+    <script src="js/lista-esfs.js"></script>
+    <script>
+      let codProfissional = 0;
+      let acs = false;
+      (async function (){
+        if (localStorage.getItem('override:codProfissional')) {
+          const {data,error} = await supabase.from('dadosprofissionais').select("*").eq('codprofissional', localStorage.getItem("override:codProfissional"));
+          document.getElementById("nome").innerText = data[0].nome;
+          codProfissional = data[0].codprofissional;
+        } else {
+          const {data,error} = await window.supabase.from('dadosprofissionais').select("*").eq('cpf', localStorage.getItem("profissional"));
+          document.getElementById("nome").innerText = data[0].nome;
+          codProfissional = data[0].codprofissional;
+        }
+
+        for (let item of [...document.querySelectorAll(".tr")]) {
+          item.setAttribute("onclick",`${item.getAttribute("onclick")}('${codProfissional}');`);
+        }
+
+        if (listaACS.includes(`<b>${codProfissional}</b>`)) {
+          avisoACS.style = "";
+          notaACS.style = "";
+          labelEquipe.style = "display:none;";
+          acs = true;
+          return;
+        }
+
+        let { data: equipes, error } = await supabase.from('equipes').select('*');
+        for (let esf of equipes) {
+          if (esf.profissionais.includes(`:${codProfissional},`)) {
+            equipe.innerHTML += `<option value="${esf.nome}">${esf.nome}</option>`;
+            notaCoordenadorGestor.style = "";
+          }
+        }
+
+        if (equipe.innerHTML != "") return;
+
+        equipe.innerHTML = `<option value="">Todas</option>`;
+        for (let esf of Object.keys(ESFs)){
+          equipe.innerHTML += `<option value="${esf}">${esf}</option>`;
+        }
+
+        notaCoordenadorGestor.style = "";
+      })();
+
+    </script>
+    <script>
+      document.getElementById("indicadores").innerHTML = indicadores_equipes;
+      document.getElementById("indicadores").innerHTML = `
+        <tr>
+          <th>Equipes</th>
+          <th colspan=2>Pré-natal</th>
+          <th colspan=2>Exames de<br>gestantes</th>
+          <th colspan=2>Pré-natal<br>odontológico</th>
+          <th colspan=2>Citopatológico</th>
+          <th colspan=2>Vacinas</th>
+          <th colspan=2>Hipertensos</th>
+          <th colspan=2>Diabéticos</th>
+        </tr>
+        ${document.getElementById("indicadores").innerHTML}
+      `;
+
+      function preNatal(cod) {
+        let _ano = `?ano=${ano.value}`;
+        let _esf = `&codarea=${ESFs[equipe.value]?.codigoESF}`;
+        let _uaps = `&codunidade=${ESFs[equipe.value]?.codigoUAPS}&codmunicipio=3168002`;
+        let _periodo = `&quadrimestre=${quadrimestre.value}`;
+        let _acs = `&codprofissional=${cod}`;
+
+        if (_esf == "&codarea=undefined"){
+          _esf = "";
+          _uaps = "";
+        }
+
+        if (!acs) {
+          _acs = "";
+        }
+
+        open(
+          `https://www.taiobeiras-mg.vivver.com/esu/indicadores/gestante_prenatal_consulta/pesquisar.html${_ano}${_periodo}${_acs}${_esf}${_uaps}&check_cad_individual=true`,
+          '_blank')
+        .focus();
+      }
+
+      function examesGestantes(cod) {
+        let _ano = `?ano=${ano.value}`;
+        let _esf = `&codarea=${ESFs[equipe.value]?.codigoESF}`;
+        let _uaps = `&codunidade=${ESFs[equipe.value]?.codigoUAPS}&codmunicipio=3168002`;
+        let _periodo = `&quadrimestre=${quadrimestre.value}`;
+        let _acs = `&codprofissional=${cod}`;
+
+        if (_esf == "&codarea=undefined"){
+          _esf = "";
+          _uaps = "";
+        }
+
+        if (!acs) {
+          _acs = "";
+        }
+
+        open(
+          `https://www.taiobeiras-mg.vivver.com/esu/indicadores/mulheres_siflis_hiv_realizado/pesquisar.html${_ano}${_periodo}${_acs}${_esf}${_uaps}&check_cad_individual=true`,
+          '_blank')
+        .focus();
+      }
+
+      function preNatalOdonto(cod) {
+        let _ano = `?ano=${ano.value}`;
+        let _esf = `&codarea=${ESFs[equipe.value]?.codigoESF}`;
+        let _uaps = `&codunidade=${ESFs[equipe.value]?.codigoUAPS}&codmunicipio=3168002`;
+        let _periodo = `&quadrimestre=${quadrimestre.value}`;
+        let _acs = `&codprofissional=${cod}`;
+
+        if (_esf == "&codarea=undefined"){
+          _esf = "";
+          _uaps = "";
+        }
+
+        if (!acs) {
+          _acs = "";
+        }
+
+        open(
+          `https://www.taiobeiras-mg.vivver.com/esu/indicadores/gestante_odontologico_realizado/pesquisar.html${_ano}${_periodo}${_acs}${_esf}${_uaps}&check_cad_individual=true`,
+          '_blank')
+        .focus();
+      }
+
+      function citopatologico(cod) {
+        let _ano = `?ano=${ano.value}`;
+        let _esf = `&codarea=${ESFs[equipe.value]?.codigoESF}`;
+        let _uaps = `&codunidade=${ESFs[equipe.value]?.codigoUAPS}&codmunicipio=3168002`;
+        let _periodo = `&quadrimestre=${quadrimestre.value}`;
+        let _acs = `&codprofissional=${cod}`;
+
+        if (_esf == "&codarea=undefined"){
+          _esf = "";
+          _uaps = "";
+        }
+
+        if (!acs) {
+          _acs = "";
+        }
+
+        open(
+          `https://www.taiobeiras-mg.vivver.com/esu/indicadores/mulheres_citopatologico_realizado/pesquisar.html${_ano}${_periodo}${_acs}${_esf}${_uaps}&check_cad_individual=true`,
+          '_blank')
+        .focus();
+      }
+
+      function vacinas(cod) {
+        let _ano = `?ano=${ano.value}`;
+        let _esf = `&codarea=${ESFs[equipe.value]?.codigoESF}`;
+        let _uaps = `&codunidade=${ESFs[equipe.value]?.codigoUAPS}&codmunicipio=3168002`;
+        let _periodo = `&quadrimestre=${quadrimestre.value}`;
+        let _acs = `&codprofissional=${cod}`;
+
+        if (_esf == "&codarea=undefined"){
+          _esf = "";
+          _uaps = "";
+        }
+
+        if (!acs) {
+          _acs = "";
+        }
+
+        open(
+          `https://www.taiobeiras-mg.vivver.com/esu/indicadores/doses_aplicadas_polio_penta/pesquisar.html${_ano}${_periodo}${_acs}${_esf}${_uaps}`,
+          '_blank')
+        .focus();
+      }
+
+      function hipertensos(cod) {
+        let _ano = `?ano=${ano.value}`;
+        let _esf = `&codarea=${ESFs[equipe.value]?.codigoESF}`;
+        let _uaps = `&codunidade=${ESFs[equipe.value]?.codigoUAPS}&codmunicipio=3168002`;
+        let _periodo = `&quadrimestre=${quadrimestre.value}`;
+        let _acs = `&codprofissional=${cod}`;
+
+        if (_esf == "&codarea=undefined"){
+          _esf = "";
+          _uaps = "";
+        }
+
+        if (!acs) {
+          _acs = "";
+        }
+
+        open(
+          `https://www.taiobeiras-mg.vivver.com/esu/indicadores/percentual_hipertensos_pa_aferida/pesquisar.html${_ano}${_periodo}${_acs}${_esf}${_uaps}&busca_ativa=S`,
+          '_blank')
+        .focus();
+      }
+
+      function diabeticos(cod) {
+        let _ano = `?ano=${ano.value}`;
+        let _esf = `&codarea=${ESFs[equipe.value]?.codigoESF}`;
+        let _uaps = `&codunidade=${ESFs[equipe.value]?.codigoUAPS}&codmunicipio=3168002`;
+        let _periodo = `&quadrimestre=${quadrimestre.value}`;
+        let _acs = `&codprofissional=${cod}`;
+
+        if (_esf == "&codarea=undefined"){
+          _esf = "";
+          _uaps = "";
+        }
+
+        if (!acs) {
+          _acs = "";
+        }
+
+        open(
+          `https://www.taiobeiras-mg.vivver.com/esu/indicadores/diabeticos_com_solicitacao_exame/pesquisar.html${_ano}${_periodo}${_acs}${_esf}${_uaps}&busca_ativa=S`,
+          '_blank')
+        .focus();
+      }
+
+      function todos(cod) {
+        preNatal(cod);
+        examesGestantes(cod);
+        preNatalOdonto(cod);
+        citopatologico(cod);
+        vacinas(cod);
+        hipertensos(cod);
+        diabeticos(cod);
+      }
+
+      ano.innerHTML  = `<option value="${new Date().getFullYear() -1}">${new Date().getFullYear() -1}</option>`
+      ano.innerHTML += `<option value="${new Date().getFullYear() +0}">${new Date().getFullYear() +0}</option>`
+      ano.innerHTML += `<option value="${new Date().getFullYear() +1}">${new Date().getFullYear() +1}</option>`
+      ano.value = new Date().getFullYear();
+
+      quadrimestre.value = Math.floor((new Date().getMonth() + 3) / 3);
+    </script>
+  </body>
+</html>

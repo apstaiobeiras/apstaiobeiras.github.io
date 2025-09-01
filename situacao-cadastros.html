@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="utf8" />
+    <title>Perfil do profissional</title>
+    <style>
+
+      body {
+        cursor: default !important;
+      }
+      /* Estilo da barra de navegação */
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333; /* Cor de fundo da barra de navegação */
+        color: #fff; /* Cor do texto da barra de navegação */
+        padding: 10px 0;
+      }
+
+      .navbar a {
+        color: #fff;
+        text-decoration: none;
+        padding: 15px;
+      }
+
+      body {
+        margin-top: 60px; 
+      }
+
+
+
+      .header {
+        background-color: #f6f8fa !important;
+      }
+
+      .border {
+        border: 1px solid #dfe2e5 !important;
+      }
+
+      ::backdrop {
+        background-image: linear-gradient(45deg, rgb(0, 0, 0), rgb(0, 0, 0));
+        opacity: 0.75;
+      }
+
+      .tr:hover {
+        background: #dfe2e5 !important;
+        cursor: pointer !important;
+      }
+
+      .tr:pressed {
+        background: #9fa1a3 !important;
+      }
+
+      tbody {
+        width: 100%;
+      }
+
+      .mes-selecionado {
+        background: #dfe2e5  !important;
+      }
+
+      .mes:hover {
+        background: #dfe2e5 !important;
+        cursor: pointer !important;
+      }
+
+      select {
+        cursor: pointer !important;
+      }
+
+      .X {
+        background: #e9ecef !important;
+      }
+
+      .V {
+        background: #b6d7a8 !important;
+      }
+      
+      .A {
+        background: #9fc5e8 !important;
+      }
+      
+      .R {
+        background: #f7cca0 !important;
+      }
+      
+      .N {
+        background: #ea9999 !important;
+      }
+      
+      tr img {
+        min-width: 96px;
+        height: auto;
+      }
+    </style>
+    <meta content="lua-wpp" name="generator" />
+    <meta content="width=device-width,initial-scale=1.0" name="viewport" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script  src="assets/js/config.js"></script>
+  </head>
+  <body class="container-lg px-3 my-5 markdown-body">
+    <div class="navbar" style="display: flex;justify-content: space-between; padding: 0;">
+      <a href="profissional.html"><span>Inicio</span></a>
+      <a>Mapa de atendimento - <span id="nome"></span></a>
+      <a href="#" onclick="logout()"> Fazer logout</a>
+  </div>
+  <div class="no-print">
+    <h3><br /></h3>
+    <span><b>Atualizado em: </b><span id="data_atualizacao"></span></span>
+    <a href="hardlock.html" style="display:block; margin-top: 9px; padding: 9px; border: 2px solid #c0392b; background-color: rgb(251,146,150); color: rgba(92, 12, 4);">
+      Esse relatório foi afetado parcialmente pelo hardlock da plataforma, clique aqui para ler o informe
+    </a>
+    <h1>Instrutivo</h1>
+    <p>Os cadastros marcados com X inicam que há uma inconsistência no campo assinalado, cada campo possui um tipo de inconsistência, são eles:</p>
+    <table>
+      <tr>
+        <td><b>Coluna</b></td>
+        <td><b>Tipo de inconsistência</b></td>
+      </tr>
+      <tr>
+        <td>Nome, Pai e Mãe</td>
+        <td>São cadastros com abreviações, espaços extras e/ou caracteres inválidos nos campos "Usuário", "Nome da mãe" e "Nome do pai" respectivamente<br>
+            No caso do nome do pai o nome escrito pode estar com textos como "Sem informação"
+        </td>
+      </tr>
+      <tr>
+        <td>CNS, CPF e NIS</td>
+        <td>São cadastros com números inválidos de CNS, CPF e NIS nos respectivos campos<br>
+            Erros comuns incluem: 
+            <ul>
+              <li>CNS iniciando em 2</li>
+              <li>Quantidade errada de dígitos</li>
+              <ul>
+                <li>CNS deve possuir 15 digitos</li>
+                <li>CPF deve possuir 11 digitos</li>
+                <li>CNS deve possuir 11 digitos</li>
+              </ul>
+              <li>Pontos, traços e espaços</li>
+            </ul>
+          Os campos CPF e CNS eles são de preeenchimento obrigatório</td>
+      </tr>
+      <tr>
+        <td>Gestante</td>
+        <td>São cadastros de mulheres que, no questionário e-SUS o campo "Está gestante?" não está preenchido,
+            esse campo é de preenchimento obrigatório para todas as mulheres com idade entre 8 e 61 anos
+        </td>
+      </tr>
+      <tr>
+        <td>Hipertenso, Diabético, Acamado, Domiciliado e Deficiência</td>
+        <td>São cadastros cujos campos: "Tem hipertensão arterial?", "Tem diabetes?", "Está acamado?",
+            "Está domiciliado?" e "Tem alguma deficiência?" respectivamente, não estão preenchidos no questionário e-SUS
+        </td>
+      </tr>
+      <tr>
+        <td>Telefone</td>
+        <td>São cadastros onde o campo "Telefone", possui um valor inválido<br>
+            Caso o digito após o DDD não seja 9 e o número tenha 11 dígitos, ele está sendo listado como inválido, caso seja um número válido, entre em contato com a Atenção Primária na Secretária de saúde
+        </td>
+      </tr>
+      <tr>
+        <td>Ocupação</td>
+        <td>Devido a problemas técnicos esse campo foi omitido</td>
+      </tr>
+    </table>
+    <p>Lembre-se de que dados precisos e completos são essenciais para um cadastro eficaz e para fornecer assistência adequada aos pacientes.</p>
+    <hr/>
+    <p><b>Dica: </b>Clique no número de prontuário para abrir a tela de pesquisa no Vivver</p>
+  </div>
+
+    <h3><br /></h3>
+
+    <table>
+      <tbody id="cadastros">
+
+      </tbody>
+    </table>
+
+    <h3><br /></h3>
+    <script src="js/CadastrosChaves.js"></script>
+    <script src="assets/js/logout.js"></script>
+    <script>
+      data_atualizacao.innerText = atualizacao;
+      const nil = undefined;
+      let codProfissional = 0;
+      let nomeProfissional = "";
+      // Function to get the value of a query parameter by name
+      function getQueryParam(param) {
+          const urlParams = new URLSearchParams(window.location.search);
+          return urlParams.get(param);
+      }
+
+      // Check for a specific parameter (e.g., "loadScript")
+      const scriptName = 'Cadastros';
+
+      if (scriptName) {
+          // Dynamically create and load the script based on the parameter value
+          const script = document.createElement('script');
+          script.src = "js/"+scriptName + '.js';  // Assuming the script is named according to the parameter value
+          script.onload = async function() {
+            if (localStorage.getItem('override:codProfissional')) {
+              const {data:profissional,error} = await supabase.from('dadosprofissionais').select("*").eq('codprofissional', localStorage.getItem('override:codProfissional'));
+              document.getElementById("nome").innerText = profissional[0].nome;
+              codProfissional = profissional[0].codprofissional;
+              nomeProfissional = profissional[0].nome;
+            } else {
+              const {data:profissional,error} = await supabase.from('dadosprofissionais').select("*").eq('cpf', localStorage.getItem("profissional"));
+              document.getElementById("nome").innerText = profissional[0].nome;
+              codProfissional = profissional[0].codprofissional;
+              nomeProfissional = profissional[0].nome;
+            }
+            loadMap(Cadastros);
+          };
+          document.head.appendChild(script);
+      }
+  </script>
+  <script>
+
+    function geraCabecalho() {
+        return `    <tr>
+                        <td><b>Prontuário</b></td>
+                        <td><b>Nome</b></td>
+                        <td><b>Mãe</b></td>
+                        <td><b>Pai</b></td>
+                        <td><b>CNS</b></td>
+                        <td><b>CPF</b></td>
+                        <td><b>NIS</b></td>
+                        <td><b>Gestante</b></td>
+                        <td><b>Hipertenso</b></td>
+                        <td><b>Diabético</b></td>
+                        <td><b>Acamado</b></td>
+                        <td><b>Domiciliado</b></td>
+                        <td><b>Deficiência</b></td>
+                        <td><b>Telefone</b></td>
+                    </tr>
+                `;
+    }
+
+    document.getElementById("cadastros").innerHTML = geraCabecalho();
+    function loadMap(Cadastros) {
+      
+      for (let cadastro of Cadastros) {
+        if (codProfissional != cadastro[k.acs]) {
+            continue;
+        }
+        if (codProfissional != cadastro[k.acs]) continue;
+
+        cadastro[k.indgestante] = cadastro[k.sexo] == 1 ? "0" : cadastro[k.indgestante];
+
+        if (cadastro[k.idade] < 9 ) {
+            cadastro[k.indgestante] = "0";
+        }
+
+        if (cadastro[k.idade] > 60 ) {
+            cadastro[k.indgestante] = "0";
+        }
+
+        cadastro = [
+            `<a href="https://www.taiobeiras-mg.vivver.com/amb/paciente/${cadastro[k.id]}/edit?workMode=wmEdit&amp;oldWorkMode=wmBrowse" target="_blank">${cadastro[k.numprontuario]}</a>`,
+            //cadastro[k.nome] == -1? "x" : "",
+            //cadastro[k.mae] == -1? "x" : "",
+            //cadastro[k.pai] == -1? "x" : "",
+            //cadastro[k.cns] == -1? "x" : "",
+            //cadastro[k.cpf] == -1? "x" : "",
+            //cadastro[k.nis] == -1? "x" : "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            cadastro[k.indgestante] == -1? "x" : "",
+            cadastro[k.indhipertensaoarterial] == -1? "x" : "",
+            cadastro[k.inddiabetes] == -1? "x" : "",
+            cadastro[k.indacamado] == -1? "x" : "",
+            cadastro[k.inddomiciliado] == -1? "x" : "",
+            cadastro[k.inddeficiencias] == -1? "x" : "",
+            ''
+        ];
+
+        let pular = true;
+        for (let valor of cadastro) {
+            if (valor == "x") {
+                pular = false;
+            }
+        }
+        if (pular){
+            continue;
+        }
+
+        document.getElementById("cadastros").innerHTML += ('<td style="text-align: right;">'+cadastro.join('</td><td style="text-align: center;">')+"</td>");
+      }
+    }
+
+  </script>
+  </body>
+</html>

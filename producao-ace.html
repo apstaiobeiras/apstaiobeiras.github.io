@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="utf8"/>
+    <title>Perfil do profissional</title>
+    <style>        /* Estilo da barra de navegação */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333; /* Cor de fundo da barra de navegação */
+            color: #fff; /* Cor do texto da barra de navegação */
+            padding: 10px 0;
+            cursor: pointer!important;
+        }
+        
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+        }
+        
+        /* Adicione margem ao corpo para evitar que o conteúdo fique oculto sob a barra de navegação */
+        body {
+            margin-top: 60px; /* Ajuste conforme necessário com base na altura da sua barra de navegação */
+        }
+
+        td,th { 
+            cursor: default;
+        }
+
+        .left { 
+            text-align: left;
+        }
+
+        .mes {
+            background-color: #DFE2E5;
+        }
+
+        .mes:hover {
+            background-color: transparent;
+        }
+    </style>
+    <meta content="lua-wpp" name="generator"/>
+    <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+    <link href="assets/css/style.css" rel="stylesheet"/>
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script  src="assets/js/config.js"></script>
+  </head>
+  <body style="max-width: 1600px !important;">
+
+    <div class="navbar" style="display: flex;justify-content: space-between; padding: 0;">
+      <a href="profissional.html"><span>Inicio</span></a>
+      <a>Mapa de atendimento - <span id="nome"></span></a>
+      <a href="#" onclick="logout()"> Fazer logout</a>
+    </div>
+    <h3><br /></h3>
+    <select id="seletorAno">
+      <option value="2025">Produção do ano de 2025</option>
+    </select>
+    <p>&emsp;</p>
+    <h3>Consolidado da produção</h3>
+    <table>
+      <tbody id="relatorioConsolidado"></tbody>
+    </table>
+    <p><b>Legenda:</b></p>
+    <table>
+      <tbody id="relatorioConsolidadoLegenda">
+        <tr style="background-color: #F6F8FA;">
+          <td><b>Cor</b></td>
+          <td><b>Intervalo</b></td>
+          <td><b>Descrição</b></td>
+        </tr>
+      </tbody>
+    </table>
+    <hr>
+    <h3>Diário de produção</h3>
+    <table style="width: 100%;">
+      <tbody id="relatorioDiario"></tbody>
+    </table>
+    <p><b>Legenda:</b></p>
+    <table>
+      <tbody id="relatorioDiarioLegenda">
+        <tr style="background-color: #F6F8FA;">
+          <td><b>Cor</b></td>
+          <td><b>Evento</b></td>
+        </tr>
+      </tbody>
+    </table>
+    <h1 style="border-bottom: 1px solid transparent;"><br></h1>
+    <script src="assets/js/logout.js"></script>
+    <script src="js/producao-ace.js"></script>
+    <script>
+        colorirPercentual = (percentual,meta) => {
+            if ((40*meta)/100 > percentual) {
+                return "#F6CCCC";
+            }
+    
+            if ((69*meta)/100 > percentual) {
+                return "#F7CCA0";
+            }
+    
+            if (100 > percentual) {
+                return "#B4E2CE";
+            }
+    
+            return "#9FC1E3";
+        }
+    </script>
+    <script>
+      for (let texto in legendaConsolidado) {
+        let cor = legendaConsolidado[texto][0];
+        let descricao = legendaConsolidado[texto][1];
+
+        relatorioConsolidadoLegenda.innerHTML += `
+          <tr>
+            <td style="background-color: ${cor}; border: 1px solid ${cor};"></td>
+            <td style="background-color: white;">${texto}</td>
+            <td style="background-color: white;">${descricao}</td>
+          </tr>
+        `;
+      }
+
+      for (let texto in legendaDiario) {
+        let cor = legendaDiario[texto][0];
+        let evento = legendaDiario[texto][1];
+
+        relatorioDiarioLegenda.innerHTML += `
+          <tr>
+            <td style="background-color: ${cor}; border: 1px solid ${cor};"></td>
+            <td style="background-color: white;">${evento}</td>
+          </tr>
+        `;
+      }
+
+      function gerarRelatorioConsolidado(ano,codProfissional) {
+        let consolidado = ``;
+        for (let campo in textosConsolidado) {
+          let cabecalho = `
+          <tr>
+            <td style="border-top: 1px solid transparent;border-left: 1px solid transparent;"></td>
+          `;
+          let linha = `
+          <tr>
+            <td style="background-color: #F6F8FA;"><b>${campo}</b></td>`;
+          let campoId = textosConsolidado[campo];
+          for (let cicloId in ciclos) {
+            let ciclo = ciclos[cicloId];
+            let valor = producaoConsolidada[ano][cicloId][codProfissional][campoId];
+            let estilo = "text-align: right; background-color: white;";
+
+            if ((""+valor).endsWith("%")) {
+              let cor = colorirPercentual(valor.replace("%",""),100);
+              estilo = `text-align: right; background-color: ${cor}; border: 1px solid ${cor};`;
+            }
+
+            linha += `<td style="${estilo}" style="max-width:125px;">${valor}</td>`;
+            cabecalho += `<th style="background-color: #F6F8FA;">${ciclo}</th>`;
+          }
+          cabecalho += `</tr>`;
+          linha += `</tr>`;
+
+          if (consolidado == "") {
+            consolidado += cabecalho;
+          }
+          consolidado += linha;
+        }
+        relatorioConsolidado.innerHTML = consolidado;
+      }
+
+      function gerarRelatorioDiario(ano,codProfissional) {
+        let diario = ``;
+        for (let mes in meses) {
+          let mesNome = meses[mes];
+          diario += `
+            <tr>
+              <td style="background-color: #F6F8FA;" colspan=42><b>${mesNome}</b></td>
+            </tr>
+          `;
+
+          let cabecalho = `
+            <tr>
+              <td style="background-color: white;"></td>
+          `;
+          for (let i = 1; i <= 31; i++) {
+            cabecalho += `<th style="background-color: white;">${i}</th>`;
+          }
+          cabecalho += `</tr>`;
+          diario += cabecalho;
+
+          for (let grupo in producaoDiaria[ano][mes][codProfissional]) {
+            let linha = `
+              <tr>
+                <td>${grupo}</td>
+            `;
+            for (let producao of producaoDiaria[ano][mes][codProfissional][grupo]) {
+              let estilo = "background-color: white;";
+
+              if (producao == "---") {
+                estilo = "text-align: center; background-color: #F6F8FA;";
+              }
+
+              if (producao == 0) {
+                estilo = "background-color: #EB989A; border: 1px solid #EB989A; text-align: right;";
+              }
+
+              if (producao > 0) {
+                estilo = "background-color: #B2D9AB; border: 1px solid #B2D9AB; text-align: right;";
+              }
+              
+              if (legendaDiario[producao]) {
+                estilo = `text-align: center; background-color: ${legendaDiario[producao][0]}; border: 1px solid ${legendaDiario[producao][0]};`;
+                producao = '';
+              }
+      
+              linha += `<td  style="${estilo}">${producao}</td>`;
+            }
+            linha += `</tr>`;
+            diario += linha;
+          }
+          diario += `
+            <tr>
+              <td style="background-color: white;border-left: 1px solid transparent;border-right: 1px solid transparent;" colspan=42>&emsp;</td>
+            </tr>
+          `;
+        }
+
+        relatorioDiario.innerHTML = diario;
+        [...relatorioDiario.getElementsByTagName('tr')].at(-1).remove();
+      }
+
+      gerarRelatorioConsolidado(2025,localStorage.getItem("codProfissional"));
+      gerarRelatorioDiario(2025,localStorage.getItem("codProfissional"));
+    </script>
+  </body>
+</html>

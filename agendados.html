@@ -1,0 +1,179 @@
+<!DOCTYPE html><html lang="pt_BR"><head><meta charset="utf8"/><title>Solicitações Agendadas</title><style>        /* Estilo da barra de navegação */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333; /* Cor de fundo da barra de navegação */
+            color: #fff; /* Cor do texto da barra de navegação */
+            padding: 10px 0;
+            cursor: pointer!important;
+        }
+        
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+        }
+        
+        /* Adicione margem ao corpo para evitar que o conteúdo fique oculto sob a barra de navegação */
+        body {
+            margin-top: 60px; /* Ajuste conforme necessário com base na altura da sua barra de navegação */
+        }
+
+        td { 
+            text-align: right;
+        }
+
+        .left { 
+            text-align: left;
+        }
+      </style>
+      <meta content="lua-wpp" name="generator"/>
+      <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+      <link href="assets/css/style.css" rel="stylesheet"/>
+      <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+      <script  src="assets/js/config.js"></script>
+    </head>
+    <body style="max-width: unset !important;">
+        <div class="navbar" style="display: flex;justify-content: space-between; padding: 0;">
+            <a href="profissional.html"><span>Inicio</span></a>
+            <a>Solicitações Agendadas - <span id="nome"></span></a>
+            <a href="#" onclick="logout()"> Fazer logout</a>
+        </div>
+        <div class="no-print" style="display: flex;justify-content: space-between; padding: 0;">
+            <div></div>
+            <div>
+                <h3><br /></h3>
+                <h5>Atualizado em <span id="atualizacao"></span>, filtradas: <span id="total">0</span></h5>
+                <div>
+                    <label>Do dia: <input id="data_inicial" max="2023-12-31" min="2023-01-01" type="date" value="2023-01-01" class="fixed-width"/></label>
+                    <label> até o dia <input id="data_final" max="2023-12-31" min="2023-01-01" type="date" value="2023-12-31" class="fixed-width"/></label>
+                    <label> do <select id="unidade" class="fixed-width"> </select></label>
+                    <button onclick="filtra()">Filtrar</button>
+                    <div id="x" v="false"></div>
+                </div>
+            </div>
+            <div></div>
+        </div>
+        <div style="display: flex;justify-content: space-between; padding: 0;">
+            <div></div>
+            <div>
+                <hr>
+                <table>
+                    <tbody id="solicitacoes">
+                    </tbody>
+                </table>
+            </div>
+            <div></div>
+        </div>
+
+    </body>
+    <script src="js/solicitacoes_agendadas.js"></script>
+    <script src="assets/js/logout.js"></script>
+    <script>
+        let codProfissional = 0;
+        (async function (){
+        if (localStorage.getItem('override:codProfissional')) {
+            const {data,error} = await supabase.from('dadosprofissionais').select("*").eq('codprofissional', localStorage.getItem("override:codProfissional"));
+            document.getElementById("nome").innerText = data[0].nome;
+            codProfissional = data[0].codprofissional;
+        } else {
+            const {data,error} = await window.supabase.from('dadosprofissionais').select("*").eq('cpf', localStorage.getItem("profissional"));
+            document.getElementById("nome").innerText = data[0].nome;
+            codProfissional = data[0].codprofissional;
+        }
+        })();
+    </script>
+      <script>
+
+
+
+        filtra = () => {
+            const data_inicial = parseInt(document.getElementById('data_inicial').value.replaceAll('-',''));
+            const data_final = parseInt(document.getElementById('data_final').value.replaceAll('-',''));
+
+            document.getElementById("solicitacoes").innerHTML = `
+              <tr>
+                <th>Nº Solititação</th>
+                <th>Prontuário</th>
+                <th>Nome do paciente</th>
+                <th class='left'>Especialidade</th>
+                <th class='left'>Data</th>
+                <th class='left'>Hora</th>
+                <th class='left'>Contato</th>
+                <th class='left'>Local</th>
+                <th class='left'></th>
+            </tr>`;
+
+
+
+            let unidade = document.getElementById("unidade").value;
+            let unidades = [];
+            let endereco = "";
+
+
+            let HTML = "";
+            document.getElementById("total").textContent = 0;
+
+            for (var i = 0; i < Solicitacoes_Agendadas.length; i++) {
+                const solicitacao = Solicitacoes_Agendadas[i];
+                const data_solicitacao = parseInt(solicitacao[7]);
+
+                if (data_solicitacao>data_final||data_solicitacao<data_inicial) continue;
+
+                let equipe = solicitacao[1].split(";")[0];
+
+                if (document.getElementById("unidade").value != "-" && document.getElementById("unidade").value != equipe) {
+                    continue;
+                }
+
+                HTML += `
+                    <tr>
+                        <td><a href="https://www.taiobeiras-mg.vivver.com/amb/solicitacao/solicitacao_procedimento_servico/${solicitacao[0]}" target="_blank">${solicitacao[0]}</a></td>
+                        <td>${solicitacao[1].split(";")[1]}</td>
+                        <td class="left">${solicitacao[2]}</td>
+                        <td class="left">${solicitacao[5]}</td>
+                        <td>${solicitacao[3]}</td>
+                        <td>${solicitacao[4]}</td>
+                        <td class="left">${solicitacao[6]}</td>
+                        <td class="left">${solicitacao[8]}</td>
+                        <td><a href="https://www.taiobeiras-mg.vivver.com/fwk/imprimir_relatorio?objeto=amb%2Fsolicitacao%2Fsolicitacao_procedimento_servico_controller.btn_imprimir_hidden&data%5Bamb_solicitacao_procedimento_servico_id%5D=${solicitacao[0]}&multiple=&multiple_params=" target="_blank">🖨️</a></td>
+                    </tr>
+                `;
+                document.getElementById("total").textContent = parseInt(document.getElementById("total").textContent)+1;
+            }
+
+            document.getElementById("solicitacoes").innerHTML += HTML;
+            
+        }
+
+        document.getElementById("data_inicial").value=(new Date()).getFullYear()+"-01-01";
+        document.getElementById("data_final").value=(new Date()).getFullYear()+"-12-31";
+
+        document.getElementById("data_inicial").min=((new Date()).getFullYear()-1)+"-01-01";
+        document.getElementById("data_inicial").max=((new Date()).getFullYear()+1)+"-12-31";
+
+        (async function () {
+            let { data: equipes, error } = await supabase.from('equipes').select('*');
+            let listaEquipes = [];
+            for (let equipe of equipes) {
+                for (profissional of [...equipe.profissionais.split(",")]) {
+                    if (profissional.split(":")[1] == codProfissional) {
+                        if (listaEquipes[equipe.nome] == undefined) {
+                            listaEquipes[equipe.nome] = true;
+                            listaEquipes.push(equipe.nome);
+                        }
+                    }
+                }
+            }
+
+            listaEquipes.sort();
+
+            for (let equipe of listaEquipes) {
+                document.getElementById("unidade").innerHTML += `<option value="${equipe}">${equipe}</option>`;
+            }
+
+            filtra();
+        })();
+    </script></html>

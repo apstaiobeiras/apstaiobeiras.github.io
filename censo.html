@@ -1,0 +1,583 @@
+<!doctype html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="utf8" />
+    <title>Perfil do profissional</title>
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <style>
+      /* Estilo da barra de navegação */
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333; /* Cor de fundo da barra de navegação */
+        color: #fff; /* Cor do texto da barra de navegação */
+        padding: 10px 0;
+        z-index: 1;
+      }
+
+      .navbar a {
+        color: #fff;
+        text-decoration: none;
+        padding: 15px;
+      }
+
+      /* Adicione margem ao corpo para evitar que o conteúdo fique oculto sob a barra de navegação */
+      body {
+        margin-top: 60px; 
+      }
+
+      .header {
+        background-color: #f6f8fa !important;
+      }
+
+      .border {
+        border: 1px solid #dfe2e5 !important;
+      }
+      .no-border * {
+        border: 0px !important;
+      }
+
+      tr {
+        background-color: transparent !important;
+      }
+
+        .right {
+            text-align: right;
+        }
+
+        .neutro {
+            background: #DFE2E5;
+        }
+
+        .ruim {
+            background: #ea9999!important;
+        }
+
+        .razoavel {
+            background: #f7cca0!important;
+        }
+
+        .proximo {
+            background: #b6d7a8!important;
+        }
+
+        .atingiu {
+            background: #9fc5e8!important;
+        }
+    </style>
+    <meta content="lua-wpp" name="generator" />
+    <meta content="width=device-width,initial-scale=1.0" name="viewport" />
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script  src="assets/js/config.js"></script>
+  </head>
+  <body>
+    <div class="navbar" style="display: flex;justify-content: space-between; padding: 0;">
+      <a href="profissional.html"><span>Inicio</span></a>
+      <a>População de Taiobeiras</a>
+      <a href="#" onclick="logout()"> Fazer logout</a>
+    </div>
+
+    <h3><br /></h3>
+
+    <div class="no-print" style="display: flex;justify-content: space-between; padding: 0;">
+      <div></div>
+      <div style="max-width: 1012px">
+        <h1>Informativo</h1>
+        <p>Nessa Ferramenta é possível obter o quantitativo de pacientes vinculados as unidades baseado nos cadastros informados no Vivver</p>
+
+        <fieldset>
+          <legend style="font-size: 14px;">Agrupar por:</legend>
+          <label><input type="checkbox" id="agrupar_acs">&ensp;Agente Comunitário de Saúde</label><br>
+          <label><input type="checkbox" id="agrupar_esf" checked>&ensp;Equipe</label><br>
+          <label><input type="checkbox" id="agrupar_uaps">&ensp;Unidade</label><br>
+          <label><input type="checkbox" id="agrupar_bairro">&ensp;Bairro</label><br>
+        </fieldset>
+        <fieldset>
+          <legend style="font-size: 14px;">Faixa de idade:</legend>
+          <label>De&ensp;<input type="number" style="max-width: 72px;" id="idade_min"></label>
+          <label>até&ensp;<input type="number" style="max-width: 72px;" id="idade_max">&ensp;anos</label><br>
+        </fieldset>
+        <fieldset>
+          <legend style="font-size: 14px;">Condicionantes:</legend>
+          <label><input type="checkbox" id="indgestante">&ensp;Gestantes</label><br>
+          <label><input type="checkbox" id="indfumante">&ensp;Fumantes</label><br>
+          <label><input type="checkbox" id="inddependentealcool">&ensp;Dependente de alcool</label><br>
+          <label><input type="checkbox" id="inddependentedrogras">&ensp;Dependente de drogas</label><br>
+          <label><input type="checkbox" id="indhipertensaoarterial">&ensp;Hipertensos</label><br>
+          <label><input type="checkbox" id="inddiabetes">&ensp;Diabeticos</label><br>
+          <label><input type="checkbox" id="indacamado">&ensp;Acamado</label><br>
+          <label><input type="checkbox" id="inddomiciliado">&ensp;Domiciliado</label><br>
+          <label><input type="checkbox" id="inddeficiencias">&ensp;Possui deficiência</label><br>
+        </fieldset>
+        <fieldset>
+          <legend style="font-size: 14px;">Limitar a:</legend>
+          <label>Agente Comunitário de Saúde&ensp;<select class="fixed-width" id="filtro_acs"></select><br></label><br>
+          <label>Equipe&ensp;<select class="fixed-width" id="filtro_esf"></select><br></label><br>
+          <label>Unidade&ensp;<select class="fixed-width" id="filtro_uaps"></select><br></label><br>
+          <label>Bairro&ensp;<select class="fixed-width" id="filtro_bairro"></select><br></label><br>
+        </fieldset>
+        <fieldset>
+          <legend style="font-size: 14px;">Apresentação de resultados:</legend>
+          <label><input type="checkbox" id="dividirtabelas" checked>&ensp;Dividir tabelas</label><br>
+          <label><input type="checkbox" id="ocultarzerados" checked>&ensp;Ocultar zerados</label><br>
+        </fieldset>
+        <button onclick="gerarRelatorio()">Gerar relatório</button>
+        <div></div>
+        <br>
+      </div>
+      <h3><br /></h3>
+      <h3><br /></h3>
+      <hr>
+    </div>
+
+    <hr>
+    <div id="relatorio">
+      <p id="texto">Emitido em <span id="data_atualizacoes">___/____/________</span>, baseado no cadastros mantidos pelos agente comunitários de saúde, são contabilizado(s) paciente(s) dos seguinte(s) grupo(s):
+      <span id="listaCriterios"></span>, <span id="blocoIdade"></span>:</p>
+      <table>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <h3><br /></h3>
+
+    <script src="assets/js/logout.js"></script>
+    <script src="js/listas-codigo2nome.js"></script>
+    <script src="js/Cadastros.js"></script>
+    <script src="js/CadastrosChaves.js"></script>
+    <script>
+      let opcoes = "<option>Todos</option>";
+      for (let nome of (Object.keys(uaps))) {
+        if (isNaN(parseInt(nome)) == false) continue;
+        opcoes += `<option value="${uaps[nome]}">${nome}</option>`;
+      }
+      filtro_uaps.innerHTML = opcoes;
+
+      opcoes = "<option>Todos</option>";
+      for (let nome of (Object.keys(esf))) {
+        if (isNaN(parseInt(nome)) == false) continue;
+        opcoes += `<option value="${esf[nome]}">${nome}</option>`;
+      }
+      filtro_esf.innerHTML = opcoes;
+
+      opcoes = "<option>Todos</option>";
+      for (let nome of (Object.keys(acs))) {
+        if (isNaN(parseInt(nome)) == false) continue;
+        opcoes += `<option value="${acs[nome]}">${nome}</option>`;
+      }
+      filtro_acs.innerHTML = opcoes;
+
+      opcoes = "<option>Todos</option>";
+      for (let nome of (Object.keys(bairro))) {
+        if (isNaN(parseInt(nome)) == false) continue;
+        opcoes += `<option value="${bairro[nome]}">${nome}</option>`;
+      }
+      filtro_bairro.innerHTML = opcoes;
+
+      function gerarRelatorio() {
+        texto.innerHTML = `Emitido em <span id="data_atualizacoes">___/____/________</span>, baseado no cadastros mantidos pelos agente comunitários de saúde, são contabilizado(s) paciente(s) dos seguinte(s) grupo(s):
+      <span id="listaCriterios"></span>, <span id="blocoIdade"></span>`;
+
+        data_atualizacoes.innerText = (new Date()).toLocaleDateString('pt-BR', {year:"numeric", month:"numeric", day:"numeric"}) ;
+
+        let criterios = [];
+        if (indgestante.checked) criterios.push("mulheres gestantes");
+        if (indfumante.checked) criterios.push("fumantes");
+        if (inddependentealcool.checked) criterios.push("dependentes de alcool");
+        if (inddependentedrogras.checked) criterios.push("dependentes de drogas");
+        if (indhipertensaoarterial.checked) criterios.push("com hipertensão arterial");
+        if (inddiabetes.checked) criterios.push("com algum tipo de diabetes");
+        if (indacamado.checked) criterios.push("acamados");
+        if (inddomiciliado.checked) criterios.push("domiciliados");
+        if (inddeficiencias.checked) criterios.push("que possui algum tipo de deficiência");
+
+        if (criterios.length > 1) {
+          criterios.splice(criterios.length - 1, 0, "e");
+        }
+       
+        listaCriterios.innerHTML = criterios.join(", ").replace(", e, "," e ");
+
+        if (!isNaN(parseInt(idade_min.value)))  {
+          blocoIdade.innerText = "com idade mínima de "+idade_min.value+" anos"
+        }
+
+        if (!isNaN(parseInt(idade_max.value)))  {
+          if (blocoIdade.innerText != "") {
+            blocoIdade.innerText += " e máxima de "+idade_max.value+" anos";
+          } else {
+            blocoIdade.innerText += "com idade máxima de "+idade_max.value+" anos"
+          }
+        }
+
+        let coletor = {};
+
+        for (let nome of (Object.keys(acs))) {
+            if (!isNaN(parseInt(nome))) continue;
+            coletor[nome] = {
+              Zona_urbana : 0,
+              Zona_rural : 0,
+              Sexo_masculino : 0,
+              Sexo_feminino : 0,
+              Total : 0,
+            }
+        }
+
+        for (let nome of (Object.keys(esf))) {
+            if (!isNaN(parseInt(nome))) continue;
+            coletor[nome] = {
+              Zona_urbana : 0,
+              Zona_rural : 0,
+              Sexo_masculino : 0,
+              Sexo_feminino : 0,
+              Total : 0,
+            }
+        }
+
+        for (let nome of (Object.keys(uaps))) {
+            if (!isNaN(parseInt(nome))) continue;
+            coletor[nome] = {
+              Zona_urbana : 0,
+              Zona_rural : 0,
+              Sexo_masculino : 0,
+              Sexo_feminino : 0,
+              Total : 0,
+            }
+        }
+
+        for (let nome of (Object.keys(bairro))) {
+            if (!isNaN(parseInt(nome))) continue;
+            coletor[nome] = {
+              Zona_urbana : 0,
+              Zona_rural : 0,
+              Sexo_masculino : 0,
+              Sexo_feminino : 0,
+              Total : 0,
+            }
+        }
+
+        for (let cadastro of Cadastros) {
+          let nomeACS = acs[cadastro[k.acs]];
+          let nomeUAPS = uaps[cadastro[k.uaps]];
+          let nomeESF = esf[cadastro[k.esf]];
+          let nomeBairro = bairro[cadastro[k.bairro]];
+
+          if (!isNaN(parseInt(idade_min.value)) && cadastro[k.idade] < parseInt(idade_min.value)) continue;
+          if (!isNaN(parseInt(idade_max.value)) && cadastro[k.idade] > parseInt(idade_max.value)) continue;
+
+          if (filtro_acs.value    != "Todos" && cadastro[k.acs]    != filtro_acs.value)    continue;
+          if (filtro_esf.value    != "Todos" && cadastro[k.esf]    != filtro_esf.value)    continue;
+          if (filtro_bairro.value != "Todos" && cadastro[k.bairro] != filtro_bairro.value) continue;
+          if (filtro_uaps.value   != "Todos" && cadastro[k.uaps]   != filtro_uaps.value)   continue;
+
+          if (indgestante.checked            && cadastro[k.indgestante]            != 1) continue;
+          if (indfumante.checked             && cadastro[k.indfumante]             != 1) continue;
+          if (inddependentealcool.checked    && cadastro[k.inddependentealcool]    != 1) continue;
+          if (inddependentedrogras.checked   && cadastro[k.inddependentedrogras]   != 1) continue;
+          if (indhipertensaoarterial.checked && cadastro[k.indhipertensaoarterial] != 1) continue;
+          if (inddiabetes.checked            && cadastro[k.inddiabetes]            != 1) continue;
+          if (indacamado.checked             && cadastro[k.indacamado]             != 1) continue;
+          if (inddomiciliado.checked         && cadastro[k.inddomiciliado]         != 1) continue;
+          if (inddeficiencias.checked        && cadastro[k.inddeficiencias]        != 1) continue;
+
+          if (cadastro[k.zona_rural] == 0) {
+            coletor[nomeACS].Zona_urbana+=1;
+            coletor[nomeUAPS].Zona_urbana+=1;
+            coletor[nomeESF].Zona_urbana+=1;
+            coletor[nomeBairro].Zona_urbana+=1;
+          }
+
+          if (cadastro[k.zona_rural] == 1) {
+            coletor[nomeACS].Zona_rural+=1;
+            coletor[nomeUAPS].Zona_rural+=1;
+            coletor[nomeESF].Zona_rural+=1;
+            coletor[nomeBairro].Zona_rural+=1;
+          }
+
+          if (cadastro[k.sexo] == 0) {
+            coletor[nomeACS].Sexo_feminino+=1;
+            coletor[nomeUAPS].Sexo_feminino+=1;
+            coletor[nomeESF].Sexo_feminino+=1;
+            coletor[nomeBairro].Sexo_feminino+=1;
+          }
+
+          if (cadastro[k.sexo] == 1) {
+            coletor[nomeACS].Sexo_masculino+=1;
+            coletor[nomeUAPS].Sexo_masculino+=1;
+            coletor[nomeESF].Sexo_masculino+=1;
+            coletor[nomeBairro].Sexo_masculino+=1;
+          }
+
+          coletor[nomeACS].Total+=1;
+          coletor[nomeUAPS].Total+=1;
+          coletor[nomeESF].Total+=1;
+          coletor[nomeBairro].Total+=1;
+        }
+
+        let html = "";
+        document.getElementsByTagName("tbody")[0].innerHTML = html;
+
+        const header = `
+              <tr>
+                <th></th>
+                <th>Zona urbana</th>
+                <th>Zona rural</th>
+                <th>Masc.</th>
+                <th>Fem.</th>
+                <th>Total</th>
+              </tr>
+        `;
+
+        var totalZonaUrbana = 0;
+        var totalZonaRural = 0;
+        var totalMasculino = 0;
+        var totalFeminino = 0;
+        var totalGeral = 0;
+
+        /*----------------------------------------------------------------------------------------------*/
+        if (agrupar_acs.checked) {
+          for (let nome of (Object.keys(acs))) {
+            if (!isNaN(parseInt(nome))) continue;
+            html += `
+              <tr class="acs total-${coletor[nome].Total}">
+                <td>${nome}</td>
+                <td style="text-align: right;">${coletor[nome].Zona_urbana}</td>
+                <td style="text-align: right;">${coletor[nome].Zona_rural}</td>
+                <td style="text-align: right;">${coletor[nome].Sexo_masculino}</td>
+                <td style="text-align: right;">${coletor[nome].Sexo_feminino}</td>
+                <td style="text-align: right;">${coletor[nome].Total}</td>
+              </tr>
+            `;
+
+            totalZonaUrbana += coletor[nome].Zona_urbana;
+            totalZonaRural += coletor[nome].Zona_rural;
+            totalMasculino += coletor[nome].Sexo_masculino;
+            totalFeminino += coletor[nome].Sexo_feminino;
+            totalGeral += coletor[nome].Total;
+          }
+          if (dividirtabelas.checked) {
+            document.getElementsByTagName("tbody")[0].innerHTML += `
+              <tr class="header acs"><th colspan=10>Agentes Comunitários de Saúde</th></tr>
+            `;
+          }
+          document.getElementsByTagName("tbody")[0].innerHTML += header;
+          if (dividirtabelas.checked) {
+            html += `
+              <tr class="">
+                <td><b>Total</b></td>
+                <td style="text-align: right;">${totalZonaUrbana}</td>
+                <td style="text-align: right;">${totalZonaRural}</td>
+                <td style="text-align: right;">${totalMasculino}</td>
+                <td style="text-align: right;">${totalFeminino}</td>
+                <td style="text-align: right;">${totalGeral}</td>
+              </tr>
+            `;
+
+            totalZonaUrbana = 0;
+            totalZonaRural = 0;
+            totalMasculino = 0;
+            totalFeminino = 0;
+            totalGeral = 0;
+          }
+          document.getElementsByTagName("tbody")[0].innerHTML += html;
+
+          if (dividirtabelas.checked) {
+            html = "";
+          }
+
+          if (ocultarzerados.checked) {
+            for (let elemento of [...document.getElementsByClassName("total-0")]) {
+              elemento.remove();
+            }
+          }
+        }
+
+        /*----------------------------------------------------------------------------------------------*/
+        if (agrupar_esf.checked) {
+          document.getElementsByTagName("tbody")[0].innerHTML += `
+            <tr style="border:0!important" ><th style="border:0!important" colspan=10>&emsp;</th></tr>
+          `;
+          for (let nome of (Object.keys(esf))) {
+            if (!isNaN(parseInt(nome))) continue;
+            html += `
+              <tr class="esf total-${coletor[nome].Total}">
+                <td>${nome}</td>
+                <td style="text-align: right;">${coletor[nome].Zona_urbana}</td>
+                <td style="text-align: right;">${coletor[nome].Zona_rural}</td>
+                <td style="text-align: right;">${coletor[nome].Sexo_masculino}</td>
+                <td style="text-align: right;">${coletor[nome].Sexo_feminino}</td>
+                <td style="text-align: right;">${coletor[nome].Total}</td>
+              </tr>
+            `;
+
+            totalZonaUrbana += coletor[nome].Zona_urbana;
+            totalZonaRural += coletor[nome].Zona_rural;
+            totalMasculino += coletor[nome].Sexo_masculino;
+            totalFeminino += coletor[nome].Sexo_feminino;
+            totalGeral += coletor[nome].Total;
+          }
+          if (dividirtabelas.checked) {
+            document.getElementsByTagName("tbody")[0].innerHTML += `
+              <tr class="header acs"><th colspan=10>Equipes de Saúde da Família</th></tr>
+            `;
+          }
+          document.getElementsByTagName("tbody")[0].innerHTML += header;
+          if (dividirtabelas.checked) {
+            html += `
+              <tr class="">
+                <td><b>Total</b></td>
+                <td style="text-align: right;">${totalZonaUrbana}</td>
+                <td style="text-align: right;">${totalZonaRural}</td>
+                <td style="text-align: right;">${totalMasculino}</td>
+                <td style="text-align: right;">${totalFeminino}</td>
+                <td style="text-align: right;">${totalGeral}</td>
+              </tr>
+            `;
+
+            totalZonaUrbana = 0;
+            totalZonaRural = 0;
+            totalMasculino = 0;
+            totalFeminino = 0;
+            totalGeral = 0;
+          }
+          document.getElementsByTagName("tbody")[0].innerHTML += html;
+
+          if (dividirtabelas.checked) {
+            html = "";
+          }
+
+          if (ocultarzerados.checked) {
+            for (let elemento of [...document.getElementsByClassName("total-0")]) {
+              elemento.remove();
+            }
+          }
+        }
+
+        /*----------------------------------------------------------------------------------------------*/
+        if (agrupar_uaps.checked) {
+          document.getElementsByTagName("tbody")[0].innerHTML += `
+            <tr style="border:0!important" ><th style="border:0!important" colspan=10>&emsp;</th></tr>
+          `;
+          for (let nome of (Object.keys(uaps))) {
+            if (!isNaN(parseInt(nome))) continue;
+            html += `
+              <tr class="esf total-${coletor[nome].Total}">
+                <td>${nome}</td>
+                <td style="text-align: right;">${coletor[nome].Zona_urbana}</td>
+                <td style="text-align: right;">${coletor[nome].Zona_rural}</td>
+                <td style="text-align: right;">${coletor[nome].Sexo_masculino}</td>
+                <td style="text-align: right;">${coletor[nome].Sexo_feminino}</td>
+                <td style="text-align: right;">${coletor[nome].Total}</td>
+              </tr>
+            `;
+
+            totalZonaUrbana += coletor[nome].Zona_urbana;
+            totalZonaRural += coletor[nome].Zona_rural;
+            totalMasculino += coletor[nome].Sexo_masculino;
+            totalFeminino += coletor[nome].Sexo_feminino;
+            totalGeral += coletor[nome].Total;
+          }
+          if (dividirtabelas.checked) {
+            document.getElementsByTagName("tbody")[0].innerHTML += `
+              <tr class="header acs"><th colspan=10>Unidades de Atenção Primária a Saúde</th></tr>
+            `;
+          }
+          document.getElementsByTagName("tbody")[0].innerHTML += header;
+          if (dividirtabelas.checked) {
+            html += `
+              <tr class="">
+                <td><b>Total</b></td>
+                <td style="text-align: right;">${totalZonaUrbana}</td>
+                <td style="text-align: right;">${totalZonaRural}</td>
+                <td style="text-align: right;">${totalMasculino}</td>
+                <td style="text-align: right;">${totalFeminino}</td>
+                <td style="text-align: right;">${totalGeral}</td>
+              </tr>
+            `;
+
+            totalZonaUrbana = 0;
+            totalZonaRural = 0;
+            totalMasculino = 0;
+            totalFeminino = 0;
+            totalGeral = 0;
+          }
+          document.getElementsByTagName("tbody")[0].innerHTML += html;
+
+          if (dividirtabelas.checked) {
+            html = "";
+          }
+
+          if (ocultarzerados.checked) {
+            for (let elemento of [...document.getElementsByClassName("total-0")]) {
+              elemento.remove();
+            }
+          }
+        }
+
+        /*----------------------------------------------------------------------------------------------*/
+        if (agrupar_bairro.checked) {
+          document.getElementsByTagName("tbody")[0].innerHTML += `
+            <tr style="border:0!important" ><th style="border:0!important" colspan=10>&emsp;</th></tr>
+          `;
+          for (let nome of (Object.keys(bairro))) {
+            if (!isNaN(parseInt(nome))) continue;
+            html += `
+              <tr class="esf total-${coletor[nome].Total}">
+                <td>${nome}</td>
+                <td style="text-align: right;">${coletor[nome].Zona_urbana}</td>
+                <td style="text-align: right;">${coletor[nome].Zona_rural}</td>
+                <td style="text-align: right;">${coletor[nome].Sexo_masculino}</td>
+                <td style="text-align: right;">${coletor[nome].Sexo_feminino}</td>
+                <td style="text-align: right;">${coletor[nome].Total}</td>
+              </tr>
+            `;
+
+            totalZonaUrbana += coletor[nome].Zona_urbana;
+            totalZonaRural += coletor[nome].Zona_rural;
+            totalMasculino += coletor[nome].Sexo_masculino;
+            totalFeminino += coletor[nome].Sexo_feminino;
+            totalGeral += coletor[nome].Total;
+          }
+          if (dividirtabelas.checked) {
+            document.getElementsByTagName("tbody")[0].innerHTML += `
+              <tr class="header acs"><th colspan=10>Unidades de Atenção Primária a Saúde</th></tr>
+            `;
+          }
+          document.getElementsByTagName("tbody")[0].innerHTML += header;
+          if (dividirtabelas.checked) {
+            html += `
+              <tr class="">
+                <td><b>Total</b></td>
+                <td style="text-align: right;">${totalZonaUrbana}</td>
+                <td style="text-align: right;">${totalZonaRural}</td>
+                <td style="text-align: right;">${totalMasculino}</td>
+                <td style="text-align: right;">${totalFeminino}</td>
+                <td style="text-align: right;">${totalGeral}</td>
+              </tr>
+            `;
+
+            totalZonaUrbana = 0;
+            totalZonaRural = 0;
+            totalMasculino = 0;
+            totalFeminino = 0;
+            totalGeral = 0;
+          }
+          document.getElementsByTagName("tbody")[0].innerHTML += html;
+
+          if (dividirtabelas.checked) {
+            html = "";
+          }
+
+          if (ocultarzerados.checked) {
+            for (let elemento of [...document.getElementsByClassName("total-0")]) {
+              elemento.remove();
+            }
+          }
+        }
+    }
+
+      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html><html lang="pt_BR"><head><meta charset="utf8"/><title>Solicitações Excluidas</title><style>        /* Estilo da barra de navegação */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333; /* Cor de fundo da barra de navegação */
+            color: #fff; /* Cor do texto da barra de navegação */
+            padding: 10px 0;
+            cursor: pointer!important;
+        }
+        
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+        }
+        
+        /* Adicione margem ao corpo para evitar que o conteúdo fique oculto sob a barra de navegação */
+        body {
+            margin-top: 60px; /* Ajuste conforme necessário com base na altura da sua barra de navegação */
+        }
+
+        td { 
+            text-align: right;
+        }
+
+        .left { 
+            text-align: left;
+        }
+      </style>
+      <meta content="lua-wpp" name="generator"/>
+      <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+      <link href="assets/css/style.css" rel="stylesheet"/>
+      <script  src="https://unpkg.com/@supabase/supabase-js@2"></script>
+      <script  src="assets/js/config.js"></script>
+    </head>
+    <body class="container-lg px-3 my-5 markdown-body">
+        <div class="navbar" style="display: flex;justify-content: space-between; padding: 0;">
+            <a href="profissional.html"><span>Inicio</span></a>
+            <a>Solicitações excluídas - <span id="nome"></span></a>
+            <a href="#" onclick="logout()"> Fazer logout</a>
+        </div>
+      
+        <h3><br /></h3>
+        <h5>Atualizado em <span id="atualizacao"></span>, filtradas: <span id="total">0</span></h5>
+        <div>
+            <label>Do dia: <input id="data_inicial" max="2023-12-31" min="2023-01-01" type="date" value="2023-01-01" class="fixed-width"/></label>
+            <label> até o dia <input id="data_final" max="2023-12-31" min="2023-01-01" type="date" value="2023-12-31" class="fixed-width"/></label>
+            <br><br>
+            <span id="feitas-por">Feitas por </span><select id="lista-profissional" class="fixed-width"></select>
+            <button onclick="filtra()">Filtrar</button>
+            <div id="x" v="false"></div>
+        </div>
+        <hr>
+
+        <table>
+            <tbody id="solicitacoes">
+            </tbody>
+        </table>
+        <br/>
+    </body>
+    <script src="js/solicitacoes_excluidas.js"></script>
+    <script src="assets/js/logout.js"></script>
+      <script>
+
+        filtra = () => {
+            const data_inicial = parseInt(document.getElementById('data_inicial').value.replaceAll('-',''));
+            const data_final = parseInt(document.getElementById('data_final').value.replaceAll('-',''));
+
+            document.getElementById("solicitacoes").innerHTML = "<tr><th>Nº Solititação</th><th>Prontuário</th><th>Procedimento</th><th class='left'>Motivo/Observação</th></tr>";
+            //document.getElementById("solicitacoes").innerHTML = "<tr><th>Nº Solititação</th><th>Procedimento</th><th class='left'>Motivo</th><th class='left'>Observação</th></tr>";
+    
+            let profissional = document.getElementById("lista-profissional").value;
+            document.getElementById("total").textContent = 0;
+
+            for (var i = 0; i < SolicitacoesExcluidas.length; i++) {
+                const solicitacao = SolicitacoesExcluidas[i];
+                const data_solicitacao = parseInt(solicitacao[5]);
+    
+                if (data_solicitacao>data_final||data_solicitacao<data_inicial) continue;
+
+                if (profissional != "" && solicitacao[1] != profissional) continue;
+
+
+                const linha = document.createElement("tr");
+    
+                const no_solicitacao = document.createElement("td");
+                const prontuario = document.createElement("td");
+                const procedimento = document.createElement("td");
+                //const motivo = document.createElement("td");
+                const observacao = document.createElement("td");
+
+                no_solicitacao.innerHTML = `<a href="https://www.taiobeiras-mg.vivver.com/amb/solicitacao/solicitacao_procedimento_servico/${solicitacao[0]}?workMode=wmEdit&oldWorkMode=wmSearchResult" target="_blank">${solicitacao[0]}</a>`;
+                prontuario.innerHTML = `${solicitacao[2]}`;
+                observacao.innerHTML = `${solicitacao[4]}`;
+                //motivo.innerHTML = `${solicitacao[4].split("<br>")[0].replace("<b>","").replace(": </b>","")}`;
+                //motivo.classList = "left";
+
+                //observacao.innerHTML = `${solicitacao[4].split("<br>")[1] || ""}`;
+                observacao.classList = "left";
+
+                procedimento.innerHTML = `${solicitacao[6]}`;
+                procedimento.classList = "left";
+    
+                linha.appendChild(no_solicitacao);
+                linha.appendChild(prontuario);
+                linha.appendChild(procedimento);
+                //linha.appendChild(motivo);
+                linha.appendChild(observacao);
+    
+                document.getElementById("solicitacoes").appendChild(linha);
+                document.getElementById("total").textContent = parseInt(document.getElementById("total").textContent)+1;
+            }
+        }
+
+        document.getElementById("data_inicial").value=(new Date()).getFullYear()+"-01-01";
+        document.getElementById("data_final").value=(new Date()).getFullYear()+"-12-31";
+
+        document.getElementById("data_inicial").min=((new Date()).getFullYear()-1)+"-01-01";
+        document.getElementById("data_inicial").max=((new Date()).getFullYear()+1)+"-12-31";
+
+        let profissionais = Profissionais.filter((profissional) => {
+            if (profissional.split(":")[1] == "0") return false;
+            if (profissional.split(":")[1] == "807") return false;
+            if (profissional.split(":")[1] == "770") return false;
+            if (profissional.split(":")[1] == "90707011") return false;
+            if (profissional.split(":")[1] == "1") return false;
+            return true;
+        }).sort((a,b) => {
+            return b.split(":")[0].normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim() > a.split(":")[0].normalize("NFD").replace(/[\u0300-\u036f]/g, "").trim() ? -1 : 1;
+        });
+
+        let seletorProfissionais = "";
+        for (let profissional of profissionais) {
+            let cod = profissional.split(":")[1];
+            let nome = profissional.split(":")[0];
+            seletorProfissionais += `<option value="${cod}">${nome}</option>\n`
+        }
+
+        data_final.max = (new Date).getFullYear()+"-12-31";
+
+        (async () => {
+            let codProfissional = 0;
+            if (localStorage.getItem('override:codProfissional')) {
+                const {data,error} = await supabase.from('dadosprofissionais').select("*").eq('codprofissional', localStorage.getItem("override:codProfissional"));
+                document.getElementById("nome").innerText = data[0].nome;
+                codProfissional = data[0].codprofissional;
+            } else {
+                const {data,error} = await window.supabase.from('dadosprofissionais').select("*").eq('cpf', localStorage.getItem("profissional"));
+                document.getElementById("nome").innerText = data[0].nome;
+                codProfissional = data[0].codprofissional;
+            }
+
+            document.getElementById("lista-profissional").innerHTML = seletorProfissionais;
+            document.getElementById("lista-profissional").value = codProfissional;
+
+            filtra();
+        })();
+
+    </script></html>

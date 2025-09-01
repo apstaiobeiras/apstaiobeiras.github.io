@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="utf8" />
+    <title>Editor de equipes</title>
+    <style>
+      /* Estilo da barra de navegação */
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333; /* Cor de fundo da barra de navegação */
+        color: #fff; /* Cor do texto da barra de navegação */
+        padding: 10px 0;
+      }
+
+      .navbar a {
+        color: #fff;
+        text-decoration: none;
+        padding: 15px;
+      }
+
+    </style>
+    <meta content="lua-wpp" name="generator" />
+    <meta content="width=device-width,initial-scale=1.0" name="viewport" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <script  src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script  src="assets/js/config.js"></script>
+  </head>
+  <body class="container-lg px-3 my-5 markdown-body">
+    <div class="navbar" style="display: flex;justify-content: space-between; padding: 0;">
+      <a href="profissional.html"><span>Inicio</span></a>
+      <a>Editor de equipes - Atenção primária</a>
+      <a href="#" onclick="logout()"> Fazer logout</a>
+    </div>
+
+    <h3><br /></h3>
+
+    <dialog style="max-width: 800px;" id="equipe">
+      <datalist id="lista-profissionais">
+      </datalist>
+      <table class="table-dialog" style="border: 0px !important;">
+        <tr>
+          <th colspan="2" style="border: 0px !important;"> Dados da Equipe </th>
+        </tr>
+        <tr><td>&nbsp;</td></tr>
+        <tr>
+          <td style="min-width: 300px;">Nome:</td>
+          <td><input id="nome_equipe_vivver"></td>
+        </tr>
+        <tr>
+          <td style="min-width: 300px;">Cirurgião-dentista:</td>
+          <td>
+            <input type="number" class="fixed-width" style="max-width:25%" onchange="
+              let td = event.target.closest('td');
+              td.children[1].value = event.target.value;
+            ">
+            <select class="fixed-width" onchange="
+              let td = event.target.closest('td');
+              td.children[0].value = event.target.value;
+            "  style="width: 70%;" id="cirurgiao_dentista"></select></td>
+        </tr>
+        <tr>
+          <td>Enfermeiro:</td>
+          <td>
+            <input type="number" class="fixed-width" style="max-width:25%" onchange="
+              let td = event.target.closest('td');
+              td.children[1].value = event.target.value;
+            ">
+            <select class="fixed-width" onchange="
+              let td = event.target.closest('td');
+              td.children[0].value = event.target.value;
+            "  style="width: 70%;" id="enfermeiro"><option value="">-</option></select></td>
+        </tr>
+        <tr>
+          <td>Enfermeiro saúde na hora:</td>
+          <td>
+            <input type="number" class="fixed-width" style="max-width:25%" onchange="
+              let td = event.target.closest('td');
+              td.children[1].value = event.target.value;
+            ">
+            <select class="fixed-width" onchange="
+              let td = event.target.closest('td');
+              td.children[0].value = event.target.value;
+            "  style="width: 70%;" id="enfermeiro_saude_na_hora"><option value="">-</option></select></td>
+        </tr>
+        <tr>
+          <td>Farmacêutico:</td>
+          <td>
+            <input type="number" class="fixed-width" style="max-width:25%" onchange="
+              let td = event.target.closest('td');
+              td.children[1].value = event.target.value;
+            ">
+            <select class="fixed-width" onchange="
+              let td = event.target.closest('td');
+              td.children[0].value = event.target.value;
+            "  style="width: 70%;" id="farmaceutico"><option value="">-</option></select></td>
+        </tr>
+        <tr>
+          <td>Médico:</td>
+          <td>
+            <input type="number" class="fixed-width" style="max-width:25%" onchange="
+              let td = event.target.closest('td');
+              td.children[1].value = event.target.value;
+            ">
+            <select class="fixed-width" onchange="
+              let td = event.target.closest('td');
+              td.children[0].value = event.target.value;
+            "  style="width: 70%;" id="medico"><option value="">-</option></select></td>
+        </tr>
+        <tr>
+          <td>Médico saúde na hora:</td>
+          <td>
+            <input type="number" class="fixed-width" style="max-width:25%" onchange="
+              let td = event.target.closest('td');
+              td.children[1].value = event.target.value;
+            ">
+            <select class="fixed-width" onchange="
+              let td = event.target.closest('td');
+              td.children[0].value = event.target.value;
+            "  style="width: 70%;" id="medico_saude_na_hora"><option value="">-</option></select></td>
+        </tr>
+        <tr>
+          <td>Psicólogo:</td>
+          <td>
+            <input type="number" class="fixed-width" style="max-width:25%" onchange="
+              let td = event.target.closest('td');
+              td.children[1].value = event.target.value;
+            ">
+            <select class="fixed-width" onchange="
+              let td = event.target.closest('td');
+              td.children[0].value = event.target.value;
+            "  style="width: 70%;" id="psicologo"><option value="">-</option></select></td>
+        </tr>
+        <tr>
+          <td>Recepcionista:</td>
+          <td>
+            <input type="number" class="fixed-width" style="max-width:25%" onchange="
+              let td = event.target.closest('td');
+              td.children[1].value = event.target.value;
+            ">
+            <select class="fixed-width" onchange="
+              let td = event.target.closest('td');
+              td.children[0].value = event.target.value;
+            "  style="width: 70%;" id="recepcionista"><option value="">-</option></select></td>
+        </tr>
+        <tr>
+          <td>Recepcionista saúde na hora:</td>
+          <td>
+            <input type="number" class="fixed-width" style="max-width:25%" onchange="
+              let td = event.target.closest('td');
+              td.children[1].value = event.target.value;
+            ">
+            <select class="fixed-width" onchange="
+              let td = event.target.closest('td');
+              td.children[0].value = event.target.value;
+            "  style="width: 70%;" id="recepcionista_saude_na_hora"><option value="">-</option></select></td>
+        </tr>
+        <tr>
+          <td>Técnico/Auxiliar de enfermagem:</td>
+          <td>
+            <input type="number" class="fixed-width" style="max-width:25%" onchange="
+              let td = event.target.closest('td');
+              td.children[1].value = event.target.value;
+            ">
+            <select class="fixed-width" onchange="
+              let td = event.target.closest('td');
+              td.children[0].value = event.target.value;
+            "  style="width: 70%;" id="tecnico_enfermagem"><option value="">-</option></select></td>
+        </tr>
+        <tr>
+          <td>Técnico/Auxiliar de enfermagem saúde na hora:</td>
+          <td>
+            <input type="number" class="fixed-width" style="max-width:25%" onchange="
+              let td = event.target.closest('td');
+              td.children[1].value = event.target.value;
+            ">
+            <select class="fixed-width" onchange="
+              let td = event.target.closest('td');
+              td.children[0].value = event.target.value;
+            "  style="width: 70%;" id="tecnico_enfermagem_saude_na_hora"><option value="">-</option></select></td>
+        </tr>
+        <tr>
+          <td>Técnico/Auxiliar de saúde bucal 1:</td>
+          <td>
+            <input type="number" class="fixed-width" style="max-width:25%" onchange="
+              let td = event.target.closest('td');
+              td.children[1].value = event.target.value;
+            ">
+            <select class="fixed-width" onchange="
+              let td = event.target.closest('td');
+              td.children[0].value = event.target.value;
+            "  style="width: 70%;" id="auxiliar_saude_bucal_1"><option value="">-</option></select></td>
+        </tr>
+        <tr>
+          <td>Técnico/Auxiliar de saúde bucal 2:</td>
+          <td>
+            <input type="number" class="fixed-width" style="max-width:25%" onchange="
+              let td = event.target.closest('td');
+              td.children[1].value = event.target.value;
+            ">
+            <select class="fixed-width" onchange="
+              let td = event.target.closest('td');
+              td.children[0].value = event.target.value;
+            "  style="width: 70%;" id="auxiliar_saude_bucal_2"><option value="">-</option></select></td>
+        </tr>
+        <tr>
+          <td>Agente de Combate a Endemias 1:</td>
+          <td>
+            <input type="number" class="fixed-width" style="max-width:25%" onchange="
+              let td = event.target.closest('td');
+              td.children[1].value = event.target.value;
+            ">
+            <select class="fixed-width" onchange="
+              let td = event.target.closest('td');
+              td.children[0].value = event.target.value;
+            "  style="width: 70%;" id="ace_1"><option value="">-</option></select></td>
+        </tr>
+        <tr>
+          <td>Agente de Combate a Endemias 2:</td>
+          <td>
+            <input type="number" class="fixed-width" style="max-width:25%" onchange="
+              let td = event.target.closest('td');
+              td.children[1].value = event.target.value;
+            ">
+            <select class="fixed-width" onchange="
+              let td = event.target.closest('td');
+              td.children[0].value = event.target.value;
+            "  style="width: 70%;" id="ace_2"><option value="">-</option></select></td>
+        </tr>
+        <tr><td>&nbsp;</td></tr>
+      </table>
+      <p align="right">
+        <button id="fechar" onclick="event.target.closest('dialog').close();">Fechar</button>&nbsp;
+        <button id="salvar" onclick="
+
+          (async function() {
+              let kvList = '';
+              for (let select of [...document.getElementsByTagName('select')]) {
+                kvList += `${select.id}:${select.value},`;
+              };
+
+              if (document.getElementById('nome_equipe_vivver').disabled) {
+                const { data, error } = await supabase.from('equipes').update([
+                  { 
+                    nome: document.getElementById('nome_equipe_vivver').value, 
+                    profissionais: kvList
+                  },
+                ]).eq('nome', document.getElementById('nome_equipe_vivver').value);
+
+                if (error) {
+                  // TODO: Informar
+                  return;
+                }
+
+                await listarEquipes();
+
+                event.target.closest('dialog').close();
+                return;
+            }
+
+            const { data, error } = await supabase.from('equipes').insert([
+              { 
+                nome: document.getElementById('nome_equipe_vivver').value, 
+                profissionais: kvList
+              },
+            ]);
+
+            if (error) {
+              // TODO: Informar
+              return;
+            }
+
+            await listarEquipes();
+
+            event.target.closest('dialog').close();
+          })();
+        ">Salvar</button>
+      </p>
+    </dialog>
+
+    <dialog id="apagar-equipe">
+      <table class="table-dialog" style="border: 0px !important;">
+        <tr>
+          <th style="border: 0px !important;"> Apagar equipe </th>
+        </tr>
+        <tr>
+          <td>
+            <br><b>Deseja realmente apagar a equipe "<span id="equipe-sendo-apagada">EQUIPE</span>"?</b><br>
+            Os profissionais não vão poder ter acesso aos relatórios<br>
+            até serem alocados em outras equipes<br><br>
+          </td>
+        </tr>
+        <tr>
+          <td align="right">
+            <button onclick="event.target.closest('dialog').close();"><b>Não apagar</b></button>
+            <button onclick="
+            (
+              async function () {
+                const { error } = await supabase.from('equipes').delete().eq('nome', document.getElementById('equipe-sendo-apagada').innerText);
+                if (error) {
+                  // TODO: Informar
+                  return;
+                }
+
+                await listarEquipes();
+
+                event.target.closest('dialog').close();
+              }
+            )();
+            ">Apagar equipe</button>
+          </td>
+        </tr>
+      </table>
+    </dialog>
+
+    <button onclick="
+      document.getElementById('nome_equipe_vivver').value = '';
+      document.getElementById('nome_equipe_vivver').disabled = false;
+      for (let select of [...document.getElementsByTagName('select')]) {
+        select.value='';
+      };
+      for (let select of [...document.getElementsByTagName('input')]) {
+        select.value='';
+      };
+      document.getElementById('equipe').showModal();
+    ">Adicionar Equipe</button>
+    <h3>&nbsp;</h3>
+    <table>
+      <tbody id="lista-equipes">
+        <tr>
+
+        </tr>
+      </tbody>
+    </table>
+
+    <h3><br /></h3>
+    <script src="assets/js/logout.js"></script>
+    <script> 
+
+      const iconeRemover = `
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/>
+          <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/>
+          <line x1="10" x2="10" y1="11" y2="17"/>
+          <line x1="14" x2="14" y1="11" y2="17"/>
+        </svg>
+      `;
+
+      const iconeEditar = `
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"/>
+        <path d="m15 5 4 4"/>
+      </svg>
+      `;
+
+      async function editar(data) {
+        for (let elemento of equipe.querySelectorAll("input")) {
+          elemento.value = "";
+        }
+
+        for (let elemento of equipe.querySelectorAll("select")) {
+          elemento.value = "-";
+        }
+
+        for (let profissional of data.replaceAll(" ","").split(",")) {
+          let tipo = profissional.split(":")[0];
+          let codigo = profissional.split(":")[1];
+
+          if (codigo == undefined) continue;
+
+          document.getElementById(tipo).value = codigo;
+          document.getElementById(tipo).dispatchEvent(new Event("change"));
+        }
+
+
+        document.getElementById('nome_equipe_vivver').disabled = true;
+
+        document.getElementById('equipe').showModal();
+      }
+
+      async function listarEquipes() {
+
+      let { data: profissionais, x } = await supabase.from('dadosprofissionais').select('*');
+      let profissionaisOrdenados = profissionais.sort((a,b) => a.nome > b.nome ? 1 : -1);
+      let listaProfissionais = `<option value="">-</option>`;
+      for (let profissional of profissionaisOrdenados) {
+            listaProfissionais += `<option value="${profissional.codprofissional}">${profissional.nome} - ${profissional.codprofissional}</option>`;
+      }
+
+      for (let select of [...document.getElementsByTagName("select")]) {
+        select.innerHTML = listaProfissionais;
+      }
+
+        let { data: equipes, error } = await supabase.from('equipes').select('*');
+
+        document.getElementById("lista-equipes").innerHTML = `
+          <tr>
+            <th style="min-width: 300px;">Nome da equipe</th>
+            <th colspan=2>Ações</th>
+          </tr>
+        `;
+
+        equipes.sort((a, b) => a.nome.localeCompare(b.nome));      
+
+        for (let equipe of equipes) {
+          document.getElementById("lista-equipes").innerHTML += `
+            <tr id="${equipe.nome}">
+              <td>${equipe.nome}</td>
+              <td><a href="#" onclick="
+                editar('${equipe.profissionais.replaceAll("\n","").replaceAll("\"","")}');
+                document.getElementById('nome_equipe_vivver').value = '${equipe.nome}';
+                event.preventDefault();">Editar</a></td>
+              <td><a href="#" onclick="
+                document.getElementById('equipe-sendo-apagada').innerText='${equipe.nome}';
+                event.preventDefault();
+                document.getElementById('apagar-equipe').showModal();
+                ">Remover</a></td>
+            </tr>
+          `;
+        }
+      }
+
+      listarEquipes();
+    </script>
+  </body>
+</html>

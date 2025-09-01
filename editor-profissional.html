@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="utf8" />
+    <title>Editor de equipes</title>
+    <style>
+      /* Estilo da barra de navegação */
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333; /* Cor de fundo da barra de navegação */
+        color: #fff; /* Cor do texto da barra de navegação */
+        padding: 10px 0;
+      }
+
+      .navbar a {
+        color: #fff;
+        text-decoration: none;
+        padding: 15px;
+      }
+
+    </style>
+    <meta content="lua-wpp" name="generator" />
+    <meta content="width=device-width,initial-scale=1.0" name="viewport" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <script  src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script  src="assets/js/config.js"></script>
+  </head>
+  <body class="container-lg px-3 my-5 markdown-body">
+    <div class="navbar" style="display: flex;justify-content: space-between; padding: 0;">
+      <a href="profissional.html"><span>Inicio</span></a>
+      <a>Editor de equipes - Gerenciar profissionais</a>
+      <a href="#" onclick="logout()"> Fazer logout</a>
+    </div>
+
+    <h3><br /></h3>
+
+    <dialog style="max-width: 800px;" id="equipe">
+      <table class="table-dialog" style="border: 0px !important;">
+        <tr>
+          <th colspan="2" style="border: 0px !important;"> Dados do profissional</th>
+        </tr>
+        <tr><td>&nbsp;</td></tr>
+        <tr>
+          <td>Profissional:</td>
+          <td><input id="nome"></td>
+        </tr>
+        <tr>
+          <td>Codigo profissional:</td>
+          <td><input id="codprofissional"></td>
+        </tr>
+        <tr>
+          <td>CPF:</td>
+          <td><input id="cpf"></td>
+        </tr>
+        <tr>
+          <td>Nível de acesso:</td>
+          <td>
+            <select id="nivelacesso">
+              <option value="">Normal</option>
+              <option value="-">Administrador</option>
+              <option value="@">Preceptor</option>
+              <option value="+">Vigilância</option>
+              <option value="$">Coordenador</option>
+            </select>
+          </td>
+        </tr>
+        <tr><td>&nbsp;</td></tr>
+      </table>
+      <p align="right">
+        <button id="fechar" onclick="event.target.closest('dialog').close();">Fechar</button>&nbsp;
+        <button id="salvar" onclick="
+          (async function() {
+            const { data, error } = await supabase.from('dadosprofissionais').insert([
+                  { 
+                    nome: document.getElementById('nome').value,
+                    codprofissional: `${document.getElementById('nivelacesso').value}${document.getElementById('codprofissional').value}`, 
+                    cpf: `${parseInt(document.getElementById('cpf').value).toString(36)}@profissional.ext`,
+                  },
+            ]);
+            if (error) {
+                  // TODO: Informar
+              return;
+            }
+            event.target.closest('dialog').close();
+          })();
+        ">Salvar</button>
+      </p>
+    </dialog>
+
+    <dialog style="max-width: 800px;" id="profissional">
+      <table class="table-dialog" style="border: 0px !important;">
+        <tr>
+          <th colspan="2" style="border: 0px !important;"> Dados do profissional</th>
+        </tr>
+        <tr><td>&nbsp;</td></tr>
+        <tr>
+          <td>Nome do profissional:</td>
+          <td id="Nome do profissional"></td>
+        </tr>
+        <tr>
+          <td>Codigo profissional:</td>
+          <td id="Codigo profissional"></td>
+        </tr>
+        <tr>
+          <td>CPF:</td>
+          <td id="CPF"></td>
+        </tr>
+        <tr><td>&nbsp;</td></tr>
+        <tr>
+          <td colspan="2">
+            <button onclick="
+            (
+              async () => {
+                const { data: { users }, error1 } = await supabase.auth.admin.listUsers({page: 1,perPage: 1000});
+
+                for (let user of users) {
+                  if (user.email == window.cpf) {
+                    const { data, error2 } = await supabase.auth.admin.deleteUser(user.id);
+                    break
+                  }
+                }
+
+                event.target.closest('dialog').close();
+              }
+            )();
+            ">Restaurar senha</button>
+            &nbsp;<button onclick="
+            document.getElementById('apagar-profissional').showModal();
+            event.target.closest('dialog').close();
+          ">Remover acesso</button></td>
+        </tr>
+      </table>
+      <p align="right">
+        <button id="fechar" onclick="event.target.closest('dialog').close();">Fechar</button>&nbsp;
+      </p>
+    </dialog>
+
+    <dialog id="apagar-profissional">
+      <table class="table-dialog" style="border: 0px !important;">
+        <tr>
+          <th style="border: 0px !important;"> Apagar profissional </th>
+        </tr>
+        <tr>
+          <td>
+            <br><b>Deseja realmente apagar o profissional?</b><br>
+            Não será possível alocar o profissional a uma equipe novamente,<br>a produção não será perdida<br>
+          </td>
+        </tr>
+        <tr>
+          <td align="right">
+            <button onclick="event.target.closest('dialog').close();"><b>Não apagar</b></button>
+            <button onclick="
+            (
+              async () => {
+                const { data: { users }, error1 } = await supabase.auth.admin.listUsers({page: 1,perPage: 1000});
+
+                for (let user of users) {
+                  if (user.email == window.cpf) {
+                    const { data, error2 } = await supabase.auth.admin.deleteUser(user.id);
+                    break
+                  }
+                }
+
+                const response = await supabase.from('dadosprofissionais').delete().eq('cpf',window.cpf);
+                event.target.closest('dialog').close();
+              }
+            )();
+            ">Apagar profissional</button>
+          </td>
+        </tr>
+      </table>
+    </dialog>
+
+    <button onclick="
+      for (let select of [...document.getElementsByTagName('select')]) {
+        select.value='';
+      };
+      for (let select of [...document.getElementsByTagName('input')]) {
+        select.value='';
+      };
+      document.getElementById('equipe').showModal();
+    ">Adicionar profissional</button>
+    <br><br>
+    <table class="table-dialog">
+      <tbody>
+        <tr>
+          <th colspan="2">Procurar profissional</th>
+        </tr>
+        <tr style="padding: 3;">
+          <td>CPF:</td>
+          <td><input id="cpfBusca"></td>
+        </tr>
+        <tr>
+          <td colspan="2" align="right"><button onclick="
+            (async () => {
+              let { data: dadosprofissionais, error } = await supabase.from('dadosprofissionais').select('*')
+              let cpfBusca = `${parseInt(document.getElementById('cpfBusca').value).toString(36)}@profissional.ext`;
+
+              for (let usuario of dadosprofissionais) {
+                
+                if (usuario.cpf == cpfBusca) {
+                  console.log(usuario)
+                  window.cpf = usuario.cpf;
+                  document.getElementById('profissional').showModal();
+                  document.getElementById('Nome do profissional').innerText = usuario.nome;
+                  document.getElementById('CPF').innerText = document.getElementById('cpfBusca').value;
+                  document.getElementById('Codigo profissional').innerText = usuario.codprofissional;
+                  return;
+                }
+              }
+            })()
+            
+            ">Pesquisar</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>&nbsp;</h3>
+    <h3>&nbsp;</h3>
+
+
+
+
+    <h3><br /></h3>
+    <script src="assets/js/logout.js"></script>
+  </body>
+</html>

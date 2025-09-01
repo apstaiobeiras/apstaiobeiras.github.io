@@ -1,0 +1,280 @@
+<!DOCTYPE html><html lang="pt_BR"><head><meta charset="utf8"/><title>Gestor da APS</title><style>        /* Estilo da barra de navegação */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333; /* Cor de fundo da barra de navegação */
+            color: #fff; /* Cor do texto da barra de navegação */
+            padding: 10px 0;
+            z-index: 99999999;
+        }
+        
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+        }
+        
+        /* Adicione margem ao corpo para evitar que o conteúdo fique oculto sob a barra de navegação */
+        body {
+            margin-top: 60px; /* Ajuste conforme necessário com base na altura da sua barra de navegação */
+        }
+
+        .right {
+            text-align: right;
+        }
+
+        .neutro {
+            background: #DFE2E5;
+        }
+
+        .ruim {
+            background: #ea9999!important;
+        }
+
+        .razoavel {
+            background: #f7cca0!important;
+        }
+
+        .proximo {
+            background: #b6d7a8!important;
+        }
+
+        .atingiu {
+            background: #9fc5e8!important;
+        }
+
+        .tr:hover {
+            background: #DFE2E5!important;
+            cursor: pointer!important;
+        }
+
+        .tr:pressed {
+            background: #9FA1A3!important;
+        }
+
+        table {
+            width: 100%!important;
+        }
+      </style><meta content="lua-wpp" name="generator"/><meta content="width=device-width,initial-scale=1.0" name="viewport"/><link href="assets/css/style.css" rel="stylesheet"/>
+      <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script></head>
+      <body class="container-lg px-3 my-5 markdown-body">
+        <div class="navbar" style="display: flex;justify-content: space-between; padding: 0;">
+            <a href="profissional.html">Voltar</a>
+            <a>Planilha</a>
+            <a href="#" onclick="logout()"> Fazer logout</a>
+        </div>
+        <h3><br></h3>
+        <!--<h4>Filtrado <span id="filtrado">{filtrado}</span> pacientes de <span id="total">{total}</span> ou <span id=percentil>{percentil}</span>%</h3></h4>-->
+        <h4>
+          <img src="assets/img/csv.png" style="transform: translate(0%, 25%);"> 
+          <a href="#" onclick="baixarComoCSV();">Baixar como CSV</a> | Total: <span id="total">{total}</span> | Filtrado: <span id="filtrado">{filtrado}</span>
+          <span id="mostrar_grafico" style="display: none;"> | 
+            <a href="#" onclick="mostrarGrafico();" id="mostrarGraficoX">Mostrar gráfico</a>
+            <a href="#" onclick="mostrarPlanilha();" id="mostrarPlanilhaX" style="display: none;">Mostrar Planilha</a>
+          </span>
+        </h4>
+
+        <h3> </h3>
+        <div id="planilha"></div>
+        <div id="graficos" style="display: none;"></div>
+        
+        </body><script src="assets/js/logout.js"></script>
+    <script>
+    const script = document.createElement("script");
+    script.src =
+      "js/" + new URLSearchParams(window.location.search).get("script") + ".js";
+    script.onload = function () {
+      const filtros = [];
+      for (let elemento of document.getElementsByTagName("span")) {
+        if (!elemento.closest("tr")) continue;
+        let parent = Array.from(elemento.closest("tr").children);
+
+        for (let i in parent) {
+          if (elemento.closest("td") == parent[i]) {
+            let table = document.getElementsByTagName("tbody")[0];
+            let valor = elemento.getAttribute("name");
+            let nome = elemento.innerText;
+            let filtro = table.children[0].children[i].innerText+":"+elemento.classList.contains("data");
+
+            filtros[filtro] = filtros[filtro] || [];
+
+            if (filtros[filtro][nome] == undefined) {
+              filtros[filtro][nome] = valor;
+              filtros[filtro].push(nome);
+            }
+          }
+
+        }
+      }
+
+      total.innerText = document.getElementsByTagName("tr").length-1;
+      filtrado.innerText = total.innerText
+
+      let elementosFiltros = "";
+
+      for (const filtro of Object.keys(filtros)) {
+        filtros[filtro].sort();
+        if (filtro.split(":")[1] == "false") {
+          elementosFiltros += `<label>
+            <b>${filtro.split(":")[0]}: </b>
+              <select class="fixed-width" onchange="filtrar();" id="${filtro.split(":")[0]}">
+                <option value="">Todos</option>
+          `;
+          for (let opcao of filtros[filtro]) {
+            elementosFiltros += `
+              <option value="${filtros[filtro][opcao]}">${opcao}</option>
+            `;
+          }
+          elementosFiltros += `</select></label><br><br>`;
+          continue;
+        }
+        for (let i in filtros[filtro]) {
+          let opcao = filtros[filtro][i];
+          filtros[filtro][i] = (parseInt(opcao.split("/")[2]+opcao.split("/")[1]+opcao.split("/")[0]));
+        }
+        filtros[filtro].sort();
+        
+        let ultimaData = filtros[filtro].pop().toString();
+        let primeiraData  = filtros[filtro][0].toString();
+
+        primeiraData = (primeiraData.slice(0,4)+"-"+primeiraData.slice(4,6)+"-"+primeiraData.slice(6,9));
+        ultimaData   = (ultimaData.slice(0,4)+"-"+ultimaData.slice(4,6)+"-"+ultimaData.slice(6,9));
+
+        elementosFiltros += `<label>
+            <b>De: </b> 
+              <input type=date class="fixed-width" value="${primeiraData}" onchange="filtrar();" min="${primeiraData}" max="${ultimaData}" id="${filtro.split(":")[0]}" name="data"> 
+            <b>até</b> 
+              <input type=date class="fixed-width" value="${ultimaData}" onchange="filtrar();" min="${primeiraData}" max="${ultimaData}"  id="${filtro.split(":")[0]}2"> 
+            </label><br><br>
+          `;
+      }
+
+      planilha.innerHTML = `${elementosFiltros} ${planilha.innerHTML}`;
+
+    };
+    document.head.appendChild(script);
+    </script>
+    
+    <script>
+    function filtrar() {
+      filtrado.innerText = total.innerText;
+
+      let tabela = document.getElementsByTagName("table")[0].cloneNode(true)
+
+      for (let linha of [...tabela.getElementsByTagName("tr")]) {
+        linha.style.display = "";
+      }
+
+      const seletores = {};
+
+      for (let select of [...document.getElementsByTagName("select")]) {
+        if (select.value == "") continue;
+        seletores[select.id] = select.value;
+      }
+
+      for (let de of [...document.getElementsByName("data")]) {
+        let ate = document.getElementById(de.id+"2")
+        if (de.value == de.min && ate.value == ate.max) continue;
+
+        let inicio = parseInt(de.value.replaceAll("-",""));
+        let final = parseInt(ate.value.replaceAll("-",""));
+
+        seletores[de.id] = [inicio,final];
+      }
+
+      if (Object.keys(seletores).length == 0) {
+        document.getElementsByTagName("table")[0].replaceWith(tabela);
+        return;
+      }
+
+      let primeira = true;
+      let chaves = [];
+      let k = document.getElementsByTagName("tr").length-1;
+      for (let linha of [...tabela.getElementsByTagName("tr")]) {
+        if (primeira) {
+            primeira = false;
+            for (i in [...linha.getElementsByTagName("th")]) {
+                chaves[linha.getElementsByTagName("th")[i].innerText] = i;
+            }
+            continue;
+        }
+
+        for (const [coluna, valor] of Object.entries(seletores)) {
+          if (typeof(valor) === "object") {
+            let celula = linha.children[chaves[coluna]].children[0].innerText;
+            let valorCelula = parseInt(celula.split("/")[2]+celula.split("/")[1]+celula.split("/")[0]);
+            if (valorCelula < valor[0]) {
+              linha.style.display = "none";
+              continue;
+            }
+            if (valorCelula > valor[1]) {
+              linha.style.display = "none";
+              continue;
+            }
+            continue;
+          }
+
+          if (linha.children[chaves[coluna]].children[0].getAttribute("name") != valor) {
+            linha.style.display = "none";
+          }           
+        }
+        if (linha.style.display == "none") {
+          k = k-1;
+        }
+      }
+      filtrado.innerText = k;
+
+      document.getElementsByTagName("table")[0].replaceWith(tabela);
+    }
+
+    function baixarComoCSV() {
+      const table = document.getElementsByTagName("table")[0];
+      if (!table) return console.error("Table element not found");
+
+      let csvContent = "\uFEFF";
+
+      Array.from(table.rows).forEach((row) => {
+        // Skip rows with `display: none` style
+        if (row.style.display === "none") return;
+
+        const rowData = Array.from(row.cells)
+          .map((cell) => {
+            let cellText = cell.textContent.trim();
+            // Escape any quotes in cell text and surround with quotes
+            cellText = `"${cellText.replace(/"/g, '""')}"`;
+            return cellText;
+          })
+          .join(";");
+
+        csvContent += rowData + "\n";
+      });
+
+      // Create a Blob and trigger a download
+      const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download =
+        new URLSearchParams(window.location.search).get("script") + ".csv";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+
+    function mostrarGrafico () {
+      graficos.style.display = "";
+      planilha.style.display = "none";
+      mostrarGraficoX.style.display = "none";
+      mostrarPlanilhaX.style.display = "";
+    }
+
+    function mostrarPlanilha () {
+      graficos.style.display = "none";
+      planilha.style.display = "";
+      mostrarGraficoX.style.display = "";
+      mostrarPlanilhaX.style.display = "none";
+    }
+    </script>
+ 
+</html>

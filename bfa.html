@@ -1,0 +1,171 @@
+<!DOCTYPE html><html lang="pt_BR"><head><meta charset="utf8"/><title>Solicitações Excluidas</title><style>        /* Estilo da barra de navegação */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333; /* Cor de fundo da barra de navegação */
+            color: #fff; /* Cor do texto da barra de navegação */
+            padding: 10px 0;
+            cursor: pointer!important;
+        }
+        
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+        }
+        
+        /* Adicione margem ao corpo para evitar que o conteúdo fique oculto sob a barra de navegação */
+        body {
+            margin-top: 60px; /* Ajuste conforme necessário com base na altura da sua barra de navegação */
+        }
+
+      </style>
+      <meta content="lua-wpp" name="generator"/>
+      <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+      <link href="assets/css/style.css" rel="stylesheet"/>
+      <script  src="https://unpkg.com/@supabase/supabase-js@2"></script>
+      <script>
+        const supabaseUrl = 'https://jegcdnbanszmtgkqahgx.supabase.co';
+        const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImplZ2NkbmJhbnN6bXRna3FhaGd4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzMyMzE3MTEsImV4cCI6MjA0ODgwNzcxMX0._re36th5FXi4hoa8o5I9Dq9rBKAdLtCDA-6epJF7Pms';
+        window.supabase = supabase.createClient(supabaseUrl, supabaseKey);
+      </script>
+      <style>
+        body {
+            max-width:999999px;
+        }
+      </style>
+    </head>
+    <body class="container-lg px-3 my-5 markdown-body">
+        <div class="navbar" style="display: flex;justify-content: space-between; padding: 0;">
+            <a href="profissional.html"><span>Inicio</span></a>
+            <a>Acompanhamento Bolsa Família - <span id="nome"></span></a>
+            <a href="#" onclick="logout()"> Fazer logout</a>
+        </div>
+
+        <h3><br></h3>
+        <div id="acsContainer">
+            <b>ACS: </b>
+        </div>
+        <br>
+        <table>
+            <tbody id="listaBFA">
+            </tbody>
+        </table>
+        <br/>
+    </body>
+    <script src="js/bolsa-familia.js"></script>
+    <script src="assets/js/logout.js"></script>
+    <script>
+        let codProfissional = 0;
+
+        if (localStorage.getItem('override:codProfissional')) {
+            for (let profissional of Profissionais) {
+                if (profissional[0] == localStorage.getItem('override:codProfissional')) {
+                    document.getElementById("nome").innerText = profissional[1];
+                    codProfissional = profissional[0];
+                    break;
+                }
+            }
+        } else {
+            (async function (){
+                const {data,error} = await window.supabase.from('dadosprofissionais').select("*").eq('cpf', localStorage.getItem("profissional"));
+                document.getElementById("nome").innerText = data[0].nome;
+                codProfissional = data[0].codprofissional;
+            })();
+        }
+    </script>
+    <script>
+
+        acsContainer.innerHTML += acs;
+        document.getElementById('acs').setAttribute("onchange","filtrar();");
+        document.getElementById('acs').className = "fixed-width";
+        acsContainer.innerHTML += ` | <a href="" onclick="salvar();"><b>Salvar</b></a>`;
+
+        function filtrar(){
+            let cadastros = `
+                <tr>
+                    <th>ID Família</th>
+                    <th>NIS</th>
+                    <th>Nome</th>
+                    <th>Data de nascimento</th>
+                    <th>Peso</th>
+                    <th>Altura</th>
+                    <th>DUM (gestantes)</th>
+                    <th>Data Acompanhamento</th>
+                </tr>
+            `;
+            listaBFA.innerHTML = "";
+
+            for (let beneficiario of listaBolsaFamilia) {
+                let familia = beneficiario[0];
+                let nis = beneficiario[1];
+                let nome = beneficiario[2];
+                let dataNascimento = beneficiario[3];
+
+                if (!beneficiario[4].includes(parseInt(document.getElementById('acs').value))) continue;
+                cadastros += `
+                    <tr>
+                        <td>${familia}</td>
+                        <td>${nis}<input type="hidden" id="nis" value=${nis}></td>
+                        <td>${nome}</td>
+                        <td>${dataNascimento}</td>
+                        <td style="white-space: nowrap;">
+                            <span id="kg"> <input type="number" style="max-width:64px;" onchange="
+
+                                let peso = event.target.closest('td').querySelector('#peso');
+                                let kg = event.target.closest('td').querySelector('#kg');
+                                let g = event.target.closest('td').querySelector('#g');
+
+                                peso.value=\`\${kg.getElementsByTagName('input')[0].value},\${g.getElementsByTagName('input')[0].value}\`;
+                            " value="0"> kg e </span>
+                            <span id="g"> <input type="number" style="max-width:64px;" value="0" onchange="
+
+                                let peso = event.target.closest('td').querySelector('#peso');
+                                let kg = event.target.closest('td').querySelector('#kg');
+                                let g = event.target.closest('td').querySelector('#g');
+
+                                peso.value=\`\${kg.getElementsByTagName('input')[0].value},\${g.getElementsByTagName('input')[0].value}\`;
+                            ">g </span>
+                            <input type="hidden" id="peso">
+                        </td>
+                        <td style="white-space: nowrap;"><input type="number" style="max-width:64px;" id="altura"> cm</td>
+                        <td><input type="date" id="dum"></td>
+                        <td><input type="date" id="data_acompanhamento"></td>
+                    </tr>
+                `;
+            }
+
+            listaBFA.innerHTML = cadastros;
+        }
+
+        async function salvar() {
+            event.preventDefault();
+
+            const itens = [];
+            for (let linha of document.getElementsByTagName("tr")) {
+                let coletor = {};
+                for (let input of [...linha.getElementsByTagName('input')]) {
+                    if (input.id == "") continue;
+                    coletor[input.id] = input.value;
+                }
+
+                if (coletor.data_acompanhamento == "" && coletor.nis) continue;
+                itens.push(coletor);
+            }
+
+            const { data, error } = await supabase.from('bfa').insert(itens).select();
+
+            if (data) {
+                alert("Acompanhamentos salvos!")
+                return;
+            }
+
+            alert("Erro ao salvar")
+            console.log(error);
+        }
+
+        filtrar();
+
+    </script></html>

@@ -1,0 +1,307 @@
+<!doctype html>
+<!doctype html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="utf8" />
+    <title>Perfil do profissional</title>
+    <style>
+
+      body {
+        cursor: default !important;
+      }
+      /* Estilo da barra de navegação */
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333; /* Cor de fundo da barra de navegação */
+        color: #fff; /* Cor do texto da barra de navegação */
+        padding: 10px 0;
+      }
+
+      .navbar a {
+        color: #fff;
+        text-decoration: none;
+        padding: 15px;
+      }
+
+      body {
+        margin-top: 60px; 
+      }
+
+      tr,table,td,th {
+        background-color: transparent !important;
+        border: 0 !important;
+      }
+
+      .header {
+        background-color: #f6f8fa !important;
+      }
+
+      .border {
+        border: 1px solid #dfe2e5 !important;
+      }
+
+      ::backdrop {
+        background-image: linear-gradient(45deg, rgb(0, 0, 0), rgb(0, 0, 0));
+        opacity: 0.75;
+      }
+
+      .tr:hover {
+        background: #dfe2e5 !important;
+        cursor: pointer !important;
+      }
+
+      .tr:pressed {
+        background: #9fa1a3 !important;
+      }
+
+      tbody {
+        width: 100%;
+      }
+
+      .mes-selecionado {
+        background: #dfe2e5  !important;
+      }
+
+      .mes:hover {
+        background: #dfe2e5 !important;
+        cursor: pointer !important;
+      }
+
+      select {
+        cursor: pointer !important;
+      }
+
+      .X {
+        background: #e9ecef !important;
+      }
+
+      .V {
+        background: #b6d7a8 !important;
+      }
+      
+      .A {
+        background: #9fc5e8 !important;
+      }
+      
+      .R {
+        background: #f7cca0 !important;
+      }
+      
+      .N {
+        background: #ea9999 !important;
+      }
+      
+      tr img {
+        min-width: 96px;
+        height: auto;
+      }
+
+      .neutro {
+            background: #DFE2E5;
+        }
+
+        .ruim {
+            background: #ea9999!important;
+        }
+
+        .razoavel {
+            background: #f7cca0!important;
+        }
+
+        .proximo {
+            background: #b6d7a8!important;
+        }
+
+        .atingiu {
+            background: #9fc5e8!important;
+        }
+    </style>
+    <meta content="lua-wpp" name="generator" />
+    <meta content="width=device-width,initial-scale=1.0" name="viewport" />
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script  src="assets/js/config.js"></script>
+  </head>
+  <body class="container-lg px-3 my-5 markdown-body">
+    <div class="navbar" style="display: flex;justify-content: space-between; padding: 0;">
+      <a href="profissional.html"><span>Inicio</span></a>
+      <a>Mapa de atendimento - <span id="nome"></span></a>
+      <a href="#" onclick="logout()"> Fazer logout</a>
+  </div>
+
+  <h3><br /></h3>
+  <div class="no-print" style="display: flex;justify-content: space-between; padding: 0;">
+    <h3><br /></h3>
+    <div style="max-width: 1012px">
+      <h1>Informativo</h1>
+      <p>Nesse relatório estão listados os atendimentos realizados por dia, a aba consolidado segue as regras:</p>
+      <table >
+        <tr style="background-color: transparent !important;">
+          <td style="white-space: nowrap;">Legenda:</td>
+          <td>
+            <table>
+              <tr class="border">
+                <td class="ruim"> </td>
+                <td>Não teve nenhuma visita</td>
+              </tr>
+              <tr class="border">
+                <td class="razoavel"></td>
+                <td>Todas as visitas foram recusadas</td>
+              </tr>
+              <tr class="border">
+                <td class="atingiu"></td>
+                <td>Houve tentativas de visitas mas em nenhuma foi encontrado alguém da família</td>
+              </tr>
+              <tr class="border">
+                <td class="proximo"></td>
+                <td>Ao menos uma visita foi realizada</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+      <div></div>
+      <br>
+    </div>
+    <hr>
+  </div>
+
+
+    <table>
+      <tbody id="mapa"></tbody >
+    </table>
+
+    <h3><br /></h3>
+    <script src="assets/js/logout.js"></script>
+    <script>
+      let codProfissional = 0;
+      let nomeProfissional = "";
+      // Function to get the value of a query parameter by name
+      function getQueryParam(param) {
+          const urlParams = new URLSearchParams(window.location.search);
+          return urlParams.get(param);
+      }
+
+      // Check for a specific parameter (e.g., "loadScript")
+      const scriptName = getQueryParam('script');
+
+      if (scriptName) {
+          // Dynamically create and load the script based on the parameter value
+          const script = document.createElement('script');
+          script.src = "js/"+scriptName + '.js';  // Assuming the script is named according to the parameter value
+          script.onload = async function() {
+                    if (localStorage.getItem('override:codProfissional')) {
+            const {data:profissional,error} = await supabase.from('dadosprofissionais').select("*").eq('codprofissional', localStorage.getItem("override:codProfissional"));
+            document.getElementById("nome").innerText = profissional[0].nome;
+            codProfissional = profissional[0].codprofissional;
+            nomeProfissional = profissional[0].nome;
+
+        } else {
+          const {data:profissional,error} = await supabase.from('dadosprofissionais').select("*").eq('cpf', localStorage.getItem("profissional"));
+          document.getElementById("nome").innerText = profissional[0].nome;
+          codProfissional = profissional[0].codprofissional;
+          nomeProfissional = profissional[0].nome;
+        }
+            loadMap(Mapa);
+            document.getElementById("ano").value = (new Date()).getFullYear()
+            drawMap((new Date()).getMonth()+1)
+          };
+          document.head.appendChild(script);
+      }
+  </script>
+  <script>
+
+    function loadMap(mapa) {
+      let selectAno = document.createElement("select");
+      selectAno.id = "ano"
+      for (let ano in mapa) {
+        selectAno.innerHTML += `<option value="${ano}">${ano}</option>`;
+      }
+
+      selectAno.setAttribute("onchange",`document.getElementsByClassName("mes-selecionado")[0].click();`);
+      selectAno.setAttribute("class",`fixed-width`);
+
+      let header = document.createElement("tr");
+      let escolheMes = document.createElement("tr");
+
+      header.classList = "border header";
+      header.innerHTML = `<th colspan=10>${codProfissional} - ${nomeProfissional}</th><th colspan=2>${selectAno.outerHTML}</th>`;
+      
+      escolheMes.classList = "border";
+      escolheMes.innerHTML = `
+        <th class="mes tr" id="mes1" onclick="drawMap(1)">Jan</th>
+        <th class="mes" id="mes2" onclick="drawMap(2)">Fev</th>
+        <th class="mes" id="mes3" onclick="drawMap(3)">Mar</th>
+        <th class="mes" id="mes4" onclick="drawMap(4)">Abr</th>
+        <th class="mes" id="mes5" onclick="drawMap(5)">Mai</th>
+        <th class="mes" id="mes6" onclick="drawMap(6)">Jun</th>
+        <th class="mes" id="mes7" onclick="drawMap(7)">Jul</th>
+        <th class="mes" id="mes8" onclick="drawMap(8)">Ago</th>
+        <th class="mes" id="mes9" onclick="drawMap(9)">Set</th>
+        <th class="mes" id="mes10" onclick="drawMap(10)">Out</th>
+        <th class="mes" id="mes11" onclick="drawMap(11)">Nov</th>
+        <th class="mes" id="mes12" onclick="drawMap(12)">Dez</th>
+      `;
+
+      document.getElementById("mapa").appendChild(header);
+      document.getElementById("mapa").appendChild(escolheMes);
+
+      let ultimoMes = 1;
+      for (let mes in mapa[selectAno.value]) {
+        if (mapa[selectAno.value][mes][codProfissional]){
+          ultimoMes = mes;
+        }
+      }
+
+      window.mapa = mapa;
+      document.getElementById(`mes${ultimoMes}`).click();
+    }
+
+    let fakeAtual = [];
+
+    function drawMap(mes) {
+      for (let row of [...document.getElementsByClassName("status")]) {row.remove();} 
+      for (let mes of [...document.getElementsByClassName("mes")]) {mes.classList = "mes";} 
+
+      document.getElementById(`mes${mes}`).classList = "mes mes-selecionado"
+
+      let ano = document.getElementById("ano").value
+      let producaoMes = mapa[ano][mes][codProfissional]
+
+      for (let i = 12;1;i--) {
+        let anterior = mapa[ano][i][codProfissional];
+        if (anterior) {
+          for (let i = 0;i<anterior.length;i++) {
+            fakeAtual[i] = anterior[i].slice(0,-1)+"X";
+          }
+          break
+        }
+      }
+
+      if (!producaoMes) {
+        let anterior = mapa[ano][mes-1][codProfissional];
+        producaoMes = fakeAtual;
+      }
+      
+      for (let i = 0;i<producaoMes.length;i+=12) {
+        let linha = document.createElement("tr");
+        linha.classList = "status";
+        for (let j = i; j<(i+12);j+=1) {
+          let visita = producaoMes[j];
+          if (!visita) break;
+          let status = visita.slice(-1);
+          let familia = document.createElement("td");
+          familia.classList = status
+          familia.style=`text-align: right;font-family: monospace;`
+          familia.innerText = visita.slice(0,-1);
+          linha.append(familia);
+        }
+        document.getElementById("mapa").append(linha);
+      }
+    }
+  </script>
+  </body>
+</html>

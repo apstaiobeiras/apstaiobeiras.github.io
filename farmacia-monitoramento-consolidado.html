@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="utf8" />
+    <title>Perfil do profissional</title>
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <style>
+      /* Estilo da barra de navegação */
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #333; /* Cor de fundo da barra de navegação */
+        color: #fff; /* Cor do texto da barra de navegação */
+        padding: 10px 0;
+      }
+
+      .navbar a {
+        color: #fff;
+        text-decoration: none;
+        padding: 15px;
+      }
+
+      /* Adicione margem ao corpo para evitar que o conteúdo fique oculto sob a barra de navegação */
+      body {
+        margin-top: 60px; 
+      }
+
+      .header {
+        background-color: #f6f8fa !important;
+      }
+
+      .border {
+        border: 1px solid #dfe2e5 !important;
+      }
+      .no-border * {
+        border: 0px !important;
+      }
+
+      tr {
+        background-color: transparent !important;
+      }
+
+    </style>
+    <meta content="lua-wpp" name="generator" />
+    <meta content="width=device-width,initial-scale=1.0" name="viewport" />
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script  src="assets/js/config.js"></script>
+  </head>
+  <body style="max-width: unset !important;">
+    <div class="navbar" style="display: flex;justify-content: space-between; padding: 0;">
+      <a href="profissional.html"><span>Inicio</span></a>
+      <a id="titulo">Dispensação consolidada Farmácia de Minas</a>
+      <a href="#" onclick="logout()"> Fazer logout</a>
+    </div>
+
+
+    <div class="no-print" style="display: flex;justify-content: space-between; padding: 0;">
+      <div></div>
+      <div style="max-width: 1012px">
+        <div id="informativo">
+        </div>
+        <div><label>
+          Ano:&emsp;
+          <select id="seletorAno" class="fixed-width" onchange="filtrar()"></select>
+        </label></div>
+        <br>
+      </div>
+      <div></div>
+    </div>
+
+    <div class="no-print" style="display: flex;justify-content: space-between; padding: 0;">
+      <div></div>
+      <div>
+        <div id="diario">
+          <table><tbody id="tabelas"></tbody></table>
+        </div>
+        <br>
+      </div>
+      <div></div>
+    </div>
+    
+    <h3><br /></h3>
+    <script src="assets/js/logout.js"></script>
+    <script src="js/dispensacoes-por-unidade.js"></script>
+    <script>
+        const meses = [];
+        meses[1] = "Janeiro";
+        meses[2] = "Fevereiro";
+        meses[3] = "Março";
+        meses[4] = "Abril";
+        meses[5] = "Maio";
+        meses[6] = "Junho";
+        meses[7] = "Julho";
+        meses[8] = "Agosto";
+        meses[9] = "Setembro";
+        meses[10] = "Outubro";
+        meses[11] = "Novembro";
+        meses[12] = "Dezembro";
+    </script>
+    <script>
+
+      let informativos = {
+        geral: `          
+          <h1>Informativo</h1>
+          <p>Nesse relatório estão contabilizadas as dispensações de medicamentos realizadas por cada unidade, explicação de cada coluna:</p>
+          <ul>
+            <li><b>Unidade</b>, representa a unidade que realizou as dispensações</li>
+            <li><b>Total de dispensações</b>, representa o total de dispensações no mês realizadas na unidade</li>
+            <li><b>Dispensação pop. própria</b>, representa o total de dispensações realizadas para pessoas cadastradas vinculadas a unidade</li>
+            <li><b>Dispensação pop. própria (%)</b>, representa o percentual de dispensações realizadas para pessoas cadastradas vinculadas a unidade</li>
+            <li><b>Percentual em relação ao total (%)</b> , representa o percentual de dispensações realizadas na unidade em relação ao total</li>
+          </ul>
+          <hr/>`,
+        farmaciaminas: `
+          <h1>Informativo</h1>
+          <p>Nesse relatório estão contabilizadas as dispensações de medicamentos realizadas pela Farmácia de Minas para pacientes de unidades que possuem farmácia, explicação de cada coluna:</p>
+          <ul>
+            <li><b>Nome da unidade</b>, representa a unidade que possui farmácia e pelo menos um paciente recebeu dispensações</li>
+            <li><b>Medicamentos dispensados</b>, representa o total de dispensações no mês realizadas para a unidade</li>
+            <li><b>Percentual em relação ao total de dispensações (%)</b>, representa o impacto que as dispensações tiveram na Farmácia de Minas</li>
+          </ul>
+          <hr/>
+        `,
+      }
+
+      let titulos = {
+        geral: "Dispensação de medicamentos por farmácia/unidade",
+        farmaciaminas: "Uso da Farmácia de Minas por UAPS com farmácia",
+      }
+
+      titulo.innerHTML = titulos[(new URLSearchParams(location.search)).get("campo")];
+
+      let listaAnos = "";
+      for (ano in dispensacoes){
+        listaAnos += `<option value="${ano}">${ano}</option>`;
+      }
+      seletorAno.innerHTML = listaAnos;
+
+      function filtrar() {
+        tabelas.innerHTML = dispensacoes[seletorAno.value][(new URLSearchParams(location.search)).get("campo")];
+        informativo.innerHTML = informativos[(new URLSearchParams(location.search)).get("campo")];
+      }
+
+      filtrar();
+    </script>
+  </body>
+</html>
